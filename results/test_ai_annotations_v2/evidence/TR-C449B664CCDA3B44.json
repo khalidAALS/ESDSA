@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-C449B664CCDA3B44",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0615b1625ffa36ea016b0029f394f887d0b488c21d52302568",
+  "annotated_utc": "2026-11-20T11:07:33.262492+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "CSS03-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "First I’d check whether their address and the outage times actually line up with the regional incident, because if they do, that changes what’s justified. Then I’d apply the normal policy for credits or refunds based on the confirmed impact.",
+        "rationale": "The candidate evaluates whether a refund/credit is appropriate based on the evidence and confirmed impact, rather than assuming one immediately."
+      },
+      {
+        "criterion_id": "CSS03-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "Then I’d apply the normal policy for credits or refunds based on the confirmed impact. If it’s still unclear, or if it would need an exception, I’d escalate it for approval instead of guessing.",
+        "rationale": "This shows awareness of policy limits and the need for approval when an exception would be required."
+      },
+      {
+        "criterion_id": "CSS03-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "If it’s still unclear, or if it would need an exception, I’d escalate it for approval instead of guessing.",
+        "rationale": "The candidate explicitly recognizes uncertainty and proposes escalation for additional decision support when needed."
+      }
+    ],
+    "annotation_notes": ""
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

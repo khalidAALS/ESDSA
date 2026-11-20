@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-FAC5D6271FE22346",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_08b373561a50fc1e016b002b65c4e887d0bc9380cf7bde106a",
+  "annotated_utc": "2026-11-20T11:13:43.471584+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "CSS03-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "If stock is tight, I’d explore other options like a substitute or a credit so the customer isn’t left waiting.",
+        "rationale": "The answer shows the candidate assessing multiple resolution options and selecting alternatives based on stock constraints, which demonstrates option assessment appropriate to the situation."
+      },
+      {
+        "criterion_id": "CSS03-C2",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "passage": "",
+        "rationale": "The answer does not clearly show respect for the stated authorisation requirement for expedited replacement. It mentions moving the item forward and other alternatives, but does not indicate seeking approval or otherwise working within the authorisation constraint."
+      },
+      {
+        "criterion_id": "CSS03-C3",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "passage": "",
+        "rationale": "The answer mentions checking availability and exploring alternatives, but it does not explicitly recognise that the disputed shipment status or need for authorisation requires additional information, investigation, or escalation."
+      }
+    ],
+    "annotation_notes": "The response shows basic problem-solving and contingency planning, but it does not clearly establish escalation or policy-constrained decision-making."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

@@ -1,0 +1,1168 @@
+{
+  "analysis": "PROTOTYPE_VARIANT_CONSENSUS_GATE",
+  "gate_rule": "Retain unanimous actionable decision across three variants; otherwise defer all three.",
+  "eligible_equivalent_groups": 27,
+  "eligible_equivalent_responses": 81,
+  "analyses": {
+    "equivalent_groups": {
+      "scoring": {
+        "original": {
+          "responses": 81,
+          "decision_counts": {
+            "DEFER": 18,
+            "ADVANCE": 45,
+            "DO_NOT_ADVANCE": 18
+          },
+          "actionable": 63,
+          "coverage": 0.7777777777777778,
+          "actionable_disagreements": 0,
+          "actionable_disagreement_rate": 0.0,
+          "advances_without_reference_support": 0,
+          "actions_when_reference_defers": 0,
+          "deferrals_when_reference_actionable": 12
+        },
+        "gated": {
+          "responses": 81,
+          "decision_counts": {
+            "DEFER": 24,
+            "ADVANCE": 45,
+            "DO_NOT_ADVANCE": 12
+          },
+          "actionable": 57,
+          "coverage": 0.7037037037037037,
+          "actionable_disagreements": 0,
+          "actionable_disagreement_rate": 0.0,
+          "advances_without_reference_support": 0,
+          "actions_when_reference_defers": 0,
+          "deferrals_when_reference_actionable": 18
+        },
+        "coverage_change_percentage_points": -7.4074074074074066,
+        "additional_deferrals": 6
+      },
+      "evidence": {
+        "original": {
+          "responses": 81,
+          "decision_counts": {
+            "DO_NOT_ADVANCE": 29,
+            "ADVANCE": 50,
+            "DEFER": 2
+          },
+          "actionable": 79,
+          "coverage": 0.9753086419753086,
+          "actionable_disagreements": 5,
+          "actionable_disagreement_rate": 0.06329113924050633,
+          "advances_without_reference_support": 5,
+          "actions_when_reference_defers": 4,
+          "deferrals_when_reference_actionable": 0
+        },
+        "gated": {
+          "responses": 81,
+          "decision_counts": {
+            "DO_NOT_ADVANCE": 27,
+            "ADVANCE": 48,
+            "DEFER": 6
+          },
+          "actionable": 75,
+          "coverage": 0.9259259259259259,
+          "actionable_disagreements": 3,
+          "actionable_disagreement_rate": 0.04,
+          "advances_without_reference_support": 3,
+          "actions_when_reference_defers": 3,
+          "deferrals_when_reference_actionable": 3
+        },
+        "coverage_change_percentage_points": -4.938271604938271,
+        "additional_deferrals": 4
+      }
+    },
+    "all_groups_sensitivity": {
+      "scoring": {
+        "original": {
+          "responses": 108,
+          "decision_counts": {
+            "DEFER": 29,
+            "ADVANCE": 58,
+            "DO_NOT_ADVANCE": 21
+          },
+          "actionable": 79,
+          "coverage": 0.7314814814814815,
+          "actionable_disagreements": 8,
+          "actionable_disagreement_rate": 0.10126582278481013,
+          "advances_without_reference_support": 6,
+          "actions_when_reference_defers": 7,
+          "deferrals_when_reference_actionable": 19
+        },
+        "gated": {
+          "responses": 108,
+          "decision_counts": {
+            "DEFER": 42,
+            "ADVANCE": 54,
+            "DO_NOT_ADVANCE": 12
+          },
+          "actionable": 66,
+          "coverage": 0.6111111111111112,
+          "actionable_disagreements": 5,
+          "actionable_disagreement_rate": 0.07575757575757576,
+          "advances_without_reference_support": 5,
+          "actions_when_reference_defers": 4,
+          "deferrals_when_reference_actionable": 29
+        },
+        "coverage_change_percentage_points": -12.037037037037035,
+        "additional_deferrals": 13
+      },
+      "evidence": {
+        "original": {
+          "responses": 108,
+          "decision_counts": {
+            "DO_NOT_ADVANCE": 36,
+            "ADVANCE": 69,
+            "DEFER": 3
+          },
+          "actionable": 105,
+          "coverage": 0.9722222222222222,
+          "actionable_disagreements": 15,
+          "actionable_disagreement_rate": 0.14285714285714285,
+          "advances_without_reference_support": 12,
+          "actions_when_reference_defers": 14,
+          "deferrals_when_reference_actionable": 0
+        },
+        "gated": {
+          "responses": 108,
+          "decision_counts": {
+            "DO_NOT_ADVANCE": 33,
+            "ADVANCE": 63,
+            "DEFER": 12
+          },
+          "actionable": 96,
+          "coverage": 0.8888888888888888,
+          "actionable_disagreements": 9,
+          "actionable_disagreement_rate": 0.09375,
+          "advances_without_reference_support": 6,
+          "actions_when_reference_defers": 9,
+          "deferrals_when_reference_actionable": 4
+        },
+        "coverage_change_percentage_points": -8.333333333333337,
+        "additional_deferrals": 9
+      }
+    }
+  },
+  "group_diagnostics": [
+    {
+      "group": "GROUP-001",
+      "semantic_equivalence": "YES",
+      "reference_decisions": {
+        "A": "DO_NOT_ADVANCE",
+        "B": "DO_NOT_ADVANCE",
+        "C": "DO_NOT_ADVANCE"
+      },
+      "flagged": "NO",
+      "scoring": {
+        "original_decisions": {
+          "A": "DEFER",
+          "B": "DEFER",
+          "C": "DEFER"
+        },
+        "gated_decision": "DEFER",
+        "changed_to_defer": false
+      },
+      "evidence": {
+        "original_decisions": {
+          "A": "DO_NOT_ADVANCE",
+          "B": "DO_NOT_ADVANCE",
+          "C": "DO_NOT_ADVANCE"
+        },
+        "gated_decision": "DO_NOT_ADVANCE",
+        "changed_to_defer": false
+      }
+    },
+    {
+      "group": "GROUP-002",
+      "semantic_equivalence": "YES",
+      "reference_decisions": {
+        "A": "ADVANCE",
+        "B": "ADVANCE",
+        "C": "ADVANCE"
+      },
+      "flagged": "NO",
+      "scoring": {
+        "original_decisions": {
+          "A": "ADVANCE",
+          "B": "ADVANCE",
+          "C": "ADVANCE"
+        },
+        "gated_decision": "ADVANCE",
+        "changed_to_defer": false
+      },
+      "evidence": {
+        "original_decisions": {
+          "A": "ADVANCE",
+          "B": "ADVANCE",
+          "C": "ADVANCE"
+        },
+        "gated_decision": "ADVANCE",
+        "changed_to_defer": false
+      }
+    },
+    {
+      "group": "GROUP-003",
+      "semantic_equivalence": "YES",
+      "reference_decisions": {
+        "A": "ADVANCE",
+        "B": "ADVANCE",
+        "C": "ADVANCE"
+      },
+      "flagged": "NO",
+      "scoring": {
+        "original_decisions": {
+          "A": "ADVANCE",
+          "B": "ADVANCE",
+          "C": "ADVANCE"
+        },
+        "gated_decision": "ADVANCE",
+        "changed_to_defer": false
+      },
+      "evidence": {
+        "original_decisions": {
+          "A": "ADVANCE",
+          "B": "ADVANCE",
+          "C": "ADVANCE"
+        },
+        "gated_decision": "ADVANCE",
+        "changed_to_defer": false
+      }
+    },
+    {
+      "group": "GROUP-004",
+      "semantic_equivalence": "NO",
+      "reference_decisions": {
+        "A": "ADVANCE",
+        "B": "DEFER",
+        "C": "DEFER"
+      },
+      "flagged": "YES",
+      "scoring": {
+        "original_decisions": {
+          "A": "ADVANCE",
+          "B": "ADVANCE",
+          "C": "ADVANCE"
+        },
+        "gated_decision": "ADVANCE",
+        "changed_to_defer": false
+      },
+      "evidence": {
+        "original_decisions": {
+          "A": "ADVANCE",
+          "B": "ADVANCE",
+          "C": "ADVANCE"
+        },
+        "gated_decision": "ADVANCE",
+        "changed_to_defer": false
+      }
+    },
+    {
+      "group": "GROUP-005",
+      "semantic_equivalence": "YES",
+      "reference_decisions": {
+        "A": "ADVANCE",
+        "B": "ADVANCE",
+        "C": "ADVANCE"
+      },
+      "flagged": "NO",
+      "scoring": {
+        "original_decisions": {
+          "A": "ADVANCE",
+          "B": "ADVANCE",
+          "C": "ADVANCE"
+        },
+        "gated_decision": "ADVANCE",
+        "changed_to_defer": false
+      },
+      "evidence": {
+        "original_decisions": {
+          "A": "ADVANCE",
+          "B": "ADVANCE",
+          "C": "ADVANCE"
+        },
+        "gated_decision": "ADVANCE",
+        "changed_to_defer": false
+      }
+    },
+    {
+      "group": "GROUP-006",
+      "semantic_equivalence": "YES",
+      "reference_decisions": {
+        "A": "DO_NOT_ADVANCE",
+        "B": "DO_NOT_ADVANCE",
+        "C": "DO_NOT_ADVANCE"
+      },
+      "flagged": "NO",
+      "scoring": {
+        "original_decisions": {
+          "A": "DO_NOT_ADVANCE",
+          "B": "DO_NOT_ADVANCE",
+          "C": "DO_NOT_ADVANCE"
+        },
+        "gated_decision": "DO_NOT_ADVANCE",
+        "changed_to_defer": false
+      },
+      "evidence": {
+        "original_decisions": {
+          "A": "DO_NOT_ADVANCE",
+          "B": "DO_NOT_ADVANCE",
+          "C": "DO_NOT_ADVANCE"
+        },
+        "gated_decision": "DO_NOT_ADVANCE",
+        "changed_to_defer": false
+      }
+    },
+    {
+      "group": "GROUP-007",
+      "semantic_equivalence": "YES",
+      "reference_decisions": {
+        "A": "ADVANCE",
+        "B": "ADVANCE",
+        "C": "ADVANCE"
+      },
+      "flagged": "NO",
+      "scoring": {
+        "original_decisions": {
+          "A": "ADVANCE",
+          "B": "ADVANCE",
+          "C": "ADVANCE"
+        },
+        "gated_decision": "ADVANCE",
+        "changed_to_defer": false
+      },
+      "evidence": {
+        "original_decisions": {
+          "A": "ADVANCE",
+          "B": "ADVANCE",
+          "C": "ADVANCE"
+        },
+        "gated_decision": "ADVANCE",
+        "changed_to_defer": false
+      }
+    },
+    {
+      "group": "GROUP-008",
+      "semantic_equivalence": "YES",
+      "reference_decisions": {
+        "A": "ADVANCE",
+        "B": "ADVANCE",
+        "C": "ADVANCE"
+      },
+      "flagged": "NO",
+      "scoring": {
+        "original_decisions": {
+          "A": "ADVANCE",
+          "B": "ADVANCE",
+          "C": "ADVANCE"
+        },
+        "gated_decision": "ADVANCE",
+        "changed_to_defer": false
+      },
+      "evidence": {
+        "original_decisions": {
+          "A": "ADVANCE",
+          "B": "ADVANCE",
+          "C": "ADVANCE"
+        },
+        "gated_decision": "ADVANCE",
+        "changed_to_defer": false
+      }
+    },
+    {
+      "group": "GROUP-009",
+      "semantic_equivalence": "UNCERTAIN",
+      "reference_decisions": {
+        "A": "ADVANCE",
+        "B": "ADVANCE",
+        "C": "ADVANCE"
+      },
+      "flagged": "YES",
+      "scoring": {
+        "original_decisions": {
+          "A": "DEFER",
+          "B": "ADVANCE",
+          "C": "ADVANCE"
+        },
+        "gated_decision": "DEFER",
+        "changed_to_defer": true
+      },
+      "evidence": {
+        "original_decisions": {
+          "A": "ADVANCE",
+          "B": "ADVANCE",
+          "C": "ADVANCE"
+        },
+        "gated_decision": "ADVANCE",
+        "changed_to_defer": false
+      }
+    },
+    {
+      "group": "GROUP-010",
+      "semantic_equivalence": "YES",
+      "reference_decisions": {
+        "A": "ADVANCE",
+        "B": "ADVANCE",
+        "C": "ADVANCE"
+      },
+      "flagged": "NO",
+      "scoring": {
+        "original_decisions": {
+          "A": "ADVANCE",
+          "B": "ADVANCE",
+          "C": "ADVANCE"
+        },
+        "gated_decision": "ADVANCE",
+        "changed_to_defer": false
+      },
+      "evidence": {
+        "original_decisions": {
+          "A": "ADVANCE",
+          "B": "ADVANCE",
+          "C": "ADVANCE"
+        },
+        "gated_decision": "ADVANCE",
+        "changed_to_defer": false
+      }
+    },
+    {
+      "group": "GROUP-011",
+      "semantic_equivalence": "NO",
+      "reference_decisions": {
+        "A": "DEFER",
+        "B": "DEFER",
+        "C": "DO_NOT_ADVANCE"
+      },
+      "flagged": "YES",
+      "scoring": {
+        "original_decisions": {
+          "A": "ADVANCE",
+          "B": "ADVANCE",
+          "C": "ADVANCE"
+        },
+        "gated_decision": "ADVANCE",
+        "changed_to_defer": false
+      },
+      "evidence": {
+        "original_decisions": {
+          "A": "ADVANCE",
+          "B": "ADVANCE",
+          "C": "DO_NOT_ADVANCE"
+        },
+        "gated_decision": "DEFER",
+        "changed_to_defer": true
+      }
+    },
+    {
+      "group": "GROUP-012",
+      "semantic_equivalence": "YES",
+      "reference_decisions": {
+        "A": "DO_NOT_ADVANCE",
+        "B": "DO_NOT_ADVANCE",
+        "C": "DO_NOT_ADVANCE"
+      },
+      "flagged": "NO",
+      "scoring": {
+        "original_decisions": {
+          "A": "DEFER",
+          "B": "DEFER",
+          "C": "DEFER"
+        },
+        "gated_decision": "DEFER",
+        "changed_to_defer": false
+      },
+      "evidence": {
+        "original_decisions": {
+          "A": "DO_NOT_ADVANCE",
+          "B": "DO_NOT_ADVANCE",
+          "C": "DO_NOT_ADVANCE"
+        },
+        "gated_decision": "DO_NOT_ADVANCE",
+        "changed_to_defer": false
+      }
+    },
+    {
+      "group": "GROUP-013",
+      "semantic_equivalence": "UNCERTAIN",
+      "reference_decisions": {
+        "A": "DEFER",
+        "B": "DEFER",
+        "C": "DEFER"
+      },
+      "flagged": "YES",
+      "scoring": {
+        "original_decisions": {
+          "A": "DO_NOT_ADVANCE",
+          "B": "DEFER",
+          "C": "DO_NOT_ADVANCE"
+        },
+        "gated_decision": "DEFER",
+        "changed_to_defer": true
+      },
+      "evidence": {
+        "original_decisions": {
+          "A": "DO_NOT_ADVANCE",
+          "B": "DO_NOT_ADVANCE",
+          "C": "DO_NOT_ADVANCE"
+        },
+        "gated_decision": "DO_NOT_ADVANCE",
+        "changed_to_defer": false
+      }
+    },
+    {
+      "group": "GROUP-014",
+      "semantic_equivalence": "UNCERTAIN",
+      "reference_decisions": {
+        "A": "ADVANCE",
+        "B": "ADVANCE",
+        "C": "ADVANCE"
+      },
+      "flagged": "YES",
+      "scoring": {
+        "original_decisions": {
+          "A": "DEFER",
+          "B": "DEFER",
+          "C": "DEFER"
+        },
+        "gated_decision": "DEFER",
+        "changed_to_defer": false
+      },
+      "evidence": {
+        "original_decisions": {
+          "A": "ADVANCE",
+          "B": "ADVANCE",
+          "C": "ADVANCE"
+        },
+        "gated_decision": "ADVANCE",
+        "changed_to_defer": false
+      }
+    },
+    {
+      "group": "GROUP-015",
+      "semantic_equivalence": "YES",
+      "reference_decisions": {
+        "A": "DO_NOT_ADVANCE",
+        "B": "DO_NOT_ADVANCE",
+        "C": "DO_NOT_ADVANCE"
+      },
+      "flagged": "YES",
+      "scoring": {
+        "original_decisions": {
+          "A": "DEFER",
+          "B": "DO_NOT_ADVANCE",
+          "C": "DO_NOT_ADVANCE"
+        },
+        "gated_decision": "DEFER",
+        "changed_to_defer": true
+      },
+      "evidence": {
+        "original_decisions": {
+          "A": "DO_NOT_ADVANCE",
+          "B": "DO_NOT_ADVANCE",
+          "C": "DO_NOT_ADVANCE"
+        },
+        "gated_decision": "DO_NOT_ADVANCE",
+        "changed_to_defer": false
+      }
+    },
+    {
+      "group": "GROUP-016",
+      "semantic_equivalence": "UNCERTAIN",
+      "reference_decisions": {
+        "A": "DO_NOT_ADVANCE",
+        "B": "DO_NOT_ADVANCE",
+        "C": "DO_NOT_ADVANCE"
+      },
+      "flagged": "YES",
+      "scoring": {
+        "original_decisions": {
+          "A": "DO_NOT_ADVANCE",
+          "B": "DEFER",
+          "C": "DEFER"
+        },
+        "gated_decision": "DEFER",
+        "changed_to_defer": true
+      },
+      "evidence": {
+        "original_decisions": {
+          "A": "DO_NOT_ADVANCE",
+          "B": "DO_NOT_ADVANCE",
+          "C": "DO_NOT_ADVANCE"
+        },
+        "gated_decision": "DO_NOT_ADVANCE",
+        "changed_to_defer": false
+      }
+    },
+    {
+      "group": "GROUP-017",
+      "semantic_equivalence": "YES",
+      "reference_decisions": {
+        "A": "DO_NOT_ADVANCE",
+        "B": "DO_NOT_ADVANCE",
+        "C": "DO_NOT_ADVANCE"
+      },
+      "flagged": "YES",
+      "scoring": {
+        "original_decisions": {
+          "A": "DEFER",
+          "B": "DEFER",
+          "C": "DO_NOT_ADVANCE"
+        },
+        "gated_decision": "DEFER",
+        "changed_to_defer": true
+      },
+      "evidence": {
+        "original_decisions": {
+          "A": "ADVANCE",
+          "B": "DO_NOT_ADVANCE",
+          "C": "DO_NOT_ADVANCE"
+        },
+        "gated_decision": "DEFER",
+        "changed_to_defer": true
+      }
+    },
+    {
+      "group": "GROUP-018",
+      "semantic_equivalence": "NO",
+      "reference_decisions": {
+        "A": "ADVANCE",
+        "B": "DEFER",
+        "C": "ADVANCE"
+      },
+      "flagged": "YES",
+      "scoring": {
+        "original_decisions": {
+          "A": "ADVANCE",
+          "B": "DEFER",
+          "C": "DEFER"
+        },
+        "gated_decision": "DEFER",
+        "changed_to_defer": true
+      },
+      "evidence": {
+        "original_decisions": {
+          "A": "ADVANCE",
+          "B": "ADVANCE",
+          "C": "ADVANCE"
+        },
+        "gated_decision": "ADVANCE",
+        "changed_to_defer": false
+      }
+    },
+    {
+      "group": "GROUP-019",
+      "semantic_equivalence": "YES",
+      "reference_decisions": {
+        "A": "ADVANCE",
+        "B": "ADVANCE",
+        "C": "ADVANCE"
+      },
+      "flagged": "NO",
+      "scoring": {
+        "original_decisions": {
+          "A": "ADVANCE",
+          "B": "ADVANCE",
+          "C": "ADVANCE"
+        },
+        "gated_decision": "ADVANCE",
+        "changed_to_defer": false
+      },
+      "evidence": {
+        "original_decisions": {
+          "A": "ADVANCE",
+          "B": "ADVANCE",
+          "C": "ADVANCE"
+        },
+        "gated_decision": "ADVANCE",
+        "changed_to_defer": false
+      }
+    },
+    {
+      "group": "GROUP-020",
+      "semantic_equivalence": "YES",
+      "reference_decisions": {
+        "A": "ADVANCE",
+        "B": "ADVANCE",
+        "C": "ADVANCE"
+      },
+      "flagged": "NO",
+      "scoring": {
+        "original_decisions": {
+          "A": "ADVANCE",
+          "B": "ADVANCE",
+          "C": "ADVANCE"
+        },
+        "gated_decision": "ADVANCE",
+        "changed_to_defer": false
+      },
+      "evidence": {
+        "original_decisions": {
+          "A": "ADVANCE",
+          "B": "ADVANCE",
+          "C": "ADVANCE"
+        },
+        "gated_decision": "ADVANCE",
+        "changed_to_defer": false
+      }
+    },
+    {
+      "group": "GROUP-021",
+      "semantic_equivalence": "YES",
+      "reference_decisions": {
+        "A": "ADVANCE",
+        "B": "ADVANCE",
+        "C": "ADVANCE"
+      },
+      "flagged": "NO",
+      "scoring": {
+        "original_decisions": {
+          "A": "ADVANCE",
+          "B": "ADVANCE",
+          "C": "ADVANCE"
+        },
+        "gated_decision": "ADVANCE",
+        "changed_to_defer": false
+      },
+      "evidence": {
+        "original_decisions": {
+          "A": "ADVANCE",
+          "B": "ADVANCE",
+          "C": "ADVANCE"
+        },
+        "gated_decision": "ADVANCE",
+        "changed_to_defer": false
+      }
+    },
+    {
+      "group": "GROUP-022",
+      "semantic_equivalence": "YES",
+      "reference_decisions": {
+        "A": "ADVANCE",
+        "B": "ADVANCE",
+        "C": "ADVANCE"
+      },
+      "flagged": "NO",
+      "scoring": {
+        "original_decisions": {
+          "A": "ADVANCE",
+          "B": "ADVANCE",
+          "C": "ADVANCE"
+        },
+        "gated_decision": "ADVANCE",
+        "changed_to_defer": false
+      },
+      "evidence": {
+        "original_decisions": {
+          "A": "ADVANCE",
+          "B": "ADVANCE",
+          "C": "ADVANCE"
+        },
+        "gated_decision": "ADVANCE",
+        "changed_to_defer": false
+      }
+    },
+    {
+      "group": "GROUP-023",
+      "semantic_equivalence": "YES",
+      "reference_decisions": {
+        "A": "DEFER",
+        "B": "DEFER",
+        "C": "DEFER"
+      },
+      "flagged": "YES",
+      "scoring": {
+        "original_decisions": {
+          "A": "DEFER",
+          "B": "DEFER",
+          "C": "DEFER"
+        },
+        "gated_decision": "DEFER",
+        "changed_to_defer": false
+      },
+      "evidence": {
+        "original_decisions": {
+          "A": "ADVANCE",
+          "B": "DEFER",
+          "C": "DEFER"
+        },
+        "gated_decision": "DEFER",
+        "changed_to_defer": true
+      }
+    },
+    {
+      "group": "GROUP-024",
+      "semantic_equivalence": "YES",
+      "reference_decisions": {
+        "A": "ADVANCE",
+        "B": "ADVANCE",
+        "C": "ADVANCE"
+      },
+      "flagged": "NO",
+      "scoring": {
+        "original_decisions": {
+          "A": "ADVANCE",
+          "B": "ADVANCE",
+          "C": "ADVANCE"
+        },
+        "gated_decision": "ADVANCE",
+        "changed_to_defer": false
+      },
+      "evidence": {
+        "original_decisions": {
+          "A": "ADVANCE",
+          "B": "ADVANCE",
+          "C": "ADVANCE"
+        },
+        "gated_decision": "ADVANCE",
+        "changed_to_defer": false
+      }
+    },
+    {
+      "group": "GROUP-025",
+      "semantic_equivalence": "YES",
+      "reference_decisions": {
+        "A": "DO_NOT_ADVANCE",
+        "B": "DO_NOT_ADVANCE",
+        "C": "DO_NOT_ADVANCE"
+      },
+      "flagged": "YES",
+      "scoring": {
+        "original_decisions": {
+          "A": "DEFER",
+          "B": "DO_NOT_ADVANCE",
+          "C": "DEFER"
+        },
+        "gated_decision": "DEFER",
+        "changed_to_defer": true
+      },
+      "evidence": {
+        "original_decisions": {
+          "A": "DO_NOT_ADVANCE",
+          "B": "DO_NOT_ADVANCE",
+          "C": "DO_NOT_ADVANCE"
+        },
+        "gated_decision": "DO_NOT_ADVANCE",
+        "changed_to_defer": false
+      }
+    },
+    {
+      "group": "GROUP-026",
+      "semantic_equivalence": "YES",
+      "reference_decisions": {
+        "A": "ADVANCE",
+        "B": "ADVANCE",
+        "C": "ADVANCE"
+      },
+      "flagged": "NO",
+      "scoring": {
+        "original_decisions": {
+          "A": "ADVANCE",
+          "B": "ADVANCE",
+          "C": "ADVANCE"
+        },
+        "gated_decision": "ADVANCE",
+        "changed_to_defer": false
+      },
+      "evidence": {
+        "original_decisions": {
+          "A": "ADVANCE",
+          "B": "ADVANCE",
+          "C": "ADVANCE"
+        },
+        "gated_decision": "ADVANCE",
+        "changed_to_defer": false
+      }
+    },
+    {
+      "group": "GROUP-027",
+      "semantic_equivalence": "YES",
+      "reference_decisions": {
+        "A": "ADVANCE",
+        "B": "ADVANCE",
+        "C": "ADVANCE"
+      },
+      "flagged": "NO",
+      "scoring": {
+        "original_decisions": {
+          "A": "ADVANCE",
+          "B": "ADVANCE",
+          "C": "ADVANCE"
+        },
+        "gated_decision": "ADVANCE",
+        "changed_to_defer": false
+      },
+      "evidence": {
+        "original_decisions": {
+          "A": "ADVANCE",
+          "B": "ADVANCE",
+          "C": "ADVANCE"
+        },
+        "gated_decision": "ADVANCE",
+        "changed_to_defer": false
+      }
+    },
+    {
+      "group": "GROUP-028",
+      "semantic_equivalence": "YES",
+      "reference_decisions": {
+        "A": "ADVANCE",
+        "B": "ADVANCE",
+        "C": "ADVANCE"
+      },
+      "flagged": "NO",
+      "scoring": {
+        "original_decisions": {
+          "A": "ADVANCE",
+          "B": "ADVANCE",
+          "C": "ADVANCE"
+        },
+        "gated_decision": "ADVANCE",
+        "changed_to_defer": false
+      },
+      "evidence": {
+        "original_decisions": {
+          "A": "ADVANCE",
+          "B": "ADVANCE",
+          "C": "ADVANCE"
+        },
+        "gated_decision": "ADVANCE",
+        "changed_to_defer": false
+      }
+    },
+    {
+      "group": "GROUP-029",
+      "semantic_equivalence": "YES",
+      "reference_decisions": {
+        "A": "ADVANCE",
+        "B": "ADVANCE",
+        "C": "ADVANCE"
+      },
+      "flagged": "NO",
+      "scoring": {
+        "original_decisions": {
+          "A": "ADVANCE",
+          "B": "ADVANCE",
+          "C": "ADVANCE"
+        },
+        "gated_decision": "ADVANCE",
+        "changed_to_defer": false
+      },
+      "evidence": {
+        "original_decisions": {
+          "A": "ADVANCE",
+          "B": "ADVANCE",
+          "C": "ADVANCE"
+        },
+        "gated_decision": "ADVANCE",
+        "changed_to_defer": false
+      }
+    },
+    {
+      "group": "GROUP-030",
+      "semantic_equivalence": "YES",
+      "reference_decisions": {
+        "A": "DO_NOT_ADVANCE",
+        "B": "DO_NOT_ADVANCE",
+        "C": "DO_NOT_ADVANCE"
+      },
+      "flagged": "YES",
+      "scoring": {
+        "original_decisions": {
+          "A": "DO_NOT_ADVANCE",
+          "B": "DO_NOT_ADVANCE",
+          "C": "DO_NOT_ADVANCE"
+        },
+        "gated_decision": "DO_NOT_ADVANCE",
+        "changed_to_defer": false
+      },
+      "evidence": {
+        "original_decisions": {
+          "A": "DO_NOT_ADVANCE",
+          "B": "DO_NOT_ADVANCE",
+          "C": "DO_NOT_ADVANCE"
+        },
+        "gated_decision": "DO_NOT_ADVANCE",
+        "changed_to_defer": false
+      }
+    },
+    {
+      "group": "GROUP-031",
+      "semantic_equivalence": "YES",
+      "reference_decisions": {
+        "A": "DEFER",
+        "B": "DEFER",
+        "C": "DEFER"
+      },
+      "flagged": "YES",
+      "scoring": {
+        "original_decisions": {
+          "A": "DEFER",
+          "B": "DEFER",
+          "C": "DEFER"
+        },
+        "gated_decision": "DEFER",
+        "changed_to_defer": false
+      },
+      "evidence": {
+        "original_decisions": {
+          "A": "ADVANCE",
+          "B": "ADVANCE",
+          "C": "ADVANCE"
+        },
+        "gated_decision": "ADVANCE",
+        "changed_to_defer": false
+      }
+    },
+    {
+      "group": "GROUP-032",
+      "semantic_equivalence": "YES",
+      "reference_decisions": {
+        "A": "DO_NOT_ADVANCE",
+        "B": "DO_NOT_ADVANCE",
+        "C": "DO_NOT_ADVANCE"
+      },
+      "flagged": "YES",
+      "scoring": {
+        "original_decisions": {
+          "A": "DO_NOT_ADVANCE",
+          "B": "DEFER",
+          "C": "DO_NOT_ADVANCE"
+        },
+        "gated_decision": "DEFER",
+        "changed_to_defer": true
+      },
+      "evidence": {
+        "original_decisions": {
+          "A": "DO_NOT_ADVANCE",
+          "B": "DO_NOT_ADVANCE",
+          "C": "DO_NOT_ADVANCE"
+        },
+        "gated_decision": "DO_NOT_ADVANCE",
+        "changed_to_defer": false
+      }
+    },
+    {
+      "group": "GROUP-033",
+      "semantic_equivalence": "YES",
+      "reference_decisions": {
+        "A": "DO_NOT_ADVANCE",
+        "B": "DO_NOT_ADVANCE",
+        "C": "DO_NOT_ADVANCE"
+      },
+      "flagged": "NO",
+      "scoring": {
+        "original_decisions": {
+          "A": "DO_NOT_ADVANCE",
+          "B": "DO_NOT_ADVANCE",
+          "C": "DO_NOT_ADVANCE"
+        },
+        "gated_decision": "DO_NOT_ADVANCE",
+        "changed_to_defer": false
+      },
+      "evidence": {
+        "original_decisions": {
+          "A": "DO_NOT_ADVANCE",
+          "B": "DO_NOT_ADVANCE",
+          "C": "DO_NOT_ADVANCE"
+        },
+        "gated_decision": "DO_NOT_ADVANCE",
+        "changed_to_defer": false
+      }
+    },
+    {
+      "group": "GROUP-034",
+      "semantic_equivalence": "YES",
+      "reference_decisions": {
+        "A": "DO_NOT_ADVANCE",
+        "B": "DO_NOT_ADVANCE",
+        "C": "DO_NOT_ADVANCE"
+      },
+      "flagged": "NO",
+      "scoring": {
+        "original_decisions": {
+          "A": "DO_NOT_ADVANCE",
+          "B": "DO_NOT_ADVANCE",
+          "C": "DO_NOT_ADVANCE"
+        },
+        "gated_decision": "DO_NOT_ADVANCE",
+        "changed_to_defer": false
+      },
+      "evidence": {
+        "original_decisions": {
+          "A": "DO_NOT_ADVANCE",
+          "B": "DO_NOT_ADVANCE",
+          "C": "DO_NOT_ADVANCE"
+        },
+        "gated_decision": "DO_NOT_ADVANCE",
+        "changed_to_defer": false
+      }
+    },
+    {
+      "group": "GROUP-035",
+      "semantic_equivalence": "UNCERTAIN",
+      "reference_decisions": {
+        "A": "ADVANCE",
+        "B": "ADVANCE",
+        "C": "ADVANCE"
+      },
+      "flagged": "YES",
+      "scoring": {
+        "original_decisions": {
+          "A": "ADVANCE",
+          "B": "ADVANCE",
+          "C": "ADVANCE"
+        },
+        "gated_decision": "ADVANCE",
+        "changed_to_defer": false
+      },
+      "evidence": {
+        "original_decisions": {
+          "A": "ADVANCE",
+          "B": "ADVANCE",
+          "C": "ADVANCE"
+        },
+        "gated_decision": "ADVANCE",
+        "changed_to_defer": false
+      }
+    },
+    {
+      "group": "GROUP-036",
+      "semantic_equivalence": "UNCERTAIN",
+      "reference_decisions": {
+        "A": "DEFER",
+        "B": "DEFER",
+        "C": "DEFER"
+      },
+      "flagged": "YES",
+      "scoring": {
+        "original_decisions": {
+          "A": "ADVANCE",
+          "B": "DEFER",
+          "C": "DEFER"
+        },
+        "gated_decision": "DEFER",
+        "changed_to_defer": true
+      },
+      "evidence": {
+        "original_decisions": {
+          "A": "ADVANCE",
+          "B": "DEFER",
+          "C": "ADVANCE"
+        },
+        "gated_decision": "DEFER",
+        "changed_to_defer": true
+      }
+    }
+  ],
+  "limitations": [
+    "Reference labels are AI-assisted and provisional.",
+    "Semantic equivalence has not been independently validated.",
+    "The gate uses three generated variants, not three independent assessments of the identical response.",
+    "The gate does not operationalise full ESDSA.",
+    "Gating enforces group-level agreement by construction.",
+    "Unstable groups may contain material evidence differences.",
+    "Development data only, not held-out evaluation.",
+    "Coverage is not matched between methods after gating."
+  ]
+}

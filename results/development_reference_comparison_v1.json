@@ -1,0 +1,474 @@
+{
+  "status": "EXPLORATORY_PROVISIONAL_COMPARISON",
+  "warning": "Reference labels are AI-assisted and not independently adjudicated. Agreement is not validated accuracy.",
+  "responses": 108,
+  "criterion_comparisons": 324,
+  "decision_matches": 93,
+  "decision_agreement": 0.8611111111111112,
+  "criterion_matches": 268,
+  "criterion_agreement": 0.8271604938271605,
+  "decision_confusion": [
+    {
+      "reference": "ADVANCE",
+      "model": "ADVANCE",
+      "count": 57
+    },
+    {
+      "reference": "DEFER",
+      "model": "ADVANCE",
+      "count": 11
+    },
+    {
+      "reference": "DEFER",
+      "model": "DEFER",
+      "count": 3
+    },
+    {
+      "reference": "DEFER",
+      "model": "DO_NOT_ADVANCE",
+      "count": 3
+    },
+    {
+      "reference": "DO_NOT_ADVANCE",
+      "model": "ADVANCE",
+      "count": 1
+    },
+    {
+      "reference": "DO_NOT_ADVANCE",
+      "model": "DO_NOT_ADVANCE",
+      "count": 33
+    }
+  ],
+  "criterion_confusion": [
+    {
+      "reference": "INSUFFICIENT_EVIDENCE",
+      "model": "INSUFFICIENT_EVIDENCE",
+      "count": 11
+    },
+    {
+      "reference": "INSUFFICIENT_EVIDENCE",
+      "model": "NEGATIVE_EVIDENCE",
+      "count": 15
+    },
+    {
+      "reference": "INSUFFICIENT_EVIDENCE",
+      "model": "POSITIVE_EVIDENCE",
+      "count": 27
+    },
+    {
+      "reference": "NEGATIVE_EVIDENCE",
+      "model": "INSUFFICIENT_EVIDENCE",
+      "count": 2
+    },
+    {
+      "reference": "NEGATIVE_EVIDENCE",
+      "model": "NEGATIVE_EVIDENCE",
+      "count": 52
+    },
+    {
+      "reference": "NEGATIVE_EVIDENCE",
+      "model": "POSITIVE_EVIDENCE",
+      "count": 10
+    },
+    {
+      "reference": "POSITIVE_EVIDENCE",
+      "model": "INSUFFICIENT_EVIDENCE",
+      "count": 1
+    },
+    {
+      "reference": "POSITIVE_EVIDENCE",
+      "model": "NEGATIVE_EVIDENCE",
+      "count": 1
+    },
+    {
+      "reference": "POSITIVE_EVIDENCE",
+      "model": "POSITIVE_EVIDENCE",
+      "count": 205
+    }
+  ],
+  "decision_disagreements": [
+    {
+      "group": "GROUP-004",
+      "letter": "B",
+      "response_id": "ESDSA-CSS03-02-E2L2",
+      "competency": "Resolution judgment",
+      "reference_decision": "DEFER",
+      "model_decision": "ADVANCE",
+      "decision_agrees": false,
+      "criterion_differences": [
+        {
+          "criterion": 2,
+          "reference": "INSUFFICIENT_EVIDENCE",
+          "model": "POSITIVE_EVIDENCE"
+        }
+      ],
+      "review_flag": "YES",
+      "semantic_equivalence": "NO"
+    },
+    {
+      "group": "GROUP-004",
+      "letter": "C",
+      "response_id": "ESDSA-CSS03-02-E2L3",
+      "competency": "Resolution judgment",
+      "reference_decision": "DEFER",
+      "model_decision": "ADVANCE",
+      "decision_agrees": false,
+      "criterion_differences": [
+        {
+          "criterion": 2,
+          "reference": "INSUFFICIENT_EVIDENCE",
+          "model": "POSITIVE_EVIDENCE"
+        }
+      ],
+      "review_flag": "YES",
+      "semantic_equivalence": "NO"
+    },
+    {
+      "group": "GROUP-011",
+      "letter": "A",
+      "response_id": "ESDSA-CSS02-02-E2L3",
+      "competency": "Information gathering",
+      "reference_decision": "DEFER",
+      "model_decision": "ADVANCE",
+      "decision_agrees": false,
+      "criterion_differences": [
+        {
+          "criterion": 2,
+          "reference": "INSUFFICIENT_EVIDENCE",
+          "model": "POSITIVE_EVIDENCE"
+        }
+      ],
+      "review_flag": "YES",
+      "semantic_equivalence": "NO"
+    },
+    {
+      "group": "GROUP-011",
+      "letter": "B",
+      "response_id": "ESDSA-CSS02-02-E2L1",
+      "competency": "Information gathering",
+      "reference_decision": "DEFER",
+      "model_decision": "ADVANCE",
+      "decision_agrees": false,
+      "criterion_differences": [
+        {
+          "criterion": 2,
+          "reference": "INSUFFICIENT_EVIDENCE",
+          "model": "POSITIVE_EVIDENCE"
+        }
+      ],
+      "review_flag": "YES",
+      "semantic_equivalence": "NO"
+    },
+    {
+      "group": "GROUP-013",
+      "letter": "A",
+      "response_id": "ESDSA-SWE01-01-E3L3",
+      "competency": "Systematic diagnosis",
+      "reference_decision": "DEFER",
+      "model_decision": "DO_NOT_ADVANCE",
+      "decision_agrees": false,
+      "criterion_differences": [
+        {
+          "criterion": 1,
+          "reference": "INSUFFICIENT_EVIDENCE",
+          "model": "NEGATIVE_EVIDENCE"
+        },
+        {
+          "criterion": 3,
+          "reference": "INSUFFICIENT_EVIDENCE",
+          "model": "NEGATIVE_EVIDENCE"
+        }
+      ],
+      "review_flag": "YES",
+      "semantic_equivalence": "UNCERTAIN"
+    },
+    {
+      "group": "GROUP-013",
+      "letter": "B",
+      "response_id": "ESDSA-SWE01-01-E3L2",
+      "competency": "Systematic diagnosis",
+      "reference_decision": "DEFER",
+      "model_decision": "DO_NOT_ADVANCE",
+      "decision_agrees": false,
+      "criterion_differences": [
+        {
+          "criterion": 1,
+          "reference": "INSUFFICIENT_EVIDENCE",
+          "model": "NEGATIVE_EVIDENCE"
+        },
+        {
+          "criterion": 3,
+          "reference": "INSUFFICIENT_EVIDENCE",
+          "model": "POSITIVE_EVIDENCE"
+        }
+      ],
+      "review_flag": "YES",
+      "semantic_equivalence": "UNCERTAIN"
+    },
+    {
+      "group": "GROUP-013",
+      "letter": "C",
+      "response_id": "ESDSA-SWE01-01-E3L1",
+      "competency": "Systematic diagnosis",
+      "reference_decision": "DEFER",
+      "model_decision": "DO_NOT_ADVANCE",
+      "decision_agrees": false,
+      "criterion_differences": [
+        {
+          "criterion": 1,
+          "reference": "INSUFFICIENT_EVIDENCE",
+          "model": "NEGATIVE_EVIDENCE"
+        },
+        {
+          "criterion": 3,
+          "reference": "INSUFFICIENT_EVIDENCE",
+          "model": "NEGATIVE_EVIDENCE"
+        }
+      ],
+      "review_flag": "YES",
+      "semantic_equivalence": "UNCERTAIN"
+    },
+    {
+      "group": "GROUP-017",
+      "letter": "A",
+      "response_id": "ESDSA-SWE03-01-E3L1",
+      "competency": "Reasoned correction",
+      "reference_decision": "DO_NOT_ADVANCE",
+      "model_decision": "ADVANCE",
+      "decision_agrees": false,
+      "criterion_differences": [
+        {
+          "criterion": 1,
+          "reference": "NEGATIVE_EVIDENCE",
+          "model": "POSITIVE_EVIDENCE"
+        },
+        {
+          "criterion": 2,
+          "reference": "NEGATIVE_EVIDENCE",
+          "model": "POSITIVE_EVIDENCE"
+        },
+        {
+          "criterion": 3,
+          "reference": "INSUFFICIENT_EVIDENCE",
+          "model": "POSITIVE_EVIDENCE"
+        }
+      ],
+      "review_flag": "YES",
+      "semantic_equivalence": "YES"
+    },
+    {
+      "group": "GROUP-018",
+      "letter": "B",
+      "response_id": "ESDSA-OPS02-03-E2L3",
+      "competency": "Risk identification",
+      "reference_decision": "DEFER",
+      "model_decision": "ADVANCE",
+      "decision_agrees": false,
+      "criterion_differences": [
+        {
+          "criterion": 2,
+          "reference": "INSUFFICIENT_EVIDENCE",
+          "model": "POSITIVE_EVIDENCE"
+        }
+      ],
+      "review_flag": "YES",
+      "semantic_equivalence": "NO"
+    },
+    {
+      "group": "GROUP-023",
+      "letter": "A",
+      "response_id": "ESDSA-OPS04-01-E2L1",
+      "competency": "Monitoring and escalation",
+      "reference_decision": "DEFER",
+      "model_decision": "ADVANCE",
+      "decision_agrees": false,
+      "criterion_differences": [
+        {
+          "criterion": 2,
+          "reference": "INSUFFICIENT_EVIDENCE",
+          "model": "POSITIVE_EVIDENCE"
+        },
+        {
+          "criterion": 3,
+          "reference": "INSUFFICIENT_EVIDENCE",
+          "model": "POSITIVE_EVIDENCE"
+        }
+      ],
+      "review_flag": "YES",
+      "semantic_equivalence": "YES"
+    },
+    {
+      "group": "GROUP-031",
+      "letter": "A",
+      "response_id": "ESDSA-OPS03-01-E2L1",
+      "competency": "Evidence-based coordination",
+      "reference_decision": "DEFER",
+      "model_decision": "ADVANCE",
+      "decision_agrees": false,
+      "criterion_differences": [
+        {
+          "criterion": 2,
+          "reference": "INSUFFICIENT_EVIDENCE",
+          "model": "POSITIVE_EVIDENCE"
+        },
+        {
+          "criterion": 3,
+          "reference": "INSUFFICIENT_EVIDENCE",
+          "model": "POSITIVE_EVIDENCE"
+        }
+      ],
+      "review_flag": "YES",
+      "semantic_equivalence": "YES"
+    },
+    {
+      "group": "GROUP-031",
+      "letter": "B",
+      "response_id": "ESDSA-OPS03-01-E2L2",
+      "competency": "Evidence-based coordination",
+      "reference_decision": "DEFER",
+      "model_decision": "ADVANCE",
+      "decision_agrees": false,
+      "criterion_differences": [
+        {
+          "criterion": 2,
+          "reference": "INSUFFICIENT_EVIDENCE",
+          "model": "POSITIVE_EVIDENCE"
+        },
+        {
+          "criterion": 3,
+          "reference": "INSUFFICIENT_EVIDENCE",
+          "model": "POSITIVE_EVIDENCE"
+        }
+      ],
+      "review_flag": "YES",
+      "semantic_equivalence": "YES"
+    },
+    {
+      "group": "GROUP-031",
+      "letter": "C",
+      "response_id": "ESDSA-OPS03-01-E2L3",
+      "competency": "Evidence-based coordination",
+      "reference_decision": "DEFER",
+      "model_decision": "ADVANCE",
+      "decision_agrees": false,
+      "criterion_differences": [
+        {
+          "criterion": 2,
+          "reference": "INSUFFICIENT_EVIDENCE",
+          "model": "POSITIVE_EVIDENCE"
+        },
+        {
+          "criterion": 3,
+          "reference": "INSUFFICIENT_EVIDENCE",
+          "model": "POSITIVE_EVIDENCE"
+        }
+      ],
+      "review_flag": "YES",
+      "semantic_equivalence": "YES"
+    },
+    {
+      "group": "GROUP-036",
+      "letter": "A",
+      "response_id": "ESDSA-SWE03-01-E2L1",
+      "competency": "Reasoned correction",
+      "reference_decision": "DEFER",
+      "model_decision": "ADVANCE",
+      "decision_agrees": false,
+      "criterion_differences": [
+        {
+          "criterion": 2,
+          "reference": "INSUFFICIENT_EVIDENCE",
+          "model": "POSITIVE_EVIDENCE"
+        },
+        {
+          "criterion": 3,
+          "reference": "INSUFFICIENT_EVIDENCE",
+          "model": "POSITIVE_EVIDENCE"
+        }
+      ],
+      "review_flag": "YES",
+      "semantic_equivalence": "UNCERTAIN"
+    },
+    {
+      "group": "GROUP-036",
+      "letter": "C",
+      "response_id": "ESDSA-SWE03-01-E2L2",
+      "competency": "Reasoned correction",
+      "reference_decision": "DEFER",
+      "model_decision": "ADVANCE",
+      "decision_agrees": false,
+      "criterion_differences": [
+        {
+          "criterion": 2,
+          "reference": "INSUFFICIENT_EVIDENCE",
+          "model": "POSITIVE_EVIDENCE"
+        },
+        {
+          "criterion": 3,
+          "reference": "INSUFFICIENT_EVIDENCE",
+          "model": "POSITIVE_EVIDENCE"
+        }
+      ],
+      "review_flag": "YES",
+      "semantic_equivalence": "UNCERTAIN"
+    }
+  ],
+  "unstable_groups": [
+    {
+      "group": "GROUP-011",
+      "semantic_equivalence": "NO",
+      "model_decisions": {
+        "A": "ADVANCE",
+        "B": "ADVANCE",
+        "C": "DO_NOT_ADVANCE"
+      },
+      "reference_decisions": {
+        "A": "DEFER",
+        "B": "DEFER",
+        "C": "DO_NOT_ADVANCE"
+      }
+    },
+    {
+      "group": "GROUP-017",
+      "semantic_equivalence": "YES",
+      "model_decisions": {
+        "A": "ADVANCE",
+        "B": "DO_NOT_ADVANCE",
+        "C": "DO_NOT_ADVANCE"
+      },
+      "reference_decisions": {
+        "A": "DO_NOT_ADVANCE",
+        "B": "DO_NOT_ADVANCE",
+        "C": "DO_NOT_ADVANCE"
+      }
+    },
+    {
+      "group": "GROUP-023",
+      "semantic_equivalence": "YES",
+      "model_decisions": {
+        "A": "ADVANCE",
+        "B": "DEFER",
+        "C": "DEFER"
+      },
+      "reference_decisions": {
+        "A": "DEFER",
+        "B": "DEFER",
+        "C": "DEFER"
+      }
+    },
+    {
+      "group": "GROUP-036",
+      "semantic_equivalence": "UNCERTAIN",
+      "model_decisions": {
+        "A": "ADVANCE",
+        "B": "DEFER",
+        "C": "ADVANCE"
+      },
+      "reference_decisions": {
+        "A": "DEFER",
+        "B": "DEFER",
+        "C": "DEFER"
+      }
+    }
+  ]
+}

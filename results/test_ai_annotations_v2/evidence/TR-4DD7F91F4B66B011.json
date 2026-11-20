@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-4DD7F91F4B66B011",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0a4cfc569220e17e016b002adfd4e487d0938f247a58e76b67",
+  "annotated_utc": "2026-11-20T11:11:29.828186+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "SWE04-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d first check that the original export failure is actually fixed",
+        "rationale": "This explicitly states verifying that the reported failure has been resolved."
+      },
+      {
+        "criterion_id": "SWE04-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "then I’d compare the older format output to see what changed.",
+        "rationale": "This shows checking the impact on an older previously working export format, which is regression consideration."
+      },
+      {
+        "criterion_id": "SWE04-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "At that point I’d be looking at whether the main issue is solved and whether the new output makes sense, but I’d want a closer look before deciding anything final.",
+        "rationale": "This uses the verification findings to judge whether the issue is solved and indicates deciding on further action rather than releasing immediately."
+      }
+    ],
+    "annotation_notes": "The answer is concise but covers all three competencies explicitly."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

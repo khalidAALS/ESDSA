@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-0F2D5A3F265F8A5D",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0ddd39ceae6ff844016b001060dd9087d0b2a5bfcd5126f0c4",
+  "annotated_utc": "2026-11-20T09:18:27.233498+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "OPS01-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d weigh it by looking at three things: how urgent the delivery is, how serious the safety concern could be, and what depends on each one.",
+        "rationale": "This explicitly identifies urgency, impact/seriousness, and dependencies as the decision factors."
+      },
+      {
+        "criterion_id": "OPS01-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "If the concern could put people or equipment at risk, I’d lean toward stopping or isolating that work straight away, because safety has to be protected before we push ahead. But I’d also try to limit the disruption by seeing whether there’s another way to keep the delivery on track, like using a different unit, rerouting work, or moving people onto another task.",
+        "rationale": "The answer explains a prioritisation choice between safety and delivery continuity, and gives reasons based on risk and disruption."
+      },
+      {
+        "criterion_id": "OPS01-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "And I’d keep reassessing as new information comes in, because the priority can change once we know more.",
+        "rationale": "This directly states that priorities are reassessed when new information changes the situation."
+      }
+    ],
+    "annotation_notes": "The candidate gives clear, directly relevant prioritisation logic for all three criteria."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

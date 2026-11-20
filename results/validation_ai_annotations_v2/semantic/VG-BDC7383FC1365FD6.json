@@ -1,0 +1,20 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "SEMANTIC_EQUIVALENCE",
+  "blinded_id": "VG-BDC7383FC1365FD6",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_05523be5526fb50e016b000e62eae487d099f83b00f2e7feb8",
+  "annotated_utc": "2026-11-20T09:09:56.622652+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "semantic_equivalence": "YES",
+    "material_differences": "",
+    "equivalence_rationale": "All three responses preserve the same decision-relevant evidence for technical investigation: they use app logs, infrastructure monitoring, traces, and recent deploy/config changes as relevant sources; they propose grouping or comparing failures by request pattern/load to distinguish causes; and they interpret conflicting signals by narrowing to the affected service area or recent change set rather than assuming a single outage. Response C is more detailed and mentions checking the exact error path and service owner’s recent work, but these additions do not materially change the criterion-level evidence or operational commitment relative to A and B."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

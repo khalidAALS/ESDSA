@@ -1,0 +1,20 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "SEMANTIC_EQUIVALENCE",
+  "blinded_id": "VG-B76D48D66E87EAE1",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0a8d05788f632b9d016b000e30eef087d08398f977c71d9535",
+  "annotated_utc": "2026-11-20T09:09:06.751514+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "semantic_equivalence": "YES",
+    "material_differences": "None that appear decision-relevant under the three criteria. All three responses check order status, condition the offer on fulfilment stage and policy/approval limits, and pause to verify when status is unclear or inconsistent.",
+    "equivalence_rationale": "A, B, and C preserve the same core resolution logic: assess the current order status, offer an address change only when still editable, otherwise consider constrained alternatives such as reroute or approval per policy, and seek clarification before committing when information is uncertain. The differences are mainly in wording and detail, not in the operational commitments relevant to option assessment, policy awareness, or uncertainty handling."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

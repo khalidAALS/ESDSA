@@ -1,0 +1,20 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "SEMANTIC_EQUIVALENCE",
+  "blinded_id": "VG-02AA380E5EBCF21B",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0cb7b407f433b4fd016b000bb4241887d0884735e3f1e76038",
+  "annotated_utc": "2026-11-20T08:58:29.500929+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "semantic_equivalence": "YES",
+    "material_differences": "",
+    "equivalence_rationale": "All three responses preserve the same decision-relevant evidence: they propose investigating the issue to identify the cause, they connect a potential fix to the shared calculation component, and they justify a temporary limitation of the feature if reports may be unreliable while the root cause is still being understood. The wording and emphasis vary, but none adds or omits a materially different safeguard, assumption, or correction path that would plausibly change the criterion-level assessment."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

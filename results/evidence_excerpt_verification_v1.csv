@@ -1,0 +1,49 @@
+response_id,criterion_id,evidence_status,verification_status,original_excerpt
+ESDSA-EVAL-0001,C1,POSITIVE_EVIDENCE,EXACT_MATCH,"I would reproduce the error first, then compare affected and unaffected cases to narrow down the cause."
+ESDSA-EVAL-0001,C2,POSITIVE_EVIDENCE,EXACT_MATCH,I'd inspect logs and recent code changes to identify the faulty logic
+ESDSA-EVAL-0001,C3,POSITIVE_EVIDENCE,EXACT_MATCH,I'd inspect logs and recent code changes to identify the faulty logic and correct the code responsible.
+ESDSA-EVAL-0001,C4,POSITIVE_EVIDENCE,EXACT_MATCH,"I'd write a test that captures the original failure, check that the correction passes it, and run regression tests before releasing."
+ESDSA-EVAL-0002,C1,NEGATIVE_EVIDENCE,EXACT_MATCH,No need to recreate the error
+ESDSA-EVAL-0002,C2,NEGATIVE_EVIDENCE,EXACT_MATCH,No need to recreate the error or inspect logs first.
+ESDSA-EVAL-0002,C3,NEGATIVE_EVIDENCE,EXACT_MATCH,"Change what looks broken, deploy."
+ESDSA-EVAL-0002,C4,NEGATIVE_EVIDENCE,EXACT_MATCH,"No complaints afterwards means it's fixed, as far as I'm concerned. Extra tests would waste time."
+ESDSA-EVAL-0003,C1,POSITIVE_EVIDENCE,EXACT_MATCH,"I'd reproduce the issue, compare failing and working cases, and inspect the logs to isolate the cause."
+ESDSA-EVAL-0003,C2,POSITIVE_EVIDENCE,EXACT_MATCH,"I'd reproduce the issue, compare failing and working cases, and inspect the logs to isolate the cause."
+ESDSA-EVAL-0003,C3,POSITIVE_EVIDENCE,EXACT_MATCH,"Then I'd correct the responsible code, rerun a test covering the failure, and check for regressions."
+ESDSA-EVAL-0003,C4,POSITIVE_EVIDENCE,EXACT_MATCH,"Then I'd correct the responsible code, rerun a test covering the failure, and check for regressions."
+ESDSA-EVAL-0004,C1,INSUFFICIENT_EVIDENCE,OUTER_QUOTES_ONLY,"""I'd investigate what happened"""
+ESDSA-EVAL-0004,C2,INSUFFICIENT_EVIDENCE,EMPTY_EXCERPT,
+ESDSA-EVAL-0004,C3,INSUFFICIENT_EVIDENCE,OUTER_QUOTES_ONLY,"""work out a solution"""
+ESDSA-EVAL-0004,C4,INSUFFICIENT_EVIDENCE,OUTER_QUOTES_ONLY,"""make sure everything was working properly afterwards"""
+ESDSA-EVAL-0005,C1,POSITIVE_EVIDENCE,EXACT_MATCH,I'd reproduce the error
+ESDSA-EVAL-0005,C2,POSITIVE_EVIDENCE,EXACT_MATCH,compare the affected cases and inspect the logs
+ESDSA-EVAL-0005,C3,POSITIVE_EVIDENCE,EXACT_MATCH,I'd correct the responsible code
+ESDSA-EVAL-0005,C4,NEGATIVE_EVIDENCE,EXACT_MATCH,I wouldn't run additional tests before releasing because the fix should be straightforward.
+ESDSA-EVAL-0006,C1,POSITIVE_EVIDENCE,EXACT_MATCH,"I'd start by reproducing it. Compare affected and working cases, look through logs and recent changes to find where the logic goes wrong."
+ESDSA-EVAL-0006,C2,POSITIVE_EVIDENCE,EXACT_MATCH,"Compare affected and working cases, look through logs and recent changes"
+ESDSA-EVAL-0006,C3,POSITIVE_EVIDENCE,EXACT_MATCH,"look through logs and recent changes to find where the logic goes wrong. Make a test showing the failure, fix the code causing it"
+ESDSA-EVAL-0006,C4,POSITIVE_EVIDENCE,EXACT_MATCH,"Make a test showing the failure, fix the code causing it, then rerun that test and check related regression tests before deployment."
+ESDSA-EVAL-0007,C1,POSITIVE_EVIDENCE,EXACT_MATCH,"First I'd try to get the same error happening again. Then I'd compare affected users with those who aren't having the issue, check logs and recent changes, and work out which bit of logic caused it."
+ESDSA-EVAL-0007,C2,POSITIVE_EVIDENCE,EXACT_MATCH,"Then I'd compare affected users with those who aren't having the issue, check logs and recent changes"
+ESDSA-EVAL-0007,C3,POSITIVE_EVIDENCE,EXACT_MATCH,"work out which bit of logic caused it. I'd write a test for that failure, fix the responsible code"
+ESDSA-EVAL-0007,C4,POSITIVE_EVIDENCE,EXACT_MATCH,"I'd write a test for that failure, fix the responsible code, rerun the test, and check the other relevant tests before shipping."
+ESDSA-EVAL-0008,C1,NEGATIVE_EVIDENCE,EXACT_MATCH,I wouldn't bother reproducing the error or looking through logs.
+ESDSA-EVAL-0008,C2,NEGATIVE_EVIDENCE,EXACT_MATCH,I wouldn't bother reproducing the error or looking through logs.
+ESDSA-EVAL-0008,C3,NEGATIVE_EVIDENCE,EXACT_MATCH,I'd probably just edit the code that seems wrong and ship it.
+ESDSA-EVAL-0008,C4,NEGATIVE_EVIDENCE,EXACT_MATCH,"If no one reports another problem, I'd take that as proof it worked. More tests would only slow me down."
+ESDSA-EVAL-0009,C1,INSUFFICIENT_EVIDENCE,OUTER_QUOTES_ONLY,"""I'd check the issue, find a way to fix it, and confirm it was working again."""
+ESDSA-EVAL-0009,C2,INSUFFICIENT_EVIDENCE,EMPTY_EXCERPT,
+ESDSA-EVAL-0009,C3,INSUFFICIENT_EVIDENCE,OUTER_QUOTES_ONLY,"""I'd check the issue, find a way to fix it"""
+ESDSA-EVAL-0009,C4,INSUFFICIENT_EVIDENCE,OUTER_QUOTES_ONLY,"""confirm it was working again."""
+ESDSA-EVAL-0010,C1,POSITIVE_EVIDENCE,OUTER_QUOTES_ONLY,"""I'd reproduce the problem, compare affected and unaffected cases"""
+ESDSA-EVAL-0010,C2,POSITIVE_EVIDENCE,OUTER_QUOTES_ONLY,"""examine the logs and recent changes"""
+ESDSA-EVAL-0010,C3,POSITIVE_EVIDENCE,OUTER_QUOTES_ONLY,"""Once I'd found the faulty logic, I'd correct it."""
+ESDSA-EVAL-0010,C4,INSUFFICIENT_EVIDENCE,EMPTY_EXCERPT,
+ESDSA-EVAL-0011,C1,INSUFFICIENT_EVIDENCE,OUTER_QUOTES_ONLY,"""Well, first I'd look into what went wrong."""
+ESDSA-EVAL-0011,C2,INSUFFICIENT_EVIDENCE,EMPTY_EXCERPT,
+ESDSA-EVAL-0011,C3,INSUFFICIENT_EVIDENCE,OUTER_QUOTES_ONLY,"""Then I'd figure out how to sort it out"""
+ESDSA-EVAL-0011,C4,INSUFFICIENT_EVIDENCE,OUTER_QUOTES_ONLY,"""and make sure things were fine after that."""
+ESDSA-EVAL-0012,C1,NEGATIVE_EVIDENCE,EXACT_MATCH,I wouldn't spend time reproducing the original problem
+ESDSA-EVAL-0012,C2,NEGATIVE_EVIDENCE,EXACT_MATCH,I wouldn't spend time reproducing the original problem or checking logs.
+ESDSA-EVAL-0012,C3,NEGATIVE_EVIDENCE,EXACT_MATCH,I'd change the part of the code that looked wrong and deploy the update.
+ESDSA-EVAL-0012,C4,NEGATIVE_EVIDENCE,EXACT_MATCH,"If nobody complained afterwards, I'd assume the fix had worked. Running extra tests would probably slow things down."

@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-5DD3738C28379BF6",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0e38e14866375d91016b002aa0723087d08411ec16e56acd7f",
+  "annotated_utc": "2026-11-20T11:10:27.029564+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "SWE01-C1",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "passage": "",
+        "rationale": "The answer mentions reviewing a screenshot, timestamp, logs, and changes around the time, but it does not establish a way to reproduce or clearly characterise the failure itself."
+      },
+      {
+        "criterion_id": "SWE01-C2",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "passage": "",
+        "rationale": "The candidate does not describe comparing the failing search behaviour against working behaviour or any direct contrast between conditions when results do and do not appear."
+      },
+      {
+        "criterion_id": "SWE01-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d review the screenshot, timestamp, logs, and any deploys or config changes around that time, then hand over the most likely area if I can’t finish.",
+        "rationale": "This shows a systematic investigation using available observations and change history to narrow down the most likely area causing the issue."
+      }
+    ],
+    "annotation_notes": "The response is brief and focuses on investigation inputs and handoff. It supports narrowing causes, but does not explicitly show reproduction or comparison with working behaviour."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

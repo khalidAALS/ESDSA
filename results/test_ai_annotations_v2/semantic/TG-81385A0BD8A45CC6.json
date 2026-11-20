@@ -1,0 +1,18 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "SEMANTIC_EQUIVALENCE",
+  "blinded_id": "TG-81385A0BD8A45CC6",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_07067acec6de8692016b002afdb37887d0b8b7c9bf51532993",
+  "annotated_utc": "2026-11-20T11:12:00.560808+00:00",
+  "annotation": {
+    "semantic_equivalence": "NO",
+    "material_differences": "Response B adds a stronger claim about fitting the equipment/staffing issues around the report and explicitly says it would catch up if the launch slips, while A says the launch can absorb a bit of delay and C does not mention this contingency. More importantly, A and B both reference staffing as part of the prioritisation, but C omits staffing entirely. That omission could affect evidence for identifying dependencies/impact under OPS01-C1 and for trade-off reasoning under OPS01-C2.",
+    "equivalence_rationale": "All three responses prioritize the report first and would only reorder if the equipment check were critical, so they share the broad shape of the decision. However, the differences are decision-relevant: B introduces an operational stance about absorbing or catching up after launch slips, and C drops the staffing issue altogether. Because the scenario includes thinner-than-expected staff coverage, omitting it changes the evidence for whether the response recognizes all relevant urgency, impact, and dependency factors, so the versions are not semantically equivalent for scoring this competency."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-974258BC364427B3",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_06043ce4b7e24ab4016b00109f55a487d0985497970a58605a",
+  "annotated_utc": "2026-11-20T09:19:29.288172+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "CSS04-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d apologise and say I’ll investigate, then contact them only when I have the full answer.",
+        "rationale": "This clearly explains the next communication step in understandable terms: apologise, investigate, and then update the customer."
+      },
+      {
+        "criterion_id": "CSS04-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I wouldn’t set a specific follow-up until I know the outcome.",
+        "rationale": "This shows restrained expectation management by avoiding a specific follow-up promise before the outcome is known."
+      },
+      {
+        "criterion_id": "CSS04-C3",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "passage": "",
+        "rationale": "The answer indicates the customer will be contacted later, but it does not establish a concrete mechanism for ongoing status updates, confirmation, or a structured follow-up arrangement."
+      }
+    ],
+    "annotation_notes": "The response is concise and shows apology plus cautious expectation-setting, but it does not specify how follow-up will be organized beyond a future contact."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

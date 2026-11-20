@@ -1,0 +1,18 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "SEMANTIC_EQUIVALENCE",
+  "blinded_id": "TG-28955AEAA61C98AD",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_09e2794085b6c189016b0029c37f6887d095b4456bd6437a52",
+  "annotated_utc": "2026-11-20T11:06:46.769032+00:00",
+  "annotation": {
+    "semantic_equivalence": "NO",
+    "material_differences": "Response C adds an explicit assumption that the administrator’s account is authoritative and that the best approach is to reverse the change to test whether it fixes the complaint; A and B are more general about taking the admin’s version and restoring access, but do not state the same testing/reversal rationale. More importantly, all three responses fail the interview criteria by focusing on restoring access rather than identifying and defining the underlying support issue, so the evidence is not preserved in a decision-relevant way across versions.",
+    "equivalence_rationale": "The responses are directionally similar in that they all prioritize the administrator’s account and immediate restoration of access. However, they do not preserve the same criterion-level evidence for problem identification: none of them actually explains how to establish the customer’s problem, affected service/outcome, or a pre-resolution problem definition. Instead, they jump to a remedial action. Because the added details in C shift the operational commitment toward an explicit reversal/test approach, and the shared omission of issue-definition evidence is material under all three criteria, the versions are not semantically equivalent for this assessment."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

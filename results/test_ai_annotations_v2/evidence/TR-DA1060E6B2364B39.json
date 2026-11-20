@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-DA1060E6B2364B39",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_01345164d0dc797e016b0029cc93a487d0ba8e418c9a883e9e",
+  "annotated_utc": "2026-11-20T11:06:54.577386+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "CSS01-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d ask what they expected to see, what’s showing now, and review the recent booking changes to understand whether the appointment itself or just the confirmation is affected.",
+        "rationale": "The candidate explicitly describes asking questions and reviewing changes to establish what problem the customer is experiencing."
+      },
+      {
+        "criterion_id": "CSS01-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "to understand whether the appointment itself or just the confirmation is affected.",
+        "rationale": "This directly identifies the affected service/outcome by distinguishing whether the appointment or the confirmation is impacted."
+      },
+      {
+        "criterion_id": "CSS01-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "Then I’d confirm the issue before choosing a fix.",
+        "rationale": "The candidate states they would confirm and define the issue before selecting a resolution, which demonstrates summarising the problem first."
+      }
+    ],
+    "annotation_notes": ""
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

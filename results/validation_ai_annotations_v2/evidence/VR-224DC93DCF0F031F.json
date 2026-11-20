@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-224DC93DCF0F031F",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_073dbae230ce5fea016b000c7e0c8887d091b634792e173c5f",
+  "annotated_utc": "2026-11-20T09:01:52.268728+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "SWE01-C1",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I’d probably prioritize a rollback or patch plan before doing a lot of reproduction work",
+        "rationale": "The candidate explicitly deprioritizes reproduction work in favor of rollback/patching, which materially contradicts the criterion of establishing how to reproduce or characterise the failure."
+      },
+      {
+        "criterion_id": "SWE01-C2",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "passage": "",
+        "rationale": "The answer mentions symptoms and logs, but does not clearly compare failing conditions against working behaviour or describe checking what differs when things work versus fail."
+      },
+      {
+        "criterion_id": "SWE01-C3",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "passage": "",
+        "rationale": "The candidate suggests blaming the release and having teams inspect their diffs, but does not clearly show a systematic narrowing process based on observations to progressively reduce the set of plausible causes."
+      }
+    ],
+    "annotation_notes": "The response is action-oriented but mostly jump-starts mitigation. It provides limited diagnostic detail, so only the explicit de-prioritization of reproduction rises to negative evidence."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-3B71F21FD22DE270",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0b4700defae21487016b000ca0a31487d0a8aa9741ded12ca8",
+  "annotated_utc": "2026-11-20T09:02:27.467024+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "SWE02-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d mostly look at the external service first, because if the job is late sometimes, that usually means the dependency was having a bad day. I’d check the status page and any incident notes",
+        "rationale": "The candidate identifies relevant technical evidence sources for the investigation, specifically the external service status page and incident notes."
+      },
+      {
+        "criterion_id": "SWE02-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d check the status page and any incident notes, and if there was an outage or slowdown, I’d take that as the explanation.",
+        "rationale": "The candidate proposes a check for outage or slowdown in the dependency, which distinguishes one possible cause (external dependency issues) from others."
+      },
+      {
+        "criterion_id": "SWE02-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "if there was an outage or slowdown, I’d take that as the explanation.",
+        "rationale": "The candidate explicitly connects the observation of an outage or slowdown to a diagnostic conclusion about the delay's cause."
+      }
+    ],
+    "annotation_notes": "The answer is narrowly focused on the external dependency and does not investigate data or code, but it still provides enough evidence for the listed criteria because it names technical sources, proposes a discriminating check, and interprets the result diagnostically."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

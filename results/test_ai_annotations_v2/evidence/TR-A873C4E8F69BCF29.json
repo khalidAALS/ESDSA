@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-A873C4E8F69BCF29",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0b6df0c3b41d6030016b002bcd301c87d09914fe2cb3183609",
+  "annotated_utc": "2026-11-20T11:15:27.287804+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "OPS04-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d compare the task plan with the inspection notes and keep monitoring for any extra signs of a problem.",
+        "rationale": "The candidate identifies specific information to monitor execution: the task plan, inspection notes, and additional signs of a problem. This directly addresses what information is needed to track the situation."
+      },
+      {
+        "criterion_id": "OPS04-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "If the issue looks like it’s getting worse or more evidence comes in, I’d raise it with the supervisor for the next step.",
+        "rationale": "The candidate recognizes a trigger for action: worsening conditions or additional evidence. This shows awareness of when deviation requires intervention."
+      },
+      {
+        "criterion_id": "OPS04-C3",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "passage": "",
+        "rationale": "The answer mentions raising the issue with a supervisor, but it does not clearly show directing the issue to the appropriate owner and verifying the response or follow-through after escalation."
+      }
+    ],
+    "annotation_notes": ""
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

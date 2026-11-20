@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-AD7C69C72A4FA01E",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_09b69966d888d5ac016b000eb49ed487d080709a5a2d596d8f",
+  "annotated_utc": "2026-11-20T09:11:18.149965+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "CSS02-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "ask the customer to find emails, screenshots, or bank records for the exact date.",
+        "rationale": "The candidate requests specific additional information that would help determine whether the cancellation occurred and when, which is directly relevant to understanding the issue."
+      },
+      {
+        "criterion_id": "CSS02-C2",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I’d use the payment history as the main proof",
+        "rationale": "This indicates the candidate intends to treat payment history as decisive proof without first distinguishing it from other evidence or acknowledging uncertainty, which fails to clearly separate confirmed facts from assumptions in this scenario."
+      },
+      {
+        "criterion_id": "CSS02-C3",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "passage": "",
+        "rationale": "The answer mentions asking for supporting records, but it does not establish whether the collection is appropriate and authorised in context. There is not enough information to judge proportionality or authorization one way or the other."
+      }
+    ],
+    "annotation_notes": "Assessment is limited to the supplied answer. The response shows targeted information gathering, but only limited evidence about verification discipline and no clear basis for proportionality/authorization."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

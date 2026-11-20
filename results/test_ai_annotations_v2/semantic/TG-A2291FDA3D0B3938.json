@@ -1,0 +1,18 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "SEMANTIC_EQUIVALENCE",
+  "blinded_id": "TG-A2291FDA3D0B3938",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0f8bf376454e0edd016b002b67cc9887d08498976d0c384373",
+  "annotated_utc": "2026-11-20T11:13:46.242655+00:00",
+  "annotation": {
+    "semantic_equivalence": "NO",
+    "material_differences": "Response B adds an explicit commitment to track the case properly, but more importantly all three responses omit the key constraint handling in the scenario: they do not mention authorisation for expedited replacement, disputed original shipment status, or the need to escalate/seek additional information when those constraints block an immediate replacement. Because the question and criteria hinge on policy awareness and uncertainty handling, this omission is material.",
+    "equivalence_rationale": "A, B, and C are similar in general customer-service intent, but they do not preserve the same decision-relevant evidence. The scenario explicitly requires balancing urgency against limited stock, disputed shipment status, and required authorisation. None of the responses directly shows respect for authorisation constraints or recognition that escalation/extra information may be needed before promising an expedited replacement. Since those are central to criteria C2 and C3, the shared content is not equivalent in the evidence it provides."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

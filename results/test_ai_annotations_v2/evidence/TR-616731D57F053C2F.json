@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-616731D57F053C2F",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0f3475c8a4873160016b002a54fca887d09cc66900e101a662",
+  "annotated_utc": "2026-11-20T11:09:11.561918+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "OPS04-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d first verify the facts against the overnight plan: what was scheduled, what time it was meant to be finished, any sign-off from the contractor, and whether there were any issues noted during the work.",
+        "rationale": "The candidate explicitly identifies multiple pieces of information needed to monitor execution, including the plan, timing, sign-off, and issues noted during work."
+      },
+      {
+        "criterion_id": "OPS04-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "If the missing record and the inspection together suggest there’s a real risk to operations, I wouldn’t treat the contractor’s verbal completion as enough.",
+        "rationale": "This shows recognition that the deviation and inspection findings can trigger action, and that verbal completion alone is insufficient when risk is present."
+      },
+      {
+        "criterion_id": "OPS04-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d contact the contractor immediately to confirm what was done, ask for evidence or a re-check if needed, and update the relevant operations lead so they know there may be a gap before start-up. I’d then stay with it until I had a clear response and knew whether the area was safe to open or whether we needed a hold, extra cleaning, or a formal escalation.",
+        "rationale": "The candidate directs the issue to the contractor and operations lead, and states they would follow through until receiving a clear response and determining next steps."
+      }
+    ],
+    "annotation_notes": ""
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

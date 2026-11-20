@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-C0B6FCE54685651C",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_09acd158b7cd6a6c016b000c8dc6b087d0bb77182faa82bf28",
+  "annotated_utc": "2026-11-20T09:02:07.941488+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "CSS01-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d ask them to describe what happened at checkout and check the address on the account.",
+        "rationale": "This explicitly shows the candidate would elicit details to clarify what happened and identify the nature of the issue."
+      },
+      {
+        "criterion_id": "CSS01-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "If the order is there, I’d focus on the confirmation and address details.",
+        "rationale": "This identifies the affected outcomes/services: the order confirmation and the delivery address on the account."
+      },
+      {
+        "criterion_id": "CSS01-C3",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "passage": "",
+        "rationale": "The answer indicates checking details first, but it does not explicitly summarise the problem before choosing a resolution or clearly state a concise problem definition."
+      }
+    ],
+    "annotation_notes": "The response shows basic clarification and impact checking, but does not clearly articulate a final problem statement."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

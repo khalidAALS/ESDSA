@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-61892D727693A035",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0f69274101c7fac3016b002a3cd32887d0a4175ce8eec28a85",
+  "annotated_utc": "2026-11-20T11:08:47.296578+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "OPS01-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d look at urgency and launch impact first. If the equipment check is blocking the launch",
+        "rationale": "The answer explicitly cites urgency and launch impact, and mentions the equipment check as a blocking dependency, which are relevant priority criteria."
+      },
+      {
+        "criterion_id": "OPS01-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "If the equipment check is blocking the launch, it goes ahead of the report, and I’d also check whether staffing needs a quick reshuffle. The report is the most movable item.",
+        "rationale": "This gives a clear trade-off: the launch-blocking equipment check is prioritized over the report, and staffing is considered as part of the decision, showing evidence-based prioritisation."
+      },
+      {
+        "criterion_id": "OPS01-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d revisit the order once I know more about the equipment and coverage.",
+        "rationale": "The candidate explicitly says they would revisit the order when more information about equipment and staffing coverage becomes available, which demonstrates reassessing priorities when conditions change."
+      }
+    ],
+    "annotation_notes": "The response is concise but contains explicit prioritisation logic and a clear trigger for reprioritisation."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

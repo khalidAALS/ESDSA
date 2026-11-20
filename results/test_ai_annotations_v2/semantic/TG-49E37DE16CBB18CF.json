@@ -1,0 +1,18 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "SEMANTIC_EQUIVALENCE",
+  "blinded_id": "TG-49E37DE16CBB18CF",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0e6d8ab6769fd86b016b002a2d3af887d09752c3c15f18f60e",
+  "annotated_utc": "2026-11-20T11:08:30.909202+00:00",
+  "annotation": {
+    "semantic_equivalence": "YES",
+    "material_differences": "",
+    "equivalence_rationale": "All three responses preserve the same decision-relevant evidence for the three criteria: they describe reproducing the issue on affected vs unaffected setups, comparing failing behavior with working behavior and API/browser conditions, and using those observations to narrow between client caching and service-side causes. Response B is more detailed and mentions extra logging/instrumentation, but that does not change the core diagnostic commitments. Responses A, B, and C all support the same criterion-level assessment."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

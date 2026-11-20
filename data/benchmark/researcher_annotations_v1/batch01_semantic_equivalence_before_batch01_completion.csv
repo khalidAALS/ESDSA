@@ -1,0 +1,5 @@
+review_group,competency,same_material_evidence,material_differences,researcher_explanation,assessment_status
+GROUP-001,Technical investigation,YES,"Differences in detail, length and phrasing; no identified change to the material competency evidence.",AI-assisted provisional judgment. All three responses identify relevant technical sources but prioritise confirming an assumed deployment-related explanation over examining competing causes.,AI_ASSISTED_PROVISIONAL
+GROUP-002,Problem identification,YES,"Differences in wording and detail, without identified substantive evidence changes.","AI-assisted provisional comparison: all three responses demonstrate clarification, impact identification and problem confirmation.",AI_ASSISTED_PROVISIONAL
+GROUP-003,Evidence-based coordination,,,,PENDING
+GROUP-004,Resolution judgment,,,,PENDING

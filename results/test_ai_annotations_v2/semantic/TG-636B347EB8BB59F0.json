@@ -1,0 +1,18 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "SEMANTIC_EQUIVALENCE",
+  "blinded_id": "TG-636B347EB8BB59F0",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_06e8eded2d945a7c016b002a6e61e487d0b12d11465151d93f",
+  "annotated_utc": "2026-11-20T11:09:37.162143+00:00",
+  "annotation": {
+    "semantic_equivalence": "NO",
+    "material_differences": "Response C adds a more definitive operational stance: it would close the ticket again unless the customer can show a new error, and it says to keep trying a few more times. That is a different follow-up/confirmation mechanism and a stronger assumption about the fix than A/B, which simply ask the customer to try again and reopen/submit a new ticket if it still fails, with no explicit re-closure or extra retry condition. C also introduces a stronger expectation-management claim that the original fix can be assumed to have failed if it still does not work after multiple tries.",
+    "equivalence_rationale": "A and B are materially aligned: both communicate that the issue should be fixed, ask the customer to retry, and route them to a new ticket or issue report if it still fails, without promising additional follow-up. C differs in a way that could affect all three criteria, especially follow-up and expectation management, because it adds repeated retry instructions, a decision to close the ticket again, and an assumption about diagnosing the fix based on continued failure. Those are operational commitments not preserved in A/B."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

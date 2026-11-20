@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-D5F30890612CAF18",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_090299c45e16d7e3016b002ace819c87d089881718e0d4b492",
+  "annotated_utc": "2026-11-20T11:11:12.319867+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "SWE02-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d first go back to the queue stats, worker logs, traces, and any recent deploy or config changes.",
+        "rationale": "This explicitly identifies multiple technical sources of evidence relevant to investigating the unresolved delay."
+      },
+      {
+        "criterion_id": "SWE02-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d want to see what was happening when the spikes show up and whether there are errors, retries, or timeouts that explain why the backlog is still growing.",
+        "rationale": "This proposes concrete checks that would distinguish among candidate causes such as transient spikes, error/retry behavior, and timeout-related backlog growth."
+      },
+      {
+        "criterion_id": "SWE02-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d compare that against the worker behavior so I can tell whether the extra capacity is being used or whether the slowdown is happening somewhere else. That should narrow the list of causes before I try another fix.",
+        "rationale": "This connects observations to a diagnostic conclusion by using the comparison to infer whether the issue is in worker capacity or elsewhere and says the observations will narrow the causes."
+      }
+    ],
+    "annotation_notes": "The answer is concise but clearly describes evidence gathering, differentiating tests, and how observations would inform diagnosis."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

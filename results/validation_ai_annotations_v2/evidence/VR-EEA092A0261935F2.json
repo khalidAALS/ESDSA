@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-EEA092A0261935F2",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0672bf784888be77016b000c34d48487d0b292c7172e726505",
+  "annotated_utc": "2026-11-20T09:00:38.883540+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "SWE04-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d make sure the main approval scenario is covered",
+        "rationale": "This explicitly states verifying the specific approval path affected by the change, which is targeted verification of the reported failure area."
+      },
+      {
+        "criterion_id": "SWE04-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d also check the surrounding tests and coverage to see that the update isn’t totally isolated.",
+        "rationale": "This shows consideration of surrounding tests and coverage, indicating awareness of possible impact on existing behaviour beyond the changed logic."
+      },
+      {
+        "criterion_id": "SWE04-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "If that all looks solid, I’d be inclined to move it forward",
+        "rationale": "This uses the verification results to decide the next step, namely proceeding with deployment if the checks are satisfactory."
+      }
+    ],
+    "annotation_notes": "The answer is brief but does address all three criteria at a high level."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

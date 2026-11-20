@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-90232C757180048D",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0f730df1fa40d854016b002c09a86c87d084adaff2dc9e3366",
+  "annotated_utc": "2026-11-20T11:16:27.926271+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "SWE03-C1",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I’d assume the messaging system is at fault",
+        "rationale": "The candidate identifies a cause, but does so by assuming fault from one source rather than by investigation-supported reasoning. This is materially weaker than identifying a plausible cause supported by investigation."
+      },
+      {
+        "criterion_id": "SWE03-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d assume the messaging system is at fault and immediately patch the broker configuration to suppress duplicates.",
+        "rationale": "The candidate explicitly links the proposed correction (patching the broker configuration) to the identified cause (the messaging system being at fault)."
+      },
+      {
+        "criterion_id": "SWE03-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "Since the deliveries are repeating, changing the broker settings should be enough to stop the extra confirmations",
+        "rationale": "The candidate explains why the correction addresses the problem: changing broker settings is expected to stop the repeated deliveries and thus the extra confirmations."
+      }
+    ],
+    "annotation_notes": "The answer shows a direct correction-to-cause link and a brief justification, but it does not demonstrate investigation-based cause identification; instead it jumps to a conclusion from incomplete evidence."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

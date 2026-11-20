@@ -1,0 +1,20 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "SEMANTIC_EQUIVALENCE",
+  "blinded_id": "VG-937299A826E41762",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0bf1e616e78c39c3016b000d48ceb487d0986b048fc2e3a785",
+  "annotated_utc": "2026-11-20T09:05:14.390061+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "semantic_equivalence": "YES",
+    "material_differences": "",
+    "equivalence_rationale": "All three responses preserve the same decision-relevant evidence for systematic diagnosis: they prioritize repro with the newly affected records, compare failing versus successful records/conditions, and use logs/test environment to trace and narrow the fault to a specific export stage. The differences are mostly brevity and phrasing; none adds or omits a material safeguard, assumption, or operational commitment that would likely change assessment under the three criteria."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

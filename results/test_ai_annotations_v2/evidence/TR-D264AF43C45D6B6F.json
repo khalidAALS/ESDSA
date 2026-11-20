@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-D264AF43C45D6B6F",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_06e3829f87b3af9a016b002bffba8087d08978ad7dfcb638ed",
+  "annotated_utc": "2026-11-20T11:16:18.312493+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "OPS01-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d reassess the plan around the most time-sensitive work, check whether the early delivery can be received cleanly, and move less urgent tasks back if needed.",
+        "rationale": "The answer identifies urgency ('most time-sensitive work' and 'less urgent tasks'), impact on the incoming delivery, and a dependency/feasibility check for receiving the delivery cleanly."
+      },
+      {
+        "criterion_id": "OPS01-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d reassess the plan around the most time-sensitive work, check whether the early delivery can be received cleanly, and move less urgent tasks back if needed.",
+        "rationale": "The candidate gives a prioritisation rationale by balancing time-sensitive orders against the need to handle the early delivery and deferring less urgent work, which shows trade-off reasoning."
+      },
+      {
+        "criterion_id": "OPS01-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d reassess the plan around the most time-sensitive work, check whether the early delivery can be received cleanly, and move less urgent tasks back if needed.",
+        "rationale": "The candidate explicitly states they would reassess the plan in response to changed conditions, which demonstrates reprioritisation."
+      }
+    ],
+    "annotation_notes": "The response is concise but clearly addresses the changed circumstances and how priorities would be adjusted."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

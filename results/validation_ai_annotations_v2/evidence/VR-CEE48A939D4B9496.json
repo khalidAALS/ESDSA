@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-CEE48A939D4B9496",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0c7c5506864bac57016b000c40458087d0a149639a8e156d72",
+  "annotated_utc": "2026-11-20T09:00:51.034799+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "SWE02-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d check whether there was any transient infrastructure issue, and if the monitoring still showed everything healthy I’d probably assume the dashboards were lagging behind the real problem.",
+        "rationale": "The candidate uses application logs, infrastructure monitoring, and user reports as technical evidence sources relevant to the failure, which matches the criterion."
+      },
+      {
+        "criterion_id": "SWE02-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d check whether there was any transient infrastructure issue, and if the monitoring still showed everything healthy I’d probably assume the dashboards were lagging behind the real problem.",
+        "rationale": "The candidate proposes a check against transient infrastructure issues and monitoring, which helps distinguish between a real outage and misleading dashboards, showing hypothesis testing."
+      },
+      {
+        "criterion_id": "SWE02-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "The different user reports would mostly tell me how often the connection problem is happening rather than whether it has a different root cause.",
+        "rationale": "The candidate interprets the user reports as frequency information and connects the observed signals to a tentative diagnostic conclusion about a connection problem."
+      }
+    ],
+    "annotation_notes": "The answer is somewhat biased toward a single assumed cause, but it still demonstrates use of multiple evidence sources, differential checks, and interpretation of signals."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

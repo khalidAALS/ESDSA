@@ -1,0 +1,18 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "SEMANTIC_EQUIVALENCE",
+  "blinded_id": "TG-DF4402CB8760128E",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0aff81b469d6f0fb016b002bdb1a8887d09fd8bb371f0393ed",
+  "annotated_utc": "2026-11-20T11:15:41.442256+00:00",
+  "annotation": {
+    "semantic_equivalence": "UNCERTAIN",
+    "material_differences": "Response C adds a specific speculative outcome framework (“taken inside, left elsewhere, or something happened after delivery”) that goes beyond the other responses’ more neutral fact-finding, and it is unclear whether this changes the evidentiary stance under source verification. The other responses are also slightly less explicit about the customer’s side of the story, but they still broadly cover similar information gathering.",
+    "equivalence_rationale": "All three answers gather the core operational facts (order number, address, delivery timing, tracking details, whether someone else may have received the package) and emphasize comparing the customer’s report with the system record, which supports relevant questions and source verification. However, C’s added causal framing could be read as a stronger inference about possible explanations, while the provided context does not clearly show whether that is materially different from A and B’s narrower wording. Because this potential difference in evidentiary stance is not fully resolvable from the text alone, UNCERTAIN is most appropriate."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

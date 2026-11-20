@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-D050FB0330387D07",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0601c6928aeb12bb016b000ce5baa487d0846a3f079c051d88",
+  "annotated_utc": "2026-11-20T09:03:35.948037+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "OPS01-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "how tight the delivery timing is, what the equipment issue actually is, and who or what would be affected if we paused.",
+        "rationale": "The answer explicitly identifies urgency (delivery timing), impact (what would be affected), and a relevant dependency/risk factor (the equipment issue itself) as inputs to prioritisation."
+      },
+      {
+        "criterion_id": "OPS01-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "Then I’d compare the impact of a delay with the impact of stopping work, and decide which one is likely to cause the bigger problem overall.",
+        "rationale": "This directly explains a trade-off between two priorities using comparative impact reasoning to choose the better course of action."
+      },
+      {
+        "criterion_id": "OPS01-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "If things shifted, I’d review the plan again and update the team.",
+        "rationale": "This explicitly states that the candidate would reassess the plan when conditions change, which satisfies reprioritisation."
+      }
+    ],
+    "annotation_notes": "The response is concise but clearly addresses all three criteria with explicit prioritisation logic and a plan to revisit decisions if conditions change."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

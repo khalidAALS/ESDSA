@@ -1,0 +1,75 @@
+{
+  "experiment": "ESDSA_VALIDATION_GENERATION_V1",
+  "partition": "VALIDATION",
+  "family_id": "ESDSA-CSS01-10",
+  "run_sha256": "2516fb15cff81c41eb134e94cce3ca08591ae4fe0f960398c78a3d136d239eef",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "response_id": "resp_01d6fa646b565d2d016aff8fdc0f0087d0a7db89d06e58ce36",
+  "response_status": "completed",
+  "usage": {
+    "input_tokens": 744,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      }
+    },
+    "output_tokens": 933,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 1677
+  },
+  "raw_output_text": "{\"responses\":[{\"condition\":\"SUFFICIENT\",\"variant\":\"CANONICAL\",\"answer\":\"I’d start by not assuming the earlier fix addressed the same root cause. I’d ask the customer to walk me through exactly what happens when the account locks: what they were doing right before it happened, whether it’s happening on login, after a password change, or after some other action, and whether they’re seeing any error messages. Then I’d check the impact by asking what they can’t do while locked out, how often it’s happening, and whether it’s affecting one account, one device, or multiple devices or browsers. I’d also compare the new details with the prior case notes and summarize back what I believe the problem is—something like, “So the issue is repeated lockouts when you try to sign in from X, and it’s blocking access to Y”—before deciding what information is still needed. That way I’m working from the actual current symptom, not just the previous resolution note.\"},{\"condition\":\"SUFFICIENT\",\"variant\":\"CONVERSATIONAL\",\"answer\":\"I’d treat it like a fresh problem first, not just reopen the old fix. I’d ask them to tell me exactly what’s happening when the lockout occurs, when it started again, and what they were doing right before it happened. Then I’d check what it’s stopping them from doing, like whether they can’t sign in at all or only from certain devices, because that tells me how serious and how broad the issue is. After that I’d repeat back my understanding of the issue in plain language to make sure I’ve got it right before moving on. I’d also compare that with the old notes to see what’s changed and what information actually matters now.\"},{\"condition\":\"SUFFICIENT\",\"variant\":\"CONCISE\",\"answer\":\"I’d re-clarify the symptom, ask what happens right before the lockout, and check what it prevents the customer from doing. Then I’d restate the issue back to them to confirm I’m focused on the current problem, and compare that with the prior notes to see what details are relevant now.\"},{\"condition\":\"INSUFFICIENT\",\"variant\":\"CANONICAL\",\"answer\":\"I’d begin by asking the customer to describe what happened this time and whether anything changed since the last support case. I’d also look at the old notes to understand what was already tried, then ask a few follow-up questions about when the lockouts occur and whether they seem tied to a specific device or browser. If needed, I’d then move into checking account settings or authentication history to narrow it down further.\"},{\"condition\":\"INSUFFICIENT\",\"variant\":\"CONVERSATIONAL\",\"answer\":\"I’d ask them to walk me through what happened on this latest lockout and what was different from the last time. I’d also review the previous case notes, then ask a couple of questions about when it happens and whether it’s tied to a certain device or browser. From there I’d narrow down what we need to check next.\"},{\"condition\":\"INSUFFICIENT\",\"variant\":\"CONCISE\",\"answer\":\"I’d ask what happened this time, review the prior notes, and ask when the lockouts occur and whether they’re tied to a device or browser. That would help me narrow down what to check next.\"},{\"condition\":\"NEGATIVE\",\"variant\":\"CANONICAL\",\"answer\":\"If the case notes say it was fixed, I’d usually start from that resolution and apply it again so we can get the customer back in quickly. I’d ask the customer to try the same steps we used before, and if they still have trouble I’d move on to resetting credentials or reapplying the previous workaround. I wouldn’t spend much time re-litigating the symptom unless the fix clearly fails again, because the main goal is restoring access as fast as possible.\"},{\"condition\":\"NEGATIVE\",\"variant\":\"CONVERSATIONAL\",\"answer\":\"I’d probably lean on the old case and use the same fix again first, since the notes show it already worked. I’d have them repeat the previous steps or do another reset, and only dig deeper if that doesn’t solve it. I’m mainly trying to get them unblocked quickly instead of spending too long rechecking the whole problem.\"},{\"condition\":\"NEGATIVE\",\"variant\":\"CONCISE\",\"answer\":\"I’d try the previous fix again first and only dig deeper if it fails, since the notes show it already worked. If needed, I’d move straight to a reset or the old workaround.\"}]}",
+  "responses": [
+    {
+      "condition": "SUFFICIENT",
+      "variant": "CANONICAL",
+      "answer": "I’d start by not assuming the earlier fix addressed the same root cause. I’d ask the customer to walk me through exactly what happens when the account locks: what they were doing right before it happened, whether it’s happening on login, after a password change, or after some other action, and whether they’re seeing any error messages. Then I’d check the impact by asking what they can’t do while locked out, how often it’s happening, and whether it’s affecting one account, one device, or multiple devices or browsers. I’d also compare the new details with the prior case notes and summarize back what I believe the problem is—something like, “So the issue is repeated lockouts when you try to sign in from X, and it’s blocking access to Y”—before deciding what information is still needed. That way I’m working from the actual current symptom, not just the previous resolution note."
+    },
+    {
+      "condition": "SUFFICIENT",
+      "variant": "CONVERSATIONAL",
+      "answer": "I’d treat it like a fresh problem first, not just reopen the old fix. I’d ask them to tell me exactly what’s happening when the lockout occurs, when it started again, and what they were doing right before it happened. Then I’d check what it’s stopping them from doing, like whether they can’t sign in at all or only from certain devices, because that tells me how serious and how broad the issue is. After that I’d repeat back my understanding of the issue in plain language to make sure I’ve got it right before moving on. I’d also compare that with the old notes to see what’s changed and what information actually matters now."
+    },
+    {
+      "condition": "SUFFICIENT",
+      "variant": "CONCISE",
+      "answer": "I’d re-clarify the symptom, ask what happens right before the lockout, and check what it prevents the customer from doing. Then I’d restate the issue back to them to confirm I’m focused on the current problem, and compare that with the prior notes to see what details are relevant now."
+    },
+    {
+      "condition": "INSUFFICIENT",
+      "variant": "CANONICAL",
+      "answer": "I’d begin by asking the customer to describe what happened this time and whether anything changed since the last support case. I’d also look at the old notes to understand what was already tried, then ask a few follow-up questions about when the lockouts occur and whether they seem tied to a specific device or browser. If needed, I’d then move into checking account settings or authentication history to narrow it down further."
+    },
+    {
+      "condition": "INSUFFICIENT",
+      "variant": "CONVERSATIONAL",
+      "answer": "I’d ask them to walk me through what happened on this latest lockout and what was different from the last time. I’d also review the previous case notes, then ask a couple of questions about when it happens and whether it’s tied to a certain device or browser. From there I’d narrow down what we need to check next."
+    },
+    {
+      "condition": "INSUFFICIENT",
+      "variant": "CONCISE",
+      "answer": "I’d ask what happened this time, review the prior notes, and ask when the lockouts occur and whether they’re tied to a device or browser. That would help me narrow down what to check next."
+    },
+    {
+      "condition": "NEGATIVE",
+      "variant": "CANONICAL",
+      "answer": "If the case notes say it was fixed, I’d usually start from that resolution and apply it again so we can get the customer back in quickly. I’d ask the customer to try the same steps we used before, and if they still have trouble I’d move on to resetting credentials or reapplying the previous workaround. I wouldn’t spend much time re-litigating the symptom unless the fix clearly fails again, because the main goal is restoring access as fast as possible."
+    },
+    {
+      "condition": "NEGATIVE",
+      "variant": "CONVERSATIONAL",
+      "answer": "I’d probably lean on the old case and use the same fix again first, since the notes show it already worked. I’d have them repeat the previous steps or do another reset, and only dig deeper if that doesn’t solve it. I’m mainly trying to get them unblocked quickly instead of spending too long rechecking the whole problem."
+    },
+    {
+      "condition": "NEGATIVE",
+      "variant": "CONCISE",
+      "answer": "I’d try the previous fix again first and only dig deeper if it fails, since the notes show it already worked. If needed, I’d move straight to a reset or the old workaround."
+    }
+  ],
+  "validation_status": "STRUCTURE_PASSED"
+}

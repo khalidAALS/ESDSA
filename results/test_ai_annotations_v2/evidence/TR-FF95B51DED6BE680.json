@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-FF95B51DED6BE680",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_06eda9c14e41212f016b002b332e7487d0ba709e3681a500fc",
+  "annotated_utc": "2026-11-20T11:12:53.807797+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "OPS04-C1",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I’d mostly go with the site manager’s update and keep the next shift moving on the original plan unless the contractor comes back with something definite.",
+        "rationale": "This shows reliance on one update and continuation of the original plan, but it does not identify the information needed to monitor execution. It instead minimizes the need to track conflicting progress signals."
+      },
+      {
+        "criterion_id": "OPS04-C2",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "A parts shortage can sort itself out, so I wouldn’t jump into escalation too early or pull in extra people unless the repair actually misses its deadline.",
+        "rationale": "This explicitly delays action until after the deadline is missed, which shows failure to recognize an earlier deviation as requiring action."
+      },
+      {
+        "criterion_id": "OPS04-C3",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "If it does become a real miss, I’d deal with the follow-up then.",
+        "rationale": "This postpones escalation and follow-through until after the miss occurs, and does not direct the issue to an appropriate owner or verify response."
+      }
+    ],
+    "annotation_notes": "The answer consistently defers monitoring and escalation, relying on the original schedule and waiting for an actual deadline miss rather than actively managing conflicting reports."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

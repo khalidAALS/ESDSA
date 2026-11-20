@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-2457F1FD9A769B4A",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0ffb2ce95027f490016b000c28c62887d0811120ceaa1f24c1",
+  "annotated_utc": "2026-11-20T09:00:26.252027+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "CSS04-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d tell them I understand why they want a firm date, but we’re still waiting on the technical team to confirm what’s causing it and when it can be fixed.",
+        "rationale": "The candidate clearly explains the situation in understandable terms, including why a firm date cannot yet be given."
+      },
+      {
+        "criterion_id": "CSS04-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I wouldn’t want to promise something I can’t back up.",
+        "rationale": "This explicitly avoids unsupported promises and communicates only what is currently justified by the available information."
+      },
+      {
+        "criterion_id": "CSS04-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d let them know I’m continuing to track it and will update them when I have confirmed information. I’d keep the case open and make sure it stays with the team until there’s more to share.",
+        "rationale": "The candidate proposes an ongoing follow-up mechanism through continued tracking, updates upon confirmation, and keeping the case open with the team."
+      }
+    ],
+    "annotation_notes": ""
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

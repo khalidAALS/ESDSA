@@ -1,0 +1,63 @@
+{
+  "experiment": "ESDSA_TEST_GENERATION_V1",
+  "partition": "TEST",
+  "family_id": "ESDSA-SWE04-08",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_042782fe16f9227f016b00228e6fa087d086de56f8b06c50b1",
+  "timestamp_utc": "2026-11-20T10:36:04.239045+00:00",
+  "run_sha256": "1e1247181c59d9177acb8297d8eda0e163dd62fdd20d79bf7e4711e4cb855fc8",
+  "scenario_sha256": "9d2280d8014612bdd263f5dd8daf8356efeac3fa7a7e4b0cd3c6f4fef932426a",
+  "rubric_sha256": "ec05368cf5951f9a58d56b8f95800beb5658ffc78020363aafd893a1b8a2e2ff",
+  "responses": [
+    {
+      "condition": "SUFFICIENT",
+      "variant": "CANONICAL",
+      "answer": "I would treat that as a partial pass, not an automatic release. First I’d rerun the original failing export case to confirm the fix really addresses the reported issue. Then I’d check adjacent and older export formats, because a change in one path can easily affect serialization or compatibility elsewhere. Since the older format now differs unexpectedly, I’d stop and investigate that regression before releasing. I’d compare the old and new outputs, trace the code path that handles that format, and determine whether the difference is intended or introduced by the fix. If it’s an unintended change, I’d revise the fix and add regression coverage for both the original failure and the older format before approving release. If the output change turns out to be expected and documented, I’d still confirm that it’s acceptable and update the release notes accordingly."
+    },
+    {
+      "condition": "SUFFICIENT",
+      "variant": "CONVERSATIONAL",
+      "answer": "I’d say it’s not release-ready yet. I’d first rerun the exact report export that was failing to make sure the fix actually solved that problem. Then I’d run related checks around the older export formats, since that’s where the new difference showed up. Because we’ve got an unexpected change there, I’d dig into it before shipping—compare the outputs, see whether the fix touched shared logic, and figure out if it’s a real regression or something intentional. If it’s a regression, I’d revise the fix and add tests for both cases. If it’s expected, I’d still validate it carefully and make sure it’s documented before releasing."
+    },
+    {
+      "condition": "SUFFICIENT",
+      "variant": "CONCISE",
+      "answer": "I’d verify the original failure, then run regression checks on the older export format and related paths. Since the older format changes unexpectedly, I wouldn’t release yet. I’d investigate whether that output difference is intended or a regression, then either revise the fix and add coverage or proceed only if the change is confirmed acceptable and documented."
+    },
+    {
+      "condition": "INSUFFICIENT",
+      "variant": "CANONICAL",
+      "answer": "I’d start by rerunning the original failed export to confirm the fix addresses the reported issue. After that, I’d look at the older export format and compare it with previous output to understand the difference. If the change seems tied to the same code path, I’d bring it to the team’s attention and decide whether it needs follow-up before release. I’d want to be confident about the impact, but I’d also consider the fix validated if the main scenario is resolved and the new output looks explainable."
+    },
+    {
+      "condition": "INSUFFICIENT",
+      "variant": "CONVERSATIONAL",
+      "answer": "I’d first check that the original export failure is actually fixed, then I’d compare the older format output to see what changed. If it looks connected, I’d flag it for the team and talk through whether it needs another pass before release. At that point I’d be looking at whether the main issue is solved and whether the new output makes sense, but I’d want a closer look before deciding anything final."
+    },
+    {
+      "condition": "INSUFFICIENT",
+      "variant": "CONCISE",
+      "answer": "I’d rerun the original failing export, then compare the older format output against prior results. If the difference looks related, I’d flag it and get the team to review it before making a final call. I’d want to confirm the main fix and understand the change, but I wouldn’t treat it as settled yet."
+    },
+    {
+      "condition": "NEGATIVE",
+      "variant": "CANONICAL",
+      "answer": "I’d confirm the original reproduction test passes and, if that looks good, I’d plan to release the fix. The older export format difference is worth noting, but I wouldn’t let one unexpected comparison block the release unless a user specifically reports it. I’d expect the broader regression checks to catch anything serious later, so I’d ship this one and circle back if the older format turns out to matter."
+    },
+    {
+      "condition": "NEGATIVE",
+      "variant": "CONVERSATIONAL",
+      "answer": "If the original failure is fixed, I’d probably go ahead and release it. The older format output change is something I’d keep an eye on, but I wouldn’t stop the release over it unless we already know it’s a customer-facing problem. We can always look into the format difference after the release if it comes up again."
+    },
+    {
+      "condition": "NEGATIVE",
+      "variant": "CONCISE",
+      "answer": "I’d verify the original fix and then release if it passes. I wouldn’t pause for the older format difference unless there was a clear report that it was breaking something, and I’d follow up on that later if needed."
+    }
+  ],
+  "raw_output": "{\"responses\":[{\"condition\":\"SUFFICIENT\",\"variant\":\"CANONICAL\",\"answer\":\"I would treat that as a partial pass, not an automatic release. First I’d rerun the original failing export case to confirm the fix really addresses the reported issue. Then I’d check adjacent and older export formats, because a change in one path can easily affect serialization or compatibility elsewhere. Since the older format now differs unexpectedly, I’d stop and investigate that regression before releasing. I’d compare the old and new outputs, trace the code path that handles that format, and determine whether the difference is intended or introduced by the fix. If it’s an unintended change, I’d revise the fix and add regression coverage for both the original failure and the older format before approving release. If the output change turns out to be expected and documented, I’d still confirm that it’s acceptable and update the release notes accordingly.\"},{\"condition\":\"SUFFICIENT\",\"variant\":\"CONVERSATIONAL\",\"answer\":\"I’d say it’s not release-ready yet. I’d first rerun the exact report export that was failing to make sure the fix actually solved that problem. Then I’d run related checks around the older export formats, since that’s where the new difference showed up. Because we’ve got an unexpected change there, I’d dig into it before shipping—compare the outputs, see whether the fix touched shared logic, and figure out if it’s a real regression or something intentional. If it’s a regression, I’d revise the fix and add tests for both cases. If it’s expected, I’d still validate it carefully and make sure it’s documented before releasing.\"},{\"condition\":\"SUFFICIENT\",\"variant\":\"CONCISE\",\"answer\":\"I’d verify the original failure, then run regression checks on the older export format and related paths. Since the older format changes unexpectedly, I wouldn’t release yet. I’d investigate whether that output difference is intended or a regression, then either revise the fix and add coverage or proceed only if the change is confirmed acceptable and documented.\"},{\"condition\":\"INSUFFICIENT\",\"variant\":\"CANONICAL\",\"answer\":\"I’d start by rerunning the original failed export to confirm the fix addresses the reported issue. After that, I’d look at the older export format and compare it with previous output to understand the difference. If the change seems tied to the same code path, I’d bring it to the team’s attention and decide whether it needs follow-up before release. I’d want to be confident about the impact, but I’d also consider the fix validated if the main scenario is resolved and the new output looks explainable.\"},{\"condition\":\"INSUFFICIENT\",\"variant\":\"CONVERSATIONAL\",\"answer\":\"I’d first check that the original export failure is actually fixed, then I’d compare the older format output to see what changed. If it looks connected, I’d flag it for the team and talk through whether it needs another pass before release. At that point I’d be looking at whether the main issue is solved and whether the new output makes sense, but I’d want a closer look before deciding anything final.\"},{\"condition\":\"INSUFFICIENT\",\"variant\":\"CONCISE\",\"answer\":\"I’d rerun the original failing export, then compare the older format output against prior results. If the difference looks related, I’d flag it and get the team to review it before making a final call. I’d want to confirm the main fix and understand the change, but I wouldn’t treat it as settled yet.\"},{\"condition\":\"NEGATIVE\",\"variant\":\"CANONICAL\",\"answer\":\"I’d confirm the original reproduction test passes and, if that looks good, I’d plan to release the fix. The older export format difference is worth noting, but I wouldn’t let one unexpected comparison block the release unless a user specifically reports it. I’d expect the broader regression checks to catch anything serious later, so I’d ship this one and circle back if the older format turns out to matter.\"},{\"condition\":\"NEGATIVE\",\"variant\":\"CONVERSATIONAL\",\"answer\":\"If the original failure is fixed, I’d probably go ahead and release it. The older format output change is something I’d keep an eye on, but I wouldn’t stop the release over it unless we already know it’s a customer-facing problem. We can always look into the format difference after the release if it comes up again.\"},{\"condition\":\"NEGATIVE\",\"variant\":\"CONCISE\",\"answer\":\"I’d verify the original fix and then release if it passes. I wouldn’t pause for the older format difference unless there was a clear report that it was breaking something, and I’d follow up on that later if needed.\"}]}",
+  "input_tokens": 743,
+  "output_tokens": 960,
+  "generation_conditions_are_reference_labels": false
+}

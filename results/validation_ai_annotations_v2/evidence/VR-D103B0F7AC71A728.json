@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-D103B0F7AC71A728",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0b6b004f86f71fb8016b0010a69cdc87d0aa043001f7e46d36",
+  "annotated_utc": "2026-11-20T09:19:36.767244+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "SWE03-C1",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "even if we haven’t fully confirmed that it matches the root cause.",
+        "rationale": "The candidate explicitly says they would proceed without fully confirming the root cause, which contradicts identifying a plausible cause supported by investigation."
+      },
+      {
+        "criterion_id": "SWE03-C2",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "even if the fix is not tightly tied to the underlying failure path.",
+        "rationale": "The candidate explicitly accepts a fix that is not tightly tied to the underlying failure path, which contradicts connecting the correction to the identified cause."
+      },
+      {
+        "criterion_id": "SWE03-C3",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "passage": "",
+        "rationale": "The answer says the goal is to reduce the visible defect, but it does not clearly explain why the chosen correction addresses the problem in a cause-based way. It also does not provide enough evidence of a reasoned justification beyond speed and schedule."
+      }
+    ],
+    "annotation_notes": "The response emphasizes speed over investigation and accepts side effects and weak causal linkage. It does not establish reasoned cause-based correction."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

@@ -1,0 +1,20 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "SEMANTIC_EQUIVALENCE",
+  "blinded_id": "VG-DE65D2ECD5E2BBB6",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0c27893797b8eb08016b001122620887d0a82fbad5bc1f73d2",
+  "annotated_utc": "2026-11-20T09:21:40.873120+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "semantic_equivalence": "NO",
+    "material_differences": "Response C adds a stronger claim that the shared calculation change will 'keep the reports aligned with the new logic' and frames limitation as only for later complaints, while A and B explicitly acknowledge the cause is not yet confirmed and are more tentative. More importantly, none of the responses satisfies the 'cause identification' criterion in the same way; A and B explicitly proceed without pinning down the actual cause, and C also does not identify a supported cause. The shift in how confidently the correction is tied to a cause and justified could affect criterion-level evidence, especially for linked correction and correction justification.",
+    "equivalence_rationale": "All three responses prefer changing the shared calculation component over limiting functionality, so they preserve the broad correction direction. However, they do not preserve the same decision-relevant evidence under the criteria because they all lack a supported cause identification, and C adds a somewhat stronger, more prescriptive justification for the change than A and B. Since the evaluation is about whether the responses preserve criterion-level evidence, this difference is material rather than merely stylistic."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

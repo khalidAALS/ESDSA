@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-B74601CE830ADA6D",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0f09b174cbd1106e016b000ead5ba887d0b8958ceaf6e7addc",
+  "annotated_utc": "2026-11-20T09:11:11.107189+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "CSS02-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d ask what they do remember — roughly when they tried to cancel, how they submitted it, and whether they got any confirmation — and then I’d look at the account notes and status. I’d also use the billing record to help piece together the timeline if the exact date isn’t available.",
+        "rationale": "The answer explicitly proposes asking for details needed to understand the issue and checking relevant records to investigate the cancellation."
+      },
+      {
+        "criterion_id": "CSS02-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "if the exact date isn’t available. If it still isn’t clear after that, I’d hand it off for a closer review. That usually gives me enough to see whether something was missed or just not reflected clearly in the records.",
+        "rationale": "The candidate distinguishes uncertainty in the records from a definite conclusion and frames the outcome as needing review rather than assuming a fact not established by the evidence."
+      },
+      {
+        "criterion_id": "CSS02-C3",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "passage": "",
+        "rationale": "The answer mentions gathering a few relevant details and checking account/billing records, but it does not clearly establish that the collection is authorized, proportionate, or otherwise appropriately bounded. Missing privacy or permission details are not enough to judge this criterion negatively."
+      }
+    ],
+    "annotation_notes": ""
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

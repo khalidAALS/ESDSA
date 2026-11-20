@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-9C2D6628D57F00B6",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0e18a43d2014b904016b0010700b3087d090bf6ca79bf4ca1c",
+  "annotated_utc": "2026-11-20T09:18:41.670928+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "CSS01-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d begin by asking the customer to describe what happened this time and whether anything changed since the last support case.",
+        "rationale": "This directly shows the candidate would clarify the current issue by eliciting the customer's description of the problem and any changes since the prior case."
+      },
+      {
+        "criterion_id": "CSS01-C2",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "passage": "",
+        "rationale": "The answer identifies lockouts and possible triggers, but it does not establish the customer's affected service or outcome in a broader sense (for example, what task they are unable to complete or the impact on their account use)."
+      },
+      {
+        "criterion_id": "CSS01-C3",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "passage": "",
+        "rationale": "The candidate describes gathering information and narrowing down causes, but does not explicitly summarise the issue before selecting a resolution."
+      }
+    ],
+    "annotation_notes": "The response shows some diagnostic questioning, but only clearly satisfies initial issue clarification. It does not explicitly state the customer's impacted outcome or a concise problem summary."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

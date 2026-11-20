@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-0FA538825A8F5B88",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0994b002be433216016b002a17a5a487d0a20626776c75d318",
+  "annotated_utc": "2026-11-20T11:08:09.818893+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "OPS02-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "It could be a sensor glitch, but it could also mean there was a real temperature issue",
+        "rationale": "The candidate explicitly identifies a plausible operational hazard: a real temperature issue affecting the shipment."
+      },
+      {
+        "criterion_id": "OPS02-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d look at how long it lasted and what else was happening at the time. I’d also keep in mind that the shipment needs to leave soon, so there’s a balance between not causing unnecessary delay and not missing a real problem.",
+        "rationale": "The answer shows consideration of uncertainty (brief excursion vs. real issue) and the consequences of both delay and failing to detect a problem."
+      },
+      {
+        "criterion_id": "OPS02-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "From there I’d decide whether it needs a hold or whether we can continue with extra monitoring.",
+        "rationale": "The candidate proposes proportionate responses, including a possible hold or continuing with extra monitoring, which are justified escalation/mitigation options."
+      }
+    ],
+    "annotation_notes": ""
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

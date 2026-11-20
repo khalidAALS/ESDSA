@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-76F8DAAC3B0021D1",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_079e069c53f9dfec016b000e2ba74c87d0b8ceff97a37d74aa",
+  "annotated_utc": "2026-11-20T09:09:02.126404+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "CSS03-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "If it’s still editable, I’d change the address; if it’s already packed or shipped, I’d see whether a reroute or approval is allowed.",
+        "rationale": "The answer weighs the resolution against the order’s status and selects different options depending on what is feasible, showing assessment of an appropriate resolution based on the evidence available."
+      },
+      {
+        "criterion_id": "CSS03-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "if it’s already packed or shipped, I’d see whether a reroute or approval is allowed.",
+        "rationale": "This explicitly acknowledges that changes depend on whether reroute or approval is allowed, indicating awareness of service constraints and authorisation limits."
+      },
+      {
+        "criterion_id": "CSS03-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "If the status is unclear, I’d verify it before promising anything.",
+        "rationale": "The candidate directly recognises uncertainty and states that they would verify the status before making commitments, which demonstrates appropriate handling of missing information."
+      }
+    ],
+    "annotation_notes": ""
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

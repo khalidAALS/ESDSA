@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-625C257DC2C4BA9B",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0c7ce054077ce7a8016b000cdc759087d0a55ef35fb0befa7d",
+  "annotated_utc": "2026-11-20T09:03:26.581621+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "OPS03-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d first pull the most recent info from both sides and line it up, because right now the reports don’t fully agree. I’d check the progress notes against things like handoffs, dependency trackers, and milestone dates so I can see what’s actually finished and what’s still open.",
+        "rationale": "The candidate explicitly uses multiple operational sources—progress notes, handoffs, dependency trackers, and milestone dates—to assess the situation."
+      },
+      {
+        "criterion_id": "OPS03-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "Then I’d get both teams together and walk through each unresolved dependency, make sure every item has an owner, and confirm which dates are real and which ones need to be corrected.",
+        "rationale": "The answer identifies responsible parties by assigning owners and addresses dependencies directly by reviewing unresolved items and correcting dates."
+      },
+      {
+        "criterion_id": "OPS03-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d also write up the evidence behind the decision and the ownership for each next step so the team can track why we chose that path.",
+        "rationale": "The candidate explicitly states they would document the evidence behind the decision and the next-step ownership, which supports traceable, evidence-based action."
+      }
+    ],
+    "annotation_notes": ""
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

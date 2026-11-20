@@ -1,0 +1,18 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "SEMANTIC_EQUIVALENCE",
+  "blinded_id": "TG-D4FA82E66E39E15D",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0b63774b9426c802016b002bb9916487d0aa0781bec4dbf5d8",
+  "annotated_utc": "2026-11-20T11:15:07.440304+00:00",
+  "annotation": {
+    "semantic_equivalence": "YES",
+    "material_differences": "",
+    "equivalence_rationale": "All three responses preserve the same decision-relevant evidence for monitoring and escalation: they gather updates from the site manager and contractor, compare them against the repair plan, assess the parts shortage/workaround and schedule risk, escalate to the appropriate lead if the delay becomes significant, and keep the next shift informed while continuing follow-up. B is slightly more explicit than A/C about asking whether the repair is still on track, but this does not materially change the criterion-level evidence or operational commitments."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

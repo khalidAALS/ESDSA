@@ -1,0 +1,18 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "SEMANTIC_EQUIVALENCE",
+  "blinded_id": "TG-79DA31904F2ED5B8",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0d7aff555c491da7016b002ad3b9a087d0906dd33ba1aae48b",
+  "annotated_utc": "2026-11-20T11:11:17.600058+00:00",
+  "annotation": {
+    "semantic_equivalence": "YES",
+    "material_differences": "",
+    "equivalence_rationale": "All three responses rely on the same relevant technical evidence (queue stats/depth, worker logs, traces, recent deploy/config changes, and signs of errors/retries/timeouts), propose the same kinds of discriminating checks (patterns by job/time, upstream slowdown vs worker saturation, baseline comparison), and reach the same diagnostic posture (narrow the cause before another fix; determine whether the issue is in workers or upstream). The differences are only in brevity and wording, not in decision-relevant evidence or operational commitments."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

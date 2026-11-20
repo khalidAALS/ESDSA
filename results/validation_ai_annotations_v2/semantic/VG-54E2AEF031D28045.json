@@ -1,0 +1,20 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "SEMANTIC_EQUIVALENCE",
+  "blinded_id": "VG-54E2AEF031D28045",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0590e92b58b204ec016b000c92db9487d0a1eec3e7a909b333",
+  "annotated_utc": "2026-11-20T09:02:13.365330+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "semantic_equivalence": "YES",
+    "material_differences": "",
+    "equivalence_rationale": "All three responses preserve the same decision-relevant evidence for problem identification: they clarify whether the order confirmation is merely missing or whether the order failed, they identify the impacted outcome/service as the order/confirmation/address details, and they frame verification of the order details before choosing the next step. Response C is shorter, but it still covers the same issue clarification, impact, and summary-oriented problem definition as A and B. The wording and detail level differ, but no material addition, omission, or contradiction appears that would plausibly change the criterion-level assessment."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

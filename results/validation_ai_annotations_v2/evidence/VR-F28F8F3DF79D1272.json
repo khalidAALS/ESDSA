@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-F28F8F3DF79D1272",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0b9af90345414df9016b000e880ab487d0ad6f8e8b3022d5de",
+  "annotated_utc": "2026-11-20T09:10:34.099289+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "OPS02-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "The immediate hazard is that reduced partner capacity, combined with uncertain demand, could create missed deliveries or service backlogs",
+        "rationale": "The candidate explicitly identifies a plausible operational risk in the scenario: missed deliveries or service backlogs due to reduced capacity and uncertain demand."
+      },
+      {
+        "criterion_id": "OPS02-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d look at a few scenarios: best case, moderate reduction, and severe reduction, and compare each against expected order volumes and any service commitments.",
+        "rationale": "This shows the candidate considering uncertainty through scenario analysis and assessing possible consequences against demand and commitments."
+      },
+      {
+        "criterion_id": "OPS02-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "If the exposure looks material, I’d put a contingency in place early, such as reserving backup transport or prioritising critical deliveries, and escalate to the relevant manager if the risk could affect customer commitments or budget significantly.",
+        "rationale": "The candidate proposes proportionate mitigation actions and escalation tied to material impact, which matches the criterion."
+      }
+    ],
+    "annotation_notes": ""
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

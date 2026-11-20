@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-45543D7A463980A1",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_03b6b3f114befd21016b00107906c887d095b6ee2bd9189bb9",
+  "annotated_utc": "2026-11-20T09:18:50.788647+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "OPS01-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d see the delivery as the main priority because the consequences of missing it are immediate.",
+        "rationale": "The answer explicitly identifies urgency and impact as priority factors by focusing on the immediate consequences of missing the delivery, and also contrasts this against the equipment issue."
+      },
+      {
+        "criterion_id": "OPS01-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "With incomplete information, I’d rather not lose the delivery because of a concern that might not amount to much.",
+        "rationale": "The candidate gives a clear trade-off rationale, weighing the immediate delivery consequences against an uncertain safety concern, and explains why they would choose to continue the delivery."
+      },
+      {
+        "criterion_id": "OPS01-C3",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "passage": "",
+        "rationale": "The answer mentions acting differently if the equipment danger were obvious, but it does not clearly show a process for reassessing priorities when material conditions change beyond that threshold, nor how priorities would be updated as new information emerges."
+      }
+    ],
+    "annotation_notes": "The response shows prioritisation and trade-off reasoning, but provides limited evidence of an ongoing reassessment process."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

@@ -1,0 +1,17 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_TARGETED_PILOT_V1",
+  "partition": "VALIDATION",
+  "review_type": "SEMANTIC_EQUIVALENCE",
+  "blinded_id": "VG-D1300869A52EDACF",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V1",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0a313b26feb2dc61016aff973b38e887d0bff631de9a962c08",
+  "annotated_utc": "2026-11-20T00:41:32.517428+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "semantic_equivalence": "NO",
+    "material_differences": "A and C include an extra causal judgment that the customer likely missed the deadline and de-prioritize internal records because the billing/account data is not supportive or is hard to interpret. B is shorter but still says payment history is the main proof and internal logs are not relied on much. However, A/C add a more definitive assumption about the customer being at fault, while B does not. None of the responses clearly describes balanced information gathering or separating confirmed facts from assumptions, but the added assumption in A/C is material.",
+    "equivalence_rationale": "The three responses are not semantically equivalent under the rubric because they do not preserve the same decision-relevant evidence. All three emphasize payment history and ask the customer for external documents, but A and C go further by inferring that the customer likely missed the deadline and by dismissing internal records due to weak support or interpretive difficulty. That changes the evidence posture and could affect assessment of source verification and information gathering. B is less explicit about this assumption, so the set is not fully equivalent."
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "rubric_id": "ESDSA-OPS04-R1",
+  "version": "1.0-draft",
+  "role_code": "OPS",
+  "role_name": "Operations Coordinator",
+  "competency_code": "OPS04",
+  "competency_name": "Monitoring and escalation",
+  "criteria": [
+    {
+      "id": "OPS04-C1",
+      "name": "Progress signals",
+      "definition": "Identify information needed to monitor execution.",
+      "illustrative_positive_evidence": "Checks milestone completion against the delivery plan.",
+      "illustrative_negative_evidence": "Refuses to monitor a known high-risk dependency."
+    },
+    {
+      "id": "OPS04-C2",
+      "name": "Trigger recognition",
+      "definition": "Recognise when deviation requires action.",
+      "illustrative_positive_evidence": "Flags a missed critical milestone for review.",
+      "illustrative_negative_evidence": "Ignores an acknowledged escalation threshold."
+    },
+    {
+      "id": "OPS04-C3",
+      "name": "Escalation and follow-through",
+      "definition": "Direct issues to appropriate owners and verify response.",
+      "illustrative_positive_evidence": "Escalates a blocked delivery and checks resolution.",
+      "illustrative_negative_evidence": "Conceals a known critical blockage from responsible staff."
+    }
+  ],
+  "evidence_statuses": {
+    "POSITIVE_EVIDENCE": "The answer explicitly or clearly demonstrates the indicator in context.",
+    "NEGATIVE_EVIDENCE": "The answer explicitly demonstrates a materially deficient approach concerning the indicator.",
+    "INSUFFICIENT_EVIDENCE": "The answer does not establish either positive or negative evidence for the indicator."
+  },
+  "interpretation_rules": [
+    "Assess demonstrated meaning, not exact wording.",
+    "Do not infer deficient practice solely from omission.",
+    "A brief answer can provide sufficient evidence.",
+    "A fluent or lengthy answer is not sufficient by itself.",
+    "Consider scenario context and applicable constraints.",
+    "Record the supporting passage or indicate absence.",
+    "Illustrative examples are not exhaustive.",
+    "Do not infer protected or demographic attributes."
+  ],
+  "decision_policy": "NOT_YET_VALIDATED",
+  "expert_review": "PENDING",
+  "reference_validation": "PENDING"
+}

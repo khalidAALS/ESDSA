@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-07083BEAF5F20FE7",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_00fc6bd440dcb076016b002af78c3487d0b6b76eddff6d3b3b",
+  "annotated_utc": "2026-11-20T11:11:54.038254+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "OPS01-C1",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I’d keep the routine report on track first so there’s no backlog later, and then I’d fit in the equipment check and staffing issue around that.",
+        "rationale": "This explicitly prioritises the routine report over the delayed equipment check and thin staffing without showing consideration of urgency, impact, or dependencies from the service launch context. It indicates a materially weak prioritisation basis rather than identifying the most time-sensitive or dependent work first."
+      },
+      {
+        "criterion_id": "OPS01-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "In my experience, reports are usually straightforward, so I’d rather get them out of the way than spend too much time reorganising everything else.",
+        "rationale": "The candidate gives a reason for the ordering decision, using the relative straightforwardness of the report and the desire to avoid extra reorganisation to justify the trade-off."
+      },
+      {
+        "criterion_id": "OPS01-C3",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I’d only reconsider that order if someone specifically told me the check was absolutely critical.",
+        "rationale": "This shows the candidate would change priorities only under an external explicit instruction, not by reassessing changing material conditions themselves; it is a narrow and insufficient basis for reprioritisation in a changing situation."
+      }
+    ],
+    "annotation_notes": ""
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

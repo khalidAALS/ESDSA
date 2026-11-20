@@ -1,0 +1,20 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "SEMANTIC_EQUIVALENCE",
+  "blinded_id": "VG-F8A6E12FA7811EA3",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_02cb5a180730e96b016b00113b289c87d0941e7083b2269c3f",
+  "annotated_utc": "2026-11-20T09:22:04.851603+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "semantic_equivalence": "YES",
+    "material_differences": "",
+    "equivalence_rationale": "All three responses preserve the same decision-relevant evidence under the three criteria: they propose investigating the failure path to identify a plausible cause, tie the shared calculation component fix to that cause when it is confirmed, and justify the correction as addressing the source of incorrect figures while using temporary limitation only as a containment measure if the cause is not yet understood or the risk is high. The added details in C about logs, reproducible cases, expected calculations, and blast radius elaborate but do not change the operational commitments or the criterion-level evidence."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

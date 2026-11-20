@@ -1,0 +1,18 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "SEMANTIC_EQUIVALENCE",
+  "blinded_id": "TG-F20D2514A2E52B09",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0626359c12210b29016b002bf7a5f887d0b1809838a553883b",
+  "annotated_utc": "2026-11-20T11:16:10.012158+00:00",
+  "annotation": {
+    "semantic_equivalence": "NO",
+    "material_differences": "Response A includes a materially different investigative posture: it de-emphasizes logs, assumes the queue implementation/workers are the problem, and recommends repeated capacity increases without first testing alternative causes. Responses B and C also prioritize scaling, but A adds a stronger commitment to conclude the problem is in the queue/worker implementation and to continue tuning capacity rather than distinguishing causes. This could change evidence under Relevant sources, Hypothesis testing, and Evidence interpretation.",
+    "equivalence_rationale": "The three responses are similar in their initial scaling-first approach, but A is not fully equivalent because it explicitly downplays logs and traces and commits to continuing capacity increases as the main diagnostic path, whereas B and C are more plainly framed as scaling first and then inspecting logs/traces if that fails. That difference could affect whether the response demonstrates adequate source selection and hypothesis testing for the continuing delay."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

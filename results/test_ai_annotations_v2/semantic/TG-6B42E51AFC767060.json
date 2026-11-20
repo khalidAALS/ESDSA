@@ -1,0 +1,18 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "SEMANTIC_EQUIVALENCE",
+  "blinded_id": "TG-6B42E51AFC767060",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0e7523c9a4f4c68e016b002a8d7c2487d084195eb582ac5bea",
+  "annotated_utc": "2026-11-20T11:10:08.644895+00:00",
+  "annotation": {
+    "semantic_equivalence": "NO",
+    "material_differences": "Response A adds a willingness to let operations proceed on a mild concern and says the contractor should deal with it afterward, but B is narrower and only says to keep operations moving unless the problem is clearly serious and to ask the contractor to fix it later. C likewise adds explicit reluctance to escalate pre-start-up because of disruption. The main material difference is that none of the responses demonstrates active monitoring, threshold-based trigger recognition, or verified follow-through; however A and C make somewhat different operational commitments about tolerating concerns and handling escalation, while B is more conditional. These differences could affect criterion-level evidence for trigger recognition and escalation/follow-through.",
+    "equivalence_rationale": "All three responses are broadly similar in tone: they defer to the contractor, downplay the missing record, and avoid immediate escalation unless the issue becomes definite or serious. However, they do not preserve the same decision-relevant evidence under the three criteria. None of them meaningfully identifies what information should be monitored, and all of them are weak on escalation. A and C additionally state that operations should proceed despite only mild or non-obvious concerns, and C explicitly frames escalation as something to avoid because it may disrupt operations. B is somewhat less expansive and only conditions action on a clearly serious or definite problem. Because these differences could plausibly change how the responses are judged on trigger recognition and escalation/follow-through, the safest classification is NO."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-CCB4F083C01CA513",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0dce647bd5b180d8016b000cc6df3c87d082a95061325f5e0f",
+  "annotated_utc": "2026-11-20T09:03:05.387883+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "CSS03-C1",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I’d likely approve the refund first so the customer doesn’t have to wait, and then sort out the purchase record afterward.",
+        "rationale": "This proposes a resolution before checking the available evidence or purchase record, so it does not assess the appropriate option based on the facts. It indicates action driven by speed rather than evidence."
+      },
+      {
+        "criterion_id": "CSS03-C2",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I’d likely approve the refund first so the customer doesn’t have to wait, and then sort out the purchase record afterward.",
+        "rationale": "Approving the refund before confirming the purchase record or eligibility suggests bypassing normal authorisation or service constraints rather than respecting them."
+      },
+      {
+        "criterion_id": "CSS03-C3",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I’d only escalate if the customer specifically pushes back on the refund amount or wants something different.",
+        "rationale": "This shows escalation only for customer disagreement, not when information is incomplete or when more evidence is needed. It fails to recognise that additional information or escalation may be needed in the present situation."
+      }
+    ],
+    "annotation_notes": "The answer prioritises speed over evidence and availability of records, which undermines resolution judgment and uncertainty handling."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

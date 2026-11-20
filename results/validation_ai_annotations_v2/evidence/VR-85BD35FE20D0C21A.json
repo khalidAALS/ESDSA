@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-85BD35FE20D0C21A",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0f5cffa6f9c80c7f016b000e40029487d09c4f30bfca96560a",
+  "annotated_utc": "2026-11-20T09:09:22.214828+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "OPS04-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d keep a basic tracker with the due date, status, and owner for each activity. I’d check that the deadline item is still progressing, see what the quality issue is saying, and monitor the one waiting on the external partner.",
+        "rationale": "This explicitly identifies the kinds of information used to monitor execution: due date, status, owner, progress, quality issue, and external dependency."
+      },
+      {
+        "criterion_id": "OPS04-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "If I notice something not lining up, I’d pass it to the right person.",
+        "rationale": "This shows recognition that a deviation or mismatch triggers action rather than being ignored."
+      },
+      {
+        "criterion_id": "OPS04-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "If I notice something not lining up, I’d pass it to the right person. I’d probably want to understand it a bit more first before escalating, so I can be sure I’m raising the right thing. After that I’d leave it with them and keep monitoring the rest.",
+        "rationale": "The answer directs issues to the appropriate person and indicates ongoing monitoring after escalation, which supports follow-through."
+      }
+    ],
+    "annotation_notes": ""
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

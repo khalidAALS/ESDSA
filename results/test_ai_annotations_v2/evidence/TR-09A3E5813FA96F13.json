@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-09A3E5813FA96F13",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_05b7294acaf70670016b00293f943c87d0b4e83d8f40fe435f",
+  "annotated_utc": "2026-11-20T11:04:34.165034+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "CSS01-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d ask them to walk me through what happened from the point they expected the booking to be there, and whether the issue is that they can’t see the appointment at all, the booking looks changed, or they can’t access it in the way they expected.",
+        "rationale": "This explicitly describes clarifying the customer's experience and narrowing down what the actual problem is."
+      },
+      {
+        "criterion_id": "CSS01-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d also check what service or outcome is actually affected — for example, whether the appointment was removed, rescheduled, or just not reflected in the latest notification.",
+        "rationale": "This directly identifies the affected service or outcome and explores what part of the booking state is impacted."
+      },
+      {
+        "criterion_id": "CSS01-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "Then I’d summarise it back to them in plain terms, such as: ‘So the main issue is that your online appointment is missing even though you received a confirmation, and we need to confirm which booking is currently active before we go further.’",
+        "rationale": "This shows the candidate restating the issue before moving to next steps."
+      }
+    ],
+    "annotation_notes": "The answer provides clear, direct evidence for all three criteria."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-4CBEAEE0DAB0DB95",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_09ccc5462ca11289016b002b9701a887d099a6fe75677a83a8",
+  "annotated_utc": "2026-11-20T11:14:33.819241+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "OPS01-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d start by treating the equipment check as the first priority, because it’s a dependency for the launch and any delay there can stop or compromise the service.",
+        "rationale": "This explicitly identifies dependency and impact, and the overall answer also references urgency through the time-sensitive launch and staff coverage constraints."
+      },
+      {
+        "criterion_id": "OPS01-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d start by treating the equipment check as the first priority, because it’s a dependency for the launch and any delay there can stop or compromise the service. In parallel, I’d assess the thinner staff coverage and rework the plan so the critical launch tasks are covered, for example by moving people onto the highest-risk or customer-facing steps and trimming anything nonessential. The routine report would come after the launch-critical items are stable, unless it feeds directly into the launch or is needed for a decision.",
+        "rationale": "The candidate explains why each item is ranked as it is, using dependencies, impact on launch-critical work, and whether the report is needed for decisions."
+      },
+      {
+        "criterion_id": "OPS01-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d change that order if the equipment issue turned out to affect safety or the launch couldn’t proceed without it, if staffing dropped further, or if a new operational issue came up that had a bigger immediate impact than the report.",
+        "rationale": "This clearly states that priorities would be reassessed if material conditions change, and specifies the kinds of changes that would trigger reprioritisation."
+      }
+    ],
+    "annotation_notes": "The answer directly addresses prioritisation logic, trade-offs, and when priorities would change."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

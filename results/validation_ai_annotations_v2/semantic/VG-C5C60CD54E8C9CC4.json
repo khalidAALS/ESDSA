@@ -1,0 +1,20 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "SEMANTIC_EQUIVALENCE",
+  "blinded_id": "VG-C5C60CD54E8C9CC4",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0b928495ccfae550016b000e81f0c887d0904442d6dec06f89",
+  "annotated_utc": "2026-11-20T09:10:27.522619+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "semantic_equivalence": "YES",
+    "material_differences": "",
+    "equivalence_rationale": "All three responses preserve the same decision-relevant evidence for the three criteria. Each says to triage the reported issues by impact/pattern, reproduce the failures with real or known examples, compare failing cases against working ones, and then use logs/metrics (and in C, traces) to narrow the cause around the deployment or a shared service. Response C is more detailed, but its added specifics do not change the underlying investigative approach or operational commitments."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

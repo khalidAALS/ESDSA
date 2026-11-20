@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-6845F5FCA2029E71",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0a52f0405d8c88f6016b000c1e08e087d0b08d15f7c1f0aa8f",
+  "annotated_utc": "2026-11-20T09:00:16.280270+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "OPS03-C1",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I’d use the completed team’s report as the main plan",
+        "rationale": "This indicates reliance on only one team's report and ignores the conflicting reports, gaps, and unresolved dependencies, rather than integrating relevant operational information."
+      },
+      {
+        "criterion_id": "OPS03-C2",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "deal with the unresolved dependencies afterward",
+        "rationale": "This proposes proceeding without first identifying or resolving the dependencies and does not show coordination of responsible parties around those dependencies."
+      },
+      {
+        "criterion_id": "OPS03-C3",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I’d use the completed team’s report as the main plan, keep the launch date, and deal with the unresolved dependencies afterward.",
+        "rationale": "The proposed actions are not explained using the conflicting or incomplete operational evidence; instead, the answer asserts a decision to keep the launch date despite unresolved dependencies and gaps, which lacks defensible evidence-based traceability."
+      }
+    ],
+    "annotation_notes": "The answer is concise but materially under-uses the provided operational evidence and does not demonstrate evidence-based coordination."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

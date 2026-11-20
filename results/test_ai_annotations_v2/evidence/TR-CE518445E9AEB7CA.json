@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-CE518445E9AEB7CA",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0d97a4413decc15a016b002990bfec87d090ad825dc3bed01b",
+  "annotated_utc": "2026-11-20T11:05:55.229838+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "OPS02-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d start by checking the near-miss report and seeing whether the queueing has changed since the staffing adjustment.",
+        "rationale": "This explicitly recognizes the near-miss and ongoing queueing as operational risks in the loading area, showing hazard recognition in context."
+      },
+      {
+        "criterion_id": "OPS02-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d want to avoid jumping to conclusions before we’ve had time to see whether the current setup settles down or not.",
+        "rationale": "The candidate shows uncertainty about the cause and indicates they would observe over time before concluding, which demonstrates consideration of uncertainty. The mention of the near-miss and high waiting times also implies potential consequences."
+      },
+      {
+        "criterion_id": "OPS02-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "If it still looked like a problem, I’d keep monitoring it closely and make sure the issue is flagged to the right person for review.",
+        "rationale": "This proposes a proportionate response through continued monitoring and escalation for review, which fits mitigation or escalation after the initial intervention failed."
+      }
+    ],
+    "annotation_notes": "The answer is concise but contains clear evidence of recognizing the ongoing operational hazard, acknowledging uncertainty, and proposing monitoring plus escalation."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

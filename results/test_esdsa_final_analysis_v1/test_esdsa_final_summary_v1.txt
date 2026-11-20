@@ -1,0 +1,24 @@
+ESDSA — FINAL HELD-OUT TEST RESULTS
+========================================================================================
+216 responses / 24 scenario families / 72 semantic groups
+PRIMARY: disagreement with AI-assisted PRE-STABILITY provisional references
+METHOD                  COVERAGE     DISAGREE/ACTIONABLE   ADVANCE!=REF   DEFER
+----------------------------------------------------------------------------------------
+scoring_only             71.30%        3/154 ( 1.95%)         3           62
+evidence_aware           92.59%        9/200 ( 4.50%)         6           16
+traceability_v2          90.28%        8/195 ( 4.10%)         5           21
+integrated_v2            85.19%        7/184 ( 3.80%)         4           32
+
+POST-STABILITY reference comparison:
+scoring_only: coverage=71.30%; disagreements=4/154; ADVANCE!=reference=4
+evidence_aware: coverage=92.59%; disagreements=15/200; ADVANCE!=reference=10
+traceability_v2: coverage=90.28%; disagreements=14/195; ADVANCE!=reference=9
+integrated_v2: coverage=85.19%; disagreements=13/184; ADVANCE!=reference=8
+
+New deferrals due to ESDSA stability gate: 11
+  Previously disagreed with provisional reference: 1
+  Previously matched provisional reference: 10
+Frozen citation results: {'VERIFIED': 608, 'NOT_APPLICABLE': 34, 'UNVERIFIABLE': 5, 'CONTEXT_ONLY': 1}
+CAUTION: AI-assisted provisional reference agreement, NOT independently validated accuracy.
+Records: /Users/khalidadnanalsayed/Desktop/esdsa-pilot/results/test_esdsa_final_analysis_v1/test_esdsa_final_records_v1.csv
+JSON: /Users/khalidadnanalsayed/Desktop/esdsa-pilot/results/test_esdsa_final_analysis_v1/test_esdsa_final_results_v1.json

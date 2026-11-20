@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-7B92B1B90E1DD530",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_03899f76952cc3b2016b002bb3173c87d0b8bed7ccceb7cf86",
+  "annotated_utc": "2026-11-20T11:15:01.807427+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "OPS04-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d gather updates from both the site manager and the contractor and compare them with the repair plan so I can understand what has been completed and what is still pending. I’d ask for the latest view on the parts shortage, any workaround being considered, and whether either party sees a risk to the completion date.",
+        "rationale": "The answer clearly identifies multiple monitoring inputs needed to track execution: updates from both parties, comparison against the repair plan, status of completed/pending work, parts shortage information, workaround status, and perceived risk to the completion date."
+      },
+      {
+        "criterion_id": "OPS04-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "If the delay starts to look more serious, I’d make sure it is brought to the attention of the appropriate lead and that the next shift has the latest information.",
+        "rationale": "The candidate explicitly recognizes a condition under which action is needed: when the delay appears to be becoming more serious. This shows awareness of a deviation threshold that triggers response."
+      },
+      {
+        "criterion_id": "OPS04-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d make sure it is brought to the attention of the appropriate lead and that the next shift has the latest information. I’d also keep checking in until I had a clearer picture of whether the repair was still on track.",
+        "rationale": "The response includes escalation to the appropriate lead, handoff of current information to the next shift, and continued follow-up by checking in until the status is clear, which demonstrates escalation and follow-through."
+      }
+    ],
+    "annotation_notes": ""
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

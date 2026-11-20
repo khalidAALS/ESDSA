@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-153D35C8606A5DAE",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_05848f2c69e236b8016b002afa5e1087d0b71e7b4e40614737",
+  "annotated_utc": "2026-11-20T11:11:57.361874+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "OPS01-C1",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I’d get the report done first so it doesn’t hang over us, and then I’d deal with the equipment check and the staffing gap after that.",
+        "rationale": "The answer prioritises the routine report over the time-sensitive equipment check and staffing gap, and does not identify urgency, impact, or dependencies as the basis for priority. It instead suggests a non-substantive ordering based on avoiding admin buildup, which conflicts with the criterion."
+      },
+      {
+        "criterion_id": "OPS01-C2",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "The launch can usually absorb a bit of delay, so I wouldn’t want routine admin building up.",
+        "rationale": "This gives a trade-off reason, but the reasoning is materially misaligned with the scenario because it discounts the time-sensitive launch work in favour of routine admin. That shows prioritisation reasoning, but in a way that contradicts the relevant evidence needed for the situation."
+      },
+      {
+        "criterion_id": "OPS01-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d only change course if I was explicitly told the equipment issue was a hard stop.",
+        "rationale": "The candidate states a condition that would cause them to change the work order, which demonstrates reassessment of priorities when a material condition changes."
+      }
+    ],
+    "annotation_notes": "Criterion C1 is treated as negative because the answer explicitly deprioritises the urgent launch-related work without using urgency/impact/dependency factors. Criterion C2 is also negative because the stated trade-off rationale is materially flawed for the scenario. Criterion C3 is positive because it clearly names a trigger for reprioritisation."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

@@ -1,0 +1,20 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "SEMANTIC_EQUIVALENCE",
+  "blinded_id": "VG-E36FAA782DF7326D",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_03e75c4086eeeb30016b001125299087d0a14dfb5aa4a656fb",
+  "annotated_utc": "2026-11-20T09:21:42.921759+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "semantic_equivalence": "YES",
+    "material_differences": "",
+    "equivalence_rationale": "All three responses preserve the same core evidence for the three criteria: they identify needed monitoring inputs (live/trend readings, missing-data pattern, supporting logs), they recognize that action/escalation depends on whether the drift persists or becomes clearer, and they keep the issue under observation while documenting it. None introduces a materially different escalation owner, safeguard, or operational commitment; the differences are mainly in wording and detail. Although C mentions the local team not reporting anything, this does not change the overall decision-relevant posture compared with A and B."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

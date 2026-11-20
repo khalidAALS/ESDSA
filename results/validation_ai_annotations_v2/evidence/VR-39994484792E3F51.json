@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-39994484792E3F51",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_058c5f844e657822016b000ea29e4c87d0a926e810028e2315",
+  "annotated_utc": "2026-11-20T09:11:00.723867+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "CSS04-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d be upfront with them and say we’re still looking into it, but the technical team hasn’t confirmed the cause or given us a solid fix date yet.",
+        "rationale": "This clearly and understandably explains the situation and the proposed communication approach."
+      },
+      {
+        "criterion_id": "CSS04-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I wouldn’t make up a firm commitment just to sound reassuring.",
+        "rationale": "This explicitly rejects an unsupported promise and shows the candidate would manage expectations based on verified information."
+      },
+      {
+        "criterion_id": "CSS04-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d also make sure there’s a clear follow-up plan so the customer isn’t left wondering what’s going on.\n\nAnd once it’s resolved, I’d check back in to confirm the service is stable and that the interruption isn’t continuing.",
+        "rationale": "This provides a follow-up mechanism through a clear plan and a post-resolution check-in to confirm stability."
+      }
+    ],
+    "annotation_notes": ""
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

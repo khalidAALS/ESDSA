@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-8B8E4C24BFCF324F",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0e3f1849a8b4341a016b002b303e8087d08a8518d7347b7fd1",
+  "annotated_utc": "2026-11-20T11:12:50.838984+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "OPS04-C1",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I’d follow the site manager’s view and keep the original schedule unless the contractor proves the repair can’t finish.",
+        "rationale": "This indicates reliance on one report and the original schedule, but does not identify what information would be needed to monitor execution. It also suggests the candidate is not actively gathering or tracking progress signals beyond waiting for proof of failure, which is materially inconsistent with identifying needed monitoring information."
+      },
+      {
+        "criterion_id": "OPS04-C2",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I wouldn’t escalate a parts concern until the delay is definite.",
+        "rationale": "This explicitly says escalation would wait until the delay is definite, rather than recognising earlier signs of deviation as requiring action. That materially contradicts trigger recognition."
+      },
+      {
+        "criterion_id": "OPS04-C3",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "passage": "",
+        "rationale": "The answer mentions 'follow-up' if the work slips, but it does not establish directing the issue to appropriate owners or verifying their response. It is unclear what follow-through actions would be taken, so there is insufficient evidence for this criterion."
+      }
+    ],
+    "annotation_notes": ""
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

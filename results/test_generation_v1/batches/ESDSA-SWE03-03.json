@@ -1,0 +1,63 @@
+{
+  "experiment": "ESDSA_TEST_GENERATION_V1",
+  "partition": "TEST",
+  "family_id": "ESDSA-SWE03-03",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_06de7407423a0f2c016b00227df20c87d0ad96f2281f91c0ea",
+  "timestamp_utc": "2026-11-20T10:35:47.347262+00:00",
+  "run_sha256": "5529091731e312bbaeb2d6482e29bef2d2c4433ac2de47b176ea01da6c062c82",
+  "scenario_sha256": "9d2280d8014612bdd263f5dd8daf8356efeac3fa7a7e4b0cd3c6f4fef932426a",
+  "rubric_sha256": "6ab9abbf3b64793589baf18fd5f0e9884e09ef7e30f43a058f93d578c8f3db4e",
+  "responses": [
+    {
+      "condition": "SUFFICIENT",
+      "variant": "CANONICAL",
+      "answer": "I’d start by separating the investigation from the fix. First I’d trace a few duplicate cases end to end: compare request IDs, upload timestamps, and any retry markers in the application, proxy, and client logs to determine whether the same upload is being replayed by the client or retried by the server after a timeout. Once that’s clear, I’d recommend the correction that matches the failure mode. If the server is reprocessing the same upload more than once, I’d make the persistence path idempotent, for example by deduplicating on a stable upload key or enforcing a unique constraint before writing the attachment record. If the client is resending the same request without a safe idempotency token, I’d add that token and have the server honor it. I’d justify that recommendation by showing it removes the specific path that creates a second stored copy, rather than just masking the symptom at a higher level."
+    },
+    {
+      "condition": "SUFFICIENT",
+      "variant": "CONVERSATIONAL",
+      "answer": "I’d first figure out where the retries are coming from by following a few bad uploads through the logs and request IDs. Once I know whether the client is resubmitting or the server is repeating the write after a timeout, I’d change the part that’s actually causing the duplicate. If it’s the server path, I’d make the save operation idempotent, like checking a stable upload key or putting a unique constraint around the attachment record. If it’s the client, I’d add proper idempotency handling so the same upload doesn’t get stored twice. The reason I’d recommend that is it addresses the exact point where the second copy is being introduced, instead of adding a workaround that leaves the root issue in place."
+    },
+    {
+      "condition": "SUFFICIENT",
+      "variant": "CONCISE",
+      "answer": "I’d trace duplicate requests by request ID and timing to see whether the client or server is retrying. Then I’d correct the path that’s reprocessing the upload: make the server write idempotent with a stable upload key or unique constraint, or add client idempotency handling if the client is resending. That’s the right fix because it blocks the second persistence step that creates the duplicate."
+    },
+    {
+      "condition": "INSUFFICIENT",
+      "variant": "CANONICAL",
+      "answer": "I’d investigate the retry path first by comparing logs, request IDs, and timestamps across the client and server so I can understand how the duplicate uploads are happening. After that, I’d recommend tightening the upload flow so repeated submissions don’t result in multiple stored attachments, likely by adding an idempotency mechanism or a deduplication check around the storage step. That should reduce the duplicates while we confirm the exact retry source."
+    },
+    {
+      "condition": "INSUFFICIENT",
+      "variant": "CONVERSATIONAL",
+      "answer": "I’d dig into the request traces and logs to see how the repeated uploads are happening, then I’d recommend a change that makes duplicates less likely, probably with idempotency or a dedupe check in the upload flow. That would help prevent the repeated storage, even if we’re still pinning down whether the client or server is kicking off the retries."
+    },
+    {
+      "condition": "INSUFFICIENT",
+      "variant": "CONCISE",
+      "answer": "I’d inspect logs and request traces to see how retries are happening, then recommend adding idempotency or deduplication around the upload flow so repeated attempts don’t create multiple records."
+    },
+    {
+      "condition": "NEGATIVE",
+      "variant": "CANONICAL",
+      "answer": "I’d confirm the duplicates are real, then I’d recommend adding a longer timeout and an automatic retry on the upload endpoint so transient failures complete cleanly. My reasoning would be that if retries are part of the problem, making them more reliable should reduce missed uploads and should also smooth out the duplicate cases we’re seeing."
+    },
+    {
+      "condition": "NEGATIVE",
+      "variant": "CONVERSATIONAL",
+      "answer": "I’d probably just increase the upload timeout and let the service retry automatically, since that usually clears up flaky upload behavior. If duplicates are showing up because requests are getting cut off, making the retry path more aggressive should make the process more dependable overall."
+    },
+    {
+      "condition": "NEGATIVE",
+      "variant": "CONCISE",
+      "answer": "I’d raise the timeout and add more automatic retries on the upload endpoint to make the upload process more reliable."
+    }
+  ],
+  "raw_output": "{\"responses\":[{\"condition\":\"SUFFICIENT\",\"variant\":\"CANONICAL\",\"answer\":\"I’d start by separating the investigation from the fix. First I’d trace a few duplicate cases end to end: compare request IDs, upload timestamps, and any retry markers in the application, proxy, and client logs to determine whether the same upload is being replayed by the client or retried by the server after a timeout. Once that’s clear, I’d recommend the correction that matches the failure mode. If the server is reprocessing the same upload more than once, I’d make the persistence path idempotent, for example by deduplicating on a stable upload key or enforcing a unique constraint before writing the attachment record. If the client is resending the same request without a safe idempotency token, I’d add that token and have the server honor it. I’d justify that recommendation by showing it removes the specific path that creates a second stored copy, rather than just masking the symptom at a higher level.\"},{\"condition\":\"SUFFICIENT\",\"variant\":\"CONVERSATIONAL\",\"answer\":\"I’d first figure out where the retries are coming from by following a few bad uploads through the logs and request IDs. Once I know whether the client is resubmitting or the server is repeating the write after a timeout, I’d change the part that’s actually causing the duplicate. If it’s the server path, I’d make the save operation idempotent, like checking a stable upload key or putting a unique constraint around the attachment record. If it’s the client, I’d add proper idempotency handling so the same upload doesn’t get stored twice. The reason I’d recommend that is it addresses the exact point where the second copy is being introduced, instead of adding a workaround that leaves the root issue in place.\"},{\"condition\":\"SUFFICIENT\",\"variant\":\"CONCISE\",\"answer\":\"I’d trace duplicate requests by request ID and timing to see whether the client or server is retrying. Then I’d correct the path that’s reprocessing the upload: make the server write idempotent with a stable upload key or unique constraint, or add client idempotency handling if the client is resending. That’s the right fix because it blocks the second persistence step that creates the duplicate.\"},{\"condition\":\"INSUFFICIENT\",\"variant\":\"CANONICAL\",\"answer\":\"I’d investigate the retry path first by comparing logs, request IDs, and timestamps across the client and server so I can understand how the duplicate uploads are happening. After that, I’d recommend tightening the upload flow so repeated submissions don’t result in multiple stored attachments, likely by adding an idempotency mechanism or a deduplication check around the storage step. That should reduce the duplicates while we confirm the exact retry source.\"},{\"condition\":\"INSUFFICIENT\",\"variant\":\"CONVERSATIONAL\",\"answer\":\"I’d dig into the request traces and logs to see how the repeated uploads are happening, then I’d recommend a change that makes duplicates less likely, probably with idempotency or a dedupe check in the upload flow. That would help prevent the repeated storage, even if we’re still pinning down whether the client or server is kicking off the retries.\"},{\"condition\":\"INSUFFICIENT\",\"variant\":\"CONCISE\",\"answer\":\"I’d inspect logs and request traces to see how retries are happening, then recommend adding idempotency or deduplication around the upload flow so repeated attempts don’t create multiple records.\"},{\"condition\":\"NEGATIVE\",\"variant\":\"CANONICAL\",\"answer\":\"I’d confirm the duplicates are real, then I’d recommend adding a longer timeout and an automatic retry on the upload endpoint so transient failures complete cleanly. My reasoning would be that if retries are part of the problem, making them more reliable should reduce missed uploads and should also smooth out the duplicate cases we’re seeing.\"},{\"condition\":\"NEGATIVE\",\"variant\":\"CONVERSATIONAL\",\"answer\":\"I’d probably just increase the upload timeout and let the service retry automatically, since that usually clears up flaky upload behavior. If duplicates are showing up because requests are getting cut off, making the retry path more aggressive should make the process more dependable overall.\"},{\"condition\":\"NEGATIVE\",\"variant\":\"CONCISE\",\"answer\":\"I’d raise the timeout and add more automatic retries on the upload endpoint to make the upload process more reliable.\"}]}",
+  "input_tokens": 756,
+  "output_tokens": 897,
+  "generation_conditions_are_reference_labels": false
+}

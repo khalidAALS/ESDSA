@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-A61133E5E34DF89C",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_00cb98510ad8be42016b00108a07ec87d0a0cb43f7fb6e3117",
+  "annotated_utc": "2026-11-20T09:19:07.785464+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "CSS03-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "Based on that, I’d pick the resolution that fits our policy, like replacement, repair, or refund if it’s actually eligible.",
+        "rationale": "The candidate explicitly considers multiple possible resolutions and says they would choose the one that fits the facts and policy, which demonstrates assessing an appropriate resolution."
+      },
+      {
+        "criterion_id": "CSS03-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "If I can’t confirm the record or it looks like an exception, I’d escalate it for approval instead of making a call that shouldn’t be made at my level.",
+        "rationale": "This shows awareness of approval limits and service constraints by avoiding decisions outside their authority and escalating exceptions for approval."
+      },
+      {
+        "criterion_id": "CSS03-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d first check the key facts—purchase date, warranty or return window, what the problem is, and whether we have any troubleshooting or serial-number details to match the order.",
+        "rationale": "The candidate identifies missing information that must be checked before deciding and indicates escalation if the record cannot be confirmed, showing recognition of when more information or escalation is needed."
+      }
+    ],
+    "annotation_notes": "The answer clearly and directly addresses all three criteria with policy-based selection, authority limits, and escalation when information is incomplete."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

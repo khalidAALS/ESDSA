@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-62B27BE7397663A6",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_06f760c2adf00cf4016b002bd6ec5887d0bbe50777f59b249d",
+  "annotated_utc": "2026-11-20T11:15:36.714082+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "CSS02-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d gather the order number, address, delivery time, and who else at the location might have received it.",
+        "rationale": "This directly identifies relevant information that would help understand the delivery issue."
+      },
+      {
+        "criterion_id": "CSS02-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d also review the tracking notes and compare them with the customer’s account of what they saw.",
+        "rationale": "This shows the candidate distinguishing between the tracking record and the customer’s observed account, indicating an effort to verify sources rather than assume delivery details."
+      },
+      {
+        "criterion_id": "CSS02-C3",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "passage": "",
+        "rationale": "The answer lists a few relevant details to collect, but it does not substantively demonstrate that the collection is authorised or proportionate, nor does it show any explicit safeguards or limits beyond ordinary troubleshooting information gathering."
+      }
+    ],
+    "annotation_notes": ""
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

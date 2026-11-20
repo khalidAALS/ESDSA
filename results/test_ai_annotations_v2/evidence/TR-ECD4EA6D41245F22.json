@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-ECD4EA6D41245F22",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0018dc486edfcdaf016b002959118487d0b279a4ef3947377f",
+  "annotated_utc": "2026-11-20T11:04:59.354677+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "CSS04-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d explain that the replacement has gone through, but the warehouse still needs to confirm dispatch and delivery.",
+        "rationale": "This clearly communicates the current status in understandable terms."
+      },
+      {
+        "criterion_id": "CSS04-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d tell them I’ll chase it up and update them when I hear back, and I’d make sure they know I’m not going to make up a date.",
+        "rationale": "This sets a realistic expectation that there is no confirmed date yet and avoids unsupported promises."
+      },
+      {
+        "criterion_id": "CSS04-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "If they wanted to check back later, I’d give them my contact details or the case number so it’s easy to pick up again.",
+        "rationale": "This provides a clear mechanism for the customer to follow up on the status later."
+      }
+    ],
+    "annotation_notes": "All three criteria are explicitly addressed in the answer."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

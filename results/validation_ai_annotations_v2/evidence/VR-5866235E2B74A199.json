@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-5866235E2B74A199",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0b8c3e818a4ed8ed016b000d548ad487d09a503ebe2fc1a217",
+  "annotated_utc": "2026-11-20T09:05:26.744679+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "SWE02-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d compare app logs with traces, service metrics, and recent deploy or config changes, then check whether failures cluster by instance, region, or downstream dependency.",
+        "rationale": "The answer identifies multiple appropriate technical evidence sources for investigating the failure: logs, traces, service metrics, and deploy/config changes, plus clustering by instance/region/dependency."
+      },
+      {
+        "criterion_id": "SWE02-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d also test whether the issue follows a specific release or node.",
+        "rationale": "This proposes a discriminating check that can separate release-specific or node-specific causes from broader infrastructure issues."
+      },
+      {
+        "criterion_id": "SWE02-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "If infra is healthy overall but only certain paths fail, that points more to routing, dependency, or timeout issues than a full outage.",
+        "rationale": "The candidate explicitly interprets the observed pattern and links it to a diagnostic conclusion about likely causes versus a full outage."
+      }
+    ],
+    "annotation_notes": "The response is concise but substantively addresses all three criteria."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

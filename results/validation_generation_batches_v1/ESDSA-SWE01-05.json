@@ -1,0 +1,75 @@
+{
+  "experiment": "ESDSA_VALIDATION_GENERATION_V1",
+  "partition": "VALIDATION",
+  "family_id": "ESDSA-SWE01-05",
+  "run_sha256": "46291a8c1e40771ea49e309eabcfa39e0fe1185249bb127dee0fa59b67425672",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "response_id": "resp_0fb331d7781b0b7a016aff8b6672e487d08560d4c4e8caf289",
+  "response_status": "completed",
+  "usage": {
+    "input_tokens": 754,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      }
+    },
+    "output_tokens": 1134,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 1888
+  },
+  "raw_output_text": "{\"responses\":[{\"condition\":\"SUFFICIENT\",\"variant\":\"CANONICAL\",\"answer\":\"I’d start by triaging the three symptoms by impact and commonality, then check whether they cluster around the recent deployment or a shared dependency like auth, storage, or search indexing. First I’d reproduce each issue with known examples: search queries that returned bad results, a representative upload that’s slow, and a few login attempts from affected users or accounts. That lets me see the exact failure mode and whether it’s consistent or only happening for certain inputs. Then I’d compare failing cases with working ones—for example, successful versus unsuccessful logins, fast versus slow uploads, and search requests before and after the deploy—to look for differences in user, endpoint, payload size, region, or timing. Based on those observations, I’d narrow it down by checking logs, metrics, and traces around the deploy window, and by separating whether the problems share a backend, config change, or cache/index issue. I’d focus first on whatever is both highest impact and most strongly correlated across the reports, because that’s most likely to give us a fast signal on the root cause.\"},{\"condition\":\"SUFFICIENT\",\"variant\":\"CONVERSATIONAL\",\"answer\":\"I’d triage the issues first and see if they line up with the deployment or some shared service. Then I’d try to reproduce each one with real examples so I can tell whether it’s a consistent failure or just happening in certain cases. After that I’d compare the bad cases to working ones—like successful logins versus failed ones, or quick uploads versus slow ones—to spot what’s different. From there I’d narrow it down with logs and metrics around the deploy, and I’d look for whether it’s search, auth, or upload/storage that changed. I’d usually start with the area that affects the most users and has the clearest pattern, because that gives the quickest path to isolating the cause.\"},{\"condition\":\"SUFFICIENT\",\"variant\":\"CONCISE\",\"answer\":\"I’d triage by impact, then reproduce each problem with real examples. After that I’d compare failing and working cases to see what differs, and use logs/metrics around the deployment to narrow it to a component or config change. I’d start with the issue that has the strongest pattern or widest impact.\"},{\"condition\":\"INSUFFICIENT\",\"variant\":\"CANONICAL\",\"answer\":\"I’d first get a quick sense of severity and whether the recent deployment touched search, uploads, or auth, since that could explain all three reports. Then I’d pull logs and dashboards around the deployment window and look for spikes in errors or latency. If the patterns point to one service, I’d dig there first; if not, I’d split the work across the relevant teams and compare what changed in their areas. I’d also want to confirm whether the reports are isolated to one region or account set, since that could help prioritize the investigation. I’d probably start with the service that shows the most obvious metric change rather than trying to chase every individual report immediately.\"},{\"condition\":\"INSUFFICIENT\",\"variant\":\"CONVERSATIONAL\",\"answer\":\"I’d start by checking whether the deployment lines up with the timing and look at logs and metrics for search, uploads, and login. If one service shows a clear error or latency jump, I’d focus there first and loop in that team. I’d also check whether the issue is limited to a region or a subset of users so I can prioritize. Basically I’d use the dashboards and deploy history to decide where to dig first, rather than jumping straight into every ticket.\"},{\"condition\":\"INSUFFICIENT\",\"variant\":\"CONCISE\",\"answer\":\"I’d check deploy timing, logs, and metrics first, and use that to see which service looks most affected. If one area shows a clear spike, I’d start there and narrow it with the owning team. I’d also check whether the issue is regional or limited to certain users.\"},{\"condition\":\"NEGATIVE\",\"variant\":\"CANONICAL\",\"answer\":\"Given that there’s a recent deployment and multiple teams are asking for attention, I’d probably start by assuming the deployment is the main cause and focus on rolling back or hotfixing it as quickly as possible. I wouldn’t spend much time trying to reproduce each report individually at first, because that can slow down response when the symptoms are already pointing to the release. I’d look at the deploy diff and see which team owns the touched code paths, then ask them to inspect their areas in parallel. If the rollback doesn’t clear things up, I’d revisit the logs and user reports afterward to see what was missed.\"},{\"condition\":\"NEGATIVE\",\"variant\":\"CONVERSATIONAL\",\"answer\":\"If a deployment just went out and people are seeing search, upload, and login issues, I’d lean on the release as the likely culprit and move fast on that. I’d probably prioritize a rollback or patch plan before doing a lot of reproduction work, since the symptoms are already pretty broad. Then I’d have the relevant teams look at the parts of the diff they own. If that doesn’t solve it, I’d go back and dig through the logs more deeply.\"},{\"condition\":\"NEGATIVE\",\"variant\":\"CONCISE\",\"answer\":\"I’d treat the deployment as the likely cause and start with rollback or a quick hotfix. I wouldn’t spend much time reproducing each report before acting. After that, I’d have the owning teams review the changed code paths and then check logs if needed.\"}]}",
+  "responses": [
+    {
+      "condition": "SUFFICIENT",
+      "variant": "CANONICAL",
+      "answer": "I’d start by triaging the three symptoms by impact and commonality, then check whether they cluster around the recent deployment or a shared dependency like auth, storage, or search indexing. First I’d reproduce each issue with known examples: search queries that returned bad results, a representative upload that’s slow, and a few login attempts from affected users or accounts. That lets me see the exact failure mode and whether it’s consistent or only happening for certain inputs. Then I’d compare failing cases with working ones—for example, successful versus unsuccessful logins, fast versus slow uploads, and search requests before and after the deploy—to look for differences in user, endpoint, payload size, region, or timing. Based on those observations, I’d narrow it down by checking logs, metrics, and traces around the deploy window, and by separating whether the problems share a backend, config change, or cache/index issue. I’d focus first on whatever is both highest impact and most strongly correlated across the reports, because that’s most likely to give us a fast signal on the root cause."
+    },
+    {
+      "condition": "SUFFICIENT",
+      "variant": "CONVERSATIONAL",
+      "answer": "I’d triage the issues first and see if they line up with the deployment or some shared service. Then I’d try to reproduce each one with real examples so I can tell whether it’s a consistent failure or just happening in certain cases. After that I’d compare the bad cases to working ones—like successful logins versus failed ones, or quick uploads versus slow ones—to spot what’s different. From there I’d narrow it down with logs and metrics around the deploy, and I’d look for whether it’s search, auth, or upload/storage that changed. I’d usually start with the area that affects the most users and has the clearest pattern, because that gives the quickest path to isolating the cause."
+    },
+    {
+      "condition": "SUFFICIENT",
+      "variant": "CONCISE",
+      "answer": "I’d triage by impact, then reproduce each problem with real examples. After that I’d compare failing and working cases to see what differs, and use logs/metrics around the deployment to narrow it to a component or config change. I’d start with the issue that has the strongest pattern or widest impact."
+    },
+    {
+      "condition": "INSUFFICIENT",
+      "variant": "CANONICAL",
+      "answer": "I’d first get a quick sense of severity and whether the recent deployment touched search, uploads, or auth, since that could explain all three reports. Then I’d pull logs and dashboards around the deployment window and look for spikes in errors or latency. If the patterns point to one service, I’d dig there first; if not, I’d split the work across the relevant teams and compare what changed in their areas. I’d also want to confirm whether the reports are isolated to one region or account set, since that could help prioritize the investigation. I’d probably start with the service that shows the most obvious metric change rather than trying to chase every individual report immediately."
+    },
+    {
+      "condition": "INSUFFICIENT",
+      "variant": "CONVERSATIONAL",
+      "answer": "I’d start by checking whether the deployment lines up with the timing and look at logs and metrics for search, uploads, and login. If one service shows a clear error or latency jump, I’d focus there first and loop in that team. I’d also check whether the issue is limited to a region or a subset of users so I can prioritize. Basically I’d use the dashboards and deploy history to decide where to dig first, rather than jumping straight into every ticket."
+    },
+    {
+      "condition": "INSUFFICIENT",
+      "variant": "CONCISE",
+      "answer": "I’d check deploy timing, logs, and metrics first, and use that to see which service looks most affected. If one area shows a clear spike, I’d start there and narrow it with the owning team. I’d also check whether the issue is regional or limited to certain users."
+    },
+    {
+      "condition": "NEGATIVE",
+      "variant": "CANONICAL",
+      "answer": "Given that there’s a recent deployment and multiple teams are asking for attention, I’d probably start by assuming the deployment is the main cause and focus on rolling back or hotfixing it as quickly as possible. I wouldn’t spend much time trying to reproduce each report individually at first, because that can slow down response when the symptoms are already pointing to the release. I’d look at the deploy diff and see which team owns the touched code paths, then ask them to inspect their areas in parallel. If the rollback doesn’t clear things up, I’d revisit the logs and user reports afterward to see what was missed."
+    },
+    {
+      "condition": "NEGATIVE",
+      "variant": "CONVERSATIONAL",
+      "answer": "If a deployment just went out and people are seeing search, upload, and login issues, I’d lean on the release as the likely culprit and move fast on that. I’d probably prioritize a rollback or patch plan before doing a lot of reproduction work, since the symptoms are already pretty broad. Then I’d have the relevant teams look at the parts of the diff they own. If that doesn’t solve it, I’d go back and dig through the logs more deeply."
+    },
+    {
+      "condition": "NEGATIVE",
+      "variant": "CONCISE",
+      "answer": "I’d treat the deployment as the likely cause and start with rollback or a quick hotfix. I wouldn’t spend much time reproducing each report before acting. After that, I’d have the owning teams review the changed code paths and then check logs if needed."
+    }
+  ],
+  "validation_status": "STRUCTURE_PASSED"
+}

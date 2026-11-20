@@ -1,0 +1,18 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "SEMANTIC_EQUIVALENCE",
+  "blinded_id": "TG-66FBFC94F91A65E2",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_055153009f70f29e016b002a79558087d09684d1a7701f8013",
+  "annotated_utc": "2026-11-20T11:09:48.326800+00:00",
+  "annotation": {
+    "semantic_equivalence": "NO",
+    "material_differences": "Response C adds a new operational commitment: it would not hold up the readiness message unless the AV problem sounded severe, and it emphasizes sending the readiness update first even while the issue remains unresolved. Responses A and B simply report the room as ready while noting tech is still working, but A also says to keep moving rather than wait on details, which is a different rationale than B’s shorter update. The added severity threshold and explicit choice to avoid delaying the message could change the decision-traceability and coordination assessment under the criteria.",
+    "equivalence_rationale": "The three responses do not preserve the same criterion-level evidence. All mention the facilities status and the AV issue, but C introduces a specific policy for when to delay or withhold the readiness update, which is not present in B and is only loosely implied in A. That difference can affect how the answer is judged on using operational evidence, coordinating dependencies, and explaining the update decision. Therefore the responses are not semantically equivalent for the stated evaluation."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

@@ -1,0 +1,20 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "SEMANTIC_EQUIVALENCE",
+  "blinded_id": "VG-0683312C96F8BBDF",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_024be7c300503b1d016b000bbd946c87d0b9a47bcbd8e6246d",
+  "annotated_utc": "2026-11-20T08:58:40.301266+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "semantic_equivalence": "NO",
+    "material_differences": "Response C omits the explicit uncertainty about customer demand and the conditional trigger based on the partner confirming a major problem, while B explicitly frames both partner capacity and customer demand as uncertain and ties escalation/alternatives to a more severe confirmed reduction. A goes further by explicitly choosing not to escalate and to wait for a firmer update; B and C are closer, but A’s stronger deferral and B’s broader uncertainty framing mean the responses do not preserve exactly the same risk-assessment evidence across all three.",
+    "equivalence_rationale": "All three recognize a potential operational risk from reduced partner capacity and recommend holding the current plan for now. However, they differ in how much uncertainty they acknowledge and when they would act. B explicitly considers both uncertain capacity and uncertain demand, and conditions action on confirmation of a major problem. C mentions capacity uncertainty and cost avoidance but not demand uncertainty. A most strongly emphasizes inaction and refusal to escalate until a firmer update. These differences could affect the evidence for likelihood/impact assessment and the threshold for escalation, so the set is not fully semantically equivalent under the competency criteria."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

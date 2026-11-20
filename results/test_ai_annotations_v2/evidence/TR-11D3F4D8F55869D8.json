@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-11D3F4D8F55869D8",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0f88aaef7b329fa1016b002b568f5c87d09d55f6a14bf3e59d",
+  "annotated_utc": "2026-11-20T11:13:28.714436+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "CSS04-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d say I can see a fix was applied on our side, but I’d also be clear that we haven’t confirmed it actually solved the issue for them yet.",
+        "rationale": "This clearly explains the situation to the customer in understandable terms and communicates what the agent would say."
+      },
+      {
+        "criterion_id": "CSS04-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I wouldn’t promise a particular result or timeline, since that depends on what we find next.",
+        "rationale": "This explicitly avoids unsupported promises and sets expectations based on the next findings."
+      },
+      {
+        "criterion_id": "CSS04-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d ask them to tell me what they’re seeing now",
+        "rationale": "This proposes a concrete mechanism for confirmation by requesting the customer’s current status information."
+      }
+    ],
+    "annotation_notes": "The response addresses all three criteria directly and concisely."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

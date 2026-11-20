@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-B3B3AC7FC0455D8E",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_023976a47d67d6e1016b002aec138887d081ee1606abcacd83",
+  "annotated_utc": "2026-11-20T11:11:41.886371+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "SWE03-C1",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "passage": "",
+        "rationale": "The answer proposes a fix but does not identify any cause supported by investigation; it does not establish whether the duplicates are due to client retries, server behavior, or another source."
+      },
+      {
+        "criterion_id": "SWE03-C2",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I’d raise the timeout and add more automatic retries on the upload endpoint",
+        "rationale": "This recommends a correction without linking it to an identified cause, and it directly assumes retries should be increased despite the scenario’s uncertainty about who initiates them."
+      },
+      {
+        "criterion_id": "SWE03-C3",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "passage": "",
+        "rationale": "The answer says the change would make uploads more reliable, but it does not explain why this correction would address the duplicate-attachment problem specifically."
+      }
+    ],
+    "annotation_notes": "The response suggests a possible fix but does not show investigation, causal diagnosis, or a reasoned justification tied to the duplication issue."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

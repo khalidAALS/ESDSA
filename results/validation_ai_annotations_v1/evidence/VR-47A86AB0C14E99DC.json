@@ -1,0 +1,35 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_TARGETED_PILOT_V1",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-47A86AB0C14E99DC",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V1",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_07af205d06cfb641016aff972a3d6c87d0b502d52bc776957a",
+  "annotated_utc": "2026-11-20T00:41:16.346797+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "CSS02-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d gather the customer’s best recollection, check the account status and notes, and use billing history to build a timeline.",
+        "rationale": "This shows the candidate would ask for the customer's recollection and review relevant account/billing records to obtain information needed to understand the issue."
+      },
+      {
+        "criterion_id": "CSS02-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "If it still wasn’t clear, I’d escalate for a deeper review.",
+        "rationale": "The candidate indicates they would not treat the initial information as conclusive and would escalate when the facts remain unclear, which reflects separating uncertainty from confirmed facts rather than assuming an outcome."
+      },
+      {
+        "criterion_id": "CSS02-C3",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "passage": "",
+        "rationale": "The answer mentions standard account and billing checks, but does not clearly show boundaries around what information is appropriate or authorised to collect."
+      }
+    ],
+    "annotation_notes": "The response is brief but provides enough evidence for asking relevant information and avoiding premature conclusions; it does not explicitly address collection limits."
+  }
+}

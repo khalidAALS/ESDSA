@@ -1,0 +1,43 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-C574732B12EAA1D2",
+  "reviewer_id": "AI_ASSISTED_MANUAL_ADJUDICATION_V1",
+  "requested_model": null,
+  "returned_model": null,
+  "api_response_id": null,
+  "annotated_utc": "2026-11-20T11:29:54.369402+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "OPS03-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "Then I’d reconcile the two reports",
+        "rationale": "The candidate proposes integrating the conflicting operational reports before determining readiness."
+      },
+      {
+        "criterion_id": "OPS03-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d first bring both parties onto the same thread",
+        "rationale": "The candidate explicitly coordinates the relevant parties and subsequently identifies ownership and dependencies."
+      },
+      {
+        "criterion_id": "OPS03-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d document the basis for the update",
+        "rationale": "The candidate commits to recording the evidence supporting the readiness determination."
+      }
+    ],
+    "annotation_notes": "AI-assisted manual adjudication following repeated model-generated quotation-validation failures. Statuses and verbatim excerpts were assigned by explicit review of the candidate answer and rubric. Not independent human ground truth."
+  },
+  "reference_decision": null,
+  "independent_human_review": false,
+  "annotation_method": "EXPLICIT_AI_ASSISTED_MANUAL_ADJUDICATION",
+  "prior_failure": {
+    "blinded_id": "TR-C574732B12EAA1D2",
+    "kind": "EVIDENCE",
+    "error": "FAIL: Supporting passage is not an exact substring of the candidate answer: OPS03-C2",
+    "status": "MANUAL_REVIEW_REQUIRED"
+  }
+}

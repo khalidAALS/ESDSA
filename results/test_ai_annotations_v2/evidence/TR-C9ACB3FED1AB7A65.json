@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-C9ACB3FED1AB7A65",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_00506aba6441cecf016b002b1d647487d08ca9a4c16b7859c6",
+  "annotated_utc": "2026-11-20T11:12:31.995879+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "CSS03-C1",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I’d prioritise speed above everything else and arrange the expedited replacement straight away.",
+        "rationale": "This shows the candidate choosing speed as the overriding factor without weighing the competing constraints or assessing whether that resolution is appropriate to the available evidence and limited stock."
+      },
+      {
+        "criterion_id": "CSS03-C2",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I’d tell them we’ll make it work and get the item out, even if I have to wait on the internal approval later.",
+        "rationale": "This explicitly proposes proceeding before required authorisation, which conflicts with respecting service and approval constraints."
+      },
+      {
+        "criterion_id": "CSS03-C3",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I wouldn’t spend much time on the shipment dispute at that stage; the important thing is to keep the customer moving forward.",
+        "rationale": "This indicates the candidate would bypass a key unresolved issue rather than recognising the need for further information or escalation before deciding on the resolution."
+      }
+    ],
+    "annotation_notes": "The answer favours immediate action over evaluating constraints, so it provides negative evidence for policy awareness and uncertainty handling, and also for option assessment because it does not show a balanced resolution judgement."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

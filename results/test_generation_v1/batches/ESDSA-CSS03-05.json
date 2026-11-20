@@ -1,0 +1,63 @@
+{
+  "experiment": "ESDSA_TEST_GENERATION_V1",
+  "partition": "TEST",
+  "family_id": "ESDSA-CSS03-05",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_05ee21027ba1258a016b0022b10c5087d09be131c32d1f4986",
+  "timestamp_utc": "2026-11-20T10:36:39.054369+00:00",
+  "run_sha256": "1376bbe7c0ef0b323a670b30bd32a31b0817af9d6779db0823a5e0e08ef285ce",
+  "scenario_sha256": "9d2280d8014612bdd263f5dd8daf8356efeac3fa7a7e4b0cd3c6f4fef932426a",
+  "rubric_sha256": "1ff65fb010f766900d3e56f242159933bd2f4d2858e38e99ac63320d79b09974",
+  "responses": [
+    {
+      "condition": "SUFFICIENT",
+      "variant": "CANONICAL",
+      "answer": "I’d start by confirming the order details, the item sent, and the delivery timeline, because I want to be sure the issue is a true mis-ship and not a tracking delay or partial fulfillment. Given the customer’s event, I’d look at the fastest policy-compliant options first: a standard replacement if stock allows, or an alternative item if that’s acceptable and available. Since expedited replacement needs authorisation and stock is limited, I wouldn’t promise that immediately; I’d flag it for supervisor approval while I check whether we can reserve stock or issue a same-day escalation. At the same time, if the original shipment status is disputed, I’d hold off on closing the case until I’ve checked the warehouse and carrier records so I’m not resolving against conflicting information. Then I’d come back to the customer with the most realistic option we can support within policy and the time available."
+    },
+    {
+      "condition": "SUFFICIENT",
+      "variant": "CONVERSATIONAL",
+      "answer": "I’d first verify what actually happened with the order, because if the shipment status is disputed I don’t want to assume the wrong thing. Then I’d check what stock we actually have and whether there’s an approved way to get a replacement out fast. If expedited replacement needs sign-off, I’d escalate that rather than promise it myself. If we can’t get the exact item there in time, I’d see whether a substitute or another policy-approved option would still help the customer make their event. The main thing for me is balancing the urgency with what we can genuinely support, and not closing it until the records line up."
+    },
+    {
+      "condition": "SUFFICIENT",
+      "variant": "CONCISE",
+      "answer": "I’d verify the order and shipment records first, then check stock and the approved remedy options. If an expedited replacement needs authorisation, I’d escalate it instead of promising it. If the exact item can’t get there in time, I’d consider an approved alternative that still helps the customer, but I wouldn’t finalise anything until the disputed shipment status is checked."
+    },
+    {
+      "condition": "INSUFFICIENT",
+      "variant": "CANONICAL",
+      "answer": "I’d acknowledge the urgency and look for the fastest way to help, starting with checking whether we can send a replacement right away. If the item is available, I’d move it forward and keep the customer updated on timing. If stock is tight, I’d explore other options like a substitute or a credit so the customer isn’t left waiting. I’d also make sure the case is tracked properly so the customer has a clear next step."
+    },
+    {
+      "condition": "INSUFFICIENT",
+      "variant": "CONVERSATIONAL",
+      "answer": "I’d try to get them helped as quickly as possible by checking whether we can ship a replacement or offer another option if the stock is low. I’d keep the customer informed about what’s possible and what the timing looks like. If the item can’t be sent straight away, I’d look at alternatives so they still have some resolution before the event."
+    },
+    {
+      "condition": "INSUFFICIENT",
+      "variant": "CONCISE",
+      "answer": "I’d check whether we can send a replacement quickly, and if not, look at an alternative or credit that still helps the customer before the event. I’d keep them updated on timing and next steps."
+    },
+    {
+      "condition": "NEGATIVE",
+      "variant": "CANONICAL",
+      "answer": "Because the customer has an upcoming event, I’d prioritise speed above everything else and arrange the expedited replacement straight away. If stock is limited, I’d tell them we’ll make it work and get the item out, even if I have to wait on the internal approval later. I wouldn’t spend much time on the shipment dispute at that stage; the important thing is to keep the customer moving forward. If needed, I’d sort out the records after the replacement has already been sent."
+    },
+    {
+      "condition": "NEGATIVE",
+      "variant": "CONVERSATIONAL",
+      "answer": "I’d just push the replacement through as fast as possible since they need it for an event. If the system says the shipment is disputed or the faster option needs approval, I’d deal with that after I’ve got the new item arranged. I’d rather keep things moving than slow the customer down with extra checks."
+    },
+    {
+      "condition": "NEGATIVE",
+      "variant": "CONCISE",
+      "answer": "I’d arrange the fast replacement first and handle the approval or shipment dispute afterward so the customer isn’t delayed."
+    }
+  ],
+  "raw_output": "{\"responses\":[{\"condition\":\"SUFFICIENT\",\"variant\":\"CANONICAL\",\"answer\":\"I’d start by confirming the order details, the item sent, and the delivery timeline, because I want to be sure the issue is a true mis-ship and not a tracking delay or partial fulfillment. Given the customer’s event, I’d look at the fastest policy-compliant options first: a standard replacement if stock allows, or an alternative item if that’s acceptable and available. Since expedited replacement needs authorisation and stock is limited, I wouldn’t promise that immediately; I’d flag it for supervisor approval while I check whether we can reserve stock or issue a same-day escalation. At the same time, if the original shipment status is disputed, I’d hold off on closing the case until I’ve checked the warehouse and carrier records so I’m not resolving against conflicting information. Then I’d come back to the customer with the most realistic option we can support within policy and the time available.\"},{\"condition\":\"SUFFICIENT\",\"variant\":\"CONVERSATIONAL\",\"answer\":\"I’d first verify what actually happened with the order, because if the shipment status is disputed I don’t want to assume the wrong thing. Then I’d check what stock we actually have and whether there’s an approved way to get a replacement out fast. If expedited replacement needs sign-off, I’d escalate that rather than promise it myself. If we can’t get the exact item there in time, I’d see whether a substitute or another policy-approved option would still help the customer make their event. The main thing for me is balancing the urgency with what we can genuinely support, and not closing it until the records line up.\"},{\"condition\":\"SUFFICIENT\",\"variant\":\"CONCISE\",\"answer\":\"I’d verify the order and shipment records first, then check stock and the approved remedy options. If an expedited replacement needs authorisation, I’d escalate it instead of promising it. If the exact item can’t get there in time, I’d consider an approved alternative that still helps the customer, but I wouldn’t finalise anything until the disputed shipment status is checked.\"},{\"condition\":\"INSUFFICIENT\",\"variant\":\"CANONICAL\",\"answer\":\"I’d acknowledge the urgency and look for the fastest way to help, starting with checking whether we can send a replacement right away. If the item is available, I’d move it forward and keep the customer updated on timing. If stock is tight, I’d explore other options like a substitute or a credit so the customer isn’t left waiting. I’d also make sure the case is tracked properly so the customer has a clear next step.\"},{\"condition\":\"INSUFFICIENT\",\"variant\":\"CONVERSATIONAL\",\"answer\":\"I’d try to get them helped as quickly as possible by checking whether we can ship a replacement or offer another option if the stock is low. I’d keep the customer informed about what’s possible and what the timing looks like. If the item can’t be sent straight away, I’d look at alternatives so they still have some resolution before the event.\"},{\"condition\":\"INSUFFICIENT\",\"variant\":\"CONCISE\",\"answer\":\"I’d check whether we can send a replacement quickly, and if not, look at an alternative or credit that still helps the customer before the event. I’d keep them updated on timing and next steps.\"},{\"condition\":\"NEGATIVE\",\"variant\":\"CANONICAL\",\"answer\":\"Because the customer has an upcoming event, I’d prioritise speed above everything else and arrange the expedited replacement straight away. If stock is limited, I’d tell them we’ll make it work and get the item out, even if I have to wait on the internal approval later. I wouldn’t spend much time on the shipment dispute at that stage; the important thing is to keep the customer moving forward. If needed, I’d sort out the records after the replacement has already been sent.\"},{\"condition\":\"NEGATIVE\",\"variant\":\"CONVERSATIONAL\",\"answer\":\"I’d just push the replacement through as fast as possible since they need it for an event. If the system says the shipment is disputed or the faster option needs approval, I’d deal with that after I’ve got the new item arranged. I’d rather keep things moving than slow the customer down with extra checks.\"},{\"condition\":\"NEGATIVE\",\"variant\":\"CONCISE\",\"answer\":\"I’d arrange the fast replacement first and handle the approval or shipment dispute afterward so the customer isn’t delayed.\"}]}",
+  "input_tokens": 748,
+  "output_tokens": 915,
+  "generation_conditions_are_reference_labels": false
+}

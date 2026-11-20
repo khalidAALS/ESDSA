@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-BABDFD23BB50F202",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0380d9657dc9a93e016b002b8af3a087d083c275e1760303a9",
+  "annotated_utc": "2026-11-20T11:14:20.969900+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "OPS02-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d flag it as a possible cold-chain issue first, not something to ignore just because the second monitor looks normal.",
+        "rationale": "This explicitly identifies a plausible operational risk in context: a possible cold-chain issue from the temperature excursion."
+      },
+      {
+        "criterion_id": "OPS02-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "A quick blip could be equipment noise, but it could also mean the shipment was exposed long enough to matter, and since it’s time-sensitive I’d think about both product impact and the risk of delaying dispatch.",
+        "rationale": "This shows consideration of uncertainty and potential consequences, including product impact and delay risk."
+      },
+      {
+        "criterion_id": "OPS02-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "If it looks like a real exposure, I’d escalate to the right owner and line up a backup plan; if it’s clearly a minor sensor issue, I’d document it and still move carefully.",
+        "rationale": "This proposes proportionate actions based on the assessed risk: escalation and backup planning for a real exposure, or documentation and cautious continuation for a minor sensor issue."
+      }
+    ],
+    "annotation_notes": ""
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

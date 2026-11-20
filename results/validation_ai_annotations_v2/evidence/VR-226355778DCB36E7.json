@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-226355778DCB36E7",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_06e404b81947100f016b000c264ed087d0a40ec0267b674c83",
+  "annotated_utc": "2026-11-20T09:00:24.431822+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "CSS04-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d explain that we’re still investigating and don’t have a confirmed cause or reliable resolution date yet",
+        "rationale": "The candidate clearly states how they would communicate the situation in understandable terms, explaining the current status and lack of confirmed information."
+      },
+      {
+        "criterion_id": "CSS04-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "so I can’t promise a firm timeline",
+        "rationale": "The candidate explicitly avoids making an unsupported promise and sets expectations based on the uncertainty of the situation."
+      },
+      {
+        "criterion_id": "CSS04-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d keep the case open and update the customer as soon as I have confirmed information.",
+        "rationale": "The candidate describes a concrete follow-up approach by keeping the case open and committing to provide updates when information is confirmed."
+      }
+    ],
+    "annotation_notes": "All three criteria are supported by explicit statements in the candidate answer."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

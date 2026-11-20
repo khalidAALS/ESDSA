@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-2D6A55197D705630",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_00a4a81412773ea4016b0029c7299c87d0831bb00c6d628dcc",
+  "annotated_utc": "2026-11-20T11:06:49.639045+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "CSS01-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d ask them to explain what happened and what they see on their side, because I’d want to figure out whether the booking disappeared, moved, or just isn’t showing properly.",
+        "rationale": "This explicitly shows the candidate would clarify the customer's problem by eliciting what happened and diagnosing whether the booking is missing, moved, or not displaying correctly."
+      },
+      {
+        "criterion_id": "CSS01-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d ask them to explain what happened and what they see on their side, because I’d want to figure out whether the booking disappeared, moved, or just isn’t showing properly.",
+        "rationale": "The passage identifies the affected service/outcome as the booking and the appointment-related status of that booking, which establishes the customer’s impacted service."
+      },
+      {
+        "criterion_id": "CSS01-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "After that I’d make sure I’ve got the issue broadly right before I pick a next step.",
+        "rationale": "This clearly indicates the candidate would summarise or confirm their understanding of the issue before choosing a resolution."
+      }
+    ],
+    "annotation_notes": "The answer is concise but does establish all three problem-identification behaviours."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

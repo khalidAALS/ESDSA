@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-FBBC5A57E19928CE",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0538ae1bfcdce778016b002adb08a087d0b1c83c55f215bc21",
+  "annotated_utc": "2026-11-20T11:11:24.612617+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "CSS03-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "If it appears to match an incident covered by policy, I’d explain what compensation might be available",
+        "rationale": "The candidate ties the resolution option to the available evidence and indicates compensation would be considered only if the incident is covered by policy, which shows assessment of an appropriate resolution based on the evidence."
+      },
+      {
+        "criterion_id": "CSS03-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "make sure the request is passed to the right queue if I can’t authorise it myself",
+        "rationale": "This explicitly respects authorisation limits by not claiming personal authority and routing the request appropriately when it is outside their authorization."
+      },
+      {
+        "criterion_id": "CSS03-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "If the information doesn’t line up yet, I’d keep investigating and update the customer rather than closing it out too quickly.",
+        "rationale": "The candidate clearly recognizes that more investigation is needed when the evidence is inconclusive and commits to keeping the customer informed rather than prematurely closing the case."
+      }
+    ],
+    "annotation_notes": "The answer is cautious and conditional, with no clear negative evidence against any criterion."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

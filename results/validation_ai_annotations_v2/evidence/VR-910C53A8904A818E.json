@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-910C53A8904A818E",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_08dd506c23d38437016b000bb1b36087d0bfd9f6a05ebd8b03",
+  "annotated_utc": "2026-11-20T08:58:27.782278+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "SWE03-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d reproduce the issue, trace the calculation path, and look at the shared component.",
+        "rationale": "This explicitly describes investigating the problem and identifying a plausible cause in the shared calculation component."
+      },
+      {
+        "criterion_id": "SWE03-C2",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "passage": "",
+        "rationale": "The answer mentions looking at the shared component and possibly limiting the feature, but it does not clearly connect a specific correction to a specific identified cause."
+      },
+      {
+        "criterion_id": "SWE03-C3",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "passage": "",
+        "rationale": "The candidate says the goal is to balance customer safety with evidence before a broad change, but does not explain why a particular correction would address the incorrect figures."
+      }
+    ],
+    "annotation_notes": "The response shows some investigation and a tentative mitigation, but it does not fully justify or link a specific fix to the cause."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

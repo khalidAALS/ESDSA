@@ -1,0 +1,208 @@
+{
+  "experiment": "ESDSA_VALIDATION_CONSOLIDATION_V1",
+  "partition": "VALIDATION",
+  "status": "PASSED",
+  "family_count": 24,
+  "response_count": 216,
+  "conditions": [
+    "SUFFICIENT",
+    "INSUFFICIENT",
+    "NEGATIVE"
+  ],
+  "variants": [
+    "CANONICAL",
+    "CONVERSATIONAL",
+    "CONCISE"
+  ],
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "generation_plan_sha256": "8e13266bd21258b85825e8fdfd9a1f6d21e030dbcca55695f73676dc689cf34c",
+  "registry_sha256": "5fc89db5918d20f18e259582a5c9004613dd2f60a3a1881b745b392fd26d97fb",
+  "checks": {
+    "registry_plan_family_ids_match": true,
+    "exactly_24_batch_files": true,
+    "exactly_216_responses": true,
+    "unique_response_ids": true,
+    "nine_condition_variant_pairs_per_family": true,
+    "raw_output_matches_saved_responses": true,
+    "returned_model_consistent": true,
+    "structural_status_passed": true,
+    "validation_partition_only": true
+  },
+  "limitations": [
+    "Run fingerprints checked for presence and format, not independently recomputed from the generator payload.",
+    "Reference decisions have not been adjudicated.",
+    "Semantic equivalence has not been adjudicated.",
+    "No evaluator or TEST partition was accessed."
+  ],
+  "batches": [
+    {
+      "family_id": "ESDSA-CSS01-08",
+      "file": "results/validation_generation_batches_v1/ESDSA-CSS01-08.json",
+      "file_sha256": "b4e4e7e0c6f5aa1a031a8561ab973964055e23ea44aa21599545d2505e343132",
+      "run_sha256": "d4552a00521be2a42165e85035cb9cb86694add48060ebab38df44e7a3483f07",
+      "response_count": 9
+    },
+    {
+      "family_id": "ESDSA-CSS01-10",
+      "file": "results/validation_generation_batches_v1/ESDSA-CSS01-10.json",
+      "file_sha256": "448e74ea99c4fb7ac9ead7e258b1130c703bbb69062ca5b3263b951774aabf12",
+      "run_sha256": "2516fb15cff81c41eb134e94cce3ca08591ae4fe0f960398c78a3d136d239eef",
+      "response_count": 9
+    },
+    {
+      "family_id": "ESDSA-CSS02-05",
+      "file": "results/validation_generation_batches_v1/ESDSA-CSS02-05.json",
+      "file_sha256": "e58d7df2bd0ab42d9fadd05d781f58a1449ac4b2b440beb5623b8fa43562de77",
+      "run_sha256": "4a706a89056ebda757ea5b090fb52df76abed38cee014479e68bd0f3115eda96",
+      "response_count": 9
+    },
+    {
+      "family_id": "ESDSA-CSS02-06",
+      "file": "results/validation_generation_batches_v1/ESDSA-CSS02-06.json",
+      "file_sha256": "e62b6623d9ab73c8ea3daddd3f1121307db471c1ee8a661927783610e789cf76",
+      "run_sha256": "c81c89d1f9f94b966f8e4b47a91aa67fbdf3d94f8c825fcdc285d4d0fdc4057c",
+      "response_count": 9
+    },
+    {
+      "family_id": "ESDSA-CSS03-01",
+      "file": "results/validation_generation_batches_v1/ESDSA-CSS03-01.json",
+      "file_sha256": "5a3de78b7a858dd7c9e9ce13a2228f1295c7b0fb92f37288f938e1faa2b00b6a",
+      "run_sha256": "a65daf808dd646c4898e1a63b3c01135e560fb927586b2b1a0e62d657db6f474",
+      "response_count": 9
+    },
+    {
+      "family_id": "ESDSA-CSS03-03",
+      "file": "results/validation_generation_batches_v1/ESDSA-CSS03-03.json",
+      "file_sha256": "6523639524ef397e87bd96e581918292b6ee8c571dc666666e4dde2a961e4d40",
+      "run_sha256": "5d5ba5b5275074764612b35a6e93fd8a0643f08102d981a665802eb51ed4b4e3",
+      "response_count": 9
+    },
+    {
+      "family_id": "ESDSA-CSS04-06",
+      "file": "results/validation_generation_batches_v1/ESDSA-CSS04-06.json",
+      "file_sha256": "35dd6b4c90eb2eb103d5c9959ac2cb9b861219351778f885c93a72aae700cb77",
+      "run_sha256": "022e67640f49ae2bfdbc567aeaef656056555ae17730fc26b5dc77999967bb3d",
+      "response_count": 9
+    },
+    {
+      "family_id": "ESDSA-CSS04-10",
+      "file": "results/validation_generation_batches_v1/ESDSA-CSS04-10.json",
+      "file_sha256": "ec0e78aa706ca978e0bc9939d67944fc28e5b1e821c5568126cdca3b84f1c129",
+      "run_sha256": "14ed1e4d3d39add00949b0885569377a0d95d89fd7afe61b092b960865cb6240",
+      "response_count": 9
+    },
+    {
+      "family_id": "ESDSA-OPS01-05",
+      "file": "results/validation_generation_batches_v1/ESDSA-OPS01-05.json",
+      "file_sha256": "28d79fdefd37b65063ab8858fcdfde5bc51bc9b55d098e917a8091dc700b791d",
+      "run_sha256": "e37e20f9af09bb41b652bd85522db9236c59f55dd896bd6c4b76d419386a6907",
+      "response_count": 9
+    },
+    {
+      "family_id": "ESDSA-OPS01-09",
+      "file": "results/validation_generation_batches_v1/ESDSA-OPS01-09.json",
+      "file_sha256": "8244323ff352d6820e9f8b5dea28dd4007e6568b76d831156f9fc569773cf504",
+      "run_sha256": "1ee14f9c784c4ed7612557c2aae4d488384d766af1b5f81fa650c0ebef6929ee",
+      "response_count": 9
+    },
+    {
+      "family_id": "ESDSA-OPS02-01",
+      "file": "results/validation_generation_batches_v1/ESDSA-OPS02-01.json",
+      "file_sha256": "06098ea50c7883844dbd586585b2bf7232f4448d6e25d75f980b965cc80f00eb",
+      "run_sha256": "16aa67b03eb4bfc8725be61703db47d3055e9cf9b2651627604095d7515f2730",
+      "response_count": 9
+    },
+    {
+      "family_id": "ESDSA-OPS02-06",
+      "file": "results/validation_generation_batches_v1/ESDSA-OPS02-06.json",
+      "file_sha256": "4f2a5d43952cb45c13bdfecf6aa92f2f364a0718dbf3dbef22e06749e7593da5",
+      "run_sha256": "d4fbdd22d1f39af4eaeec47ea397f4a3edde3b3cda29aa8a3a4927445725de2a",
+      "response_count": 9
+    },
+    {
+      "family_id": "ESDSA-OPS03-03",
+      "file": "results/validation_generation_batches_v1/ESDSA-OPS03-03.json",
+      "file_sha256": "db1adeb3b7622eccaf05ef821fd1fddc492b3726ddcaaf5f3d5bc56c03375570",
+      "run_sha256": "1dc792171a2a622a5f70c4fd47aa3b1e5d729b7f8d1fe21563dd60030c111b2d",
+      "response_count": 9
+    },
+    {
+      "family_id": "ESDSA-OPS03-10",
+      "file": "results/validation_generation_batches_v1/ESDSA-OPS03-10.json",
+      "file_sha256": "fb9681cd834777ea915509ac1d59d0119189d3332f8d3568e8dd42b182eda52b",
+      "run_sha256": "10a95b25cbf7f42306cc3f744a6ea7ba1a09562c4b41ad1474f817b6320e1a05",
+      "response_count": 9
+    },
+    {
+      "family_id": "ESDSA-OPS04-03",
+      "file": "results/validation_generation_batches_v1/ESDSA-OPS04-03.json",
+      "file_sha256": "a9d2ec7ab4508c572987dd554691a83e5f528ef0eae11bfddb147387cd778a49",
+      "run_sha256": "7c25cef5d058ed5a719822ec010d64b25e510ea954a3d3258c5d55b42c8e7978",
+      "response_count": 9
+    },
+    {
+      "family_id": "ESDSA-OPS04-05",
+      "file": "results/validation_generation_batches_v1/ESDSA-OPS04-05.json",
+      "file_sha256": "79b0f17b1602d26820312085bae55400d714d42412debe05acd68ec56a604297",
+      "run_sha256": "b0a9a638cb5dcbf9ddb5cf511fd8c7177440dd08b9bed9adfd560509d052864a",
+      "response_count": 9
+    },
+    {
+      "family_id": "ESDSA-SWE01-05",
+      "file": "results/validation_generation_batches_v1/ESDSA-SWE01-05.json",
+      "file_sha256": "92fa321875a263373739d7cecca12a8fdcf9f620cbac3d1a0df05dc2dcfc5cd6",
+      "run_sha256": "46291a8c1e40771ea49e309eabcfa39e0fe1185249bb127dee0fa59b67425672",
+      "response_count": 9
+    },
+    {
+      "family_id": "ESDSA-SWE01-10",
+      "file": "results/validation_generation_batches_v1/ESDSA-SWE01-10.json",
+      "file_sha256": "641a5e365dce11ec93b7268608f1338c5e4ee8ba2741edd28400527883d3c285",
+      "run_sha256": "4ab4d4d4c66dccc652583e29383cb6b1b0090a581db344fe1e1a14555df84008",
+      "response_count": 9
+    },
+    {
+      "family_id": "ESDSA-SWE02-04",
+      "file": "results/validation_generation_batches_v1/ESDSA-SWE02-04.json",
+      "file_sha256": "e2f458cad54fce443436e4a56be1f38059b49ec4807204e3f7ca40348d324ac3",
+      "run_sha256": "8b8ce95972337f65e3abed0d0d8a2438c0fa17b901c8433f7c86d16d969de550",
+      "response_count": 9
+    },
+    {
+      "family_id": "ESDSA-SWE02-06",
+      "file": "results/validation_generation_batches_v1/ESDSA-SWE02-06.json",
+      "file_sha256": "62f42b256b22abcbb675d0c426e2a1f72d8e1e692fa0bd07f38c0c3147246a5e",
+      "run_sha256": "8ee088714902f05cf680d8902818d5eece0ed073268ca79d05635b96e488ecf2",
+      "response_count": 9
+    },
+    {
+      "family_id": "ESDSA-SWE03-05",
+      "file": "results/validation_generation_batches_v1/ESDSA-SWE03-05.json",
+      "file_sha256": "ea9f9a928a541d5cd6677b1a672cc042e7fb6c435c672d9e1aa81a8c9a5a9d79",
+      "run_sha256": "32fef18f22fdea48e6a5cd2168d6a917554cd18d38204477178c5e69fe15aab2",
+      "response_count": 9
+    },
+    {
+      "family_id": "ESDSA-SWE03-09",
+      "file": "results/validation_generation_batches_v1/ESDSA-SWE03-09.json",
+      "file_sha256": "7ea53a9b0a830a8a0261ece8c7a455598a62d816c0c9812778ce600618550eb7",
+      "run_sha256": "45607fa3e89401aab23afc1e7b89a8dbc7747469b07fc3057e6da7c68a0afcc5",
+      "response_count": 9
+    },
+    {
+      "family_id": "ESDSA-SWE04-05",
+      "file": "results/validation_generation_batches_v1/ESDSA-SWE04-05.json",
+      "file_sha256": "f9ebbb20f6807d17002af26cf3a00912da6d49440d0a82ccf9d9395d60e9c1f0",
+      "run_sha256": "7ed981ce37d785bc1ed61cca0eef962e416c3977f71d8473d0d34b6bbcc3da7d",
+      "response_count": 9
+    },
+    {
+      "family_id": "ESDSA-SWE04-09",
+      "file": "results/validation_generation_batches_v1/ESDSA-SWE04-09.json",
+      "file_sha256": "94a047607930100f20f9559b45b2a47a68b197bd263fac52f0d1ff67c89dc417",
+      "run_sha256": "585983bbf26eadd613466ff829f2dd8b70751cd8a33cade5251d5519b2b92a61",
+      "response_count": 9
+    }
+  ],
+  "output_csv_sha256": "25b315b27f4722675d5078214075cdccc99a25104b981de17536e1f30938f543"
+}

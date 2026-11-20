@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-C407D36B38E11CB0",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_060ccefbdee09ac9016b000e6a514487d082d665dfae86f139",
+  "annotated_utc": "2026-11-20T09:10:04.102468+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "CSS01-C1",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "passage": "",
+        "rationale": "The answer names one action to take but does not clearly establish the nature of the customer's full problem, including the unfamiliar delivery address or whether the order was successfully placed."
+      },
+      {
+        "criterion_id": "CSS01-C2",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "passage": "",
+        "rationale": "It mentions a confirmation and billing problem, but does not determine the affected service or outcome with enough clarity to show impact identification."
+      },
+      {
+        "criterion_id": "CSS01-C3",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "passage": "",
+        "rationale": "The response proposes a next step without first summarising the issue; it does not explicitly define the problem before selecting a resolution."
+      }
+    ],
+    "annotation_notes": "The answer is brief and prioritises sending the confirmation, but it does not provide enough evidence of structured problem identification for any criterion."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

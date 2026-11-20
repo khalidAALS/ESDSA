@@ -1,0 +1,20 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "SEMANTIC_EQUIVALENCE",
+  "blinded_id": "VG-E9ED630A5D959CC1",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0f2e8e3c615b6fa4016b00112d0e1087d0a5392d1dd19b2c79",
+  "annotated_utc": "2026-11-20T09:21:51.829338+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "semantic_equivalence": "NO",
+    "material_differences": "Response A says it would only step in if the issue became a much bigger stock problem or started stopping orders from moving. Response B similarly avoids escalation unless numbers become much bigger or there is an obvious failure, but it also explicitly frames the discrepancies as low priority and routine warehouse variance. Response C is materially narrower: it says minor variances are normal and that it would not escalate right away, but it does not include the condition about an obvious failure or operational stoppage as an escalation trigger. Across the three, the level of risk recognition and escalation threshold differs, which could change evaluation under hazard recognition, likelihood/impact, and risk response.",
+    "equivalence_rationale": "All three responses preserve the general stance of keeping operations running and not overreacting to small stock discrepancies, but they do not preserve the same criterion-level evidence. A and B mention escalation only if the problem grows or operations are affected; C omits the operational-stoppage trigger and is less explicit about conditions for escalation. B also more strongly normalizes the discrepancies as routine low-priority variance. These differences are potentially material because they affect how clearly the response identifies risk, weighs consequences, and defines when to escalate."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-4F7FAB91D97304A6",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0ee4fb296174735f016b002a5c75a087d0843e6c71cae668e0",
+  "annotated_utc": "2026-11-20T11:09:18.526901+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "CSS01-C1",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I wouldn’t spend too long digging into the customer’s explanation unless the system shows something unusual",
+        "rationale": "This explicitly deprioritizes understanding the customer's description of the problem, indicating the candidate would not properly establish what issue the customer is experiencing before acting."
+      },
+      {
+        "criterion_id": "CSS01-C2",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "passage": "",
+        "rationale": "The answer identifies a booking issue and mentions an appointment, but it does not clearly establish the customer's specific affected service or outcome beyond the general booking record. It is not enough to confirm a deliberate determination of impact."
+      },
+      {
+        "criterion_id": "CSS01-C3",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I’d probably treat it as a standard booking error and start by re-sending the confirmation or looking for a duplicate appointment in the system.",
+        "rationale": "This shows the candidate moving straight to a presumed diagnosis and resolution steps before summarising the issue, rather than first defining the problem based on the customer's actual situation."
+      }
+    ],
+    "annotation_notes": ""
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

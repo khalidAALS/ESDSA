@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-3C22A8B51B2DC21C",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_057569d05fe79f5b016b0029355c2087d08cb1702c852762ef",
+  "annotated_utc": "2026-11-20T11:04:24.289968+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "OPS02-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d note the near-miss",
+        "rationale": "The candidate explicitly recognizes the near-miss as an operational hazard signal in the loading area context."
+      },
+      {
+        "criterion_id": "OPS02-C2",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I’d keep the current setup running and give it more time, because sometimes these things settle once people get used to the new arrangement.",
+        "rationale": "This shows the candidate downplays the unresolved risk by assuming it may settle without addressing the uncertainty or potential consequences of the continuing congestion and near-miss."
+      },
+      {
+        "criterion_id": "OPS02-C3",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I wouldn’t want to slow everything down by escalating straight away if there’s no actual harm. My priority would be to keep throughput up, and I’d only change course if the congestion turns into something more serious or starts affecting the shift badly.",
+        "rationale": "The proposed response delays escalation and mitigation despite ongoing congestion and a near-miss, prioritizing throughput over proportionate risk response."
+      }
+    ],
+    "annotation_notes": "The answer acknowledges a near-miss but largely minimizes the risk and proposes waiting rather than reassessing and responding proportionately."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

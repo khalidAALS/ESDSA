@@ -1,0 +1,63 @@
+{
+  "experiment": "ESDSA_TEST_GENERATION_V1",
+  "partition": "TEST",
+  "family_id": "ESDSA-OPS04-06",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0b3056f01cb3ff97016b0022f6777487d08aeadff18cec9a17",
+  "timestamp_utc": "2026-11-20T10:37:47.149311+00:00",
+  "run_sha256": "38899b3dcbab40afb2f6b5194c13e92f3d0af15a3f2c3b723389716e186b7193",
+  "scenario_sha256": "9d2280d8014612bdd263f5dd8daf8356efeac3fa7a7e4b0cd3c6f4fef932426a",
+  "rubric_sha256": "d230fd47c6705a86d858cb119f11403af5e40a60f0f4bc8e9c31bc2b61a9acba",
+  "responses": [
+    {
+      "condition": "SUFFICIENT",
+      "variant": "CANONICAL",
+      "answer": "I’d first verify the facts against the overnight plan: what was scheduled, what time it was meant to be finished, any sign-off from the contractor, and whether there were any issues noted during the work. I’d also compare that with the early inspection findings to see whether the concern is minor, isolated, or suggests the task wasn’t completed properly. If the missing record and the inspection together suggest there’s a real risk to operations, I wouldn’t treat the contractor’s verbal completion as enough. I’d contact the contractor immediately to confirm what was done, ask for evidence or a re-check if needed, and update the relevant operations lead so they know there may be a gap before start-up. I’d then stay with it until I had a clear response and knew whether the area was safe to open or whether we needed a hold, extra cleaning, or a formal escalation."
+    },
+    {
+      "condition": "SUFFICIENT",
+      "variant": "CONVERSATIONAL",
+      "answer": "I’d check the overnight plan first and line it up with what we actually know: the task that was due, whether there’s any sign-off, and what the inspection picked up. If the record’s missing and the inspection suggests something may have been missed, I’d treat that as a possible deviation rather than just a paperwork issue. I’d call the contractor straight away, get them to confirm exactly what was completed, and loop in the operations lead if there’s any chance it affects opening. Then I’d keep following it up until I had either a clean confirmation or a decision to pause, rework, or escalate further."
+    },
+    {
+      "condition": "SUFFICIENT",
+      "variant": "CONCISE",
+      "answer": "I’d check the plan, the expected completion point, and the inspection findings, then judge whether the missing record is just administrative or a sign the job may be incomplete. If it looks like it could affect operations, I’d contact the contractor, inform the relevant operations lead, and confirm what action is needed before opening. I’d keep tracking it until it’s either verified or escalated to the right owner."
+    },
+    {
+      "condition": "INSUFFICIENT",
+      "variant": "CANONICAL",
+      "answer": "I’d start by comparing the contractor’s report with the scheduled overnight task and the early inspection notes, so I understand what was supposed to happen and what was actually observed. If the concern looks limited and the area appears mostly fine, I’d continue to monitor it closely through the morning and keep an eye on whether any further signs appear before operations begin. If more information comes in suggesting the issue is bigger than it first looked, I’d bring it to the attention of the relevant supervisor and ask them to decide the next step."
+    },
+    {
+      "condition": "INSUFFICIENT",
+      "variant": "CONVERSATIONAL",
+      "answer": "I’d look at the overnight schedule and the inspection notes first so I can line up what was meant to happen with what we’re seeing now. If it seems like a small issue, I’d keep monitoring it as the morning goes on and watch for any extra signs that the area isn’t ready. If the picture changes and it starts looking more serious, I’d raise it with the supervisor and let them take it from there."
+    },
+    {
+      "condition": "INSUFFICIENT",
+      "variant": "CONCISE",
+      "answer": "I’d compare the task plan with the inspection notes and keep monitoring for any extra signs of a problem. If the issue looks like it’s getting worse or more evidence comes in, I’d raise it with the supervisor for the next step."
+    },
+    {
+      "condition": "NEGATIVE",
+      "variant": "CANONICAL",
+      "answer": "I’d probably take the contractor at their word unless someone can prove the area is unsafe. Missing digital records happen, so I wouldn’t want to slow operations down just because the system isn’t showing completion yet. I’d note the inspection concern, but if it isn’t obvious or severe, I’d avoid escalating it before start-up because that can create unnecessary disruption. If the team later finds a definite problem, then I’d let the contractor know and ask them to sort it out."
+    },
+    {
+      "condition": "NEGATIVE",
+      "variant": "CONVERSATIONAL",
+      "answer": "I’d mostly trust the contractor’s report and not make a big issue of the missing record, since those systems can lag. If the early inspection only raises a mild concern, I’d let operations proceed and see whether anything else turns up. I wouldn’t rush to escalate unless the problem becomes really clear, and if it does, I’d just ask the contractor to deal with it afterward."
+    },
+    {
+      "condition": "NEGATIVE",
+      "variant": "CONCISE",
+      "answer": "I’d rely on the contractor’s completion report and keep operations moving unless the problem is clearly serious. If it turns into a definite issue later, I’d ask the contractor to fix it then."
+    }
+  ],
+  "raw_output": "{\"responses\":[{\"condition\":\"SUFFICIENT\",\"variant\":\"CANONICAL\",\"answer\":\"I’d first verify the facts against the overnight plan: what was scheduled, what time it was meant to be finished, any sign-off from the contractor, and whether there were any issues noted during the work. I’d also compare that with the early inspection findings to see whether the concern is minor, isolated, or suggests the task wasn’t completed properly. If the missing record and the inspection together suggest there’s a real risk to operations, I wouldn’t treat the contractor’s verbal completion as enough. I’d contact the contractor immediately to confirm what was done, ask for evidence or a re-check if needed, and update the relevant operations lead so they know there may be a gap before start-up. I’d then stay with it until I had a clear response and knew whether the area was safe to open or whether we needed a hold, extra cleaning, or a formal escalation.\"},{\"condition\":\"SUFFICIENT\",\"variant\":\"CONVERSATIONAL\",\"answer\":\"I’d check the overnight plan first and line it up with what we actually know: the task that was due, whether there’s any sign-off, and what the inspection picked up. If the record’s missing and the inspection suggests something may have been missed, I’d treat that as a possible deviation rather than just a paperwork issue. I’d call the contractor straight away, get them to confirm exactly what was completed, and loop in the operations lead if there’s any chance it affects opening. Then I’d keep following it up until I had either a clean confirmation or a decision to pause, rework, or escalate further.\"},{\"condition\":\"SUFFICIENT\",\"variant\":\"CONCISE\",\"answer\":\"I’d check the plan, the expected completion point, and the inspection findings, then judge whether the missing record is just administrative or a sign the job may be incomplete. If it looks like it could affect operations, I’d contact the contractor, inform the relevant operations lead, and confirm what action is needed before opening. I’d keep tracking it until it’s either verified or escalated to the right owner.\"},{\"condition\":\"INSUFFICIENT\",\"variant\":\"CANONICAL\",\"answer\":\"I’d start by comparing the contractor’s report with the scheduled overnight task and the early inspection notes, so I understand what was supposed to happen and what was actually observed. If the concern looks limited and the area appears mostly fine, I’d continue to monitor it closely through the morning and keep an eye on whether any further signs appear before operations begin. If more information comes in suggesting the issue is bigger than it first looked, I’d bring it to the attention of the relevant supervisor and ask them to decide the next step.\"},{\"condition\":\"INSUFFICIENT\",\"variant\":\"CONVERSATIONAL\",\"answer\":\"I’d look at the overnight schedule and the inspection notes first so I can line up what was meant to happen with what we’re seeing now. If it seems like a small issue, I’d keep monitoring it as the morning goes on and watch for any extra signs that the area isn’t ready. If the picture changes and it starts looking more serious, I’d raise it with the supervisor and let them take it from there.\"},{\"condition\":\"INSUFFICIENT\",\"variant\":\"CONCISE\",\"answer\":\"I’d compare the task plan with the inspection notes and keep monitoring for any extra signs of a problem. If the issue looks like it’s getting worse or more evidence comes in, I’d raise it with the supervisor for the next step.\"},{\"condition\":\"NEGATIVE\",\"variant\":\"CANONICAL\",\"answer\":\"I’d probably take the contractor at their word unless someone can prove the area is unsafe. Missing digital records happen, so I wouldn’t want to slow operations down just because the system isn’t showing completion yet. I’d note the inspection concern, but if it isn’t obvious or severe, I’d avoid escalating it before start-up because that can create unnecessary disruption. If the team later finds a definite problem, then I’d let the contractor know and ask them to sort it out.\"},{\"condition\":\"NEGATIVE\",\"variant\":\"CONVERSATIONAL\",\"answer\":\"I’d mostly trust the contractor’s report and not make a big issue of the missing record, since those systems can lag. If the early inspection only raises a mild concern, I’d let operations proceed and see whether anything else turns up. I wouldn’t rush to escalate unless the problem becomes really clear, and if it does, I’d just ask the contractor to deal with it afterward.\"},{\"condition\":\"NEGATIVE\",\"variant\":\"CONCISE\",\"answer\":\"I’d rely on the contractor’s completion report and keep operations moving unless the problem is clearly serious. If it turns into a definite issue later, I’d ask the contractor to fix it then.\"}]}",
+  "input_tokens": 751,
+  "output_tokens": 990,
+  "generation_conditions_are_reference_labels": false
+}

@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-CBC49C50CC3BA4B7",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_033941e4e9dd9729016b002b8d4f4887d0a039d857818f955f",
+  "annotated_utc": "2026-11-20T11:14:23.206648+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "OPS02-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d treat it as a possible cold-chain risk",
+        "rationale": "This explicitly identifies a plausible operational hazard in the shipment context."
+      },
+      {
+        "criterion_id": "OPS02-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d weigh both the quality risk and the impact of delay.",
+        "rationale": "This shows consideration of uncertainty and of the potential consequences on both product quality and timing."
+      },
+      {
+        "criterion_id": "OPS02-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "If the reading looks meaningful, I’d escalate and put a contingency in place; if it’s a device issue, I’d document it and proceed cautiously.",
+        "rationale": "This proposes proportionate responses: escalation and contingency if the risk is real, or documentation and cautious proceeding if it is a device issue."
+      }
+    ],
+    "annotation_notes": ""
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

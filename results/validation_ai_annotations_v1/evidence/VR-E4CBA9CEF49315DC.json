@@ -1,0 +1,35 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_TARGETED_PILOT_V1",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-E4CBA9CEF49315DC",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V1",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0efa66312fdb32e5016aff972f82f487d08073782dc4c2d803",
+  "annotated_utc": "2026-11-20T00:41:21.573511+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "CSS02-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d begin by asking the customer when they first noticed the problem and whether they remember using the website, app, or support team to cancel.",
+        "rationale": "This explicitly identifies relevant questions that would help clarify the issue and establish key facts for the investigation."
+      },
+      {
+        "criterion_id": "CSS02-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "If the date is unclear, I’d use the billing history to help build a timeline and look for patterns around when the subscription stopped being used. If the records still don’t line up, I’d escalate it for a deeper review rather than trying to fill in the gaps myself.",
+        "rationale": "The answer distinguishes uncertain information from confirmed records and avoids guessing by relying on evidence and escalation when the facts do not align."
+      },
+      {
+        "criterion_id": "CSS02-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d also check the account status and any notes or automated messages we have on file.",
+        "rationale": "This shows gathering information from existing authorised account records rather than seeking unnecessary or inappropriate data."
+      }
+    ],
+    "annotation_notes": "The candidate addresses all three information-gathering aspects with relevant questioning, evidence-based assessment, and limited use of appropriate records."
+  }
+}

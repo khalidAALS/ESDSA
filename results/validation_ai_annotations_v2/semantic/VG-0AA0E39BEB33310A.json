@@ -1,0 +1,20 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "SEMANTIC_EQUIVALENCE",
+  "blinded_id": "VG-0AA0E39BEB33310A",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0c5b509be008d882016b000bdc3f3487d09ad18bef29597dc8",
+  "annotated_utc": "2026-11-20T08:59:09.899497+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "semantic_equivalence": "YES",
+    "material_differences": "",
+    "equivalence_rationale": "All three responses rely on the same core investigation sources: job logs/history, comparison of slow versus normal runs, input/release differences, external dependency incidents, and then the processing code/main execution path if needed. They all propose the same diagnostic strategy of contrasting runs to distinguish among incoming data, code, and dependency causes, and each ties observations to narrowing the likely source of delay. The wording and order differ, but the criterion-level evidence and operational commitments are substantially preserved."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

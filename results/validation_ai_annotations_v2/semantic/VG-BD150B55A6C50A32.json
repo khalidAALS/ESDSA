@@ -1,0 +1,20 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "SEMANTIC_EQUIVALENCE",
+  "blinded_id": "VG-BD150B55A6C50A32",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0b2e10150a555206016b000e594bb487d0ae34fa6b1c7e51f7",
+  "annotated_utc": "2026-11-20T09:09:46.894588+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "semantic_equivalence": "YES",
+    "material_differences": "",
+    "equivalence_rationale": "All three responses preserve the same decision-relevant evidence for the three criteria: they ask for relevant billing details needed to understand the issue, distinguish verified internal information from assumptions/customer claims, and limit collection to relevant, authorized information via approved/secure channels. C is shorter, but it does not add or omit any materially different safeguard, assumption, or operational commitment compared with A and B."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

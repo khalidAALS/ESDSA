@@ -1,0 +1,18 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "SEMANTIC_EQUIVALENCE",
+  "blinded_id": "TG-5B8E13A0E077EC70",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0669e5c682b59417016b002a4eaf1487d0b6b2a3a7a6414eb2",
+  "annotated_utc": "2026-11-20T11:09:05.010147+00:00",
+  "annotation": {
+    "semantic_equivalence": "YES",
+    "material_differences": "None that plausibly change the evidence for the three criteria. All three responses use operational sources, identify the relevant parties/dependencies, and state that the handover decision will be based on confirming completion/readiness and documenting the rationale.",
+    "equivalence_rationale": "Each response integrates the same core evidence sources: maintenance progress, the scheduling/system dependency, and receiving-team readiness. Each identifies the responsible parties to contact or confirm with (maintenance lead/owner and receiving team) and checks whether the dependency is real versus a stale system record. Each also explains the decision path in traceable terms: proceed only if evidence supports completion and readiness; otherwise delay/hold the handover and record the basis. The wording and detail differ, but the decision-relevant evidence and operational commitments are preserved."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

@@ -1,0 +1,20 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "SEMANTIC_EQUIVALENCE",
+  "blinded_id": "VG-F05DF58CD3B60955",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0c34648ab0de9f91016b001132114c87d0bf740aaeea3c768f",
+  "annotated_utc": "2026-11-20T09:21:57.157455+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "semantic_equivalence": "NO",
+    "material_differences": "Response B explicitly frames the decision in terms of delaying until there is 'clear proof' the equipment is unsafe and emphasizes not pulling people off the delivery unless severity is confirmed, but it does not mention any reassessment if conditions change. Response A says to continue the delivery and investigate later only if the issue is not clearly severe, while C similarly prioritizes the delivery but grounds it in the 'main priority' of immediate consequences and also lacks any explicit change-based reprioritisation. Across the set, the main material difference is that none of the responses demonstrate criterion C3 reprioritisation, and B/C add stronger certainty thresholds ('clear proof'/'absolutely obvious') that could shift the safety threshold relative to A's 'clearly proven to be severe.'",
+    "equivalence_rationale": "All three responses preserve the broad trade-off of favoring the time-sensitive delivery over an incomplete safety concern, using delay/business impact as the key evidence. However, they do not preserve the same criterion-level evidence across all three competencies because none shows reassessment when material conditions change, which is central to OPS01-C3. Additionally, B and C strengthen the threshold for stopping work by requiring very strong confirmation, which could affect how the prioritisation evidence is judged under the safety-versus-delivery trade-off."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

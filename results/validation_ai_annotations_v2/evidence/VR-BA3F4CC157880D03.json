@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-BA3F4CC157880D03",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0504f4500fd72df7016b000cbe792887d0a3e7eb92117bceb5",
+  "annotated_utc": "2026-11-20T09:02:56.884695+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "CSS01-C1",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I’d probably lean on the old case and use the same fix again first, since the notes show it already worked.",
+        "rationale": "This indicates the candidate would rely on the prior resolution rather than first establishing the current problem the customer is experiencing. It suggests they are not actively clarifying the issue before acting."
+      },
+      {
+        "criterion_id": "CSS01-C2",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "passage": "",
+        "rationale": "The answer does not clearly identify the affected service or outcome. It mentions account lockouts and getting the customer unblocked, but does not establish which service, workflow, or customer outcome is impacted."
+      },
+      {
+        "criterion_id": "CSS01-C3",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "passage": "",
+        "rationale": "The candidate does not summarize the issue before choosing a resolution. They jump to repeating the previous fix and digging deeper only if needed, but do not explicitly define the problem in a concise summary."
+      }
+    ],
+    "annotation_notes": "The response shows a preference for reusing the previous fix quickly, which is relevant to problem clarification, but it does not provide a clear summary of the actual issue or the affected outcome."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

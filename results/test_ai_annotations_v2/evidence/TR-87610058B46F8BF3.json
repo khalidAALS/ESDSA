@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-87610058B46F8BF3",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0764ba0038df47a9016b002bd90b7c87d0a2b2bd5bd3e5e8a7",
+  "annotated_utc": "2026-11-20T11:15:38.756579+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "CSS02-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d start with the order number, the delivery address, and when the customer realized it wasn’t there. I’d check the tracking for the delivery timestamp and any extra notes, then ask if anyone else at the address might have picked it up.",
+        "rationale": "The candidate asks for several pieces of information directly relevant to understanding the missing-delivery issue, including order details, address, timing, tracking notes, and possible recipients."
+      },
+      {
+        "criterion_id": "CSS02-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d compare what the customer is reporting with what the system says and use that to narrow things down.",
+        "rationale": "This explicitly distinguishes the customer’s report from the system record and indicates the candidate would compare sources rather than assume one is correct."
+      },
+      {
+        "criterion_id": "CSS02-C3",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "passage": "",
+        "rationale": "The answer shows ordinary information gathering, but it does not clearly establish that the collection is specifically proportionate or authorised, nor does it propose any materially unsafe or excessive data collection."
+      }
+    ],
+    "annotation_notes": "Evaluated each criterion separately using only the provided answer. No explicit negative evidence for proportionality was present."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

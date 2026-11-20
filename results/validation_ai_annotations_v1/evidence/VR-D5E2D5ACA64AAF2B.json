@@ -1,0 +1,35 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_TARGETED_PILOT_V1",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-D5E2D5ACA64AAF2B",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V1",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_02cfa442d7f79f75016aff9736437887d09d1b49722b2dd9a5",
+  "annotated_utc": "2026-11-20T00:41:28.291413+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "CSS02-C1",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I’d tell them we can’t do much without it and ask them to search their email or bank statements for proof.",
+        "rationale": "This does not meaningfully request information needed to understand the issue from the customer in a structured way; it frames the date as a barrier rather than gathering relevant details and focuses narrowly on proof from the customer."
+      },
+      {
+        "criterion_id": "CSS02-C2",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I’d also avoid spending too much time on internal records if the billing data doesn’t clearly support the cancellation, because at that point it’s likely the customer simply missed the deadline.",
+        "rationale": "The answer explicitly treats an unclear billing record as supporting an assumption that the customer missed the deadline, which blurs confirmed facts and speculation rather than distinguishing them."
+      },
+      {
+        "criterion_id": "CSS02-C3",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I’d also avoid spending too much time on internal records if the billing data doesn’t clearly support the cancellation, because at that point it’s likely the customer simply missed the deadline.",
+        "rationale": "This suggests withholding reasonable internal investigation based on an early assumption, rather than proportionately gathering authorized information appropriate to resolve an uncertain cancellation case."
+      }
+    ],
+    "annotation_notes": ""
+  }
+}

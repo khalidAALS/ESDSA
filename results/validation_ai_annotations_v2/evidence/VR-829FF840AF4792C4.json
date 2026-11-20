@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-829FF840AF4792C4",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_020cf73a3edc3e07016b000e331f4887d0a6e99b2309c1968e",
+  "annotated_utc": "2026-11-20T09:09:09.722638+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "SWE01-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d check deploy timing, logs, and metrics first, and use that to see which service looks most affected. If one area shows a clear spike, I’d start there and narrow it with the owning team. I’d also check whether the issue is regional or limited to certain users.",
+        "rationale": "The answer shows an explicit plan to characterise the failure by examining logs, metrics, whether the issue is regional, and whether it is limited to certain users. This establishes investigation of how the problem manifests, which is sufficient evidence of reproduction/characterisation."
+      },
+      {
+        "criterion_id": "SWE01-C2",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "passage": "",
+        "rationale": "The answer does not explicitly compare failing conditions against working behaviour, such as contrasting affected and unaffected requests, users, regions, or system states beyond a general check for scope. It suggests investigation but does not clearly establish a failure-vs-functioning comparison."
+      },
+      {
+        "criterion_id": "SWE01-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "If one area shows a clear spike, I’d start there and narrow it with the owning team.",
+        "rationale": "This explicitly describes using observed spikes to focus on a likely area and narrow the investigation with the owning team, which is systematic narrowing of plausible causes."
+      }
+    ],
+    "annotation_notes": ""
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

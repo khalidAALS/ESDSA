@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-E4CBA9CEF49315DC",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0e1780dcc11fbdd2016b000eaf779887d0b081c63850b91491",
+  "annotated_utc": "2026-11-20T09:11:14.105138+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "CSS02-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d begin by asking the customer when they first noticed the problem and whether they remember using the website, app, or support team to cancel.",
+        "rationale": "This explicitly shows the candidate asking targeted questions to obtain information needed to understand what happened and investigate the cancellation issue."
+      },
+      {
+        "criterion_id": "CSS02-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "If the date is unclear, I’d use the billing history to help build a timeline and look for patterns around when the subscription stopped being used. If the records still don’t line up, I’d escalate it for a deeper review rather than trying to fill in the gaps myself.",
+        "rationale": "The candidate distinguishes uncertainty from certainty by relying on records to build a timeline and explicitly says they would not fill in gaps themselves, which shows they would avoid treating assumptions as facts."
+      },
+      {
+        "criterion_id": "CSS02-C3",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "passage": "",
+        "rationale": "The answer describes gathering several relevant records and escalating if needed, but it does not clearly establish that the collection is proportionate or authorised. It also does not indicate any unsafe or inappropriate over-collection, so there is not enough evidence to judge this criterion positively or negatively."
+      }
+    ],
+    "annotation_notes": ""
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

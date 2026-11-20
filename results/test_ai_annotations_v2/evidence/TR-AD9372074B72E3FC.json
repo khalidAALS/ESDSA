@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-AD9372074B72E3FC",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0344f69dbe9cc305016b002a57f3f887d0b98b2c01c524395e",
+  "annotated_utc": "2026-11-20T11:09:14.019962+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "OPS04-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d check the plan, the expected completion point, and the inspection findings",
+        "rationale": "The candidate explicitly names the information they would use to monitor execution, including the plan, expected completion point, and inspection findings."
+      },
+      {
+        "criterion_id": "OPS04-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "then judge whether the missing record is just administrative or a sign the job may be incomplete. If it looks like it could affect operations",
+        "rationale": "The candidate shows recognition of a deviation trigger by assessing whether the missing record indicates incomplete work and whether it could affect operations."
+      },
+      {
+        "criterion_id": "OPS04-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d contact the contractor, inform the relevant operations lead, and confirm what action is needed before opening. I’d keep tracking it until it’s either verified or escalated to the right owner.",
+        "rationale": "The candidate directs the issue to appropriate parties, confirms needed action, and continues follow-through until verification or escalation to the correct owner."
+      }
+    ],
+    "annotation_notes": ""
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

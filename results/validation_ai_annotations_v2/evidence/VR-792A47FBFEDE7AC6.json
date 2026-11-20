@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-792A47FBFEDE7AC6",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_04ee32b8795df442016b000c3dad3c87d0a994a7e3bafce31a",
+  "annotated_utc": "2026-11-20T09:00:47.926242+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "SWE02-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d trust the application logs and focus on the network issue first",
+        "rationale": "The candidate identifies application logs as relevant technical evidence and also uses the monitoring signal and user reports as sources to interpret the failure."
+      },
+      {
+        "criterion_id": "SWE02-C2",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "passage": "",
+        "rationale": "The answer suggests retrying and focusing on one suspected cause, but it does not clearly propose checks that would distinguish between competing causes such as application, network, or infrastructure issues."
+      },
+      {
+        "criterion_id": "SWE02-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "The different user reports would mostly just show how widespread the connection issue is.",
+        "rationale": "The candidate explicitly interprets the user reports as indicating the breadth of the connection issue, which is a diagnostic conclusion drawn from observations."
+      }
+    ],
+    "annotation_notes": "The response is somewhat one-sided, but it still references multiple evidence sources and draws at least one conclusion from them."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

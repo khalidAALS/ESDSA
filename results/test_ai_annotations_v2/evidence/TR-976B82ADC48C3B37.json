@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-976B82ADC48C3B37",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0e14b3e696b1f938016b002a04e71c87d08f94900be003ce24",
+  "annotated_utc": "2026-11-20T11:07:50.895462+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "CSS01-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d gather both versions of events, note when the access changed, and document the disagreement for review.",
+        "rationale": "The candidate identifies the issue by collecting the conflicting accounts and noting the access change, which shows they are clarifying what happened to the shared subscription access."
+      },
+      {
+        "criterion_id": "CSS01-C2",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "passage": "",
+        "rationale": "The answer does not explicitly state the customer's affected service or outcome beyond a general access change. It does not clearly establish what specific service, feature, or business outcome is impacted."
+      },
+      {
+        "criterion_id": "CSS01-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "document the disagreement for review. Then I’d escalate it so the team can determine what actually happened.",
+        "rationale": "By documenting the disagreement and escalating for determination, the candidate shows they would define the problem before a resolution is chosen, rather than jumping directly to a fix."
+      }
+    ],
+    "annotation_notes": ""
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

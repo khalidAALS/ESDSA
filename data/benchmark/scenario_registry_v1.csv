@@ -1,0 +1,121 @@
+family_id,role_code,role_name,competency_code,competency_name,scenario_index,scenario_profile,partition,scenario_question,scenario_context,rubric_version,reference_validation,semantic_validation,construction_status
+ESDSA-SWE01-01,SWE,Software Developer,SWE01,Systematic diagnosis,1,Routine operational problem,DEVELOPMENT,,,PENDING,PENDING,PENDING,NOT_STARTED
+ESDSA-SWE01-02,SWE,Software Developer,SWE01,Systematic diagnosis,2,Time-sensitive problem,DEVELOPMENT,,,PENDING,PENDING,PENDING,NOT_STARTED
+ESDSA-SWE01-03,SWE,Software Developer,SWE01,Systematic diagnosis,3,Incomplete contextual information,TEST,,,PENDING,PENDING,PENDING,NOT_STARTED
+ESDSA-SWE01-04,SWE,Software Developer,SWE01,Systematic diagnosis,4,Conflicting information,DEVELOPMENT,,,PENDING,PENDING,PENDING,NOT_STARTED
+ESDSA-SWE01-05,SWE,Software Developer,SWE01,Systematic diagnosis,5,Multiple competing priorities,VALIDATION,,,PENDING,PENDING,PENDING,NOT_STARTED
+ESDSA-SWE01-06,SWE,Software Developer,SWE01,Systematic diagnosis,6,Uncertain cause or outcome,DEVELOPMENT,,,PENDING,PENDING,PENDING,NOT_STARTED
+ESDSA-SWE01-07,SWE,Software Developer,SWE01,Systematic diagnosis,7,Stakeholder disagreement,TEST,,,PENDING,PENDING,PENDING,NOT_STARTED
+ESDSA-SWE01-08,SWE,Software Developer,SWE01,Systematic diagnosis,8,Unexpected complication,DEVELOPMENT,,,PENDING,PENDING,PENDING,NOT_STARTED
+ESDSA-SWE01-09,SWE,Software Developer,SWE01,Systematic diagnosis,9,High-consequence decision,DEVELOPMENT,,,PENDING,PENDING,PENDING,NOT_STARTED
+ESDSA-SWE01-10,SWE,Software Developer,SWE01,Systematic diagnosis,10,Recovery after an unsuccessful attempt,VALIDATION,,,PENDING,PENDING,PENDING,NOT_STARTED
+ESDSA-SWE02-01,SWE,Software Developer,SWE02,Technical investigation,1,Routine operational problem,DEVELOPMENT,,,PENDING,PENDING,PENDING,NOT_STARTED
+ESDSA-SWE02-02,SWE,Software Developer,SWE02,Technical investigation,2,Time-sensitive problem,DEVELOPMENT,,,PENDING,PENDING,PENDING,NOT_STARTED
+ESDSA-SWE02-03,SWE,Software Developer,SWE02,Technical investigation,3,Incomplete contextual information,DEVELOPMENT,,,PENDING,PENDING,PENDING,NOT_STARTED
+ESDSA-SWE02-04,SWE,Software Developer,SWE02,Technical investigation,4,Conflicting information,VALIDATION,,,PENDING,PENDING,PENDING,NOT_STARTED
+ESDSA-SWE02-05,SWE,Software Developer,SWE02,Technical investigation,5,Multiple competing priorities,TEST,,,PENDING,PENDING,PENDING,NOT_STARTED
+ESDSA-SWE02-06,SWE,Software Developer,SWE02,Technical investigation,6,Uncertain cause or outcome,VALIDATION,,,PENDING,PENDING,PENDING,NOT_STARTED
+ESDSA-SWE02-07,SWE,Software Developer,SWE02,Technical investigation,7,Stakeholder disagreement,DEVELOPMENT,,,PENDING,PENDING,PENDING,NOT_STARTED
+ESDSA-SWE02-08,SWE,Software Developer,SWE02,Technical investigation,8,Unexpected complication,DEVELOPMENT,,,PENDING,PENDING,PENDING,NOT_STARTED
+ESDSA-SWE02-09,SWE,Software Developer,SWE02,Technical investigation,9,High-consequence decision,DEVELOPMENT,,,PENDING,PENDING,PENDING,NOT_STARTED
+ESDSA-SWE02-10,SWE,Software Developer,SWE02,Technical investigation,10,Recovery after an unsuccessful attempt,TEST,,,PENDING,PENDING,PENDING,NOT_STARTED
+ESDSA-SWE03-01,SWE,Software Developer,SWE03,Reasoned correction,1,Routine operational problem,DEVELOPMENT,,,PENDING,PENDING,PENDING,NOT_STARTED
+ESDSA-SWE03-02,SWE,Software Developer,SWE03,Reasoned correction,2,Time-sensitive problem,DEVELOPMENT,,,PENDING,PENDING,PENDING,NOT_STARTED
+ESDSA-SWE03-03,SWE,Software Developer,SWE03,Reasoned correction,3,Incomplete contextual information,TEST,,,PENDING,PENDING,PENDING,NOT_STARTED
+ESDSA-SWE03-04,SWE,Software Developer,SWE03,Reasoned correction,4,Conflicting information,TEST,,,PENDING,PENDING,PENDING,NOT_STARTED
+ESDSA-SWE03-05,SWE,Software Developer,SWE03,Reasoned correction,5,Multiple competing priorities,VALIDATION,,,PENDING,PENDING,PENDING,NOT_STARTED
+ESDSA-SWE03-06,SWE,Software Developer,SWE03,Reasoned correction,6,Uncertain cause or outcome,DEVELOPMENT,,,PENDING,PENDING,PENDING,NOT_STARTED
+ESDSA-SWE03-07,SWE,Software Developer,SWE03,Reasoned correction,7,Stakeholder disagreement,DEVELOPMENT,,,PENDING,PENDING,PENDING,NOT_STARTED
+ESDSA-SWE03-08,SWE,Software Developer,SWE03,Reasoned correction,8,Unexpected complication,DEVELOPMENT,,,PENDING,PENDING,PENDING,NOT_STARTED
+ESDSA-SWE03-09,SWE,Software Developer,SWE03,Reasoned correction,9,High-consequence decision,VALIDATION,,,PENDING,PENDING,PENDING,NOT_STARTED
+ESDSA-SWE03-10,SWE,Software Developer,SWE03,Reasoned correction,10,Recovery after an unsuccessful attempt,DEVELOPMENT,,,PENDING,PENDING,PENDING,NOT_STARTED
+ESDSA-SWE04-01,SWE,Software Developer,SWE04,Verification and testing,1,Routine operational problem,DEVELOPMENT,,,PENDING,PENDING,PENDING,NOT_STARTED
+ESDSA-SWE04-02,SWE,Software Developer,SWE04,Verification and testing,2,Time-sensitive problem,TEST,,,PENDING,PENDING,PENDING,NOT_STARTED
+ESDSA-SWE04-03,SWE,Software Developer,SWE04,Verification and testing,3,Incomplete contextual information,DEVELOPMENT,,,PENDING,PENDING,PENDING,NOT_STARTED
+ESDSA-SWE04-04,SWE,Software Developer,SWE04,Verification and testing,4,Conflicting information,DEVELOPMENT,,,PENDING,PENDING,PENDING,NOT_STARTED
+ESDSA-SWE04-05,SWE,Software Developer,SWE04,Verification and testing,5,Multiple competing priorities,VALIDATION,,,PENDING,PENDING,PENDING,NOT_STARTED
+ESDSA-SWE04-06,SWE,Software Developer,SWE04,Verification and testing,6,Uncertain cause or outcome,DEVELOPMENT,,,PENDING,PENDING,PENDING,NOT_STARTED
+ESDSA-SWE04-07,SWE,Software Developer,SWE04,Verification and testing,7,Stakeholder disagreement,DEVELOPMENT,,,PENDING,PENDING,PENDING,NOT_STARTED
+ESDSA-SWE04-08,SWE,Software Developer,SWE04,Verification and testing,8,Unexpected complication,TEST,,,PENDING,PENDING,PENDING,NOT_STARTED
+ESDSA-SWE04-09,SWE,Software Developer,SWE04,Verification and testing,9,High-consequence decision,VALIDATION,,,PENDING,PENDING,PENDING,NOT_STARTED
+ESDSA-SWE04-10,SWE,Software Developer,SWE04,Verification and testing,10,Recovery after an unsuccessful attempt,DEVELOPMENT,,,PENDING,PENDING,PENDING,NOT_STARTED
+ESDSA-CSS01-01,CSS,Customer Support Specialist,CSS01,Problem identification,1,Routine operational problem,DEVELOPMENT,,,PENDING,PENDING,PENDING,NOT_STARTED
+ESDSA-CSS01-02,CSS,Customer Support Specialist,CSS01,Problem identification,2,Time-sensitive problem,TEST,,,PENDING,PENDING,PENDING,NOT_STARTED
+ESDSA-CSS01-03,CSS,Customer Support Specialist,CSS01,Problem identification,3,Incomplete contextual information,DEVELOPMENT,,,PENDING,PENDING,PENDING,NOT_STARTED
+ESDSA-CSS01-04,CSS,Customer Support Specialist,CSS01,Problem identification,4,Conflicting information,DEVELOPMENT,,,PENDING,PENDING,PENDING,NOT_STARTED
+ESDSA-CSS01-05,CSS,Customer Support Specialist,CSS01,Problem identification,5,Multiple competing priorities,DEVELOPMENT,,,PENDING,PENDING,PENDING,NOT_STARTED
+ESDSA-CSS01-06,CSS,Customer Support Specialist,CSS01,Problem identification,6,Uncertain cause or outcome,DEVELOPMENT,,,PENDING,PENDING,PENDING,NOT_STARTED
+ESDSA-CSS01-07,CSS,Customer Support Specialist,CSS01,Problem identification,7,Stakeholder disagreement,TEST,,,PENDING,PENDING,PENDING,NOT_STARTED
+ESDSA-CSS01-08,CSS,Customer Support Specialist,CSS01,Problem identification,8,Unexpected complication,VALIDATION,,,PENDING,PENDING,PENDING,NOT_STARTED
+ESDSA-CSS01-09,CSS,Customer Support Specialist,CSS01,Problem identification,9,High-consequence decision,DEVELOPMENT,,,PENDING,PENDING,PENDING,NOT_STARTED
+ESDSA-CSS01-10,CSS,Customer Support Specialist,CSS01,Problem identification,10,Recovery after an unsuccessful attempt,VALIDATION,,,PENDING,PENDING,PENDING,NOT_STARTED
+ESDSA-CSS02-01,CSS,Customer Support Specialist,CSS02,Information gathering,1,Routine operational problem,TEST,,,PENDING,PENDING,PENDING,NOT_STARTED
+ESDSA-CSS02-02,CSS,Customer Support Specialist,CSS02,Information gathering,2,Time-sensitive problem,DEVELOPMENT,,,PENDING,PENDING,PENDING,NOT_STARTED
+ESDSA-CSS02-03,CSS,Customer Support Specialist,CSS02,Information gathering,3,Incomplete contextual information,TEST,,,PENDING,PENDING,PENDING,NOT_STARTED
+ESDSA-CSS02-04,CSS,Customer Support Specialist,CSS02,Information gathering,4,Conflicting information,DEVELOPMENT,,,PENDING,PENDING,PENDING,NOT_STARTED
+ESDSA-CSS02-05,CSS,Customer Support Specialist,CSS02,Information gathering,5,Multiple competing priorities,VALIDATION,,,PENDING,PENDING,PENDING,NOT_STARTED
+ESDSA-CSS02-06,CSS,Customer Support Specialist,CSS02,Information gathering,6,Uncertain cause or outcome,VALIDATION,,,PENDING,PENDING,PENDING,NOT_STARTED
+ESDSA-CSS02-07,CSS,Customer Support Specialist,CSS02,Information gathering,7,Stakeholder disagreement,DEVELOPMENT,,,PENDING,PENDING,PENDING,NOT_STARTED
+ESDSA-CSS02-08,CSS,Customer Support Specialist,CSS02,Information gathering,8,Unexpected complication,DEVELOPMENT,,,PENDING,PENDING,PENDING,NOT_STARTED
+ESDSA-CSS02-09,CSS,Customer Support Specialist,CSS02,Information gathering,9,High-consequence decision,DEVELOPMENT,,,PENDING,PENDING,PENDING,NOT_STARTED
+ESDSA-CSS02-10,CSS,Customer Support Specialist,CSS02,Information gathering,10,Recovery after an unsuccessful attempt,DEVELOPMENT,,,PENDING,PENDING,PENDING,NOT_STARTED
+ESDSA-CSS03-01,CSS,Customer Support Specialist,CSS03,Resolution judgment,1,Routine operational problem,VALIDATION,,,PENDING,PENDING,PENDING,NOT_STARTED
+ESDSA-CSS03-02,CSS,Customer Support Specialist,CSS03,Resolution judgment,2,Time-sensitive problem,DEVELOPMENT,,,PENDING,PENDING,PENDING,NOT_STARTED
+ESDSA-CSS03-03,CSS,Customer Support Specialist,CSS03,Resolution judgment,3,Incomplete contextual information,VALIDATION,,,PENDING,PENDING,PENDING,NOT_STARTED
+ESDSA-CSS03-04,CSS,Customer Support Specialist,CSS03,Resolution judgment,4,Conflicting information,DEVELOPMENT,,,PENDING,PENDING,PENDING,NOT_STARTED
+ESDSA-CSS03-05,CSS,Customer Support Specialist,CSS03,Resolution judgment,5,Multiple competing priorities,TEST,,,PENDING,PENDING,PENDING,NOT_STARTED
+ESDSA-CSS03-06,CSS,Customer Support Specialist,CSS03,Resolution judgment,6,Uncertain cause or outcome,TEST,,,PENDING,PENDING,PENDING,NOT_STARTED
+ESDSA-CSS03-07,CSS,Customer Support Specialist,CSS03,Resolution judgment,7,Stakeholder disagreement,DEVELOPMENT,,,PENDING,PENDING,PENDING,NOT_STARTED
+ESDSA-CSS03-08,CSS,Customer Support Specialist,CSS03,Resolution judgment,8,Unexpected complication,DEVELOPMENT,,,PENDING,PENDING,PENDING,NOT_STARTED
+ESDSA-CSS03-09,CSS,Customer Support Specialist,CSS03,Resolution judgment,9,High-consequence decision,DEVELOPMENT,,,PENDING,PENDING,PENDING,NOT_STARTED
+ESDSA-CSS03-10,CSS,Customer Support Specialist,CSS03,Resolution judgment,10,Recovery after an unsuccessful attempt,DEVELOPMENT,,,PENDING,PENDING,PENDING,NOT_STARTED
+ESDSA-CSS04-01,CSS,Customer Support Specialist,CSS04,Communication and follow-up,1,Routine operational problem,TEST,,,PENDING,PENDING,PENDING,NOT_STARTED
+ESDSA-CSS04-02,CSS,Customer Support Specialist,CSS04,Communication and follow-up,2,Time-sensitive problem,DEVELOPMENT,,,PENDING,PENDING,PENDING,NOT_STARTED
+ESDSA-CSS04-03,CSS,Customer Support Specialist,CSS04,Communication and follow-up,3,Incomplete contextual information,DEVELOPMENT,,,PENDING,PENDING,PENDING,NOT_STARTED
+ESDSA-CSS04-04,CSS,Customer Support Specialist,CSS04,Communication and follow-up,4,Conflicting information,TEST,,,PENDING,PENDING,PENDING,NOT_STARTED
+ESDSA-CSS04-05,CSS,Customer Support Specialist,CSS04,Communication and follow-up,5,Multiple competing priorities,DEVELOPMENT,,,PENDING,PENDING,PENDING,NOT_STARTED
+ESDSA-CSS04-06,CSS,Customer Support Specialist,CSS04,Communication and follow-up,6,Uncertain cause or outcome,VALIDATION,,,PENDING,PENDING,PENDING,NOT_STARTED
+ESDSA-CSS04-07,CSS,Customer Support Specialist,CSS04,Communication and follow-up,7,Stakeholder disagreement,DEVELOPMENT,,,PENDING,PENDING,PENDING,NOT_STARTED
+ESDSA-CSS04-08,CSS,Customer Support Specialist,CSS04,Communication and follow-up,8,Unexpected complication,DEVELOPMENT,,,PENDING,PENDING,PENDING,NOT_STARTED
+ESDSA-CSS04-09,CSS,Customer Support Specialist,CSS04,Communication and follow-up,9,High-consequence decision,DEVELOPMENT,,,PENDING,PENDING,PENDING,NOT_STARTED
+ESDSA-CSS04-10,CSS,Customer Support Specialist,CSS04,Communication and follow-up,10,Recovery after an unsuccessful attempt,VALIDATION,,,PENDING,PENDING,PENDING,NOT_STARTED
+ESDSA-OPS01-01,OPS,Operations Coordinator,OPS01,Prioritisation,1,Routine operational problem,DEVELOPMENT,,,PENDING,PENDING,PENDING,NOT_STARTED
+ESDSA-OPS01-02,OPS,Operations Coordinator,OPS01,Prioritisation,2,Time-sensitive problem,TEST,,,PENDING,PENDING,PENDING,NOT_STARTED
+ESDSA-OPS01-03,OPS,Operations Coordinator,OPS01,Prioritisation,3,Incomplete contextual information,DEVELOPMENT,,,PENDING,PENDING,PENDING,NOT_STARTED
+ESDSA-OPS01-04,OPS,Operations Coordinator,OPS01,Prioritisation,4,Conflicting information,DEVELOPMENT,,,PENDING,PENDING,PENDING,NOT_STARTED
+ESDSA-OPS01-05,OPS,Operations Coordinator,OPS01,Prioritisation,5,Multiple competing priorities,VALIDATION,,,PENDING,PENDING,PENDING,NOT_STARTED
+ESDSA-OPS01-06,OPS,Operations Coordinator,OPS01,Prioritisation,6,Uncertain cause or outcome,DEVELOPMENT,,,PENDING,PENDING,PENDING,NOT_STARTED
+ESDSA-OPS01-07,OPS,Operations Coordinator,OPS01,Prioritisation,7,Stakeholder disagreement,DEVELOPMENT,,,PENDING,PENDING,PENDING,NOT_STARTED
+ESDSA-OPS01-08,OPS,Operations Coordinator,OPS01,Prioritisation,8,Unexpected complication,TEST,,,PENDING,PENDING,PENDING,NOT_STARTED
+ESDSA-OPS01-09,OPS,Operations Coordinator,OPS01,Prioritisation,9,High-consequence decision,VALIDATION,,,PENDING,PENDING,PENDING,NOT_STARTED
+ESDSA-OPS01-10,OPS,Operations Coordinator,OPS01,Prioritisation,10,Recovery after an unsuccessful attempt,DEVELOPMENT,,,PENDING,PENDING,PENDING,NOT_STARTED
+ESDSA-OPS02-01,OPS,Operations Coordinator,OPS02,Risk identification,1,Routine operational problem,VALIDATION,,,PENDING,PENDING,PENDING,NOT_STARTED
+ESDSA-OPS02-02,OPS,Operations Coordinator,OPS02,Risk identification,2,Time-sensitive problem,TEST,,,PENDING,PENDING,PENDING,NOT_STARTED
+ESDSA-OPS02-03,OPS,Operations Coordinator,OPS02,Risk identification,3,Incomplete contextual information,DEVELOPMENT,,,PENDING,PENDING,PENDING,NOT_STARTED
+ESDSA-OPS02-04,OPS,Operations Coordinator,OPS02,Risk identification,4,Conflicting information,DEVELOPMENT,,,PENDING,PENDING,PENDING,NOT_STARTED
+ESDSA-OPS02-05,OPS,Operations Coordinator,OPS02,Risk identification,5,Multiple competing priorities,DEVELOPMENT,,,PENDING,PENDING,PENDING,NOT_STARTED
+ESDSA-OPS02-06,OPS,Operations Coordinator,OPS02,Risk identification,6,Uncertain cause or outcome,VALIDATION,,,PENDING,PENDING,PENDING,NOT_STARTED
+ESDSA-OPS02-07,OPS,Operations Coordinator,OPS02,Risk identification,7,Stakeholder disagreement,DEVELOPMENT,,,PENDING,PENDING,PENDING,NOT_STARTED
+ESDSA-OPS02-08,OPS,Operations Coordinator,OPS02,Risk identification,8,Unexpected complication,DEVELOPMENT,,,PENDING,PENDING,PENDING,NOT_STARTED
+ESDSA-OPS02-09,OPS,Operations Coordinator,OPS02,Risk identification,9,High-consequence decision,DEVELOPMENT,,,PENDING,PENDING,PENDING,NOT_STARTED
+ESDSA-OPS02-10,OPS,Operations Coordinator,OPS02,Risk identification,10,Recovery after an unsuccessful attempt,TEST,,,PENDING,PENDING,PENDING,NOT_STARTED
+ESDSA-OPS03-01,OPS,Operations Coordinator,OPS03,Evidence-based coordination,1,Routine operational problem,DEVELOPMENT,,,PENDING,PENDING,PENDING,NOT_STARTED
+ESDSA-OPS03-02,OPS,Operations Coordinator,OPS03,Evidence-based coordination,2,Time-sensitive problem,TEST,,,PENDING,PENDING,PENDING,NOT_STARTED
+ESDSA-OPS03-03,OPS,Operations Coordinator,OPS03,Evidence-based coordination,3,Incomplete contextual information,VALIDATION,,,PENDING,PENDING,PENDING,NOT_STARTED
+ESDSA-OPS03-04,OPS,Operations Coordinator,OPS03,Evidence-based coordination,4,Conflicting information,DEVELOPMENT,,,PENDING,PENDING,PENDING,NOT_STARTED
+ESDSA-OPS03-05,OPS,Operations Coordinator,OPS03,Evidence-based coordination,5,Multiple competing priorities,DEVELOPMENT,,,PENDING,PENDING,PENDING,NOT_STARTED
+ESDSA-OPS03-06,OPS,Operations Coordinator,OPS03,Evidence-based coordination,6,Uncertain cause or outcome,DEVELOPMENT,,,PENDING,PENDING,PENDING,NOT_STARTED
+ESDSA-OPS03-07,OPS,Operations Coordinator,OPS03,Evidence-based coordination,7,Stakeholder disagreement,TEST,,,PENDING,PENDING,PENDING,NOT_STARTED
+ESDSA-OPS03-08,OPS,Operations Coordinator,OPS03,Evidence-based coordination,8,Unexpected complication,DEVELOPMENT,,,PENDING,PENDING,PENDING,NOT_STARTED
+ESDSA-OPS03-09,OPS,Operations Coordinator,OPS03,Evidence-based coordination,9,High-consequence decision,DEVELOPMENT,,,PENDING,PENDING,PENDING,NOT_STARTED
+ESDSA-OPS03-10,OPS,Operations Coordinator,OPS03,Evidence-based coordination,10,Recovery after an unsuccessful attempt,VALIDATION,,,PENDING,PENDING,PENDING,NOT_STARTED
+ESDSA-OPS04-01,OPS,Operations Coordinator,OPS04,Monitoring and escalation,1,Routine operational problem,DEVELOPMENT,,,PENDING,PENDING,PENDING,NOT_STARTED
+ESDSA-OPS04-02,OPS,Operations Coordinator,OPS04,Monitoring and escalation,2,Time-sensitive problem,DEVELOPMENT,,,PENDING,PENDING,PENDING,NOT_STARTED
+ESDSA-OPS04-03,OPS,Operations Coordinator,OPS04,Monitoring and escalation,3,Incomplete contextual information,VALIDATION,,,PENDING,PENDING,PENDING,NOT_STARTED
+ESDSA-OPS04-04,OPS,Operations Coordinator,OPS04,Monitoring and escalation,4,Conflicting information,DEVELOPMENT,,,PENDING,PENDING,PENDING,NOT_STARTED
+ESDSA-OPS04-05,OPS,Operations Coordinator,OPS04,Monitoring and escalation,5,Multiple competing priorities,VALIDATION,,,PENDING,PENDING,PENDING,NOT_STARTED
+ESDSA-OPS04-06,OPS,Operations Coordinator,OPS04,Monitoring and escalation,6,Uncertain cause or outcome,TEST,,,PENDING,PENDING,PENDING,NOT_STARTED
+ESDSA-OPS04-07,OPS,Operations Coordinator,OPS04,Monitoring and escalation,7,Stakeholder disagreement,TEST,,,PENDING,PENDING,PENDING,NOT_STARTED
+ESDSA-OPS04-08,OPS,Operations Coordinator,OPS04,Monitoring and escalation,8,Unexpected complication,DEVELOPMENT,,,PENDING,PENDING,PENDING,NOT_STARTED
+ESDSA-OPS04-09,OPS,Operations Coordinator,OPS04,Monitoring and escalation,9,High-consequence decision,DEVELOPMENT,,,PENDING,PENDING,PENDING,NOT_STARTED
+ESDSA-OPS04-10,OPS,Operations Coordinator,OPS04,Monitoring and escalation,10,Recovery after an unsuccessful attempt,DEVELOPMENT,,,PENDING,PENDING,PENDING,NOT_STARTED

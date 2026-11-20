@@ -1,0 +1,20 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "SEMANTIC_EQUIVALENCE",
+  "blinded_id": "VG-952080DB3BCD96CC",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_09a8152367e145e9016b000d528d2487d0a2013c8b3da57db1",
+  "annotated_utc": "2026-11-20T09:05:24.192801+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "semantic_equivalence": "YES",
+    "material_differences": "",
+    "equivalence_rationale": "All three responses preserve the same decision-relevant evidence for technical investigation: they identify appropriate sources (logs, timings, traces, config/deployment history), propose distinguishing tests for input vs code vs dependency causes, and state how observed patterns would support a diagnostic conclusion. B adds some extra specifics (e.g., batch size, record shape, repeated evidence), but these do not materially change the criterion-level evidence or operational commitments."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

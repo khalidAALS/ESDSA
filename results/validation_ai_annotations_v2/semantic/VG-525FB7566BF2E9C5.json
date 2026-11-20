@@ -1,0 +1,20 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "SEMANTIC_EQUIVALENCE",
+  "blinded_id": "VG-525FB7566BF2E9C5",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_01538b43f3590c28016b000c87081887d0b484e2cc7d5a1f13",
+  "annotated_utc": "2026-11-20T09:02:01.801072+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "semantic_equivalence": "NO",
+    "material_differences": "Response A says it would do little reproduction work, prioritize rollback/patch, and only dig into logs if the rollback does not solve it. Responses B and C are more explicit about immediately treating the deployment as the likely cause, but C adds a clearer investigation sequence: examine the deploy diff, identify touched code ownership, inspect those areas in parallel, and then revisit logs/user reports if rollback does not help. Compared with A, B/C downplay reproduction more strongly and C adds a more structured narrowing process, which affects criterion-level evidence for reproduction and systematic narrowing.",
+    "equivalence_rationale": "The three responses are similar in overall incident-response posture, but they do not preserve the same evidence across the diagnostic criteria. A explicitly deprioritizes reproduction and mainly relies on rollback plus later log review, with only vague team involvement. B likewise skips reproduction and emphasizes rollback/hotfix, while C adds more concrete narrowing steps by using the deploy diff, ownership of touched code paths, and parallel inspection before returning to logs and reports. Those differences could change how strongly the response demonstrates reproduction, comparison, and systematic narrowing, so they are not semantically equivalent."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

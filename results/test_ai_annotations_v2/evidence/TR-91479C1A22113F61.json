@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-91479C1A22113F61",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_00668d57a0cd6662016b00297e05e887d0957c1258e6602a45",
+  "annotated_utc": "2026-11-20T11:05:36.504451+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "OPS02-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "A single brief excursion sounds like sensor noise unless it keeps happening.",
+        "rationale": "The candidate identifies a plausible operational risk: the excursion may be a false alarm or sensor issue in a temperature-controlled shipment context."
+      },
+      {
+        "criterion_id": "OPS02-C2",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "passage": "",
+        "rationale": "The answer acknowledges uncertainty only in a limited way, but it does not clearly assess possible consequences of the excursion for the shipment, such as product quality, spoilage, or other operational impact."
+      },
+      {
+        "criterion_id": "OPS02-C3",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I’d assume the normal device is correct and let the shipment leave to avoid delays.",
+        "rationale": "This proposes proceeding without further verification or escalation despite conflicting readings in a time-sensitive temperature-controlled shipment, which is a materially insufficient response to the risk."
+      }
+    ],
+    "annotation_notes": "The response shows some risk awareness but prioritizes speed over a proportionate check or escalation."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

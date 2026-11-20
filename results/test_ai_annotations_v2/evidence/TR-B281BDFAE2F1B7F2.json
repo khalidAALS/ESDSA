@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-B281BDFAE2F1B7F2",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_057be3169d006b7e016b002b12f03087d097c9aa115d4c34de",
+  "annotated_utc": "2026-11-20T11:12:21.044330+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "CSS02-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d ask a few relevant questions, review the account records, and use the screenshot as supporting context.",
+        "rationale": "The answer explicitly states that the candidate would ask relevant questions to understand the issue, which directly satisfies requesting information needed to investigate the claim."
+      },
+      {
+        "criterion_id": "CSS02-C2",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "passage": "",
+        "rationale": "The response mentions reviewing account records and using a screenshot, but it does not clearly show distinguishing confirmed facts from assumptions or how the candidate would separate verified information from unverified claims."
+      },
+      {
+        "criterion_id": "CSS02-C3",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "passage": "",
+        "rationale": "The candidate says the request would be limited to what is needed, but does not substantively demonstrate that the information to be gathered is appropriate and authorised. The answer lacks explicit safeguards, authorisation checks, or concrete proportionality reasoning."
+      }
+    ],
+    "annotation_notes": "The answer is concise and generally on-task, but only clearly establishes asking relevant questions. It does not sufficiently evidence source verification or authorised/proportionate collection."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

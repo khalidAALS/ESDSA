@@ -1,0 +1,18 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "SEMANTIC_EQUIVALENCE",
+  "blinded_id": "TG-7255E0AA431F1039",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0ca088f79ea0b35d016b002abbfd2887d0a639f1afd16f37fb",
+  "annotated_utc": "2026-11-20T11:10:54.069402+00:00",
+  "annotation": {
+    "semantic_equivalence": "YES",
+    "material_differences": "",
+    "equivalence_rationale": "All three responses preserve the same decision-relevant evidence under the three criteria: they propose investigating logs/request IDs to identify whether client or server retries are causing duplicates, link the correction to the discovered retry source, and justify the fix as preventing the duplicate persistence path. Response A adds a bit more detail about tracing across application/proxy/client logs, while B and C are more concise, but these differences do not change the underlying cause identification, correction linkage, or justification."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

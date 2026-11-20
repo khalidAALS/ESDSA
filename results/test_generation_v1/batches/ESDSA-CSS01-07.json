@@ -1,0 +1,63 @@
+{
+  "experiment": "ESDSA_TEST_GENERATION_V1",
+  "partition": "TEST",
+  "family_id": "ESDSA-CSS01-07",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_00629f7fdc28eefe016b00229b573087d08c8f04a33046a5cd",
+  "timestamp_utc": "2026-11-20T10:36:16.219787+00:00",
+  "run_sha256": "603d3343a3fcd8fb11072cae7829da8f64c32ffe153446a531940e797c615dbc",
+  "scenario_sha256": "9d2280d8014612bdd263f5dd8daf8356efeac3fa7a7e4b0cd3c6f4fef932426a",
+  "rubric_sha256": "88a874a6b8ad332599d4641c1bea4d1f95aa9ee6615d617093828ea355768410",
+  "responses": [
+    {
+      "condition": "SUFFICIENT",
+      "variant": "CANONICAL",
+      "answer": "I’d start by separating the facts from the disagreement. I’d ask the customer to describe exactly what they can’t do now—for example, whether they can’t sign in, can’t access certain content, or can’t use shared features—so I can define the actual failure. Then I’d confirm the impact: which users are affected, what access changed, and whether the issue is blocking work or just limiting one function. Once I understand that, I’d restate the problem in neutral terms, such as: shared subscription access is unavailable for one or more authorised users after an access change, and we need to verify whether it was intentional or accidental before deciding next steps."
+    },
+    {
+      "condition": "SUFFICIENT",
+      "variant": "CONVERSATIONAL",
+      "answer": "I’d first get really clear on what’s not working from the user’s point of view. I’d ask what they’re trying to do, what’s failing, and who exactly is affected so I can see the impact. If it’s only one feature or one person, that matters; if the whole shared subscription is blocked, that’s different. Then I’d sum it up back to them in neutral language: access on the shared subscription is restricted, the effect is that certain authorised users can’t use it, and we need to verify whether the restriction was meant to happen or not before moving forward."
+    },
+    {
+      "condition": "SUFFICIENT",
+      "variant": "CONCISE",
+      "answer": "I’d clarify what’s failing, who’s affected, and what the business impact is. Then I’d restate the issue neutrally: access on the shared subscription is currently restricted, affecting authorised users, and we need to confirm whether that change was intended before choosing a fix."
+    },
+    {
+      "condition": "INSUFFICIENT",
+      "variant": "CANONICAL",
+      "answer": "I’d listen to both sides and make sure I understand the timeline of the access change. I’d ask a few questions about when the restriction was noticed and who made the update, then I’d document the competing accounts carefully. From there I’d pass it on for review so the team can determine what happened and take the appropriate action."
+    },
+    {
+      "condition": "INSUFFICIENT",
+      "variant": "CONVERSATIONAL",
+      "answer": "I’d hear out both people, ask when the access changed, and capture each version of events. If there’s disagreement, I’d note that clearly and hand it over for investigation so the right team can sort out whether it was intentional or accidental."
+    },
+    {
+      "condition": "INSUFFICIENT",
+      "variant": "CONCISE",
+      "answer": "I’d gather both versions of events, note when the access changed, and document the disagreement for review. Then I’d escalate it so the team can determine what actually happened."
+    },
+    {
+      "condition": "NEGATIVE",
+      "variant": "CANONICAL",
+      "answer": "If the administrator says access was restricted, I’d treat that as the authoritative answer and focus on restoring access for everyone else right away. I wouldn’t spend too long comparing both stories because that can delay resolution, and the fastest path is usually to reverse the change and see if that fixes the complaint."
+    },
+    {
+      "condition": "NEGATIVE",
+      "variant": "CONVERSATIONAL",
+      "answer": "I’d probably just go with the admin’s version since they control the subscription, and then turn access back on to get everyone moving again. If the other user says it was accidental, that can be looked at later, but I’d prioritize fixing it first."
+    },
+    {
+      "condition": "NEGATIVE",
+      "variant": "CONCISE",
+      "answer": "I’d take the administrator’s account as the deciding version and restore access first, then check details later if needed."
+    }
+  ],
+  "raw_output": "{\"responses\":[{\"condition\":\"SUFFICIENT\",\"variant\":\"CANONICAL\",\"answer\":\"I’d start by separating the facts from the disagreement. I’d ask the customer to describe exactly what they can’t do now—for example, whether they can’t sign in, can’t access certain content, or can’t use shared features—so I can define the actual failure. Then I’d confirm the impact: which users are affected, what access changed, and whether the issue is blocking work or just limiting one function. Once I understand that, I’d restate the problem in neutral terms, such as: shared subscription access is unavailable for one or more authorised users after an access change, and we need to verify whether it was intentional or accidental before deciding next steps.\"},{\"condition\":\"SUFFICIENT\",\"variant\":\"CONVERSATIONAL\",\"answer\":\"I’d first get really clear on what’s not working from the user’s point of view. I’d ask what they’re trying to do, what’s failing, and who exactly is affected so I can see the impact. If it’s only one feature or one person, that matters; if the whole shared subscription is blocked, that’s different. Then I’d sum it up back to them in neutral language: access on the shared subscription is restricted, the effect is that certain authorised users can’t use it, and we need to verify whether the restriction was meant to happen or not before moving forward.\"},{\"condition\":\"SUFFICIENT\",\"variant\":\"CONCISE\",\"answer\":\"I’d clarify what’s failing, who’s affected, and what the business impact is. Then I’d restate the issue neutrally: access on the shared subscription is currently restricted, affecting authorised users, and we need to confirm whether that change was intended before choosing a fix.\"},{\"condition\":\"INSUFFICIENT\",\"variant\":\"CANONICAL\",\"answer\":\"I’d listen to both sides and make sure I understand the timeline of the access change. I’d ask a few questions about when the restriction was noticed and who made the update, then I’d document the competing accounts carefully. From there I’d pass it on for review so the team can determine what happened and take the appropriate action.\"},{\"condition\":\"INSUFFICIENT\",\"variant\":\"CONVERSATIONAL\",\"answer\":\"I’d hear out both people, ask when the access changed, and capture each version of events. If there’s disagreement, I’d note that clearly and hand it over for investigation so the right team can sort out whether it was intentional or accidental.\"},{\"condition\":\"INSUFFICIENT\",\"variant\":\"CONCISE\",\"answer\":\"I’d gather both versions of events, note when the access changed, and document the disagreement for review. Then I’d escalate it so the team can determine what actually happened.\"},{\"condition\":\"NEGATIVE\",\"variant\":\"CANONICAL\",\"answer\":\"If the administrator says access was restricted, I’d treat that as the authoritative answer and focus on restoring access for everyone else right away. I wouldn’t spend too long comparing both stories because that can delay resolution, and the fastest path is usually to reverse the change and see if that fixes the complaint.\"},{\"condition\":\"NEGATIVE\",\"variant\":\"CONVERSATIONAL\",\"answer\":\"I’d probably just go with the admin’s version since they control the subscription, and then turn access back on to get everyone moving again. If the other user says it was accidental, that can be looked at later, but I’d prioritize fixing it first.\"},{\"condition\":\"NEGATIVE\",\"variant\":\"CONCISE\",\"answer\":\"I’d take the administrator’s account as the deciding version and restore access first, then check details later if needed.\"}]}",
+  "input_tokens": 749,
+  "output_tokens": 752,
+  "generation_conditions_are_reference_labels": false
+}

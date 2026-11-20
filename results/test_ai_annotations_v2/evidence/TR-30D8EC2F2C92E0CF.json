@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-30D8EC2F2C92E0CF",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0ad67468676bcec3016b002932595c87d0b60e212bc58b7f43",
+  "annotated_utc": "2026-11-20T11:04:20.968300+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "OPS02-C1",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I’d keep the current setup going and wait to see if the congestion improves.",
+        "rationale": "The answer does not identify a plausible operational risk to reassess; instead it dismisses the existing congestion and near-miss context by proposing to wait rather than recognize the hazard."
+      },
+      {
+        "criterion_id": "OPS02-C2",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I’d only escalate if there’s a repeat incident or actual harm, since changing things again could disrupt throughput.",
+        "rationale": "This frames escalation only after harm has occurred and prioritizes throughput disruption over evaluating uncertainty and potential consequences, which materially underconsiders risk likelihood and impact."
+      },
+      {
+        "criterion_id": "OPS02-C3",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I’d keep the current setup going and wait to see if the congestion improves. I’d only escalate if there’s a repeat incident or actual harm, since changing things again could disrupt throughput.",
+        "rationale": "The proposed response is to make no meaningful mitigation or timely escalation despite a failed intervention and a reported near-miss, which is a materially deficient risk response."
+      }
+    ],
+    "annotation_notes": ""
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

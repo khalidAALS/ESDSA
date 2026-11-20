@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-FFFF3CCB720B5095",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0dc5f18856cc1652016b001065ccc887d0a560629ab27268fd",
+  "annotated_utc": "2026-11-20T09:18:31.741928+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "OPS01-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d judge it by urgency, operational impact, and any dependencies.",
+        "rationale": "This explicitly names the relevant prioritisation factors required by the criterion."
+      },
+      {
+        "criterion_id": "OPS01-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "If the risk looks credible or immediate, I’d stop or isolate the equipment and escalate, then look for the safest way to protect the delivery. If the risk seems lower but unclear, I’d keep the delivery moving and send someone to investigate right away",
+        "rationale": "The answer weighs safety risk against delivery impact and explains different actions based on the evidence available, which is substantive trade-off reasoning."
+      },
+      {
+        "criterion_id": "OPS01-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "with a clear point to reassess once we know more.",
+        "rationale": "This explicitly states that priorities will be revisited when more information becomes available, satisfying reprioritisation."
+      }
+    ],
+    "annotation_notes": "The response directly addresses all three criteria with clear prioritisation logic and a reassessment trigger."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

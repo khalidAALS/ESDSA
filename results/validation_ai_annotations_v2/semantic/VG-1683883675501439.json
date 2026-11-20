@@ -1,0 +1,20 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "SEMANTIC_EQUIVALENCE",
+  "blinded_id": "VG-1683883675501439",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0dba11a3903ae1dd016b000bf0565487d0bf61ee5b27fbf38f",
+  "annotated_utc": "2026-11-20T08:59:30.854077+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "semantic_equivalence": "NO",
+    "material_differences": "All three responses favor immediate address changes, but B and C add a stronger commitment to changing the address even when the order is already in fulfilment/shipping and, in C, a willingness to ignore inconsistent system signals unless there is a bigger issue. Compared with A, which says to update right away and deal with system issues afterward, B/C more explicitly deprioritize status checks and escalation; this could affect Policy awareness and Uncertainty handling. A is somewhat less explicit about overriding constraints, but still does not mention assessing status or escalation.",
+    "equivalence_rationale": "The responses are not fully equivalent at the criterion level because they differ in how they handle fulfilment status and uncertainty. All three show a preference for a quick resolution, so Option assessment is broadly similar. However, B and especially C more clearly commit to making the change regardless of process stage and to avoiding deeper investigation of inconsistent system information, which could change evidence for respecting service constraints and recognizing when escalation or more information is needed. A is simpler, but its treatment of system issues is less clearly dismissive. These differences are potentially material under the stated competencies."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

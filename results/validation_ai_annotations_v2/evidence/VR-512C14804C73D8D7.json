@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-512C14804C73D8D7",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_00fc7359da88efbf016b000c5e229887d0be785f25cd51347d",
+  "annotated_utc": "2026-11-20T09:01:20.422372+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "OPS03-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d start by pulling together the relevant operational evidence from the last attempt: the missed handover points, the revised schedule, any task logs, and any ownership notes from the teams involved.",
+        "rationale": "The answer explicitly draws on multiple operational sources from the prior attempt and the revised plan, showing active integration of relevant evidence."
+      },
+      {
+        "criterion_id": "OPS03-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "Then I’d map each remaining task to a single owner and check the dependencies so we can see exactly where the disagreement is coming from.",
+        "rationale": "This directly addresses identifying responsible parties and dependencies, which matches the criterion."
+      },
+      {
+        "criterion_id": "OPS03-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d also document the reasoning for any schedule adjustment, so it’s clear why the sequence changed and what evidence supported that decision.",
+        "rationale": "The candidate explicitly says they would explain schedule changes using evidence and document the reasoning, which demonstrates decision traceability."
+      }
+    ],
+    "annotation_notes": ""
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

@@ -1,0 +1,18 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "SEMANTIC_EQUIVALENCE",
+  "blinded_id": "TG-1EF97D6A0E89C013",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0fc57ae7742c455a016b00298b74b487d088613c4ac8e9a758",
+  "annotated_utc": "2026-11-20T11:05:49.958877+00:00",
+  "annotation": {
+    "semantic_equivalence": "NO",
+    "material_differences": "Response A and B explicitly reject rerunning the failing case and checking refund/discount paths before deployment, but they also add a concrete next-step commitment to handle issues afterward or patch anything that shows up later. Response C only says to deploy without extra checks and omits any post-deployment follow-up or broader remediation plan. That omission changes the outcome-assessment evidence and the implied operational commitment.",
+    "equivalence_rationale": "Under SWE04-C1 and C2, all three responses de-emphasize verification and regression testing. However, A and B include an explicit contingent follow-up plan after release, while C does not. Because the interview question asks what should happen next, that missing action could affect the assessment of outcome planning and operational commitment under SWE04-C3. The responses therefore do not preserve the same decision-relevant evidence."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

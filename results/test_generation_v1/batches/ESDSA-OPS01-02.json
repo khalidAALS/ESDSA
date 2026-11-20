@@ -1,0 +1,63 @@
+{
+  "experiment": "ESDSA_TEST_GENERATION_V1",
+  "partition": "TEST",
+  "family_id": "ESDSA-OPS01-02",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0b487e4f2e8f1611016b0022ca9fe087d0b7abc47ed7a5d19f",
+  "timestamp_utc": "2026-11-20T10:37:04.983209+00:00",
+  "run_sha256": "fb1542b0f6b2d95499a9a505930a55eac7cf931fddb33b8a29fb2e708c705dc4",
+  "scenario_sha256": "9d2280d8014612bdd263f5dd8daf8356efeac3fa7a7e4b0cd3c6f4fef932426a",
+  "rubric_sha256": "1eb6d41c9cbe6e777fbf56c881f6323da043f7d1e22ab6c37c219cc66d403440",
+  "responses": [
+    {
+      "condition": "SUFFICIENT",
+      "variant": "CANONICAL",
+      "answer": "I’d start by treating the equipment check as the first priority, because it’s a dependency for the launch and any delay there can stop or compromise the service. In parallel, I’d assess the thinner staff coverage and rework the plan so the critical launch tasks are covered, for example by moving people onto the highest-risk or customer-facing steps and trimming anything nonessential. The routine report would come after the launch-critical items are stable, unless it feeds directly into the launch or is needed for a decision. I’d change that order if the equipment issue turned out to affect safety or the launch couldn’t proceed without it, if staffing dropped further, or if a new operational issue came up that had a bigger immediate impact than the report."
+    },
+    {
+      "condition": "SUFFICIENT",
+      "variant": "CONVERSATIONAL",
+      "answer": "I’d put the equipment check first, because if that isn’t done the launch itself could be at risk. Then I’d look at the staffing gap and make sure the key launch tasks are covered, even if that means reshuffling people or dropping anything that can wait. The report would sit behind those unless it’s needed to support the launch. I’d change the order if the check showed a bigger problem, if staffing got worse, or if something urgent came up that had a more immediate impact on service than the report."
+    },
+    {
+      "condition": "SUFFICIENT",
+      "variant": "CONCISE",
+      "answer": "First the equipment check, because it’s a launch dependency. Then I’d cover the staffing gap around the critical tasks. The routine report comes after the launch-critical work unless it directly supports the launch. I’d reorder if the equipment issue became safety-critical, staffing worsened, or another urgent operational issue overtook it."
+    },
+    {
+      "condition": "INSUFFICIENT",
+      "variant": "CANONICAL",
+      "answer": "I’d begin by looking at which item has the closest deadline and which one affects the launch most directly. If the equipment check is clearly blocking the afternoon service, I’d move that ahead of the routine report, and I’d also check whether the reduced staff means we need to redistribute people before anything else. The report would likely be the most flexible item. I’d review the order again once I’ve confirmed the exact status of the equipment and staffing, but I’d want to get the launch moving as efficiently as possible."
+    },
+    {
+      "condition": "INSUFFICIENT",
+      "variant": "CONVERSATIONAL",
+      "answer": "I’d probably start by checking what’s most time-sensitive and what affects the launch the most. If the equipment check is holding things up, that would go before the report, and I’d see whether the staffing shortage needs reshuffling right away too. The report sounds like the easiest thing to move if needed. I’d reassess once I’ve got a clearer picture of the equipment and the team coverage, but the main goal would be keeping the launch on track."
+    },
+    {
+      "condition": "INSUFFICIENT",
+      "variant": "CONCISE",
+      "answer": "I’d look at urgency and launch impact first. If the equipment check is blocking the launch, it goes ahead of the report, and I’d also check whether staffing needs a quick reshuffle. The report is the most movable item. I’d revisit the order once I know more about the equipment and coverage."
+    },
+    {
+      "condition": "NEGATIVE",
+      "variant": "CANONICAL",
+      "answer": "I’d keep the routine report on track first so there’s no backlog later, and then I’d fit in the equipment check and staffing issue around that. In my experience, reports are usually straightforward, so I’d rather get them out of the way than spend too much time reorganising everything else. If the launch slips a bit because of the equipment delay, I’d catch up once the report is done. I’d only reconsider that order if someone specifically told me the check was absolutely critical."
+    },
+    {
+      "condition": "NEGATIVE",
+      "variant": "CONVERSATIONAL",
+      "answer": "I’d get the report done first so it doesn’t hang over us, and then I’d deal with the equipment check and the staffing gap after that. The launch can usually absorb a bit of delay, so I wouldn’t want routine admin building up. I’d only change course if I was explicitly told the equipment issue was a hard stop."
+    },
+    {
+      "condition": "NEGATIVE",
+      "variant": "CONCISE",
+      "answer": "I’d do the report first, then deal with the equipment and staffing issues. I’d only change that if someone said the equipment check was an absolute stop."
+    }
+  ],
+  "raw_output": "{\"responses\":[{\"condition\":\"SUFFICIENT\",\"variant\":\"CANONICAL\",\"answer\":\"I’d start by treating the equipment check as the first priority, because it’s a dependency for the launch and any delay there can stop or compromise the service. In parallel, I’d assess the thinner staff coverage and rework the plan so the critical launch tasks are covered, for example by moving people onto the highest-risk or customer-facing steps and trimming anything nonessential. The routine report would come after the launch-critical items are stable, unless it feeds directly into the launch or is needed for a decision. I’d change that order if the equipment issue turned out to affect safety or the launch couldn’t proceed without it, if staffing dropped further, or if a new operational issue came up that had a bigger immediate impact than the report.\"},{\"condition\":\"SUFFICIENT\",\"variant\":\"CONVERSATIONAL\",\"answer\":\"I’d put the equipment check first, because if that isn’t done the launch itself could be at risk. Then I’d look at the staffing gap and make sure the key launch tasks are covered, even if that means reshuffling people or dropping anything that can wait. The report would sit behind those unless it’s needed to support the launch. I’d change the order if the check showed a bigger problem, if staffing got worse, or if something urgent came up that had a more immediate impact on service than the report.\"},{\"condition\":\"SUFFICIENT\",\"variant\":\"CONCISE\",\"answer\":\"First the equipment check, because it’s a launch dependency. Then I’d cover the staffing gap around the critical tasks. The routine report comes after the launch-critical work unless it directly supports the launch. I’d reorder if the equipment issue became safety-critical, staffing worsened, or another urgent operational issue overtook it.\"},{\"condition\":\"INSUFFICIENT\",\"variant\":\"CANONICAL\",\"answer\":\"I’d begin by looking at which item has the closest deadline and which one affects the launch most directly. If the equipment check is clearly blocking the afternoon service, I’d move that ahead of the routine report, and I’d also check whether the reduced staff means we need to redistribute people before anything else. The report would likely be the most flexible item. I’d review the order again once I’ve confirmed the exact status of the equipment and staffing, but I’d want to get the launch moving as efficiently as possible.\"},{\"condition\":\"INSUFFICIENT\",\"variant\":\"CONVERSATIONAL\",\"answer\":\"I’d probably start by checking what’s most time-sensitive and what affects the launch the most. If the equipment check is holding things up, that would go before the report, and I’d see whether the staffing shortage needs reshuffling right away too. The report sounds like the easiest thing to move if needed. I’d reassess once I’ve got a clearer picture of the equipment and the team coverage, but the main goal would be keeping the launch on track.\"},{\"condition\":\"INSUFFICIENT\",\"variant\":\"CONCISE\",\"answer\":\"I’d look at urgency and launch impact first. If the equipment check is blocking the launch, it goes ahead of the report, and I’d also check whether staffing needs a quick reshuffle. The report is the most movable item. I’d revisit the order once I know more about the equipment and coverage.\"},{\"condition\":\"NEGATIVE\",\"variant\":\"CANONICAL\",\"answer\":\"I’d keep the routine report on track first so there’s no backlog later, and then I’d fit in the equipment check and staffing issue around that. In my experience, reports are usually straightforward, so I’d rather get them out of the way than spend too much time reorganising everything else. If the launch slips a bit because of the equipment delay, I’d catch up once the report is done. I’d only reconsider that order if someone specifically told me the check was absolutely critical.\"},{\"condition\":\"NEGATIVE\",\"variant\":\"CONVERSATIONAL\",\"answer\":\"I’d get the report done first so it doesn’t hang over us, and then I’d deal with the equipment check and the staffing gap after that. The launch can usually absorb a bit of delay, so I wouldn’t want routine admin building up. I’d only change course if I was explicitly told the equipment issue was a hard stop.\"},{\"condition\":\"NEGATIVE\",\"variant\":\"CONCISE\",\"answer\":\"I’d do the report first, then deal with the equipment and staffing issues. I’d only change that if someone said the equipment check was an absolute stop.\"}]}",
+  "input_tokens": 752,
+  "output_tokens": 928,
+  "generation_conditions_are_reference_labels": false
+}

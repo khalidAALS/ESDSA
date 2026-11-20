@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-C22627386DEB170B",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_09c474ef369c12e1016b001090873087d0b03ec81e00af2ba7",
+  "annotated_utc": "2026-11-20T09:19:14.343253+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "OPS03-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d pull the handover notes and the new schedule together and check them against the task list from the relocation.",
+        "rationale": "The candidate explicitly uses multiple operational sources—handover notes, the new schedule, and the relocation task list—to inform coordination."
+      },
+      {
+        "criterion_id": "OPS03-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "Then I’d sit down with the teams to work through the ownership dispute and adjust the timing where the tasks are already clear.",
+        "rationale": "This shows the candidate identifying who is responsible through discussion with teams and adjusting timing based on task clarity, which reflects coordination of parties and dependencies."
+      },
+      {
+        "criterion_id": "OPS03-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d also keep a record of the changes and why we made them, so the plan stays easy to follow.",
+        "rationale": "The candidate states they will document the changes and the reasons for them, demonstrating traceable decision-making grounded in operational evidence."
+      }
+    ],
+    "annotation_notes": "The answer is concise but provides clear evidence for all three criteria."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

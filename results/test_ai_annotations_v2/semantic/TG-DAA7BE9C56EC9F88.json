@@ -1,0 +1,18 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "SEMANTIC_EQUIVALENCE",
+  "blinded_id": "TG-DAA7BE9C56EC9F88",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0da192a1df023f0e016b002bc640cc87d081ade8045b27a520",
+  "annotated_utc": "2026-11-20T11:15:21.881894+00:00",
+  "annotation": {
+    "semantic_equivalence": "NO",
+    "material_differences": "Response A adds an explicit assumption that a delivery scan means the item was delivered and says it would not spend much time on tracking details or ask for full order information unless the customer insists. Response B is shorter but similarly relies on the delivered scan and skips deeper verification. Response C also relies on the delivered scan, but it adds that shipment records would not be examined much unless there is an obvious mismatch. Across the three, the main material issue is that they do not preserve the same source-verification evidence: all three lean on an unverified delivery scan as sufficient, and A further discourages checking order details. This could affect CSS02-C2 and CSS02-C1 because the responses understate the need to distinguish confirmed facts from assumptions and to gather relevant information about the delivery event.",
+    "equivalence_rationale": "The responses are broadly similar in tone and operational direction, but they are not decision-equivalent for the competency criteria. Each one treats the automated delivery message or tracking scan as effectively conclusive and moves quickly toward assuming loss or theft, which weakens source verification. Response A is somewhat more explicit about avoiding tracking details and full order information; C similarly discourages digging into shipment records; B is the briefest but still says to proceed as if lost without deeper verification. Because the differences are mainly in degree rather than in kind, but all three preserve the same problematic evidence pattern, I judged them non-equivalent only insofar as the specific omissions and assumptions could materially affect the evidence assessment under the relevant criteria."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

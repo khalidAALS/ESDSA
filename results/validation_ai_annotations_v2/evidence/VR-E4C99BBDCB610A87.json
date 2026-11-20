@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-E4C99BBDCB610A87",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_02be67e701cc4c31016b000c6ee98887d0b5628a18049d6d3b",
+  "annotated_utc": "2026-11-20T09:01:37.098616+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "CSS03-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "If it’s still at a stage where we can edit it, I’d change the address. If not, I’d let the customer know it might be too late and talk through other options like cancelling and placing a new order.",
+        "rationale": "The answer assesses the order’s status and selects a resolution that fits that stage, including alternative options when editing is no longer feasible."
+      },
+      {
+        "criterion_id": "CSS03-C2",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "passage": "",
+        "rationale": "The answer mentions checking the order stage and only changing the address if it can be edited, but it does not explicitly show awareness of specific authorisation rules or service constraints beyond that general feasibility check."
+      },
+      {
+        "criterion_id": "CSS03-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "If the status looks a bit mixed, I’d note it and keep working through it.",
+        "rationale": "This indicates the candidate recognises uncertainty in the order status and would respond by noting the ambiguity and continuing to resolve it, rather than assuming a fixed answer."
+      }
+    ],
+    "annotation_notes": ""
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

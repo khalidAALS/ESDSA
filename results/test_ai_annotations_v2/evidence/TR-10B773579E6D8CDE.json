@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-10B773579E6D8CDE",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0df3001811635129016b002b4ce2cc87d09c665338973511ab",
+  "annotated_utc": "2026-11-20T11:13:18.692249+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "SWE03-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d investigate the retry path first by comparing logs, request IDs, and timestamps across the client and server so I can understand how the duplicate uploads are happening.",
+        "rationale": "The candidate identifies a plausible cause to investigate: retries in the upload path, supported by analysis of logs, request IDs, and timestamps across client and server."
+      },
+      {
+        "criterion_id": "SWE03-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d recommend tightening the upload flow so repeated submissions don’t result in multiple stored attachments, likely by adding an idempotency mechanism or a deduplication check around the storage step.",
+        "rationale": "The proposed correction is explicitly linked to the suspected cause of repeated submissions/retries producing duplicates."
+      },
+      {
+        "criterion_id": "SWE03-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "That should reduce the duplicates while we confirm the exact retry source.",
+        "rationale": "The candidate states that the correction would reduce duplicates, directly explaining why the proposed change addresses the problem."
+      }
+    ],
+    "annotation_notes": "The answer is concise but provides sufficient evidence for all three criteria."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-067C8F937897D6A5",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_001c12dfa77bbc13016b000c06fd9887d0b6c7c3cffadde6f9",
+  "annotated_utc": "2026-11-20T08:59:52.525549+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "CSS02-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d ask for any details that can help anchor the cancellation, like the approximate month, what prompted the cancellation, whether they received any confirmation email, and whether they used the website, app, or support to cancel.",
+        "rationale": "The candidate explicitly identifies multiple questions aimed at understanding the issue and locating the cancellation, which directly demonstrates relevant information gathering."
+      },
+      {
+        "criterion_id": "CSS02-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "Then I’d verify the account status against our internal records, such as the cancellation log, subscription status, and any support notes or automated confirmations, rather than relying on memory alone.",
+        "rationale": "The candidate explicitly contrasts internal records and confirmations with memory, showing they will distinguish confirmed evidence from assumptions."
+      },
+      {
+        "criterion_id": "CSS02-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "Because the history is incomplete, I’d compare only the information I’m authorised to access, and if needed I’d use approved account identifiers to search for matching records.",
+        "rationale": "The candidate states they will limit collection to authorized information and use approved identifiers, which supports proportionate and authorised gathering."
+      }
+    ],
+    "annotation_notes": "The answer directly addresses all three competencies with concrete steps and limits on what information will be gathered and used."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

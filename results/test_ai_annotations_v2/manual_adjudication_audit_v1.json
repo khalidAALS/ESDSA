@@ -1,0 +1,16 @@
+{
+  "experiment": "ESDSA_TEST_MANUAL_ADJUDICATION_V1",
+  "method": "AI_ASSISTED_MANUAL_ADJUDICATION",
+  "adjudicated_responses": [
+    "TR-C574732B12EAA1D2",
+    "TR-8C1304D89DCF3582"
+  ],
+  "adjudicated_criterion_count": 6,
+  "reason": "Repeated failure of generated evidence quotations to satisfy exact substring validation.",
+  "original_validator_used": true,
+  "model_generated_annotations_accepted": 214,
+  "manually_adjudicated_annotations": 2,
+  "independent_human_ground_truth": false,
+  "api_requests": 0,
+  "created_utc": "2026-11-20T11:29:54.396500+00:00"
+}

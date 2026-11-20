@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-30E46F8D076793FC",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_089a88d5d6652305016b000c8a24f087d0b99e7845449ab87f",
+  "annotated_utc": "2026-11-20T09:02:05.438637+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "CSS01-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d first ask the customer to walk me through what happened when they tried to place the order, so I can see whether the confirmation simply failed to arrive or whether the purchase may not have gone through.",
+        "rationale": "This directly shows the candidate would clarify what problem the customer is experiencing by investigating whether the issue is a missing confirmation or an unsuccessful purchase."
+      },
+      {
+        "criterion_id": "CSS01-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d also note the unfamiliar delivery address and check whether it matches any shipping details on the account.",
+        "rationale": "This identifies the affected outcome/service as the delivery/address details tied to the order, showing the candidate is checking what part of the customer experience is impacted."
+      },
+      {
+        "criterion_id": "CSS01-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d make sure we have the order details in front of us before deciding on the next step.",
+        "rationale": "This indicates the candidate would gather and review the facts to define the problem before choosing a resolution, which is consistent with summarising the issue first."
+      }
+    ],
+    "annotation_notes": "The answer addresses the missing confirmation, possible failed purchase, and unfamiliar address, and it proposes checking order details before acting."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

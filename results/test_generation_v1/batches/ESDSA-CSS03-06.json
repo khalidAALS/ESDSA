@@ -1,0 +1,63 @@
+{
+  "experiment": "ESDSA_TEST_GENERATION_V1",
+  "partition": "TEST",
+  "family_id": "ESDSA-CSS03-06",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_06329fd111471c2d016b0022b7864887d0bed77bd4adf19075",
+  "timestamp_utc": "2026-11-20T10:36:44.821102+00:00",
+  "run_sha256": "9f2af980ff90c5508b47c2822a5c811085bcab54c7648efaf86cf269190d643e",
+  "scenario_sha256": "9d2280d8014612bdd263f5dd8daf8356efeac3fa7a7e4b0cd3c6f4fef932426a",
+  "rubric_sha256": "1ff65fb010f766900d3e56f242159933bd2f4d2858e38e99ac63320d79b09974",
+  "responses": [
+    {
+      "condition": "SUFFICIENT",
+      "variant": "CANONICAL",
+      "answer": "I’d start by separating what we know from what we don’t. If the checks don’t show a clear fault and the regional notice might apply, I’d verify the customer’s location and the timing of the interruptions against the incident details before promising any remedy. If the situation looks like it falls under a service-impact incident, I’d follow the applicable refund or credit policy and explain what can be considered at this stage. If the evidence is still conflicting or the refund would need an exception, I’d escalate it for supervisor review rather than making a decision on my own. The key is to avoid overcommitting while still giving the customer a clear next step and timeline."
+    },
+    {
+      "condition": "SUFFICIENT",
+      "variant": "CONVERSATIONAL",
+      "answer": "I’d hold off on promising a refund straight away. First I’d check whether their address and the outage times actually line up with the regional incident, because if they do, that changes what’s justified. Then I’d apply the normal policy for credits or refunds based on the confirmed impact. If it’s still unclear, or if it would need an exception, I’d escalate it for approval instead of guessing. I’d keep the customer updated on what I’m checking and what happens next."
+    },
+    {
+      "condition": "SUFFICIENT",
+      "variant": "CONCISE",
+      "answer": "I’d verify the customer’s location and outage timing against the incident notice first. Then I’d apply the refund or credit policy only if the evidence supports it. If it’s still unclear or needs an exception, I’d escalate for approval and keep the customer informed."
+    },
+    {
+      "condition": "INSUFFICIENT",
+      "variant": "CANONICAL",
+      "answer": "I’d acknowledge the interruption reports and check whether the account history shows repeated issues, then compare that with the regional notice and the customer’s location. If it appears to match an incident covered by policy, I’d explain what compensation might be available and make sure the request is passed to the right queue if I can’t authorise it myself. If the information doesn’t line up yet, I’d keep investigating and update the customer rather than closing it out too quickly."
+    },
+    {
+      "condition": "INSUFFICIENT",
+      "variant": "CONVERSATIONAL",
+      "answer": "I’d look at the account notes, the outage details, and the regional incident to see whether there’s enough to support a refund or credit. If it looks like it falls under policy, I’d tell the customer what kind of compensation may be available and route it appropriately if I can’t approve it. If the records still don’t match up, I’d keep checking and let them know I’m still working through it."
+    },
+    {
+      "condition": "INSUFFICIENT",
+      "variant": "CONCISE",
+      "answer": "I’d check the account, incident notice, and location to see whether compensation looks supported. If it does, I’d route it through the normal process. If the records still don’t match, I’d keep investigating and update the customer."
+    },
+    {
+      "condition": "NEGATIVE",
+      "variant": "CANONICAL",
+      "answer": "If the customer is reporting repeated interruptions, I’d usually offer a refund right away to keep the situation moving, even if the outage details are still unclear. I’d note the incident notice if it exists, but I wouldn’t want to delay the customer by spending too long confirming whether their location is covered. If there’s any pushback later, the back office can sort out whether the refund was fully supported."
+    },
+    {
+      "condition": "NEGATIVE",
+      "variant": "CONVERSATIONAL",
+      "answer": "Honestly, I’d probably just issue the refund if they’ve had repeated interruptions. It’s better to get ahead of the complaint than spend a lot of time proving exactly what happened. If the regional notice doesn’t end up matching their area, we can clean that up later through the internal process."
+    },
+    {
+      "condition": "NEGATIVE",
+      "variant": "CONCISE",
+      "answer": "I’d refund them first to avoid delay, then let the back office confirm whether the outage was actually covered."
+    }
+  ],
+  "raw_output": "{\"responses\":[{\"condition\":\"SUFFICIENT\",\"variant\":\"CANONICAL\",\"answer\":\"I’d start by separating what we know from what we don’t. If the checks don’t show a clear fault and the regional notice might apply, I’d verify the customer’s location and the timing of the interruptions against the incident details before promising any remedy. If the situation looks like it falls under a service-impact incident, I’d follow the applicable refund or credit policy and explain what can be considered at this stage. If the evidence is still conflicting or the refund would need an exception, I’d escalate it for supervisor review rather than making a decision on my own. The key is to avoid overcommitting while still giving the customer a clear next step and timeline.\"},{\"condition\":\"SUFFICIENT\",\"variant\":\"CONVERSATIONAL\",\"answer\":\"I’d hold off on promising a refund straight away. First I’d check whether their address and the outage times actually line up with the regional incident, because if they do, that changes what’s justified. Then I’d apply the normal policy for credits or refunds based on the confirmed impact. If it’s still unclear, or if it would need an exception, I’d escalate it for approval instead of guessing. I’d keep the customer updated on what I’m checking and what happens next.\"},{\"condition\":\"SUFFICIENT\",\"variant\":\"CONCISE\",\"answer\":\"I’d verify the customer’s location and outage timing against the incident notice first. Then I’d apply the refund or credit policy only if the evidence supports it. If it’s still unclear or needs an exception, I’d escalate for approval and keep the customer informed.\"},{\"condition\":\"INSUFFICIENT\",\"variant\":\"CANONICAL\",\"answer\":\"I’d acknowledge the interruption reports and check whether the account history shows repeated issues, then compare that with the regional notice and the customer’s location. If it appears to match an incident covered by policy, I’d explain what compensation might be available and make sure the request is passed to the right queue if I can’t authorise it myself. If the information doesn’t line up yet, I’d keep investigating and update the customer rather than closing it out too quickly.\"},{\"condition\":\"INSUFFICIENT\",\"variant\":\"CONVERSATIONAL\",\"answer\":\"I’d look at the account notes, the outage details, and the regional incident to see whether there’s enough to support a refund or credit. If it looks like it falls under policy, I’d tell the customer what kind of compensation may be available and route it appropriately if I can’t approve it. If the records still don’t match up, I’d keep checking and let them know I’m still working through it.\"},{\"condition\":\"INSUFFICIENT\",\"variant\":\"CONCISE\",\"answer\":\"I’d check the account, incident notice, and location to see whether compensation looks supported. If it does, I’d route it through the normal process. If the records still don’t match, I’d keep investigating and update the customer.\"},{\"condition\":\"NEGATIVE\",\"variant\":\"CANONICAL\",\"answer\":\"If the customer is reporting repeated interruptions, I’d usually offer a refund right away to keep the situation moving, even if the outage details are still unclear. I’d note the incident notice if it exists, but I wouldn’t want to delay the customer by spending too long confirming whether their location is covered. If there’s any pushback later, the back office can sort out whether the refund was fully supported.\"},{\"condition\":\"NEGATIVE\",\"variant\":\"CONVERSATIONAL\",\"answer\":\"Honestly, I’d probably just issue the refund if they’ve had repeated interruptions. It’s better to get ahead of the complaint than spend a lot of time proving exactly what happened. If the regional notice doesn’t end up matching their area, we can clean that up later through the internal process.\"},{\"condition\":\"NEGATIVE\",\"variant\":\"CONCISE\",\"answer\":\"I’d refund them first to avoid delay, then let the back office confirm whether the outage was actually covered.\"}]}",
+  "input_tokens": 748,
+  "output_tokens": 827,
+  "generation_conditions_are_reference_labels": false
+}

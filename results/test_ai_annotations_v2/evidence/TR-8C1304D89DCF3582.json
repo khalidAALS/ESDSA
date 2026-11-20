@@ -1,0 +1,43 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-8C1304D89DCF3582",
+  "reviewer_id": "AI_ASSISTED_MANUAL_ADJUDICATION_V1",
+  "requested_model": null,
+  "returned_model": null,
+  "api_response_id": null,
+  "annotated_utc": "2026-11-20T11:29:54.370308+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "CSS02-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d ask when they noticed the discount disappear",
+        "rationale": "The candidate identifies relevant questions for investigating the missing promotion."
+      },
+      {
+        "criterion_id": "CSS02-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d check the account and order records on our side",
+        "rationale": "The candidate proposes checking internal records rather than accepting the screenshot as conclusive."
+      },
+      {
+        "criterion_id": "CSS02-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I wouldn’t ask for anything sensitive unless it was actually needed and allowed through our normal process.",
+        "rationale": "The candidate limits information collection to what is necessary and authorised."
+      }
+    ],
+    "annotation_notes": "AI-assisted manual adjudication following repeated model-generated quotation-validation failures. Statuses and verbatim excerpts were assigned by explicit review of the candidate answer and rubric. Not independent human ground truth."
+  },
+  "reference_decision": null,
+  "independent_human_review": false,
+  "annotation_method": "EXPLICIT_AI_ASSISTED_MANUAL_ADJUDICATION",
+  "prior_failure": {
+    "blinded_id": "TR-8C1304D89DCF3582",
+    "kind": "EVIDENCE",
+    "error": "FAIL: Supporting passage is not an exact substring of the candidate answer: CSS02-C2",
+    "status": "MANUAL_REVIEW_REQUIRED"
+  }
+}

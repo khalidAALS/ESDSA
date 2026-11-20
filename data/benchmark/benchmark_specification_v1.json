@@ -1,0 +1,83 @@
+{
+  "benchmark_name": "ESDSA Interview Benchmark",
+  "version": "1.0-development-registry",
+  "random_seed": 20261119,
+  "registry_sha256": "2139a2dd703459604f7be16b318520a227f0f5924d1d47155543cb774131ea9e",
+  "roles": {
+    "SWE": {
+      "name": "Software Developer",
+      "competencies": {
+        "SWE01": "Systematic diagnosis",
+        "SWE02": "Technical investigation",
+        "SWE03": "Reasoned correction",
+        "SWE04": "Verification and testing"
+      }
+    },
+    "CSS": {
+      "name": "Customer Support Specialist",
+      "competencies": {
+        "CSS01": "Problem identification",
+        "CSS02": "Information gathering",
+        "CSS03": "Resolution judgment",
+        "CSS04": "Communication and follow-up"
+      }
+    },
+    "OPS": {
+      "name": "Operations Coordinator",
+      "competencies": {
+        "OPS01": "Prioritisation",
+        "OPS02": "Risk identification",
+        "OPS03": "Evidence-based coordination",
+        "OPS04": "Monitoring and escalation"
+      }
+    }
+  },
+  "families_per_competency": 10,
+  "scenario_profiles": [
+    "Routine operational problem",
+    "Time-sensitive problem",
+    "Incomplete contextual information",
+    "Conflicting information",
+    "Multiple competing priorities",
+    "Uncertain cause or outcome",
+    "Stakeholder disagreement",
+    "Unexpected complication",
+    "High-consequence decision",
+    "Recovery after an unsuccessful attempt"
+  ],
+  "evidence_conditions": [
+    "SUFFICIENT",
+    "INSUFFICIENT",
+    "NEGATIVE"
+  ],
+  "linguistic_variants": [
+    "CANONICAL",
+    "CONVERSATIONAL",
+    "CONCISE"
+  ],
+  "target_scenario_families": 120,
+  "target_response_texts": 1080,
+  "family_partitions": {
+    "DEVELOPMENT": 72,
+    "TEST": 24,
+    "VALIDATION": 24
+  },
+  "responses_by_partition": {
+    "DEVELOPMENT": 648,
+    "TEST": 216,
+    "VALIDATION": 216
+  },
+  "partition_rule": "Stratified 60/20/20 family-level split within each role-competency combination.",
+  "test_set_policy": "All variants from the same scenario family must remain in one partition. The TEST partition must not be used for model selection, prompt modification, threshold selection or error-driven revisions.",
+  "scenario_status": "NOT_GENERATED",
+  "rubric_status": "PENDING",
+  "reference_status": "PROVISIONAL",
+  "independent_validation": "PENDING",
+  "important_limitations": [
+    "Scenario profiles are planning categories, not completed interview questions.",
+    "Evidence conditions are experimental categories, not automatically verified hiring labels.",
+    "Linguistic equivalence must be checked.",
+    "Job-specific rubrics require independent review.",
+    "The response variants within a family are correlated observations, not independent cases."
+  ]
+}

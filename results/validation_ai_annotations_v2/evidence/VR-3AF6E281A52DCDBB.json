@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-3AF6E281A52DCDBB",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0f67d6ec42fc53a5016b00105bd75887d0bbc542208c484177",
+  "annotated_utc": "2026-11-20T09:18:22.425976+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "OPS02-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d treat repeated stock discrepancies as a potential control issue, not just a one-off counting error. The main operational risk is that inventory records may be drifting from physical stock, which could lead to picking errors, missed customer orders, or delays if the wrong items are believed to be available.",
+        "rationale": "The answer clearly identifies plausible operational risks in context, including inventory record mismatch, picking errors, missed orders, and delays."
+      },
+      {
+        "criterion_id": "OPS02-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "If the discrepancies are small but recurring, I’d still see that as a developing risk because it suggests the problem could grow or mask a bigger issue.",
+        "rationale": "The answer explicitly considers recurrence, uncertainty about underlying cause, and the possibility of escalation into a larger problem, which addresses likelihood and impact."
+      },
+      {
+        "criterion_id": "OPS02-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "My response would be to start a targeted check of the affected areas, tighten the count verification, and notify the supervisor or inventory lead if it looks systemic. If the pattern points to a process or process-compliance issue, I’d escalate it and agree a short-term control, such as extra cycle counts or a temporary hold on stock adjustments until the cause is understood.",
+        "rationale": "The answer proposes proportionate mitigation steps and escalation based on whether the issue appears systemic."
+      }
+    ],
+    "annotation_notes": "The candidate gives a coherent, risk-aware response that identifies the issue, explains potential consequences, and proposes escalating controls proportionately."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

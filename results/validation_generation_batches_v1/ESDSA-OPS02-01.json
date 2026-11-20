@@ -1,0 +1,75 @@
+{
+  "experiment": "ESDSA_VALIDATION_GENERATION_V1",
+  "partition": "VALIDATION",
+  "family_id": "ESDSA-OPS02-01",
+  "run_sha256": "16aa67b03eb4bfc8725be61703db47d3055e9cf9b2651627604095d7515f2730",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "response_id": "resp_0be52e85f5f771ad016aff91b2876087d09183e8c530812153",
+  "response_status": "completed",
+  "usage": {
+    "input_tokens": 740,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      }
+    },
+    "output_tokens": 1094,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 1834
+  },
+  "raw_output_text": "{\"responses\":[{\"condition\":\"SUFFICIENT\",\"variant\":\"CANONICAL\",\"answer\":\"I’d treat repeated stock discrepancies as a potential control issue, not just a one-off counting error. The main operational risk is that inventory records may be drifting from physical stock, which could lead to picking errors, missed customer orders, or delays if the wrong items are believed to be available. I’d look at how often it’s happening, whether the same SKUs or locations are involved, and whether there’s any pattern around shifts, receiving, or dispatch. If the discrepancies are small but recurring, I’d still see that as a developing risk because it suggests the problem could grow or mask a bigger issue. My response would be to start a targeted check of the affected areas, tighten the count verification, and notify the supervisor or inventory lead if it looks systemic. If the pattern points to a process or process-compliance issue, I’d escalate it and agree a short-term control, such as extra cycle counts or a temporary hold on stock adjustments until the cause is understood.\"},{\"condition\":\"SUFFICIENT\",\"variant\":\"CONVERSATIONAL\",\"answer\":\"I’d see that as more than a minor annoyance, because repeated discrepancies usually mean the stock records and the physical stock are drifting apart. Even if operations are still moving, that can turn into picking mistakes, delays, or shortfalls if we rely on the wrong numbers. I’d check whether it’s the same items, the same area, or the same stage of the process each time, because that helps show whether it’s a random counting issue or something more systematic. I’d also think about both the chance of it continuing and what the impact would be if it did. My response would be to tighten the checks on the affected stock, look for the root cause, and escalate it if the pattern keeps showing up or looks like it could affect service. I’d want a practical contingency in place while it’s being investigated.\"},{\"condition\":\"SUFFICIENT\",\"variant\":\"CONCISE\",\"answer\":\"I’d treat repeated discrepancies as a possible stock-control risk that could affect picking accuracy and service. I’d check for patterns by SKU, area, or shift, assess whether the issue is recurring, and judge how likely it is to spread or cause an order problem. If it looks systemic, I’d escalate it and put in extra cycle counts or tighter verification until the cause is found.\"},{\"condition\":\"INSUFFICIENT\",\"variant\":\"CANONICAL\",\"answer\":\"I’d note the discrepancies and do a closer look at where they’re happening, because repeated small differences can sometimes point to a process issue rather than a counting one-off. I’d want to understand whether they’re linked to particular stock types or a specific part of the operation, and I’d probably compare them across the days to see if there’s a pattern. If it stayed small, I’d keep monitoring it and make sure the team is aware. If it started to show a clearer trend, I’d bring it up with the supervisor. I’d also avoid jumping to conclusions until I’d had a bit more information.\"},{\"condition\":\"INSUFFICIENT\",\"variant\":\"CONVERSATIONAL\",\"answer\":\"I’d keep an eye on it and look for a pattern first, like whether it’s the same items or the same area each day. Repeated discrepancies could mean there’s something in the process that needs checking, but I’d want a bit more detail before saying how serious it is. If it kept happening or got worse, I’d raise it with the supervisor and get another set of eyes on it. For now, I’d make sure it’s being tracked and monitored properly.\"},{\"condition\":\"INSUFFICIENT\",\"variant\":\"CONCISE\",\"answer\":\"I’d track the discrepancies, look for patterns, and monitor whether they keep happening. If they started to increase or showed a clear trend, I’d raise it with the supervisor. I’d want more information before deciding how serious it is.\"},{\"condition\":\"NEGATIVE\",\"variant\":\"CANONICAL\",\"answer\":\"If operations are still running, I’d probably treat the discrepancies as low priority and avoid interrupting the workflow over small differences. In most cases I’d just note them and let the next day’s counts settle it, because stopping the process can create more problems than it solves. I wouldn’t escalate unless the numbers became much bigger or there was an obvious failure, since minor stock variances are usually just part of a busy warehouse. The main thing is to keep the centre moving and not overreact to a few small mismatches.\"},{\"condition\":\"NEGATIVE\",\"variant\":\"CONVERSATIONAL\",\"answer\":\"If everything’s still shipping, I wouldn’t make a big issue out of a few small discrepancies. I’d just keep the operation going and assume the next count or two will even it out. Escalating every minor variance can slow people down, and in a busy centre that can cause more disruption than the discrepancy itself. I’d only step in if it turned into a much bigger stock problem or started stopping orders from moving.\"},{\"condition\":\"NEGATIVE\",\"variant\":\"CONCISE\",\"answer\":\"I’d keep things moving and treat small discrepancies as routine unless they became much larger. I wouldn’t escalate right away because minor variances are normal, and interrupting operations could cause more disruption than the issue itself.\"}]}",
+  "responses": [
+    {
+      "condition": "SUFFICIENT",
+      "variant": "CANONICAL",
+      "answer": "I’d treat repeated stock discrepancies as a potential control issue, not just a one-off counting error. The main operational risk is that inventory records may be drifting from physical stock, which could lead to picking errors, missed customer orders, or delays if the wrong items are believed to be available. I’d look at how often it’s happening, whether the same SKUs or locations are involved, and whether there’s any pattern around shifts, receiving, or dispatch. If the discrepancies are small but recurring, I’d still see that as a developing risk because it suggests the problem could grow or mask a bigger issue. My response would be to start a targeted check of the affected areas, tighten the count verification, and notify the supervisor or inventory lead if it looks systemic. If the pattern points to a process or process-compliance issue, I’d escalate it and agree a short-term control, such as extra cycle counts or a temporary hold on stock adjustments until the cause is understood."
+    },
+    {
+      "condition": "SUFFICIENT",
+      "variant": "CONVERSATIONAL",
+      "answer": "I’d see that as more than a minor annoyance, because repeated discrepancies usually mean the stock records and the physical stock are drifting apart. Even if operations are still moving, that can turn into picking mistakes, delays, or shortfalls if we rely on the wrong numbers. I’d check whether it’s the same items, the same area, or the same stage of the process each time, because that helps show whether it’s a random counting issue or something more systematic. I’d also think about both the chance of it continuing and what the impact would be if it did. My response would be to tighten the checks on the affected stock, look for the root cause, and escalate it if the pattern keeps showing up or looks like it could affect service. I’d want a practical contingency in place while it’s being investigated."
+    },
+    {
+      "condition": "SUFFICIENT",
+      "variant": "CONCISE",
+      "answer": "I’d treat repeated discrepancies as a possible stock-control risk that could affect picking accuracy and service. I’d check for patterns by SKU, area, or shift, assess whether the issue is recurring, and judge how likely it is to spread or cause an order problem. If it looks systemic, I’d escalate it and put in extra cycle counts or tighter verification until the cause is found."
+    },
+    {
+      "condition": "INSUFFICIENT",
+      "variant": "CANONICAL",
+      "answer": "I’d note the discrepancies and do a closer look at where they’re happening, because repeated small differences can sometimes point to a process issue rather than a counting one-off. I’d want to understand whether they’re linked to particular stock types or a specific part of the operation, and I’d probably compare them across the days to see if there’s a pattern. If it stayed small, I’d keep monitoring it and make sure the team is aware. If it started to show a clearer trend, I’d bring it up with the supervisor. I’d also avoid jumping to conclusions until I’d had a bit more information."
+    },
+    {
+      "condition": "INSUFFICIENT",
+      "variant": "CONVERSATIONAL",
+      "answer": "I’d keep an eye on it and look for a pattern first, like whether it’s the same items or the same area each day. Repeated discrepancies could mean there’s something in the process that needs checking, but I’d want a bit more detail before saying how serious it is. If it kept happening or got worse, I’d raise it with the supervisor and get another set of eyes on it. For now, I’d make sure it’s being tracked and monitored properly."
+    },
+    {
+      "condition": "INSUFFICIENT",
+      "variant": "CONCISE",
+      "answer": "I’d track the discrepancies, look for patterns, and monitor whether they keep happening. If they started to increase or showed a clear trend, I’d raise it with the supervisor. I’d want more information before deciding how serious it is."
+    },
+    {
+      "condition": "NEGATIVE",
+      "variant": "CANONICAL",
+      "answer": "If operations are still running, I’d probably treat the discrepancies as low priority and avoid interrupting the workflow over small differences. In most cases I’d just note them and let the next day’s counts settle it, because stopping the process can create more problems than it solves. I wouldn’t escalate unless the numbers became much bigger or there was an obvious failure, since minor stock variances are usually just part of a busy warehouse. The main thing is to keep the centre moving and not overreact to a few small mismatches."
+    },
+    {
+      "condition": "NEGATIVE",
+      "variant": "CONVERSATIONAL",
+      "answer": "If everything’s still shipping, I wouldn’t make a big issue out of a few small discrepancies. I’d just keep the operation going and assume the next count or two will even it out. Escalating every minor variance can slow people down, and in a busy centre that can cause more disruption than the discrepancy itself. I’d only step in if it turned into a much bigger stock problem or started stopping orders from moving."
+    },
+    {
+      "condition": "NEGATIVE",
+      "variant": "CONCISE",
+      "answer": "I’d keep things moving and treat small discrepancies as routine unless they became much larger. I wouldn’t escalate right away because minor variances are normal, and interrupting operations could cause more disruption than the issue itself."
+    }
+  ],
+  "validation_status": "STRUCTURE_PASSED"
+}

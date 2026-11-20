@@ -1,0 +1,63 @@
+{
+  "experiment": "ESDSA_TEST_GENERATION_V1",
+  "partition": "TEST",
+  "family_id": "ESDSA-CSS04-01",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0087be8497722b0e016b0022bd439487d09f44f3bc4d5fcecd",
+  "timestamp_utc": "2026-11-20T10:36:50.727631+00:00",
+  "run_sha256": "532ec4de8fc173cb6a9910bbb387711bc9f39c4deb7087ba8012f9df37ac0d71",
+  "scenario_sha256": "9d2280d8014612bdd263f5dd8daf8356efeac3fa7a7e4b0cd3c6f4fef932426a",
+  "rubric_sha256": "2abf8b73ac743d5fb018e81958a18b140f8da1eb1813a09767a64e1ee7a29809",
+  "responses": [
+    {
+      "condition": "SUFFICIENT",
+      "variant": "CANONICAL",
+      "answer": "I’d explain that the replacement request has been approved and is now waiting on warehouse confirmation, so I can’t give a dispatch or delivery date yet. I’d be clear that the next step is for the warehouse to confirm stock and shipping, and that I’ll update them as soon as that happens. I wouldn’t promise a date I don’t have, but I would let them know I’m monitoring it and set an expectation for the kind of update they can expect from us. If the customer wants, I’d also give them a case reference and agree the best way to follow up if they haven’t heard from me by a certain time."
+    },
+    {
+      "condition": "SUFFICIENT",
+      "variant": "CONVERSATIONAL",
+      "answer": "I’d tell the customer the replacement has been accepted, but it’s still waiting on the warehouse to confirm dispatch and a delivery date. I’d make sure they understand that means I can’t confirm timing yet, and I wouldn’t guess or overpromise. I’d let them know I’m keeping an eye on it and that I’ll come back to them as soon as there’s a confirmed update. I’d also make sure they know how to reach me or when to expect the next check-in so they’re not left wondering what’s happening."
+    },
+    {
+      "condition": "SUFFICIENT",
+      "variant": "CONCISE",
+      "answer": "I’d say the replacement is approved but still awaiting warehouse confirmation, so I can’t confirm dispatch or delivery yet. I’d avoid promising a date, keep the customer updated as soon as I have confirmation, and set a clear follow-up point so they know when to expect the next update."
+    },
+    {
+      "condition": "INSUFFICIENT",
+      "variant": "CANONICAL",
+      "answer": "I’d let the customer know the replacement request has been accepted and is in progress, but I’d also explain that we’re still waiting for the warehouse to confirm the dispatch details. I’d keep the tone reassuring and say I’ll follow up once I hear back. If they ask about timing, I’d be careful not to give a specific date unless I have it confirmed. I’d probably also note their contact details so I can update them promptly when there’s news."
+    },
+    {
+      "condition": "INSUFFICIENT",
+      "variant": "CONVERSATIONAL",
+      "answer": "I’d explain that the replacement has gone through, but the warehouse still needs to confirm dispatch and delivery. I’d tell them I’ll chase it up and update them when I hear back, and I’d make sure they know I’m not going to make up a date. If they wanted to check back later, I’d give them my contact details or the case number so it’s easy to pick up again."
+    },
+    {
+      "condition": "INSUFFICIENT",
+      "variant": "CONCISE",
+      "answer": "I’d tell them the replacement is accepted but still waiting on warehouse confirmation, and I’d follow up once I hear back. I wouldn’t promise a delivery date until it’s confirmed, and I’d give them my contact details or case reference for follow-up."
+    },
+    {
+      "condition": "NEGATIVE",
+      "variant": "CANONICAL",
+      "answer": "I’d reassure the customer that the replacement should go out soon and give them a likely delivery window based on the normal turnaround, even if the warehouse hasn’t confirmed yet. If they seem concerned, I’d tell them it’s effectively sorted and that they’ll probably see movement shortly. I’d wait to contact them again unless there’s a problem, since too many updates can sometimes create more confusion than help."
+    },
+    {
+      "condition": "NEGATIVE",
+      "variant": "CONVERSATIONAL",
+      "answer": "I’d tell them not to worry because the replacement is basically on its way, even though the warehouse hasn’t confirmed it yet. I’d probably mention a rough delivery date to keep them reassured, and I’d only get back in touch if something changes. Usually it’s better not to keep sending updates unless there’s bad news."
+    },
+    {
+      "condition": "NEGATIVE",
+      "variant": "CONCISE",
+      "answer": "I’d reassure them it’s probably shipping soon and give a rough delivery estimate, then only follow up if there’s a delay."
+    }
+  ],
+  "raw_output": "{\"responses\":[{\"condition\":\"SUFFICIENT\",\"variant\":\"CANONICAL\",\"answer\":\"I’d explain that the replacement request has been approved and is now waiting on warehouse confirmation, so I can’t give a dispatch or delivery date yet. I’d be clear that the next step is for the warehouse to confirm stock and shipping, and that I’ll update them as soon as that happens. I wouldn’t promise a date I don’t have, but I would let them know I’m monitoring it and set an expectation for the kind of update they can expect from us. If the customer wants, I’d also give them a case reference and agree the best way to follow up if they haven’t heard from me by a certain time.\"},{\"condition\":\"SUFFICIENT\",\"variant\":\"CONVERSATIONAL\",\"answer\":\"I’d tell the customer the replacement has been accepted, but it’s still waiting on the warehouse to confirm dispatch and a delivery date. I’d make sure they understand that means I can’t confirm timing yet, and I wouldn’t guess or overpromise. I’d let them know I’m keeping an eye on it and that I’ll come back to them as soon as there’s a confirmed update. I’d also make sure they know how to reach me or when to expect the next check-in so they’re not left wondering what’s happening.\"},{\"condition\":\"SUFFICIENT\",\"variant\":\"CONCISE\",\"answer\":\"I’d say the replacement is approved but still awaiting warehouse confirmation, so I can’t confirm dispatch or delivery yet. I’d avoid promising a date, keep the customer updated as soon as I have confirmation, and set a clear follow-up point so they know when to expect the next update.\"},{\"condition\":\"INSUFFICIENT\",\"variant\":\"CANONICAL\",\"answer\":\"I’d let the customer know the replacement request has been accepted and is in progress, but I’d also explain that we’re still waiting for the warehouse to confirm the dispatch details. I’d keep the tone reassuring and say I’ll follow up once I hear back. If they ask about timing, I’d be careful not to give a specific date unless I have it confirmed. I’d probably also note their contact details so I can update them promptly when there’s news.\"},{\"condition\":\"INSUFFICIENT\",\"variant\":\"CONVERSATIONAL\",\"answer\":\"I’d explain that the replacement has gone through, but the warehouse still needs to confirm dispatch and delivery. I’d tell them I’ll chase it up and update them when I hear back, and I’d make sure they know I’m not going to make up a date. If they wanted to check back later, I’d give them my contact details or the case number so it’s easy to pick up again.\"},{\"condition\":\"INSUFFICIENT\",\"variant\":\"CONCISE\",\"answer\":\"I’d tell them the replacement is accepted but still waiting on warehouse confirmation, and I’d follow up once I hear back. I wouldn’t promise a delivery date until it’s confirmed, and I’d give them my contact details or case reference for follow-up.\"},{\"condition\":\"NEGATIVE\",\"variant\":\"CANONICAL\",\"answer\":\"I’d reassure the customer that the replacement should go out soon and give them a likely delivery window based on the normal turnaround, even if the warehouse hasn’t confirmed yet. If they seem concerned, I’d tell them it’s effectively sorted and that they’ll probably see movement shortly. I’d wait to contact them again unless there’s a problem, since too many updates can sometimes create more confusion than help.\"},{\"condition\":\"NEGATIVE\",\"variant\":\"CONVERSATIONAL\",\"answer\":\"I’d tell them not to worry because the replacement is basically on its way, even though the warehouse hasn’t confirmed it yet. I’d probably mention a rough delivery date to keep them reassured, and I’d only get back in touch if something changes. Usually it’s better not to keep sending updates unless there’s bad news.\"},{\"condition\":\"NEGATIVE\",\"variant\":\"CONCISE\",\"answer\":\"I’d reassure them it’s probably shipping soon and give a rough delivery estimate, then only follow up if there’s a delay.\"}]}",
+  "input_tokens": 745,
+  "output_tokens": 852,
+  "generation_conditions_are_reference_labels": false
+}

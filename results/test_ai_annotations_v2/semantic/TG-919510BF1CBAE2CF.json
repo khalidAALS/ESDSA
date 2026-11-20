@@ -1,0 +1,18 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "SEMANTIC_EQUIVALENCE",
+  "blinded_id": "TG-919510BF1CBAE2CF",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_02d16c4d933cbe87016b002b2bb26487d0ba407c429f1a45b4",
+  "annotated_utc": "2026-11-20T11:12:45.246089+00:00",
+  "annotation": {
+    "semantic_equivalence": "YES",
+    "material_differences": "",
+    "equivalence_rationale": "All three responses preserve the same decision-relevant evidence for resolution judgment: they verify the order/shipment details, check stock and approved options, avoid promising an expedited replacement without authorisation, consider an acceptable alternative if the exact item cannot arrive in time, and recognise that disputed shipment status requires further checking before finalising. C adds more detail about tracking/warehouse records and reservation/escalation, but these are elaborations rather than materially different commitments."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

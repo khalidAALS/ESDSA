@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-B0C594610B1BB99E",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_047e2c79c492360d016b00106a7e9487d0a19e968509587234",
+  "annotated_utc": "2026-11-20T09:18:36.740748+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "OPS02-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d probably treat the discrepancies as low priority and avoid interrupting the workflow over small differences.",
+        "rationale": "This explicitly recognizes the stock discrepancies as an operational issue that could affect workflow, showing identification of a plausible risk in context."
+      },
+      {
+        "criterion_id": "OPS02-C2",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "passage": "",
+        "rationale": "The answer mentions small mismatches and that stopping the process can create more problems, but it does not clearly assess uncertainty, likelihood, or specific consequences of the discrepancies beyond a general preference to keep moving."
+      },
+      {
+        "criterion_id": "OPS02-C3",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I wouldn’t escalate unless the numbers became much bigger or there was an obvious failure, since minor stock variances are usually just part of a busy warehouse.",
+        "rationale": "This proposes delaying escalation until the issue becomes much larger or obvious, despite repeated discrepancies on multiple days. That indicates an under-responsive approach rather than a proportionate mitigation or timely escalation."
+      }
+    ],
+    "annotation_notes": ""
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

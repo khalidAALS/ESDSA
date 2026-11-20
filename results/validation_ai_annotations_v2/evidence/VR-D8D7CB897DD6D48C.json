@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-D8D7CB897DD6D48C",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0e26f6f2dee1ce9d016b000d6e7fdc87d09adbcd0d2d026899",
+  "annotated_utc": "2026-11-20T09:05:52.909607+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "SWE03-C1",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "passage": "",
+        "rationale": "The answer mentions checking reports and logs to understand where the defect is showing up, but it does not identify a plausible cause of the defect supported by that investigation."
+      },
+      {
+        "criterion_id": "SWE03-C2",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "passage": "",
+        "rationale": "The candidate proposes choosing a lower-risk option and adding tests, but does not clearly connect a specific correction to an identified cause."
+      },
+      {
+        "criterion_id": "SWE03-C3",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "passage": "",
+        "rationale": "The answer says the lower-risk option is safer for the release, but it does not explain why that correction addresses the underlying problem."
+      }
+    ],
+    "annotation_notes": "The response shows some investigation and prioritization, but it stops short of naming a cause or explicitly tying a chosen fix to that cause and its effect."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

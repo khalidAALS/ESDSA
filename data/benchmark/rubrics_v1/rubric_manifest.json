@@ -1,0 +1,81 @@
+{
+  "version": "1.0-draft",
+  "registry_sha256": "2139a2dd703459604f7be16b318520a227f0f5924d1d47155543cb774131ea9e",
+  "rubric_count": 12,
+  "total_indicators": 36,
+  "status": "UNVALIDATED_RESEARCHER_AUTHORED",
+  "rubrics": [
+    {
+      "competency_code": "CSS01",
+      "file": "CSS01_rubric_v1.json",
+      "sha256": "88a874a6b8ad332599d4641c1bea4d1f95aa9ee6615d617093828ea355768410",
+      "criteria_count": 3
+    },
+    {
+      "competency_code": "CSS02",
+      "file": "CSS02_rubric_v1.json",
+      "sha256": "727b0e91646f85b41018bf92dd65052a177c27bad9ad46452cc69a550075522d",
+      "criteria_count": 3
+    },
+    {
+      "competency_code": "CSS03",
+      "file": "CSS03_rubric_v1.json",
+      "sha256": "1ff65fb010f766900d3e56f242159933bd2f4d2858e38e99ac63320d79b09974",
+      "criteria_count": 3
+    },
+    {
+      "competency_code": "CSS04",
+      "file": "CSS04_rubric_v1.json",
+      "sha256": "2abf8b73ac743d5fb018e81958a18b140f8da1eb1813a09767a64e1ee7a29809",
+      "criteria_count": 3
+    },
+    {
+      "competency_code": "OPS01",
+      "file": "OPS01_rubric_v1.json",
+      "sha256": "1eb6d41c9cbe6e777fbf56c881f6323da043f7d1e22ab6c37c219cc66d403440",
+      "criteria_count": 3
+    },
+    {
+      "competency_code": "OPS02",
+      "file": "OPS02_rubric_v1.json",
+      "sha256": "b00e0849340fa9a63f1e28135cc37f78b68a7beb29549b3a73b95fcc8924efff",
+      "criteria_count": 3
+    },
+    {
+      "competency_code": "OPS03",
+      "file": "OPS03_rubric_v1.json",
+      "sha256": "c0841450efe362e6bce6ce4bcf0533342cb844a168e20b3c47bcecac6a01fd4d",
+      "criteria_count": 3
+    },
+    {
+      "competency_code": "OPS04",
+      "file": "OPS04_rubric_v1.json",
+      "sha256": "d230fd47c6705a86d858cb119f11403af5e40a60f0f4bc8e9c31bc2b61a9acba",
+      "criteria_count": 3
+    },
+    {
+      "competency_code": "SWE01",
+      "file": "SWE01_rubric_v1.json",
+      "sha256": "aed4c6ae571a27f490bb01bdfe83625322f0e5b919aa59498dd9160b0419028c",
+      "criteria_count": 3
+    },
+    {
+      "competency_code": "SWE02",
+      "file": "SWE02_rubric_v1.json",
+      "sha256": "5b0b8e2a03598b4de68afc372d5f48abdbcdd150235401a9663514666065cf1d",
+      "criteria_count": 3
+    },
+    {
+      "competency_code": "SWE03",
+      "file": "SWE03_rubric_v1.json",
+      "sha256": "6ab9abbf3b64793589baf18fd5f0e9884e09ef7e30f43a058f93d578c8f3db4e",
+      "criteria_count": 3
+    },
+    {
+      "competency_code": "SWE04",
+      "file": "SWE04_rubric_v1.json",
+      "sha256": "ec05368cf5951f9a58d56b8f95800beb5658ffc78020363aafd893a1b8a2e2ff",
+      "criteria_count": 3
+    }
+  ]
+}

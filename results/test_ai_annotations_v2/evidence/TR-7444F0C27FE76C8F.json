@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-7444F0C27FE76C8F",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0fa9c3b32453d39c016b002b63377087d0a4a3791f5866e972",
+  "annotated_utc": "2026-11-20T11:13:41.426114+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "CSS03-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d try to get them helped as quickly as possible by checking whether we can ship a replacement or offer another option if the stock is low.",
+        "rationale": "This shows the candidate is assessing available resolution options in light of the situation, including replacement or an alternative if stock is limited."
+      },
+      {
+        "criterion_id": "CSS03-C2",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "passage": "",
+        "rationale": "The answer mentions what might be possible and the timing, but does not explicitly show awareness of the need to respect authorisation requirements for expedited replacement or other service constraints beyond stock availability."
+      },
+      {
+        "criterion_id": "CSS03-C3",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "passage": "",
+        "rationale": "The candidate discusses keeping the customer informed and considering alternatives, but does not explicitly say they would seek additional information, verify the disputed shipment status, or escalate when needed."
+      }
+    ],
+    "annotation_notes": "The response is broadly customer-focused and pragmatic, but it does not clearly establish policy/authorisation awareness or explicit uncertainty escalation."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

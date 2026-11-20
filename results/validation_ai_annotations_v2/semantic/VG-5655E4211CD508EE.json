@@ -1,0 +1,20 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "SEMANTIC_EQUIVALENCE",
+  "blinded_id": "VG-5655E4211CD508EE",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0cdd880191053239016b000c9da0e487d081349bafb662dac1",
+  "annotated_utc": "2026-11-20T09:02:24.217632+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "semantic_equivalence": "YES",
+    "material_differences": "No material differences affecting the three criteria; all responses identify needed monitoring inputs, recognize sustained drift or insufficient data as escalation triggers, and direct escalation to the local team/responsible owner with follow-up verification.",
+    "equivalence_rationale": "Each version preserves the same decision-relevant evidence for monitoring and escalation: gather trend data and other indicators, assess whether missing readings prevent confidence in safe operating range, escalate if drift is sustained or uncertainty remains, and verify the response with the appropriate owners. Differences are only in wording, ordering, and detail, not in operational commitments."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

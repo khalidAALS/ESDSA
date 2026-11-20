@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-256C144FEF1CD9A4",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0249cea8c0d9b336016b000e9abc6887d08e579973e4131e9f",
+  "annotated_utc": "2026-11-20T09:10:52.931881+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "SWE03-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d start by confirming the root cause with a quick investigation: reproduce the defect, look at logs and recent changes, and verify whether it points to the same persistence or state-handling path the affected users are hitting.",
+        "rationale": "The answer explicitly describes investigating the defect and identifying a plausible root cause based on reproduction, logs, and recent changes."
+      },
+      {
+        "criterion_id": "SWE03-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "If the evidence shows the quick patch addresses that specific failure mode, I’d use it only if we can contain the blast radius and validate it against the other feature with focused tests. If there’s a reasonable risk that the patch would interfere, I’d prefer the smaller, targeted correction that fixes the identified logic without widening the change set.",
+        "rationale": "The candidate directly links the correction choice to the identified failure mode/cause and distinguishes between the patch and a smaller targeted correction based on that cause."
+      },
+      {
+        "criterion_id": "SWE03-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "The reason is that a correction tied directly to the observed cause is more likely to resolve the issue cleanly and be safer for the release than a broader rewrite under time pressure.",
+        "rationale": "This explicitly explains why the proposed correction is appropriate: it addresses the observed cause more cleanly and safely than a broader change."
+      }
+    ],
+    "annotation_notes": ""
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

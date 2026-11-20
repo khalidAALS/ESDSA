@@ -1,0 +1,18 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "SEMANTIC_EQUIVALENCE",
+  "blinded_id": "TG-B562CE34EF940DED",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0d8ef26babad2765016b002b72fa2c87d0881dea43fce61f01",
+  "annotated_utc": "2026-11-20T11:13:56.579336+00:00",
+  "annotation": {
+    "semantic_equivalence": "YES",
+    "material_differences": "None of the responses introduces a materially different coordination plan, dependency assumption, or decision basis. B is slightly shorter and less explicit than A, but it still uses the same operational sources, identifies the same parties, and records the handover status similarly. C is also substantively aligned with A and B.",
+    "equivalence_rationale": "All three responses preserve the same criterion-level evidence: they combine maintenance progress and scheduling status, consult the maintenance lead and receiving team, and use those operational inputs to decide whether to keep the handover moving. They also all document the outcome in handover notes/logs, supporting traceability. The wording and level of detail differ, but not in a way that changes the evidence relevant to coordination or decision traceability."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

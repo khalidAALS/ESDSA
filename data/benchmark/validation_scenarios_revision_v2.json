@@ -1,0 +1,31 @@
+{
+  "version": "validation-scenarios-v2",
+  "source_sha256": "45e00308d6d43ed80b107a1a15e3439098bc844cc7b279f4098e09684467b97a",
+  "output_sha256": "23bc13887d81d3e2174e095b4ff4ffe1bf9a279991257c32e0c62703b1d0d9e5",
+  "total_validation_families": 24,
+  "revised_families": [
+    {
+      "family_id": "ESDSA-SWE01-10",
+      "reason": "Reduce conceptual overlap with an existing development scenario",
+      "previous_question": "A previous attempt to fix a dashboard calculation defect was unsuccessful. The issue still occurs for some users, although the original test case now passes. You have the earlier investigation notes, recent changes and a test environment. How would you approach the investigation now?",
+      "revised_question": "A previous investigation into missing records in a scheduled data export led to a software change, but the problem has returned for a different set of records. The original reproduction steps no longer expose the failure, and the team is uncertain whether the same defect is responsible. You have access to the earlier findings, export logs, sample records and a test environment. How would you approach diagnosing the problem now?"
+    },
+    {
+      "family_id": "ESDSA-OPS01-05",
+      "reason": "Reduce conceptual overlap with an existing development scenario",
+      "previous_question": "You have one available team and three competing tasks: a scheduled warehouse count, an urgent request to replenish stock for an active customer order, and equipment maintenance that may affect access to the warehouse. How would you establish priorities and adjust them if circumstances change?",
+      "revised_question": "An operations team has limited staff available for three competing activities: inspecting a recently delivered batch of materials before production, preparing an important customer order for dispatch, and completing scheduled staff training. The inspection may reveal a quality issue, while delaying dispatch could affect an agreed customer deadline. How would you determine priorities and respond if new information changes the situation?"
+    }
+  ],
+  "unchanged_family_count": 22,
+  "status": "READY_FOR_FINAL_SCENARIO_CHECK",
+  "candidate_responses_generated": false,
+  "test_data_modified": false,
+  "model_api_calls": 0,
+  "notes": [
+    "Scenario revisions occurred before validation response generation and evaluation.",
+    "Textual and conceptual non-overlap are distinct.",
+    "The original v1 draft is preserved.",
+    "No reference labels were generated or changed."
+  ]
+}

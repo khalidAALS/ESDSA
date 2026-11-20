@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+.pytest_cache/
+*.py[cod]
+*.egg-info/
+.DS_Store
+.env
+
+# Private benchmark review mapping
+data/benchmark/content_review_v1/private_review_mapping.json

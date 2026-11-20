@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-BC6CDD23681B9492",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_04000d634a6d2794016b0029ab7e8c87d097a168f554c24d1c",
+  "annotated_utc": "2026-11-20T11:06:22.309183+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "CSS02-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d probably ask the customer to send over as much documentation as possible, including screenshots, payment details, and anything else that might help",
+        "rationale": "This shows the candidate would request information to understand the issue, including supporting documentation relevant to investigating the missing discount."
+      },
+      {
+        "criterion_id": "CSS02-C2",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "If the account looks like it should have had the promotion, I’d lean on that and tell them the discount was likely applied incorrectly or removed by the system.",
+        "rationale": "The candidate states they would infer what happened from how the account looks, and would present that as likely fact rather than clearly distinguishing confirmed evidence from assumption."
+      },
+      {
+        "criterion_id": "CSS02-C3",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "passage": "",
+        "rationale": "The answer proposes requesting documentation and payment details, but it does not establish whether that collection is appropriate, authorised, or proportionate in context. It also does not clearly show an unsafe or unjustified collection practice, so there is not enough evidence to judge this criterion."
+      }
+    ],
+    "annotation_notes": "The response contains evidence of requesting relevant information, but it is limited on verification rigor and does not clearly establish proportionate collection standards."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

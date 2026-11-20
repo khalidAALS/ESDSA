@@ -1,0 +1,18 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "SEMANTIC_EQUIVALENCE",
+  "blinded_id": "TG-2D4AA0776BBC0699",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_066678b393e382fd016b0029e3114c87d08c05442099b35b8a",
+  "annotated_utc": "2026-11-20T11:07:16.878115+00:00",
+  "annotation": {
+    "semantic_equivalence": "YES",
+    "material_differences": "",
+    "equivalence_rationale": "All three responses preserve the same decision-relevant evidence under the three criteria: they infer a plausible cause in the publish/delivery or messaging layer rather than the order/confirmation business logic, connect the correction to that identified cause, and justify the fix by explaining that it addresses the layer where duplication is occurring. Response B is more detailed, but its added specifics (outbox/idempotency/deduplication) are consistent with A and C rather than materially changing the correction, cause, or justification."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

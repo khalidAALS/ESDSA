@@ -1,0 +1,101 @@
+{
+  "version": "2.0-registry-reconciliation",
+  "date": "2026-11-20",
+  "original_registry_sha256": "2139a2dd703459604f7be16b318520a227f0f5924d1d47155543cb774131ea9e",
+  "development_responses_sha256": "566400420436e82274f3bbb05066c275009a0a5f21bc35add77b68e745877dd2",
+  "updated_registry_sha256": "5fc89db5918d20f18e259582a5c9004613dd2f60a3a1881b745b392fd26d97fb",
+  "total_families": 120,
+  "partition_counts": {
+    "DEVELOPMENT": 72,
+    "TEST": 24,
+    "VALIDATION": 24
+  },
+  "construction_status_counts": {
+    "DEVELOPMENT_EVALUATED": 12,
+    "NOT_STARTED": 108
+  },
+  "reconciled_families": [
+    {
+      "family_id": "ESDSA-CSS01-01",
+      "response_count": 9,
+      "previous_status": "NOT_STARTED",
+      "new_status": "DEVELOPMENT_EVALUATED"
+    },
+    {
+      "family_id": "ESDSA-CSS02-02",
+      "response_count": 9,
+      "previous_status": "NOT_STARTED",
+      "new_status": "DEVELOPMENT_EVALUATED"
+    },
+    {
+      "family_id": "ESDSA-CSS03-02",
+      "response_count": 9,
+      "previous_status": "NOT_STARTED",
+      "new_status": "DEVELOPMENT_EVALUATED"
+    },
+    {
+      "family_id": "ESDSA-CSS04-02",
+      "response_count": 9,
+      "previous_status": "NOT_STARTED",
+      "new_status": "DEVELOPMENT_EVALUATED"
+    },
+    {
+      "family_id": "ESDSA-OPS01-01",
+      "response_count": 9,
+      "previous_status": "NOT_STARTED",
+      "new_status": "DEVELOPMENT_EVALUATED"
+    },
+    {
+      "family_id": "ESDSA-OPS02-03",
+      "response_count": 9,
+      "previous_status": "NOT_STARTED",
+      "new_status": "DEVELOPMENT_EVALUATED"
+    },
+    {
+      "family_id": "ESDSA-OPS03-01",
+      "response_count": 9,
+      "previous_status": "NOT_STARTED",
+      "new_status": "DEVELOPMENT_EVALUATED"
+    },
+    {
+      "family_id": "ESDSA-OPS04-01",
+      "response_count": 9,
+      "previous_status": "NOT_STARTED",
+      "new_status": "DEVELOPMENT_EVALUATED"
+    },
+    {
+      "family_id": "ESDSA-SWE01-01",
+      "response_count": 9,
+      "previous_status": "NOT_STARTED",
+      "new_status": "DEVELOPMENT_EVALUATED"
+    },
+    {
+      "family_id": "ESDSA-SWE02-01",
+      "response_count": 9,
+      "previous_status": "NOT_STARTED",
+      "new_status": "DEVELOPMENT_EVALUATED"
+    },
+    {
+      "family_id": "ESDSA-SWE03-01",
+      "response_count": 9,
+      "previous_status": "NOT_STARTED",
+      "new_status": "DEVELOPMENT_EVALUATED"
+    },
+    {
+      "family_id": "ESDSA-SWE04-01",
+      "response_count": 9,
+      "previous_status": "NOT_STARTED",
+      "new_status": "DEVELOPMENT_EVALUATED"
+    }
+  ],
+  "held_out_families_modified": 0,
+  "reference_labels_modified": false,
+  "model_evaluations_performed": false,
+  "notes": [
+    "The original registry remains unchanged.",
+    "Only existing development-family questions and construction statuses were updated.",
+    "Validation and test families remain untouched.",
+    "Development reference judgments remain provisional.",
+    "Registry synchronization is not independent validation."
+  ]
+}

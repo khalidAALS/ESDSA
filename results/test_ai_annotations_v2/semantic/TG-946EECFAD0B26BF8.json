@@ -1,0 +1,18 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "SEMANTIC_EQUIVALENCE",
+  "blinded_id": "TG-946EECFAD0B26BF8",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_05584e13a67ee366016b002b4a1bf887d0b25866aeb0b70c70",
+  "annotated_utc": "2026-11-20T11:13:16.540591+00:00",
+  "annotation": {
+    "semantic_equivalence": "YES",
+    "material_differences": "None material. All three responses use the same core evidence sources (queue metrics, logs, traces, recent changes) and the same diagnostic approach (test whether the delay tracks message/partition patterns, retries, downstream slowness, or worker blocking) to infer whether the issue is capacity, contention, or an external bottleneck.",
+    "equivalence_rationale": "Each response preserves the same criterion-level evidence for technical investigation: relevant sources are identified, concrete hypothesis tests are proposed to distinguish causes, and the observations are tied to a diagnostic conclusion. Response B is more elaborate, but it does not add a materially different assumption or commitment; C is more concise but retains the same investigative logic. The differences are primarily in detail and examples, not in decision-relevant substance."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

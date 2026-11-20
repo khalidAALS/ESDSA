@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-04F0FFCEAD4F190A",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_040b2e97ca2e11e9016b002bfa56a887d0b63edc73ac63415c",
+  "annotated_utc": "2026-11-20T11:16:13.492576+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "OPS01-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "reset the order of work around what’s most time-sensitive. I’d make sure the customer orders near deadline stay visible, and I’d see if the early delivery can be handled without causing problems at receiving.",
+        "rationale": "The answer explicitly uses urgency (time-sensitive, near deadline) and a dependency/impact consideration (handling the early delivery without causing problems at receiving), which matches the criterion."
+      },
+      {
+        "criterion_id": "OPS01-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "If needed, I’d push less urgent jobs back a bit and let the team know the new sequence so they can keep working to that.",
+        "rationale": "This gives a clear trade-off: less urgent jobs are deferred in order to protect more urgent work, showing prioritisation choices based on the situation."
+      },
+      {
+        "criterion_id": "OPS01-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d take a quick look at the full plan again and reset the order of work around what’s most time-sensitive.",
+        "rationale": "The candidate explicitly says they would recheck the plan and reset the work order in response to the changed conditions, demonstrating reprioritisation."
+      }
+    ],
+    "annotation_notes": "The response is concise but directly addresses urgency, dependencies, trade-offs, and adjusting priorities after the disruption."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

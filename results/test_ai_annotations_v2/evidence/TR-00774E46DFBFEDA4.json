@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-00774E46DFBFEDA4",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_044ea63e45f08498016b0029f9ead487d0a1f1d460677b1bb3",
+  "annotated_utc": "2026-11-20T11:07:40.133801+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "CSS03-C1",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I’d probably just issue the refund if they’ve had repeated interruptions.",
+        "rationale": "This proposes a blanket refund based on repeated interruptions alone, without weighing the available evidence or establishing that a refund is the appropriate resolution for the situation."
+      },
+      {
+        "criterion_id": "CSS03-C2",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "It’s better to get ahead of the complaint than spend a lot of time proving exactly what happened.",
+        "rationale": "This suggests taking action without first verifying the facts or showing that the refund is authorised under the relevant service constraints."
+      },
+      {
+        "criterion_id": "CSS03-C3",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "It’s better to get ahead of the complaint than spend a lot of time proving exactly what happened.",
+        "rationale": "This explicitly deprioritises confirming what happened and does not recognise the need for additional information or escalation while the cause remains uncertain."
+      }
+    ],
+    "annotation_notes": "The answer favors immediate refunding over evidence-based assessment and does not show a need to investigate further."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

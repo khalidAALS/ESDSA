@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-61451510B098E574",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_05fb8a54384dd95a016b00292a383487d0b0f6a2923a47c7e7",
+  "annotated_utc": "2026-11-20T11:04:12.471847+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "OPS04-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d check the repair milestones against the plan, confirm the parts ETA and any workaround, and see whether the shortage threatens the completion date.",
+        "rationale": "This explicitly identifies information to monitor execution: milestones, parts ETA, workaround, and impact on completion date."
+      },
+      {
+        "criterion_id": "OPS04-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "If a critical step is slipping or the date is no longer realistic, I’d escalate to the right owner and update the next shift on the revised status.",
+        "rationale": "This shows recognition that deviation from plan triggers action, specifically when a critical step slips or the date becomes unrealistic."
+      },
+      {
+        "criterion_id": "OPS04-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d escalate to the right owner and update the next shift on the revised status. Then I’d follow up until the blocker is cleared or the new timeline is confirmed.",
+        "rationale": "This directly states escalation to the appropriate owner and continued follow-through until resolution or confirmation of the new timeline."
+      }
+    ],
+    "annotation_notes": ""
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

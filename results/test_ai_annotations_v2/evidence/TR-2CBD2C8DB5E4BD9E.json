@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-2CBD2C8DB5E4BD9E",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_01d9f1771c4f7135016b002c12e58c87d09c27585f8072d94e",
+  "annotated_utc": "2026-11-20T11:16:37.551700+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "SWE01-C1",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I’d start with the browser cache and have users hard refresh or clear it.",
+        "rationale": "The response skips establishing how to reproduce or characterize the failure and instead immediately prescribes a cache-focused fix. It does not describe identifying when the issue occurs, on which users, or under what conditions."
+      },
+      {
+        "criterion_id": "SWE01-C2",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "passage": "",
+        "rationale": "The answer does not explicitly compare failing and working cases beyond noting that some users are affected. It neither clearly contrasts conditions where the dashboard is outdated versus correct, nor provides enough detail to assess comparison behavior."
+      },
+      {
+        "criterion_id": "SWE01-C3",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "If that helps, I’d assume the cache is the cause and only look at the service if the problem keeps happening.",
+        "rationale": "This proposes concluding the cause from a single cache-related test and deferring the service investigation, which is not a systematic narrowing based on multiple observations. It shows premature assumption rather than disciplined elimination of causes."
+      }
+    ],
+    "annotation_notes": "The answer is brief and focuses on one suspected cause. It provides little evidence of structured diagnosis, and in one place suggests an unsupported assumption."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-A8CB0C5790519DF5",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0483281e8c8ccb08016b0010a1a70887d09118d437bbdff246",
+  "annotated_utc": "2026-11-20T09:19:31.876611+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "CSS04-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d apologise and let them know I’m on it now, then I’d check the complaint internally.",
+        "rationale": "This clearly communicates the immediate proposed action in understandable terms: apologising, taking ownership, and checking the complaint internally."
+      },
+      {
+        "criterion_id": "CSS04-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d tell them I’ll come back once I’ve got the full answer, and I wouldn’t set a fixed follow-up because I’d rather not chase them with partial updates.",
+        "rationale": "The candidate sets an expectation that they will respond once they have the full answer, and avoids making an unsupported commitment to a specific update time."
+      },
+      {
+        "criterion_id": "CSS04-C3",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "passage": "",
+        "rationale": "The answer indicates a future contact when the outcome is known, but it does not establish a clear, appropriate follow-up mechanism for status updates or confirmation in the meantime. It remains unestablished how the customer would be kept informed or how follow-up would be organised beyond a vague future contact."
+      }
+    ],
+    "annotation_notes": "The response shows clear communication and some expectation management, but follow-up remains under-specified rather than clearly adequate."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

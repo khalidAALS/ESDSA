@@ -1,0 +1,18 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "SEMANTIC_EQUIVALENCE",
+  "blinded_id": "TG-6F0F433D43CCFF0E",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_042b680f4745f864016b002aa67e0087d084fd1387a3d83cca",
+  "annotated_utc": "2026-11-20T11:10:33.071581+00:00",
+  "annotation": {
+    "semantic_equivalence": "NO",
+    "material_differences": "Response B omits the comparison to functioning behaviour/other traffic that appears in A and C, and it also omits the explicit attempt to reproduce or characterize the failure. That removes decision-relevant evidence for SWE01-C1 and SWE01-C2. A and C both include checking whether the search page/service is otherwise healthy and C explicitly mentions trying to get a clean reproduction, so B is materially weaker on the specified criteria.",
+    "equivalence_rationale": "A and C preserve broadly the same diagnostic approach: use the screenshot and timestamp, inspect logs/monitoring, look for deploys/config changes, compare against healthy behaviour, and narrow likely causes while leaving evidence for handoff. B keeps the initial log/timestamp review and handoff, but drops the comparison step and the reproduction/characterization goal. Because those omissions could change the evidence assessment under the listed criteria, the three responses are not semantically equivalent in decision-relevant terms."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

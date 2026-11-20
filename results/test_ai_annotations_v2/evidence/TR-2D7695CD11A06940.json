@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-2D7695CD11A06940",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0a1ab50018a76913016b002b419f4487d0a3e535c52430766c",
+  "annotated_utc": "2026-11-20T11:13:08.168393+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "SWE02-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d go back and look at the queue metrics, worker logs, traces, and any config or rollout changes around when the delay started.",
+        "rationale": "The answer explicitly identifies multiple relevant technical evidence sources for investigating the failure."
+      },
+      {
+        "criterion_id": "SWE02-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "Then I’d compare what changed before and after the capacity tweak so I can see whether the backlog lines up with retries, downstream slowness, or some specific class of messages.\n\nAfter that I’d test a couple of hypotheses instead of guessing. For example, I’d check whether the spikes happen for one queue shard, one payload type, or when a dependent service gets slow.",
+        "rationale": "The candidate proposes concrete checks that distinguish among plausible causes such as retries, downstream slowness, shard-specific issues, payload types, and dependency-related slowdown."
+      },
+      {
+        "criterion_id": "SWE02-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "The main thing is to use the observations to rule causes in or out. If the delay tracks downstream latency or retry storms, then more workers just amplify the pressure. If the workers are idle but the queue is still growing, that points somewhere else in the pipeline.",
+        "rationale": "The answer explicitly interprets observations and links them to diagnostic conclusions about likely causes."
+      }
+    ],
+    "annotation_notes": ""
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

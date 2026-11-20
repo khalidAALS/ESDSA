@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-316B17C0FC69730A",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_00206311fcbc3faf016b002b93ea7087d092976d028f102314",
+  "annotated_utc": "2026-11-20T11:14:30.673965+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "OPS01-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d put the equipment check first, because if that isn’t done the launch itself could be at risk. Then I’d look at the staffing gap and make sure the key launch tasks are covered, even if that means reshuffling people or dropping anything that can wait. The report would sit behind those unless it’s needed to support the launch.",
+        "rationale": "The answer explicitly uses urgency and impact (launch at risk), and dependency/importance to the launch (equipment check first, staffing for key launch tasks, report behind unless needed for launch)."
+      },
+      {
+        "criterion_id": "OPS01-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "even if that means reshuffling people or dropping anything that can wait. The report would sit behind those unless it’s needed to support the launch.",
+        "rationale": "The candidate explains trade-offs in prioritisation by describing reshuffling people, deprioritising the report, and dropping work that can wait in order to protect launch-critical tasks."
+      },
+      {
+        "criterion_id": "OPS01-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d change the order if the check showed a bigger problem, if staffing got worse, or if something urgent came up that had a more immediate impact on service than the report.",
+        "rationale": "This explicitly states that priorities would be reassessed when conditions change, including a bigger problem, worsening staffing, or a more urgent service-impacting issue."
+      }
+    ],
+    "annotation_notes": ""
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

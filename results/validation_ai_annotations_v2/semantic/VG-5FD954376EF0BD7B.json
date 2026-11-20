@@ -1,0 +1,20 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "SEMANTIC_EQUIVALENCE",
+  "blinded_id": "VG-5FD954376EF0BD7B",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0ac640d7140adc68016b000caa6a6887d086c34fae2b4277a5",
+  "annotated_utc": "2026-11-20T09:02:37.023812+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "semantic_equivalence": "NO",
+    "material_differences": "All three responses lean toward the external dependency, but A adds a specific diagnostic step of checking job logs and says to move on to input data or code only after ruling out the dependency. B omits logs and gives a very compressed rule for escalation. C also omits logs and goes further by recommending assuming the dependency is the bottleneck and moving on, which weakens hypothesis testing and diagnostic interpretation compared with A. These differences could affect evidence sources used, how alternative causes are distinguished, and whether observations are interpreted cautiously or as conclusive.",
+    "equivalence_rationale": "Under the technical-investigation criteria, the responses are not fully equivalent because A contains broader investigative evidence and a more explicit conditional diagnostic progression, while B and C are narrower. The main material issue is that the omitted/changed steps around logs, code, and input-data checks alter the strength of evidence gathering and hypothesis testing, and C’s ‘assume the dependency is the bottleneck’ framing changes the evidentiary posture for interpreting observations."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

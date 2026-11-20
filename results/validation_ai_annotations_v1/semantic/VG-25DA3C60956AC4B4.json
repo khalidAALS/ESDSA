@@ -1,0 +1,17 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_PILOT_V1",
+  "partition": "VALIDATION",
+  "review_type": "SEMANTIC_EQUIVALENCE",
+  "blinded_id": "VG-25DA3C60956AC4B4",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V1",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0f7e51de9efd41da016aff964e8c2c87d08b646ca2b2bf6ad3",
+  "annotated_utc": "2026-11-20T00:37:35.808151+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "semantic_equivalence": "YES",
+    "material_differences": "None found that materially change the information-gathering approach or evidence under the rubric.",
+    "equivalence_rationale": "All three responses describe the same core investigation strategy: ask targeted questions to clarify timing and method, verify against internal account records rather than memory or payment data alone, and limit collection to authorised, necessary information. C adds a few examples (billing cycle, emails, support interaction) and B is slightly more detailed, but these are non-material elaborations that do not change the competency evidence for relevant questioning, source verification, or proportionate collection."
+  }
+}

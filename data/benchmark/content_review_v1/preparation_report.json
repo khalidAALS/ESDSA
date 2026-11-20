@@ -1,0 +1,14 @@
+{
+  "response_count": 108,
+  "review_groups": 36,
+  "competency_count": 12,
+  "condition_counts": {
+    "SUFFICIENT": 36,
+    "INSUFFICIENT": 36,
+    "NEGATIVE": 36
+  },
+  "structural_warnings": [],
+  "semantic_validation": "PENDING",
+  "evidence_validation": "PENDING",
+  "expert_review": "PENDING"
+}

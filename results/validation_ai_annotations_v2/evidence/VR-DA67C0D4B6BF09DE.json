@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-DA67C0D4B6BF09DE",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0d9ce7b28ad83ef8016b000d63897087d0b7d2f1f87b4ef632",
+  "annotated_utc": "2026-11-20T09:05:41.339562+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "OPS03-C1",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I’d probably push the new schedule through first and give the leftover tasks to whichever teams are closest to the work, even if there’s still some disagreement on ownership.",
+        "rationale": "This explicitly prioritizes proceeding despite unresolved ownership and does not show use of relevant operational evidence to inform coordination. It suggests acting without integrating the available evidence about missed handovers and disputed ownership."
+      },
+      {
+        "criterion_id": "OPS03-C2",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "give the leftover tasks to whichever teams are closest to the work, even if there’s still some disagreement on ownership.",
+        "rationale": "This proposes assigning tasks based on proximity to the work rather than identifying the responsible parties and dependencies. It directly contradicts the criterion’s requirement to clarify ownership and necessary dependencies."
+      },
+      {
+        "criterion_id": "OPS03-C3",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I’d put a simple note in the plan saying we updated it to avoid further delay and deal with any clashes later.",
+        "rationale": "The explanation for the action is centered on avoiding delay and deferring clashes, not on relevant operational evidence. This does not substantively explain actions using evidence and therefore conflicts with decision traceability."
+      }
+    ],
+    "annotation_notes": "The answer emphasizes speed and deferring disagreement rather than evidence-based coordination, ownership clarity, or evidence-linked justification."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

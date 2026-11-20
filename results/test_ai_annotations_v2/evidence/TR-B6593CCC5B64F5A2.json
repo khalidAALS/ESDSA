@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-B6593CCC5B64F5A2",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_035b2fe7d8d6c8df016b002aee398c87d0b41ad6951c3acee2",
+  "annotated_utc": "2026-11-20T11:11:45.171711+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "SWE03-C1",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "passage": "",
+        "rationale": "The answer mentions retries as a possible issue, but it does not show that this cause has been identified through investigation or that it is supported by evidence. The phrasing is conditional rather than established."
+      },
+      {
+        "criterion_id": "SWE03-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d recommend adding a longer timeout and an automatic retry on the upload endpoint",
+        "rationale": "The proposed correction is explicitly tied to retries as the suspected problem, showing a clear connection between the identified issue and the recommended change."
+      },
+      {
+        "criterion_id": "SWE03-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "if retries are part of the problem, making them more reliable should reduce missed uploads and should also smooth out the duplicate cases we’re seeing.",
+        "rationale": "The candidate explains why the change should help: improving retry reliability is presented as reducing missed uploads and smoothing duplicate cases, which is a direct justification of the correction."
+      }
+    ],
+    "annotation_notes": "The response proposes a corrective action and gives a rationale, but it does not establish a investigated, evidence-supported root cause."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

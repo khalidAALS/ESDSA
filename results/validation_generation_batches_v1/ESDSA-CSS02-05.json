@@ -1,0 +1,75 @@
+{
+  "experiment": "ESDSA_VALIDATION_GENERATION_V1",
+  "partition": "VALIDATION",
+  "family_id": "ESDSA-CSS02-05",
+  "run_sha256": "4a706a89056ebda757ea5b090fb52df76abed38cee014479e68bd0f3115eda96",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "response_id": "resp_05741c3edc06befa016aff90a6a36887d0aaba6182cce5be51",
+  "response_status": "completed",
+  "usage": {
+    "input_tokens": 737,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      }
+    },
+    "output_tokens": 974,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 1711
+  },
+  "raw_output_text": "{\"responses\":[{\"condition\":\"SUFFICIENT\",\"variant\":\"CANONICAL\",\"answer\":\"I’d start by separating the urgent request from the billing issues, so I can keep the conversation organised without missing anything. First I’d confirm the minimum details I need from the customer: which charges they believe are wrong, the dates or amounts involved, and any recent actions that might explain the discrepancies. I’d also check the approved internal systems for anything I can verify on my side, like account status, recent changes, or posted transactions, and I’d be careful to label those as verified rather than assumed. For anything I need from the customer, I’d only ask for information that’s directly relevant and can be shared safely through the approved support channel. If the account change is urgent, I’d explain what can be actioned immediately and what needs to wait for verification, so I can help quickly while still protecting their privacy.\"},{\"condition\":\"SUFFICIENT\",\"variant\":\"CONVERSATIONAL\",\"answer\":\"I’d break it into two parts so it stays manageable. I’d first ask the customer for the details I actually need to understand the billing issue, like which charges look off, when they appeared, and anything they noticed just before that. At the same time, I’d check our approved internal records for the parts I can confirm myself, and I’d make sure I’m not treating assumptions as facts. For anything the customer needs to provide, I’d keep it limited to what’s relevant and use the approved secure channel rather than collecting extra sensitive info. Then I’d let them know what I can proceed with right away on the account change and what depends on verifying the billing details.\"},{\"condition\":\"SUFFICIENT\",\"variant\":\"CONCISE\",\"answer\":\"I’d triage the urgent change, then gather only the details needed to clarify the billing issue. I’d verify what I can in approved systems, keep those facts separate from customer-provided information, and ask the customer only for relevant details through secure channels.\"},{\"condition\":\"INSUFFICIENT\",\"variant\":\"CANONICAL\",\"answer\":\"I’d begin by acknowledging the urgent account change and making sure the customer feels heard, then I’d review the billing records available in our approved systems to see what I can confirm. I’d note any mismatches between the records and what the customer is reporting, and I’d ask a few targeted questions so I can understand the pattern of the discrepancies. If I needed more detail from the customer, I’d keep the request focused on the specific charges or dates involved and avoid asking for anything unrelated. I’d then decide the next step based on what the records show and what the customer can clarify.\"},{\"condition\":\"INSUFFICIENT\",\"variant\":\"CONVERSATIONAL\",\"answer\":\"I’d start by checking what I can in our internal tools and then ask the customer a few focused questions about the billing problem, like which charges look wrong and roughly when they showed up. I’d keep the questions tied to the issue and avoid collecting anything that doesn’t help. If there’s an urgent account change, I’d handle that alongside it as far as possible and then move forward based on the information I have.\"},{\"condition\":\"INSUFFICIENT\",\"variant\":\"CONCISE\",\"answer\":\"I’d check the internal records, ask targeted questions about the disputed charges, and keep any customer requests limited to what’s directly relevant. I’d then proceed based on the information available.\"},{\"condition\":\"NEGATIVE\",\"variant\":\"CANONICAL\",\"answer\":\"I’d probably start by asking the customer to send over everything they have about the account, including any screenshots, full statements, and whatever personal details they can provide, so I have a complete picture. Then I’d use that alongside the internal records to make a quick judgment on the billing discrepancies and the account change. If something seems off, I’d just take the most likely explanation and move ahead, since the customer is already in a hurry. I’d rather collect more information upfront than risk missing something important.\"},{\"condition\":\"NEGATIVE\",\"variant\":\"CONVERSATIONAL\",\"answer\":\"Honestly, I’d ask the customer for as much detail as possible right away, even if some of it isn’t directly related, because it’s faster to sort through it all at once. I’d also use what they tell me to fill in any gaps before I’ve fully checked the approved records, so I can give them an answer sooner. If the billing issue and account change are happening together, I’d just bundle it all into one review and go from there.\"},{\"condition\":\"NEGATIVE\",\"variant\":\"CONCISE\",\"answer\":\"I’d ask for all available documents and personal details upfront, then use that information to make a quick decision before verifying much in the internal systems.\"}]}",
+  "responses": [
+    {
+      "condition": "SUFFICIENT",
+      "variant": "CANONICAL",
+      "answer": "I’d start by separating the urgent request from the billing issues, so I can keep the conversation organised without missing anything. First I’d confirm the minimum details I need from the customer: which charges they believe are wrong, the dates or amounts involved, and any recent actions that might explain the discrepancies. I’d also check the approved internal systems for anything I can verify on my side, like account status, recent changes, or posted transactions, and I’d be careful to label those as verified rather than assumed. For anything I need from the customer, I’d only ask for information that’s directly relevant and can be shared safely through the approved support channel. If the account change is urgent, I’d explain what can be actioned immediately and what needs to wait for verification, so I can help quickly while still protecting their privacy."
+    },
+    {
+      "condition": "SUFFICIENT",
+      "variant": "CONVERSATIONAL",
+      "answer": "I’d break it into two parts so it stays manageable. I’d first ask the customer for the details I actually need to understand the billing issue, like which charges look off, when they appeared, and anything they noticed just before that. At the same time, I’d check our approved internal records for the parts I can confirm myself, and I’d make sure I’m not treating assumptions as facts. For anything the customer needs to provide, I’d keep it limited to what’s relevant and use the approved secure channel rather than collecting extra sensitive info. Then I’d let them know what I can proceed with right away on the account change and what depends on verifying the billing details."
+    },
+    {
+      "condition": "SUFFICIENT",
+      "variant": "CONCISE",
+      "answer": "I’d triage the urgent change, then gather only the details needed to clarify the billing issue. I’d verify what I can in approved systems, keep those facts separate from customer-provided information, and ask the customer only for relevant details through secure channels."
+    },
+    {
+      "condition": "INSUFFICIENT",
+      "variant": "CANONICAL",
+      "answer": "I’d begin by acknowledging the urgent account change and making sure the customer feels heard, then I’d review the billing records available in our approved systems to see what I can confirm. I’d note any mismatches between the records and what the customer is reporting, and I’d ask a few targeted questions so I can understand the pattern of the discrepancies. If I needed more detail from the customer, I’d keep the request focused on the specific charges or dates involved and avoid asking for anything unrelated. I’d then decide the next step based on what the records show and what the customer can clarify."
+    },
+    {
+      "condition": "INSUFFICIENT",
+      "variant": "CONVERSATIONAL",
+      "answer": "I’d start by checking what I can in our internal tools and then ask the customer a few focused questions about the billing problem, like which charges look wrong and roughly when they showed up. I’d keep the questions tied to the issue and avoid collecting anything that doesn’t help. If there’s an urgent account change, I’d handle that alongside it as far as possible and then move forward based on the information I have."
+    },
+    {
+      "condition": "INSUFFICIENT",
+      "variant": "CONCISE",
+      "answer": "I’d check the internal records, ask targeted questions about the disputed charges, and keep any customer requests limited to what’s directly relevant. I’d then proceed based on the information available."
+    },
+    {
+      "condition": "NEGATIVE",
+      "variant": "CANONICAL",
+      "answer": "I’d probably start by asking the customer to send over everything they have about the account, including any screenshots, full statements, and whatever personal details they can provide, so I have a complete picture. Then I’d use that alongside the internal records to make a quick judgment on the billing discrepancies and the account change. If something seems off, I’d just take the most likely explanation and move ahead, since the customer is already in a hurry. I’d rather collect more information upfront than risk missing something important."
+    },
+    {
+      "condition": "NEGATIVE",
+      "variant": "CONVERSATIONAL",
+      "answer": "Honestly, I’d ask the customer for as much detail as possible right away, even if some of it isn’t directly related, because it’s faster to sort through it all at once. I’d also use what they tell me to fill in any gaps before I’ve fully checked the approved records, so I can give them an answer sooner. If the billing issue and account change are happening together, I’d just bundle it all into one review and go from there."
+    },
+    {
+      "condition": "NEGATIVE",
+      "variant": "CONCISE",
+      "answer": "I’d ask for all available documents and personal details upfront, then use that information to make a quick decision before verifying much in the internal systems."
+    }
+  ],
+  "validation_status": "STRUCTURE_PASSED"
+}

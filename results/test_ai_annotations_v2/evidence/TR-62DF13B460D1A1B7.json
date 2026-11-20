@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-62DF13B460D1A1B7",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_041ed6628da36d6c016b002a27ce7c87d09b8224e7aab31b15",
+  "annotated_utc": "2026-11-20T11:08:26.818354+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "SWE01-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d start by reproducing the issue in a controlled way. I’d identify a few affected users or sessions, note exactly when the dashboard looks stale",
+        "rationale": "The answer explicitly describes reproducing the issue in a controlled way and characterising it by identifying affected users/sessions and when the stale display occurs."
+      },
+      {
+        "criterion_id": "SWE01-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "Then I’d break the problem down by layer: check whether the browser is actually reusing cached responses, inspect the network calls and response headers, and at the same time verify whether the service is returning fresh data at the moment the page loads. I’d compare the failing and working cases side by side so we can see what changes between them, such as user, browser, timing, or request parameters.",
+        "rationale": "The candidate explicitly compares failing and working cases side by side and contrasts browser/client and service behavior, satisfying comparison with functioning behaviour."
+      },
+      {
+        "criterion_id": "SWE01-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "From there I’d narrow it down based on evidence, not on which theory sounds more likely. If the same stale value is coming back from the API in multiple browsers, that points to the service or upstream data. If the API response is fresh but one browser keeps showing old figures, that points more toward client caching or a front-end state issue. Once we have that split, I’d instrument or log the specific path that looks most suspicious and fix the narrowest confirmed cause.",
+        "rationale": "The answer uses observed outcomes to eliminate or support candidate causes and proposes focusing instrumentation on the most suspicious path, which demonstrates systematic narrowing."
+      }
+    ],
+    "annotation_notes": "All three criteria are clearly evidenced by explicit diagnostic steps and conditional conclusions."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

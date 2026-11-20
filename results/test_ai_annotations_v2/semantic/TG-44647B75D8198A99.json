@@ -1,0 +1,18 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "SEMANTIC_EQUIVALENCE",
+  "blinded_id": "TG-44647B75D8198A99",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_07b9e6ae54ad4285016b002a0c810087d09522ddb4ed7b97d1",
+  "annotated_utc": "2026-11-20T11:07:57.958473+00:00",
+  "annotation": {
+    "semantic_equivalence": "YES",
+    "material_differences": "",
+    "equivalence_rationale": "All three responses preserve the same decision-relevant evidence for problem identification: they establish the issue by gathering both accounts, clarifying when access changed, documenting the disagreement, and passing it on for review/escalation. None adds a materially different assumption, safeguard, or resolution commitment that would change assessment under issue clarification, impact identification, or problem definition."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

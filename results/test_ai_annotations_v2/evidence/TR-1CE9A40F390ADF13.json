@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-1CE9A40F390ADF13",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_046e26a6de123cfe016b002b603dc087d09acca9ffd780032b",
+  "annotated_utc": "2026-11-20T11:13:38.864689+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "CSS03-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d check whether we can send a replacement quickly, and if not, look at an alternative or credit that still helps the customer before the event.",
+        "rationale": "The answer explicitly weighs multiple resolution options and selects alternatives that fit the customer’s urgency and constraints, which demonstrates appropriate option assessment."
+      },
+      {
+        "criterion_id": "CSS03-C2",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "passage": "",
+        "rationale": "The answer does not mention checking for or respecting required authorisation, stock limits, or any service-policy constraints in a substantive way. It proposes actions, but does not establish that the candidate would follow the necessary approval process or other applicable constraints."
+      },
+      {
+        "criterion_id": "CSS03-C3",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "passage": "",
+        "rationale": "The answer does not clearly state that additional information is needed or that escalation would be used because the shipment status is disputed or expedited replacement requires authorisation. It mentions checking options and keeping the customer updated, but does not explicitly handle uncertainty through escalation or further information gathering."
+      }
+    ],
+    "annotation_notes": "The response shows some resolution thinking, but it is too brief to confirm policy compliance or explicit uncertainty/escalation handling."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

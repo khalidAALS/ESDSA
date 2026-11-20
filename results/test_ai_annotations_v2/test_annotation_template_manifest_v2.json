@@ -1,0 +1,14 @@
+{
+  "experiment": "ESDSA_TEST_ANNOTATION_V2",
+  "status": "PREPARED",
+  "responses": 216,
+  "semantic_groups": 72,
+  "annotation_prompt_version": "VALIDATION_V2_UNCHANGED",
+  "dataset_sha256": "70ffbfaffe9d1e7170004e2668da90ddcfd955a3694d67e4265de3f3ae2a3be9",
+  "prediction_lock_sha256": "2ec422a0a7b63465f974c28efa3f4477e039e252178689c84308834daed80e6d",
+  "evidence_template_sha256": "561302f829c520079df70874fae0769a2b75f865ea2292fa4d377e421ec06bea",
+  "semantic_template_sha256": "e2ecf3f549f9872ef14fde78eca47f0b30578db7af720d0449d159a5f56d9884",
+  "private_key_sha256": "1c51d0ddba817ed8812735facdfb4499acf82f301fbe83f483070d1561457a5d",
+  "generation_conditions_used_as_references": false,
+  "independent_human_review": false
+}

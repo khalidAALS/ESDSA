@@ -1,0 +1,75 @@
+{
+  "experiment": "ESDSA_VALIDATION_GENERATION_V1",
+  "partition": "VALIDATION",
+  "family_id": "ESDSA-SWE04-09",
+  "run_sha256": "585983bbf26eadd613466ff829f2dd8b70751cd8a33cade5251d5519b2b92a61",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "response_id": "resp_052685e9c609ed5d016aff8fcd49e087d0b01672709a10fd5c",
+  "response_status": "completed",
+  "usage": {
+    "input_tokens": 735,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      }
+    },
+    "output_tokens": 726,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 1461
+  },
+  "raw_output_text": "{\"responses\":[{\"condition\":\"SUFFICIENT\",\"variant\":\"CANONICAL\",\"answer\":\"I’d verify it in two layers. First, I’d recreate the exact high-value transaction case that was failing before and confirm the new rule now approves or rejects it correctly under the updated logic. Then I’d run a focused regression suite around nearby transaction types, edge amounts, limits, and exception paths to make sure we didn’t break something that used to work. If any check failed, I wouldn’t treat the change as ready for deployment; I’d investigate the cause, fix it, and rerun the relevant tests before moving ahead.\"},{\"condition\":\"SUFFICIENT\",\"variant\":\"CONVERSATIONAL\",\"answer\":\"I’d start by rerunning the specific scenario that the change was meant to fix, just to prove the new approval rule behaves correctly. After that, I’d check related cases too, because changing approval logic can easily affect other transaction paths or boundary conditions. If anything looks off in those checks, I’d pause deployment and dig into it rather than pushing it through.\"},{\"condition\":\"SUFFICIENT\",\"variant\":\"CONCISE\",\"answer\":\"I’d retest the exact failing transaction first, then run related regression cases around amounts, limits, and edge paths. If anything fails, I’d investigate and fix it before deployment.\"},{\"condition\":\"INSUFFICIENT\",\"variant\":\"CANONICAL\",\"answer\":\"I’d want to see that the updated approval rule behaves as expected in the main high-value transaction path, ideally with a test case that mirrors the original problem. I’d also look at whether the implementation has been reviewed and whether the test coverage around the rule changes seems reasonable. If those look good, I’d be comfortable moving it toward deployment, while keeping an eye out for anything unusual after release.\"},{\"condition\":\"INSUFFICIENT\",\"variant\":\"CONVERSATIONAL\",\"answer\":\"I’d make sure the main approval scenario is covered and that the change has been reviewed in a way that gives some confidence in the logic. I’d also check the surrounding tests and coverage to see that the update isn’t totally isolated. If that all looks solid, I’d be inclined to move it forward, though I’d still want to monitor it after release.\"},{\"condition\":\"INSUFFICIENT\",\"variant\":\"CONCISE\",\"answer\":\"I’d confirm the main approval path is covered and review the surrounding test coverage and code review notes before moving ahead.\"},{\"condition\":\"NEGATIVE\",\"variant\":\"CANONICAL\",\"answer\":\"Because the developer tests already pass, I’d lean on that as the main signal and avoid spending time rerunning a lot of transaction scenarios. For a change like this, I’d usually just spot-check a couple of representative cases and then let deployment proceed if nothing obvious stands out. If there were a surprise after release, we could address it then, but I wouldn’t hold the deployment up for broader verification.\"},{\"condition\":\"NEGATIVE\",\"variant\":\"CONVERSATIONAL\",\"answer\":\"If the implementation passes the developer tests, I’d mostly trust that and only do a quick spot check on a couple of examples. I wouldn’t spend too long rechecking edge cases or broader regressions unless something immediately looked wrong, since that can slow delivery down a lot. If an issue showed up later, we could patch it after release.\"},{\"condition\":\"NEGATIVE\",\"variant\":\"CONCISE\",\"answer\":\"If the developer tests pass, I’d do a quick spot check and move ahead rather than spending time on broader regression testing or delaying deployment.\"}]}",
+  "responses": [
+    {
+      "condition": "SUFFICIENT",
+      "variant": "CANONICAL",
+      "answer": "I’d verify it in two layers. First, I’d recreate the exact high-value transaction case that was failing before and confirm the new rule now approves or rejects it correctly under the updated logic. Then I’d run a focused regression suite around nearby transaction types, edge amounts, limits, and exception paths to make sure we didn’t break something that used to work. If any check failed, I wouldn’t treat the change as ready for deployment; I’d investigate the cause, fix it, and rerun the relevant tests before moving ahead."
+    },
+    {
+      "condition": "SUFFICIENT",
+      "variant": "CONVERSATIONAL",
+      "answer": "I’d start by rerunning the specific scenario that the change was meant to fix, just to prove the new approval rule behaves correctly. After that, I’d check related cases too, because changing approval logic can easily affect other transaction paths or boundary conditions. If anything looks off in those checks, I’d pause deployment and dig into it rather than pushing it through."
+    },
+    {
+      "condition": "SUFFICIENT",
+      "variant": "CONCISE",
+      "answer": "I’d retest the exact failing transaction first, then run related regression cases around amounts, limits, and edge paths. If anything fails, I’d investigate and fix it before deployment."
+    },
+    {
+      "condition": "INSUFFICIENT",
+      "variant": "CANONICAL",
+      "answer": "I’d want to see that the updated approval rule behaves as expected in the main high-value transaction path, ideally with a test case that mirrors the original problem. I’d also look at whether the implementation has been reviewed and whether the test coverage around the rule changes seems reasonable. If those look good, I’d be comfortable moving it toward deployment, while keeping an eye out for anything unusual after release."
+    },
+    {
+      "condition": "INSUFFICIENT",
+      "variant": "CONVERSATIONAL",
+      "answer": "I’d make sure the main approval scenario is covered and that the change has been reviewed in a way that gives some confidence in the logic. I’d also check the surrounding tests and coverage to see that the update isn’t totally isolated. If that all looks solid, I’d be inclined to move it forward, though I’d still want to monitor it after release."
+    },
+    {
+      "condition": "INSUFFICIENT",
+      "variant": "CONCISE",
+      "answer": "I’d confirm the main approval path is covered and review the surrounding test coverage and code review notes before moving ahead."
+    },
+    {
+      "condition": "NEGATIVE",
+      "variant": "CANONICAL",
+      "answer": "Because the developer tests already pass, I’d lean on that as the main signal and avoid spending time rerunning a lot of transaction scenarios. For a change like this, I’d usually just spot-check a couple of representative cases and then let deployment proceed if nothing obvious stands out. If there were a surprise after release, we could address it then, but I wouldn’t hold the deployment up for broader verification."
+    },
+    {
+      "condition": "NEGATIVE",
+      "variant": "CONVERSATIONAL",
+      "answer": "If the implementation passes the developer tests, I’d mostly trust that and only do a quick spot check on a couple of examples. I wouldn’t spend too long rechecking edge cases or broader regressions unless something immediately looked wrong, since that can slow delivery down a lot. If an issue showed up later, we could patch it after release."
+    },
+    {
+      "condition": "NEGATIVE",
+      "variant": "CONCISE",
+      "answer": "If the developer tests pass, I’d do a quick spot check and move ahead rather than spending time on broader regression testing or delaying deployment."
+    }
+  ],
+  "validation_status": "STRUCTURE_PASSED"
+}

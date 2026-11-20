@@ -1,0 +1,18 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "SEMANTIC_EQUIVALENCE",
+  "blinded_id": "TG-224359C1DEB19912",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_02e23890c989da8b016b0029a32ba487d0817c00a3e4230029",
+  "annotated_utc": "2026-11-20T11:06:13.900982+00:00",
+  "annotation": {
+    "semantic_equivalence": "NO",
+    "material_differences": "Response C adds a specific operational commitment to leave planned customer orders in place unless someone flags a problem and to have receiving handle the early inbound delivery when they have a moment. That differs from A and B, which are more general about keeping the original plan and only revisiting later if deadlines become tight or delays become obvious. C therefore shows a different immediate reprioritisation stance and a different treatment of the incoming delivery, which could affect evidence for prioritisation under OPS01-C1 and OPS01-C3.",
+    "equivalence_rationale": "A and B are closely aligned in preserving the original plan and deferring reprioritisation until delays or deadline pressure become clear. C is similar in overall conservatism, but its added instructions about customer orders and the inbound delivery specify a more concrete operating approach. Because the question is about revising priorities in response to changed conditions, that additional commitment could change how the response is assessed for urgency, dependencies, and active reprioritisation."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

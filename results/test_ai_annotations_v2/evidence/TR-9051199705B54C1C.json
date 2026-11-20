@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-9051199705B54C1C",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_013c33ae5a6aa3fb016b002a11098c87d0908ebdfc28c80782",
+  "annotated_utc": "2026-11-20T11:08:02.521671+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "OPS03-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d use the maintenance team’s progress update to proceed with the handover and deal with the system dependency later.",
+        "rationale": "The answer explicitly uses operational information from the maintenance team’s progress update and the system dependency to guide the action."
+      },
+      {
+        "criterion_id": "OPS03-C2",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "If the receiving team hasn’t confirmed yet, I’d assume they’ll manage once it’s passed over.",
+        "rationale": "This proposes proceeding without confirming the receiving team’s readiness and without properly resolving the dependency, which contradicts identifying and coordinating required parties and dependencies."
+      },
+      {
+        "criterion_id": "OPS03-C3",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I’d record it as complete so we can keep the evening schedule moving.",
+        "rationale": "The action is justified primarily by schedule pressure rather than by explaining a decision based on relevant operational evidence, and it records completion despite unresolved dependency/readiness evidence."
+      }
+    ],
+    "annotation_notes": "The candidate references operational sources but recommends bypassing unresolved coordination signals, so evidence-based decision traceability is not demonstrated."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

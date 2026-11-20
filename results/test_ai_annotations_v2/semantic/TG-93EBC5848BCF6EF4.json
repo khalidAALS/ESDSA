@@ -1,0 +1,18 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "SEMANTIC_EQUIVALENCE",
+  "blinded_id": "TG-93EBC5848BCF6EF4",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0711119b465ac714016b002b3f7d5c87d08a7714722f4ce6b4",
+  "annotated_utc": "2026-11-20T11:13:05.275957+00:00",
+  "annotation": {
+    "semantic_equivalence": "YES",
+    "material_differences": "",
+    "equivalence_rationale": "All three responses preserve the same decision-relevant evidence across the three criteria: they verify the reported invoice failure on the patched build, recognize related refund/discount logic as an area for regression concern, and use the verification result to decide to proceed toward release while planning post-deployment follow-up or monitoring. The differences are mainly in detail and phrasing, not in substantive verification assumptions or operational commitments."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-5E232EA8DE79B361",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0c9113eba76caaf6016b002a51632887d09c6b8f3b45c5b0d1",
+  "annotated_utc": "2026-11-20T11:09:08.615090+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "OPS04-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d check the overnight plan first and line it up with what we actually know: the task that was due, whether there’s any sign-off, and what the inspection picked up.",
+        "rationale": "The candidate explicitly identifies the information they would use to monitor execution: the overnight plan, the due task, sign-off, and inspection findings."
+      },
+      {
+        "criterion_id": "OPS04-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "If the record’s missing and the inspection suggests something may have been missed, I’d treat that as a possible deviation rather than just a paperwork issue.",
+        "rationale": "This shows recognition that the combination of a missing record and concerning inspection results should be treated as a potential deviation requiring action."
+      },
+      {
+        "criterion_id": "OPS04-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d call the contractor straight away, get them to confirm exactly what was completed, and loop in the operations lead if there’s any chance it affects opening. Then I’d keep following it up until I had either a clean confirmation or a decision to pause, rework, or escalate further.",
+        "rationale": "The candidate directs the issue to relevant owners, seeks confirmation, involves the operations lead when needed, and states they would continue following up until resolved or escalated."
+      }
+    ],
+    "annotation_notes": ""
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

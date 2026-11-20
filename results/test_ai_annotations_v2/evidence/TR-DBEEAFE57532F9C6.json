@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-DBEEAFE57532F9C6",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_068bc58eb37e07c7016b00299fa58c87d08edf58ccd495d155",
+  "annotated_utc": "2026-11-20T11:06:10.470342+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "OPS01-C1",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "passage": "",
+        "rationale": "The answer mentions customer deadlines, the early delivery, and the vehicle problem, but it does not clearly identify urgency, impact, and dependencies as criteria for prioritising work."
+      },
+      {
+        "criterion_id": "OPS01-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "because constantly changing things can slow everyone down.",
+        "rationale": "This gives a reason for keeping the original plan and shows trade-off reasoning: the candidate weighs responsiveness against disruption to the team and productivity."
+      },
+      {
+        "criterion_id": "OPS01-C3",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I’d try not to overhaul the plan unless I really had to. In practice I’d keep the original priorities and let the teams work through them, because constantly changing things can slow everyone down.",
+        "rationale": "The candidate explicitly says they would keep the original priorities despite the unexpected vehicle unavailability and earlier-than-expected delivery, which shows resistance to reassessing priorities when material conditions change."
+      }
+    ],
+    "annotation_notes": "The response shows some reasoning about disruption versus stability, but it does not clearly articulate a structured priority assessment based on urgency, impact, and dependencies."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

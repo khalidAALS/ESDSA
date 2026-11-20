@@ -1,0 +1,18 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "SEMANTIC_EQUIVALENCE",
+  "blinded_id": "TG-4825F657A56A642E",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0b67212d056587ae016b002a2088dc87d0a239522edb0b7451",
+  "annotated_utc": "2026-11-20T11:08:18.215156+00:00",
+  "annotation": {
+    "semantic_equivalence": "YES",
+    "material_differences": "",
+    "equivalence_rationale": "All three responses identify the same operational hazard (possible temperature/cold-chain issue vs sensor discrepancy), weigh uncertainty and consequences for a time-sensitive shipment, and propose the same proportionate response options: investigate further, then either hold/escalate or proceed with closer monitoring depending on findings. The added details in A and B do not change the criterion-level evidence relative to C."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

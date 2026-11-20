@@ -1,0 +1,18 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "SEMANTIC_EQUIVALENCE",
+  "blinded_id": "TG-56FAE56E46D5F2A8",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0b70268ecd00fb47016b002a45502c87d0864124bc37ddf96b",
+  "annotated_utc": "2026-11-20T11:08:54.840857+00:00",
+  "annotation": {
+    "semantic_equivalence": "YES",
+    "material_differences": "",
+    "equivalence_rationale": "All three responses use the same prioritisation logic: assess urgency, launch impact, and staffing/dependency concerns; put the equipment check ahead of the routine report if it is blocking the launch; treat the report as the most flexible item; and reconsider priorities when equipment status or staffing coverage becomes clearer. The wording differs, but no material addition, omission, or contradiction changes the criterion-level evidence or operational commitments."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

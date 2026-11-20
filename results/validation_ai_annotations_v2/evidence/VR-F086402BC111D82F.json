@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-F086402BC111D82F",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0bcd393aa30d7bd2016b00106d08b887d0bd53b6405b277574",
+  "annotated_utc": "2026-11-20T09:18:39.728922+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "OPS02-C1",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I wouldn’t make a big issue out of a few small discrepancies.",
+        "rationale": "This explicitly downplays the repeated stock discrepancies rather than identifying them as a plausible operational risk to investigate in context."
+      },
+      {
+        "criterion_id": "OPS02-C2",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I’d just keep the operation going and assume the next count or two will even it out.",
+        "rationale": "The answer relies on assumption and does not consider uncertainty or possible consequences; it suggests the discrepancies will self-correct without assessing potential impacts such as inventory inaccuracy or related operational effects."
+      },
+      {
+        "criterion_id": "OPS02-C3",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I’d only step in if it turned into a much bigger stock problem or started stopping orders from moving.",
+        "rationale": "This proposes deferring action until the issue becomes severe or disrupts orders, rather than a proportionate response to repeated discrepancies, so it does not demonstrate appropriate mitigation or escalation."
+      }
+    ],
+    "annotation_notes": "The answer minimizes repeated discrepancies and frames intervention as unnecessary unless operations halt, which undercuts risk identification and response."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

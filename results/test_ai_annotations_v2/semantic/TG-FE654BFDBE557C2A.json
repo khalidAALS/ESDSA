@@ -1,0 +1,18 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "SEMANTIC_EQUIVALENCE",
+  "blinded_id": "TG-FE654BFDBE557C2A",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0d421e6bdde890ab016b002c29240087d08296d0ff1dc2c9ab",
+  "annotated_utc": "2026-11-20T11:16:58.646296+00:00",
+  "annotation": {
+    "semantic_equivalence": "YES",
+    "material_differences": "",
+    "equivalence_rationale": "All three responses preserve the same decision-relevant evidence for systematic diagnosis: they propose collecting concrete examples to characterize/reproduce the issue, comparing affected versus unaffected users/behavior, and inspecting both browser requests and backend/service responses to narrow the cause. The added details in B and C do not introduce a new assumption or operational commitment that would materially change the criterion-level assessment."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

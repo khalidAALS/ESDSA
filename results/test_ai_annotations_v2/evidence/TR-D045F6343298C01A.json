@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-D045F6343298C01A",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_01de18a7b01ffd03016b002bf2f57487d0be7850982d5a6813",
+  "annotated_utc": "2026-11-20T11:16:04.888735+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "SWE02-C1",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I’d keep increasing capacity until the queue starts dropping, because if work is still accumulating that usually means the system just needs more throughput.",
+        "rationale": "This shows reliance on capacity scaling rather than investigating relevant technical evidence for why the delay persists. It does not identify appropriate diagnostic sources for the failure and instead narrows the inquiry to adding more throughput."
+      },
+      {
+        "criterion_id": "SWE02-C2",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I’d keep increasing capacity until the queue starts dropping, because if work is still accumulating that usually means the system just needs more throughput.",
+        "rationale": "The response does not propose checks that distinguish between different possible causes; it assumes insufficient throughput and keeps scaling. That is a materially weak diagnostic approach because it does not test competing hypotheses such as queue behavior, worker faults, or other bottlenecks."
+      },
+      {
+        "criterion_id": "SWE02-C3",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I’d keep increasing capacity until the queue starts dropping, because if work is still accumulating that usually means the system just needs more throughput.",
+        "rationale": "The candidate draws an oversimplified conclusion from backlog growth alone and treats it as proof of insufficient throughput. This does not meaningfully connect observations to a robust diagnostic conclusion, and it dismisses other explanations for the accumulation."
+      }
+    ],
+    "annotation_notes": "The answer mentions logs only briefly and says they would not spend much time there unless there is a clear error, but the dominant investigation strategy is to keep scaling. Overall the response is materially deficient as a troubleshooting method."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

@@ -1,0 +1,18 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "SEMANTIC_EQUIVALENCE",
+  "blinded_id": "TG-8452DF0AC0C7C5FC",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0aa793b189b9466a016b002b1566cc87d0b65104046f2d796a",
+  "annotated_utc": "2026-11-20T11:12:23.415168+00:00",
+  "annotation": {
+    "semantic_equivalence": "YES",
+    "material_differences": "",
+    "equivalence_rationale": "All three responses preserve the same decision-relevant evidence for the three criteria: they propose asking relevant questions to understand the issue, checking account/internal records and the screenshot to separate evidence from assumptions, and limiting requests to only what is needed. C adds slightly more detail about listening and not overstepping, but this does not change the operative commitments or materially alter the evidence under CSS02-C1, C2, or C3."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

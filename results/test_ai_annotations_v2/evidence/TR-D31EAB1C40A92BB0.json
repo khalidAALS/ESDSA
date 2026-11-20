@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-D31EAB1C40A92BB0",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0deeb033c185ee68016b002bf5394c87d08342b63d91654670",
+  "annotated_utc": "2026-11-20T11:16:07.316665+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "SWE02-C1",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I’d keep scaling the workers and concurrency until the queue clears, and only check logs or traces if that still doesn’t work.",
+        "rationale": "This explicitly deprioritizes using logs or traces as technical evidence and relies first on more scaling, which does not demonstrate identifying appropriate evidence for investigating the failure."
+      },
+      {
+        "criterion_id": "SWE02-C2",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "passage": "",
+        "rationale": "The answer suggests a throughput-first assumption, but it does not clearly propose checks that would distinguish between competing causes such as downstream slowness, errors, lock contention, or external dependency issues. It mainly describes increasing capacity and deferring investigation."
+      },
+      {
+        "criterion_id": "SWE02-C3",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "passage": "",
+        "rationale": "The answer does not connect any observed data to a diagnostic conclusion. It mentions the backlog as 'mainly a throughput problem' as an assumption, but offers no evidence-based interpretation or conclusion drawn from observations."
+      }
+    ],
+    "annotation_notes": ""
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

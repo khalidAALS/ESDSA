@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-FCE4760ECC5E1EE6",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0f20bbf1baf50337016b000bc5ef4c87d09a3c7fd45c5db1a7",
+  "annotated_utc": "2026-11-20T08:58:47.845363+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "CSS01-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d confirm whether the issue is missing confirmation, whether the order exists, and what the unfamiliar address is tied to.",
+        "rationale": "This explicitly identifies and clarifies the different possible problems the customer is experiencing."
+      },
+      {
+        "criterion_id": "CSS01-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "Then I’d check the order record and any address changes to see if this is a delivery problem, a failed order, or a possible account issue.",
+        "rationale": "This shows the candidate is determining what service/outcome is affected by the issue, including delivery, order placement, and account status."
+      },
+      {
+        "criterion_id": "CSS01-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "then summarize the problem back to the customer before acting.",
+        "rationale": "This explicitly states that the candidate would summarize the issue before selecting a resolution."
+      }
+    ],
+    "annotation_notes": ""
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

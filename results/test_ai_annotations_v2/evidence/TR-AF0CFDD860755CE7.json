@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-AF0CFDD860755CE7",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0e05c1ecd8bbcd7b016b002a07490c87d0bda7379fc35a27e2",
+  "annotated_utc": "2026-11-20T11:07:53.444688+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "CSS01-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d listen to both sides and make sure I understand the timeline of the access change. I’d ask a few questions about when the restriction was noticed and who made the update",
+        "rationale": "This explicitly shows the candidate clarifying the issue by gathering facts about what changed and when, which establishes what problem is being experienced."
+      },
+      {
+        "criterion_id": "CSS01-C2",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "passage": "",
+        "rationale": "The answer identifies that access changed, but it does not clearly establish the customer's affected service or outcome beyond the general shared subscription access loss. It does not specify who is impacted or what concrete service consequence is being assessed."
+      },
+      {
+        "criterion_id": "CSS01-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d document the competing accounts carefully. From there I’d pass it on for review so the team can determine what happened and take the appropriate action.",
+        "rationale": "This shows the candidate defining the issue by documenting the competing versions and framing the matter for review before resolution, which indicates summarising the problem before selecting an action."
+      }
+    ],
+    "annotation_notes": "Criterion C2 remains under-supported because the response focuses on disagreement and timeline rather than the specific affected service or outcome."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-FC4F21A18F109AB3",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0637209da8595014016b00103ae4ec87d0914e4658a661b404",
+  "annotated_utc": "2026-11-20T09:17:49.451204+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "CSS02-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "If the customer can’t give me the exact date, I’d ask them to dig through their emails or bank app until they find something that shows it.",
+        "rationale": "This shows the candidate would request specific information needed to investigate the cancellation timing and outcome, which is directly relevant to understanding the issue."
+      },
+      {
+        "criterion_id": "CSS02-C2",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I’d mostly look at the payment info and use that to figure out whether the cancellation went through.",
+        "rationale": "This indicates the candidate would treat payment information as sufficient to determine the outcome without clearly distinguishing confirmed facts from inference or checking other sources of evidence, which suggests reliance on assumption rather than source verification."
+      },
+      {
+        "criterion_id": "CSS02-C3",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "passage": "",
+        "rationale": "The answer does not clearly establish whether the information sought or used would be proportionate and authorised. It mentions payment info, emails, bank app, screenshots, and statements, but does not substantively address scope, permission, or appropriateness."
+      }
+    ],
+    "annotation_notes": "The response is limited and somewhat narrow, but only criterion C2 contains a clear enough problem to mark as negative evidence. For C3, the answer lacks enough detail to conclude either proportionate or disproportionate collection."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

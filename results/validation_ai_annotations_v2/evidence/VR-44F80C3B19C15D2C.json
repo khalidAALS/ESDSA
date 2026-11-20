@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-44F80C3B19C15D2C",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0b86c874732e8773016b00108507e887d08d47b39d04d4b6bb",
+  "annotated_utc": "2026-11-20T09:19:03.381733+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "CSS03-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d avoid promising a refund right away and first work out which resolution fits the facts. Since the description is brief and I can’t immediately see the purchase record, I’d confirm the basics: when it was bought, what stopped working, whether there’s troubleshooting already done, and whether the item is still within the return or warranty window. If the product is eligible, I’d follow the normal remedy path, whether that’s a replacement, repair, or refund depending on policy and the customer’s preference.",
+        "rationale": "The answer shows the candidate weighing the available evidence and selecting a resolution based on eligibility and facts rather than defaulting to a refund."
+      },
+      {
+        "criterion_id": "CSS03-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "If the case looks like an exception or the record remains unclear, I’d escalate it for approval rather than guessing or bypassing the process.",
+        "rationale": "This explicitly shows respect for authorization and process constraints by seeking approval instead of acting outside policy."
+      },
+      {
+        "criterion_id": "CSS03-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "Since the description is brief and I can’t immediately see the purchase record, I’d confirm the basics: when it was bought, what stopped working, whether there’s troubleshooting already done, and whether the item is still within the return or warranty window.",
+        "rationale": "The candidate recognizes that more information is needed and describes gathering it before deciding, which demonstrates uncertainty handling."
+      }
+    ],
+    "annotation_notes": ""
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

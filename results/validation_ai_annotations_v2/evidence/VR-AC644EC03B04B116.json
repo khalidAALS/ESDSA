@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-AC644EC03B04B116",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0dc19e57589c70c6016b0010400ad087d087cb2c866a66321c",
+  "annotated_utc": "2026-11-20T09:17:53.958629+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "OPS02-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "Repeated discrepancies could mean there’s something in the process that needs checking",
+        "rationale": "The candidate identifies a plausible operational risk in context: a process issue behind repeated stock discrepancies."
+      },
+      {
+        "criterion_id": "OPS02-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "but I’d want a bit more detail before saying how serious it is.",
+        "rationale": "The candidate explicitly notes uncertainty and withholds judgment on severity until more information is available, which shows consideration of likelihood/impact."
+      },
+      {
+        "criterion_id": "OPS02-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "If it kept happening or got worse, I’d raise it with the supervisor and get another set of eyes on it. For now, I’d make sure it’s being tracked and monitored properly.",
+        "rationale": "The candidate proposes a proportionate response: monitor the issue, and escalate if it persists or worsens."
+      }
+    ],
+    "annotation_notes": ""
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

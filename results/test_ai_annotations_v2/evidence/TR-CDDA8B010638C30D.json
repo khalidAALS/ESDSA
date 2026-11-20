@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-CDDA8B010638C30D",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0721a84018a56220016b002988c9c487d0b087eaac84461e28",
+  "annotated_utc": "2026-11-20T11:05:47.080337+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "SWE04-C1",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "rather than rerunning the failing case",
+        "rationale": "The candidate explicitly says they would not rerun the failing case, which contradicts the criterion of testing whether the reported failure is resolved."
+      },
+      {
+        "criterion_id": "SWE04-C2",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "or branching into the refund and discount paths before deployment",
+        "rationale": "The candidate explicitly avoids checking the refund and discount paths, even though the scenario highlights these as previously working behaviours that could be affected, so this materially contradicts regression consideration."
+      },
+      {
+        "criterion_id": "SWE04-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "Any broader issues can be handled once customers are no longer seeing the main error, and then we can patch anything else that shows up.",
+        "rationale": "The candidate does state a next action based on their assessment: deploy the patch first, then handle broader issues afterward. This shows an outcome decision, even though the decision is not well supported by verification."
+      }
+    ],
+    "annotation_notes": "The answer emphasizes urgency and limited verification. It provides explicit negative evidence for targeted verification and regression consideration, while still expressing a decision about what happens next."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

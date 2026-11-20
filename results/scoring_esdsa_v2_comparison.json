@@ -1,0 +1,1823 @@
+{
+  "dataset": "108 synthetic development responses",
+  "reference_status": "AI-assisted provisional",
+  "full_sample": {
+    "scoring_only": {
+      "total": 108,
+      "actionable": 79,
+      "coverage": 0.7314814814814815,
+      "disagreements": 8,
+      "disagreement_rate": 0.10126582278481013,
+      "unsupported_advances": 6,
+      "deferrals_against_actionable_reference": 19,
+      "distribution": {
+        "DEFER": 29,
+        "ADVANCE": 58,
+        "DO_NOT_ADVANCE": 21
+      }
+    },
+    "evidence_aware": {
+      "total": 108,
+      "actionable": 105,
+      "coverage": 0.9722222222222222,
+      "disagreements": 15,
+      "disagreement_rate": 0.14285714285714285,
+      "unsupported_advances": 12,
+      "deferrals_against_actionable_reference": 0,
+      "distribution": {
+        "DO_NOT_ADVANCE": 36,
+        "ADVANCE": 69,
+        "DEFER": 3
+      }
+    },
+    "integrated_esdsa_v2": {
+      "total": 108,
+      "actionable": 100,
+      "coverage": 0.9259259259259259,
+      "disagreements": 13,
+      "disagreement_rate": 0.13,
+      "unsupported_advances": 10,
+      "deferrals_against_actionable_reference": 4,
+      "distribution": {
+        "DO_NOT_ADVANCE": 34,
+        "ADVANCE": 66,
+        "DEFER": 8
+      }
+    }
+  },
+  "on_esdsa_retained_cases": {
+    "scoring_only": {
+      "total": 100,
+      "actionable": 77,
+      "coverage": 0.77,
+      "disagreements": 8,
+      "disagreement_rate": 0.1038961038961039,
+      "unsupported_advances": 6,
+      "deferrals_against_actionable_reference": 17,
+      "distribution": {
+        "DEFER": 23,
+        "ADVANCE": 57,
+        "DO_NOT_ADVANCE": 20
+      }
+    },
+    "evidence_aware": {
+      "total": 100,
+      "actionable": 100,
+      "coverage": 1.0,
+      "disagreements": 13,
+      "disagreement_rate": 0.13,
+      "unsupported_advances": 10,
+      "deferrals_against_actionable_reference": 0,
+      "distribution": {
+        "DO_NOT_ADVANCE": 34,
+        "ADVANCE": 66
+      }
+    },
+    "integrated_esdsa_v2": {
+      "total": 100,
+      "actionable": 100,
+      "coverage": 1.0,
+      "disagreements": 13,
+      "disagreement_rate": 0.13,
+      "unsupported_advances": 10,
+      "deferrals_against_actionable_reference": 0,
+      "distribution": {
+        "DO_NOT_ADVANCE": 34,
+        "ADVANCE": 66
+      }
+    }
+  },
+  "both_actionable_cases": {
+    "scoring_only": {
+      "total": 77,
+      "actionable": 77,
+      "coverage": 1.0,
+      "disagreements": 8,
+      "disagreement_rate": 0.1038961038961039,
+      "unsupported_advances": 6,
+      "deferrals_against_actionable_reference": 0,
+      "distribution": {
+        "ADVANCE": 57,
+        "DO_NOT_ADVANCE": 20
+      }
+    },
+    "evidence_aware": {
+      "total": 77,
+      "actionable": 77,
+      "coverage": 1.0,
+      "disagreements": 7,
+      "disagreement_rate": 0.09090909090909091,
+      "unsupported_advances": 5,
+      "deferrals_against_actionable_reference": 0,
+      "distribution": {
+        "ADVANCE": 56,
+        "DO_NOT_ADVANCE": 21
+      }
+    },
+    "integrated_esdsa_v2": {
+      "total": 77,
+      "actionable": 77,
+      "coverage": 1.0,
+      "disagreements": 7,
+      "disagreement_rate": 0.09090909090909091,
+      "unsupported_advances": 5,
+      "deferrals_against_actionable_reference": 0,
+      "distribution": {
+        "ADVANCE": 56,
+        "DO_NOT_ADVANCE": 21
+      }
+    }
+  },
+  "on_scoring_retained_cases": {
+    "scoring_only": {
+      "total": 79,
+      "actionable": 79,
+      "coverage": 1.0,
+      "disagreements": 8,
+      "disagreement_rate": 0.10126582278481013,
+      "unsupported_advances": 6,
+      "deferrals_against_actionable_reference": 0,
+      "distribution": {
+        "ADVANCE": 58,
+        "DO_NOT_ADVANCE": 21
+      }
+    },
+    "evidence_aware": {
+      "total": 79,
+      "actionable": 79,
+      "coverage": 1.0,
+      "disagreements": 7,
+      "disagreement_rate": 0.08860759493670886,
+      "unsupported_advances": 5,
+      "deferrals_against_actionable_reference": 0,
+      "distribution": {
+        "ADVANCE": 57,
+        "DO_NOT_ADVANCE": 22
+      }
+    },
+    "integrated_esdsa_v2": {
+      "total": 79,
+      "actionable": 77,
+      "coverage": 0.9746835443037974,
+      "disagreements": 7,
+      "disagreement_rate": 0.09090909090909091,
+      "unsupported_advances": 5,
+      "deferrals_against_actionable_reference": 2,
+      "distribution": {
+        "ADVANCE": 56,
+        "DO_NOT_ADVANCE": 21,
+        "DEFER": 2
+      }
+    }
+  },
+  "paired_comparison": {
+    "both_actionable_count": 77,
+    "scoring_wrong_esdsa_correct": 1,
+    "scoring_correct_esdsa_wrong": 0,
+    "both_wrong": 7,
+    "scoring_defers_esdsa_acts": 23,
+    "esdsa_defers_scoring_acts": 2
+  },
+  "random_matched_count_sensitivity": {
+    "scoring_actionable_count": 79,
+    "esdsa_actionable_pool": 100,
+    "draws": 10000,
+    "mean_esdsa_disagreements": 10.2411,
+    "percentile_2_5": 7,
+    "percentile_97_5": 13,
+    "fraction_esdsa_fewer_disagreements_than_scoring": 0.0318,
+    "fraction_esdsa_equal_disagreements_to_scoring": 0.0767,
+    "warning": "Matched-count random sampling is descriptive. It does not compare the same retained cases or represent a deployable policy. Its percentiles are not confidence intervals."
+  },
+  "all_records": [
+    {
+      "response_id": "ESDSA-SWE02-01-E3L2",
+      "group": "GROUP-001",
+      "reference_decision": "DO_NOT_ADVANCE",
+      "semantic_equivalence": "YES",
+      "scoring_decision": "DEFER",
+      "scoring_scores": [
+        3,
+        1,
+        2
+      ],
+      "scoring_mean": 2.0,
+      "evidence_aware_decision": "DO_NOT_ADVANCE",
+      "esdsa_v2_decision": "DO_NOT_ADVANCE"
+    },
+    {
+      "response_id": "ESDSA-SWE02-01-E3L3",
+      "group": "GROUP-001",
+      "reference_decision": "DO_NOT_ADVANCE",
+      "semantic_equivalence": "YES",
+      "scoring_decision": "DEFER",
+      "scoring_scores": [
+        3,
+        1,
+        2
+      ],
+      "scoring_mean": 2.0,
+      "evidence_aware_decision": "DO_NOT_ADVANCE",
+      "esdsa_v2_decision": "DO_NOT_ADVANCE"
+    },
+    {
+      "response_id": "ESDSA-SWE02-01-E3L1",
+      "group": "GROUP-001",
+      "reference_decision": "DO_NOT_ADVANCE",
+      "semantic_equivalence": "YES",
+      "scoring_decision": "DEFER",
+      "scoring_scores": [
+        3,
+        2,
+        2
+      ],
+      "scoring_mean": 2.3333333333333335,
+      "evidence_aware_decision": "DO_NOT_ADVANCE",
+      "esdsa_v2_decision": "DO_NOT_ADVANCE"
+    },
+    {
+      "response_id": "ESDSA-CSS01-01-E1L3",
+      "group": "GROUP-002",
+      "reference_decision": "ADVANCE",
+      "semantic_equivalence": "YES",
+      "scoring_decision": "ADVANCE",
+      "scoring_scores": [
+        4,
+        4,
+        4
+      ],
+      "scoring_mean": 4.0,
+      "evidence_aware_decision": "ADVANCE",
+      "esdsa_v2_decision": "ADVANCE"
+    },
+    {
+      "response_id": "ESDSA-CSS01-01-E1L2",
+      "group": "GROUP-002",
+      "reference_decision": "ADVANCE",
+      "semantic_equivalence": "YES",
+      "scoring_decision": "ADVANCE",
+      "scoring_scores": [
+        4,
+        4,
+        4
+      ],
+      "scoring_mean": 4.0,
+      "evidence_aware_decision": "ADVANCE",
+      "esdsa_v2_decision": "ADVANCE"
+    },
+    {
+      "response_id": "ESDSA-CSS01-01-E1L1",
+      "group": "GROUP-002",
+      "reference_decision": "ADVANCE",
+      "semantic_equivalence": "YES",
+      "scoring_decision": "ADVANCE",
+      "scoring_scores": [
+        4,
+        4,
+        4
+      ],
+      "scoring_mean": 4.0,
+      "evidence_aware_decision": "ADVANCE",
+      "esdsa_v2_decision": "ADVANCE"
+    },
+    {
+      "response_id": "ESDSA-OPS03-01-E1L2",
+      "group": "GROUP-003",
+      "reference_decision": "ADVANCE",
+      "semantic_equivalence": "YES",
+      "scoring_decision": "ADVANCE",
+      "scoring_scores": [
+        4,
+        4,
+        4
+      ],
+      "scoring_mean": 4.0,
+      "evidence_aware_decision": "ADVANCE",
+      "esdsa_v2_decision": "ADVANCE"
+    },
+    {
+      "response_id": "ESDSA-OPS03-01-E1L3",
+      "group": "GROUP-003",
+      "reference_decision": "ADVANCE",
+      "semantic_equivalence": "YES",
+      "scoring_decision": "ADVANCE",
+      "scoring_scores": [
+        4,
+        3,
+        4
+      ],
+      "scoring_mean": 3.6666666666666665,
+      "evidence_aware_decision": "ADVANCE",
+      "esdsa_v2_decision": "ADVANCE"
+    },
+    {
+      "response_id": "ESDSA-OPS03-01-E1L1",
+      "group": "GROUP-003",
+      "reference_decision": "ADVANCE",
+      "semantic_equivalence": "YES",
+      "scoring_decision": "ADVANCE",
+      "scoring_scores": [
+        4,
+        4,
+        4
+      ],
+      "scoring_mean": 4.0,
+      "evidence_aware_decision": "ADVANCE",
+      "esdsa_v2_decision": "ADVANCE"
+    },
+    {
+      "response_id": "ESDSA-CSS03-02-E2L1",
+      "group": "GROUP-004",
+      "reference_decision": "ADVANCE",
+      "semantic_equivalence": "NO",
+      "scoring_decision": "ADVANCE",
+      "scoring_scores": [
+        3,
+        3,
+        4
+      ],
+      "scoring_mean": 3.3333333333333335,
+      "evidence_aware_decision": "ADVANCE",
+      "esdsa_v2_decision": "ADVANCE"
+    },
+    {
+      "response_id": "ESDSA-CSS03-02-E2L2",
+      "group": "GROUP-004",
+      "reference_decision": "DEFER",
+      "semantic_equivalence": "NO",
+      "scoring_decision": "ADVANCE",
+      "scoring_scores": [
+        3,
+        3,
+        4
+      ],
+      "scoring_mean": 3.3333333333333335,
+      "evidence_aware_decision": "ADVANCE",
+      "esdsa_v2_decision": "ADVANCE"
+    },
+    {
+      "response_id": "ESDSA-CSS03-02-E2L3",
+      "group": "GROUP-004",
+      "reference_decision": "DEFER",
+      "semantic_equivalence": "NO",
+      "scoring_decision": "ADVANCE",
+      "scoring_scores": [
+        3,
+        3,
+        4
+      ],
+      "scoring_mean": 3.3333333333333335,
+      "evidence_aware_decision": "ADVANCE",
+      "esdsa_v2_decision": "ADVANCE"
+    },
+    {
+      "response_id": "ESDSA-SWE02-01-E2L3",
+      "group": "GROUP-005",
+      "reference_decision": "ADVANCE",
+      "semantic_equivalence": "YES",
+      "scoring_decision": "ADVANCE",
+      "scoring_scores": [
+        4,
+        3,
+        2
+      ],
+      "scoring_mean": 3.0,
+      "evidence_aware_decision": "ADVANCE",
+      "esdsa_v2_decision": "ADVANCE"
+    },
+    {
+      "response_id": "ESDSA-SWE02-01-E2L2",
+      "group": "GROUP-005",
+      "reference_decision": "ADVANCE",
+      "semantic_equivalence": "YES",
+      "scoring_decision": "ADVANCE",
+      "scoring_scores": [
+        4,
+        3,
+        3
+      ],
+      "scoring_mean": 3.3333333333333335,
+      "evidence_aware_decision": "ADVANCE",
+      "esdsa_v2_decision": "ADVANCE"
+    },
+    {
+      "response_id": "ESDSA-SWE02-01-E2L1",
+      "group": "GROUP-005",
+      "reference_decision": "ADVANCE",
+      "semantic_equivalence": "YES",
+      "scoring_decision": "ADVANCE",
+      "scoring_scores": [
+        4,
+        4,
+        3
+      ],
+      "scoring_mean": 3.6666666666666665,
+      "evidence_aware_decision": "ADVANCE",
+      "esdsa_v2_decision": "ADVANCE"
+    },
+    {
+      "response_id": "ESDSA-CSS03-02-E3L3",
+      "group": "GROUP-006",
+      "reference_decision": "DO_NOT_ADVANCE",
+      "semantic_equivalence": "YES",
+      "scoring_decision": "DO_NOT_ADVANCE",
+      "scoring_scores": [
+        2,
+        1,
+        1
+      ],
+      "scoring_mean": 1.3333333333333333,
+      "evidence_aware_decision": "DO_NOT_ADVANCE",
+      "esdsa_v2_decision": "DO_NOT_ADVANCE"
+    },
+    {
+      "response_id": "ESDSA-CSS03-02-E3L1",
+      "group": "GROUP-006",
+      "reference_decision": "DO_NOT_ADVANCE",
+      "semantic_equivalence": "YES",
+      "scoring_decision": "DO_NOT_ADVANCE",
+      "scoring_scores": [
+        2,
+        1,
+        1
+      ],
+      "scoring_mean": 1.3333333333333333,
+      "evidence_aware_decision": "DO_NOT_ADVANCE",
+      "esdsa_v2_decision": "DO_NOT_ADVANCE"
+    },
+    {
+      "response_id": "ESDSA-CSS03-02-E3L2",
+      "group": "GROUP-006",
+      "reference_decision": "DO_NOT_ADVANCE",
+      "semantic_equivalence": "YES",
+      "scoring_decision": "DO_NOT_ADVANCE",
+      "scoring_scores": [
+        2,
+        1,
+        1
+      ],
+      "scoring_mean": 1.3333333333333333,
+      "evidence_aware_decision": "DO_NOT_ADVANCE",
+      "esdsa_v2_decision": "DO_NOT_ADVANCE"
+    },
+    {
+      "response_id": "ESDSA-OPS04-01-E1L1",
+      "group": "GROUP-007",
+      "reference_decision": "ADVANCE",
+      "semantic_equivalence": "YES",
+      "scoring_decision": "ADVANCE",
+      "scoring_scores": [
+        4,
+        4,
+        4
+      ],
+      "scoring_mean": 4.0,
+      "evidence_aware_decision": "ADVANCE",
+      "esdsa_v2_decision": "ADVANCE"
+    },
+    {
+      "response_id": "ESDSA-OPS04-01-E1L2",
+      "group": "GROUP-007",
+      "reference_decision": "ADVANCE",
+      "semantic_equivalence": "YES",
+      "scoring_decision": "ADVANCE",
+      "scoring_scores": [
+        4,
+        4,
+        4
+      ],
+      "scoring_mean": 4.0,
+      "evidence_aware_decision": "ADVANCE",
+      "esdsa_v2_decision": "ADVANCE"
+    },
+    {
+      "response_id": "ESDSA-OPS04-01-E1L3",
+      "group": "GROUP-007",
+      "reference_decision": "ADVANCE",
+      "semantic_equivalence": "YES",
+      "scoring_decision": "ADVANCE",
+      "scoring_scores": [
+        3,
+        3,
+        3
+      ],
+      "scoring_mean": 3.0,
+      "evidence_aware_decision": "ADVANCE",
+      "esdsa_v2_decision": "ADVANCE"
+    },
+    {
+      "response_id": "ESDSA-OPS02-03-E1L2",
+      "group": "GROUP-008",
+      "reference_decision": "ADVANCE",
+      "semantic_equivalence": "YES",
+      "scoring_decision": "ADVANCE",
+      "scoring_scores": [
+        4,
+        4,
+        4
+      ],
+      "scoring_mean": 4.0,
+      "evidence_aware_decision": "ADVANCE",
+      "esdsa_v2_decision": "ADVANCE"
+    },
+    {
+      "response_id": "ESDSA-OPS02-03-E1L3",
+      "group": "GROUP-008",
+      "reference_decision": "ADVANCE",
+      "semantic_equivalence": "YES",
+      "scoring_decision": "ADVANCE",
+      "scoring_scores": [
+        4,
+        4,
+        4
+      ],
+      "scoring_mean": 4.0,
+      "evidence_aware_decision": "ADVANCE",
+      "esdsa_v2_decision": "ADVANCE"
+    },
+    {
+      "response_id": "ESDSA-OPS02-03-E1L1",
+      "group": "GROUP-008",
+      "reference_decision": "ADVANCE",
+      "semantic_equivalence": "YES",
+      "scoring_decision": "ADVANCE",
+      "scoring_scores": [
+        4,
+        4,
+        4
+      ],
+      "scoring_mean": 4.0,
+      "evidence_aware_decision": "ADVANCE",
+      "esdsa_v2_decision": "ADVANCE"
+    },
+    {
+      "response_id": "ESDSA-SWE01-01-E2L3",
+      "group": "GROUP-009",
+      "reference_decision": "ADVANCE",
+      "semantic_equivalence": "UNCERTAIN",
+      "scoring_decision": "DEFER",
+      "scoring_scores": [
+        3,
+        3,
+        2
+      ],
+      "scoring_mean": 2.6666666666666665,
+      "evidence_aware_decision": "ADVANCE",
+      "esdsa_v2_decision": "ADVANCE"
+    },
+    {
+      "response_id": "ESDSA-SWE01-01-E2L1",
+      "group": "GROUP-009",
+      "reference_decision": "ADVANCE",
+      "semantic_equivalence": "UNCERTAIN",
+      "scoring_decision": "ADVANCE",
+      "scoring_scores": [
+        4,
+        3,
+        4
+      ],
+      "scoring_mean": 3.6666666666666665,
+      "evidence_aware_decision": "ADVANCE",
+      "esdsa_v2_decision": "ADVANCE"
+    },
+    {
+      "response_id": "ESDSA-SWE01-01-E2L2",
+      "group": "GROUP-009",
+      "reference_decision": "ADVANCE",
+      "semantic_equivalence": "UNCERTAIN",
+      "scoring_decision": "ADVANCE",
+      "scoring_scores": [
+        3,
+        3,
+        3
+      ],
+      "scoring_mean": 3.0,
+      "evidence_aware_decision": "ADVANCE",
+      "esdsa_v2_decision": "ADVANCE"
+    },
+    {
+      "response_id": "ESDSA-SWE04-01-E1L2",
+      "group": "GROUP-010",
+      "reference_decision": "ADVANCE",
+      "semantic_equivalence": "YES",
+      "scoring_decision": "ADVANCE",
+      "scoring_scores": [
+        4,
+        4,
+        4
+      ],
+      "scoring_mean": 4.0,
+      "evidence_aware_decision": "ADVANCE",
+      "esdsa_v2_decision": "ADVANCE"
+    },
+    {
+      "response_id": "ESDSA-SWE04-01-E1L3",
+      "group": "GROUP-010",
+      "reference_decision": "ADVANCE",
+      "semantic_equivalence": "YES",
+      "scoring_decision": "ADVANCE",
+      "scoring_scores": [
+        4,
+        4,
+        3
+      ],
+      "scoring_mean": 3.6666666666666665,
+      "evidence_aware_decision": "ADVANCE",
+      "esdsa_v2_decision": "ADVANCE"
+    },
+    {
+      "response_id": "ESDSA-SWE04-01-E1L1",
+      "group": "GROUP-010",
+      "reference_decision": "ADVANCE",
+      "semantic_equivalence": "YES",
+      "scoring_decision": "ADVANCE",
+      "scoring_scores": [
+        4,
+        4,
+        4
+      ],
+      "scoring_mean": 4.0,
+      "evidence_aware_decision": "ADVANCE",
+      "esdsa_v2_decision": "ADVANCE"
+    },
+    {
+      "response_id": "ESDSA-CSS02-02-E2L3",
+      "group": "GROUP-011",
+      "reference_decision": "DEFER",
+      "semantic_equivalence": "NO",
+      "scoring_decision": "ADVANCE",
+      "scoring_scores": [
+        3,
+        3,
+        4
+      ],
+      "scoring_mean": 3.3333333333333335,
+      "evidence_aware_decision": "ADVANCE",
+      "esdsa_v2_decision": "ADVANCE"
+    },
+    {
+      "response_id": "ESDSA-CSS02-02-E2L1",
+      "group": "GROUP-011",
+      "reference_decision": "DEFER",
+      "semantic_equivalence": "NO",
+      "scoring_decision": "ADVANCE",
+      "scoring_scores": [
+        3,
+        3,
+        4
+      ],
+      "scoring_mean": 3.3333333333333335,
+      "evidence_aware_decision": "ADVANCE",
+      "esdsa_v2_decision": "ADVANCE"
+    },
+    {
+      "response_id": "ESDSA-CSS02-02-E2L2",
+      "group": "GROUP-011",
+      "reference_decision": "DO_NOT_ADVANCE",
+      "semantic_equivalence": "NO",
+      "scoring_decision": "ADVANCE",
+      "scoring_scores": [
+        3,
+        2,
+        4
+      ],
+      "scoring_mean": 3.0,
+      "evidence_aware_decision": "DO_NOT_ADVANCE",
+      "esdsa_v2_decision": "DO_NOT_ADVANCE"
+    },
+    {
+      "response_id": "ESDSA-SWE04-01-E3L1",
+      "group": "GROUP-012",
+      "reference_decision": "DO_NOT_ADVANCE",
+      "semantic_equivalence": "YES",
+      "scoring_decision": "DEFER",
+      "scoring_scores": [
+        3,
+        1,
+        2
+      ],
+      "scoring_mean": 2.0,
+      "evidence_aware_decision": "DO_NOT_ADVANCE",
+      "esdsa_v2_decision": "DO_NOT_ADVANCE"
+    },
+    {
+      "response_id": "ESDSA-SWE04-01-E3L3",
+      "group": "GROUP-012",
+      "reference_decision": "DO_NOT_ADVANCE",
+      "semantic_equivalence": "YES",
+      "scoring_decision": "DEFER",
+      "scoring_scores": [
+        4,
+        1,
+        3
+      ],
+      "scoring_mean": 2.6666666666666665,
+      "evidence_aware_decision": "DO_NOT_ADVANCE",
+      "esdsa_v2_decision": "DO_NOT_ADVANCE"
+    },
+    {
+      "response_id": "ESDSA-SWE04-01-E3L2",
+      "group": "GROUP-012",
+      "reference_decision": "DO_NOT_ADVANCE",
+      "semantic_equivalence": "YES",
+      "scoring_decision": "DEFER",
+      "scoring_scores": [
+        4,
+        1,
+        2
+      ],
+      "scoring_mean": 2.3333333333333335,
+      "evidence_aware_decision": "DO_NOT_ADVANCE",
+      "esdsa_v2_decision": "DO_NOT_ADVANCE"
+    },
+    {
+      "response_id": "ESDSA-SWE01-01-E3L3",
+      "group": "GROUP-013",
+      "reference_decision": "DEFER",
+      "semantic_equivalence": "UNCERTAIN",
+      "scoring_decision": "DO_NOT_ADVANCE",
+      "scoring_scores": [
+        1,
+        1,
+        2
+      ],
+      "scoring_mean": 1.3333333333333333,
+      "evidence_aware_decision": "DO_NOT_ADVANCE",
+      "esdsa_v2_decision": "DO_NOT_ADVANCE"
+    },
+    {
+      "response_id": "ESDSA-SWE01-01-E3L2",
+      "group": "GROUP-013",
+      "reference_decision": "DEFER",
+      "semantic_equivalence": "UNCERTAIN",
+      "scoring_decision": "DEFER",
+      "scoring_scores": [
+        2,
+        1,
+        2
+      ],
+      "scoring_mean": 1.6666666666666667,
+      "evidence_aware_decision": "DO_NOT_ADVANCE",
+      "esdsa_v2_decision": "DO_NOT_ADVANCE"
+    },
+    {
+      "response_id": "ESDSA-SWE01-01-E3L1",
+      "group": "GROUP-013",
+      "reference_decision": "DEFER",
+      "semantic_equivalence": "UNCERTAIN",
+      "scoring_decision": "DO_NOT_ADVANCE",
+      "scoring_scores": [
+        1,
+        1,
+        2
+      ],
+      "scoring_mean": 1.3333333333333333,
+      "evidence_aware_decision": "DO_NOT_ADVANCE",
+      "esdsa_v2_decision": "DO_NOT_ADVANCE"
+    },
+    {
+      "response_id": "ESDSA-OPS01-01-E2L1",
+      "group": "GROUP-014",
+      "reference_decision": "ADVANCE",
+      "semantic_equivalence": "UNCERTAIN",
+      "scoring_decision": "DEFER",
+      "scoring_scores": [
+        3,
+        2,
+        3
+      ],
+      "scoring_mean": 2.6666666666666665,
+      "evidence_aware_decision": "ADVANCE",
+      "esdsa_v2_decision": "ADVANCE"
+    },
+    {
+      "response_id": "ESDSA-OPS01-01-E2L2",
+      "group": "GROUP-014",
+      "reference_decision": "ADVANCE",
+      "semantic_equivalence": "UNCERTAIN",
+      "scoring_decision": "DEFER",
+      "scoring_scores": [
+        3,
+        2,
+        3
+      ],
+      "scoring_mean": 2.6666666666666665,
+      "evidence_aware_decision": "ADVANCE",
+      "esdsa_v2_decision": "ADVANCE"
+    },
+    {
+      "response_id": "ESDSA-OPS01-01-E2L3",
+      "group": "GROUP-014",
+      "reference_decision": "ADVANCE",
+      "semantic_equivalence": "UNCERTAIN",
+      "scoring_decision": "DEFER",
+      "scoring_scores": [
+        3,
+        2,
+        3
+      ],
+      "scoring_mean": 2.6666666666666665,
+      "evidence_aware_decision": "ADVANCE",
+      "esdsa_v2_decision": "ADVANCE"
+    },
+    {
+      "response_id": "ESDSA-CSS02-02-E3L2",
+      "group": "GROUP-015",
+      "reference_decision": "DO_NOT_ADVANCE",
+      "semantic_equivalence": "YES",
+      "scoring_decision": "DEFER",
+      "scoring_scores": [
+        3,
+        2,
+        1
+      ],
+      "scoring_mean": 2.0,
+      "evidence_aware_decision": "DO_NOT_ADVANCE",
+      "esdsa_v2_decision": "DO_NOT_ADVANCE"
+    },
+    {
+      "response_id": "ESDSA-CSS02-02-E3L3",
+      "group": "GROUP-015",
+      "reference_decision": "DO_NOT_ADVANCE",
+      "semantic_equivalence": "YES",
+      "scoring_decision": "DO_NOT_ADVANCE",
+      "scoring_scores": [
+        2,
+        1,
+        1
+      ],
+      "scoring_mean": 1.3333333333333333,
+      "evidence_aware_decision": "DO_NOT_ADVANCE",
+      "esdsa_v2_decision": "DO_NOT_ADVANCE"
+    },
+    {
+      "response_id": "ESDSA-CSS02-02-E3L1",
+      "group": "GROUP-015",
+      "reference_decision": "DO_NOT_ADVANCE",
+      "semantic_equivalence": "YES",
+      "scoring_decision": "DO_NOT_ADVANCE",
+      "scoring_scores": [
+        2,
+        1,
+        1
+      ],
+      "scoring_mean": 1.3333333333333333,
+      "evidence_aware_decision": "DO_NOT_ADVANCE",
+      "esdsa_v2_decision": "DO_NOT_ADVANCE"
+    },
+    {
+      "response_id": "ESDSA-CSS04-02-E3L2",
+      "group": "GROUP-016",
+      "reference_decision": "DO_NOT_ADVANCE",
+      "semantic_equivalence": "UNCERTAIN",
+      "scoring_decision": "DO_NOT_ADVANCE",
+      "scoring_scores": [
+        2,
+        1,
+        1
+      ],
+      "scoring_mean": 1.3333333333333333,
+      "evidence_aware_decision": "DO_NOT_ADVANCE",
+      "esdsa_v2_decision": "DO_NOT_ADVANCE"
+    },
+    {
+      "response_id": "ESDSA-CSS04-02-E3L1",
+      "group": "GROUP-016",
+      "reference_decision": "DO_NOT_ADVANCE",
+      "semantic_equivalence": "UNCERTAIN",
+      "scoring_decision": "DEFER",
+      "scoring_scores": [
+        3,
+        1,
+        2
+      ],
+      "scoring_mean": 2.0,
+      "evidence_aware_decision": "DO_NOT_ADVANCE",
+      "esdsa_v2_decision": "DO_NOT_ADVANCE"
+    },
+    {
+      "response_id": "ESDSA-CSS04-02-E3L3",
+      "group": "GROUP-016",
+      "reference_decision": "DO_NOT_ADVANCE",
+      "semantic_equivalence": "UNCERTAIN",
+      "scoring_decision": "DEFER",
+      "scoring_scores": [
+        3,
+        2,
+        1
+      ],
+      "scoring_mean": 2.0,
+      "evidence_aware_decision": "DO_NOT_ADVANCE",
+      "esdsa_v2_decision": "DO_NOT_ADVANCE"
+    },
+    {
+      "response_id": "ESDSA-SWE03-01-E3L1",
+      "group": "GROUP-017",
+      "reference_decision": "DO_NOT_ADVANCE",
+      "semantic_equivalence": "YES",
+      "scoring_decision": "DEFER",
+      "scoring_scores": [
+        2,
+        2,
+        2
+      ],
+      "scoring_mean": 2.0,
+      "evidence_aware_decision": "ADVANCE",
+      "esdsa_v2_decision": "DEFER"
+    },
+    {
+      "response_id": "ESDSA-SWE03-01-E3L2",
+      "group": "GROUP-017",
+      "reference_decision": "DO_NOT_ADVANCE",
+      "semantic_equivalence": "YES",
+      "scoring_decision": "DEFER",
+      "scoring_scores": [
+        2,
+        2,
+        1
+      ],
+      "scoring_mean": 1.6666666666666667,
+      "evidence_aware_decision": "DO_NOT_ADVANCE",
+      "esdsa_v2_decision": "DEFER"
+    },
+    {
+      "response_id": "ESDSA-SWE03-01-E3L3",
+      "group": "GROUP-017",
+      "reference_decision": "DO_NOT_ADVANCE",
+      "semantic_equivalence": "YES",
+      "scoring_decision": "DO_NOT_ADVANCE",
+      "scoring_scores": [
+        1,
+        1,
+        1
+      ],
+      "scoring_mean": 1.0,
+      "evidence_aware_decision": "DO_NOT_ADVANCE",
+      "esdsa_v2_decision": "DEFER"
+    },
+    {
+      "response_id": "ESDSA-OPS02-03-E2L1",
+      "group": "GROUP-018",
+      "reference_decision": "ADVANCE",
+      "semantic_equivalence": "NO",
+      "scoring_decision": "ADVANCE",
+      "scoring_scores": [
+        4,
+        4,
+        3
+      ],
+      "scoring_mean": 3.6666666666666665,
+      "evidence_aware_decision": "ADVANCE",
+      "esdsa_v2_decision": "DEFER"
+    },
+    {
+      "response_id": "ESDSA-OPS02-03-E2L3",
+      "group": "GROUP-018",
+      "reference_decision": "DEFER",
+      "semantic_equivalence": "NO",
+      "scoring_decision": "DEFER",
+      "scoring_scores": [
+        3,
+        3,
+        2
+      ],
+      "scoring_mean": 2.6666666666666665,
+      "evidence_aware_decision": "ADVANCE",
+      "esdsa_v2_decision": "ADVANCE"
+    },
+    {
+      "response_id": "ESDSA-OPS02-03-E2L2",
+      "group": "GROUP-018",
+      "reference_decision": "ADVANCE",
+      "semantic_equivalence": "NO",
+      "scoring_decision": "DEFER",
+      "scoring_scores": [
+        3,
+        3,
+        2
+      ],
+      "scoring_mean": 2.6666666666666665,
+      "evidence_aware_decision": "ADVANCE",
+      "esdsa_v2_decision": "ADVANCE"
+    },
+    {
+      "response_id": "ESDSA-CSS01-01-E2L3",
+      "group": "GROUP-019",
+      "reference_decision": "ADVANCE",
+      "semantic_equivalence": "YES",
+      "scoring_decision": "ADVANCE",
+      "scoring_scores": [
+        3,
+        3,
+        3
+      ],
+      "scoring_mean": 3.0,
+      "evidence_aware_decision": "ADVANCE",
+      "esdsa_v2_decision": "ADVANCE"
+    },
+    {
+      "response_id": "ESDSA-CSS01-01-E2L2",
+      "group": "GROUP-019",
+      "reference_decision": "ADVANCE",
+      "semantic_equivalence": "YES",
+      "scoring_decision": "ADVANCE",
+      "scoring_scores": [
+        3,
+        3,
+        3
+      ],
+      "scoring_mean": 3.0,
+      "evidence_aware_decision": "ADVANCE",
+      "esdsa_v2_decision": "ADVANCE"
+    },
+    {
+      "response_id": "ESDSA-CSS01-01-E2L1",
+      "group": "GROUP-019",
+      "reference_decision": "ADVANCE",
+      "semantic_equivalence": "YES",
+      "scoring_decision": "ADVANCE",
+      "scoring_scores": [
+        3,
+        3,
+        4
+      ],
+      "scoring_mean": 3.3333333333333335,
+      "evidence_aware_decision": "ADVANCE",
+      "esdsa_v2_decision": "ADVANCE"
+    },
+    {
+      "response_id": "ESDSA-CSS04-02-E2L3",
+      "group": "GROUP-020",
+      "reference_decision": "ADVANCE",
+      "semantic_equivalence": "YES",
+      "scoring_decision": "ADVANCE",
+      "scoring_scores": [
+        3,
+        4,
+        2
+      ],
+      "scoring_mean": 3.0,
+      "evidence_aware_decision": "ADVANCE",
+      "esdsa_v2_decision": "ADVANCE"
+    },
+    {
+      "response_id": "ESDSA-CSS04-02-E2L1",
+      "group": "GROUP-020",
+      "reference_decision": "ADVANCE",
+      "semantic_equivalence": "YES",
+      "scoring_decision": "ADVANCE",
+      "scoring_scores": [
+        4,
+        4,
+        3
+      ],
+      "scoring_mean": 3.6666666666666665,
+      "evidence_aware_decision": "ADVANCE",
+      "esdsa_v2_decision": "ADVANCE"
+    },
+    {
+      "response_id": "ESDSA-CSS04-02-E2L2",
+      "group": "GROUP-020",
+      "reference_decision": "ADVANCE",
+      "semantic_equivalence": "YES",
+      "scoring_decision": "ADVANCE",
+      "scoring_scores": [
+        4,
+        4,
+        3
+      ],
+      "scoring_mean": 3.6666666666666665,
+      "evidence_aware_decision": "ADVANCE",
+      "esdsa_v2_decision": "ADVANCE"
+    },
+    {
+      "response_id": "ESDSA-CSS02-02-E1L3",
+      "group": "GROUP-021",
+      "reference_decision": "ADVANCE",
+      "semantic_equivalence": "YES",
+      "scoring_decision": "ADVANCE",
+      "scoring_scores": [
+        3,
+        3,
+        4
+      ],
+      "scoring_mean": 3.3333333333333335,
+      "evidence_aware_decision": "ADVANCE",
+      "esdsa_v2_decision": "ADVANCE"
+    },
+    {
+      "response_id": "ESDSA-CSS02-02-E1L1",
+      "group": "GROUP-021",
+      "reference_decision": "ADVANCE",
+      "semantic_equivalence": "YES",
+      "scoring_decision": "ADVANCE",
+      "scoring_scores": [
+        4,
+        4,
+        4
+      ],
+      "scoring_mean": 4.0,
+      "evidence_aware_decision": "ADVANCE",
+      "esdsa_v2_decision": "ADVANCE"
+    },
+    {
+      "response_id": "ESDSA-CSS02-02-E1L2",
+      "group": "GROUP-021",
+      "reference_decision": "ADVANCE",
+      "semantic_equivalence": "YES",
+      "scoring_decision": "ADVANCE",
+      "scoring_scores": [
+        4,
+        4,
+        4
+      ],
+      "scoring_mean": 4.0,
+      "evidence_aware_decision": "ADVANCE",
+      "esdsa_v2_decision": "ADVANCE"
+    },
+    {
+      "response_id": "ESDSA-SWE02-01-E1L3",
+      "group": "GROUP-022",
+      "reference_decision": "ADVANCE",
+      "semantic_equivalence": "YES",
+      "scoring_decision": "ADVANCE",
+      "scoring_scores": [
+        4,
+        4,
+        3
+      ],
+      "scoring_mean": 3.6666666666666665,
+      "evidence_aware_decision": "ADVANCE",
+      "esdsa_v2_decision": "ADVANCE"
+    },
+    {
+      "response_id": "ESDSA-SWE02-01-E1L1",
+      "group": "GROUP-022",
+      "reference_decision": "ADVANCE",
+      "semantic_equivalence": "YES",
+      "scoring_decision": "ADVANCE",
+      "scoring_scores": [
+        4,
+        4,
+        4
+      ],
+      "scoring_mean": 4.0,
+      "evidence_aware_decision": "ADVANCE",
+      "esdsa_v2_decision": "ADVANCE"
+    },
+    {
+      "response_id": "ESDSA-SWE02-01-E1L2",
+      "group": "GROUP-022",
+      "reference_decision": "ADVANCE",
+      "semantic_equivalence": "YES",
+      "scoring_decision": "ADVANCE",
+      "scoring_scores": [
+        4,
+        4,
+        4
+      ],
+      "scoring_mean": 4.0,
+      "evidence_aware_decision": "ADVANCE",
+      "esdsa_v2_decision": "ADVANCE"
+    },
+    {
+      "response_id": "ESDSA-OPS04-01-E2L1",
+      "group": "GROUP-023",
+      "reference_decision": "DEFER",
+      "semantic_equivalence": "YES",
+      "scoring_decision": "DEFER",
+      "scoring_scores": [
+        3,
+        2,
+        2
+      ],
+      "scoring_mean": 2.3333333333333335,
+      "evidence_aware_decision": "ADVANCE",
+      "esdsa_v2_decision": "DEFER"
+    },
+    {
+      "response_id": "ESDSA-OPS04-01-E2L2",
+      "group": "GROUP-023",
+      "reference_decision": "DEFER",
+      "semantic_equivalence": "YES",
+      "scoring_decision": "DEFER",
+      "scoring_scores": [
+        3,
+        2,
+        2
+      ],
+      "scoring_mean": 2.3333333333333335,
+      "evidence_aware_decision": "DEFER",
+      "esdsa_v2_decision": "DEFER"
+    },
+    {
+      "response_id": "ESDSA-OPS04-01-E2L3",
+      "group": "GROUP-023",
+      "reference_decision": "DEFER",
+      "semantic_equivalence": "YES",
+      "scoring_decision": "DEFER",
+      "scoring_scores": [
+        2,
+        2,
+        2
+      ],
+      "scoring_mean": 2.0,
+      "evidence_aware_decision": "DEFER",
+      "esdsa_v2_decision": "DEFER"
+    },
+    {
+      "response_id": "ESDSA-SWE01-01-E1L3",
+      "group": "GROUP-024",
+      "reference_decision": "ADVANCE",
+      "semantic_equivalence": "YES",
+      "scoring_decision": "ADVANCE",
+      "scoring_scores": [
+        3,
+        3,
+        3
+      ],
+      "scoring_mean": 3.0,
+      "evidence_aware_decision": "ADVANCE",
+      "esdsa_v2_decision": "ADVANCE"
+    },
+    {
+      "response_id": "ESDSA-SWE01-01-E1L2",
+      "group": "GROUP-024",
+      "reference_decision": "ADVANCE",
+      "semantic_equivalence": "YES",
+      "scoring_decision": "ADVANCE",
+      "scoring_scores": [
+        4,
+        4,
+        4
+      ],
+      "scoring_mean": 4.0,
+      "evidence_aware_decision": "ADVANCE",
+      "esdsa_v2_decision": "ADVANCE"
+    },
+    {
+      "response_id": "ESDSA-SWE01-01-E1L1",
+      "group": "GROUP-024",
+      "reference_decision": "ADVANCE",
+      "semantic_equivalence": "YES",
+      "scoring_decision": "ADVANCE",
+      "scoring_scores": [
+        4,
+        4,
+        4
+      ],
+      "scoring_mean": 4.0,
+      "evidence_aware_decision": "ADVANCE",
+      "esdsa_v2_decision": "ADVANCE"
+    },
+    {
+      "response_id": "ESDSA-OPS03-01-E3L3",
+      "group": "GROUP-025",
+      "reference_decision": "DO_NOT_ADVANCE",
+      "semantic_equivalence": "YES",
+      "scoring_decision": "DEFER",
+      "scoring_scores": [
+        2,
+        1,
+        2
+      ],
+      "scoring_mean": 1.6666666666666667,
+      "evidence_aware_decision": "DO_NOT_ADVANCE",
+      "esdsa_v2_decision": "DO_NOT_ADVANCE"
+    },
+    {
+      "response_id": "ESDSA-OPS03-01-E3L2",
+      "group": "GROUP-025",
+      "reference_decision": "DO_NOT_ADVANCE",
+      "semantic_equivalence": "YES",
+      "scoring_decision": "DO_NOT_ADVANCE",
+      "scoring_scores": [
+        1,
+        1,
+        1
+      ],
+      "scoring_mean": 1.0,
+      "evidence_aware_decision": "DO_NOT_ADVANCE",
+      "esdsa_v2_decision": "DO_NOT_ADVANCE"
+    },
+    {
+      "response_id": "ESDSA-OPS03-01-E3L1",
+      "group": "GROUP-025",
+      "reference_decision": "DO_NOT_ADVANCE",
+      "semantic_equivalence": "YES",
+      "scoring_decision": "DEFER",
+      "scoring_scores": [
+        2,
+        2,
+        2
+      ],
+      "scoring_mean": 2.0,
+      "evidence_aware_decision": "DO_NOT_ADVANCE",
+      "esdsa_v2_decision": "DO_NOT_ADVANCE"
+    },
+    {
+      "response_id": "ESDSA-CSS03-02-E1L2",
+      "group": "GROUP-026",
+      "reference_decision": "ADVANCE",
+      "semantic_equivalence": "YES",
+      "scoring_decision": "ADVANCE",
+      "scoring_scores": [
+        3,
+        4,
+        4
+      ],
+      "scoring_mean": 3.6666666666666665,
+      "evidence_aware_decision": "ADVANCE",
+      "esdsa_v2_decision": "ADVANCE"
+    },
+    {
+      "response_id": "ESDSA-CSS03-02-E1L1",
+      "group": "GROUP-026",
+      "reference_decision": "ADVANCE",
+      "semantic_equivalence": "YES",
+      "scoring_decision": "ADVANCE",
+      "scoring_scores": [
+        4,
+        4,
+        4
+      ],
+      "scoring_mean": 4.0,
+      "evidence_aware_decision": "ADVANCE",
+      "esdsa_v2_decision": "ADVANCE"
+    },
+    {
+      "response_id": "ESDSA-CSS03-02-E1L3",
+      "group": "GROUP-026",
+      "reference_decision": "ADVANCE",
+      "semantic_equivalence": "YES",
+      "scoring_decision": "ADVANCE",
+      "scoring_scores": [
+        3,
+        4,
+        4
+      ],
+      "scoring_mean": 3.6666666666666665,
+      "evidence_aware_decision": "ADVANCE",
+      "esdsa_v2_decision": "ADVANCE"
+    },
+    {
+      "response_id": "ESDSA-SWE03-01-E1L1",
+      "group": "GROUP-027",
+      "reference_decision": "ADVANCE",
+      "semantic_equivalence": "YES",
+      "scoring_decision": "ADVANCE",
+      "scoring_scores": [
+        4,
+        4,
+        4
+      ],
+      "scoring_mean": 4.0,
+      "evidence_aware_decision": "ADVANCE",
+      "esdsa_v2_decision": "ADVANCE"
+    },
+    {
+      "response_id": "ESDSA-SWE03-01-E1L2",
+      "group": "GROUP-027",
+      "reference_decision": "ADVANCE",
+      "semantic_equivalence": "YES",
+      "scoring_decision": "ADVANCE",
+      "scoring_scores": [
+        4,
+        4,
+        4
+      ],
+      "scoring_mean": 4.0,
+      "evidence_aware_decision": "ADVANCE",
+      "esdsa_v2_decision": "ADVANCE"
+    },
+    {
+      "response_id": "ESDSA-SWE03-01-E1L3",
+      "group": "GROUP-027",
+      "reference_decision": "ADVANCE",
+      "semantic_equivalence": "YES",
+      "scoring_decision": "ADVANCE",
+      "scoring_scores": [
+        4,
+        4,
+        4
+      ],
+      "scoring_mean": 4.0,
+      "evidence_aware_decision": "ADVANCE",
+      "esdsa_v2_decision": "ADVANCE"
+    },
+    {
+      "response_id": "ESDSA-CSS04-02-E1L1",
+      "group": "GROUP-028",
+      "reference_decision": "ADVANCE",
+      "semantic_equivalence": "YES",
+      "scoring_decision": "ADVANCE",
+      "scoring_scores": [
+        4,
+        4,
+        4
+      ],
+      "scoring_mean": 4.0,
+      "evidence_aware_decision": "ADVANCE",
+      "esdsa_v2_decision": "ADVANCE"
+    },
+    {
+      "response_id": "ESDSA-CSS04-02-E1L2",
+      "group": "GROUP-028",
+      "reference_decision": "ADVANCE",
+      "semantic_equivalence": "YES",
+      "scoring_decision": "ADVANCE",
+      "scoring_scores": [
+        4,
+        4,
+        4
+      ],
+      "scoring_mean": 4.0,
+      "evidence_aware_decision": "ADVANCE",
+      "esdsa_v2_decision": "ADVANCE"
+    },
+    {
+      "response_id": "ESDSA-CSS04-02-E1L3",
+      "group": "GROUP-028",
+      "reference_decision": "ADVANCE",
+      "semantic_equivalence": "YES",
+      "scoring_decision": "ADVANCE",
+      "scoring_scores": [
+        4,
+        4,
+        4
+      ],
+      "scoring_mean": 4.0,
+      "evidence_aware_decision": "ADVANCE",
+      "esdsa_v2_decision": "ADVANCE"
+    },
+    {
+      "response_id": "ESDSA-OPS01-01-E1L1",
+      "group": "GROUP-029",
+      "reference_decision": "ADVANCE",
+      "semantic_equivalence": "YES",
+      "scoring_decision": "ADVANCE",
+      "scoring_scores": [
+        4,
+        4,
+        4
+      ],
+      "scoring_mean": 4.0,
+      "evidence_aware_decision": "ADVANCE",
+      "esdsa_v2_decision": "ADVANCE"
+    },
+    {
+      "response_id": "ESDSA-OPS01-01-E1L3",
+      "group": "GROUP-029",
+      "reference_decision": "ADVANCE",
+      "semantic_equivalence": "YES",
+      "scoring_decision": "ADVANCE",
+      "scoring_scores": [
+        4,
+        3,
+        4
+      ],
+      "scoring_mean": 3.6666666666666665,
+      "evidence_aware_decision": "ADVANCE",
+      "esdsa_v2_decision": "ADVANCE"
+    },
+    {
+      "response_id": "ESDSA-OPS01-01-E1L2",
+      "group": "GROUP-029",
+      "reference_decision": "ADVANCE",
+      "semantic_equivalence": "YES",
+      "scoring_decision": "ADVANCE",
+      "scoring_scores": [
+        4,
+        3,
+        4
+      ],
+      "scoring_mean": 3.6666666666666665,
+      "evidence_aware_decision": "ADVANCE",
+      "esdsa_v2_decision": "ADVANCE"
+    },
+    {
+      "response_id": "ESDSA-OPS04-01-E3L1",
+      "group": "GROUP-030",
+      "reference_decision": "DO_NOT_ADVANCE",
+      "semantic_equivalence": "YES",
+      "scoring_decision": "DO_NOT_ADVANCE",
+      "scoring_scores": [
+        2,
+        1,
+        1
+      ],
+      "scoring_mean": 1.3333333333333333,
+      "evidence_aware_decision": "DO_NOT_ADVANCE",
+      "esdsa_v2_decision": "DO_NOT_ADVANCE"
+    },
+    {
+      "response_id": "ESDSA-OPS04-01-E3L3",
+      "group": "GROUP-030",
+      "reference_decision": "DO_NOT_ADVANCE",
+      "semantic_equivalence": "YES",
+      "scoring_decision": "DO_NOT_ADVANCE",
+      "scoring_scores": [
+        2,
+        1,
+        1
+      ],
+      "scoring_mean": 1.3333333333333333,
+      "evidence_aware_decision": "DO_NOT_ADVANCE",
+      "esdsa_v2_decision": "DO_NOT_ADVANCE"
+    },
+    {
+      "response_id": "ESDSA-OPS04-01-E3L2",
+      "group": "GROUP-030",
+      "reference_decision": "DO_NOT_ADVANCE",
+      "semantic_equivalence": "YES",
+      "scoring_decision": "DO_NOT_ADVANCE",
+      "scoring_scores": [
+        1,
+        1,
+        1
+      ],
+      "scoring_mean": 1.0,
+      "evidence_aware_decision": "DO_NOT_ADVANCE",
+      "esdsa_v2_decision": "DO_NOT_ADVANCE"
+    },
+    {
+      "response_id": "ESDSA-OPS03-01-E2L1",
+      "group": "GROUP-031",
+      "reference_decision": "DEFER",
+      "semantic_equivalence": "YES",
+      "scoring_decision": "DEFER",
+      "scoring_scores": [
+        3,
+        2,
+        2
+      ],
+      "scoring_mean": 2.3333333333333335,
+      "evidence_aware_decision": "ADVANCE",
+      "esdsa_v2_decision": "ADVANCE"
+    },
+    {
+      "response_id": "ESDSA-OPS03-01-E2L2",
+      "group": "GROUP-031",
+      "reference_decision": "DEFER",
+      "semantic_equivalence": "YES",
+      "scoring_decision": "DEFER",
+      "scoring_scores": [
+        3,
+        2,
+        2
+      ],
+      "scoring_mean": 2.3333333333333335,
+      "evidence_aware_decision": "ADVANCE",
+      "esdsa_v2_decision": "ADVANCE"
+    },
+    {
+      "response_id": "ESDSA-OPS03-01-E2L3",
+      "group": "GROUP-031",
+      "reference_decision": "DEFER",
+      "semantic_equivalence": "YES",
+      "scoring_decision": "DEFER",
+      "scoring_scores": [
+        3,
+        2,
+        2
+      ],
+      "scoring_mean": 2.3333333333333335,
+      "evidence_aware_decision": "ADVANCE",
+      "esdsa_v2_decision": "ADVANCE"
+    },
+    {
+      "response_id": "ESDSA-OPS02-03-E3L1",
+      "group": "GROUP-032",
+      "reference_decision": "DO_NOT_ADVANCE",
+      "semantic_equivalence": "YES",
+      "scoring_decision": "DO_NOT_ADVANCE",
+      "scoring_scores": [
+        2,
+        1,
+        1
+      ],
+      "scoring_mean": 1.3333333333333333,
+      "evidence_aware_decision": "DO_NOT_ADVANCE",
+      "esdsa_v2_decision": "DO_NOT_ADVANCE"
+    },
+    {
+      "response_id": "ESDSA-OPS02-03-E3L3",
+      "group": "GROUP-032",
+      "reference_decision": "DO_NOT_ADVANCE",
+      "semantic_equivalence": "YES",
+      "scoring_decision": "DEFER",
+      "scoring_scores": [
+        3,
+        2,
+        1
+      ],
+      "scoring_mean": 2.0,
+      "evidence_aware_decision": "DO_NOT_ADVANCE",
+      "esdsa_v2_decision": "DO_NOT_ADVANCE"
+    },
+    {
+      "response_id": "ESDSA-OPS02-03-E3L2",
+      "group": "GROUP-032",
+      "reference_decision": "DO_NOT_ADVANCE",
+      "semantic_equivalence": "YES",
+      "scoring_decision": "DO_NOT_ADVANCE",
+      "scoring_scores": [
+        2,
+        1,
+        1
+      ],
+      "scoring_mean": 1.3333333333333333,
+      "evidence_aware_decision": "DO_NOT_ADVANCE",
+      "esdsa_v2_decision": "DO_NOT_ADVANCE"
+    },
+    {
+      "response_id": "ESDSA-CSS01-01-E3L1",
+      "group": "GROUP-033",
+      "reference_decision": "DO_NOT_ADVANCE",
+      "semantic_equivalence": "YES",
+      "scoring_decision": "DO_NOT_ADVANCE",
+      "scoring_scores": [
+        2,
+        1,
+        1
+      ],
+      "scoring_mean": 1.3333333333333333,
+      "evidence_aware_decision": "DO_NOT_ADVANCE",
+      "esdsa_v2_decision": "DO_NOT_ADVANCE"
+    },
+    {
+      "response_id": "ESDSA-CSS01-01-E3L3",
+      "group": "GROUP-033",
+      "reference_decision": "DO_NOT_ADVANCE",
+      "semantic_equivalence": "YES",
+      "scoring_decision": "DO_NOT_ADVANCE",
+      "scoring_scores": [
+        1,
+        1,
+        1
+      ],
+      "scoring_mean": 1.0,
+      "evidence_aware_decision": "DO_NOT_ADVANCE",
+      "esdsa_v2_decision": "DO_NOT_ADVANCE"
+    },
+    {
+      "response_id": "ESDSA-CSS01-01-E3L2",
+      "group": "GROUP-033",
+      "reference_decision": "DO_NOT_ADVANCE",
+      "semantic_equivalence": "YES",
+      "scoring_decision": "DO_NOT_ADVANCE",
+      "scoring_scores": [
+        1,
+        1,
+        1
+      ],
+      "scoring_mean": 1.0,
+      "evidence_aware_decision": "DO_NOT_ADVANCE",
+      "esdsa_v2_decision": "DO_NOT_ADVANCE"
+    },
+    {
+      "response_id": "ESDSA-OPS01-01-E3L2",
+      "group": "GROUP-034",
+      "reference_decision": "DO_NOT_ADVANCE",
+      "semantic_equivalence": "YES",
+      "scoring_decision": "DO_NOT_ADVANCE",
+      "scoring_scores": [
+        1,
+        1,
+        1
+      ],
+      "scoring_mean": 1.0,
+      "evidence_aware_decision": "DO_NOT_ADVANCE",
+      "esdsa_v2_decision": "DO_NOT_ADVANCE"
+    },
+    {
+      "response_id": "ESDSA-OPS01-01-E3L1",
+      "group": "GROUP-034",
+      "reference_decision": "DO_NOT_ADVANCE",
+      "semantic_equivalence": "YES",
+      "scoring_decision": "DO_NOT_ADVANCE",
+      "scoring_scores": [
+        1,
+        2,
+        1
+      ],
+      "scoring_mean": 1.3333333333333333,
+      "evidence_aware_decision": "DO_NOT_ADVANCE",
+      "esdsa_v2_decision": "DO_NOT_ADVANCE"
+    },
+    {
+      "response_id": "ESDSA-OPS01-01-E3L3",
+      "group": "GROUP-034",
+      "reference_decision": "DO_NOT_ADVANCE",
+      "semantic_equivalence": "YES",
+      "scoring_decision": "DO_NOT_ADVANCE",
+      "scoring_scores": [
+        1,
+        1,
+        1
+      ],
+      "scoring_mean": 1.0,
+      "evidence_aware_decision": "DO_NOT_ADVANCE",
+      "esdsa_v2_decision": "DO_NOT_ADVANCE"
+    },
+    {
+      "response_id": "ESDSA-SWE04-01-E2L3",
+      "group": "GROUP-035",
+      "reference_decision": "ADVANCE",
+      "semantic_equivalence": "UNCERTAIN",
+      "scoring_decision": "ADVANCE",
+      "scoring_scores": [
+        3,
+        3,
+        3
+      ],
+      "scoring_mean": 3.0,
+      "evidence_aware_decision": "ADVANCE",
+      "esdsa_v2_decision": "ADVANCE"
+    },
+    {
+      "response_id": "ESDSA-SWE04-01-E2L2",
+      "group": "GROUP-035",
+      "reference_decision": "ADVANCE",
+      "semantic_equivalence": "UNCERTAIN",
+      "scoring_decision": "ADVANCE",
+      "scoring_scores": [
+        4,
+        3,
+        3
+      ],
+      "scoring_mean": 3.3333333333333335,
+      "evidence_aware_decision": "ADVANCE",
+      "esdsa_v2_decision": "ADVANCE"
+    },
+    {
+      "response_id": "ESDSA-SWE04-01-E2L1",
+      "group": "GROUP-035",
+      "reference_decision": "ADVANCE",
+      "semantic_equivalence": "UNCERTAIN",
+      "scoring_decision": "ADVANCE",
+      "scoring_scores": [
+        4,
+        4,
+        3
+      ],
+      "scoring_mean": 3.6666666666666665,
+      "evidence_aware_decision": "ADVANCE",
+      "esdsa_v2_decision": "ADVANCE"
+    },
+    {
+      "response_id": "ESDSA-SWE03-01-E2L1",
+      "group": "GROUP-036",
+      "reference_decision": "DEFER",
+      "semantic_equivalence": "UNCERTAIN",
+      "scoring_decision": "ADVANCE",
+      "scoring_scores": [
+        3,
+        3,
+        3
+      ],
+      "scoring_mean": 3.0,
+      "evidence_aware_decision": "ADVANCE",
+      "esdsa_v2_decision": "ADVANCE"
+    },
+    {
+      "response_id": "ESDSA-SWE03-01-E2L3",
+      "group": "GROUP-036",
+      "reference_decision": "DEFER",
+      "semantic_equivalence": "UNCERTAIN",
+      "scoring_decision": "DEFER",
+      "scoring_scores": [
+        2,
+        2,
+        2
+      ],
+      "scoring_mean": 2.0,
+      "evidence_aware_decision": "DEFER",
+      "esdsa_v2_decision": "DEFER"
+    },
+    {
+      "response_id": "ESDSA-SWE03-01-E2L2",
+      "group": "GROUP-036",
+      "reference_decision": "DEFER",
+      "semantic_equivalence": "UNCERTAIN",
+      "scoring_decision": "DEFER",
+      "scoring_scores": [
+        3,
+        2,
+        2
+      ],
+      "scoring_mean": 2.3333333333333335,
+      "evidence_aware_decision": "ADVANCE",
+      "esdsa_v2_decision": "ADVANCE"
+    }
+  ],
+  "limitations": [
+    "Reference labels are provisional, not independent ground truth.",
+    "Only 12 scenario families are represented.",
+    "The 108 responses and their variants are correlated.",
+    "ESDSA v2 was refined after development diagnostics.",
+    "Comparison of actionable error rates involves selective coverage.",
+    "Random matched-count sampling is not a usable deferral rule.",
+    "No claim of statistically established superiority is warranted."
+  ]
+}

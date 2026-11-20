@@ -1,0 +1,18 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "SEMANTIC_EQUIVALENCE",
+  "blinded_id": "TG-7BE622F658245C84",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0a322cb7dc0f8682016b002adcf07c87d0b0e1c1b97af24af7",
+  "annotated_utc": "2026-11-20T11:11:27.482013+00:00",
+  "annotation": {
+    "semantic_equivalence": "NO",
+    "material_differences": "B and C add an explicit policy/authorisation safeguard: they say compensation may be available but must be passed to the right queue or routed appropriately if the speaker cannot approve it. A only says to route through the normal process if compensation looks supported, without the same clear limitation on personal authorisation. This could change the policy-awareness assessment under CSS03-C2.",
+    "equivalence_rationale": "A, B, and C all share the core evidence pattern for CSS03-C1 and CSS03-C3: they review account/incidents/location, avoid a premature refund decision, and continue investigating or update the customer when evidence is inconclusive. However, B and C preserve stronger evidence of respecting authorisation limits and escalation procedures, while A is less explicit about that constraint. Because the presence or absence of an authorisation safeguard is decision-relevant under the stated criteria, the responses are not fully equivalent."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

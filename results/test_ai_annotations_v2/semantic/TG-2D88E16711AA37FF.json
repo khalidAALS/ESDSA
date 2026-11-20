@@ -1,0 +1,18 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "SEMANTIC_EQUIVALENCE",
+  "blinded_id": "TG-2D88E16711AA37FF",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_026aab6a4b49f67c016b0029ebce9c87d0b4f86099840ea679",
+  "annotated_utc": "2026-11-20T11:07:25.477800+00:00",
+  "annotation": {
+    "semantic_equivalence": "YES",
+    "material_differences": "None that plausibly change evidence under the stated criteria; all three mainly say to check service/outage status, treat it as likely a one-off if no broader issue is found, and avoid spending much time reproducing without steps.",
+    "equivalence_rationale": "Across A, B, and C, the operational evidence is the same at the criterion level: they do not describe a concrete reproduction strategy, but they do characterize the issue by checking service availability and whether there is a broader outage, then narrowing toward a one-off/client-side explanation if nothing else is found. The added detail in B and C about end-of-shift timing and possible browser/user-side causes does not materially change the diagnosis approach or the relevant commitments for the three criteria."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

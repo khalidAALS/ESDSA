@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-F0576F0CBAA910B5",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_06718f9707b8b964016b0029fee2f487d09f3c7d14bb1d6dfc",
+  "annotated_utc": "2026-11-20T11:07:45.020002+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "CSS03-C1",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I’d usually offer a refund right away to keep the situation moving, even if the outage details are still unclear.",
+        "rationale": "This proposes a refund without waiting for evidence about whether the interruption is actually covered or justified, which shows poor alignment between the action and the available evidence."
+      },
+      {
+        "criterion_id": "CSS03-C2",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I’d note the incident notice if it exists, but I wouldn’t want to delay the customer by spending too long confirming whether their location is covered.",
+        "rationale": "The answer explicitly deprioritizes checking whether the notice applies to the customer before granting a refund, which suggests disregard for authorisation or service-constraint checks."
+      },
+      {
+        "criterion_id": "CSS03-C3",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I wouldn’t want to delay the customer by spending too long confirming whether their location is covered. If there’s any pushback later, the back office can sort out whether the refund was fully supported.",
+        "rationale": "This avoids gathering needed information or escalating before acting, and instead leaves verification to later follow-up, indicating failure to recognize that more information may be needed."
+      }
+    ],
+    "annotation_notes": "The answer shows a willingness to act before the cause and coverage are established, and it explicitly postpones verification rather than using uncertainty to trigger more information-seeking or escalation."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

@@ -1,0 +1,35 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_TARGETED_PILOT_V1",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-B74601CE830ADA6D",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V1",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_005c512b360b55dc016aff972cd1fc87d09542aaa2f54e62c9",
+  "annotated_utc": "2026-11-20T00:41:19.034753+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "CSS02-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d ask what they do remember — roughly when they tried to cancel, how they submitted it, and whether they got any confirmation — and then I’d look at the account notes and status.",
+        "rationale": "This explicitly describes asking targeted questions to obtain the information needed to understand the cancellation issue and reviewing relevant account records."
+      },
+      {
+        "criterion_id": "CSS02-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d also use the billing record to help piece together the timeline if the exact date isn’t available. If it still isn’t clear after that, I’d hand it off for a closer review.",
+        "rationale": "The answer shows a cautious approach to incomplete evidence by using records to reconstruct the timeline and escalating when the facts remain unclear, rather than asserting conclusions prematurely."
+      },
+      {
+        "criterion_id": "CSS02-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d ask what they do remember — roughly when they tried to cancel, how they submitted it, and whether they got any confirmation — and then I’d look at the account notes and status.",
+        "rationale": "The information sought is narrowly focused on the cancellation attempt and relevant account status, indicating proportionate collection of data appropriate to the investigation."
+      }
+    ],
+    "annotation_notes": "The answer focuses on relevant, limited information sources and does not suggest over-collection or unauthorized access."
+  }
+}

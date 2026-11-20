@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-560CCEECC1E8C8F2",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_09cae3331ea01047016b002b77893887d0b63c4f1d4a490b5f",
+  "annotated_utc": "2026-11-20T11:14:01.596397+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "CSS04-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d say the replacement is approved but still awaiting warehouse confirmation, so I can’t confirm dispatch or delivery yet.",
+        "rationale": "This clearly explains the situation in understandable terms, stating both the current status and the reason a delivery confirmation is unavailable."
+      },
+      {
+        "criterion_id": "CSS04-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d avoid promising a date, keep the customer updated as soon as I have confirmation",
+        "rationale": "The candidate explicitly avoids unsupported promises and commits only to updates once confirmation is available, which sets justified expectations."
+      },
+      {
+        "criterion_id": "CSS04-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "and set a clear follow-up point so they know when to expect the next update.",
+        "rationale": "This describes an appropriate follow-up mechanism by establishing a clear point for the next status update."
+      }
+    ],
+    "annotation_notes": "The answer directly addresses all three communication and follow-up criteria with concise but substantive statements."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

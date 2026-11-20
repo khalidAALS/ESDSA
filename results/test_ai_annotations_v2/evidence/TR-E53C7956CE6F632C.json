@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-E53C7956CE6F632C",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_07b8feee85ecc14c016b002c1c5ac087d0be4b97c47411c6d1",
+  "annotated_utc": "2026-11-20T11:16:46.721812+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "CSS02-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d ask for the order number, the delivery address, the date the customer expected it, and whether anyone at the address, a neighbour, concierge, or reception could have accepted it. I’d also check the carrier scan details, the timestamp, delivery location notes, any photo or signature if available, and whether there were any delivery exceptions or reroutes.",
+        "rationale": "The candidate names multiple specific pieces of information directly relevant to understanding why the item was reported missing despite a delivery event."
+      },
+      {
+        "criterion_id": "CSS02-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d verify the account and shipment details against our records rather than rely on the customer’s assumption or the tracking headline alone.",
+        "rationale": "This explicitly separates confirmed records from the customer’s assumption and the tracking headline, showing source verification and distinction between facts and assumptions."
+      },
+      {
+        "criterion_id": "CSS02-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d avoid asking for anything unrelated, and I’d keep the collection to the minimum needed to determine whether the package was delivered to the right place, misdelivered, or marked delivered in error.",
+        "rationale": "The candidate explicitly states they would avoid irrelevant information and limit collection to what is necessary, which supports proportionate collection."
+      }
+    ],
+    "annotation_notes": "All three criteria are supported by explicit statements in the response."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-6478C030B3CEC2CB",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_004844e7ab8cd523016b000bf5d89087d0bf02aa9ba4adea27",
+  "annotated_utc": "2026-11-20T08:59:35.748950+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "CSS04-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d apologise, say I’ve taken over, and explain I’m reviewing the case and checking the next steps with the relevant team.",
+        "rationale": "This clearly explains what the candidate would do and how they would communicate the situation to the customer in understandable terms."
+      },
+      {
+        "criterion_id": "CSS04-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d apologise, say I’ve taken over, and explain I’m reviewing the case and checking the next steps with the relevant team. I’d give them my contact details and follow up once I have more information.",
+        "rationale": "The candidate sets a limited, justified expectation by saying they are reviewing the case and will follow up once more information is available, without making unsupported promises about resolution timing or outcome."
+      },
+      {
+        "criterion_id": "CSS04-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d give them my contact details and follow up once I have more information.",
+        "rationale": "This provides a concrete follow-up mechanism: giving contact details and committing to follow up when information is available."
+      }
+    ],
+    "annotation_notes": ""
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

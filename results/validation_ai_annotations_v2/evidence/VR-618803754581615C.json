@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-618803754581615C",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_04f5802b8efdc1e8016b000c4b2fc087d08120eb5430cbd29d",
+  "annotated_utc": "2026-11-20T09:01:03.116586+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "SWE01-C1",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I wouldn’t spend a lot of time trying to recreate the exact failure with the same records since the old repro doesn’t work anymore.",
+        "rationale": "This explicitly deprioritizes reproducing or characterising the failure with the affected records, which conflicts with establishing a current reproduction strategy for the returned problem."
+      },
+      {
+        "criterion_id": "SWE01-C2",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "passage": "",
+        "rationale": "The answer mentions logs and the test environment, but does not clearly describe comparing failing cases against known-good behaviour or contrasting conditions that do and do not fail."
+      },
+      {
+        "criterion_id": "SWE01-C3",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "passage": "",
+        "rationale": "The response suggests checking the latest code change or most recent subsystem, but it does not show an observation-driven narrowing process based on evidence from logs, samples, or tests."
+      }
+    ],
+    "annotation_notes": "The answer is short and largely reactive. It suggests a plausible direction, but it does not substantively demonstrate comparison against working behaviour or a systematic narrowing method."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-7D9C7C4F0F30F377",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0715fd9952fdf81f016b000e52c35087d0b730869cab108a5f",
+  "annotated_utc": "2026-11-20T09:09:41.158817+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "CSS02-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d first ask the customer for the details I actually need to understand the billing issue, like which charges look off, when they appeared, and anything they noticed just before that.",
+        "rationale": "This explicitly says the candidate would ask for the details needed to understand the billing issue and gives relevant examples."
+      },
+      {
+        "criterion_id": "CSS02-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d check our approved internal records for the parts I can confirm myself, and I’d make sure I’m not treating assumptions as facts.",
+        "rationale": "This clearly shows distinguishing confirmed information from assumptions by checking internal records and avoiding treating assumptions as facts."
+      },
+      {
+        "criterion_id": "CSS02-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "For anything the customer needs to provide, I’d keep it limited to what’s relevant and use the approved secure channel rather than collecting extra sensitive info.",
+        "rationale": "This demonstrates proportionate collection by limiting requests to relevant information and using an approved secure channel instead of collecting extra sensitive information."
+      }
+    ],
+    "annotation_notes": "The answer addresses all three criteria directly and with specific process details."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

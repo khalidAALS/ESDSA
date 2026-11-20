@@ -1,0 +1,49 @@
+{
+  "rubric_id": "ESDSA-SWE03-R1",
+  "version": "1.0-draft",
+  "role_code": "SWE",
+  "role_name": "Software Developer",
+  "competency_code": "SWE03",
+  "competency_name": "Reasoned correction",
+  "criteria": [
+    {
+      "id": "SWE03-C1",
+      "name": "Cause identification",
+      "definition": "Identify a plausible cause supported by investigation.",
+      "illustrative_positive_evidence": "Traces the failure to faulty persistence logic.",
+      "illustrative_negative_evidence": "Claims a cause despite explicitly contrary evidence."
+    },
+    {
+      "id": "SWE03-C2",
+      "name": "Linked correction",
+      "definition": "Connect the proposed correction to that identified cause.",
+      "illustrative_positive_evidence": "Corrects the logic identified as responsible for the failure.",
+      "illustrative_negative_evidence": "Changes unrelated logic while acknowledging it is not causal."
+    },
+    {
+      "id": "SWE03-C3",
+      "name": "Correction justification",
+      "definition": "Explain why the correction addresses the problem.",
+      "illustrative_positive_evidence": "Explains how the change prevents the observed failure.",
+      "illustrative_negative_evidence": "Adopts a known ineffective fix without justification."
+    }
+  ],
+  "evidence_statuses": {
+    "POSITIVE_EVIDENCE": "The answer explicitly or clearly demonstrates the indicator in context.",
+    "NEGATIVE_EVIDENCE": "The answer explicitly demonstrates a materially deficient approach concerning the indicator.",
+    "INSUFFICIENT_EVIDENCE": "The answer does not establish either positive or negative evidence for the indicator."
+  },
+  "interpretation_rules": [
+    "Assess demonstrated meaning, not exact wording.",
+    "Do not infer deficient practice solely from omission.",
+    "A brief answer can provide sufficient evidence.",
+    "A fluent or lengthy answer is not sufficient by itself.",
+    "Consider scenario context and applicable constraints.",
+    "Record the supporting passage or indicate absence.",
+    "Illustrative examples are not exhaustive.",
+    "Do not infer protected or demographic attributes."
+  ],
+  "decision_policy": "NOT_YET_VALIDATED",
+  "expert_review": "PENDING",
+  "reference_validation": "PENDING"
+}

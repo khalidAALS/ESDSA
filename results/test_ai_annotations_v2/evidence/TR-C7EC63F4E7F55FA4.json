@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-C7EC63F4E7F55FA4",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_07f4fc32617cd2bb016b002be1e21887d095f885b23b116e81",
+  "annotated_utc": "2026-11-20T11:15:47.719150+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "SWE04-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d verify the original failure",
+        "rationale": "This directly states that the candidate would test whether the reported failure is resolved."
+      },
+      {
+        "criterion_id": "SWE04-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "then run regression checks on the older export format and related paths",
+        "rationale": "This explicitly shows they would assess the fix’s impact on previously working behaviour."
+      },
+      {
+        "criterion_id": "SWE04-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "Since the older format changes unexpectedly, I wouldn’t release yet. I’d investigate whether that output difference is intended or a regression, then either revise the fix and add coverage or proceed only if the change is confirmed acceptable and documented.",
+        "rationale": "This uses the verification results to choose a next step: do not release yet, investigate, and then either revise or proceed based on findings."
+      }
+    ],
+    "annotation_notes": "The answer clearly addresses all three criteria with explicit verification, regression checking, and decision-making based on results."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

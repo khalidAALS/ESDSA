@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-BF6DE5BC56CAC060",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0d7449fc338cc7e0016b002b29765887d0aec88903bcddb9b6",
+  "annotated_utc": "2026-11-20T11:12:43.362363+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "CSS03-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "If the exact item can’t get there in time, I’d consider an approved alternative that still helps the customer",
+        "rationale": "The candidate explicitly weighs an alternative resolution based on the constraints and the customer's urgency, which shows consideration of an appropriate option rather than insisting on a single outcome."
+      },
+      {
+        "criterion_id": "CSS03-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "If an expedited replacement needs authorisation, I’d escalate it instead of promising it.",
+        "rationale": "This directly shows respect for the authorisation requirement and avoids committing to an action that requires approval."
+      },
+      {
+        "criterion_id": "CSS03-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d verify the order and shipment records first, then check stock and the approved remedy options.",
+        "rationale": "The candidate identifies the need to gather more information before deciding, and also says they would escalate the authorised expedited replacement if needed, which indicates handling uncertainty through verification and escalation."
+      }
+    ],
+    "annotation_notes": "The answer is concise but addresses all three criteria with explicit references to checking records, considering approved alternatives, and escalating when authorisation or disputed shipment status prevents immediate resolution."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

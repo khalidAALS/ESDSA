@@ -1,0 +1,18 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "SEMANTIC_EQUIVALENCE",
+  "blinded_id": "TG-2106038BD0E9E637",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0f516e22273b711f016b00299668ec87d0a79b2f4706e3d04c",
+  "annotated_utc": "2026-11-20T11:06:00.024572+00:00",
+  "annotation": {
+    "semantic_equivalence": "YES",
+    "material_differences": "",
+    "equivalence_rationale": "All three responses preserve the same decision-relevant evidence for risk identification: they recognize the near-miss and persistent congestion as a plausible operational hazard, note uncertainty about the underlying cause and whether conditions are improving, and propose proportionate follow-up by monitoring, gathering staff input, and escalating/flagging the issue if it remains unresolved. The wording and examples differ, but there is no material change in hazard recognition, consideration of likelihood/impact, or response commitment."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

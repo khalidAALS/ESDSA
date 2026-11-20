@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-0EC7B843313078E1",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0d86ef950a070e15016b002b0dcd9487d09ad6697ea5866986",
+  "annotated_utc": "2026-11-20T11:12:16.023264+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "CSS02-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d ask a couple of focused questions to understand what they’re seeing",
+        "rationale": "This explicitly shows the candidate would ask targeted questions to gather information needed to understand the issue."
+      },
+      {
+        "criterion_id": "CSS02-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d use the screenshot they have as helpful context and compare it with our records.",
+        "rationale": "This indicates the candidate would verify the customer's claim against records rather than treating the screenshot as a confirmed fact, showing distinction between evidence sources and assumptions."
+      },
+      {
+        "criterion_id": "CSS02-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d try to keep the questions relevant and not ask for more than I need",
+        "rationale": "This directly supports proportionate collection by stating an intention to limit requests to what is necessary."
+      }
+    ],
+    "annotation_notes": "The answer is concise but does address all three criteria with explicit statements about focused questioning, cross-checking evidence, and limiting information requests."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

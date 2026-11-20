@@ -1,0 +1,18 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "SEMANTIC_EQUIVALENCE",
+  "blinded_id": "TG-5B925153F4D965D9",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_07e0eb465448ed03016b002a5a684487d09b6fde3642fa0b42",
+  "annotated_utc": "2026-11-20T11:09:16.067861+00:00",
+  "annotation": {
+    "semantic_equivalence": "YES",
+    "material_differences": "",
+    "equivalence_rationale": "All three responses preserve the same decision-relevant evidence for monitoring and escalation: they check the plan/expected completion and inspection findings, treat the missing record plus inspection concern as a possible deviation, contact the contractor, involve the operations lead if opening could be affected, and follow through until verified or escalated. Response C is more detailed, but it does not add a materially different assumption or commitment that would change the criterion-level assessment."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

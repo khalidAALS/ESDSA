@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-8961BA8168CC5371",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_05afaff6b2eef4ce016b000cf0b9e487d0aeb810d8c43ad380",
+  "annotated_utc": "2026-11-20T09:03:47.162699+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "OPS01-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d prioritise by urgency and impact: inspect the materials first because it protects production, then protect the customer dispatch because of the deadline, and fit training around those two if staff are limited.",
+        "rationale": "The answer explicitly uses urgency and impact, and also references production protection, the customer deadline, and limited staff as relevant dependency/constraint factors."
+      },
+      {
+        "criterion_id": "OPS01-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d prioritise by urgency and impact: inspect the materials first because it protects production, then protect the customer dispatch because of the deadline, and fit training around those two if staff are limited.",
+        "rationale": "The candidate explains why the inspection comes first and why dispatch is also prioritized, using concrete evidence tied to production risk, deadline pressure, and staff capacity."
+      },
+      {
+        "criterion_id": "OPS01-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "If the situation changes, I’d reassess immediately. For example, if the inspection finds a defect, I’d stop the relevant production flow and update dispatch plans; if the customer deadline tightens, I’d move resources to that and reschedule training.",
+        "rationale": "The candidate clearly states they would reassess immediately when conditions change and gives specific reprioritization examples for defects and tightened deadlines."
+      }
+    ],
+    "annotation_notes": ""
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

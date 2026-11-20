@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-1E09CCF7B6FDE8E9",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_047d5ee02944a480016b002a87a6c087d0a4b5e49873c044c0",
+  "annotated_utc": "2026-11-20T11:10:02.048874+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "OPS04-C1",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I’d rely on the contractor’s completion report",
+        "rationale": "This proposes relying on one report rather than identifying or checking additional information needed to monitor execution, which conflicts with the criterion’s requirement to identify information needed to monitor execution."
+      },
+      {
+        "criterion_id": "OPS04-C2",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "keep operations moving unless the problem is clearly serious",
+        "rationale": "This shows the candidate would not act on a concerning deviation unless it is already clearly serious, which indicates a failure to recognise when deviation requires action."
+      },
+      {
+        "criterion_id": "OPS04-C3",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "passage": "",
+        "rationale": "The answer mentions asking the contractor to fix it later, but it does not clearly direct the issue to an appropriate owner in the situation described or verify any response, so follow-through is not established either way."
+      }
+    ],
+    "annotation_notes": "The response is brief and only partially addresses escalation. It shows a delayed response posture, but not enough detail to confirm proper ownership or verification steps."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-087704B5600AD937",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_035893f1dc82e35b016b002bb06d2487d086144a39305861ab",
+  "annotated_utc": "2026-11-20T11:14:58.736418+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "OPS04-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d compare both updates with the repair plan, check the parts shortage impact, and keep an eye on whether the schedule still looks feasible.",
+        "rationale": "The candidate identifies specific information to monitor execution: the repair plan, the parts shortage impact, and schedule feasibility."
+      },
+      {
+        "criterion_id": "OPS04-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "If the delay starts to look significant, I’d alert the appropriate lead",
+        "rationale": "The candidate recognizes a deviation threshold that would require action, namely when the delay becomes significant."
+      },
+      {
+        "criterion_id": "OPS04-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d alert the appropriate lead and keep the next shift informed. I’d continue checking in until I had a clearer read on the situation.",
+        "rationale": "The candidate directs the issue to an appropriate owner, informs downstream stakeholders, and states they would continue checking in, which shows follow-through and verification efforts."
+      }
+    ],
+    "annotation_notes": "Assessment is based only on the provided answer and criteria."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

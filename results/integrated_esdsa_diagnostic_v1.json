@@ -1,0 +1,1264 @@
+{
+  "stage": "development_only",
+  "n_responses": 108,
+  "n_variant_groups": 36,
+  "stages": {
+    "evidence_aware": {
+      "total": 108,
+      "actionable": 105,
+      "coverage": 0.9722222222222222,
+      "actionable_disagreements": 15,
+      "actionable_disagreement_rate": 0.14285714285714285,
+      "unsupported_advances": 12,
+      "unnecessary_deferrals": 0,
+      "decision_distribution": {
+        "DO_NOT_ADVANCE": 36,
+        "ADVANCE": 69,
+        "DEFER": 3
+      }
+    },
+    "traceability_only": {
+      "total": 108,
+      "actionable": 90,
+      "coverage": 0.8333333333333334,
+      "actionable_disagreements": 14,
+      "actionable_disagreement_rate": 0.15555555555555556,
+      "unsupported_advances": 11,
+      "unnecessary_deferrals": 15,
+      "decision_distribution": {
+        "DEFER": 18,
+        "DO_NOT_ADVANCE": 28,
+        "ADVANCE": 62
+      }
+    },
+    "integrated_esdsa": {
+      "total": 108,
+      "actionable": 72,
+      "coverage": 0.6666666666666666,
+      "actionable_disagreements": 8,
+      "actionable_disagreement_rate": 0.1111111111111111,
+      "unsupported_advances": 5,
+      "unnecessary_deferrals": 27,
+      "decision_distribution": {
+        "DEFER": 36,
+        "ADVANCE": 51,
+        "DO_NOT_ADVANCE": 21
+      }
+    }
+  },
+  "exact_common_retained_cases": {
+    "evidence_aware": {
+      "total": 72,
+      "actionable": 72,
+      "coverage": 1.0,
+      "actionable_disagreements": 8,
+      "actionable_disagreement_rate": 0.1111111111111111,
+      "unsupported_advances": 5,
+      "unnecessary_deferrals": 0,
+      "decision_distribution": {
+        "ADVANCE": 51,
+        "DO_NOT_ADVANCE": 21
+      }
+    },
+    "traceability_only": {
+      "total": 72,
+      "actionable": 72,
+      "coverage": 1.0,
+      "actionable_disagreements": 8,
+      "actionable_disagreement_rate": 0.1111111111111111,
+      "unsupported_advances": 5,
+      "unnecessary_deferrals": 0,
+      "decision_distribution": {
+        "ADVANCE": 51,
+        "DO_NOT_ADVANCE": 21
+      }
+    },
+    "integrated_esdsa": {
+      "total": 72,
+      "actionable": 72,
+      "coverage": 1.0,
+      "actionable_disagreements": 8,
+      "actionable_disagreement_rate": 0.1111111111111111,
+      "unsupported_advances": 5,
+      "unnecessary_deferrals": 0,
+      "decision_distribution": {
+        "ADVANCE": 51,
+        "DO_NOT_ADVANCE": 21
+      }
+    }
+  },
+  "random_matched_count_sensitivity": {
+    "matched_count": 72,
+    "draws": 10000,
+    "mean_disagreements": 10.2894,
+    "percentile_2_5": 7,
+    "percentile_97_5": 13,
+    "fraction_fewer_disagreements_than_esdsa": 0.0504,
+    "warning": "Random retention is descriptive only; percentiles are not confidence intervals."
+  },
+  "component_transitions": {
+    "evidence_to_traceability": {
+      "changed_count": 15,
+      "prevented_disagreements": 1,
+      "deferred_supported": 14,
+      "newly_deferred_reference_defer": 0,
+      "response_ids": [
+        "ESDSA-SWE02-01-E3L2",
+        "ESDSA-SWE02-01-E3L1",
+        "ESDSA-SWE02-01-E2L2",
+        "ESDSA-SWE02-01-E2L1",
+        "ESDSA-OPS02-03-E1L2",
+        "ESDSA-CSS02-02-E3L1",
+        "ESDSA-SWE03-01-E3L1",
+        "ESDSA-OPS02-03-E2L1",
+        "ESDSA-SWE02-01-E1L1",
+        "ESDSA-SWE02-01-E1L2",
+        "ESDSA-OPS02-03-E3L1",
+        "ESDSA-OPS02-03-E3L3",
+        "ESDSA-OPS02-03-E3L2",
+        "ESDSA-OPS01-01-E3L2",
+        "ESDSA-OPS01-01-E3L1"
+      ]
+    },
+    "traceability_to_integrated": {
+      "changed_count": 18,
+      "prevented_disagreements": 6,
+      "deferred_supported": 12,
+      "newly_deferred_reference_defer": 6,
+      "response_ids": [
+        "ESDSA-SWE02-01-E3L3",
+        "ESDSA-SWE02-01-E2L3",
+        "ESDSA-OPS02-03-E1L3",
+        "ESDSA-OPS02-03-E1L1",
+        "ESDSA-CSS02-02-E2L3",
+        "ESDSA-CSS02-02-E2L1",
+        "ESDSA-CSS02-02-E2L2",
+        "ESDSA-CSS02-02-E3L2",
+        "ESDSA-CSS02-02-E3L3",
+        "ESDSA-SWE03-01-E3L2",
+        "ESDSA-SWE03-01-E3L3",
+        "ESDSA-OPS02-03-E2L3",
+        "ESDSA-OPS02-03-E2L2",
+        "ESDSA-SWE02-01-E1L3",
+        "ESDSA-OPS04-01-E2L1",
+        "ESDSA-OPS01-01-E3L3",
+        "ESDSA-SWE03-01-E2L1",
+        "ESDSA-SWE03-01-E2L2"
+      ]
+    }
+  },
+  "deferrals": {
+    "reference_actionable": 27,
+    "reference_defer": 9,
+    "flagged_for_review": 21,
+    "by_equivalence": {
+      "YES": 27,
+      "NO": 6,
+      "UNCERTAIN": 3
+    },
+    "by_reference": {
+      "DO_NOT_ADVANCE": 16,
+      "ADVANCE": 11,
+      "DEFER": 9
+    }
+  },
+  "group_diagnostics": [
+    {
+      "group": "GROUP-001",
+      "equivalence": [
+        "YES"
+      ],
+      "reference_flagged": false,
+      "reference_decisions": [
+        "DO_NOT_ADVANCE",
+        "DO_NOT_ADVANCE",
+        "DO_NOT_ADVANCE"
+      ],
+      "evidence_decisions": [
+        "DO_NOT_ADVANCE",
+        "DO_NOT_ADVANCE",
+        "DO_NOT_ADVANCE"
+      ],
+      "traceability_decisions": [
+        "DEFER",
+        "DO_NOT_ADVANCE",
+        "DEFER"
+      ],
+      "integrated_decisions": [
+        "DEFER",
+        "DEFER",
+        "DEFER"
+      ],
+      "new_deferrals": 3,
+      "unnecessary_deferrals": 3,
+      "prevented_disagreements": 0
+    },
+    {
+      "group": "GROUP-002",
+      "equivalence": [
+        "YES"
+      ],
+      "reference_flagged": false,
+      "reference_decisions": [
+        "ADVANCE",
+        "ADVANCE",
+        "ADVANCE"
+      ],
+      "evidence_decisions": [
+        "ADVANCE",
+        "ADVANCE",
+        "ADVANCE"
+      ],
+      "traceability_decisions": [
+        "ADVANCE",
+        "ADVANCE",
+        "ADVANCE"
+      ],
+      "integrated_decisions": [
+        "ADVANCE",
+        "ADVANCE",
+        "ADVANCE"
+      ],
+      "new_deferrals": 0,
+      "unnecessary_deferrals": 0,
+      "prevented_disagreements": 0
+    },
+    {
+      "group": "GROUP-003",
+      "equivalence": [
+        "YES"
+      ],
+      "reference_flagged": false,
+      "reference_decisions": [
+        "ADVANCE",
+        "ADVANCE",
+        "ADVANCE"
+      ],
+      "evidence_decisions": [
+        "ADVANCE",
+        "ADVANCE",
+        "ADVANCE"
+      ],
+      "traceability_decisions": [
+        "ADVANCE",
+        "ADVANCE",
+        "ADVANCE"
+      ],
+      "integrated_decisions": [
+        "ADVANCE",
+        "ADVANCE",
+        "ADVANCE"
+      ],
+      "new_deferrals": 0,
+      "unnecessary_deferrals": 0,
+      "prevented_disagreements": 0
+    },
+    {
+      "group": "GROUP-004",
+      "equivalence": [
+        "NO"
+      ],
+      "reference_flagged": true,
+      "reference_decisions": [
+        "ADVANCE",
+        "DEFER",
+        "DEFER"
+      ],
+      "evidence_decisions": [
+        "ADVANCE",
+        "ADVANCE",
+        "ADVANCE"
+      ],
+      "traceability_decisions": [
+        "ADVANCE",
+        "ADVANCE",
+        "ADVANCE"
+      ],
+      "integrated_decisions": [
+        "ADVANCE",
+        "ADVANCE",
+        "ADVANCE"
+      ],
+      "new_deferrals": 0,
+      "unnecessary_deferrals": 0,
+      "prevented_disagreements": 0
+    },
+    {
+      "group": "GROUP-005",
+      "equivalence": [
+        "YES"
+      ],
+      "reference_flagged": false,
+      "reference_decisions": [
+        "ADVANCE",
+        "ADVANCE",
+        "ADVANCE"
+      ],
+      "evidence_decisions": [
+        "ADVANCE",
+        "ADVANCE",
+        "ADVANCE"
+      ],
+      "traceability_decisions": [
+        "ADVANCE",
+        "DEFER",
+        "DEFER"
+      ],
+      "integrated_decisions": [
+        "DEFER",
+        "DEFER",
+        "DEFER"
+      ],
+      "new_deferrals": 3,
+      "unnecessary_deferrals": 3,
+      "prevented_disagreements": 0
+    },
+    {
+      "group": "GROUP-006",
+      "equivalence": [
+        "YES"
+      ],
+      "reference_flagged": false,
+      "reference_decisions": [
+        "DO_NOT_ADVANCE",
+        "DO_NOT_ADVANCE",
+        "DO_NOT_ADVANCE"
+      ],
+      "evidence_decisions": [
+        "DO_NOT_ADVANCE",
+        "DO_NOT_ADVANCE",
+        "DO_NOT_ADVANCE"
+      ],
+      "traceability_decisions": [
+        "DO_NOT_ADVANCE",
+        "DO_NOT_ADVANCE",
+        "DO_NOT_ADVANCE"
+      ],
+      "integrated_decisions": [
+        "DO_NOT_ADVANCE",
+        "DO_NOT_ADVANCE",
+        "DO_NOT_ADVANCE"
+      ],
+      "new_deferrals": 0,
+      "unnecessary_deferrals": 0,
+      "prevented_disagreements": 0
+    },
+    {
+      "group": "GROUP-007",
+      "equivalence": [
+        "YES"
+      ],
+      "reference_flagged": false,
+      "reference_decisions": [
+        "ADVANCE",
+        "ADVANCE",
+        "ADVANCE"
+      ],
+      "evidence_decisions": [
+        "ADVANCE",
+        "ADVANCE",
+        "ADVANCE"
+      ],
+      "traceability_decisions": [
+        "ADVANCE",
+        "ADVANCE",
+        "ADVANCE"
+      ],
+      "integrated_decisions": [
+        "ADVANCE",
+        "ADVANCE",
+        "ADVANCE"
+      ],
+      "new_deferrals": 0,
+      "unnecessary_deferrals": 0,
+      "prevented_disagreements": 0
+    },
+    {
+      "group": "GROUP-008",
+      "equivalence": [
+        "YES"
+      ],
+      "reference_flagged": false,
+      "reference_decisions": [
+        "ADVANCE",
+        "ADVANCE",
+        "ADVANCE"
+      ],
+      "evidence_decisions": [
+        "ADVANCE",
+        "ADVANCE",
+        "ADVANCE"
+      ],
+      "traceability_decisions": [
+        "DEFER",
+        "ADVANCE",
+        "ADVANCE"
+      ],
+      "integrated_decisions": [
+        "DEFER",
+        "DEFER",
+        "DEFER"
+      ],
+      "new_deferrals": 3,
+      "unnecessary_deferrals": 3,
+      "prevented_disagreements": 0
+    },
+    {
+      "group": "GROUP-009",
+      "equivalence": [
+        "UNCERTAIN"
+      ],
+      "reference_flagged": true,
+      "reference_decisions": [
+        "ADVANCE",
+        "ADVANCE",
+        "ADVANCE"
+      ],
+      "evidence_decisions": [
+        "ADVANCE",
+        "ADVANCE",
+        "ADVANCE"
+      ],
+      "traceability_decisions": [
+        "ADVANCE",
+        "ADVANCE",
+        "ADVANCE"
+      ],
+      "integrated_decisions": [
+        "ADVANCE",
+        "ADVANCE",
+        "ADVANCE"
+      ],
+      "new_deferrals": 0,
+      "unnecessary_deferrals": 0,
+      "prevented_disagreements": 0
+    },
+    {
+      "group": "GROUP-010",
+      "equivalence": [
+        "YES"
+      ],
+      "reference_flagged": false,
+      "reference_decisions": [
+        "ADVANCE",
+        "ADVANCE",
+        "ADVANCE"
+      ],
+      "evidence_decisions": [
+        "ADVANCE",
+        "ADVANCE",
+        "ADVANCE"
+      ],
+      "traceability_decisions": [
+        "ADVANCE",
+        "ADVANCE",
+        "ADVANCE"
+      ],
+      "integrated_decisions": [
+        "ADVANCE",
+        "ADVANCE",
+        "ADVANCE"
+      ],
+      "new_deferrals": 0,
+      "unnecessary_deferrals": 0,
+      "prevented_disagreements": 0
+    },
+    {
+      "group": "GROUP-011",
+      "equivalence": [
+        "NO"
+      ],
+      "reference_flagged": true,
+      "reference_decisions": [
+        "DEFER",
+        "DEFER",
+        "DO_NOT_ADVANCE"
+      ],
+      "evidence_decisions": [
+        "ADVANCE",
+        "ADVANCE",
+        "DO_NOT_ADVANCE"
+      ],
+      "traceability_decisions": [
+        "ADVANCE",
+        "ADVANCE",
+        "DO_NOT_ADVANCE"
+      ],
+      "integrated_decisions": [
+        "DEFER",
+        "DEFER",
+        "DEFER"
+      ],
+      "new_deferrals": 3,
+      "unnecessary_deferrals": 1,
+      "prevented_disagreements": 2
+    },
+    {
+      "group": "GROUP-012",
+      "equivalence": [
+        "YES"
+      ],
+      "reference_flagged": false,
+      "reference_decisions": [
+        "DO_NOT_ADVANCE",
+        "DO_NOT_ADVANCE",
+        "DO_NOT_ADVANCE"
+      ],
+      "evidence_decisions": [
+        "DO_NOT_ADVANCE",
+        "DO_NOT_ADVANCE",
+        "DO_NOT_ADVANCE"
+      ],
+      "traceability_decisions": [
+        "DO_NOT_ADVANCE",
+        "DO_NOT_ADVANCE",
+        "DO_NOT_ADVANCE"
+      ],
+      "integrated_decisions": [
+        "DO_NOT_ADVANCE",
+        "DO_NOT_ADVANCE",
+        "DO_NOT_ADVANCE"
+      ],
+      "new_deferrals": 0,
+      "unnecessary_deferrals": 0,
+      "prevented_disagreements": 0
+    },
+    {
+      "group": "GROUP-013",
+      "equivalence": [
+        "UNCERTAIN"
+      ],
+      "reference_flagged": true,
+      "reference_decisions": [
+        "DEFER",
+        "DEFER",
+        "DEFER"
+      ],
+      "evidence_decisions": [
+        "DO_NOT_ADVANCE",
+        "DO_NOT_ADVANCE",
+        "DO_NOT_ADVANCE"
+      ],
+      "traceability_decisions": [
+        "DO_NOT_ADVANCE",
+        "DO_NOT_ADVANCE",
+        "DO_NOT_ADVANCE"
+      ],
+      "integrated_decisions": [
+        "DO_NOT_ADVANCE",
+        "DO_NOT_ADVANCE",
+        "DO_NOT_ADVANCE"
+      ],
+      "new_deferrals": 0,
+      "unnecessary_deferrals": 0,
+      "prevented_disagreements": 0
+    },
+    {
+      "group": "GROUP-014",
+      "equivalence": [
+        "UNCERTAIN"
+      ],
+      "reference_flagged": true,
+      "reference_decisions": [
+        "ADVANCE",
+        "ADVANCE",
+        "ADVANCE"
+      ],
+      "evidence_decisions": [
+        "ADVANCE",
+        "ADVANCE",
+        "ADVANCE"
+      ],
+      "traceability_decisions": [
+        "ADVANCE",
+        "ADVANCE",
+        "ADVANCE"
+      ],
+      "integrated_decisions": [
+        "ADVANCE",
+        "ADVANCE",
+        "ADVANCE"
+      ],
+      "new_deferrals": 0,
+      "unnecessary_deferrals": 0,
+      "prevented_disagreements": 0
+    },
+    {
+      "group": "GROUP-015",
+      "equivalence": [
+        "YES"
+      ],
+      "reference_flagged": true,
+      "reference_decisions": [
+        "DO_NOT_ADVANCE",
+        "DO_NOT_ADVANCE",
+        "DO_NOT_ADVANCE"
+      ],
+      "evidence_decisions": [
+        "DO_NOT_ADVANCE",
+        "DO_NOT_ADVANCE",
+        "DO_NOT_ADVANCE"
+      ],
+      "traceability_decisions": [
+        "DO_NOT_ADVANCE",
+        "DO_NOT_ADVANCE",
+        "DEFER"
+      ],
+      "integrated_decisions": [
+        "DEFER",
+        "DEFER",
+        "DEFER"
+      ],
+      "new_deferrals": 3,
+      "unnecessary_deferrals": 3,
+      "prevented_disagreements": 0
+    },
+    {
+      "group": "GROUP-016",
+      "equivalence": [
+        "UNCERTAIN"
+      ],
+      "reference_flagged": true,
+      "reference_decisions": [
+        "DO_NOT_ADVANCE",
+        "DO_NOT_ADVANCE",
+        "DO_NOT_ADVANCE"
+      ],
+      "evidence_decisions": [
+        "DO_NOT_ADVANCE",
+        "DO_NOT_ADVANCE",
+        "DO_NOT_ADVANCE"
+      ],
+      "traceability_decisions": [
+        "DO_NOT_ADVANCE",
+        "DO_NOT_ADVANCE",
+        "DO_NOT_ADVANCE"
+      ],
+      "integrated_decisions": [
+        "DO_NOT_ADVANCE",
+        "DO_NOT_ADVANCE",
+        "DO_NOT_ADVANCE"
+      ],
+      "new_deferrals": 0,
+      "unnecessary_deferrals": 0,
+      "prevented_disagreements": 0
+    },
+    {
+      "group": "GROUP-017",
+      "equivalence": [
+        "YES"
+      ],
+      "reference_flagged": true,
+      "reference_decisions": [
+        "DO_NOT_ADVANCE",
+        "DO_NOT_ADVANCE",
+        "DO_NOT_ADVANCE"
+      ],
+      "evidence_decisions": [
+        "ADVANCE",
+        "DO_NOT_ADVANCE",
+        "DO_NOT_ADVANCE"
+      ],
+      "traceability_decisions": [
+        "DEFER",
+        "DO_NOT_ADVANCE",
+        "DO_NOT_ADVANCE"
+      ],
+      "integrated_decisions": [
+        "DEFER",
+        "DEFER",
+        "DEFER"
+      ],
+      "new_deferrals": 3,
+      "unnecessary_deferrals": 3,
+      "prevented_disagreements": 1
+    },
+    {
+      "group": "GROUP-018",
+      "equivalence": [
+        "NO"
+      ],
+      "reference_flagged": true,
+      "reference_decisions": [
+        "ADVANCE",
+        "DEFER",
+        "ADVANCE"
+      ],
+      "evidence_decisions": [
+        "ADVANCE",
+        "ADVANCE",
+        "ADVANCE"
+      ],
+      "traceability_decisions": [
+        "DEFER",
+        "ADVANCE",
+        "ADVANCE"
+      ],
+      "integrated_decisions": [
+        "DEFER",
+        "DEFER",
+        "DEFER"
+      ],
+      "new_deferrals": 3,
+      "unnecessary_deferrals": 2,
+      "prevented_disagreements": 1
+    },
+    {
+      "group": "GROUP-019",
+      "equivalence": [
+        "YES"
+      ],
+      "reference_flagged": false,
+      "reference_decisions": [
+        "ADVANCE",
+        "ADVANCE",
+        "ADVANCE"
+      ],
+      "evidence_decisions": [
+        "ADVANCE",
+        "ADVANCE",
+        "ADVANCE"
+      ],
+      "traceability_decisions": [
+        "ADVANCE",
+        "ADVANCE",
+        "ADVANCE"
+      ],
+      "integrated_decisions": [
+        "ADVANCE",
+        "ADVANCE",
+        "ADVANCE"
+      ],
+      "new_deferrals": 0,
+      "unnecessary_deferrals": 0,
+      "prevented_disagreements": 0
+    },
+    {
+      "group": "GROUP-020",
+      "equivalence": [
+        "YES"
+      ],
+      "reference_flagged": false,
+      "reference_decisions": [
+        "ADVANCE",
+        "ADVANCE",
+        "ADVANCE"
+      ],
+      "evidence_decisions": [
+        "ADVANCE",
+        "ADVANCE",
+        "ADVANCE"
+      ],
+      "traceability_decisions": [
+        "ADVANCE",
+        "ADVANCE",
+        "ADVANCE"
+      ],
+      "integrated_decisions": [
+        "ADVANCE",
+        "ADVANCE",
+        "ADVANCE"
+      ],
+      "new_deferrals": 0,
+      "unnecessary_deferrals": 0,
+      "prevented_disagreements": 0
+    },
+    {
+      "group": "GROUP-021",
+      "equivalence": [
+        "YES"
+      ],
+      "reference_flagged": false,
+      "reference_decisions": [
+        "ADVANCE",
+        "ADVANCE",
+        "ADVANCE"
+      ],
+      "evidence_decisions": [
+        "ADVANCE",
+        "ADVANCE",
+        "ADVANCE"
+      ],
+      "traceability_decisions": [
+        "ADVANCE",
+        "ADVANCE",
+        "ADVANCE"
+      ],
+      "integrated_decisions": [
+        "ADVANCE",
+        "ADVANCE",
+        "ADVANCE"
+      ],
+      "new_deferrals": 0,
+      "unnecessary_deferrals": 0,
+      "prevented_disagreements": 0
+    },
+    {
+      "group": "GROUP-022",
+      "equivalence": [
+        "YES"
+      ],
+      "reference_flagged": false,
+      "reference_decisions": [
+        "ADVANCE",
+        "ADVANCE",
+        "ADVANCE"
+      ],
+      "evidence_decisions": [
+        "ADVANCE",
+        "ADVANCE",
+        "ADVANCE"
+      ],
+      "traceability_decisions": [
+        "ADVANCE",
+        "DEFER",
+        "DEFER"
+      ],
+      "integrated_decisions": [
+        "DEFER",
+        "DEFER",
+        "DEFER"
+      ],
+      "new_deferrals": 3,
+      "unnecessary_deferrals": 3,
+      "prevented_disagreements": 0
+    },
+    {
+      "group": "GROUP-023",
+      "equivalence": [
+        "YES"
+      ],
+      "reference_flagged": true,
+      "reference_decisions": [
+        "DEFER",
+        "DEFER",
+        "DEFER"
+      ],
+      "evidence_decisions": [
+        "ADVANCE",
+        "DEFER",
+        "DEFER"
+      ],
+      "traceability_decisions": [
+        "ADVANCE",
+        "DEFER",
+        "DEFER"
+      ],
+      "integrated_decisions": [
+        "DEFER",
+        "DEFER",
+        "DEFER"
+      ],
+      "new_deferrals": 1,
+      "unnecessary_deferrals": 0,
+      "prevented_disagreements": 1
+    },
+    {
+      "group": "GROUP-024",
+      "equivalence": [
+        "YES"
+      ],
+      "reference_flagged": false,
+      "reference_decisions": [
+        "ADVANCE",
+        "ADVANCE",
+        "ADVANCE"
+      ],
+      "evidence_decisions": [
+        "ADVANCE",
+        "ADVANCE",
+        "ADVANCE"
+      ],
+      "traceability_decisions": [
+        "ADVANCE",
+        "ADVANCE",
+        "ADVANCE"
+      ],
+      "integrated_decisions": [
+        "ADVANCE",
+        "ADVANCE",
+        "ADVANCE"
+      ],
+      "new_deferrals": 0,
+      "unnecessary_deferrals": 0,
+      "prevented_disagreements": 0
+    },
+    {
+      "group": "GROUP-025",
+      "equivalence": [
+        "YES"
+      ],
+      "reference_flagged": true,
+      "reference_decisions": [
+        "DO_NOT_ADVANCE",
+        "DO_NOT_ADVANCE",
+        "DO_NOT_ADVANCE"
+      ],
+      "evidence_decisions": [
+        "DO_NOT_ADVANCE",
+        "DO_NOT_ADVANCE",
+        "DO_NOT_ADVANCE"
+      ],
+      "traceability_decisions": [
+        "DO_NOT_ADVANCE",
+        "DO_NOT_ADVANCE",
+        "DO_NOT_ADVANCE"
+      ],
+      "integrated_decisions": [
+        "DO_NOT_ADVANCE",
+        "DO_NOT_ADVANCE",
+        "DO_NOT_ADVANCE"
+      ],
+      "new_deferrals": 0,
+      "unnecessary_deferrals": 0,
+      "prevented_disagreements": 0
+    },
+    {
+      "group": "GROUP-026",
+      "equivalence": [
+        "YES"
+      ],
+      "reference_flagged": false,
+      "reference_decisions": [
+        "ADVANCE",
+        "ADVANCE",
+        "ADVANCE"
+      ],
+      "evidence_decisions": [
+        "ADVANCE",
+        "ADVANCE",
+        "ADVANCE"
+      ],
+      "traceability_decisions": [
+        "ADVANCE",
+        "ADVANCE",
+        "ADVANCE"
+      ],
+      "integrated_decisions": [
+        "ADVANCE",
+        "ADVANCE",
+        "ADVANCE"
+      ],
+      "new_deferrals": 0,
+      "unnecessary_deferrals": 0,
+      "prevented_disagreements": 0
+    },
+    {
+      "group": "GROUP-027",
+      "equivalence": [
+        "YES"
+      ],
+      "reference_flagged": false,
+      "reference_decisions": [
+        "ADVANCE",
+        "ADVANCE",
+        "ADVANCE"
+      ],
+      "evidence_decisions": [
+        "ADVANCE",
+        "ADVANCE",
+        "ADVANCE"
+      ],
+      "traceability_decisions": [
+        "ADVANCE",
+        "ADVANCE",
+        "ADVANCE"
+      ],
+      "integrated_decisions": [
+        "ADVANCE",
+        "ADVANCE",
+        "ADVANCE"
+      ],
+      "new_deferrals": 0,
+      "unnecessary_deferrals": 0,
+      "prevented_disagreements": 0
+    },
+    {
+      "group": "GROUP-028",
+      "equivalence": [
+        "YES"
+      ],
+      "reference_flagged": false,
+      "reference_decisions": [
+        "ADVANCE",
+        "ADVANCE",
+        "ADVANCE"
+      ],
+      "evidence_decisions": [
+        "ADVANCE",
+        "ADVANCE",
+        "ADVANCE"
+      ],
+      "traceability_decisions": [
+        "ADVANCE",
+        "ADVANCE",
+        "ADVANCE"
+      ],
+      "integrated_decisions": [
+        "ADVANCE",
+        "ADVANCE",
+        "ADVANCE"
+      ],
+      "new_deferrals": 0,
+      "unnecessary_deferrals": 0,
+      "prevented_disagreements": 0
+    },
+    {
+      "group": "GROUP-029",
+      "equivalence": [
+        "YES"
+      ],
+      "reference_flagged": false,
+      "reference_decisions": [
+        "ADVANCE",
+        "ADVANCE",
+        "ADVANCE"
+      ],
+      "evidence_decisions": [
+        "ADVANCE",
+        "ADVANCE",
+        "ADVANCE"
+      ],
+      "traceability_decisions": [
+        "ADVANCE",
+        "ADVANCE",
+        "ADVANCE"
+      ],
+      "integrated_decisions": [
+        "ADVANCE",
+        "ADVANCE",
+        "ADVANCE"
+      ],
+      "new_deferrals": 0,
+      "unnecessary_deferrals": 0,
+      "prevented_disagreements": 0
+    },
+    {
+      "group": "GROUP-030",
+      "equivalence": [
+        "YES"
+      ],
+      "reference_flagged": true,
+      "reference_decisions": [
+        "DO_NOT_ADVANCE",
+        "DO_NOT_ADVANCE",
+        "DO_NOT_ADVANCE"
+      ],
+      "evidence_decisions": [
+        "DO_NOT_ADVANCE",
+        "DO_NOT_ADVANCE",
+        "DO_NOT_ADVANCE"
+      ],
+      "traceability_decisions": [
+        "DO_NOT_ADVANCE",
+        "DO_NOT_ADVANCE",
+        "DO_NOT_ADVANCE"
+      ],
+      "integrated_decisions": [
+        "DO_NOT_ADVANCE",
+        "DO_NOT_ADVANCE",
+        "DO_NOT_ADVANCE"
+      ],
+      "new_deferrals": 0,
+      "unnecessary_deferrals": 0,
+      "prevented_disagreements": 0
+    },
+    {
+      "group": "GROUP-031",
+      "equivalence": [
+        "YES"
+      ],
+      "reference_flagged": true,
+      "reference_decisions": [
+        "DEFER",
+        "DEFER",
+        "DEFER"
+      ],
+      "evidence_decisions": [
+        "ADVANCE",
+        "ADVANCE",
+        "ADVANCE"
+      ],
+      "traceability_decisions": [
+        "ADVANCE",
+        "ADVANCE",
+        "ADVANCE"
+      ],
+      "integrated_decisions": [
+        "ADVANCE",
+        "ADVANCE",
+        "ADVANCE"
+      ],
+      "new_deferrals": 0,
+      "unnecessary_deferrals": 0,
+      "prevented_disagreements": 0
+    },
+    {
+      "group": "GROUP-032",
+      "equivalence": [
+        "YES"
+      ],
+      "reference_flagged": true,
+      "reference_decisions": [
+        "DO_NOT_ADVANCE",
+        "DO_NOT_ADVANCE",
+        "DO_NOT_ADVANCE"
+      ],
+      "evidence_decisions": [
+        "DO_NOT_ADVANCE",
+        "DO_NOT_ADVANCE",
+        "DO_NOT_ADVANCE"
+      ],
+      "traceability_decisions": [
+        "DEFER",
+        "DEFER",
+        "DEFER"
+      ],
+      "integrated_decisions": [
+        "DEFER",
+        "DEFER",
+        "DEFER"
+      ],
+      "new_deferrals": 3,
+      "unnecessary_deferrals": 3,
+      "prevented_disagreements": 0
+    },
+    {
+      "group": "GROUP-033",
+      "equivalence": [
+        "YES"
+      ],
+      "reference_flagged": false,
+      "reference_decisions": [
+        "DO_NOT_ADVANCE",
+        "DO_NOT_ADVANCE",
+        "DO_NOT_ADVANCE"
+      ],
+      "evidence_decisions": [
+        "DO_NOT_ADVANCE",
+        "DO_NOT_ADVANCE",
+        "DO_NOT_ADVANCE"
+      ],
+      "traceability_decisions": [
+        "DO_NOT_ADVANCE",
+        "DO_NOT_ADVANCE",
+        "DO_NOT_ADVANCE"
+      ],
+      "integrated_decisions": [
+        "DO_NOT_ADVANCE",
+        "DO_NOT_ADVANCE",
+        "DO_NOT_ADVANCE"
+      ],
+      "new_deferrals": 0,
+      "unnecessary_deferrals": 0,
+      "prevented_disagreements": 0
+    },
+    {
+      "group": "GROUP-034",
+      "equivalence": [
+        "YES"
+      ],
+      "reference_flagged": false,
+      "reference_decisions": [
+        "DO_NOT_ADVANCE",
+        "DO_NOT_ADVANCE",
+        "DO_NOT_ADVANCE"
+      ],
+      "evidence_decisions": [
+        "DO_NOT_ADVANCE",
+        "DO_NOT_ADVANCE",
+        "DO_NOT_ADVANCE"
+      ],
+      "traceability_decisions": [
+        "DEFER",
+        "DEFER",
+        "DO_NOT_ADVANCE"
+      ],
+      "integrated_decisions": [
+        "DEFER",
+        "DEFER",
+        "DEFER"
+      ],
+      "new_deferrals": 3,
+      "unnecessary_deferrals": 3,
+      "prevented_disagreements": 0
+    },
+    {
+      "group": "GROUP-035",
+      "equivalence": [
+        "UNCERTAIN"
+      ],
+      "reference_flagged": true,
+      "reference_decisions": [
+        "ADVANCE",
+        "ADVANCE",
+        "ADVANCE"
+      ],
+      "evidence_decisions": [
+        "ADVANCE",
+        "ADVANCE",
+        "ADVANCE"
+      ],
+      "traceability_decisions": [
+        "ADVANCE",
+        "ADVANCE",
+        "ADVANCE"
+      ],
+      "integrated_decisions": [
+        "ADVANCE",
+        "ADVANCE",
+        "ADVANCE"
+      ],
+      "new_deferrals": 0,
+      "unnecessary_deferrals": 0,
+      "prevented_disagreements": 0
+    },
+    {
+      "group": "GROUP-036",
+      "equivalence": [
+        "UNCERTAIN"
+      ],
+      "reference_flagged": true,
+      "reference_decisions": [
+        "DEFER",
+        "DEFER",
+        "DEFER"
+      ],
+      "evidence_decisions": [
+        "ADVANCE",
+        "DEFER",
+        "ADVANCE"
+      ],
+      "traceability_decisions": [
+        "ADVANCE",
+        "DEFER",
+        "ADVANCE"
+      ],
+      "integrated_decisions": [
+        "DEFER",
+        "DEFER",
+        "DEFER"
+      ],
+      "new_deferrals": 2,
+      "unnecessary_deferrals": 0,
+      "prevented_disagreements": 2
+    }
+  ],
+  "exploratory_uncertainty": {
+    "quantity": "Integrated minus evidence-aware actionable disagreement rate (different retained populations)",
+    "observed": -0.031746031746031744,
+    "cluster_bootstrap_95_percentile_interval": [
+      -0.1047008547008547,
+      0.030998389694041867
+    ],
+    "bootstrap_resamples": 5000,
+    "warning": "Exploratory development uncertainty with 36 correlated variant groups in 12 scenario families; not held-out inference."
+  },
+  "limitations": [
+    "Provisional AI-assisted references are not independent ground truth.",
+    "Scoring-only per-response outputs were not among the four inputs.",
+    "The current gate operates on groups including NO/UNCERTAIN equivalence.",
+    "Literal quotation mismatch is not semantic evidence failure.",
+    "Do not tune policy on held-out data or claim development results are independent validation."
+  ]
+}

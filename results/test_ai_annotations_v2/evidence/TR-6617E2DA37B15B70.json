@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-6617E2DA37B15B70",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_07971e6c628643b8016b002bbf93dc87d0b8dad08889657b65",
+  "annotated_utc": "2026-11-20T11:15:14.711816+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "CSS02-C1",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I’d mainly rely on the delivered scan and ask the customer to check the area and nearby neighbours. If they still can’t find it, I’d proceed as if it was lost and skip deeper verification unless the customer pushes for it.",
+        "rationale": "The answer does not describe gathering broader information needed to understand what happened; instead it says to skip deeper verification unless prompted, which materially undermines the request for relevant information."
+      },
+      {
+        "criterion_id": "CSS02-C2",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I’d mainly rely on the delivered scan and ask the customer to check the area and nearby neighbours. If they still can’t find it, I’d proceed as if it was lost and skip deeper verification unless the customer pushes for it.",
+        "rationale": "The candidate explicitly says they would rely mainly on the delivery scan and then proceed as if the item was lost, which treats an unconfirmed delivery event as sufficient and does not distinguish confirmed facts from assumptions."
+      },
+      {
+        "criterion_id": "CSS02-C3",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "passage": "",
+        "rationale": "The answer mentions only a basic check with the customer and nearby neighbours, but it does not clearly show whether the information gathering would be proportionate or appropriately authorized. It also does not establish enough detail to judge collection boundaries."
+      }
+    ],
+    "annotation_notes": "The response contains clear evidence on verification practice, but not enough detail to assess proportionality of collection beyond general insufficiency."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

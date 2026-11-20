@@ -1,0 +1,290 @@
+ESDSA — BENCHMARK BASELINE DIAGNOSTIC
+========================================================================
+E1: {'ADVANCE': 36}
+E2: {'ADVANCE': 32, 'DO_NOT_ADVANCE': 1, 'DEFER': 3}
+E3: {'DO_NOT_ADVANCE': 35, 'ADVANCE': 1}
+
+EXCERPT WARNING TYPES
+{'OUTER_QUOTES_ONLY': 83, 'UNVERIFIABLE_EXCERPT': 24}
+
+========================================================================
+RESPONSE: ESDSA-CSS01-01-E2L1
+COMPETENCY: CSS01
+DECISION: ADVANCE
+
+QUESTION:
+A customer contacts support saying that their account is broken and that they need urgent help. They provide no further details. How would you establish what has happened and what matters most?
+
+ANSWER:
+I’d begin by taking the urgency seriously and asking a couple of open questions so they can tell me more. I’d try to understand what they were doing when they noticed the problem and whether it’s stopping them from using the account as expected. After that, I’d briefly restate what I’ve heard and decide the next step based on the details they give me.
+
+CRITERION ASSESSMENTS:
+CSS01-C1: POSITIVE_EVIDENCE
+  Explanation: The candidate explicitly says they would ask open questions and probe what was happening when the issue was noticed, which shows they would establish what problem the customer is experiencing.
+CSS01-C2: POSITIVE_EVIDENCE
+  Explanation: This directly identifies the affected service/outcome by checking whether the issue is preventing use of the account.
+CSS01-C3: POSITIVE_EVIDENCE
+  Explanation: Restating what has been heard is a concise summary of the issue before moving to the next step, which matches defining the problem before resolution.
+Validation warnings: []
+
+========================================================================
+RESPONSE: ESDSA-CSS02-02-E2L1
+COMPETENCY: CSS02
+DECISION: ADVANCE
+
+QUESTION:
+A customer reports that a payment was taken twice, but the customer-facing account page shows only one transaction. You can consult approved internal payment records. How would you gather and assess the information needed to investigate?
+
+ANSWER:
+I’d ask the customer for the approximate time of the payment and whether they noticed anything unusual during checkout. Then I’d review the internal payment records against the account page to see if there’s a second transaction that simply isn’t displayed yet. If the records don’t show anything extra, I’d likely treat it as a display issue and continue from there.
+
+CRITERION ASSESSMENTS:
+CSS02-C1: POSITIVE_EVIDENCE
+  Explanation: The candidate asks targeted questions that would help clarify the circumstances of the alleged duplicate payment.
+CSS02-C2: POSITIVE_EVIDENCE
+  Explanation: The answer distinguishes checking records from assuming a display issue, but it also notes that any conclusion should depend on whether the records confirm an extra transaction.
+CSS02-C3: POSITIVE_EVIDENCE
+  Explanation: The candidate limits collection to a small set of relevant customer details and approved internal records, which is proportionate and authorised for the investigation.
+Validation warnings: []
+
+========================================================================
+RESPONSE: ESDSA-CSS03-02-E2L1
+COMPETENCY: CSS03
+DECISION: ADVANCE
+
+QUESTION:
+A customer requests an immediate refund for a service interruption. The account history confirms an outage, but eligibility information is incomplete and an exception may require approval. How would you determine the appropriate next action?
+
+ANSWER:
+I’d acknowledge the interruption, review whatever eligibility details are available, and then decide whether this looks like a standard refund or something that needs approval. If I can’t confirm the full criteria from the information in front of me, I’d hold the case and get the missing details or ask the appropriate team to review it before moving ahead.
+
+CRITERION ASSESSMENTS:
+CSS03-C1: POSITIVE_EVIDENCE
+  Explanation: The candidate weighs the available evidence and distinguishes between a routine refund and one requiring approval, showing they are assessing the appropriate resolution based on the facts.
+CSS03-C2: POSITIVE_EVIDENCE
+  Explanation: This indicates awareness that some refunds are constrained by authorization requirements and should not be issued unilaterally.
+CSS03-C3: POSITIVE_EVIDENCE
+  Explanation: The candidate explicitly recognizes incomplete information and states they would pause and seek missing details or escalation before proceeding.
+Validation warnings: [{'criterion_id': 'CSS03-C1', 'issue': 'OUTER_QUOTES_ONLY'}, {'criterion_id': 'CSS03-C2', 'issue': 'OUTER_QUOTES_ONLY'}, {'criterion_id': 'CSS03-C3', 'issue': 'OUTER_QUOTES_ONLY'}]
+
+========================================================================
+RESPONSE: ESDSA-CSS04-02-E2L1
+COMPETENCY: CSS04
+DECISION: ADVANCE
+
+QUESTION:
+A customer's technical issue requires specialist investigation and cannot be resolved during the initial conversation. The estimated completion time is uncertain. How would you communicate with the customer and manage follow-up?
+
+ANSWER:
+I’d tell the customer that I’ve identified the issue as one that needs specialist review, and I’d make sure they understand what I’m recording and passing on. I’d explain that I can’t complete the fix myself right away, and I’d avoid giving them a specific time if I don’t have one. I would also let them know we’ll keep them informed as the investigation progresses, and I’d make sure they have a way to reach us if anything changes on their side.
+
+CRITERION ASSESSMENTS:
+CSS04-C1: POSITIVE_EVIDENCE
+  Explanation: This clearly explains the next action in understandable terms: the issue needs specialist review and information will be recorded and passed on.
+CSS04-C2: POSITIVE_EVIDENCE
+  Explanation: This sets realistic expectations by stating the fix cannot be completed immediately and by avoiding an unsupported time commitment.
+CSS04-C3: POSITIVE_EVIDENCE
+  Explanation: This provides a follow-up mechanism through ongoing updates and a way for the customer to contact support if circumstances change.
+Validation warnings: []
+
+========================================================================
+RESPONSE: ESDSA-OPS01-01-E2L1
+COMPETENCY: OPS01
+DECISION: ADVANCE
+
+QUESTION:
+You are coordinating three activities: a routine inventory review, an urgent delivery affecting a major customer, and scheduled maintenance that could disrupt the delivery process. Resources are limited. How would you determine priorities?
+
+ANSWER:
+I’d look at the deadlines first and make sure the urgent delivery is covered, since that’s the most visible customer commitment. After that, I’d check how the maintenance fits into the day so we don’t create avoidable disruption, and I’d fit the inventory review around the remaining capacity. I’d also keep the team informed so everyone knows what’s being worked on. If the situation shifted, I’d be open to revisiting the order, but I’d want to see the details before changing course.
+
+CRITERION ASSESSMENTS:
+OPS01-C1: POSITIVE_EVIDENCE
+  Explanation: This identifies urgency/deadlines as a priority criterion, and the maintenance mention shows awareness of dependency/impact on the delivery process.
+OPS01-C2: POSITIVE_EVIDENCE
+  Explanation: The answer explains the prioritisation order using impact and capacity trade-offs: protecting the delivery, minimizing disruption from maintenance, and deferring the inventory review to available capacity.
+OPS01-C3: POSITIVE_EVIDENCE
+  Explanation: This explicitly states that priorities would be reassessed if material conditions change.
+Validation warnings: []
+
+========================================================================
+RESPONSE: ESDSA-OPS02-03-E2L1
+COMPETENCY: OPS02
+DECISION: ADVANCE
+
+QUESTION:
+A critical supplier reports that an upcoming shipment may be delayed. Current stock could support normal operations for a short period, but demand forecasts are uncertain. How would you assess and respond to the operational risk?
+
+ANSWER:
+I’d first confirm the supplier’s timing and review current stock against recent usage so I can understand how much cushion we really have. Since demand forecasts are uncertain, I’d also want to see whether we have enough buffer if volumes come in above plan. If the delay starts to look longer than our stock coverage, I’d raise it with the relevant team and keep monitoring it closely. I’d want to make sure we stay on top of it rather than waiting for it to become urgent.
+
+CRITERION ASSESSMENTS:
+OPS02-C1: POSITIVE_EVIDENCE
+  Explanation: The candidate explicitly identifies the operational risk in context: a supplier shipment delay that could affect operations.
+OPS02-C2: POSITIVE_EVIDENCE
+  Explanation: The response considers uncertainty in demand and the possible consequence of higher-than-expected volumes reducing available stock coverage.
+OPS02-C3: POSITIVE_EVIDENCE
+  Explanation: The candidate proposes a proportionate response: monitor the situation and escalate to the relevant team if the risk worsens.
+Validation warnings: [{'criterion_id': 'OPS02-C1', 'issue': 'UNVERIFIABLE_EXCERPT'}, {'criterion_id': 'OPS02-C2', 'issue': 'UNVERIFIABLE_EXCERPT'}, {'criterion_id': 'OPS02-C3', 'issue': 'OUTER_QUOTES_ONLY'}]
+
+========================================================================
+RESPONSE: ESDSA-OPS03-01-E2L1
+COMPETENCY: OPS03
+DECISION: ADVANCE
+
+QUESTION:
+A delivery schedule shows that an important shipment is ready, but the warehouse and carrier records disagree about whether it has been collected. Several teams need an updated plan. How would you coordinate the next steps?
+
+ANSWER:
+I’d start by reviewing the warehouse and carrier records together and then ask the relevant contacts to clarify the shipment status. After that, I’d send an update to the teams involved so they know there’s a discrepancy being worked through. I’d also make sure the timeline reflects whatever we learn, so the plan stays current.
+
+CRITERION ASSESSMENTS:
+OPS03-C1: POSITIVE_EVIDENCE
+  Explanation: The candidate explicitly uses information from two operational sources and compares them to resolve the discrepancy.
+OPS03-C2: POSITIVE_EVIDENCE
+  Explanation: The answer identifies responsible parties to contact and names the affected teams that need coordination and updates.
+OPS03-C3: POSITIVE_EVIDENCE
+  Explanation: The candidate explains actions in relation to the operational evidence and indicates the plan will be updated based on what the records and contacts reveal.
+Validation warnings: []
+
+========================================================================
+RESPONSE: ESDSA-OPS04-01-E2L1
+COMPETENCY: OPS04
+DECISION: ADVANCE
+
+QUESTION:
+A project is approaching a critical milestone. One dependent task is incomplete, and the responsible team has not confirmed when it will finish. How would you monitor the situation and decide whether escalation is necessary?
+
+ANSWER:
+I’d check the milestone plan against the task’s current status and ask the team for their latest estimate, blockers, and any update on what might affect the finish. I’d keep the project lead informed if the situation changes, and I’d make sure I have a current view of the dependency so I can see whether it is moving closer to the deadline or not. If there is still uncertainty, I’d continue tracking it and make sure the right people are aware of it.
+
+CRITERION ASSESSMENTS:
+OPS04-C1: POSITIVE_EVIDENCE
+  Explanation: The candidate names concrete status information to monitor: current status, latest estimate, blockers, and factors affecting completion.
+OPS04-C2: POSITIVE_EVIDENCE
+  Explanation: The candidate shows awareness of a trigger for action by assessing whether the dependency is trending toward the deadline and by noting that ongoing uncertainty should change how it is handled.
+OPS04-C3: POSITIVE_EVIDENCE
+  Explanation: The candidate identifies an appropriate escalation path by informing the project lead and implies ongoing follow-through through continued tracking and keeping people aware.
+Validation warnings: [{'criterion_id': 'OPS04-C1', 'issue': 'OUTER_QUOTES_ONLY'}, {'criterion_id': 'OPS04-C2', 'issue': 'OUTER_QUOTES_ONLY'}, {'criterion_id': 'OPS04-C3', 'issue': 'OUTER_QUOTES_ONLY'}]
+
+========================================================================
+RESPONSE: ESDSA-SWE01-01-E2L1
+COMPETENCY: SWE01
+DECISION: ADVANCE
+
+QUESTION:
+After a software release, some users report that a dashboard displays different totals for the same records. Other users report no problem. You have access to a test environment and a record of recent changes. How would you approach identifying the defect?
+
+ANSWER:
+I’d begin by trying to reproduce the mismatch in the test environment using the records and user contexts that were reported, and then I’d look at the recent changes to see which areas could affect totals. I’d also compare the release notes and the affected accounts to see whether the difference lines up with a specific code path or configuration change. If the issue appears only for some users, I’d dig into whether there’s a permission or data-shaping difference involved before deciding where to focus.
+
+CRITERION ASSESSMENTS:
+SWE01-C1: POSITIVE_EVIDENCE
+  Explanation: The candidate explicitly describes reproducing the reported failure in a test environment using the relevant records and user contexts.
+SWE01-C2: POSITIVE_EVIDENCE
+  Explanation: The candidate compares affected cases against release information to identify what differs between failing and non-failing behavior.
+SWE01-C3: POSITIVE_EVIDENCE
+  Explanation: The candidate uses observed differences to narrow the likely causes to permission or data-shaping differences, which is systematic narrowing.
+Validation warnings: [{'criterion_id': 'SWE01-C1', 'issue': 'OUTER_QUOTES_ONLY'}, {'criterion_id': 'SWE01-C2', 'issue': 'OUTER_QUOTES_ONLY'}, {'criterion_id': 'SWE01-C3', 'issue': 'OUTER_QUOTES_ONLY'}]
+
+========================================================================
+RESPONSE: ESDSA-SWE02-01-E2L1
+COMPETENCY: SWE02
+DECISION: ADVANCE
+
+QUESTION:
+An application becomes intermittently slow after an update. Available information includes server logs, request timings, deployment records and database metrics. Several potential causes have been suggested. How would you investigate?
+
+ANSWER:
+I’d start by checking the deployment records and request timings to see whether the slowdown began right after the update or only affects certain endpoints. Then I’d review the server logs for errors or timeouts and look at the database metrics for signs of load, slow queries, or locking. If the issue seems to line up with the release, I’d focus on the changed components and see whether the performance regression is tied to a particular code path.
+
+I’d also compare the slow requests against the faster ones to see what they have in common. That would help me narrow down whether the problem is in application logic, a dependency call, or the database. I’d keep the investigation centered on the evidence we have and work through the most likely causes until something stands out as the main source of the slowdown.
+
+CRITERION ASSESSMENTS:
+SWE02-C1: POSITIVE_EVIDENCE
+  Explanation: The response identifies multiple relevant technical sources of evidence for an intermittent slowdown: deployment records, request timings, server logs, and database metrics.
+SWE02-C2: POSITIVE_EVIDENCE
+  Explanation: The candidate proposes concrete comparisons and checks that would distinguish among plausible causes, such as release timing, endpoint specificity, and patterns shared by slow versus fast requests.
+SWE02-C3: POSITIVE_EVIDENCE
+  Explanation: The answer connects observed evidence to a diagnostic conclusion by inferring that a regression aligned with the release points toward changed components or a specific code path as the likely source.
+Validation warnings: [{'criterion_id': 'SWE02-C1', 'issue': 'UNVERIFIABLE_EXCERPT'}, {'criterion_id': 'SWE02-C2', 'issue': 'UNVERIFIABLE_EXCERPT'}]
+
+========================================================================
+RESPONSE: ESDSA-SWE03-01-E2L1
+COMPETENCY: SWE03
+DECISION: ADVANCE
+
+QUESTION:
+An online ordering system occasionally creates duplicate orders. Initial investigation suggests that retry requests may interact with order-creation logic. Explain how you would decide what to correct and why that correction would address the problem.
+
+ANSWER:
+I’d investigate the full request path to see whether the duplicates line up with retry behavior, timeouts, or a database constraint issue. Based on that, I’d likely adjust the order creation flow so repeated requests are handled more safely, and I’d also review the client retry settings to understand how often the same request is being sent. That should reduce the duplicate orders, though I’d want to confirm which part of the flow is actually responsible before making the final change.
+
+CRITERION ASSESSMENTS:
+SWE03-C1: POSITIVE_EVIDENCE
+  Explanation: The candidate identifies plausible causes and explicitly says they would investigate to confirm which one matches the duplicates.
+SWE03-C2: POSITIVE_EVIDENCE
+  Explanation: The proposed correction is directly linked to the suspected retry-related cause by making repeated requests safer and examining retry settings.
+SWE03-C3: POSITIVE_EVIDENCE
+  Explanation: The candidate explains the mechanism for why the correction would help: safer handling of repeated requests should reduce duplicates, while also acknowledging validation before finalizing the fix.
+Validation warnings: []
+
+========================================================================
+RESPONSE: ESDSA-SWE04-01-E2L1
+COMPETENCY: SWE04
+DECISION: ADVANCE
+
+QUESTION:
+A defect causing incorrect invoice totals has been corrected in a development environment. The change affects code shared with several other billing functions. What would you do before deciding whether the correction is ready?
+
+ANSWER:
+I’d verify the corrected invoice total in the development environment by rerunning the scenario that originally exposed the defect. After that, I’d review the change against the other billing functions that share the code and look at whether any additional checks seem appropriate based on the affected paths. If the retest looked good and I didn’t see any obvious knock-on concerns, I’d be comfortable taking the next step.
+
+CRITERION ASSESSMENTS:
+SWE04-C1: POSITIVE_EVIDENCE
+  Explanation: This directly states retesting the original failing scenario to confirm the defect is fixed.
+SWE04-C2: POSITIVE_EVIDENCE
+  Explanation: This shows consideration of regression risk and potential impact on related previously working billing functions.
+SWE04-C3: POSITIVE_EVIDENCE
+  Explanation: This uses the verification results and regression assessment to determine whether to proceed.
+Validation warnings: [{'criterion_id': 'SWE04-C1', 'issue': 'OUTER_QUOTES_ONLY'}, {'criterion_id': 'SWE04-C2', 'issue': 'OUTER_QUOTES_ONLY'}, {'criterion_id': 'SWE04-C3', 'issue': 'OUTER_QUOTES_ONLY'}]
+
+========================================================================
+RESPONSE: ESDSA-CSS02-02-E2L2
+COMPETENCY: CSS02
+DECISION: DO_NOT_ADVANCE
+
+QUESTION:
+A customer reports that a payment was taken twice, but the customer-facing account page shows only one transaction. You can consult approved internal payment records. How would you gather and assess the information needed to investigate?
+
+ANSWER:
+I’d start with the rough time of the payment and ask if they did anything different when it went through. After that I’d check the internal payment records and compare them with what’s on the customer page. If I don’t see a second charge in the records, I’d probably assume it’s just the page not updating properly and keep investigating.
+
+CRITERION ASSESSMENTS:
+CSS02-C1: POSITIVE_EVIDENCE
+  Explanation: The candidate identifies relevant questions to clarify the transaction context and gather needed details about the reported double charge.
+CSS02-C2: NEGATIVE_EVIDENCE
+  Explanation: This shows the candidate making an assumption from incomplete evidence rather than clearly distinguishing confirmed internal records from an unverified explanation.
+CSS02-C3: POSITIVE_EVIDENCE
+  Explanation: The candidate describes using approved internal payment records and comparing sources, which is appropriate and authorized information gathering.
+Validation warnings: []
+
+========================================================================
+RESPONSE: ESDSA-SWE03-01-E3L1
+COMPETENCY: SWE03
+DECISION: ADVANCE
+
+QUESTION:
+An online ordering system occasionally creates duplicate orders. Initial investigation suggests that retry requests may interact with order-creation logic. Explain how you would decide what to correct and why that correction would address the problem.
+
+ANSWER:
+I’d probably correct the payment step first, since duplicate orders often show up when payment retries happen, and that would be the easiest place to add extra checks. I wouldn’t spend too much time proving whether order creation itself is the issue; I’d rather add a broader safeguard around the checkout flow and see if the duplicates stop. If they do, that would suggest the fix was in the right area, even if the exact source of the duplicate wasn’t isolated first.
+
+CRITERION ASSESSMENTS:
+SWE03-C1: POSITIVE_EVIDENCE
+  Explanation: The candidate identifies a plausible cause related to the investigation: retry behavior during payment.
+SWE03-C2: POSITIVE_EVIDENCE
+  Explanation: The proposed correction is explicitly tied to the identified cause of payment retries.
+SWE03-C3: POSITIVE_EVIDENCE
+  Explanation: The candidate explains the correction’s intended effect: extra checks or a broader safeguard should prevent duplicate orders from recurring, and success would indicate the fix is in the right area.
+Validation warnings: [{'criterion_id': 'SWE03-C3', 'issue': 'UNVERIFIABLE_EXCERPT'}]

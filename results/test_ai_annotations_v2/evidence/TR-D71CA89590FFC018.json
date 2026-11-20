@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-D71CA89590FFC018",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0727cb704d190c29016b002b4f089087d0ad401051f17bb90b",
+  "annotated_utc": "2026-11-20T11:13:21.559663+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "SWE03-C1",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "passage": "",
+        "rationale": "The answer proposes investigating traces and logs, but it does not identify a specific plausible cause supported by evidence. It explicitly says the retry source is still being pinned down, so the cause remains unestablished."
+      },
+      {
+        "criterion_id": "SWE03-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d recommend a change that makes duplicates less likely, probably with idempotency or a dedupe check in the upload flow.",
+        "rationale": "This clearly links the proposed correction to the duplicate-upload problem by recommending idempotency or deduplication in the upload flow."
+      },
+      {
+        "criterion_id": "SWE03-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "That would help prevent the repeated storage, even if we’re still pinning down whether the client or server is kicking off the retries.",
+        "rationale": "The candidate explains why the correction helps: it would prevent repeated storage, directly addressing the duplicate attachment issue."
+      }
+    ],
+    "annotation_notes": "The response shows a reasonable corrective proposal and rationale, but it does not yet establish a supported cause."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

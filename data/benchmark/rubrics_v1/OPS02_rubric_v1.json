@@ -1,0 +1,49 @@
+{
+  "rubric_id": "ESDSA-OPS02-R1",
+  "version": "1.0-draft",
+  "role_code": "OPS",
+  "role_name": "Operations Coordinator",
+  "competency_code": "OPS02",
+  "competency_name": "Risk identification",
+  "criteria": [
+    {
+      "id": "OPS02-C1",
+      "name": "Hazard recognition",
+      "definition": "Identify a plausible operational risk in context.",
+      "illustrative_positive_evidence": "Recognises a failure that could interrupt essential delivery.",
+      "illustrative_negative_evidence": "Explicitly disregards a known serious operational hazard."
+    },
+    {
+      "id": "OPS02-C2",
+      "name": "Likelihood and impact",
+      "definition": "Consider uncertainty and possible consequences.",
+      "illustrative_positive_evidence": "Assesses both disruption likelihood and service impact.",
+      "illustrative_negative_evidence": "Treats a documented high-impact risk as harmless without basis."
+    },
+    {
+      "id": "OPS02-C3",
+      "name": "Risk response",
+      "definition": "Propose proportionate mitigation or escalation.",
+      "illustrative_positive_evidence": "Adds a contingency and escalates a critical exposure.",
+      "illustrative_negative_evidence": "Continues an unsafe activity despite a known unmitigated risk."
+    }
+  ],
+  "evidence_statuses": {
+    "POSITIVE_EVIDENCE": "The answer explicitly or clearly demonstrates the indicator in context.",
+    "NEGATIVE_EVIDENCE": "The answer explicitly demonstrates a materially deficient approach concerning the indicator.",
+    "INSUFFICIENT_EVIDENCE": "The answer does not establish either positive or negative evidence for the indicator."
+  },
+  "interpretation_rules": [
+    "Assess demonstrated meaning, not exact wording.",
+    "Do not infer deficient practice solely from omission.",
+    "A brief answer can provide sufficient evidence.",
+    "A fluent or lengthy answer is not sufficient by itself.",
+    "Consider scenario context and applicable constraints.",
+    "Record the supporting passage or indicate absence.",
+    "Illustrative examples are not exhaustive.",
+    "Do not infer protected or demographic attributes."
+  ],
+  "decision_policy": "NOT_YET_VALIDATED",
+  "expert_review": "PENDING",
+  "reference_validation": "PENDING"
+}

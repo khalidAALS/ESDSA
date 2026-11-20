@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-3DF92952D4D82E97",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_090db147200da461016b000e64f80487d097e3dd27e079dbba",
+  "annotated_utc": "2026-11-20T09:09:59.236267+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "CSS01-C1",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I’d probably treat it as a simple email-delivery problem and just resend the confirmation.",
+        "rationale": "This explicitly narrows the issue to email delivery and ignores the additional unfamiliar delivery address and uncertainty about whether the order was placed successfully, showing a materially incomplete problem clarification."
+      },
+      {
+        "criterion_id": "CSS01-C2",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "The address can usually be handled later, so I wouldn’t dig too much into that unless the customer pushes on it.",
+        "rationale": "The response deprioritizes the unfamiliar delivery address and does not establish which customer outcome is affected, indicating failure to identify the impacted service or outcome."
+      },
+      {
+        "criterion_id": "CSS01-C3",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I’d probably treat it as a simple email-delivery problem and just resend the confirmation.",
+        "rationale": "The candidate moves directly to a presumed solution and labels the problem narrowly without first summarising the full issue, contrary to defining the problem before selecting a resolution."
+      }
+    ],
+    "annotation_notes": "The answer focuses on one likely symptom and explicitly downplays the address issue, so it provides negative evidence for all three criteria."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

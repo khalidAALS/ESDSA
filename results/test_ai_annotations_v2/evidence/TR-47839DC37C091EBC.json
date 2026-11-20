@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-47839DC37C091EBC",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_04d1f3f035c0024e016b0029bc036487d0ac724e00785b2199",
+  "annotated_utc": "2026-11-20T11:06:38.007462+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "CSS01-C1",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I’d probably just go with the admin’s version since they control the subscription, and then turn access back on to get everyone moving again.",
+        "rationale": "This skips establishing the actual problem from the conflicting reports and instead assumes one version is correct without clarifying what happened."
+      },
+      {
+        "criterion_id": "CSS01-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "turn access back on to get everyone moving again",
+        "rationale": "This shows the candidate recognizes the impacted outcome is lost access to the shared subscription/service."
+      },
+      {
+        "criterion_id": "CSS01-C3",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "and then turn access back on to get everyone moving again. If the other user says it was accidental, that can be looked at later, but I’d prioritize fixing it first.",
+        "rationale": "The candidate proposes moving straight to a fix before defining or summarizing the issue, which contradicts the requirement to define the problem before selecting a resolution."
+      }
+    ],
+    "annotation_notes": "The answer shows awareness of the access impact, but it does not clearly demonstrate careful issue clarification or problem definition in the face of disagreement."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

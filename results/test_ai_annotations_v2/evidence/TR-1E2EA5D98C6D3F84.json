@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-1E2EA5D98C6D3F84",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0fb705d478e3d395016b002a1a303887d0b226074b82edcc33",
+  "annotated_utc": "2026-11-20T11:08:13.666748+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "OPS02-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "A brief excursion could be something minor with the monitoring, but it might also point to a real cold-chain concern",
+        "rationale": "The candidate explicitly identifies a plausible operational hazard: a possible real cold-chain concern from the temperature excursion."
+      },
+      {
+        "criterion_id": "OPS02-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d want to understand the timing and whether the shipment was exposed for long enough to matter. Since the shipment is due out soon, I’d be thinking about both the risk to the product and the effect of any delay on operations.",
+        "rationale": "The candidate shows uncertainty about the excursion and considers possible consequences for product integrity and operational delay."
+      },
+      {
+        "criterion_id": "OPS02-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "Depending on what I found, I’d decide whether to hold it for a closer check or move forward with a note to keep monitoring it closely.",
+        "rationale": "The candidate proposes proportionate responses: either hold for closer inspection or proceed with continued monitoring, which are risk-based and contextual."
+      }
+    ],
+    "annotation_notes": ""
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

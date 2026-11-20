@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-2FF95B1F93BA7E4C",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0c9873ba072b1054016b00107648dc87d0a4d43873dafa892d",
+  "annotated_utc": "2026-11-20T09:18:48.738267+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "OPS01-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "Delays can be very costly, so I’d prefer to stay on schedule and avoid stopping work based on a concern that might turn out to be minor.",
+        "rationale": "The answer identifies urgency and impact by discussing the cost of delays and the time-sensitive delivery, and it also acknowledges the equipment concern as the competing issue."
+      },
+      {
+        "criterion_id": "OPS01-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "If the delivery slips, we may lose the bigger business opportunity, so I’d focus on avoiding that.",
+        "rationale": "The candidate explicitly weighs the business impact of delay against the equipment concern and explains the prioritisation choice using that evidence."
+      },
+      {
+        "criterion_id": "OPS01-C3",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I’d keep the delivery moving unless the equipment problem was already confirmed as severe.",
+        "rationale": "This states a fixed approach that continues delivery unless the problem is already confirmed severe, which does not show reassessing priorities when material conditions change; it suggests waiting for confirmation rather than dynamically reprioritising based on evolving risk."
+      }
+    ],
+    "annotation_notes": "The response shows clear trade-off reasoning around urgency and impact, but it does not substantively demonstrate active reprioritisation in response to changing conditions."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

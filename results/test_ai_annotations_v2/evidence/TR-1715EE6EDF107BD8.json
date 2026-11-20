@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-1715EE6EDF107BD8",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0ec1bf33feb67a9b016b00299aedfc87d08f54e09a1ff7a859",
+  "annotated_utc": "2026-11-20T11:06:04.277686+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "OPS01-C1",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "passage": "",
+        "rationale": "The answer mentions the delivery, vehicle issue, and customer orders, but does not explicitly identify urgency, impact, or dependencies as the basis for priority setting."
+      },
+      {
+        "criterion_id": "OPS01-C2",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "passage": "",
+        "rationale": "The candidate states a preference to keep the original plan, but does not explain trade-offs or justify the prioritisation using relevant evidence."
+      },
+      {
+        "criterion_id": "OPS01-C3",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I’d mostly keep the original plan and avoid reshuffling unless delays became obvious.",
+        "rationale": "This explicitly resists revising priorities in response to material changes, which contradicts reassessing priorities when conditions change."
+      }
+    ],
+    "annotation_notes": ""
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

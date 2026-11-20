@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-C5DF68E122DF1D11",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_04fb2f2a173da27d016b00294a3bd087d0a258f30cf125075e",
+  "annotated_utc": "2026-11-20T11:04:44.404081+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "OPS03-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d get updates from both teams, compare what they say, and pass the latest status to the event coordinator.",
+        "rationale": "The candidate explicitly uses information from both operational sources and compares them before updating the coordinator."
+      },
+      {
+        "criterion_id": "OPS03-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "If the reports conflict, I’d clarify before sending the update. I’d also ask about any backup plan if the AV issue remains open.",
+        "rationale": "The candidate identifies the relevant parties (both teams) and a dependency (the AV issue) that affects readiness, including the need to clarify conflicts and check backup planning."
+      },
+      {
+        "criterion_id": "OPS03-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "If the reports conflict, I’d clarify before sending the update.",
+        "rationale": "The candidate explains that the decision to send the readiness update depends on resolving conflicting operational evidence, showing traceable reasoning linked to the reported status."
+      }
+    ],
+    "annotation_notes": "The response is concise but sufficient to show evidence-based coordination."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

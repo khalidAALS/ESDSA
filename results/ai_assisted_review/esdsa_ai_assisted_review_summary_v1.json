@@ -1,0 +1,104 @@
+{
+  "review_type": "AI-assisted non-independent criterion audit; NOT independent human validation",
+  "source": "108 candidate responses and three criterion descriptions per record from supplied provisional reference worksheet",
+  "n_responses": 108,
+  "n_groups": 36,
+  "AI_review_decision_counts": {
+    "DO_NOT_ADVANCE": 33,
+    "ADVANCE": 56,
+    "DEFER": 19
+  },
+  "provisional_decision_counts": {
+    "DO_NOT_ADVANCE": 34,
+    "ADVANCE": 57,
+    "DEFER": 17
+  },
+  "matching_decisions": 98,
+  "changed_decisions": 10,
+  "changed_groups": [
+    "GROUP-004",
+    "GROUP-009",
+    "GROUP-011",
+    "GROUP-018",
+    "GROUP-035"
+  ],
+  "disagreements": [
+    {
+      "group": "GROUP-004",
+      "variant": "B",
+      "provisional": "DEFER",
+      "AI_review": "ADVANCE",
+      "reason": "Proposes eligibility checking and withholding an unauthorised refund; the brief third variant does not explicitly connect its course to authorisation constraints."
+    },
+    {
+      "group": "GROUP-009",
+      "variant": "A",
+      "provisional": "ADVANCE",
+      "AI_review": "DEFER",
+      "reason": "All variants propose reproduction and comparison, but A/C only refer to looking for a pattern without a sufficiently concrete diagnostic narrowing step."
+    },
+    {
+      "group": "GROUP-009",
+      "variant": "C",
+      "provisional": "ADVANCE",
+      "AI_review": "DEFER",
+      "reason": "All variants propose reproduction and comparison, but A/C only refer to looking for a pattern without a sufficiently concrete diagnostic narrowing step."
+    },
+    {
+      "group": "GROUP-011",
+      "variant": "A",
+      "provisional": "DEFER",
+      "AI_review": "ADVANCE",
+      "reason": "Requests payment timing and checks internal records; variant C leans on an unverified display explanation despite saying investigation will continue."
+    },
+    {
+      "group": "GROUP-011",
+      "variant": "B",
+      "provisional": "DEFER",
+      "AI_review": "ADVANCE",
+      "reason": "Requests payment timing and checks internal records; variant C leans on an unverified display explanation despite saying investigation will continue."
+    },
+    {
+      "group": "GROUP-011",
+      "variant": "C",
+      "provisional": "DO_NOT_ADVANCE",
+      "AI_review": "DEFER",
+      "reason": "Requests payment timing and checks internal records; variant C leans on an unverified display explanation despite saying investigation will continue."
+    },
+    {
+      "group": "GROUP-018",
+      "variant": "B",
+      "provisional": "DEFER",
+      "AI_review": "ADVANCE",
+      "reason": "Checks supplier delay, stock and demand uncertainty and sets a conditional escalation trigger; these amount to proportionate mitigation even without an alternative supplier."
+    },
+    {
+      "group": "GROUP-035",
+      "variant": "A",
+      "provisional": "ADVANCE",
+      "AI_review": "DEFER",
+      "reason": "Rechecks the original invoice defect and considers next action, but only reviews related code without actually testing shared billing behaviour."
+    },
+    {
+      "group": "GROUP-035",
+      "variant": "B",
+      "provisional": "ADVANCE",
+      "AI_review": "DEFER",
+      "reason": "Rechecks the original invoice defect and considers next action, but only reviews related code without actually testing shared billing behaviour."
+    },
+    {
+      "group": "GROUP-035",
+      "variant": "C",
+      "provisional": "ADVANCE",
+      "AI_review": "DEFER",
+      "reason": "Rechecks the original invoice defect and considers next action, but only reviews related code without actually testing shared billing behaviour."
+    }
+  ],
+  "limitations": [
+    "Prior AI assistance in original provisional labels makes this review non-independent and not blinded.",
+    "No external human reviewer; do not describe these annotations as independent expert adjudication.",
+    "Candidate response text does not demonstrate actual future job performance.",
+    "Rubric judgments are interpretive and require human verification to serve as defensible reference data.",
+    "Do not use differences to tune ESDSA v2 on the development sample."
+  ]
+}

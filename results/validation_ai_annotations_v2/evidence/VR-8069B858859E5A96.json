@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-8069B858859E5A96",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0b5d261fa15351ac016b000e67958c87d0ba30d65fd09f6dfb",
+  "annotated_utc": "2026-11-20T09:10:01.947100+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "CSS01-C1",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I’d assume the issue is just a missing confirmation email and resend it right away",
+        "rationale": "This shows the candidate prematurely assumes the problem without first establishing what the customer is experiencing, which is contrary to clarifying the issue."
+      },
+      {
+        "criterion_id": "CSS01-C2",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "If the customer later says the address looks wrong, I’d have them update it after the order ships",
+        "rationale": "This indicates the candidate is not identifying or prioritizing the affected outcome from the start and is deferring the address issue despite it potentially affecting delivery."
+      },
+      {
+        "criterion_id": "CSS01-C3",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I wouldn’t spend much time on whether the order actually went through unless they specifically say they were charged twice or something similar.",
+        "rationale": "This shows the candidate does not first define the full problem before choosing a response; they narrow the issue and act without summarizing the situation."
+      }
+    ],
+    "annotation_notes": "The answer emphasizes assumption and immediate action rather than clarifying the full nature, impact, and overall definition of the customer's problem."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

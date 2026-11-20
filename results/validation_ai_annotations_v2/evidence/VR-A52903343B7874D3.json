@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-A52903343B7874D3",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0b6321280929ab13016b0010477c7c87d0bbdc5113b46cc5d5",
+  "annotated_utc": "2026-11-20T09:18:01.738806+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "SWE01-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "If I could see a clear pattern in the sample data, I’d use the test environment to validate that pattern and see whether the issue appears there as well.",
+        "rationale": "The candidate describes using sample data to identify a pattern and then validating it in a test environment, which establishes a way to reproduce or at least characterise the failure."
+      },
+      {
+        "criterion_id": "SWE01-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "Then I’d compare the affected records with records that continue to export successfully, looking for differences in their attributes or in the timing of the export job.",
+        "rationale": "This explicitly compares failing cases with successful ones, directly satisfying the comparison criterion."
+      },
+      {
+        "criterion_id": "SWE01-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "Based on those observations, I’d work toward the most likely area of the export pipeline, but I’d want to be careful about jumping too quickly to the previous defect without more evidence.",
+        "rationale": "The candidate states they would use observations to narrow down the likely area of the pipeline and avoid prematurely assuming the old defect, which demonstrates systematic narrowing."
+      }
+    ],
+    "annotation_notes": "The answer is concise but provides clear evidence for all three criteria."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

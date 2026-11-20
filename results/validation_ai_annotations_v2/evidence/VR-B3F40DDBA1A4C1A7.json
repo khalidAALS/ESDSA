@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-B3F40DDBA1A4C1A7",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0e2024e27cdcfb83016b000e4293f087d0894e8971cc89ace3",
+  "annotated_utc": "2026-11-20T09:09:25.185797+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "OPS04-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d start by keeping a simple view of each activity’s due date, current status, and who is responsible. For the one nearing deadline, I’d check whether the main steps are still moving forward. For the quality concern, I’d look at what was reported and whether it needs review. For the external dependency, I’d note that we’re waiting on information and keep an eye on the timing.",
+        "rationale": "The answer clearly identifies the key information used to monitor progress: due date, current status, responsibility, step movement, reported quality issue, and dependency timing."
+      },
+      {
+        "criterion_id": "OPS04-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "If something looks off, I’d make sure the relevant person knows about it.",
+        "rationale": "This shows recognition that deviations or issues require action and that attention is triggered when something seems wrong."
+      },
+      {
+        "criterion_id": "OPS04-C3",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I’d usually wait until I have a clearer picture before escalating, so I can be sure it’s necessary and I can explain the situation properly. I’d then let the person handle it and keep an eye on things from there.",
+        "rationale": "The answer does direct the issue to a relevant person, but it also indicates delaying escalation until later and then not actively verifying resolution, instead merely 'keep[ing] an eye on things.' This materially weakens the escalation-and-follow-through behavior required by the criterion."
+      }
+    ],
+    "annotation_notes": ""
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

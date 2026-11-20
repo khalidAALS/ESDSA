@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-7454E9A61C1E73D9",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0caacd0078b5282f016b002b6d241087d0873d94fc13ae2dfa",
+  "annotated_utc": "2026-11-20T11:13:51.859437+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "OPS03-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "reviewing the maintenance team’s progress report and the scheduling system status, then I’d ask the maintenance lead for a quick update on what is still outstanding. I’d also check in with the receiving team",
+        "rationale": "The answer explicitly uses multiple operational sources: the progress report, scheduling system status, maintenance lead update, and receiving team check-in."
+      },
+      {
+        "criterion_id": "OPS03-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d ask the maintenance lead for a quick update on what is still outstanding. I’d also check in with the receiving team to see whether they are likely to be ready for the evening handover.",
+        "rationale": "The candidate identifies responsible parties and dependencies by involving the maintenance lead, the receiving team, and the outstanding work/readiness dependency for the handover."
+      },
+      {
+        "criterion_id": "OPS03-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "If the maintenance work looks substantially complete, I’d aim to keep the handover on track and inform the relevant parties of the latest status. I’d note the key updates in the handover record so there is a clear trail of what was reported and when.",
+        "rationale": "The answer ties actions to operational evidence ('if the maintenance work looks substantially complete') and describes recording updates for traceability."
+      }
+    ],
+    "annotation_notes": "All three criteria are supported by explicit references to operational information, coordination with responsible parties, and recording the evidence trail."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-8160F84ABAE6FC0C",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_009a48ddf6bdedc1016b002a5ee99087d0b7a280bcb137a2e8",
+  "annotated_utc": "2026-11-20T11:09:20.983330+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "CSS01-C1",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "If the appointment is missing, I’d focus on restoring it rather than spending much time clarifying the details first.",
+        "rationale": "This explicitly deprioritizes clarifying the customer's actual problem, which contradicts establishing what problem they are experiencing before acting."
+      },
+      {
+        "criterion_id": "CSS01-C2",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "passage": "",
+        "rationale": "The answer mentions the booking and appointment, but it does not clearly determine or describe the customer's affected service or outcome beyond assuming a missing appointment. That is not enough to establish the impact identification criterion."
+      },
+      {
+        "criterion_id": "CSS01-C3",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I’d start by checking the latest booking record and reissuing the confirmation if needed, since this sounds like a confirmation mismatch.",
+        "rationale": "This moves directly to an assumed resolution path and labels the issue as a confirmation mismatch without first summarising the customer's actual problem, which contradicts the criterion."
+      }
+    ],
+    "annotation_notes": "The response is action-oriented but does not show a careful diagnostic step-by-step identification of the customer's actual issue before choosing a fix."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

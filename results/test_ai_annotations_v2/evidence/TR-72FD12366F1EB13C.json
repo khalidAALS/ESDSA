@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-72FD12366F1EB13C",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0a6debe17ae70c99016b0029be5f3887d0bb5fbad66d9c9d0c",
+  "annotated_utc": "2026-11-20T11:06:40.849826+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "CSS01-C1",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I’d take the administrator’s account as the deciding version and restore access first, then check details later if needed.",
+        "rationale": "This does not establish the customer’s reported problem through clarification; it shows the candidate will accept one party’s account as decisive and act without first identifying what happened."
+      },
+      {
+        "criterion_id": "CSS01-C2",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "passage": "",
+        "rationale": "The answer mentions restoring access, which implies a service impact, but it does not explicitly identify the affected service or outcome in the way required."
+      },
+      {
+        "criterion_id": "CSS01-C3",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I’d take the administrator’s account as the deciding version and restore access first, then check details later if needed.",
+        "rationale": "This explicitly skips summarising or defining the issue before acting, instead prioritising a resolution first and investigation later."
+      }
+    ],
+    "annotation_notes": "The response is action-oriented but does not demonstrate careful issue definition amid disagreement."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

@@ -1,0 +1,18 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "SEMANTIC_EQUIVALENCE",
+  "blinded_id": "TG-FD0E36F77E01EB1F",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0aa3a15f4a042458016b002c2137cc87d0a3b914cedda592c7",
+  "annotated_utc": "2026-11-20T11:16:50.916032+00:00",
+  "annotation": {
+    "semantic_equivalence": "NO",
+    "material_differences": "Response A includes a specific operational commitment to use an approved way to confirm who received the package, but it does not mention checking for neighbours/concierge/reception or delivery exceptions/reroutes. Response B adds those broader recipient checks and delivery exception details, which could change the scope of information gathered. Response C is more minimal and omits some of A/B’s concrete checks, especially any mention of authorised recipient confirmation or broader delivery-context inquiries.",
+    "equivalence_rationale": "All three answers share the core idea of gathering order, address, timing, tracking, and proof-of-delivery information while distinguishing facts from assumptions and avoiding unnecessary collection. However, B explicitly expands the set of relevant questions to include alternative recipients and shipment anomalies, which is a meaningful change in the information-gathering scope under the criteria. C is narrower and does not preserve all of the same concrete evidence commitments, so the three are not fully equivalent at the criterion level."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

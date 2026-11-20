@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-E8FC99D3D6626B5E",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0affdb1ae27ce27a016b000ce84de887d08b66d7ba62206953",
+  "annotated_utc": "2026-11-20T09:03:38.567358+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "OPS01-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d first clarify what the delivery deadline is and how much the delay would affect the customer or the rest of the schedule. I’d also ask for the details of the equipment concern so I could understand whether it sounds minor or potentially serious.",
+        "rationale": "The answer identifies urgency (delivery deadline), impact (effect on customer or schedule), and relevant issue severity/dependency information (details of the equipment concern and whether it is minor or serious)."
+      },
+      {
+        "criterion_id": "OPS01-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "From there, I’d balance the likely operational impact of stopping against the impact of continuing, and I’d make sure the team knows which task to focus on first.",
+        "rationale": "This explicitly describes weighing competing operational impacts to decide what to prioritize, which is the required trade-off reasoning."
+      },
+      {
+        "criterion_id": "OPS01-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "If the situation changed, I’d revisit the plan and adjust it as needed.",
+        "rationale": "The candidate explicitly states they would reassess and adjust priorities when conditions change."
+      }
+    ],
+    "annotation_notes": ""
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

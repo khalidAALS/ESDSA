@@ -1,0 +1,75 @@
+{
+  "experiment": "ESDSA_VALIDATION_GENERATION_V1",
+  "partition": "VALIDATION",
+  "family_id": "ESDSA-SWE01-10",
+  "run_sha256": "4ab4d4d4c66dccc652583e29383cb6b1b0090a581db344fe1e1a14555df84008",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "response_id": "resp_03c255e4680ea6a4016aff8c15aea087d094d8bb1d17feb48d",
+  "response_status": "completed",
+  "usage": {
+    "input_tokens": 776,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      }
+    },
+    "output_tokens": 1060,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 1836
+  },
+  "raw_output_text": "{\"responses\":[{\"condition\":\"SUFFICIENT\",\"variant\":\"CANONICAL\",\"answer\":\"I’d start by re-establishing the failure with the new affected records rather than assuming it’s the same defect. I’d use the earlier findings as a baseline, then compare the failing records with records that still export successfully to look for differences in fields, timing, ordering, or any downstream filtering conditions. From there I’d use the logs and the test environment to narrow it down step by step—first confirm whether the records enter the export job, then whether they’re selected, transformed, queued, and written out. If the failure only appears for a specific pattern, I’d isolate that pattern in the test environment and see which stage diverges from a successful run. That would help me determine whether we’re dealing with the same root cause, a regression in the change, or a different issue that just looks similar at the symptom level.\"},{\"condition\":\"SUFFICIENT\",\"variant\":\"CONVERSATIONAL\",\"answer\":\"First I’d try to make it fail again with the new records, instead of relying on the old repro. Then I’d line those records up against ones that export correctly and look for what’s actually different about them. I’d use the logs and the test setup to trace the flow through the export process—seeing where the bad records stop versus where the good ones continue. If needed I’d tweak the sample data in the test environment to isolate the trigger and narrow it to a specific stage, like selection, transformation, or write-out. That should tell me whether this is the same defect coming back or a new one with a similar symptom.\"},{\"condition\":\"SUFFICIENT\",\"variant\":\"CONCISE\",\"answer\":\"I’d reproduce it with the new records first, then compare them against records that export successfully. Using the logs and test environment, I’d trace where the paths diverge—selection, transformation, queueing, or output—and isolate the smallest difference that triggers the miss. That would let me narrow down whether it’s the same defect or a different regression.\"},{\"condition\":\"INSUFFICIENT\",\"variant\":\"CANONICAL\",\"answer\":\"I’d begin by reviewing the earlier investigation and the current logs to understand what changed since the fix. Then I’d compare the affected records with records that continue to export successfully, looking for differences in their attributes or in the timing of the export job. If I could see a clear pattern in the sample data, I’d use the test environment to validate that pattern and see whether the issue appears there as well. Based on those observations, I’d work toward the most likely area of the export pipeline, but I’d want to be careful about jumping too quickly to the previous defect without more evidence.\"},{\"condition\":\"INSUFFICIENT\",\"variant\":\"CONVERSATIONAL\",\"answer\":\"I’d start with the old findings and the current logs, then compare the failing records with ones that still make it through. If the sample data shows a pattern, I’d try it in the test environment and see whether it shows up there too. That would help me focus on the most likely part of the export flow, but I’d want to avoid assuming it’s the same issue until I had more to go on.\"},{\"condition\":\"INSUFFICIENT\",\"variant\":\"CONCISE\",\"answer\":\"I’d review the earlier findings and compare failing records with successful ones, then use the test environment to see if a pattern reproduces. That should help narrow the likely area, but I’d need more evidence before saying whether it’s the same defect.\"},{\"condition\":\"NEGATIVE\",\"variant\":\"CANONICAL\",\"answer\":\"Since the original fix was already applied, I’d assume the current problem is probably unrelated and focus on the most recent code change around the export job. I’d check the logs only to confirm that the job is running, then spend most of my time inspecting the new logic rather than trying to reproduce the failure with the affected records. If the test environment doesn’t show the issue right away, I’d treat that as a sign the bug is intermittent and move on to the next likely subsystem, even if the sample records suggest the export criteria are different. That would let me get to a root cause faster than rehashing the old investigation.\"},{\"condition\":\"NEGATIVE\",\"variant\":\"CONVERSATIONAL\",\"answer\":\"Honestly, I’d probably start from the latest code change and assume it’s a new problem unless the logs point really strongly to the old one. I’d sanity-check that the export job is running, but I wouldn’t spend a lot of time trying to recreate the exact failure with the same records since the old repro doesn’t work anymore. If the test environment doesn’t show anything obvious, I’d move on to the most recent subsystem we touched and see if that’s where the issue lives.\"},{\"condition\":\"NEGATIVE\",\"variant\":\"CONCISE\",\"answer\":\"I’d focus on the latest change near the export job and only use the logs to confirm it runs. Since the old repro no longer works, I wouldn’t spend much time trying to recreate the failure with the sample records; I’d move to the newest subsystem and look there first.\"}]}",
+  "responses": [
+    {
+      "condition": "SUFFICIENT",
+      "variant": "CANONICAL",
+      "answer": "I’d start by re-establishing the failure with the new affected records rather than assuming it’s the same defect. I’d use the earlier findings as a baseline, then compare the failing records with records that still export successfully to look for differences in fields, timing, ordering, or any downstream filtering conditions. From there I’d use the logs and the test environment to narrow it down step by step—first confirm whether the records enter the export job, then whether they’re selected, transformed, queued, and written out. If the failure only appears for a specific pattern, I’d isolate that pattern in the test environment and see which stage diverges from a successful run. That would help me determine whether we’re dealing with the same root cause, a regression in the change, or a different issue that just looks similar at the symptom level."
+    },
+    {
+      "condition": "SUFFICIENT",
+      "variant": "CONVERSATIONAL",
+      "answer": "First I’d try to make it fail again with the new records, instead of relying on the old repro. Then I’d line those records up against ones that export correctly and look for what’s actually different about them. I’d use the logs and the test setup to trace the flow through the export process—seeing where the bad records stop versus where the good ones continue. If needed I’d tweak the sample data in the test environment to isolate the trigger and narrow it to a specific stage, like selection, transformation, or write-out. That should tell me whether this is the same defect coming back or a new one with a similar symptom."
+    },
+    {
+      "condition": "SUFFICIENT",
+      "variant": "CONCISE",
+      "answer": "I’d reproduce it with the new records first, then compare them against records that export successfully. Using the logs and test environment, I’d trace where the paths diverge—selection, transformation, queueing, or output—and isolate the smallest difference that triggers the miss. That would let me narrow down whether it’s the same defect or a different regression."
+    },
+    {
+      "condition": "INSUFFICIENT",
+      "variant": "CANONICAL",
+      "answer": "I’d begin by reviewing the earlier investigation and the current logs to understand what changed since the fix. Then I’d compare the affected records with records that continue to export successfully, looking for differences in their attributes or in the timing of the export job. If I could see a clear pattern in the sample data, I’d use the test environment to validate that pattern and see whether the issue appears there as well. Based on those observations, I’d work toward the most likely area of the export pipeline, but I’d want to be careful about jumping too quickly to the previous defect without more evidence."
+    },
+    {
+      "condition": "INSUFFICIENT",
+      "variant": "CONVERSATIONAL",
+      "answer": "I’d start with the old findings and the current logs, then compare the failing records with ones that still make it through. If the sample data shows a pattern, I’d try it in the test environment and see whether it shows up there too. That would help me focus on the most likely part of the export flow, but I’d want to avoid assuming it’s the same issue until I had more to go on."
+    },
+    {
+      "condition": "INSUFFICIENT",
+      "variant": "CONCISE",
+      "answer": "I’d review the earlier findings and compare failing records with successful ones, then use the test environment to see if a pattern reproduces. That should help narrow the likely area, but I’d need more evidence before saying whether it’s the same defect."
+    },
+    {
+      "condition": "NEGATIVE",
+      "variant": "CANONICAL",
+      "answer": "Since the original fix was already applied, I’d assume the current problem is probably unrelated and focus on the most recent code change around the export job. I’d check the logs only to confirm that the job is running, then spend most of my time inspecting the new logic rather than trying to reproduce the failure with the affected records. If the test environment doesn’t show the issue right away, I’d treat that as a sign the bug is intermittent and move on to the next likely subsystem, even if the sample records suggest the export criteria are different. That would let me get to a root cause faster than rehashing the old investigation."
+    },
+    {
+      "condition": "NEGATIVE",
+      "variant": "CONVERSATIONAL",
+      "answer": "Honestly, I’d probably start from the latest code change and assume it’s a new problem unless the logs point really strongly to the old one. I’d sanity-check that the export job is running, but I wouldn’t spend a lot of time trying to recreate the exact failure with the same records since the old repro doesn’t work anymore. If the test environment doesn’t show anything obvious, I’d move on to the most recent subsystem we touched and see if that’s where the issue lives."
+    },
+    {
+      "condition": "NEGATIVE",
+      "variant": "CONCISE",
+      "answer": "I’d focus on the latest change near the export job and only use the logs to confirm it runs. Since the old repro no longer works, I wouldn’t spend much time trying to recreate the failure with the sample records; I’d move to the newest subsystem and look there first."
+    }
+  ],
+  "validation_status": "STRUCTURE_PASSED"
+}

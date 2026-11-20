@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-1D5B1C40F1DF1EC9",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_02a3cc20145d59a0016b002b00e84087d0a5379fa2887f4639",
+  "annotated_utc": "2026-11-20T11:12:02.501937+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "OPS03-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "ask each of them for the facts behind their status. I’d want to know what’s been completed in the room, exactly what the AV problem is, whether anyone has tested it after the last fix attempt, and how long they think it’ll take to sort out. If there’s a workaround, I’d confirm that too. Then I’d compare those details",
+        "rationale": "The answer explicitly gathers and compares relevant operational facts from both sources, showing use of operational information in the readiness assessment."
+      },
+      {
+        "criterion_id": "OPS03-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d get the facilities supervisor and tech team aligned right away",
+        "rationale": "This directly identifies the responsible parties and shows coordination between them to resolve the disagreement and determine readiness."
+      },
+      {
+        "criterion_id": "OPS03-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "My update to the event coordinator would name the issue, who owns the next step, and the evidence behind the status so they know it’s based on current operational info, not just one person’s impression.",
+        "rationale": "The candidate explicitly says the update will be justified with evidence and tied to the current operational information, demonstrating traceable decision-making."
+      }
+    ],
+    "annotation_notes": "The response provides clear evidence for all three criteria, with explicit comparison of facts, coordination of parties, and an evidence-based status update."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-D27ABD8C48B27EFD",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0dda5d260409d200016b002a6157fc87d085d4f1f6c2c33376",
+  "annotated_utc": "2026-11-20T11:09:23.440472+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "CSS01-C1",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I’d assume it’s mainly a confirmation problem",
+        "rationale": "This shows the candidate is presuming the issue rather than establishing what the customer is actually experiencing, which contradicts the criterion of clarifying the issue."
+      },
+      {
+        "criterion_id": "CSS01-C2",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "passage": "",
+        "rationale": "The answer mentions an appointment and missing booking, but it does not clearly establish the specific affected service or outcome from the customer's perspective before acting. It is not enough to determine that the candidate has identified the impact in a substantive way."
+      },
+      {
+        "criterion_id": "CSS01-C3",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I’d assume it’s mainly a confirmation problem and get straight into checking whether the email or notification needs to be sent again.",
+        "rationale": "The candidate explicitly moves directly to action based on an assumption, rather than first summarising the actual issue before choosing a resolution."
+      }
+    ],
+    "annotation_notes": ""
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

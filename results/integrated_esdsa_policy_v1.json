@@ -1,0 +1,21 @@
+{
+  "name": "INTEGRATED_ESDSA_V1",
+  "stage": "DEVELOPMENT_PROTOTYPE",
+  "source": "Previously completed evidence-aware evaluations",
+  "criteria": 3,
+  "evidence_rule": {
+    "negative": "DO_NOT_ADVANCE",
+    "all_positive": "ADVANCE",
+    "otherwise": "DEFER"
+  },
+  "traceability_rule": "POSITIVE and NEGATIVE classifications require a nonempty supporting excerpt found within the candidate answer after limited text normalisation. Any failed required excerpt forces DEFER.",
+  "stability_rule": "The three generated variants must receive the same actionable pre-stability decision; otherwise defer the entire group.",
+  "reference_labels_used_in_policy": false,
+  "important_limitations": [
+    "Groups are assumed to represent alternative linguistic presentations, but semantic equivalence has not been independently established.",
+    "Literal excerpt matching does not establish that the excerpt proves the classification.",
+    "Three variants are not independent repeat evaluations of one unchanged interview answer.",
+    "Policy was specified after inspecting development results and must be tested on held-out cases.",
+    "This is not a deployable automated hiring system."
+  ]
+}

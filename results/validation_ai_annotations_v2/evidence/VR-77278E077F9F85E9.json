@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-77278E077F9F85E9",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0d4d9bf4c40e8eeb016b000d04393887d08dbc42d1f6a205b8",
+  "annotated_utc": "2026-11-20T09:04:06.721478+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "OPS02-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d flag a possible delivery disruption",
+        "rationale": "This explicitly identifies a plausible operational risk in context."
+      },
+      {
+        "criterion_id": "OPS02-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "check the partner update against demand forecasts, and review the backup options. I’d keep monitoring it, but I’d still need clearer capacity and volume information before deciding on the best response.",
+        "rationale": "This shows awareness of uncertainty in capacity and demand, and indicates consideration of information needed to assess consequences before acting."
+      },
+      {
+        "criterion_id": "OPS02-C3",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "passage": "",
+        "rationale": "The answer mentions checking forecasts, reviewing backup options, and monitoring, but does not clearly state a specific proportionate mitigation or an escalation decision. It remains unestablished what concrete response would be taken."
+      }
+    ],
+    "annotation_notes": "The response identifies a risk and discusses uncertainty, but its operational response is too general to confirm proportionate mitigation or escalation."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

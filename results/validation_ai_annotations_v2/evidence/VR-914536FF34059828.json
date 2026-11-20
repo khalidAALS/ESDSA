@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-914536FF34059828",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0b358437df4f12a2016b000d1c944487d0836082541a9978f5",
+  "annotated_utc": "2026-11-20T09:04:31.091017+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "SWE04-C1",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "passage": "",
+        "rationale": "The answer describes prioritising areas by risk and covering main paths, but it does not explicitly state that the candidate would test whether a specific reported failure is resolved."
+      },
+      {
+        "criterion_id": "SWE04-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d try to cover the main paths and a bit of the surrounding behaviour so we’re not only testing the new feature in isolation.",
+        "rationale": "This explicitly shows consideration of surrounding behaviour beyond the new feature, which indicates attention to previously working behaviour and possible regression impact."
+      },
+      {
+        "criterion_id": "SWE04-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "If something surprising turned up, I’d note it, check whether it seemed connected to the change, and discuss it with the team before deciding what to do next.",
+        "rationale": "This shows using test findings to assess the issue and decide the next action in discussion with the team."
+      }
+    ],
+    "annotation_notes": "The response gives risk-based prioritisation and a plan for handling unexpected findings. It does not explicitly describe retesting a known failure to confirm resolution."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

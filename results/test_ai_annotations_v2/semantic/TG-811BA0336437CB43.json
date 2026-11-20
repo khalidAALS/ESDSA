@@ -1,0 +1,18 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "SEMANTIC_EQUIVALENCE",
+  "blinded_id": "TG-811BA0336437CB43",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0e72dd9eaf562d10016b002af1817887d08da9b1d6c59933d3",
+  "annotated_utc": "2026-11-20T11:11:48.069886+00:00",
+  "annotation": {
+    "semantic_equivalence": "NO",
+    "material_differences": "Response A explicitly says it would first confirm the duplicates are real and frames the recommendation conditionally on retries being part of the problem, while B omits any investigation/cause identification and gives only an unsupported fix. C includes a causal hypothesis about requests being cut off and explains why a more aggressive retry path would help, but it still does not preserve A’s preliminary confirmation step or B’s bare recommendation exactly. These differences affect the cause-identification criterion and the level of justification linked to the correction.",
+    "equivalence_rationale": "Under the three criteria, A demonstrates the strongest evidence: it includes investigation, a plausible cause tied to retries, a linked correction, and a reason the correction should help. B preserves the correction but drops the causal investigation and justification. C preserves a causal hypothesis and some justification, but it changes the assumed cause and framing. Because the responses do not all preserve substantially the same criterion-level evidence, they are not semantically equivalent for this task."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

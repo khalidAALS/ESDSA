@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-529A9CCC12C8A51B",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_001253c7c8740c61016b002b2d976487d0b9d6839ac327a667",
+  "annotated_utc": "2026-11-20T11:12:47.892076+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "OPS04-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d note the contractor’s parts concern",
+        "rationale": "This explicitly identifies a relevant progress signal to monitor during execution: the contractor's report of a parts shortage."
+      },
+      {
+        "criterion_id": "OPS04-C2",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I’d wait for a firm failure before involving higher management",
+        "rationale": "This shows the candidate would not act when there is already a meaningful discrepancy between reports; they would delay action until a confirmed failure rather than recognizing the disagreement as a trigger requiring response."
+      },
+      {
+        "criterion_id": "OPS04-C3",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I wouldn’t escalate right away because that can create unnecessary noise if the issue resolves on its own. I’d wait for a firm failure before involving higher management, then sort out the follow-up after the fact.",
+        "rationale": "This indicates they would not direct the issue to the appropriate owner in a timely way or verify response; instead they defer escalation and handle follow-up only after failure occurs."
+      }
+    ],
+    "annotation_notes": ""
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

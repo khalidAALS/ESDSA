@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-D47B50DDFCABE02B",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_057634d3d6db3bd2016b000cc9b9f887d0911e6cfa79f26877",
+  "annotated_utc": "2026-11-20T09:03:08.278650+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "CSS03-C1",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I’d issue the refund first and check the purchase details later so the customer isn’t waiting.",
+        "rationale": "This proposes a specific resolution without first assessing the available evidence or circumstances, and it does not consider whether refunding is appropriate to the facts at hand."
+      },
+      {
+        "criterion_id": "CSS03-C2",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I’d issue the refund first and check the purchase details later so the customer isn’t waiting.",
+        "rationale": "Issuing the refund before checking purchase details indicates disregard for possible authorisation or service constraints, rather than respecting them."
+      },
+      {
+        "criterion_id": "CSS03-C3",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I’d issue the refund first and check the purchase details later so the customer isn’t waiting.",
+        "rationale": "The answer does not recognize uncertainty as a reason to gather more information or escalate; instead, it acts immediately and says any policy issue can be handled afterward."
+      }
+    ],
+    "annotation_notes": "The response prioritizes immediate refunding over fact-finding or escalation, which is materially inconsistent with careful uncertainty handling and policy-constrained resolution judgment."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

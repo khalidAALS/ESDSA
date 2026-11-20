@@ -1,0 +1,40 @@
+{
+  "experiment": "F02_AUDIT_REPEATABILITY_V1",
+  "analysis_type": "EXPLORATORY",
+  "independent_semantic_validation": "PENDING",
+  "sample_size_per_response": 10,
+  "results": {
+    "ESDSA-V2-0006": {
+      "runs": 10,
+      "c3_counts": {
+        "POSITIVE_EVIDENCE": 8,
+        "INSUFFICIENT_EVIDENCE": 2
+      },
+      "recommendation_counts": {
+        "ADVANCE": 8,
+        "DEFER": 2
+      },
+      "observed_pairwise_disagreement_rate": 0.3556,
+      "unverifiable_excerpts": 0
+    },
+    "ESDSA-V2-0007": {
+      "runs": 10,
+      "c3_counts": {
+        "POSITIVE_EVIDENCE": 4,
+        "INSUFFICIENT_EVIDENCE": 6
+      },
+      "recommendation_counts": {
+        "ADVANCE": 4,
+        "DEFER": 6
+      },
+      "observed_pairwise_disagreement_rate": 0.5333,
+      "unverifiable_excerpts": 0
+    }
+  },
+  "limitations": [
+    "Only two researcher-authored responses",
+    "Repeated API calls may not be independent",
+    "No inference about population-level wording effects",
+    "No independently validated reference judgments"
+  ]
+}

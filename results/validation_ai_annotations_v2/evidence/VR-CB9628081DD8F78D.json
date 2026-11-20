@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-CB9628081DD8F78D",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_07a38d6b911947fd016b000c14cc4487d080576cd86e5f549d",
+  "annotated_utc": "2026-11-20T09:00:07.309932+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "CSS04-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d reassure the customer that it should be fixed soon and give a rough one- to two-day timeline, even though the team hasn’t confirmed the cause yet.",
+        "rationale": "The candidate clearly states what they would communicate to the customer and how they would frame it, which is understandable and specific enough to show the proposed action."
+      },
+      {
+        "criterion_id": "CSS04-C2",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I’d reassure the customer that it should be fixed soon and give a rough one- to two-day timeline, even though the team hasn’t confirmed the cause yet.",
+        "rationale": "The candidate explicitly proposes giving a timeline despite not having confirmation from the technical team, which is an unsupported promise and does not manage expectations appropriately."
+      },
+      {
+        "criterion_id": "CSS04-C3",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I’d only follow up once there’s a final resolution.",
+        "rationale": "This indicates follow-up would occur only at the end, rather than providing an appropriate status or confirmation mechanism during the investigation."
+      }
+    ],
+    "annotation_notes": "The answer contains a clear communication plan, but it also explicitly includes an unsupported timeline promise and a follow-up approach limited to final resolution only."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

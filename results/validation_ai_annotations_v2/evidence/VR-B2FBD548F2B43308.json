@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-B2FBD548F2B43308",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_00c9fd81691dd462016b000e860d2887d0bc5b9a728e875ce9",
+  "annotated_utc": "2026-11-20T09:10:31.540151+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "OPS02-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d see that as a real risk to service continuity",
+        "rationale": "This explicitly identifies a plausible operational risk in the scenario: a threat to service continuity caused by reduced partner capacity and uncertain demand."
+      },
+      {
+        "criterion_id": "OPS02-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "The issue is that a capacity drop from the partner, plus uncertain demand, could mean we either short on transport or pay more than expected if we switch too late.",
+        "rationale": "This shows consideration of uncertainty and possible consequences, including both service shortfalls and higher costs depending on how the situation develops."
+      },
+      {
+        "criterion_id": "OPS02-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "If the downside looks meaningful, I’d line up a backup plan now, like holding an alternative provider or prioritising the most time-sensitive deliveries, and I’d escalate if it could affect key customer commitments.",
+        "rationale": "This proposes proportionate mitigation and escalation actions, including backup arrangements, prioritisation, and escalation tied to impact on commitments."
+      }
+    ],
+    "annotation_notes": "The answer addresses all three criteria directly and substantively."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

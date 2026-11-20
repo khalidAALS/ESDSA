@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-25E59F57DA64B554",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_06ebeaaa121f20cf016b002a9ce13c87d0951da716bff36c1c",
+  "annotated_utc": "2026-11-20T11:10:24.077947+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "SWE01-C1",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "passage": "",
+        "rationale": "The answer uses the screenshot and timestamp to investigate, but it does not explicitly say how the candidate would reproduce the failure or otherwise characterise the conditions under which it occurs."
+      },
+      {
+        "criterion_id": "SWE01-C2",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "passage": "",
+        "rationale": "The answer mentions checking whether the search service was healthy, but it does not explicitly compare the failing case against a known working state or describe normal-versus-failing behaviour side by side."
+      },
+      {
+        "criterion_id": "SWE01-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "look at logs and monitoring around that period to see if anything stands out. I’d also check whether there were releases or config changes near then, and whether the search service was otherwise healthy.",
+        "rationale": "This shows a systematic narrowing approach by examining logs, monitoring, recent releases/config changes, and service health to identify which plausible causes fit the observed problem."
+      }
+    ],
+    "annotation_notes": "The response is cautious and investigative, but it only clearly supports narrowing likely causes. It does not explicitly establish reproduction or direct comparison with known-good behaviour."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

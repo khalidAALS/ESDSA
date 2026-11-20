@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-5727F713C268C132",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_03c0d12c0456be2f016b002c07233487d08a9c642906186d31",
+  "annotated_utc": "2026-11-20T11:16:25.333073+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "SWE03-C1",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I’d assume the broker is causing it",
+        "rationale": "The candidate asserts a cause without investigation support, and explicitly says they would not first prove the exact source. This contradicts identifying a plausible cause supported by investigation."
+      },
+      {
+        "criterion_id": "SWE03-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "change its settings to block duplicates",
+        "rationale": "The proposed correction is directly linked to the stated cause, the broker, by adjusting its settings to address duplication."
+      },
+      {
+        "criterion_id": "SWE03-C3",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "passage": "",
+        "rationale": "The answer names a correction, but does not explain why changing broker settings would address the duplicate-message problem."
+      }
+    ],
+    "annotation_notes": "The response shows a direct cause-to-fix link, but the cause is asserted rather than investigated, and no substantive justification is given for why the correction would solve the issue."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

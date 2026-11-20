@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-CABCAADF147410B6",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0b6beaf71a2db358016b001042454c87d09942a8119917b4b8",
+  "annotated_utc": "2026-11-20T09:17:56.513359+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "OPS02-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d track the discrepancies, look for patterns, and monitor whether they keep happening.",
+        "rationale": "The candidate identifies the ongoing stock discrepancies as a plausible operational issue by tracking them and looking for patterns, showing recognition of a potential stock control risk."
+      },
+      {
+        "criterion_id": "OPS02-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "If they started to increase or showed a clear trend, I’d raise it with the supervisor. I’d want more information before deciding how serious it is.",
+        "rationale": "The candidate explicitly considers uncertainty and uses trend/increase as indicators of growing seriousness, which reflects weighing likelihood and possible impact before judging severity."
+      },
+      {
+        "criterion_id": "OPS02-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "If they started to increase or showed a clear trend, I’d raise it with the supervisor.",
+        "rationale": "The candidate proposes a proportionate escalation response if the problem worsens or becomes clearer, which is an appropriate mitigation/escalation step."
+      }
+    ],
+    "annotation_notes": "The answer is brief but still gives enough evidence for all three criteria."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-1DE057BCAA93F2A3",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0c31f5ec9fc48f8d016b000cb853cc87d0a7270a05a491862d",
+  "annotated_utc": "2026-11-20T09:02:50.739975+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "CSS01-C1",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I’d try the previous fix again first and only dig deeper if it fails, since the notes show it already worked.",
+        "rationale": "This prioritizes repeating the prior fix rather than establishing what the customer is currently experiencing, so it materially fails to show issue clarification."
+      },
+      {
+        "criterion_id": "CSS01-C2",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "passage": "",
+        "rationale": "The answer mentions repeated account lockouts, but it does not establish what service, account state, or customer outcome is affected in a way that directly identifies the impacted service or outcome."
+      },
+      {
+        "criterion_id": "CSS01-C3",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "If needed, I’d move straight to a reset or the old workaround.",
+        "rationale": "The candidate proposes selecting a resolution path before clearly summarizing the problem, which contradicts the criterion of defining the problem before choosing a fix."
+      }
+    ],
+    "annotation_notes": "The response is brief and solution-focused. It does acknowledge that the issue is recurring, but it does not show a clear step of clarifying the current problem or summarizing it before acting."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

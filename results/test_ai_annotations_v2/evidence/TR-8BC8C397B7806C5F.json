@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-8BC8C397B7806C5F",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0c6902c4ce11edda016b002a8a697887d08f0524cefa12dd4b",
+  "annotated_utc": "2026-11-20T11:10:05.119906+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "OPS04-C1",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I’d probably take the contractor at their word unless someone can prove the area is unsafe. Missing digital records happen, so I wouldn’t want to slow operations down just because the system isn’t showing completion yet.",
+        "rationale": "This explicitly downplays the missing completion record and indicates the candidate would proceed without using that record as a monitoring signal. It suggests insufficient attention to the missing record as information needed to monitor execution."
+      },
+      {
+        "criterion_id": "OPS04-C2",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "if it isn’t obvious or severe, I’d avoid escalating it before start-up because that can create unnecessary disruption.",
+        "rationale": "This shows the candidate would withhold action unless a problem is already obvious or severe, rather than recognizing that a deviation or concern may warrant action while the cause and outcome are still uncertain."
+      },
+      {
+        "criterion_id": "OPS04-C3",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "passage": "",
+        "rationale": "The answer mentions telling the contractor to sort it out if a definite problem is later found, but it does not clearly show directing issues to the appropriate owner in the present situation or verifying that response. Follow-through and owner assignment remain unestablished."
+      }
+    ],
+    "annotation_notes": "The response is permissive and cautious about disruption, but only clearly establishes negative evidence for ignoring a missing record as a monitoring signal and for delaying escalation until a problem is obvious. It does not clearly demonstrate structured owner assignment or verification."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

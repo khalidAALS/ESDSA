@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-F47440478E86E027",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0f024954d7e46642016b002bac2ebc87d0aa6ca388c594fb1f",
+  "annotated_utc": "2026-11-20T11:14:54.129225+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "SWE02-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "First I’d pull the service metrics, traces, logs, and the change history around the release.",
+        "rationale": "This explicitly identifies relevant technical sources for investigating elevated response times."
+      },
+      {
+        "criterion_id": "SWE02-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "If the traces show most of the latency inside DB calls, I’d dig into query performance, connection pools, and lock waits. If the timing starts right after the deploy and is tied to one endpoint or code path, I’d inspect that change and compare it with a canary or rollback if we have one. If the third-party dependency is slow, I’d expect to see longer outbound spans, retries, or timeouts in the logs.",
+        "rationale": "This proposes specific checks that differentiate among database, deployment, and dependency causes."
+      },
+      {
+        "criterion_id": "SWE02-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "The findings that deserve more work are the ones that are repeatable and line up across sources, not just one noisy metric. So if traces, logs, and deployment timing all point to the same source, I’d follow that.",
+        "rationale": "This connects observed evidence across sources to a diagnostic decision about which hypothesis to pursue further."
+      }
+    ],
+    "annotation_notes": ""
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

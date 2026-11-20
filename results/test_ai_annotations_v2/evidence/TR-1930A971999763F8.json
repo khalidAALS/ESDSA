@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-1930A971999763F8",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0f930cfeb03cc29e016b002a7cb35887d085c28fd3ccc31bf7",
+  "annotated_utc": "2026-11-20T11:09:50.343619+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "SWE04-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d confirm the original reproduction test passes",
+        "rationale": "This explicitly states they would verify the original failure is resolved."
+      },
+      {
+        "criterion_id": "SWE04-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "The older export format difference is worth noting",
+        "rationale": "This shows attention to a previously working behavior changing under release checks."
+      },
+      {
+        "criterion_id": "SWE04-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "if that looks good, I’d plan to release the fix.",
+        "rationale": "They use the verification result to decide the next action, namely releasing the fix."
+      }
+    ],
+    "annotation_notes": "The answer supports all three criteria, though it favors release rather than investigation despite the older-format discrepancy."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

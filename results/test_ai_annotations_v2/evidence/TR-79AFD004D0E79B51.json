@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-79AFD004D0E79B51",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_026e4d75379b96cc016b0029e020d887d0a09368c3e7874d1b",
+  "annotated_utc": "2026-11-20T11:07:14.676585+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "SWE03-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "If the investigation shows the app is only creating one confirmation event but the messaging layer is redelivering it",
+        "rationale": "The candidate identifies a plausible cause supported by investigation: duplicate deliveries are occurring in the messaging layer rather than in event creation."
+      },
+      {
+        "criterion_id": "SWE03-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d correct the publishing/delivery path, not the business logic that creates the order. That might mean tightening the outbox or adding deduplication where messages are handled.",
+        "rationale": "The proposed correction is explicitly tied to the identified cause in the publishing/delivery path and message handling."
+      },
+      {
+        "criterion_id": "SWE03-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "The reason for that fix is simple: it targets the stage where the duplicate deliveries are actually happening, so it prevents repeated confirmations without changing code that wasn’t causing the issue.",
+        "rationale": "The candidate explains why the correction addresses the problem by focusing on the stage where duplicates occur and preventing repeated confirmations."
+      }
+    ],
+    "annotation_notes": "The answer consistently links investigation findings to a targeted correction and justifies why that correction fits the diagnosed failure mode."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

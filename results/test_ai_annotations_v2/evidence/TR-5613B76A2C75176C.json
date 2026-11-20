@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-5613B76A2C75176C",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_07cd4eeea6a3afb3016b0029e77e0887d0956fe2461e084e2b",
+  "annotated_utc": "2026-11-20T11:07:21.281107+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "SWE01-C1",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I wouldn’t spend much time trying to reproduce it without clearer steps",
+        "rationale": "The candidate explicitly says they would not try to reproduce the issue, which contradicts the criterion of establishing how to reproduce or characterise the failure."
+      },
+      {
+        "criterion_id": "SWE01-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d treat it as a low-priority edge case and mostly check whether the search service was up at that time. If the infrastructure looks healthy",
+        "rationale": "This shows a comparison between the failing time context and normal service health, using observed conditions to assess whether the system was functioning."
+      },
+      {
+        "criterion_id": "SWE01-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d treat it as a low-priority edge case and mostly check whether the search service was up at that time. If the infrastructure looks healthy, I’d probably assume the screenshot reflects a temporary user-side issue or a one-off browser problem and move on unless more reports come in.",
+        "rationale": "The candidate uses the available observations to narrow possible causes from a system-side issue to temporary user-side or browser-related explanations."
+      }
+    ],
+    "annotation_notes": "The answer gives some diagnostic narrowing, but it also explicitly deprioritizes reproduction, which is negative evidence for the reproduction criterion."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

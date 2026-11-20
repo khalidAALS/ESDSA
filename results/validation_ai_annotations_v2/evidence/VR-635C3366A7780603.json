@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-635C3366A7780603",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_04677ff3de6f2285016b001095509887d0b65229304d54632a",
+  "annotated_utc": "2026-11-20T09:19:19.230766+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "SWE03-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d verify the failure path first. If the shared calculation component is the source of the wrong figures",
+        "rationale": "The answer explicitly proposes investigating the failure path and identifies a plausible cause: the shared calculation component producing the wrong figures."
+      },
+      {
+        "criterion_id": "SWE03-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d correct that logic because it fixes the underlying cause across all affected reports.",
+        "rationale": "The proposed correction is directly linked to the identified cause, namely correcting the shared calculation logic."
+      },
+      {
+        "criterion_id": "SWE03-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "because it fixes the underlying cause across all affected reports.",
+        "rationale": "This explains why the correction addresses the problem: fixing the underlying cause should resolve the incorrect figures for all affected reports."
+      }
+    ],
+    "annotation_notes": "The answer also mentions a temporary feature limitation as a fallback if the cause cannot be confirmed quickly, but the main evidence for all three criteria is the linked root-cause fix."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

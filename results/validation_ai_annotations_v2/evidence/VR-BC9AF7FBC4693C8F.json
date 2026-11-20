@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-BC9AF7FBC4693C8F",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0af742c1aade1a97016b001097883887d08b57773455ec04e4",
+  "annotated_utc": "2026-11-20T09:19:21.917902+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "SWE03-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d first dig into the reports and tracing to see where the bad numbers are coming from, so I’m not guessing.",
+        "rationale": "This explicitly describes investigating reports and tracing to identify where the incorrect figures originate, which is a plausible cause-finding approach supported by investigation."
+      },
+      {
+        "criterion_id": "SWE03-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "If it turns out the shared calculation piece is actually doing the wrong math, I’d fix that, because then we’re correcting the source and not just masking it.",
+        "rationale": "The candidate directly links the correction to the identified cause: if the shared calculation component is the source of the wrong math, they would fix that component."
+      },
+      {
+        "criterion_id": "SWE03-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "because then we’re correcting the source and not just masking it.",
+        "rationale": "This explains why the correction is appropriate: fixing the shared component addresses the source of the error rather than merely hiding the symptom."
+      }
+    ],
+    "annotation_notes": "The answer provides a clear investigation-first approach, ties the fix to the discovered root cause, and justifies the fix as source correction. The temporary restriction is framed as a safety measure, but the strongest evidence relevant to the criteria is the root-cause-based justification for the fix."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

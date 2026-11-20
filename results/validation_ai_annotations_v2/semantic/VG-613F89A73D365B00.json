@@ -1,0 +1,20 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "SEMANTIC_EQUIVALENCE",
+  "blinded_id": "VG-613F89A73D365B00",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_05f4e68c249e4cb2016b000cb5e92c87d0807746ef069f63f2",
+  "annotated_utc": "2026-11-20T09:02:47.972822+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "semantic_equivalence": "YES",
+    "material_differences": "None that are likely to change the criterion-level evidence assessment. All three responses identify the current symptom, ask for context around when/why the lockout occurs, assess impact on the customer, and restate/summarize the problem before proceeding. B includes more specific probes, but no response introduces a conflicting assumption or omits a materially relevant element for the listed criteria.",
+    "equivalence_rationale": "Under the three problem-identification criteria, A, B, and C all preserve the same core evidence: they clarify the issue, determine what service/outcome is affected, and define the problem before resolution. The differences are mainly in detail level and examples, not in decision-relevant commitments or problem-framing behavior."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

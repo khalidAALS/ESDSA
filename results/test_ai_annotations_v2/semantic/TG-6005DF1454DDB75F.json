@@ -1,0 +1,18 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "SEMANTIC_EQUIVALENCE",
+  "blinded_id": "TG-6005DF1454DDB75F",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_08e5302271ea67e2016b002a63d3a487d0b387cfc12d9455bc",
+  "annotated_utc": "2026-11-20T11:09:26.316940+00:00",
+  "annotation": {
+    "semantic_equivalence": "NO",
+    "material_differences": "Response A explicitly deprioritizes understanding the customer’s explanation and says not to spend long digging into it, while B and C at least frame the issue as a confirmation/booking mismatch and retain some willingness to check the latest record. This can affect CSS01-C1 and CSS01-C3 because A is less focused on clarifying the actual problem before selecting a resolution. C also adds an assumption that the customer is probably just seeing an old message, which is a stronger factual presumption than B’s wording and could change issue framing.",
+    "equivalence_rationale": "All three responses share a general tendency to check the booking record and reissue or restore confirmation, but they do not preserve the same decision-relevant evidence for problem identification. A more clearly skips customer clarification and assumes the system error is the main issue, whereas B and C at least acknowledge a confirmation mismatch and starting from the latest booking record. Because the question asks how to establish the customer’s actual problem before helping, A’s lower emphasis on clarification is a material difference under the issue-definition criteria."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

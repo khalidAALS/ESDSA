@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-1840B6054D518991",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0d00ff0461955f1e016b000c95b50087d0955c4f64c300a524",
+  "annotated_utc": "2026-11-20T09:02:16.024626+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "OPS04-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d check the trend on the readings we do have, look at how long the sensors have been missing, and see whether other indicators around the same equipment are moving too.",
+        "rationale": "The candidate identifies specific information needed to monitor the situation: existing trends, duration of missing sensor data, and other related indicators."
+      },
+      {
+        "criterion_id": "OPS04-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "If the pattern is continuing or I can’t get enough data to be confident the operation is still in range, I’d escalate.",
+        "rationale": "The candidate clearly states a trigger for action based on continued deviation or insufficient confidence in the operating range."
+      },
+      {
+        "criterion_id": "OPS04-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d loop in the local team and the right owner with the evidence I’ve got, ask them to validate the condition on site, and then keep an eye on whether they respond and whether the readings come back to normal.",
+        "rationale": "The candidate directs the issue to appropriate owners and describes follow-through by checking their response and whether readings normalize."
+      }
+    ],
+    "annotation_notes": ""
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

@@ -1,0 +1,63 @@
+{
+  "experiment": "ESDSA_TEST_GENERATION_V1",
+  "partition": "TEST",
+  "family_id": "ESDSA-CSS02-01",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_035ead941c7d2560016b0022a0a3a487d088d39831df47715a",
+  "timestamp_utc": "2026-11-20T10:36:23.592442+00:00",
+  "run_sha256": "87db63e5a4515e7a8b2d4b49e75e33cb64e300aec74b316468bc8f2ddb70f0f6",
+  "scenario_sha256": "9d2280d8014612bdd263f5dd8daf8356efeac3fa7a7e4b0cd3c6f4fef932426a",
+  "rubric_sha256": "727b0e91646f85b41018bf92dd65052a177c27bad9ad46452cc69a550075522d",
+  "responses": [
+    {
+      "condition": "SUFFICIENT",
+      "variant": "CANONICAL",
+      "answer": "I’d start by gathering the order and delivery facts from the customer and our system, then separating what’s confirmed from what’s still unclear. I’d ask for the order number, the delivery address, the date the customer expected it, and whether anyone at the address, a neighbour, concierge, or reception could have accepted it. I’d also check the carrier scan details, the timestamp, delivery location notes, any photo or signature if available, and whether there were any delivery exceptions or reroutes.\n\nFrom there, I’d verify the account and shipment details against our records rather than rely on the customer’s assumption or the tracking headline alone. If we have an authorised way to confirm the recipient or retrieve the proof of delivery, I’d use that. I’d avoid asking for anything unrelated, and I’d keep the collection to the minimum needed to determine whether the package was delivered to the right place, misdelivered, or marked delivered in error."
+    },
+    {
+      "condition": "SUFFICIENT",
+      "variant": "CONVERSATIONAL",
+      "answer": "I’d want to pin down the basics first: the order number, delivery address, when it was supposed to arrive, and whether anyone at the location might have taken it in. I’d also look at the tracking in more detail — the scan time, any delivery notes, and whether there’s a photo or signature attached.\n\nAt the same time, I’d verify the shipment details in our system so I’m working from confirmed records, not just the “delivered” status. If there’s an approved way to confirm who received it, I’d use that. I’d keep the questions focused on what’s needed and not ask for anything extra that isn’t relevant to finding out what actually happened."
+    },
+    {
+      "condition": "SUFFICIENT",
+      "variant": "CONCISE",
+      "answer": "I’d collect the order number, delivery address, expected delivery date, and whether anyone at the address could have accepted it. Then I’d check the tracking details, proof of delivery if available, and our internal shipment records so I can separate confirmed facts from assumptions. I’d only request information needed to establish whether it was delivered correctly, misdelivered, or recorded incorrectly."
+    },
+    {
+      "condition": "INSUFFICIENT",
+      "variant": "CANONICAL",
+      "answer": "I’d ask for the order number, delivery address, and the date the customer first noticed the item was missing. I’d also look at the tracking record for the delivery time and any notes that are visible.\n\nI’d want to get a clear picture of what the customer saw on their side and what our system shows, then compare the two. If needed, I might also ask whether anyone else at the address could have seen the package come in. That would usually help narrow down whether it was taken inside, left elsewhere, or something happened after delivery."
+    },
+    {
+      "condition": "INSUFFICIENT",
+      "variant": "CONVERSATIONAL",
+      "answer": "I’d start with the order number, the delivery address, and when the customer realized it wasn’t there. I’d check the tracking for the delivery timestamp and any extra notes, then ask if anyone else at the address might have picked it up.\n\nI’d compare what the customer is reporting with what the system says and use that to narrow things down. If the delivery still isn’t clear, I’d probably go from there and look for the next available detail."
+    },
+    {
+      "condition": "INSUFFICIENT",
+      "variant": "CONCISE",
+      "answer": "I’d gather the order number, address, delivery time, and who else at the location might have received it. I’d also review the tracking notes and compare them with the customer’s account of what they saw. That would help narrow down what happened, though I might still need more detail if it isn’t clear yet."
+    },
+    {
+      "condition": "NEGATIVE",
+      "variant": "CANONICAL",
+      "answer": "I’d probably tell the customer that if tracking says delivered, it was delivered, and then I’d just ask whether they checked with neighbours or other people at the address. If they still can’t find it, I’d assume it was likely stolen or misdelivered and move straight to the replacement process.\n\nI wouldn’t spend much time on the tracking details because those systems are usually accurate enough, and I’d avoid asking for the full order information unless the customer insists. The main thing is to keep the call moving and not get stuck on the uncertainty."
+    },
+    {
+      "condition": "NEGATIVE",
+      "variant": "CONVERSATIONAL",
+      "answer": "Honestly, if the tracking already shows delivered, I’d treat that as the main fact and ask the customer to check around the property and with neighbours. If they still don’t have it, I’d probably just move ahead as though it’s been lost.\n\nI wouldn’t dig too much into the shipment record unless there’s an obvious mismatch, because that usually just slows things down. I’d keep the questions pretty light and focus on getting to a replacement or next step."
+    },
+    {
+      "condition": "NEGATIVE",
+      "variant": "CONCISE",
+      "answer": "I’d mainly rely on the delivered scan and ask the customer to check the area and nearby neighbours. If they still can’t find it, I’d proceed as if it was lost and skip deeper verification unless the customer pushes for it."
+    }
+  ],
+  "raw_output": "{\"responses\":[{\"condition\":\"SUFFICIENT\",\"variant\":\"CANONICAL\",\"answer\":\"I’d start by gathering the order and delivery facts from the customer and our system, then separating what’s confirmed from what’s still unclear. I’d ask for the order number, the delivery address, the date the customer expected it, and whether anyone at the address, a neighbour, concierge, or reception could have accepted it. I’d also check the carrier scan details, the timestamp, delivery location notes, any photo or signature if available, and whether there were any delivery exceptions or reroutes.\\n\\nFrom there, I’d verify the account and shipment details against our records rather than rely on the customer’s assumption or the tracking headline alone. If we have an authorised way to confirm the recipient or retrieve the proof of delivery, I’d use that. I’d avoid asking for anything unrelated, and I’d keep the collection to the minimum needed to determine whether the package was delivered to the right place, misdelivered, or marked delivered in error.\"},{\"condition\":\"SUFFICIENT\",\"variant\":\"CONVERSATIONAL\",\"answer\":\"I’d want to pin down the basics first: the order number, delivery address, when it was supposed to arrive, and whether anyone at the location might have taken it in. I’d also look at the tracking in more detail — the scan time, any delivery notes, and whether there’s a photo or signature attached.\\n\\nAt the same time, I’d verify the shipment details in our system so I’m working from confirmed records, not just the “delivered” status. If there’s an approved way to confirm who received it, I’d use that. I’d keep the questions focused on what’s needed and not ask for anything extra that isn’t relevant to finding out what actually happened.\"},{\"condition\":\"SUFFICIENT\",\"variant\":\"CONCISE\",\"answer\":\"I’d collect the order number, delivery address, expected delivery date, and whether anyone at the address could have accepted it. Then I’d check the tracking details, proof of delivery if available, and our internal shipment records so I can separate confirmed facts from assumptions. I’d only request information needed to establish whether it was delivered correctly, misdelivered, or recorded incorrectly.\"},{\"condition\":\"INSUFFICIENT\",\"variant\":\"CANONICAL\",\"answer\":\"I’d ask for the order number, delivery address, and the date the customer first noticed the item was missing. I’d also look at the tracking record for the delivery time and any notes that are visible.\\n\\nI’d want to get a clear picture of what the customer saw on their side and what our system shows, then compare the two. If needed, I might also ask whether anyone else at the address could have seen the package come in. That would usually help narrow down whether it was taken inside, left elsewhere, or something happened after delivery.\"},{\"condition\":\"INSUFFICIENT\",\"variant\":\"CONVERSATIONAL\",\"answer\":\"I’d start with the order number, the delivery address, and when the customer realized it wasn’t there. I’d check the tracking for the delivery timestamp and any extra notes, then ask if anyone else at the address might have picked it up.\\n\\nI’d compare what the customer is reporting with what the system says and use that to narrow things down. If the delivery still isn’t clear, I’d probably go from there and look for the next available detail.\"},{\"condition\":\"INSUFFICIENT\",\"variant\":\"CONCISE\",\"answer\":\"I’d gather the order number, address, delivery time, and who else at the location might have received it. I’d also review the tracking notes and compare them with the customer’s account of what they saw. That would help narrow down what happened, though I might still need more detail if it isn’t clear yet.\"},{\"condition\":\"NEGATIVE\",\"variant\":\"CANONICAL\",\"answer\":\"I’d probably tell the customer that if tracking says delivered, it was delivered, and then I’d just ask whether they checked with neighbours or other people at the address. If they still can’t find it, I’d assume it was likely stolen or misdelivered and move straight to the replacement process.\\n\\nI wouldn’t spend much time on the tracking details because those systems are usually accurate enough, and I’d avoid asking for the full order information unless the customer insists. The main thing is to keep the call moving and not get stuck on the uncertainty.\"},{\"condition\":\"NEGATIVE\",\"variant\":\"CONVERSATIONAL\",\"answer\":\"Honestly, if the tracking already shows delivered, I’d treat that as the main fact and ask the customer to check around the property and with neighbours. If they still don’t have it, I’d probably just move ahead as though it’s been lost.\\n\\nI wouldn’t dig too much into the shipment record unless there’s an obvious mismatch, because that usually just slows things down. I’d keep the questions pretty light and focus on getting to a replacement or next step.\"},{\"condition\":\"NEGATIVE\",\"variant\":\"CONCISE\",\"answer\":\"I’d mainly rely on the delivered scan and ask the customer to check the area and nearby neighbours. If they still can’t find it, I’d proceed as if it was lost and skip deeper verification unless the customer pushes for it.\"}]}",
+  "input_tokens": 744,
+  "output_tokens": 1091,
+  "generation_conditions_are_reference_labels": false
+}

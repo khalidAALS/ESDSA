@@ -1,0 +1,18 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "SEMANTIC_EQUIVALENCE",
+  "blinded_id": "TG-FCDE9E7317417A37",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_082c7e48b5187a9c016b002c15e09087d0a4497cb7fe6540c3",
+  "annotated_utc": "2026-11-20T11:16:41.136219+00:00",
+  "annotation": {
+    "semantic_equivalence": "NO",
+    "material_differences": "Response B explicitly says it would not spend much time comparing working and failing cases up front, and Response C likewise deprioritizes backend investigation until after the cache step. That weakens or omits the comparison and systematic narrowing evidence present in A only minimally implied, but more importantly B and C frame the approach as confirming the presumed cause first rather than systematically contrasting failure vs. working conditions. A/B/C all start with cache testing, but A is a simple conditional escalation while B and C add a stronger bias toward accepting cache as the explanation without broader diagnostic narrowing. This could affect C1-C3, especially C2 and C3.",
+    "equivalence_rationale": "The responses all share the same surface plan of testing browser cache first and escalating to the service if needed, so they are broadly aligned. However, A says to start with cache and only inspect the service if the issue persists, while B and C go further by explicitly dismissing upfront comparison of working vs. failing cases and/or backend digging. Because the criteria include comparing failing with functioning behavior and narrowing causes systematically, those added commitments could change the evidence assessment. Therefore they are not fully semantically equivalent under the decision-relevant criteria."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

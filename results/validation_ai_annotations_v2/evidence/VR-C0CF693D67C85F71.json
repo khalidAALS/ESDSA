@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-C0CF693D67C85F71",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_01acd0da4a46f840016b000e6091bc87d08a714f32b17c1d30",
+  "annotated_utc": "2026-11-20T09:09:54.578165+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "SWE02-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d compare the logs with monitoring, then check traces and recent deploys or config changes.",
+        "rationale": "This explicitly identifies multiple technical evidence sources relevant to diagnosing the failure: logs, monitoring, traces, and deployment/configuration changes."
+      },
+      {
+        "criterion_id": "SWE02-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d also group the failures by request pattern or load to see whether they share a common trigger.",
+        "rationale": "This proposes a discriminating check that can separate causes by correlating failures with request characteristics or load, which is direct hypothesis testing."
+      },
+      {
+        "criterion_id": "SWE02-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "If the signals still don’t match, I’d narrow the investigation to the affected service area and dig further from there.",
+        "rationale": "This shows the candidate using the comparison of signals to refine the diagnostic focus toward the affected service area, connecting observations to a next diagnostic step."
+      }
+    ],
+    "annotation_notes": "The answer is concise but clearly outlines evidence sources, discriminating checks, and a diagnosis-oriented narrowing step."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

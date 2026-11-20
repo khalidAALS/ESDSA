@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-B82B9615DAFF56F3",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_01ffb508be80a41b016b002bdf7ce087d09005aadd77209183",
+  "annotated_utc": "2026-11-20T11:15:45.545380+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "SWE04-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "First I’d rerun the original failing export case to confirm the fix really addresses the reported issue.",
+        "rationale": "This explicitly states testing the original failure again to verify the reported issue is resolved."
+      },
+      {
+        "criterion_id": "SWE04-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "Then I’d check adjacent and older export formats, because a change in one path can easily affect serialization or compatibility elsewhere. Since the older format now differs unexpectedly, I’d stop and investigate that regression before releasing.",
+        "rationale": "This clearly shows checking previously working behaviour and treating the unexpected change as a regression concern."
+      },
+      {
+        "criterion_id": "SWE04-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I would treat that as a partial pass, not an automatic release.",
+        "rationale": "This demonstrates using the verification findings to determine the next action rather than releasing automatically."
+      }
+    ],
+    "annotation_notes": "The answer addresses all three criteria directly and with concrete proposed actions."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

@@ -1,0 +1,22 @@
+{
+  "stage": "VALIDATION",
+  "status": "COMPLETE",
+  "created_utc": "2026-11-20T10:23:14.025867+00:00",
+  "policy_sha256": "a0fc03e305eb445b2ae92c46cc5c59e39f486f335e70df9d0f25f5bb001d1ebb",
+  "input_sha256": {
+    "evidence_aware_validation_v1.jsonl": "e72c0086175b64877df75067390f6292a548e380846237aea5831e55171ce42c",
+    "scoring_only_validation_v1.jsonl": "4125514ba28d9a8639abcb0be28ebb93f1f952039ef91366ab8553f4361dcb9f",
+    "validation_provisional_references_v1.json": "b9dfbe3af987842515e6fea8dff2ce9e8bc4a34d6d68fecb1e2134ff674cd179",
+    "validation_annotation_blinding_key_v1.csv": "b29322e69a1ee486178a780e278c47cf8ea79c499f03bc2fc10707bfcde5e3a7",
+    "validation_responses_v1.csv": "25b315b27f4722675d5078214075cdccc99a25104b981de17536e1f30938f543",
+    "validation_scenarios_v2.csv": "23bc13887d81d3e2174e095b4ff4ffe1bf9a279991257c32e0c62703b1d0d9e5"
+  },
+  "output_sha256": {
+    "validation_esdsa_v2_results.json": "df69a57fe153d3b22b8b0955d13a8ce5ad3567d2db2ecae04d56f0297995640b",
+    "validation_esdsa_v2_records.csv": "9294b9ce3580b2d8f8898974bb86c3f52264023f41e3dff07b12423be061d93e",
+    "validation_esdsa_v2_summary.txt": "cd43e0c76238c089229bf2d2861cb5b01a8ffc17e8f3e181b05034cddea88b87"
+  },
+  "api_requests": 0,
+  "test_accessed": false,
+  "reference_independently_validated": false
+}

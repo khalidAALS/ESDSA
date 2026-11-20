@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-48E9A149F7DEA1AB",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_05644a87729057e7016b002b590b3c87d0ab4afd960f6ae691",
+  "annotated_utc": "2026-11-20T11:13:31.184192+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "CSS04-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d tell the customer that I can see a fix was applied internally, but I’d also explain that we haven’t yet confirmed the service is working for them end to end.",
+        "rationale": "This clearly communicates the situation and proposed next step in understandable terms."
+      },
+      {
+        "criterion_id": "CSS04-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d avoid promising a specific outcome or timeframe, since the next update depends on what we learn from their latest test.",
+        "rationale": "The candidate explicitly avoids unsupported promises and ties expectations to available information."
+      },
+      {
+        "criterion_id": "CSS04-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d apologize for the inconvenience, ask them to share what they’re seeing now, and let them know I’ll review the case again with that information.",
+        "rationale": "This provides a concrete mechanism for confirmation and follow-up by requesting the customer's latest observations and re-reviewing the case."
+      }
+    ],
+    "annotation_notes": "The answer directly addresses communication, expectation management, and a follow-up path. No negative evidence is present."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

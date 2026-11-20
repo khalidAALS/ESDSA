@@ -1,0 +1,18 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "SEMANTIC_EQUIVALENCE",
+  "blinded_id": "TG-CB0CDE8196DDC643",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0f5a8eb62821d412016b002b8f8eb887d0a64fd8b00943f909",
+  "annotated_utc": "2026-11-20T11:14:25.486504+00:00",
+  "annotation": {
+    "semantic_equivalence": "YES",
+    "material_differences": "",
+    "equivalence_rationale": "All three responses identify the same operational hazard: a potential cold-chain/temperature excursion despite conflicting device readings. Each considers uncertainty, the possibility of product quality impact versus a sensor/device issue, and the time-sensitive nature of the shipment. Each also proposes proportionate action: verify/reconcile readings, check excursion details and device status, escalate if the excursion appears meaningful or product risk is real, and document/proceed cautiously if the issue is minor or attributable to equipment. The differences are mostly in wording and level of detail, not in decision-relevant evidence or operational commitment."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-46564A8C596AB86F",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0a3ca6dee0e8ff28016b002ad5ef8087d0882b6f164e2cc66c",
+  "annotated_utc": "2026-11-20T11:11:20.518614+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "CSS03-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d look at the account notes, the outage details, and the regional incident to see whether there’s enough to support a refund or credit.",
+        "rationale": "This shows the candidate weighing available evidence before deciding on a remedy, and considering a refund or credit only if supported by the records."
+      },
+      {
+        "criterion_id": "CSS03-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "If it looks like it falls under policy, I’d tell the customer what kind of compensation may be available and route it appropriately if I can’t approve it.",
+        "rationale": "This explicitly ties the action to policy and acknowledges approval limits by routing it appropriately if the candidate cannot approve the compensation themselves."
+      },
+      {
+        "criterion_id": "CSS03-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "If the records still don’t match up, I’d keep checking and let them know I’m still working through it.",
+        "rationale": "This indicates the candidate recognizes unresolved uncertainty and continues investigation rather than forcing an immediate decision."
+      }
+    ],
+    "annotation_notes": "The answer is concise but clearly addresses all three criteria through evidence-based assessment, policy constraints, and continued investigation under uncertainty."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

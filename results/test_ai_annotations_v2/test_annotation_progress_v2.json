@@ -1,0 +1,17 @@
+{
+  "status": "COMPLETE",
+  "evidence_completed": 216,
+  "indicator_assessments_completed": 648,
+  "semantic_completed": 72,
+  "evidence_status_counts": {
+    "INSUFFICIENT_EVIDENCE": 63,
+    "POSITIVE_EVIDENCE": 464,
+    "NEGATIVE_EVIDENCE": 121
+  },
+  "model_accepted_evidence_annotations": 214,
+  "ai_assisted_manual_adjudications": 2,
+  "reference_decisions_assigned": 0,
+  "independent_human_review": false,
+  "test_prediction_comparison_performed": false,
+  "updated_utc": "2026-11-20T11:29:54.398542+00:00"
+}

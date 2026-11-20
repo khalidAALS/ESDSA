@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-4C68908B232FAD35",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0f764ecee354a0df016b00298e56f087d0b44de1a2976758da",
+  "annotated_utc": "2026-11-20T11:05:52.360101+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "OPS02-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d review the near-miss, check the workflow, and get input from the staff to understand the congestion.",
+        "rationale": "The answer explicitly identifies congestion and a near-miss as operational issues to investigate, showing recognition of a plausible hazard in context."
+      },
+      {
+        "criterion_id": "OPS02-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d monitor whether the waiting times improve and raise it if the issue stays open. I’d avoid making a final call until the pattern is clearer.",
+        "rationale": "This shows awareness that the situation is still uncertain and that the pattern of waiting times needs to be clearer before deciding, implying consideration of evolving likelihood/impact and uncertainty."
+      },
+      {
+        "criterion_id": "OPS02-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d monitor whether the waiting times improve and raise it if the issue stays open.",
+        "rationale": "The candidate proposes a proportionate response: monitor the outcome and escalate if the problem persists, which is an appropriate mitigation/escalation approach after the first intervention failed."
+      }
+    ],
+    "annotation_notes": ""
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

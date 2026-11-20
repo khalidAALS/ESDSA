@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-C6BC8B6332236C73",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_008e79bec10330aa016b002a09d28087d0b9b354620354dc99",
+  "annotated_utc": "2026-11-20T11:07:56.128684+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "CSS01-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d hear out both people, ask when the access changed, and capture each version of events.",
+        "rationale": "The candidate shows they would gather details from both parties and identify the access change, which establishes what problem is being experienced."
+      },
+      {
+        "criterion_id": "CSS01-C2",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "passage": "",
+        "rationale": "The answer mentions access being changed, but does not clearly identify the customer's affected service or outcome in a way that establishes the impact of the issue."
+      },
+      {
+        "criterion_id": "CSS01-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "If there’s disagreement, I’d note that clearly and hand it over for investigation so the right team can sort out whether it was intentional or accidental.",
+        "rationale": "The candidate explicitly says they would note the disagreement and pass it on for investigation, which shows they would define and summarise the issue before resolution."
+      }
+    ],
+    "annotation_notes": "The response is concise and focused on fact-finding and escalation. It does not clearly state the affected service/outcome, so that criterion remains unestablished."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

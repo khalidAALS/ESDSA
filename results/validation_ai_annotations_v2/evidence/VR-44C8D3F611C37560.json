@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-44C8D3F611C37560",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_08dae036c0d51780016b000bab209087d08d783cad46472ff0",
+  "annotated_utc": "2026-11-20T08:58:22.746946+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "SWE03-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d start by reproducing the problem and checking the calculation flow to see where the numbers go wrong.",
+        "rationale": "The answer explicitly describes investigating the issue to locate where the incorrect figures originate, which supports identifying a plausible cause through examination."
+      },
+      {
+        "criterion_id": "SWE03-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "If the shared component looks suspicious, I’d review it as a likely place to change, and if the reports are risky to trust in the meantime, I’d consider limiting that feature until we know more.",
+        "rationale": "The candidate links the proposed correction options to the investigated problem area: changing the shared component if it appears to be the source, or limiting the affected feature while the issue is understood."
+      },
+      {
+        "criterion_id": "SWE03-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d want to balance speed and customer safety while we work out the details.",
+        "rationale": "This shows justification for the correction in terms of protecting customers from untrusted reports while resolving the underlying issue, explaining why the temporary limitation is appropriate."
+      }
+    ],
+    "annotation_notes": ""
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

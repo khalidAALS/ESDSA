@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-E15909B6492FD78C",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_084a1677ee5b3e39016b000bd9b4dc87d08b7eb3a280fa730a",
+  "annotated_utc": "2026-11-20T08:59:07.915696+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "SWE02-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d review the job logs and history, compare slow and normal runs, and look for obvious patterns in input size, releases, or dependency incidents.",
+        "rationale": "This identifies multiple relevant technical evidence sources for investigating the delay, including logs, run history, input characteristics, releases, and dependency incidents."
+      },
+      {
+        "criterion_id": "SWE02-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "compare slow and normal runs, and look for obvious patterns in input size, releases, or dependency incidents.",
+        "rationale": "Comparing slow and normal runs and checking patterns across inputs, releases, and dependency incidents are explicit checks intended to distinguish among likely causes."
+      },
+      {
+        "criterion_id": "SWE02-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "If nothing clear emerged, I’d dig into the main processing path to narrow down where the delay starts.",
+        "rationale": "This shows the candidate using observations from the investigation to narrow the diagnosis to the part of the processing path where the delay begins."
+      }
+    ],
+    "annotation_notes": "The answer is concise but provides explicit investigative steps for source identification, cause differentiation, and narrowing the fault location."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

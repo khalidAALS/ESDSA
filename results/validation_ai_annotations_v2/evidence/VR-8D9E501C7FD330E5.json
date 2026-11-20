@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-8D9E501C7FD330E5",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0c603f37e2044f8f016b000c83982c87d09ebf4606432027c5",
+  "annotated_utc": "2026-11-20T09:01:58.680889+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "SWE01-C1",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I wouldn’t spend much time reproducing each report before acting.",
+        "rationale": "This explicitly deprioritizes reproduction/characterization of the failures and shows the candidate would not establish how the reported problems occur before intervening."
+      },
+      {
+        "criterion_id": "SWE01-C2",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "passage": "",
+        "rationale": "The answer mentions checking logs and reviewing changed code paths, but it does not clearly describe comparing failing cases against working behaviour or contrasting conditions to understand what differs when the system works versus when it fails."
+      },
+      {
+        "criterion_id": "SWE01-C3",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "passage": "",
+        "rationale": "The candidate jumps to treating the deployment as the likely cause and acting on it, but does not clearly show an evidence-driven narrowing process based on observations. The answer lacks enough detail to establish systematic elimination of causes."
+      }
+    ],
+    "annotation_notes": ""
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

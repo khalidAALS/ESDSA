@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-3BC251DAA194A7F6",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0036e166206a51e4016b0029dd2a2087d0b96f0abfa75f646a",
+  "annotated_utc": "2026-11-20T11:07:11.763016+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "SWE03-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "If the evidence points to the app emitting only one domain event but the broker or delivery path retrying the same message, I’d focus the correction there rather than in the confirmation logic itself.",
+        "rationale": "The candidate identifies a plausible cause: the app may emit one event while the broker or delivery path retries the same message."
+      },
+      {
+        "criterion_id": "SWE03-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d verify whether we’re using an outbox pattern, idempotency key, or message deduplication at the consumer or producer boundary, and then fix the part that is actually allowing repeated delivery.",
+        "rationale": "The proposed correction is explicitly linked to the identified cause by targeting the part allowing repeated delivery."
+      },
+      {
+        "criterion_id": "SWE03-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "That choice is justified because it addresses the layer where duplication is occurring, which is what would stop customers from seeing repeated confirmations even if the original event was only emitted once.",
+        "rationale": "The candidate explains why the correction addresses the problem: fixing the duplication layer would prevent repeated confirmations."
+      }
+    ],
+    "annotation_notes": "The answer supports all three criteria through an end-to-end diagnostic approach and a cause-linked correction rationale."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

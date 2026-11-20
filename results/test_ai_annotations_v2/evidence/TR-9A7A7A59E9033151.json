@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-9A7A7A59E9033151",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_03194318d4d9d295016b002a12ee2487d09e92e2c093539d63",
+  "annotated_utc": "2026-11-20T11:08:05.502476+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "OPS03-C1",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I’d go with the maintenance team’s update and push the handover through so we don’t lose time on the evening shift. If the system still shows a dependency, I’d leave that for someone to clean up later, since the team says progress has been made.",
+        "rationale": "The answer explicitly prioritizes one update while dismissing the scheduling system’s pending dependency rather than integrating both operational sources into the decision."
+      },
+      {
+        "criterion_id": "OPS03-C2",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "If the system still shows a dependency, I’d leave that for someone to clean up later, since the team says progress has been made. And if the receiving team hasn’t confirmed readiness yet, I’d assume they can sort it out once the handover is underway.",
+        "rationale": "The answer does not identify responsible parties or needed dependencies in a coordinated way; instead it assumes others will resolve the dependency and readiness issue after the handover."
+      },
+      {
+        "criterion_id": "OPS03-C3",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I’d go with the maintenance team’s update and push the handover through so we don’t lose time on the evening shift.",
+        "rationale": "The action is justified by time pressure and a single team update, not by a traceable explanation grounded in relevant operational evidence such as the unresolved dependency or readiness confirmation."
+      }
+    ],
+    "annotation_notes": "The response shows a willingness to proceed despite unresolved operational signals, which conflicts with evidence-based coordination for all three criteria."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

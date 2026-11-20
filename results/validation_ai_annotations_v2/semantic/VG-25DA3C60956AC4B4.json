@@ -1,0 +1,20 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "SEMANTIC_EQUIVALENCE",
+  "blinded_id": "VG-25DA3C60956AC4B4",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0d772966ab2a4d28016b000c0d7ea487d097e2931085a8d37b",
+  "annotated_utc": "2026-11-20T08:59:59.014916+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "semantic_equivalence": "YES",
+    "material_differences": "",
+    "equivalence_rationale": "All three responses preserve the same decision-relevant evidence for the three criteria: they ask targeted questions to understand the cancellation issue, distinguish customer recollection or payment data from verified internal records, and limit collection to authorized/necessary information without seeking unnecessary sensitive details. The wording and examples differ, but there is no material addition, omission, or contradiction that would plausibly change the criterion-level assessment."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

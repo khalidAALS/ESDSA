@@ -1,0 +1,20 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "SEMANTIC_EQUIVALENCE",
+  "blinded_id": "VG-781DF95B54461793",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_09c28c096a6705de016b000d012b1087d0be5ecfd6b099c970",
+  "annotated_utc": "2026-11-20T09:04:03.853556+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "semantic_equivalence": "UNCERTAIN",
+    "material_differences": "Response B adds an explicit constraint about acting only if the item seems to be within the normal support window, which could affect policy/authorization judgment. Response C omits that support-window check and is therefore less explicit about respecting service constraints. A is much more generic and does not explicitly mention assessing options against the situation or any policy/service constraint, so it may not preserve the same evidence on option assessment and policy awareness.",
+    "equivalence_rationale": "All three responses share the core theme of gathering more information before deciding, which supports uncertainty handling. However, B introduces a specific service-window condition, while C and especially A do not. Because the question asks about choosing an appropriate action under possible resolutions, that added constraint could materially change how policy awareness is evaluated. At the same time, the available context does not fully specify whether the support-window mention is essential or merely illustrative, so the equivalence judgment is not fully certain."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

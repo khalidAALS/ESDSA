@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-D858AD7D52ACADE6",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_07a16d770f27d25b016b000d60abac87d084f9561c0eae8e2d",
+  "annotated_utc": "2026-11-20T09:05:39.181027+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "OPS03-C1",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "passage": "",
+        "rationale": "The answer mentions a revised schedule but does not show use of relevant operational sources or other evidence beyond that. It is unclear what evidence was reviewed or integrated."
+      },
+      {
+        "criterion_id": "OPS03-C2",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "assign the open tasks to the nearest available teams, then deal with ownership conflicts later",
+        "rationale": "This explicitly postpones ownership conflicts instead of identifying responsible parties and managing dependencies, which contradicts the criterion."
+      },
+      {
+        "criterion_id": "OPS03-C3",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I’d note that the update was made to avoid further delay.",
+        "rationale": "This gives a reason for the action, but not one grounded in relevant operational evidence. The approach is presented as delay avoidance rather than evidence-based explanation."
+      }
+    ],
+    "annotation_notes": "The response is brief and shows some attempt to act, but it does not demonstrate evidence use or clear accountability handling. One criterion is unsupported, while two are contradicted by the stated approach."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

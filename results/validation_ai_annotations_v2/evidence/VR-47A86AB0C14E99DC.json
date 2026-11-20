@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-47A86AB0C14E99DC",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_03343eb225d3f403016b000eab4eb487d0ba80939cfa5b4665",
+  "annotated_utc": "2026-11-20T09:11:09.023055+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "CSS02-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d gather the customer’s best recollection, check the account status and notes, and use billing history to build a timeline.",
+        "rationale": "The answer explicitly says it would gather the customer's recollection and review account status, notes, and billing history to understand the issue."
+      },
+      {
+        "criterion_id": "CSS02-C2",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "passage": "",
+        "rationale": "The answer describes using records to build a timeline, but it does not clearly distinguish confirmed facts from assumptions or explain how the candidate would separate what is known from what is inferred."
+      },
+      {
+        "criterion_id": "CSS02-C3",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "passage": "",
+        "rationale": "The answer mentions a limited set of information sources, but it does not substantively demonstrate that the collection is appropriate and authorised, nor does it indicate any proportionality assessment."
+      }
+    ],
+    "annotation_notes": "The response is concise and shows basic information gathering, but it does not provide enough detail to judge fact-verification discipline or proportional data collection."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

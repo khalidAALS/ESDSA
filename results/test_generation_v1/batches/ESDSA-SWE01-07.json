@@ -1,0 +1,63 @@
+{
+  "experiment": "ESDSA_TEST_GENERATION_V1",
+  "partition": "TEST",
+  "family_id": "ESDSA-SWE01-07",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0e4463773bee703f016b002261e67087d0a44f4a58f743a38a",
+  "timestamp_utc": "2026-11-20T10:35:21.435963+00:00",
+  "run_sha256": "ce26dd973762a510fb95f13fec1401860dba63416334dfd41a4f7096b0318b0c",
+  "scenario_sha256": "9d2280d8014612bdd263f5dd8daf8356efeac3fa7a7e4b0cd3c6f4fef932426a",
+  "rubric_sha256": "aed4c6ae571a27f490bb01bdfe83625322f0e5b919aa59498dd9160b0419028c",
+  "responses": [
+    {
+      "condition": "SUFFICIENT",
+      "variant": "CANONICAL",
+      "answer": "I’d start by reproducing the issue in a controlled way. I’d identify a few affected users or sessions, note exactly when the dashboard looks stale, and compare that with a known-good case. Then I’d break the problem down by layer: check whether the browser is actually reusing cached responses, inspect the network calls and response headers, and at the same time verify whether the service is returning fresh data at the moment the page loads. I’d compare the failing and working cases side by side so we can see what changes between them, such as user, browser, timing, or request parameters. From there I’d narrow it down based on evidence, not on which theory sounds more likely. If the same stale value is coming back from the API in multiple browsers, that points to the service or upstream data. If the API response is fresh but one browser keeps showing old figures, that points more toward client caching or a front-end state issue. Once we have that split, I’d instrument or log the specific path that looks most suspicious and fix the narrowest confirmed cause."
+    },
+    {
+      "condition": "SUFFICIENT",
+      "variant": "CONVERSATIONAL",
+      "answer": "I’d treat it like a testable hypothesis problem. First I’d try to reproduce it with an affected user or setup and one that works, so we can see the exact conditions where the dashboard goes stale. Then I’d compare the two paths: same browser versus different browser, hard refresh versus normal load, and the actual API responses behind the dashboard. That helps us separate client caching from a backend data issue. I’d use those observations to narrow things down step by step instead of arguing from assumption. If the service is already serving old figures, the browser isn’t the real cause; if the service is fresh and only one client view is stale, I’d focus on the front end or cache headers. The main goal would be to get enough evidence to rule one side in or out quickly."
+    },
+    {
+      "condition": "SUFFICIENT",
+      "variant": "CONCISE",
+      "answer": "I’d reproduce it on an affected and unaffected setup, then compare the network responses and dashboard behavior side by side. If the API is stale across browsers, I’d focus on the service; if the API is fresh but one client still shows old values, I’d look at browser or front-end caching. I’d use those checks to narrow the cause based on evidence, not assumptions."
+    },
+    {
+      "condition": "INSUFFICIENT",
+      "variant": "CANONICAL",
+      "answer": "I’d start by collecting a few examples of when people notice the outdated figures and check whether it happens consistently or only under certain conditions. I’d also compare what different users see so we can tell whether it’s universal or isolated. After that I’d look at the browser requests and the service responses to see which side is showing the old data. That should help us narrow it down, though I’d probably want more examples before making a final call."
+    },
+    {
+      "condition": "INSUFFICIENT",
+      "variant": "CONVERSATIONAL",
+      "answer": "I’d begin by gathering a couple of concrete cases and seeing how often the issue shows up. Then I’d compare what affected users are seeing with what other users see, and I’d inspect the browser calls and the backend responses. That would give us a better sense of whether the stale data is coming from the client or the service, although I’d want to verify a few more instances before deciding."
+    },
+    {
+      "condition": "INSUFFICIENT",
+      "variant": "CONCISE",
+      "answer": "I’d collect a few examples, compare affected and unaffected users, and inspect both the browser requests and backend responses. That should help identify whether the stale figures are coming from the client or the service, though I’d want more cases before settling on a cause."
+    },
+    {
+      "condition": "NEGATIVE",
+      "variant": "CANONICAL",
+      "answer": "I’d probably lean toward the browser cache first, because dashboards often hold onto old data. I’d ask the users to hard refresh or clear their cache and, if that fixes it for some of them, I’d treat that as confirmation and move on. If the issue still shows up after that, I’d revisit the service, but I wouldn’t spend much time comparing working and failing cases up front since that can slow things down when the likely cause is already obvious."
+    },
+    {
+      "condition": "NEGATIVE",
+      "variant": "CONVERSATIONAL",
+      "answer": "I’d go after the browser cache first, since that’s the most common reason a dashboard looks stale. I’d have people clear cache or do a hard reload and see if the problem goes away, and if it does I’d assume we found it. I wouldn’t really dig into the backend unless that didn’t help, because I’d rather fix the most likely cause quickly."
+    },
+    {
+      "condition": "NEGATIVE",
+      "variant": "CONCISE",
+      "answer": "I’d start with the browser cache and have users hard refresh or clear it. If that helps, I’d assume the cache is the cause and only look at the service if the problem keeps happening."
+    }
+  ],
+  "raw_output": "{\"responses\":[{\"condition\":\"SUFFICIENT\",\"variant\":\"CANONICAL\",\"answer\":\"I’d start by reproducing the issue in a controlled way. I’d identify a few affected users or sessions, note exactly when the dashboard looks stale, and compare that with a known-good case. Then I’d break the problem down by layer: check whether the browser is actually reusing cached responses, inspect the network calls and response headers, and at the same time verify whether the service is returning fresh data at the moment the page loads. I’d compare the failing and working cases side by side so we can see what changes between them, such as user, browser, timing, or request parameters. From there I’d narrow it down based on evidence, not on which theory sounds more likely. If the same stale value is coming back from the API in multiple browsers, that points to the service or upstream data. If the API response is fresh but one browser keeps showing old figures, that points more toward client caching or a front-end state issue. Once we have that split, I’d instrument or log the specific path that looks most suspicious and fix the narrowest confirmed cause.\"},{\"condition\":\"SUFFICIENT\",\"variant\":\"CONVERSATIONAL\",\"answer\":\"I’d treat it like a testable hypothesis problem. First I’d try to reproduce it with an affected user or setup and one that works, so we can see the exact conditions where the dashboard goes stale. Then I’d compare the two paths: same browser versus different browser, hard refresh versus normal load, and the actual API responses behind the dashboard. That helps us separate client caching from a backend data issue. I’d use those observations to narrow things down step by step instead of arguing from assumption. If the service is already serving old figures, the browser isn’t the real cause; if the service is fresh and only one client view is stale, I’d focus on the front end or cache headers. The main goal would be to get enough evidence to rule one side in or out quickly.\"},{\"condition\":\"SUFFICIENT\",\"variant\":\"CONCISE\",\"answer\":\"I’d reproduce it on an affected and unaffected setup, then compare the network responses and dashboard behavior side by side. If the API is stale across browsers, I’d focus on the service; if the API is fresh but one client still shows old values, I’d look at browser or front-end caching. I’d use those checks to narrow the cause based on evidence, not assumptions.\"},{\"condition\":\"INSUFFICIENT\",\"variant\":\"CANONICAL\",\"answer\":\"I’d start by collecting a few examples of when people notice the outdated figures and check whether it happens consistently or only under certain conditions. I’d also compare what different users see so we can tell whether it’s universal or isolated. After that I’d look at the browser requests and the service responses to see which side is showing the old data. That should help us narrow it down, though I’d probably want more examples before making a final call.\"},{\"condition\":\"INSUFFICIENT\",\"variant\":\"CONVERSATIONAL\",\"answer\":\"I’d begin by gathering a couple of concrete cases and seeing how often the issue shows up. Then I’d compare what affected users are seeing with what other users see, and I’d inspect the browser calls and the backend responses. That would give us a better sense of whether the stale data is coming from the client or the service, although I’d want to verify a few more instances before deciding.\"},{\"condition\":\"INSUFFICIENT\",\"variant\":\"CONCISE\",\"answer\":\"I’d collect a few examples, compare affected and unaffected users, and inspect both the browser requests and backend responses. That should help identify whether the stale figures are coming from the client or the service, though I’d want more cases before settling on a cause.\"},{\"condition\":\"NEGATIVE\",\"variant\":\"CANONICAL\",\"answer\":\"I’d probably lean toward the browser cache first, because dashboards often hold onto old data. I’d ask the users to hard refresh or clear their cache and, if that fixes it for some of them, I’d treat that as confirmation and move on. If the issue still shows up after that, I’d revisit the service, but I wouldn’t spend much time comparing working and failing cases up front since that can slow things down when the likely cause is already obvious.\"},{\"condition\":\"NEGATIVE\",\"variant\":\"CONVERSATIONAL\",\"answer\":\"I’d go after the browser cache first, since that’s the most common reason a dashboard looks stale. I’d have people clear cache or do a hard reload and see if the problem goes away, and if it does I’d assume we found it. I wouldn’t really dig into the backend unless that didn’t help, because I’d rather fix the most likely cause quickly.\"},{\"condition\":\"NEGATIVE\",\"variant\":\"CONCISE\",\"answer\":\"I’d start with the browser cache and have users hard refresh or clear it. If that helps, I’d assume the cache is the cause and only look at the service if the problem keeps happening.\"}]}",
+  "input_tokens": 764,
+  "output_tokens": 1039,
+  "generation_conditions_are_reference_labels": false
+}

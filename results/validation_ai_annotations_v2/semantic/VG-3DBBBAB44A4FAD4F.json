@@ -1,0 +1,20 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "SEMANTIC_EQUIVALENCE",
+  "blinded_id": "VG-3DBBBAB44A4FAD4F",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0dfe20b230bea2a7016b000c373b2c87d0a6d5b06f37483363",
+  "annotated_utc": "2026-11-20T09:00:42.206559+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "semantic_equivalence": "NO",
+    "material_differences": "Response B omits the post-release monitoring/keeping an eye out for unusual behavior that appears in A and C, and it also lacks C’s explicit outcome statement about being inclined to move it forward only if the checks look solid. More importantly, A explicitly mentions a test case mirroring the original problem, which is targeted verification under SWE04-C1; B only says the main approval path is covered, which is weaker and could be less specific about testing the reported failure. These differences could affect both targeted verification and outcome assessment.",
+    "equivalence_rationale": "A and C preserve the same overall evidence pattern: targeted validation of the main approval path, attention to surrounding tests/coverage and review, and a conditional decision to proceed with deployment plus post-release monitoring. B is materially thinner: it keeps the general idea of checking the main path and surrounding coverage, but drops the stronger targeted test case language and the explicit cautious follow-through after the checks. Because the criteria ask for evidence that the failure is resolved, consideration of regression impact, and use of findings to decide next action, B’s omissions could plausibly change how those criteria are assessed."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

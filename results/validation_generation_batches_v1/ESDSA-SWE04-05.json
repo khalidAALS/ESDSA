@@ -1,0 +1,75 @@
+{
+  "experiment": "ESDSA_VALIDATION_GENERATION_V1",
+  "partition": "VALIDATION",
+  "family_id": "ESDSA-SWE04-05",
+  "run_sha256": "7ed981ce37d785bc1ed61cca0eef962e416c3977f71d8473d0d34b6bbcc3da7d",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "response_id": "resp_06bfc67775e87db7016aff8ebb8fd887d0b4e9daa24c6793d8",
+  "response_status": "completed",
+  "usage": {
+    "input_tokens": 737,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      }
+    },
+    "output_tokens": 1283,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 2020
+  },
+  "raw_output_text": "{\"responses\":[{\"condition\":\"SUFFICIENT\",\"variant\":\"CANONICAL\",\"answer\":\"I’d split the verification into risk-based slices and start with the highest-impact areas. For account permissions, I’d first retest the exact permission scenarios that were changed, including the cases that failed before, to confirm the fix really works. Then I’d run a small but relevant set of regressions around nearby access flows, like role changes and any screens or APIs that depend on permission checks.\\n\\nFor search, I’d verify the changed search cases and then do a few regression checks on existing search behaviour, especially filters, ranking, and empty-result handling, because those are easy to disturb. For the background export process, I’d focus on the known failure mode first, then check related workflows such as job creation, retries, notifications, and file delivery so we don’t miss side effects.\\n\\nIf I found something unexpected, I wouldn’t treat it as a pass just because the main fix looked good. I’d reproduce it, narrow down whether it’s in the new change or a nearby regression, and decide whether it blocks release or needs a follow-up based on severity and scope. If it’s a serious issue or I can’t explain it confidently, I’d hold the release and escalate it with the evidence.\"},{\"condition\":\"SUFFICIENT\",\"variant\":\"CONVERSATIONAL\",\"answer\":\"I’d use the limited time on the riskiest bits first. So I’d retest the exact permission issue that was fixed, then do a few nearby checks to make sure we didn’t break role-based access or anything that depends on it. For search, I’d cover the changed path and a couple of core regressions like filters and result accuracy. For the export job, I’d check the original failure and then a couple of surrounding cases like retries and whether the file actually gets delivered.\\n\\nIf a test threw up something odd, I’d stop and look into it rather than just moving on. I’d try to reproduce it, see whether it’s a new bug or a side effect, and then decide if we can still ship or if it needs fixing first. I’d only release if the important checks are passing and any surprise findings are understood and addressed.\"},{\"condition\":\"SUFFICIENT\",\"variant\":\"CONCISE\",\"answer\":\"I’d prioritise by risk: retest the original permission failure first, then run a focused set of regressions on related access flows. I’d do the same for search and the export job—verify the changed path, then check the nearby behaviour most likely to be affected.\\n\\nIf I found an unexpected issue, I’d reproduce it, assess whether it’s a regression or part of the change, and decide whether it blocks release. I wouldn’t go ahead until the important failures were understood and either fixed or accepted with a clear mitigation.\"},{\"condition\":\"INSUFFICIENT\",\"variant\":\"CANONICAL\",\"answer\":\"I’d organise the work by impact and the likelihood of side effects. The account permission change would get priority because it affects access control, so I’d start with the most important permission scenarios and then use the remaining time to look at nearby flows that might be influenced by the change. For search, I’d focus on the user-facing paths that changed most visibly, and for the export process I’d verify the main happy path plus the operational checks we rely on for releases.\\n\\nIf I came across an unexpected test result, I’d capture it and compare it with the change set so I could tell whether it looked related or not. Depending on what I found, I’d raise it with the team and use that to decide how to proceed before release.\"},{\"condition\":\"INSUFFICIENT\",\"variant\":\"CONVERSATIONAL\",\"answer\":\"I’d break it down by risk and start with the stuff that has the biggest user impact. Permissions would probably be first, then I’d spend the rest of the time on the search areas and the export flow based on what’s most likely to have changed. I’d try to cover the main paths and a bit of the surrounding behaviour so we’re not only testing the new feature in isolation.\\n\\nIf something surprising turned up, I’d note it, check whether it seemed connected to the change, and discuss it with the team before deciding what to do next.\"},{\"condition\":\"INSUFFICIENT\",\"variant\":\"CONCISE\",\"answer\":\"I’d prioritise the highest-risk areas first, starting with permissions, then cover the main search and export paths with some nearby checks. If an unexpected result showed up, I’d investigate whether it was related and raise it with the team before deciding on release.\"},{\"condition\":\"NEGATIVE\",\"variant\":\"CANONICAL\",\"answer\":\"I’d keep the verification fairly narrow because time is limited. My first step would be to confirm the specific changed flow in each area, mainly to make sure the new code is behaving as expected. If those checks pass, I’d move on without spending much time on older scenarios, since broad regression testing can easily take us past the release window.\\n\\nIf I found an unexpected failure, I’d log it for follow-up, but I wouldn’t necessarily stop the release unless it was clearly catastrophic. In practice, I’d rather keep the release moving and let the team address anything unusual in the next cycle, because trying to resolve every surprise before shipping can hold things up too much.\"},{\"condition\":\"NEGATIVE\",\"variant\":\"CONVERSATIONAL\",\"answer\":\"With limited time, I’d mostly just verify the changed bits in permissions, search and export and make sure the new behaviour looks right. I wouldn’t spend much time on broader regression unless there was already a known issue in that area, because otherwise we could end up chasing problems that aren’t really part of this release.\\n\\nIf a test came back odd, I’d record it and keep going so we can still get the build out. We can always circle back after release if it turns out to matter.\"},{\"condition\":\"NEGATIVE\",\"variant\":\"CONCISE\",\"answer\":\"I’d focus on the changed paths and avoid heavy regression testing unless there was a known problem. If something unexpected came up, I’d log it and continue toward release, then follow up later if needed.\"}]}",
+  "responses": [
+    {
+      "condition": "SUFFICIENT",
+      "variant": "CANONICAL",
+      "answer": "I’d split the verification into risk-based slices and start with the highest-impact areas. For account permissions, I’d first retest the exact permission scenarios that were changed, including the cases that failed before, to confirm the fix really works. Then I’d run a small but relevant set of regressions around nearby access flows, like role changes and any screens or APIs that depend on permission checks.\n\nFor search, I’d verify the changed search cases and then do a few regression checks on existing search behaviour, especially filters, ranking, and empty-result handling, because those are easy to disturb. For the background export process, I’d focus on the known failure mode first, then check related workflows such as job creation, retries, notifications, and file delivery so we don’t miss side effects.\n\nIf I found something unexpected, I wouldn’t treat it as a pass just because the main fix looked good. I’d reproduce it, narrow down whether it’s in the new change or a nearby regression, and decide whether it blocks release or needs a follow-up based on severity and scope. If it’s a serious issue or I can’t explain it confidently, I’d hold the release and escalate it with the evidence."
+    },
+    {
+      "condition": "SUFFICIENT",
+      "variant": "CONVERSATIONAL",
+      "answer": "I’d use the limited time on the riskiest bits first. So I’d retest the exact permission issue that was fixed, then do a few nearby checks to make sure we didn’t break role-based access or anything that depends on it. For search, I’d cover the changed path and a couple of core regressions like filters and result accuracy. For the export job, I’d check the original failure and then a couple of surrounding cases like retries and whether the file actually gets delivered.\n\nIf a test threw up something odd, I’d stop and look into it rather than just moving on. I’d try to reproduce it, see whether it’s a new bug or a side effect, and then decide if we can still ship or if it needs fixing first. I’d only release if the important checks are passing and any surprise findings are understood and addressed."
+    },
+    {
+      "condition": "SUFFICIENT",
+      "variant": "CONCISE",
+      "answer": "I’d prioritise by risk: retest the original permission failure first, then run a focused set of regressions on related access flows. I’d do the same for search and the export job—verify the changed path, then check the nearby behaviour most likely to be affected.\n\nIf I found an unexpected issue, I’d reproduce it, assess whether it’s a regression or part of the change, and decide whether it blocks release. I wouldn’t go ahead until the important failures were understood and either fixed or accepted with a clear mitigation."
+    },
+    {
+      "condition": "INSUFFICIENT",
+      "variant": "CANONICAL",
+      "answer": "I’d organise the work by impact and the likelihood of side effects. The account permission change would get priority because it affects access control, so I’d start with the most important permission scenarios and then use the remaining time to look at nearby flows that might be influenced by the change. For search, I’d focus on the user-facing paths that changed most visibly, and for the export process I’d verify the main happy path plus the operational checks we rely on for releases.\n\nIf I came across an unexpected test result, I’d capture it and compare it with the change set so I could tell whether it looked related or not. Depending on what I found, I’d raise it with the team and use that to decide how to proceed before release."
+    },
+    {
+      "condition": "INSUFFICIENT",
+      "variant": "CONVERSATIONAL",
+      "answer": "I’d break it down by risk and start with the stuff that has the biggest user impact. Permissions would probably be first, then I’d spend the rest of the time on the search areas and the export flow based on what’s most likely to have changed. I’d try to cover the main paths and a bit of the surrounding behaviour so we’re not only testing the new feature in isolation.\n\nIf something surprising turned up, I’d note it, check whether it seemed connected to the change, and discuss it with the team before deciding what to do next."
+    },
+    {
+      "condition": "INSUFFICIENT",
+      "variant": "CONCISE",
+      "answer": "I’d prioritise the highest-risk areas first, starting with permissions, then cover the main search and export paths with some nearby checks. If an unexpected result showed up, I’d investigate whether it was related and raise it with the team before deciding on release."
+    },
+    {
+      "condition": "NEGATIVE",
+      "variant": "CANONICAL",
+      "answer": "I’d keep the verification fairly narrow because time is limited. My first step would be to confirm the specific changed flow in each area, mainly to make sure the new code is behaving as expected. If those checks pass, I’d move on without spending much time on older scenarios, since broad regression testing can easily take us past the release window.\n\nIf I found an unexpected failure, I’d log it for follow-up, but I wouldn’t necessarily stop the release unless it was clearly catastrophic. In practice, I’d rather keep the release moving and let the team address anything unusual in the next cycle, because trying to resolve every surprise before shipping can hold things up too much."
+    },
+    {
+      "condition": "NEGATIVE",
+      "variant": "CONVERSATIONAL",
+      "answer": "With limited time, I’d mostly just verify the changed bits in permissions, search and export and make sure the new behaviour looks right. I wouldn’t spend much time on broader regression unless there was already a known issue in that area, because otherwise we could end up chasing problems that aren’t really part of this release.\n\nIf a test came back odd, I’d record it and keep going so we can still get the build out. We can always circle back after release if it turns out to matter."
+    },
+    {
+      "condition": "NEGATIVE",
+      "variant": "CONCISE",
+      "answer": "I’d focus on the changed paths and avoid heavy regression testing unless there was a known problem. If something unexpected came up, I’d log it and continue toward release, then follow up later if needed."
+    }
+  ],
+  "validation_status": "STRUCTURE_PASSED"
+}

@@ -1,0 +1,20 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "SEMANTIC_EQUIVALENCE",
+  "blinded_id": "VG-16FCAB4184DA7FD5",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_05e782837fe5034e016b000bfadf6c87d08aa08ce3b2d25a85",
+  "annotated_utc": "2026-11-20T08:59:40.529413+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "semantic_equivalence": "YES",
+    "material_differences": "None that are likely to change the criterion-level evidence or operational commitments. All three responses apologize, explain that the responder has taken over and is reviewing the complaint, avoid unsupported promises, and provide a follow-up/contact mechanism.",
+    "equivalence_rationale": "Each version preserves the same core evidence for clear explanation, expectation management, and follow-up. A, B, and C all communicate the proposed next action in understandable terms, commit only to returning with more information rather than promising a fixed outcome or timeline, and include a way for the customer to re-contact the responder or add information. The slight wording differences do not materially alter the demonstrated competencies."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

@@ -1,0 +1,18 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "SEMANTIC_EQUIVALENCE",
+  "blinded_id": "TG-7D0CEB54D8955281",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_093d2d3c944d78c3016b002ae70ffc87d0b06f53851ee96c91",
+  "annotated_utc": "2026-11-20T11:11:37.314203+00:00",
+  "annotation": {
+    "semantic_equivalence": "YES",
+    "material_differences": "",
+    "equivalence_rationale": "All three responses preserve the same decision-relevant evidence: they verify the original failure is fixed, check the older format for regression impact, and use those findings to defer release and escalate for further review if the change appears related. Differences in wording and detail do not materially change the criterion-level evidence or the operational commitment to investigate before a final release decision."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

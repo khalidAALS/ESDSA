@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-0A8FA790B28E6490",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0b123e077a5ee724016b002b9bc7fc87d0b0baeb404995af9e",
+  "annotated_utc": "2026-11-20T11:14:38.040828+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "OPS01-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d rework the plan immediately around urgency, impact, and dependencies.",
+        "rationale": "The answer explicitly names the relevant priority criteria—urgency, impact, and dependencies—as the basis for revising the plan."
+      },
+      {
+        "criterion_id": "OPS01-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "Those would move to the top because missing a committed delivery has the biggest operational and customer impact.",
+        "rationale": "The candidate explains a prioritisation choice using evidence about deadline risk and operational/customer impact, showing trade-off reasoning rather than just listing tasks."
+      },
+      {
+        "criterion_id": "OPS01-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d rework the plan immediately",
+        "rationale": "This directly shows reassessment of priorities in response to changed conditions, including the unavailable vehicle and early delivery."
+      }
+    ],
+    "annotation_notes": "The response clearly addresses all three prioritisation criteria with explicit reasoning and a plan to revise priorities in response to changed circumstances."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

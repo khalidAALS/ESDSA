@@ -1,0 +1,10 @@
+response_id,scenario_id,evidence_condition,reference_decision,reference_justification,equivalence_status,reference_validation_status
+PILOT-SW-01-POSITIVE-V0,PILOT-SW-01,positive,ADVANCE,"Provides diagnosis, evidence collection, correction, and regression verification.",UNREVIEWED,UNREVIEWED
+PILOT-SW-01-POSITIVE-V1,PILOT-SW-01,positive,ADVANCE,"Provides diagnosis, evidence collection, correction, and regression verification.",UNREVIEWED,UNREVIEWED
+PILOT-SW-01-POSITIVE-V2,PILOT-SW-01,positive,ADVANCE,"Provides diagnosis, evidence collection, correction, and regression verification.",UNREVIEWED,UNREVIEWED
+PILOT-SW-01-NEGATIVE-V0,PILOT-SW-01,negative,DO_NOT_ADVANCE,Explicitly advocates deploying guesses without investigating or verifying.,UNREVIEWED,UNREVIEWED
+PILOT-SW-01-NEGATIVE-V1,PILOT-SW-01,negative,DO_NOT_ADVANCE,Explicitly advocates deploying guesses without investigating or verifying.,UNREVIEWED,UNREVIEWED
+PILOT-SW-01-NEGATIVE-V2,PILOT-SW-01,negative,DO_NOT_ADVANCE,Explicitly advocates deploying guesses without investigating or verifying.,UNREVIEWED,UNREVIEWED
+PILOT-SW-01-INSUFFICIENT-V0,PILOT-SW-01,insufficient,DEFER,Only states generic intentions; no concrete diagnostic or verification evidence.,UNREVIEWED,UNREVIEWED
+PILOT-SW-01-INSUFFICIENT-V1,PILOT-SW-01,insufficient,DEFER,Only states generic intentions; no concrete diagnostic or verification evidence.,UNREVIEWED,UNREVIEWED
+PILOT-SW-01-INSUFFICIENT-V2,PILOT-SW-01,insufficient,DEFER,Only states generic intentions; no concrete diagnostic or verification evidence.,UNREVIEWED,UNREVIEWED

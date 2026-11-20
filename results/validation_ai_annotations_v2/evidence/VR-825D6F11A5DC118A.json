@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-825D6F11A5DC118A",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_08e20b054e26db6f016b000d071d1087d0a51966bb5d526ebc",
+  "annotated_utc": "2026-11-20T09:04:09.591040+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "OPS02-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d recognise this as a potential delivery disruption risk",
+        "rationale": "The candidate explicitly identifies a plausible operational risk in context: a potential delivery disruption due to uncertain partner capacity and demand."
+      },
+      {
+        "criterion_id": "OPS02-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "the partner’s capacity might not match whatever demand comes through next week",
+        "rationale": "The answer directly acknowledges uncertainty on both supply and demand, and points to the possible consequence of mismatch between them, which addresses likelihood/impact considerations."
+      },
+      {
+        "criterion_id": "OPS02-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d start by asking for the latest information from the partner and checking forecast demand, then I’d review the alternative transport options to understand their costs and how quickly they could be brought in.",
+        "rationale": "The candidate proposes concrete mitigation steps: gathering updated information, assessing demand, and reviewing fallback transport options with costs and lead times to support a practical response."
+      }
+    ],
+    "annotation_notes": "The response is concise but clearly covers all three criteria. The final sentence also suggests ongoing monitoring and team awareness, but the main evidence for response is the assessment of alternatives and close tracking."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

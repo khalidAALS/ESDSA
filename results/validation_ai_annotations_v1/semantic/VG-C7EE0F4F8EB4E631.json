@@ -1,0 +1,17 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_TARGETED_PILOT_V1",
+  "partition": "VALIDATION",
+  "review_type": "SEMANTIC_EQUIVALENCE",
+  "blinded_id": "VG-C7EE0F4F8EB4E631",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V1",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0bfb2be28f33b773016aff97320b0c87d0b4122b2a75c32e0a",
+  "annotated_utc": "2026-11-20T00:41:23.437316+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "semantic_equivalence": "NO",
+    "material_differences": "Response B adds checking for 'automated messages' and explicitly looking for 'patterns around when the subscription stopped being used,' while A focuses on confirmation, account notes, status, and billing records. More importantly, C is materially less specific than A and B: it omits the question prompts about how the cancellation was submitted or what the customer remembers, and it does not mention confirming via account/billing records beyond a general timeline. This reduces the evidence of active information gathering and source verification.",
+    "equivalence_rationale": "A and B are broadly similar, but the set is not semantically equivalent because C drops substantive investigative steps that are central to the competency evidence. Under the rubric, information gathering requires asking relevant questions and distinguishing facts from assumptions; A and B explicitly probe the customer’s recollection and cancellation method, while C compresses this into a vague summary. Because that omission could change criterion-level assessment, the three responses do not preserve the same decision-relevant evidence."
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "competency": "Defect diagnosis and verification",
+  "criteria": {
+    "C1": "Systematic approach to finding cause",
+    "C2": "Uses relevant diagnostic evidence (logs, comparisons, tests)",
+    "C3": "Reasoned correction of identified defect",
+    "C4": "Verifies fix and checks for regression"
+  },
+  "decision_policy": "ADVANCE requires sufficiently demonstrated safe diagnosis and verification; DO_NOT_ADVANCE requires affirmative evidence of unsafe practices; DEFER when evidence is inadequate to support either judgment. These are pilot response-level judgments, not candidate competence labels."
+}

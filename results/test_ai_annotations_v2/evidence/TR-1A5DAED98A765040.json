@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-1A5DAED98A765040",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0dd413762f67d74e016b002954432887d0af50967b577a93b8",
+  "annotated_utc": "2026-11-20T11:04:53.927714+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "CSS04-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d tell them the replacement is accepted but still waiting on warehouse confirmation",
+        "rationale": "This directly and clearly explains the current status to the customer in understandable terms."
+      },
+      {
+        "criterion_id": "CSS04-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I wouldn’t promise a delivery date until it’s confirmed",
+        "rationale": "This shows the candidate will avoid making unsupported promises and will only set expectations once confirmed."
+      },
+      {
+        "criterion_id": "CSS04-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d give them my contact details or case reference for follow-up.",
+        "rationale": "This provides a concrete mechanism for the customer to check status or obtain confirmation later."
+      }
+    ],
+    "annotation_notes": "All three criteria are explicitly addressed in the answer."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

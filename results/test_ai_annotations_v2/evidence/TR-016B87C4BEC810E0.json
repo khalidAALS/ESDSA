@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-016B87C4BEC810E0",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_06573f4aa2f29469016b002a2f48f887d0ac50cbd325fb231d",
+  "annotated_utc": "2026-11-20T11:08:33.574881+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "CSS02-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d ask for the order details, when they noticed the discount missing, and any screenshot they have.",
+        "rationale": "This explicitly requests information that helps understand the issue and investigate the claim."
+      },
+      {
+        "criterion_id": "CSS02-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "Then I’d verify the account and promotion history in our system, and compare that with the screenshot.",
+        "rationale": "This shows the candidate relying on system records and the screenshot to verify facts rather than assuming the customer’s claim is already confirmed."
+      },
+      {
+        "criterion_id": "CSS02-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d only request information needed to confirm the issue and use approved channels for anything account-related.",
+        "rationale": "This explicitly indicates proportionate collection and use of approved channels, which supports appropriate and authorised information gathering."
+      }
+    ],
+    "annotation_notes": "The answer is concise but directly addresses all three criteria with explicit statements about what to request, what to verify, and limiting collection to needed information."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

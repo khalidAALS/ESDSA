@@ -1,0 +1,20 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "SEMANTIC_EQUIVALENCE",
+  "blinded_id": "VG-E640AEBF9DAABD70",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_099b519c02b7b8a9016b001127622487d08ded2fd73a6c5b0b",
+  "annotated_utc": "2026-11-20T09:21:45.486215+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "semantic_equivalence": "YES",
+    "material_differences": "",
+    "equivalence_rationale": "All three responses identify the same core operational risk: repeated stock discrepancies may indicate inventory records drifting from physical stock, creating downstream picking/service problems. Each considers recurrence/patterns and the likelihood of escalation or broader impact. Each also proposes a proportionate response involving additional checks/cycle counts, investigating root cause, and escalating if the issue appears systemic. Response A is more conversational and mentions contingency planning, B adds supervisor notification and a temporary hold on stock adjustments, and C is more concise, but these are refinements rather than materially different commitments under the stated criteria."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

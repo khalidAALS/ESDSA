@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-FFC3EAE3774FDC1B",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0080bafe766cd746016b002ac3708487d0a4eafa2e672e04df",
+  "annotated_utc": "2026-11-20T11:11:05.046829+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "CSS01-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d first get really clear on what’s not working from the user’s point of view. I’d ask what they’re trying to do, what’s failing,",
+        "rationale": "The candidate explicitly describes clarifying the customer’s problem by asking what is not working and what is failing."
+      },
+      {
+        "criterion_id": "CSS01-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "who exactly is affected so I can see the impact. If it’s only one feature or one person, that matters; if the whole shared subscription is blocked, that’s different.",
+        "rationale": "The answer identifies the affected users/service and distinguishes between limited and broader impact on the subscription."
+      },
+      {
+        "criterion_id": "CSS01-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "Then I’d sum it up back to them in neutral language: access on the shared subscription is restricted, the effect is that certain authorised users can’t use it, and we need to verify whether the restriction was meant to happen or not before moving forward.",
+        "rationale": "The candidate summarizes the issue neutrally before moving to resolution, which directly demonstrates problem definition."
+      }
+    ],
+    "annotation_notes": "The response provides clear evidence for all three problem-identification competencies."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

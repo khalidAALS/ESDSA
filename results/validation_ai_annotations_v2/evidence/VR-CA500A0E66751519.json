@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-CA500A0E66751519",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_05210221fdb1b5f7016b000e72bc5487d0b96b44a006e4b6ec",
+  "annotated_utc": "2026-11-20T09:10:12.986429+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "SWE04-C1",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "passage": "",
+        "rationale": "The answer mentions a 'quick spot check' but does not clearly indicate testing the specific reported failure or verifying that the changed approval rules work as intended."
+      },
+      {
+        "criterion_id": "SWE04-C2",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I’d do a quick spot check and move ahead rather than spending time on broader regression testing",
+        "rationale": "This explicitly rejects broader regression testing, so it does not assess potential impact on previously working behaviour."
+      },
+      {
+        "criterion_id": "SWE04-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "move ahead",
+        "rationale": "This states a clear next action based on the verification result: proceed with deployment."
+      }
+    ],
+    "annotation_notes": "The response is concise and emphasizes speed over thorough verification. It provides clear evidence for proceeding, but not for targeted verification of the change itself."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

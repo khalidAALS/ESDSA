@@ -1,0 +1,18 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "SEMANTIC_EQUIVALENCE",
+  "blinded_id": "TG-51A8DD58093106E2",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_077adbfe84e07a2b016b002a3a8e2087d0a6c03c65f954a861",
+  "annotated_utc": "2026-11-20T11:08:44.428351+00:00",
+  "annotation": {
+    "semantic_equivalence": "YES",
+    "material_differences": "No material differences; all three responses ask for relevant order/promotion details, verify system records against the screenshot, distinguish the screenshot from confirmed evidence, and limit requests to necessary, authorized information.",
+    "equivalence_rationale": "Each response preserves the same decision-relevant evidence for the three criteria: they ask for information needed to understand the issue (missing discount timing, order/account details, screenshot), they rely on internal records rather than assuming the screenshot is conclusive, and they state that only necessary, approved/sensitive-appropriate information should be requested. The added specifics in B and C do not change the underlying operational commitments."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

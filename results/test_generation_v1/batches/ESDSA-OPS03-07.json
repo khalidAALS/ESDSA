@@ -1,0 +1,63 @@
+{
+  "experiment": "ESDSA_TEST_GENERATION_V1",
+  "partition": "TEST",
+  "family_id": "ESDSA-OPS03-07",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0fa1fbb29d85b257016b0022ef37c887d086f6e5a7889a32ca",
+  "timestamp_utc": "2026-11-20T10:37:42.031254+00:00",
+  "run_sha256": "fa717d837ef1a28be86fb20955c9d3d2bf04cc8d198f811f185b16ed4287bc75",
+  "scenario_sha256": "9d2280d8014612bdd263f5dd8daf8356efeac3fa7a7e4b0cd3c6f4fef932426a",
+  "rubric_sha256": "c0841450efe362e6bce6ce4bcf0533342cb844a168e20b3c47bcecac6a01fd4d",
+  "responses": [
+    {
+      "condition": "SUFFICIENT",
+      "variant": "CANONICAL",
+      "answer": "I’d first bring both parties onto the same thread and ask for a quick, specific status from each side: the facilities supervisor on the room setup and the technical team on the audiovisual issue, including what has been checked, what is still open, and the likely time to resolution. I’d also verify any supporting details that matter for readiness, like whether the equipment has been tested, whether the room is usable without the AV, and whether there are any backup options available. Then I’d reconcile the two reports and identify the dependency: if the AV issue is unresolved, I would not mark the room fully ready unless the event can still proceed with an agreed workaround. For the update, I’d give the event coordinator a clear status, the outstanding issue, who owns the next action, and the time I expect the next confirmation. I’d document the basis for the update so it’s clear whether the room is fully ready, ready with limitations, or not ready yet."
+    },
+    {
+      "condition": "SUFFICIENT",
+      "variant": "CONVERSATIONAL",
+      "answer": "I’d get the facilities supervisor and tech team aligned right away and ask each of them for the facts behind their status. I’d want to know what’s been completed in the room, exactly what the AV problem is, whether anyone has tested it after the last fix attempt, and how long they think it’ll take to sort out. If there’s a workaround, I’d confirm that too. Then I’d compare those details and decide whether the room is truly ready, only partially ready, or still not usable for the event as planned. My update to the event coordinator would name the issue, who owns the next step, and the evidence behind the status so they know it’s based on current operational info, not just one person’s impression."
+    },
+    {
+      "condition": "SUFFICIENT",
+      "variant": "CONCISE",
+      "answer": "I’d confirm both reports with the relevant owners, check the room setup against the AV team’s unresolved issue, and ask for any test results or workaround options. If the AV issue still affects the event, I’d report the room as not fully ready or ready with limitations, depending on the workaround. I’d include who is responsible, the open dependency, and the evidence behind the update."
+    },
+    {
+      "condition": "INSUFFICIENT",
+      "variant": "CANONICAL",
+      "answer": "I’d ask both teams for a quick update and then pass along the most current status to the event coordinator. I’d want to know whether the room is set up and whether the technical issue is likely to affect the event, and I’d try to get a sense of whether there’s a backup plan if needed. If the two reports don’t match, I’d go back to them for clarification before sending the update. I’d keep the coordinator informed of what each side says and any next steps, but I’d make sure the message stays practical and timely."
+    },
+    {
+      "condition": "INSUFFICIENT",
+      "variant": "CONVERSATIONAL",
+      "answer": "I’d check in with both sides and get their latest update, then I’d share that with the event coordinator in a simple way. I’d want to know the room status, what the AV issue is, and whether there’s a backup if it doesn’t get fixed in time. If the two teams give me different answers, I’d follow up to clear that up before I send anything out. I’d keep the update current and straightforward, but I wouldn’t overcomplicate it."
+    },
+    {
+      "condition": "INSUFFICIENT",
+      "variant": "CONCISE",
+      "answer": "I’d get updates from both teams, compare what they say, and pass the latest status to the event coordinator. If the reports conflict, I’d clarify before sending the update. I’d also ask about any backup plan if the AV issue remains open."
+    },
+    {
+      "condition": "NEGATIVE",
+      "variant": "CANONICAL",
+      "answer": "I’d probably go with the facilities supervisor’s confirmation that the room is ready and send that update first, then let technical support keep working on the AV issue in the background. If the event coordinator comes back with concerns, I’d follow up later with the tech team, but I wouldn’t hold up the readiness message unless the problem sounded severe. I’d make the update simple so the schedule doesn’t get delayed by too many details, and if needed I could adjust it afterward based on what happens."
+    },
+    {
+      "condition": "NEGATIVE",
+      "variant": "CONVERSATIONAL",
+      "answer": "I’d lean on the facilities supervisor’s word that the room is ready and let the event coordinator know that, while the tech team continues working on the audiovisual problem. If it turns out to matter more than expected, I can always update them later. I’d rather keep the process moving than get stuck waiting on every detail."
+    },
+    {
+      "condition": "NEGATIVE",
+      "variant": "CONCISE",
+      "answer": "I’d use the facilities supervisor’s ready status and send the update, while technical support keeps working on the AV issue. If it becomes a bigger problem, I’d revise the message later."
+    }
+  ],
+  "raw_output": "{\"responses\":[{\"condition\":\"SUFFICIENT\",\"variant\":\"CANONICAL\",\"answer\":\"I’d first bring both parties onto the same thread and ask for a quick, specific status from each side: the facilities supervisor on the room setup and the technical team on the audiovisual issue, including what has been checked, what is still open, and the likely time to resolution. I’d also verify any supporting details that matter for readiness, like whether the equipment has been tested, whether the room is usable without the AV, and whether there are any backup options available. Then I’d reconcile the two reports and identify the dependency: if the AV issue is unresolved, I would not mark the room fully ready unless the event can still proceed with an agreed workaround. For the update, I’d give the event coordinator a clear status, the outstanding issue, who owns the next action, and the time I expect the next confirmation. I’d document the basis for the update so it’s clear whether the room is fully ready, ready with limitations, or not ready yet.\"},{\"condition\":\"SUFFICIENT\",\"variant\":\"CONVERSATIONAL\",\"answer\":\"I’d get the facilities supervisor and tech team aligned right away and ask each of them for the facts behind their status. I’d want to know what’s been completed in the room, exactly what the AV problem is, whether anyone has tested it after the last fix attempt, and how long they think it’ll take to sort out. If there’s a workaround, I’d confirm that too. Then I’d compare those details and decide whether the room is truly ready, only partially ready, or still not usable for the event as planned. My update to the event coordinator would name the issue, who owns the next step, and the evidence behind the status so they know it’s based on current operational info, not just one person’s impression.\"},{\"condition\":\"SUFFICIENT\",\"variant\":\"CONCISE\",\"answer\":\"I’d confirm both reports with the relevant owners, check the room setup against the AV team’s unresolved issue, and ask for any test results or workaround options. If the AV issue still affects the event, I’d report the room as not fully ready or ready with limitations, depending on the workaround. I’d include who is responsible, the open dependency, and the evidence behind the update.\"},{\"condition\":\"INSUFFICIENT\",\"variant\":\"CANONICAL\",\"answer\":\"I’d ask both teams for a quick update and then pass along the most current status to the event coordinator. I’d want to know whether the room is set up and whether the technical issue is likely to affect the event, and I’d try to get a sense of whether there’s a backup plan if needed. If the two reports don’t match, I’d go back to them for clarification before sending the update. I’d keep the coordinator informed of what each side says and any next steps, but I’d make sure the message stays practical and timely.\"},{\"condition\":\"INSUFFICIENT\",\"variant\":\"CONVERSATIONAL\",\"answer\":\"I’d check in with both sides and get their latest update, then I’d share that with the event coordinator in a simple way. I’d want to know the room status, what the AV issue is, and whether there’s a backup if it doesn’t get fixed in time. If the two teams give me different answers, I’d follow up to clear that up before I send anything out. I’d keep the update current and straightforward, but I wouldn’t overcomplicate it.\"},{\"condition\":\"INSUFFICIENT\",\"variant\":\"CONCISE\",\"answer\":\"I’d get updates from both teams, compare what they say, and pass the latest status to the event coordinator. If the reports conflict, I’d clarify before sending the update. I’d also ask about any backup plan if the AV issue remains open.\"},{\"condition\":\"NEGATIVE\",\"variant\":\"CANONICAL\",\"answer\":\"I’d probably go with the facilities supervisor’s confirmation that the room is ready and send that update first, then let technical support keep working on the AV issue in the background. If the event coordinator comes back with concerns, I’d follow up later with the tech team, but I wouldn’t hold up the readiness message unless the problem sounded severe. I’d make the update simple so the schedule doesn’t get delayed by too many details, and if needed I could adjust it afterward based on what happens.\"},{\"condition\":\"NEGATIVE\",\"variant\":\"CONVERSATIONAL\",\"answer\":\"I’d lean on the facilities supervisor’s word that the room is ready and let the event coordinator know that, while the tech team continues working on the audiovisual problem. If it turns out to matter more than expected, I can always update them later. I’d rather keep the process moving than get stuck waiting on every detail.\"},{\"condition\":\"NEGATIVE\",\"variant\":\"CONCISE\",\"answer\":\"I’d use the facilities supervisor’s ready status and send the update, while technical support keeps working on the AV issue. If it becomes a bigger problem, I’d revise the message later.\"}]}",
+  "input_tokens": 739,
+  "output_tokens": 1037,
+  "generation_conditions_are_reference_labels": false
+}

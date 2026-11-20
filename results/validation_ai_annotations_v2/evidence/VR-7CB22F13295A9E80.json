@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-7CB22F13295A9E80",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_03d3642a68352f1c016b000ca3cfc487d08869c4e8ca895a5e",
+  "annotated_utc": "2026-11-20T09:02:30.464124+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "SWE02-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d check the external dependency first",
+        "rationale": "This explicitly identifies a relevant technical source of evidence to investigate for the delayed job."
+      },
+      {
+        "criterion_id": "SWE02-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "if its status looked bad, I’d treat that as the likely cause. I’d only look into the input or code if the dependency seemed completely normal.",
+        "rationale": "The answer proposes a conditional sequence of checks that distinguishes among possible causes by comparing the dependency against input/code as alternatives."
+      },
+      {
+        "criterion_id": "SWE02-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "if its status looked bad, I’d treat that as the likely cause.",
+        "rationale": "This links an observed condition of the dependency to a diagnostic conclusion about the cause of the delay."
+      }
+    ],
+    "annotation_notes": "The response is brief, but it does provide a source to inspect, a branching investigation plan, and an interpretation of findings into a likely cause."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

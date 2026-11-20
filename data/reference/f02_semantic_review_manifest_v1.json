@@ -1,0 +1,12 @@
+{
+  "review_type": "C3 evidence and semantic equivalence",
+  "purpose": "Development diagnostic review",
+  "response_mapping": {
+    "F02-REVIEW-01": "ESDSA-V2-0006",
+    "F02-REVIEW-02": "ESDSA-V2-0007"
+  },
+  "source_sha256": "89378ea4c068f3297f6337b0b326a81e4c25e1ac707a3d811f77eb483cfa44f2",
+  "original_model_results_modified": false,
+  "review_status": "PENDING",
+  "instructions": "Assess each answer independently for C3 evidence. Then compare whether the two answers communicate materially equivalent evidence. Do not consult model predictions or expected reference labels."
+}

@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-5BD2A619F9EBC7DD",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0a8f0907ad0ca7e8016b000d4348bc87d090967f2a28c9a5ff",
+  "annotated_utc": "2026-11-20T09:05:09.593042+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "SWE01-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d reproduce it with the new records first",
+        "rationale": "The candidate explicitly states they would reproduce the issue using the new records, which directly establishes how they would reproduce or characterise the failure."
+      },
+      {
+        "criterion_id": "SWE01-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "then compare them against records that export successfully.",
+        "rationale": "The candidate explicitly proposes comparing the problematic records with records that work, which satisfies comparing failure conditions with functioning behaviour."
+      },
+      {
+        "criterion_id": "SWE01-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d trace where the paths diverge—selection, transformation, queueing, or output—and isolate the smallest difference that triggers the miss.",
+        "rationale": "This describes a stepwise reduction of the search space by tracing divergences and isolating the smallest triggering difference, which is clear systematic narrowing."
+      }
+    ],
+    "annotation_notes": "The answer is concise but provides direct evidence for all three criteria."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

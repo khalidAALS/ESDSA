@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-F9B2D1446C19BD4D",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0d527981412f5435016b002ad0af4887d0bf5db639e19f2a95",
+  "annotated_utc": "2026-11-20T11:11:15.392915+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "SWE02-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d check queue depth, worker logs, traces, and recent deploy/config changes",
+        "rationale": "The candidate names several concrete technical sources of evidence relevant to diagnosing queue-processing delay, including queue metrics, logs, traces, and deployment/configuration changes."
+      },
+      {
+        "criterion_id": "SWE02-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "then look for patterns in the spikes and any retries or timeouts.",
+        "rationale": "This shows an investigative approach that tests specific possible causes by checking for patterns and failure modes such as retries and timeouts to help distinguish among explanations."
+      },
+      {
+        "criterion_id": "SWE02-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d compare current behavior to the earlier baseline to narrow down whether the issue is in the workers or somewhere upstream before changing anything else.",
+        "rationale": "The candidate explicitly connects observed behavior to a diagnostic conclusion by using baseline comparison to determine whether the problem lies in the workers or upstream."
+      }
+    ],
+    "annotation_notes": ""
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

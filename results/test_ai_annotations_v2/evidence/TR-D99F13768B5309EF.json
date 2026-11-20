@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-D99F13768B5309EF",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0caa035032ba40e5016b00294cc94887d082f1ad4cdace49f0",
+  "annotated_utc": "2026-11-20T11:04:47.066634+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "OPS03-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d want to know the room status, what the AV issue is, and whether there’s a backup if it doesn’t get fixed in time.",
+        "rationale": "This explicitly uses multiple operational sources of information (room status, AV issue, backup contingency) to support the readiness update."
+      },
+      {
+        "criterion_id": "OPS03-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d check in with both sides and get their latest update, then I’d share that with the event coordinator in a simple way.",
+        "rationale": "This identifies the relevant parties to coordinate with (both sides and the event coordinator) and shows the candidate will gather updates from them before relaying status."
+      },
+      {
+        "criterion_id": "OPS03-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "If the two teams give me different answers, I’d follow up to clear that up before I send anything out.",
+        "rationale": "This explains a decision based on operational evidence: discrepancies between teams trigger follow-up before issuing the update, showing the update is supported by the evidence gathered."
+      }
+    ],
+    "annotation_notes": "The answer is concise but provides explicit evidence for all three criteria."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

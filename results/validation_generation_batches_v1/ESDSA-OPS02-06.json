@@ -1,0 +1,75 @@
+{
+  "experiment": "ESDSA_VALIDATION_GENERATION_V1",
+  "partition": "VALIDATION",
+  "family_id": "ESDSA-OPS02-06",
+  "run_sha256": "d4fbdd22d1f39af4eaeec47ea397f4a3edde3b3cda29aa8a3a4927445725de2a",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "response_id": "resp_031062c5fc7129c2016aff921566dc87d0858b301370526030",
+  "response_status": "completed",
+  "usage": {
+    "input_tokens": 745,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      }
+    },
+    "output_tokens": 1009,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 1754
+  },
+  "raw_output_text": "{\"responses\":[{\"condition\":\"SUFFICIENT\",\"variant\":\"CANONICAL\",\"answer\":\"I’d treat that as an operational continuity risk first and work through it in a structured way. The immediate hazard is that reduced partner capacity, combined with uncertain demand, could create missed deliveries or service backlogs, especially if we don’t know how big the shortfall will be. I’d look at a few scenarios: best case, moderate reduction, and severe reduction, and compare each against expected order volumes and any service commitments. Then I’d weigh the alternatives by cost, lead time, and the level of coverage they give us, so we can see which option protects service at an acceptable cost. If the exposure looks material, I’d put a contingency in place early, such as reserving backup transport or prioritising critical deliveries, and escalate to the relevant manager if the risk could affect customer commitments or budget significantly. I’d also keep monitoring the partner’s position and customer demand daily so we can adjust quickly as better information comes in.\"},{\"condition\":\"SUFFICIENT\",\"variant\":\"CONVERSATIONAL\",\"answer\":\"I’d see that as a real risk to service continuity and I wouldn’t wait for it to become clear on its own. The issue is that a capacity drop from the partner, plus uncertain demand, could mean we either short on transport or pay more than expected if we switch too late. I’d map out a few demand and capacity scenarios, then compare the alternate transport options on cost, timing, and how much volume they can realistically cover. If the downside looks meaningful, I’d line up a backup plan now, like holding an alternative provider or prioritising the most time-sensitive deliveries, and I’d escalate if it could affect key customer commitments. I’d keep reviewing the numbers as soon as we get more detail so the response stays proportionate.\"},{\"condition\":\"SUFFICIENT\",\"variant\":\"CONCISE\",\"answer\":\"I’d treat it as a service continuity risk. I’d run a quick scenario check on likely demand versus partner capacity, compare backup transport on cost and lead time, and identify what would protect critical deliveries. If the gap could affect commitments, I’d put a contingency in place and escalate early so we’re not reacting too late.\"},{\"condition\":\"INSUFFICIENT\",\"variant\":\"CANONICAL\",\"answer\":\"I’d recognise this as a potential delivery disruption risk because the partner’s capacity might not match whatever demand comes through next week. I’d start by asking for the latest information from the partner and checking forecast demand, then I’d review the alternative transport options to understand their costs and how quickly they could be brought in. That would help us narrow down the most practical choice if we need one. If the picture still wasn’t clear, I’d keep tracking it closely and make sure the team knows there may be a need to switch arrangements.\"},{\"condition\":\"INSUFFICIENT\",\"variant\":\"CONVERSATIONAL\",\"answer\":\"I’d flag it as a possible operational issue since we could end up short on transport next week. I’d get the latest update from the partner, look at our demand forecast, and compare the backup options so we know what’s available if we need to move fast. After that, I’d keep an eye on it and stay ready to change plans once we get clearer numbers.\"},{\"condition\":\"INSUFFICIENT\",\"variant\":\"CONCISE\",\"answer\":\"I’d flag a possible delivery disruption, check the partner update against demand forecasts, and review the backup options. I’d keep monitoring it, but I’d still need clearer capacity and volume information before deciding on the best response.\"},{\"condition\":\"NEGATIVE\",\"variant\":\"CANONICAL\",\"answer\":\"I’d probably hold off making changes for now, because both the partner capacity and customer demand are still uncertain. In situations like this, it usually creates more cost than benefit to prepare backup transport too early, so I’d keep the current plan in place unless the partner confirms a major problem. If the capacity reduction turns out to be serious later, we can then look at alternatives, but I wouldn’t escalate it at this stage because we don’t yet know that there will be an actual issue.\"},{\"condition\":\"NEGATIVE\",\"variant\":\"CONVERSATIONAL\",\"answer\":\"I’d leave the plan as it is for the moment. Since we don’t know how much capacity the partner is losing, I wouldn’t want to bring in more expensive transport options early and create extra work. If it becomes obvious later that there’s a real shortage, then I’d look at alternatives, but until then I’d avoid escalating it and just wait for a firmer update.\"},{\"condition\":\"NEGATIVE\",\"variant\":\"CONCISE\",\"answer\":\"I’d keep the current plan and wait for clearer confirmation before doing anything else. I wouldn’t bring in backup transport or escalate yet, since the capacity impact isn’t known and I’d rather avoid extra cost until the risk is confirmed.\"}]}",
+  "responses": [
+    {
+      "condition": "SUFFICIENT",
+      "variant": "CANONICAL",
+      "answer": "I’d treat that as an operational continuity risk first and work through it in a structured way. The immediate hazard is that reduced partner capacity, combined with uncertain demand, could create missed deliveries or service backlogs, especially if we don’t know how big the shortfall will be. I’d look at a few scenarios: best case, moderate reduction, and severe reduction, and compare each against expected order volumes and any service commitments. Then I’d weigh the alternatives by cost, lead time, and the level of coverage they give us, so we can see which option protects service at an acceptable cost. If the exposure looks material, I’d put a contingency in place early, such as reserving backup transport or prioritising critical deliveries, and escalate to the relevant manager if the risk could affect customer commitments or budget significantly. I’d also keep monitoring the partner’s position and customer demand daily so we can adjust quickly as better information comes in."
+    },
+    {
+      "condition": "SUFFICIENT",
+      "variant": "CONVERSATIONAL",
+      "answer": "I’d see that as a real risk to service continuity and I wouldn’t wait for it to become clear on its own. The issue is that a capacity drop from the partner, plus uncertain demand, could mean we either short on transport or pay more than expected if we switch too late. I’d map out a few demand and capacity scenarios, then compare the alternate transport options on cost, timing, and how much volume they can realistically cover. If the downside looks meaningful, I’d line up a backup plan now, like holding an alternative provider or prioritising the most time-sensitive deliveries, and I’d escalate if it could affect key customer commitments. I’d keep reviewing the numbers as soon as we get more detail so the response stays proportionate."
+    },
+    {
+      "condition": "SUFFICIENT",
+      "variant": "CONCISE",
+      "answer": "I’d treat it as a service continuity risk. I’d run a quick scenario check on likely demand versus partner capacity, compare backup transport on cost and lead time, and identify what would protect critical deliveries. If the gap could affect commitments, I’d put a contingency in place and escalate early so we’re not reacting too late."
+    },
+    {
+      "condition": "INSUFFICIENT",
+      "variant": "CANONICAL",
+      "answer": "I’d recognise this as a potential delivery disruption risk because the partner’s capacity might not match whatever demand comes through next week. I’d start by asking for the latest information from the partner and checking forecast demand, then I’d review the alternative transport options to understand their costs and how quickly they could be brought in. That would help us narrow down the most practical choice if we need one. If the picture still wasn’t clear, I’d keep tracking it closely and make sure the team knows there may be a need to switch arrangements."
+    },
+    {
+      "condition": "INSUFFICIENT",
+      "variant": "CONVERSATIONAL",
+      "answer": "I’d flag it as a possible operational issue since we could end up short on transport next week. I’d get the latest update from the partner, look at our demand forecast, and compare the backup options so we know what’s available if we need to move fast. After that, I’d keep an eye on it and stay ready to change plans once we get clearer numbers."
+    },
+    {
+      "condition": "INSUFFICIENT",
+      "variant": "CONCISE",
+      "answer": "I’d flag a possible delivery disruption, check the partner update against demand forecasts, and review the backup options. I’d keep monitoring it, but I’d still need clearer capacity and volume information before deciding on the best response."
+    },
+    {
+      "condition": "NEGATIVE",
+      "variant": "CANONICAL",
+      "answer": "I’d probably hold off making changes for now, because both the partner capacity and customer demand are still uncertain. In situations like this, it usually creates more cost than benefit to prepare backup transport too early, so I’d keep the current plan in place unless the partner confirms a major problem. If the capacity reduction turns out to be serious later, we can then look at alternatives, but I wouldn’t escalate it at this stage because we don’t yet know that there will be an actual issue."
+    },
+    {
+      "condition": "NEGATIVE",
+      "variant": "CONVERSATIONAL",
+      "answer": "I’d leave the plan as it is for the moment. Since we don’t know how much capacity the partner is losing, I wouldn’t want to bring in more expensive transport options early and create extra work. If it becomes obvious later that there’s a real shortage, then I’d look at alternatives, but until then I’d avoid escalating it and just wait for a firmer update."
+    },
+    {
+      "condition": "NEGATIVE",
+      "variant": "CONCISE",
+      "answer": "I’d keep the current plan and wait for clearer confirmation before doing anything else. I wouldn’t bring in backup transport or escalate yet, since the capacity impact isn’t known and I’d rather avoid extra cost until the risk is confirmed."
+    }
+  ],
+  "validation_status": "STRUCTURE_PASSED"
+}

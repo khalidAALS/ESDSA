@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-FFEEC9FF226FB641",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0731d0d4eaccb645016b0029b68e5087d0a2f6aab75ae45555",
+  "annotated_utc": "2026-11-20T11:06:32.025928+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "SWE02-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d focus on the recent deploy first",
+        "rationale": "The candidate identifies a relevant technical source of evidence for the slowdown: the recent deployment timing."
+      },
+      {
+        "criterion_id": "SWE02-C2",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "rather than spending much time on traces or database checks unless the issue clearly points elsewhere.",
+        "rationale": "The candidate explicitly deprioritizes traces and database checks, despite those being needed to distinguish among deployment, database load, and dependency causes. This materially contradicts proposing checks that separate competing hypotheses."
+      },
+      {
+        "criterion_id": "SWE02-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "If latency rose after the rollout, I’d treat that as enough to keep going on the release",
+        "rationale": "The candidate connects the observation of increased latency after deployment to a diagnostic conclusion that the release warrants further investigation."
+      }
+    ],
+    "annotation_notes": ""
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

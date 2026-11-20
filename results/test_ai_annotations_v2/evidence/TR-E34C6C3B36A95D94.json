@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-E34C6C3B36A95D94",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0cdc2e6aab6fc04e016b002a3fadc487d0a3f92f2491bfc6d0",
+  "annotated_utc": "2026-11-20T11:08:50.159867+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "OPS01-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d begin by looking at which item has the closest deadline and which one affects the launch most directly. If the equipment check is clearly blocking the afternoon service, I’d move that ahead of the routine report, and I’d also check whether the reduced staff means we need to redistribute people before anything else.",
+        "rationale": "The answer explicitly considers deadline urgency, direct impact on the launch, and dependency/blocking status, which are the relevant priority criteria."
+      },
+      {
+        "criterion_id": "OPS01-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "If the equipment check is clearly blocking the afternoon service, I’d move that ahead of the routine report, and I’d also check whether the reduced staff means we need to redistribute people before anything else. The report would likely be the most flexible item.",
+        "rationale": "This explains why the equipment check and staffing issues take precedence over the routine report by referencing launch blockage and flexibility of the report, showing trade-off reasoning."
+      },
+      {
+        "criterion_id": "OPS01-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d review the order again once I’ve confirmed the exact status of the equipment and staffing",
+        "rationale": "The candidate explicitly says they would review the order again when material information changes/gets confirmed, demonstrating reprioritisation."
+      }
+    ],
+    "annotation_notes": ""
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

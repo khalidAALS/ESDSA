@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-6C509DBEC17D7555",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_04e72d94e72e6650016b000bd3e2dc87d08643fe72837b86d6",
+  "annotated_utc": "2026-11-20T08:59:02.064893+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "SWE02-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d begin by checking the job history and the main logs to see when the delay shows up. Then I’d compare a few slow runs with a few normal runs and look for any obvious differences in input volume or recent deployments.",
+        "rationale": "This identifies relevant technical evidence sources for diagnosing the delay: job history, logs, run comparisons, input volume, and deployment history."
+      },
+      {
+        "criterion_id": "SWE02-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "Then I’d compare a few slow runs with a few normal runs and look for any obvious differences in input volume or recent deployments. If there’s a clear pattern, that would give me a place to start.",
+        "rationale": "This proposes concrete comparisons that help distinguish among possible causes, including incoming data and recent changes, which supports hypothesis testing."
+      },
+      {
+        "criterion_id": "SWE02-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "If there’s a clear pattern, that would give me a place to start.",
+        "rationale": "The candidate explicitly links observed patterns to narrowing the investigation, showing how evidence would inform a diagnostic conclusion, even if the conclusion itself is not fully developed."
+      }
+    ],
+    "annotation_notes": "The answer is concise but clearly describes investigation sources, comparative checks, and using observed patterns to narrow the cause."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

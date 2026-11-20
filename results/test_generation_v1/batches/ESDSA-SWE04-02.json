@@ -1,0 +1,63 @@
+{
+  "experiment": "ESDSA_TEST_GENERATION_V1",
+  "partition": "TEST",
+  "family_id": "ESDSA-SWE04-02",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0d5d9db4da13196e016b002288616487d08e679deffefab901",
+  "timestamp_utc": "2026-11-20T10:35:57.999791+00:00",
+  "run_sha256": "42e3eb9f3cbbbff2bf20d6f345cd54b63672b7d25b5210983decacbff9d88321",
+  "scenario_sha256": "9d2280d8014612bdd263f5dd8daf8356efeac3fa7a7e4b0cd3c6f4fef932426a",
+  "rubric_sha256": "ec05368cf5951f9a58d56b8f95800beb5658ffc78020363aafd893a1b8a2e2ff",
+  "responses": [
+    {
+      "condition": "SUFFICIENT",
+      "variant": "CANONICAL",
+      "answer": "I’d treat this as a targeted hotfix with a very small but focused verification pass. First I’d reproduce the original invoice-calculation failure against the patched build to confirm the reported case is actually fixed. Then, because the same logic also affects refunds and discount adjustments, I’d run a short regression set around those nearby paths and a couple of representative boundary cases to make sure the change didn’t shift amounts in related flows. If anything in that check fails, I wouldn’t release yet; I’d pause, investigate whether the issue is in the patch or in an uncovered edge case, and either adjust the fix or roll back and rework it. If the original case passes and the related checks stay clean, I’d consider it ready for deployment and document exactly what was verified so the release is controlled but fast."
+    },
+    {
+      "condition": "SUFFICIENT",
+      "variant": "CONVERSATIONAL",
+      "answer": "I’d keep it tight, but I wouldn’t skip the important checks. I’d rerun the exact invoice case that was failing to make sure the patch really fixes that problem, and then I’d hit a few related refund and discount scenarios since they use the same calculation logic. If those come back clean, I’d be comfortable moving forward. If one of them fails, I’d stop and dig into that before shipping, because an urgent hotfix still can’t create a second billing issue. So the next step depends on what those checks show: release if they pass, otherwise fix and verify again."
+    },
+    {
+      "condition": "SUFFICIENT",
+      "variant": "CONCISE",
+      "answer": "Re-test the reported invoice case, then run a small regression on refunds and discount adjustments. If all pass, ship; if anything fails, investigate and hold the release."
+    },
+    {
+      "condition": "INSUFFICIENT",
+      "variant": "CANONICAL",
+      "answer": "With limited time, I’d first make sure we have a build that contains the patch and then do a quick pass on the main invoice path to confirm it looks right. Since the issue is urgent, I’d lean on the fact that the change is narrow and keep the verification focused. If the result is acceptable, I’d move it toward release and note any follow-up testing we should do after deployment on the related calculation flows. I’d also make sure the team knows what changed so we can watch for anything unusual once it’s live."
+    },
+    {
+      "condition": "INSUFFICIENT",
+      "variant": "CONVERSATIONAL",
+      "answer": "I’d check the patched invoice flow quickly and, if that looks good, I’d probably move it forward because it’s an urgent fix. I’d keep an eye on the refund and discount areas after release, since they share some logic, but I wouldn’t necessarily spend a lot of time on broader testing before getting the fix out. I’d make sure people know to monitor it closely once it’s deployed."
+    },
+    {
+      "condition": "INSUFFICIENT",
+      "variant": "CONCISE",
+      "answer": "I’d confirm the main invoice path on the patched build and, if it looks right, proceed with release while planning follow-up monitoring on refunds and discounts."
+    },
+    {
+      "condition": "NEGATIVE",
+      "variant": "CANONICAL",
+      "answer": "I’d prioritize getting the patch out quickly and avoid spending time on extra checks that could slow down the release. If the change is clearly aimed at the reported invoice error, I’d rely on the code review and the urgency of the situation rather than rerunning the failing case or branching into the refund and discount paths before deployment. Any broader issues can be handled once customers are no longer seeing the main error, and then we can patch anything else that shows up."
+    },
+    {
+      "condition": "NEGATIVE",
+      "variant": "CONVERSATIONAL",
+      "answer": "Honestly, for something this urgent I’d just get the fix out as long as the code looks right in review. I wouldn’t want to burn time rerunning the exact failure or chasing every refund and discount variation before deployment, because that could delay the invoice fix. If anything else shows up afterward, we can handle it in the next pass."
+    },
+    {
+      "condition": "NEGATIVE",
+      "variant": "CONCISE",
+      "answer": "If the patch looks correct in review, I’d deploy it without rerunning the failed case or doing extra checks on refunds and discounts."
+    }
+  ],
+  "raw_output": "{\"responses\":[{\"condition\":\"SUFFICIENT\",\"variant\":\"CANONICAL\",\"answer\":\"I’d treat this as a targeted hotfix with a very small but focused verification pass. First I’d reproduce the original invoice-calculation failure against the patched build to confirm the reported case is actually fixed. Then, because the same logic also affects refunds and discount adjustments, I’d run a short regression set around those nearby paths and a couple of representative boundary cases to make sure the change didn’t shift amounts in related flows. If anything in that check fails, I wouldn’t release yet; I’d pause, investigate whether the issue is in the patch or in an uncovered edge case, and either adjust the fix or roll back and rework it. If the original case passes and the related checks stay clean, I’d consider it ready for deployment and document exactly what was verified so the release is controlled but fast.\"},{\"condition\":\"SUFFICIENT\",\"variant\":\"CONVERSATIONAL\",\"answer\":\"I’d keep it tight, but I wouldn’t skip the important checks. I’d rerun the exact invoice case that was failing to make sure the patch really fixes that problem, and then I’d hit a few related refund and discount scenarios since they use the same calculation logic. If those come back clean, I’d be comfortable moving forward. If one of them fails, I’d stop and dig into that before shipping, because an urgent hotfix still can’t create a second billing issue. So the next step depends on what those checks show: release if they pass, otherwise fix and verify again.\"},{\"condition\":\"SUFFICIENT\",\"variant\":\"CONCISE\",\"answer\":\"Re-test the reported invoice case, then run a small regression on refunds and discount adjustments. If all pass, ship; if anything fails, investigate and hold the release.\"},{\"condition\":\"INSUFFICIENT\",\"variant\":\"CANONICAL\",\"answer\":\"With limited time, I’d first make sure we have a build that contains the patch and then do a quick pass on the main invoice path to confirm it looks right. Since the issue is urgent, I’d lean on the fact that the change is narrow and keep the verification focused. If the result is acceptable, I’d move it toward release and note any follow-up testing we should do after deployment on the related calculation flows. I’d also make sure the team knows what changed so we can watch for anything unusual once it’s live.\"},{\"condition\":\"INSUFFICIENT\",\"variant\":\"CONVERSATIONAL\",\"answer\":\"I’d check the patched invoice flow quickly and, if that looks good, I’d probably move it forward because it’s an urgent fix. I’d keep an eye on the refund and discount areas after release, since they share some logic, but I wouldn’t necessarily spend a lot of time on broader testing before getting the fix out. I’d make sure people know to monitor it closely once it’s deployed.\"},{\"condition\":\"INSUFFICIENT\",\"variant\":\"CONCISE\",\"answer\":\"I’d confirm the main invoice path on the patched build and, if it looks right, proceed with release while planning follow-up monitoring on refunds and discounts.\"},{\"condition\":\"NEGATIVE\",\"variant\":\"CANONICAL\",\"answer\":\"I’d prioritize getting the patch out quickly and avoid spending time on extra checks that could slow down the release. If the change is clearly aimed at the reported invoice error, I’d rely on the code review and the urgency of the situation rather than rerunning the failing case or branching into the refund and discount paths before deployment. Any broader issues can be handled once customers are no longer seeing the main error, and then we can patch anything else that shows up.\"},{\"condition\":\"NEGATIVE\",\"variant\":\"CONVERSATIONAL\",\"answer\":\"Honestly, for something this urgent I’d just get the fix out as long as the code looks right in review. I wouldn’t want to burn time rerunning the exact failure or chasing every refund and discount variation before deployment, because that could delay the invoice fix. If anything else shows up afterward, we can handle it in the next pass.\"},{\"condition\":\"NEGATIVE\",\"variant\":\"CONCISE\",\"answer\":\"If the patch looks correct in review, I’d deploy it without rerunning the failed case or doing extra checks on refunds and discounts.\"}]}",
+  "input_tokens": 752,
+  "output_tokens": 880,
+  "generation_conditions_are_reference_labels": false
+}

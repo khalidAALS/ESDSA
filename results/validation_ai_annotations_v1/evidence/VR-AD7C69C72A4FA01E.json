@@ -1,0 +1,35 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_TARGETED_PILOT_V1",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-AD7C69C72A4FA01E",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V1",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_08fff79c7ec779c0016aff9733ec2087d09da8a7ff30da198f",
+  "annotated_utc": "2026-11-20T00:41:25.647173+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "CSS02-C1",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "passage": "",
+        "rationale": "The answer requests supporting documents, but it does not clearly ask targeted questions to understand the issue beyond seeking proof of the exact date."
+      },
+      {
+        "criterion_id": "CSS02-C2",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I’d use the payment history as the main proof",
+        "rationale": "This states a preference to treat payment history as the primary proof even though the scenario says available payment information does not clearly establish what happened, showing insufficient distinction between confirmed evidence and uncertain assumptions."
+      },
+      {
+        "criterion_id": "CSS02-C3",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "passage": "",
+        "rationale": "The answer asks for customer-provided records, but it does not address whether the collection is proportionate or authorised, so there is not enough evidence to judge this criterion."
+      }
+    ],
+    "annotation_notes": "The response shows a narrow evidence strategy but does not provide enough detail to assess question quality or proportionality."
+  }
+}

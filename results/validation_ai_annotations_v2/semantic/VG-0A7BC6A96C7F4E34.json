@@ -1,0 +1,20 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "SEMANTIC_EQUIVALENCE",
+  "blinded_id": "VG-0A7BC6A96C7F4E34",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_02ac4f05308c64aa016b000bd1d41087d089102836445e6fb6",
+  "annotated_utc": "2026-11-20T08:58:59.520824+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "semantic_equivalence": "YES",
+    "material_differences": "Minor differences in examples and emphasis. C adds more detailed regression examples and explicitly mentions holding the release and escalating if the issue is serious or unclear, while A and B state the decision more generally. These do not materially change the preserved evidence for the three criteria.",
+    "equivalence_rationale": "All three responses preserve the same core verification strategy: retest the original failure, check adjacent/regression areas, and use unexpected findings to decide whether to block or proceed with release. They each demonstrate targeted verification, regression consideration, and outcome-based decision making. The extra detail in C is an elaboration, not a change in operational commitment."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

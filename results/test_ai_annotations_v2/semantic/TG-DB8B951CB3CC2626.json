@@ -1,0 +1,18 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "SEMANTIC_EQUIVALENCE",
+  "blinded_id": "TG-DB8B951CB3CC2626",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0601d80f27cb4ecf016b002bd23ee487d09d80967826e2995a",
+  "annotated_utc": "2026-11-20T11:15:32.668505+00:00",
+  "annotation": {
+    "semantic_equivalence": "NO",
+    "material_differences": "Response A is less specific about the monitoring inputs and escalation pathway than C: it only mentions the overnight schedule and inspection notes, while C also explicitly uses the contractor’s report and says to bring it to the relevant supervisor to decide the next step. Response B is also materially narrower than C because it omits the contractor’s report and the operational condition of whether the area appears mostly fine, and it frames escalation only when the issue worsens or more evidence arrives. These differences could affect evidence under progress-signal gathering and escalation/follow-through.",
+    "equivalence_rationale": "C preserves clearer evidence across all three criteria by identifying multiple sources to monitor, describing ongoing monitoring before operations begin, and directing escalation to the relevant supervisor with a follow-through decision. A and B share the general idea of monitoring and escalation, but each omits at least one decision-relevant element present in C, so they do not all preserve the same criterion-level evidence."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

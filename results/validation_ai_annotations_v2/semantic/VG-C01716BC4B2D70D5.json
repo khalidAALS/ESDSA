@@ -1,0 +1,20 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "SEMANTIC_EQUIVALENCE",
+  "blinded_id": "VG-C01716BC4B2D70D5",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_04a6e6f018a21619016b000e6c757087d08a7242eaf3d8a8ca",
+  "annotated_utc": "2026-11-20T09:10:07.410253+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "semantic_equivalence": "NO",
+    "material_differences": "Response A explicitly narrows the problem to a missing confirmation email, deprioritizes the unfamiliar delivery address, and says not to investigate whether the order was actually placed unless there is a separate billing symptom. Response B is even more abbreviated and omits the uncertainty about whether the order went through, while Response C also treats it primarily as an email-delivery issue but explicitly acknowledges the customer’s uncertainty about the order. These differences affect issue clarification, impact identification, and whether the problem is properly defined before resolution.",
+    "equivalence_rationale": "The three responses do not preserve the same decision-relevant evidence for problem identification. A and C both indicate a likely email-delivery problem, but A introduces a stronger assumption that the order itself is not worth checking absent billing issues, which changes the scope of problem clarification. B omits the key uncertainty about whether the order was placed successfully and the unfamiliar address, so it provides less evidence about the actual problem and affected outcome. Because the responses differ in whether they recognize and investigate the potentially more serious order/address issue versus treating it as only a missing confirmation, they are not semantically equivalent for the listed criteria."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

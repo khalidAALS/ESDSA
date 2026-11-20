@@ -1,0 +1,63 @@
+{
+  "experiment": "ESDSA_TEST_GENERATION_V1",
+  "partition": "TEST",
+  "family_id": "ESDSA-OPS01-08",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_03ff596cd2ee3ae0016b0022d16ae887d0ab8ee45bfd87382b",
+  "timestamp_utc": "2026-11-20T10:37:12.742811+00:00",
+  "run_sha256": "b013d9349adef1bd412dd584e61a31e39c0a00986611468c0bef53a66778823c",
+  "scenario_sha256": "9d2280d8014612bdd263f5dd8daf8356efeac3fa7a7e4b0cd3c6f4fef932426a",
+  "rubric_sha256": "1eb6d41c9cbe6e777fbf56c881f6323da043f7d1e22ab6c37c219cc66d403440",
+  "responses": [
+    {
+      "condition": "SUFFICIENT",
+      "variant": "CANONICAL",
+      "answer": "I’d rework the plan immediately around urgency, impact, and dependencies. First I’d check which customer orders are closest to deadline and whether any of them depend on the vehicle that’s now unavailable. Those would move to the top because missing a committed delivery has the biggest operational and customer impact. In parallel, I’d look at the early-arriving inbound delivery and see whether we have the receiving space, staff, and equipment to unload it safely; if we can process it quickly, I’d bring that forward because it may block the yard or create a congestion issue if left waiting. After that, I’d re-sequence the rest of the day’s work based on what can still be done with the vehicle we have, what can be reallocated to another route or asset, and what needs customer communication if deadlines are at risk. I’d also update the team and relevant stakeholders so everyone is working to the same revised order of priorities rather than the original plan."
+    },
+    {
+      "condition": "SUFFICIENT",
+      "variant": "CONVERSATIONAL",
+      "answer": "I’d stop and reshuffle the day straight away based on what’s most urgent and what depends on what. The customer orders nearing deadline would be my first check, especially if any of them rely on the vehicle that’s now out of action. If they do, I’d look for another way to get them out or escalate them because the deadline and customer impact matter most there. I’d also pull the inbound delivery forward if we can receive it safely and we’ve got the space, since an early truck can cause delays at the gate or in the yard. Then I’d adjust the rest of the schedule around the resources we actually have left, and I’d keep the warehouse and transport teams updated so the plan is clear and everyone knows what’s been moved up or pushed back."
+    },
+    {
+      "condition": "SUFFICIENT",
+      "variant": "CONCISE",
+      "answer": "I’d reprioritise by deadline, impact, and dependency. The customer orders closest to breach would come first, especially if they need the unavailable vehicle. I’d then see whether the early inbound load should be received immediately to avoid yard or dock congestion. After that, I’d reassign the remaining work to the resources still available and update the team and stakeholders on the new plan."
+    },
+    {
+      "condition": "INSUFFICIENT",
+      "variant": "CANONICAL",
+      "answer": "I’d first review the day’s plan against the new timing and see what is now most time-sensitive. The orders close to deadline would need a fresh look, and I’d also check whether the early delivery can be received without disrupting the dock. If there’s capacity, I’d try to fit both into the day by tightening the schedule and moving some lower-priority tasks later. I’d then speak with the team so they know the revised sequence and can keep the flow moving."
+    },
+    {
+      "condition": "INSUFFICIENT",
+      "variant": "CONVERSATIONAL",
+      "answer": "I’d take a quick look at the full plan again and reset the order of work around what’s most time-sensitive. I’d make sure the customer orders near deadline stay visible, and I’d see if the early delivery can be handled without causing problems at receiving. If needed, I’d push less urgent jobs back a bit and let the team know the new sequence so they can keep working to that. I’d keep an eye on how the day progresses and adjust if things shift again."
+    },
+    {
+      "condition": "INSUFFICIENT",
+      "variant": "CONCISE",
+      "answer": "I’d reassess the plan around the most time-sensitive work, check whether the early delivery can be received cleanly, and move less urgent tasks back if needed. Then I’d brief the team on the revised sequence and keep monitoring the day."
+    },
+    {
+      "condition": "NEGATIVE",
+      "variant": "CANONICAL",
+      "answer": "I’d probably keep the original schedule as much as possible so the team isn’t thrown off. The vehicle issue and the earlier delivery are inconvenient, but changing too much can create more confusion than it solves. I’d leave the planned customer orders where they are unless someone specifically flags a problem, and I’d ask the receiving team to deal with the inbound delivery when they have a moment. If delays start to build, I’d review it later in the day rather than reshuffling everything immediately."
+    },
+    {
+      "condition": "NEGATIVE",
+      "variant": "CONVERSATIONAL",
+      "answer": "I’d try not to overhaul the plan unless I really had to. In practice I’d keep the original priorities and let the teams work through them, because constantly changing things can slow everyone down. The early delivery and the vehicle problem are annoying, but I’d rather stick to the schedule unless there’s a major issue. If the customer deadlines start getting tight, I’d look at it again later and see what can be moved."
+    },
+    {
+      "condition": "NEGATIVE",
+      "variant": "CONCISE",
+      "answer": "I’d mostly keep the original plan and avoid reshuffling unless delays became obvious. The early delivery and vehicle issue are disruptive, but I’d leave the teams to work through the schedule first and review it later if needed."
+    }
+  ],
+  "raw_output": "{\"responses\":[{\"condition\":\"SUFFICIENT\",\"variant\":\"CANONICAL\",\"answer\":\"I’d rework the plan immediately around urgency, impact, and dependencies. First I’d check which customer orders are closest to deadline and whether any of them depend on the vehicle that’s now unavailable. Those would move to the top because missing a committed delivery has the biggest operational and customer impact. In parallel, I’d look at the early-arriving inbound delivery and see whether we have the receiving space, staff, and equipment to unload it safely; if we can process it quickly, I’d bring that forward because it may block the yard or create a congestion issue if left waiting. After that, I’d re-sequence the rest of the day’s work based on what can still be done with the vehicle we have, what can be reallocated to another route or asset, and what needs customer communication if deadlines are at risk. I’d also update the team and relevant stakeholders so everyone is working to the same revised order of priorities rather than the original plan.\"},{\"condition\":\"SUFFICIENT\",\"variant\":\"CONVERSATIONAL\",\"answer\":\"I’d stop and reshuffle the day straight away based on what’s most urgent and what depends on what. The customer orders nearing deadline would be my first check, especially if any of them rely on the vehicle that’s now out of action. If they do, I’d look for another way to get them out or escalate them because the deadline and customer impact matter most there. I’d also pull the inbound delivery forward if we can receive it safely and we’ve got the space, since an early truck can cause delays at the gate or in the yard. Then I’d adjust the rest of the schedule around the resources we actually have left, and I’d keep the warehouse and transport teams updated so the plan is clear and everyone knows what’s been moved up or pushed back.\"},{\"condition\":\"SUFFICIENT\",\"variant\":\"CONCISE\",\"answer\":\"I’d reprioritise by deadline, impact, and dependency. The customer orders closest to breach would come first, especially if they need the unavailable vehicle. I’d then see whether the early inbound load should be received immediately to avoid yard or dock congestion. After that, I’d reassign the remaining work to the resources still available and update the team and stakeholders on the new plan.\"},{\"condition\":\"INSUFFICIENT\",\"variant\":\"CANONICAL\",\"answer\":\"I’d first review the day’s plan against the new timing and see what is now most time-sensitive. The orders close to deadline would need a fresh look, and I’d also check whether the early delivery can be received without disrupting the dock. If there’s capacity, I’d try to fit both into the day by tightening the schedule and moving some lower-priority tasks later. I’d then speak with the team so they know the revised sequence and can keep the flow moving.\"},{\"condition\":\"INSUFFICIENT\",\"variant\":\"CONVERSATIONAL\",\"answer\":\"I’d take a quick look at the full plan again and reset the order of work around what’s most time-sensitive. I’d make sure the customer orders near deadline stay visible, and I’d see if the early delivery can be handled without causing problems at receiving. If needed, I’d push less urgent jobs back a bit and let the team know the new sequence so they can keep working to that. I’d keep an eye on how the day progresses and adjust if things shift again.\"},{\"condition\":\"INSUFFICIENT\",\"variant\":\"CONCISE\",\"answer\":\"I’d reassess the plan around the most time-sensitive work, check whether the early delivery can be received cleanly, and move less urgent tasks back if needed. Then I’d brief the team on the revised sequence and keep monitoring the day.\"},{\"condition\":\"NEGATIVE\",\"variant\":\"CANONICAL\",\"answer\":\"I’d probably keep the original schedule as much as possible so the team isn’t thrown off. The vehicle issue and the earlier delivery are inconvenient, but changing too much can create more confusion than it solves. I’d leave the planned customer orders where they are unless someone specifically flags a problem, and I’d ask the receiving team to deal with the inbound delivery when they have a moment. If delays start to build, I’d review it later in the day rather than reshuffling everything immediately.\"},{\"condition\":\"NEGATIVE\",\"variant\":\"CONVERSATIONAL\",\"answer\":\"I’d try not to overhaul the plan unless I really had to. In practice I’d keep the original priorities and let the teams work through them, because constantly changing things can slow everyone down. The early delivery and the vehicle problem are annoying, but I’d rather stick to the schedule unless there’s a major issue. If the customer deadlines start getting tight, I’d look at it again later and see what can be moved.\"},{\"condition\":\"NEGATIVE\",\"variant\":\"CONCISE\",\"answer\":\"I’d mostly keep the original plan and avoid reshuffling unless delays became obvious. The early delivery and vehicle issue are disruptive, but I’d leave the teams to work through the schedule first and review it later if needed.\"}]}",
+  "input_tokens": 749,
+  "output_tokens": 1051,
+  "generation_conditions_are_reference_labels": false
+}

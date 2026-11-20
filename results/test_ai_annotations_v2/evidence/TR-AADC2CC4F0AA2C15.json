@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-AADC2CC4F0AA2C15",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0039e357990957ac016b002986049087d0b8c74ed9c8776ee8",
+  "annotated_utc": "2026-11-20T11:05:44.393371+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "SWE04-C1",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I wouldn’t want to burn time rerunning the exact failure",
+        "rationale": "The candidate explicitly rejects rerunning the reported failure, which contradicts targeted verification that the failure is resolved."
+      },
+      {
+        "criterion_id": "SWE04-C2",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "or chasing every refund and discount variation before deployment",
+        "rationale": "The candidate explicitly dismisses checking related refund and discount variations, which are part of assessing regression risk in previously working behaviour."
+      },
+      {
+        "criterion_id": "SWE04-C3",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I’d just get the fix out as long as the code looks right in review.",
+        "rationale": "The candidate proposes deployment based only on code review and not on verification findings, and then defers issues to later, which shows they are not using verification results to decide the next action."
+      }
+    ],
+    "annotation_notes": "The answer emphasizes speed over verification and explicitly deprioritizes both the reported failure check and broader regression assessment."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

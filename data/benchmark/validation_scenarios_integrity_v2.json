@@ -1,0 +1,58 @@
+{
+  "audit": "ESDSA validation scenario integrity",
+  "version": "v2",
+  "timestamp_utc": "2026-11-19T23:48:47.215291+00:00",
+  "validation_families": 24,
+  "competencies": 12,
+  "families_per_competency": {
+    "CSS01": 2,
+    "CSS02": 2,
+    "CSS03": 2,
+    "CSS04": 2,
+    "OPS01": 2,
+    "OPS02": 2,
+    "OPS03": 2,
+    "OPS04": 2,
+    "SWE01": 2,
+    "SWE02": 2,
+    "SWE03": 2,
+    "SWE04": 2
+  },
+  "planned_candidate_responses": 216,
+  "validation_scenarios_sha256": "23bc13887d81d3e2174e095b4ff4ffe1bf9a279991257c32e0c62703b1d0d9e5",
+  "registry_sha256": "5fc89db5918d20f18e259582a5c9004613dd2f60a3a1881b745b392fd26d97fb",
+  "development_scenarios_sha256": "43597ca834cf19480383f1bbe1c6ce5e9c74e97c74678afc4e0e1839e0fe5978",
+  "policy_freeze_sha256": "a0fc03e305eb445b2ae92c46cc5c59e39f486f335e70df9d0f25f5bb001d1ebb",
+  "evaluation_freeze_sha256": "237e9c151db397d36e8e7f413c77c4e66a6b8163d8c290f407a745e7cefcc88f",
+  "rubric_sha256": {
+    "SWE01_rubric_v1.json": "aed4c6ae571a27f490bb01bdfe83625322f0e5b919aa59498dd9160b0419028c",
+    "SWE02_rubric_v1.json": "5b0b8e2a03598b4de68afc372d5f48abdbcdd150235401a9663514666065cf1d",
+    "SWE03_rubric_v1.json": "6ab9abbf3b64793589baf18fd5f0e9884e09ef7e30f43a058f93d578c8f3db4e",
+    "SWE04_rubric_v1.json": "ec05368cf5951f9a58d56b8f95800beb5658ffc78020363aafd893a1b8a2e2ff",
+    "CSS01_rubric_v1.json": "88a874a6b8ad332599d4641c1bea4d1f95aa9ee6615d617093828ea355768410",
+    "CSS02_rubric_v1.json": "727b0e91646f85b41018bf92dd65052a177c27bad9ad46452cc69a550075522d",
+    "CSS03_rubric_v1.json": "1ff65fb010f766900d3e56f242159933bd2f4d2858e38e99ac63320d79b09974",
+    "CSS04_rubric_v1.json": "2abf8b73ac743d5fb018e81958a18b140f8da1eb1813a09767a64e1ee7a29809",
+    "OPS01_rubric_v1.json": "1eb6d41c9cbe6e777fbf56c881f6323da043f7d1e22ab6c37c219cc66d403440",
+    "OPS02_rubric_v1.json": "b00e0849340fa9a63f1e28135cc37f78b68a7beb29549b3a73b95fcc8924efff",
+    "OPS03_rubric_v1.json": "c0841450efe362e6bce6ce4bcf0533342cb844a168e20b3c47bcecac6a01fd4d",
+    "OPS04_rubric_v1.json": "d230fd47c6705a86d858cb119f11403af5e40a60f0f4bc8e9c31bc2b61a9acba"
+  },
+  "checks": {
+    "partition_integrity": "PASS",
+    "family_id_uniqueness": "PASS",
+    "competency_coverage": "PASS",
+    "exact_question_uniqueness": "PASS",
+    "rubric_consistency": "PASS",
+    "development_family_separation": "PASS",
+    "policy_freeze_present": "PASS",
+    "evaluation_freeze_present": "PASS"
+  },
+  "limitations": [
+    "Exact-text checks cannot guarantee conceptual novelty.",
+    "Scenario content has not been independently expert-reviewed.",
+    "Reference decisions have not been adjudicated.",
+    "No candidate responses have been generated.",
+    "This audit does not modify or evaluate TEST families."
+  ]
+}

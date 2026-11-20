@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "esdsa"
+version = "0.2.0"
+description = "Evidence Sufficiency and Decision Stability Assessment for automated job interviews"
+requires-python = ">=3.10"
+dependencies = [
+    "openai",
+    "numpy",
+    "matplotlib",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.4"]
+
+[project.scripts]
+esdsa-build = "esdsa.benchmark:main"
+esdsa-validate = "esdsa.validate:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

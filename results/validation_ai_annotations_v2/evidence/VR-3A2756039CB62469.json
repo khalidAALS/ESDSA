@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-3A2756039CB62469",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0ce3bdff8c9169b7016b00109c9fa887d0b9e22ea0d87af88e",
+  "annotated_utc": "2026-11-20T09:19:27.035402+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "CSS04-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I would apologise for the missed update and tell the customer I’m taking over the complaint.",
+        "rationale": "This clearly explains the next step to the customer in straightforward terms, indicating how the situation will be communicated."
+      },
+      {
+        "criterion_id": "CSS04-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d say I’ll look into it and that I’ll get back to them as soon as possible, but I wouldn’t commit to a specific follow-up time until I know whether there’s anything new to report.",
+        "rationale": "This sets an expectation of follow-up while explicitly avoiding an unsupported specific promise, which aligns with justified expectation management."
+      },
+      {
+        "criterion_id": "CSS04-C3",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "passage": "",
+        "rationale": "The answer says the candidate will get back to the customer, but it does not establish a concrete follow-up mechanism such as a specific check-in arrangement, status update process, or confirmation method. Waiting to contact them again only when there is a full answer is a timing preference, not a clearly described follow-up mechanism."
+      }
+    ],
+    "annotation_notes": "Assessment is based only on the provided answer. The response is clear on apology, ownership, and avoiding unsupported timing promises, but it does not clearly specify an actionable follow-up arrangement beyond a general promise to return contact."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

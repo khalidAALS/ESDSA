@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-662A6C3A119EC4FF",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0233a64fb4c156c2016b001087b33c87d0b08c1a0968834157",
+  "annotated_utc": "2026-11-20T09:19:05.736988+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "CSS03-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d verify the purchase details, warranty/return eligibility, and basic troubleshooting before choosing a remedy.",
+        "rationale": "The candidate shows they would assess relevant evidence and use it to decide among possible resolutions rather than jumping to a refund."
+      },
+      {
+        "criterion_id": "CSS03-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "If it’s eligible, I’d apply the appropriate policy-based resolution; if it’s unclear or an exception is needed, I’d escalate for approval rather than deciding blindly.",
+        "rationale": "This explicitly indicates attention to policy constraints and approval for exceptions, showing respect for authorisation and service limits."
+      },
+      {
+        "criterion_id": "CSS03-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "If it’s eligible, I’d apply the appropriate policy-based resolution; if it’s unclear or an exception is needed, I’d escalate for approval rather than deciding blindly.",
+        "rationale": "The candidate clearly recognizes uncertainty and states they would escalate when the situation is unclear or requires an exception."
+      }
+    ],
+    "annotation_notes": "The response is concise but sufficient to demonstrate evidence-based resolution judgment, policy awareness, and escalation under uncertainty."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

@@ -1,0 +1,3098 @@
+{
+  "design": "Paired 108-response development comparison",
+  "reference_status": "AI-assisted provisional annotations; not independently validated",
+  "important_limitations": [
+    "Raw actionable coverage differs between methods.",
+    "Reference agreement does not establish true accuracy.",
+    "Sixteen groups are flagged for adjudication.",
+    "Semantic equivalence is provisional.",
+    "This is a development-set analysis, not held-out testing.",
+    "Matched-coverage comparison has not yet been performed."
+  ],
+  "overall": {
+    "scoring_only": {
+      "total": 108,
+      "decisions": {
+        "DEFER": 29,
+        "ADVANCE": 58,
+        "DO_NOT_ADVANCE": 21
+      },
+      "decision_agreement": 0.75,
+      "actionable_count": 79,
+      "actionable_coverage": 0.7314814814814815,
+      "actionable_disagreement_count": 8,
+      "actionable_disagreement_rate": 0.10126582278481013,
+      "advances_without_reference_support": 6,
+      "deferrals_when_reference_actionable": 19
+    },
+    "evidence_aware": {
+      "total": 108,
+      "decisions": {
+        "DO_NOT_ADVANCE": 36,
+        "ADVANCE": 69,
+        "DEFER": 3
+      },
+      "decision_agreement": 0.8611111111111112,
+      "actionable_count": 105,
+      "actionable_coverage": 0.9722222222222222,
+      "actionable_disagreement_count": 15,
+      "actionable_disagreement_rate": 0.14285714285714285,
+      "advances_without_reference_support": 12,
+      "deferrals_when_reference_actionable": 0
+    }
+  },
+  "subsets": {
+    "unflagged": {
+      "scoring_only": {
+        "total": 60,
+        "decisions": {
+          "DEFER": 6,
+          "ADVANCE": 45,
+          "DO_NOT_ADVANCE": 9
+        },
+        "decision_agreement": 0.9,
+        "actionable_count": 54,
+        "actionable_coverage": 0.9,
+        "actionable_disagreement_count": 0,
+        "actionable_disagreement_rate": 0.0,
+        "advances_without_reference_support": 0,
+        "deferrals_when_reference_actionable": 6
+      },
+      "evidence_aware": {
+        "total": 60,
+        "decisions": {
+          "DO_NOT_ADVANCE": 15,
+          "ADVANCE": 45
+        },
+        "decision_agreement": 1.0,
+        "actionable_count": 60,
+        "actionable_coverage": 1.0,
+        "actionable_disagreement_count": 0,
+        "actionable_disagreement_rate": 0.0,
+        "advances_without_reference_support": 0,
+        "deferrals_when_reference_actionable": 0
+      }
+    },
+    "flagged": {
+      "scoring_only": {
+        "total": 48,
+        "decisions": {
+          "ADVANCE": 13,
+          "DEFER": 23,
+          "DO_NOT_ADVANCE": 12
+        },
+        "decision_agreement": 0.5625,
+        "actionable_count": 25,
+        "actionable_coverage": 0.5208333333333334,
+        "actionable_disagreement_count": 8,
+        "actionable_disagreement_rate": 0.32,
+        "advances_without_reference_support": 6,
+        "deferrals_when_reference_actionable": 13
+      },
+      "evidence_aware": {
+        "total": 48,
+        "decisions": {
+          "ADVANCE": 24,
+          "DO_NOT_ADVANCE": 21,
+          "DEFER": 3
+        },
+        "decision_agreement": 0.6875,
+        "actionable_count": 45,
+        "actionable_coverage": 0.9375,
+        "actionable_disagreement_count": 15,
+        "actionable_disagreement_rate": 0.3333333333333333,
+        "advances_without_reference_support": 12,
+        "deferrals_when_reference_actionable": 0
+      }
+    }
+  },
+  "paired_reference_agreement": {
+    "evidence_only_matches": 19,
+    "both_match": 74,
+    "neither_matches": 8,
+    "scoring_only_matches": 7
+  },
+  "method_decision_disagreements": 27,
+  "linguistic_stability": {
+    "scoring": {
+      "eligible_groups": 27,
+      "stable_groups": 23,
+      "unstable_groups": [
+        {
+          "group": "GROUP-015",
+          "decisions": {
+            "A": "DEFER",
+            "B": "DO_NOT_ADVANCE",
+            "C": "DO_NOT_ADVANCE"
+          }
+        },
+        {
+          "group": "GROUP-017",
+          "decisions": {
+            "A": "DEFER",
+            "B": "DEFER",
+            "C": "DO_NOT_ADVANCE"
+          }
+        },
+        {
+          "group": "GROUP-025",
+          "decisions": {
+            "A": "DEFER",
+            "B": "DO_NOT_ADVANCE",
+            "C": "DEFER"
+          }
+        },
+        {
+          "group": "GROUP-032",
+          "decisions": {
+            "A": "DO_NOT_ADVANCE",
+            "B": "DEFER",
+            "C": "DO_NOT_ADVANCE"
+          }
+        }
+      ],
+      "stable_fraction": 0.8518518518518519
+    },
+    "evidence": {
+      "eligible_groups": 27,
+      "stable_groups": 25,
+      "unstable_groups": [
+        {
+          "group": "GROUP-017",
+          "decisions": {
+            "A": "ADVANCE",
+            "B": "DO_NOT_ADVANCE",
+            "C": "DO_NOT_ADVANCE"
+          }
+        },
+        {
+          "group": "GROUP-023",
+          "decisions": {
+            "A": "ADVANCE",
+            "B": "DEFER",
+            "C": "DEFER"
+          }
+        }
+      ],
+      "stable_fraction": 0.9259259259259259
+    }
+  },
+  "per_response": [
+    {
+      "response_id": "ESDSA-SWE02-01-E3L2",
+      "group": "GROUP-001",
+      "letter": "A",
+      "competency": "Technical investigation",
+      "reference": "DO_NOT_ADVANCE",
+      "scoring": "DEFER",
+      "evidence": "DO_NOT_ADVANCE",
+      "scoring_mean": 2.0,
+      "scoring_scores": [
+        3,
+        1,
+        2
+      ],
+      "criterion_reference": [
+        "POSITIVE_EVIDENCE",
+        "NEGATIVE_EVIDENCE",
+        "NEGATIVE_EVIDENCE"
+      ],
+      "criterion_evidence": [
+        "POSITIVE_EVIDENCE",
+        "NEGATIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "review_flag": "NO",
+      "semantic_equivalence": "YES"
+    },
+    {
+      "response_id": "ESDSA-SWE02-01-E3L3",
+      "group": "GROUP-001",
+      "letter": "B",
+      "competency": "Technical investigation",
+      "reference": "DO_NOT_ADVANCE",
+      "scoring": "DEFER",
+      "evidence": "DO_NOT_ADVANCE",
+      "scoring_mean": 2.0,
+      "scoring_scores": [
+        3,
+        1,
+        2
+      ],
+      "criterion_reference": [
+        "POSITIVE_EVIDENCE",
+        "NEGATIVE_EVIDENCE",
+        "NEGATIVE_EVIDENCE"
+      ],
+      "criterion_evidence": [
+        "POSITIVE_EVIDENCE",
+        "NEGATIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "review_flag": "NO",
+      "semantic_equivalence": "YES"
+    },
+    {
+      "response_id": "ESDSA-SWE02-01-E3L1",
+      "group": "GROUP-001",
+      "letter": "C",
+      "competency": "Technical investigation",
+      "reference": "DO_NOT_ADVANCE",
+      "scoring": "DEFER",
+      "evidence": "DO_NOT_ADVANCE",
+      "scoring_mean": 2.3333333333333335,
+      "scoring_scores": [
+        3,
+        2,
+        2
+      ],
+      "criterion_reference": [
+        "POSITIVE_EVIDENCE",
+        "NEGATIVE_EVIDENCE",
+        "NEGATIVE_EVIDENCE"
+      ],
+      "criterion_evidence": [
+        "POSITIVE_EVIDENCE",
+        "NEGATIVE_EVIDENCE",
+        "NEGATIVE_EVIDENCE"
+      ],
+      "review_flag": "NO",
+      "semantic_equivalence": "YES"
+    },
+    {
+      "response_id": "ESDSA-CSS01-01-E1L3",
+      "group": "GROUP-002",
+      "letter": "A",
+      "competency": "Problem identification",
+      "reference": "ADVANCE",
+      "scoring": "ADVANCE",
+      "evidence": "ADVANCE",
+      "scoring_mean": 4.0,
+      "scoring_scores": [
+        4,
+        4,
+        4
+      ],
+      "criterion_reference": [
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "criterion_evidence": [
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "review_flag": "NO",
+      "semantic_equivalence": "YES"
+    },
+    {
+      "response_id": "ESDSA-CSS01-01-E1L2",
+      "group": "GROUP-002",
+      "letter": "B",
+      "competency": "Problem identification",
+      "reference": "ADVANCE",
+      "scoring": "ADVANCE",
+      "evidence": "ADVANCE",
+      "scoring_mean": 4.0,
+      "scoring_scores": [
+        4,
+        4,
+        4
+      ],
+      "criterion_reference": [
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "criterion_evidence": [
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "review_flag": "NO",
+      "semantic_equivalence": "YES"
+    },
+    {
+      "response_id": "ESDSA-CSS01-01-E1L1",
+      "group": "GROUP-002",
+      "letter": "C",
+      "competency": "Problem identification",
+      "reference": "ADVANCE",
+      "scoring": "ADVANCE",
+      "evidence": "ADVANCE",
+      "scoring_mean": 4.0,
+      "scoring_scores": [
+        4,
+        4,
+        4
+      ],
+      "criterion_reference": [
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "criterion_evidence": [
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "review_flag": "NO",
+      "semantic_equivalence": "YES"
+    },
+    {
+      "response_id": "ESDSA-OPS03-01-E1L2",
+      "group": "GROUP-003",
+      "letter": "A",
+      "competency": "Evidence-based coordination",
+      "reference": "ADVANCE",
+      "scoring": "ADVANCE",
+      "evidence": "ADVANCE",
+      "scoring_mean": 4.0,
+      "scoring_scores": [
+        4,
+        4,
+        4
+      ],
+      "criterion_reference": [
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "criterion_evidence": [
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "review_flag": "NO",
+      "semantic_equivalence": "YES"
+    },
+    {
+      "response_id": "ESDSA-OPS03-01-E1L3",
+      "group": "GROUP-003",
+      "letter": "B",
+      "competency": "Evidence-based coordination",
+      "reference": "ADVANCE",
+      "scoring": "ADVANCE",
+      "evidence": "ADVANCE",
+      "scoring_mean": 3.6666666666666665,
+      "scoring_scores": [
+        4,
+        3,
+        4
+      ],
+      "criterion_reference": [
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "criterion_evidence": [
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "review_flag": "NO",
+      "semantic_equivalence": "YES"
+    },
+    {
+      "response_id": "ESDSA-OPS03-01-E1L1",
+      "group": "GROUP-003",
+      "letter": "C",
+      "competency": "Evidence-based coordination",
+      "reference": "ADVANCE",
+      "scoring": "ADVANCE",
+      "evidence": "ADVANCE",
+      "scoring_mean": 4.0,
+      "scoring_scores": [
+        4,
+        4,
+        4
+      ],
+      "criterion_reference": [
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "criterion_evidence": [
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "review_flag": "NO",
+      "semantic_equivalence": "YES"
+    },
+    {
+      "response_id": "ESDSA-CSS03-02-E2L1",
+      "group": "GROUP-004",
+      "letter": "A",
+      "competency": "Resolution judgment",
+      "reference": "ADVANCE",
+      "scoring": "ADVANCE",
+      "evidence": "ADVANCE",
+      "scoring_mean": 3.3333333333333335,
+      "scoring_scores": [
+        3,
+        3,
+        4
+      ],
+      "criterion_reference": [
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "criterion_evidence": [
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "review_flag": "YES",
+      "semantic_equivalence": "NO"
+    },
+    {
+      "response_id": "ESDSA-CSS03-02-E2L2",
+      "group": "GROUP-004",
+      "letter": "B",
+      "competency": "Resolution judgment",
+      "reference": "DEFER",
+      "scoring": "ADVANCE",
+      "evidence": "ADVANCE",
+      "scoring_mean": 3.3333333333333335,
+      "scoring_scores": [
+        3,
+        3,
+        4
+      ],
+      "criterion_reference": [
+        "POSITIVE_EVIDENCE",
+        "INSUFFICIENT_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "criterion_evidence": [
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "review_flag": "YES",
+      "semantic_equivalence": "NO"
+    },
+    {
+      "response_id": "ESDSA-CSS03-02-E2L3",
+      "group": "GROUP-004",
+      "letter": "C",
+      "competency": "Resolution judgment",
+      "reference": "DEFER",
+      "scoring": "ADVANCE",
+      "evidence": "ADVANCE",
+      "scoring_mean": 3.3333333333333335,
+      "scoring_scores": [
+        3,
+        3,
+        4
+      ],
+      "criterion_reference": [
+        "POSITIVE_EVIDENCE",
+        "INSUFFICIENT_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "criterion_evidence": [
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "review_flag": "YES",
+      "semantic_equivalence": "NO"
+    },
+    {
+      "response_id": "ESDSA-SWE02-01-E2L3",
+      "group": "GROUP-005",
+      "letter": "A",
+      "competency": "Technical investigation",
+      "reference": "ADVANCE",
+      "scoring": "ADVANCE",
+      "evidence": "ADVANCE",
+      "scoring_mean": 3.0,
+      "scoring_scores": [
+        4,
+        3,
+        2
+      ],
+      "criterion_reference": [
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "criterion_evidence": [
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "review_flag": "NO",
+      "semantic_equivalence": "YES"
+    },
+    {
+      "response_id": "ESDSA-SWE02-01-E2L2",
+      "group": "GROUP-005",
+      "letter": "B",
+      "competency": "Technical investigation",
+      "reference": "ADVANCE",
+      "scoring": "ADVANCE",
+      "evidence": "ADVANCE",
+      "scoring_mean": 3.3333333333333335,
+      "scoring_scores": [
+        4,
+        3,
+        3
+      ],
+      "criterion_reference": [
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "criterion_evidence": [
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "review_flag": "NO",
+      "semantic_equivalence": "YES"
+    },
+    {
+      "response_id": "ESDSA-SWE02-01-E2L1",
+      "group": "GROUP-005",
+      "letter": "C",
+      "competency": "Technical investigation",
+      "reference": "ADVANCE",
+      "scoring": "ADVANCE",
+      "evidence": "ADVANCE",
+      "scoring_mean": 3.6666666666666665,
+      "scoring_scores": [
+        4,
+        4,
+        3
+      ],
+      "criterion_reference": [
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "criterion_evidence": [
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "review_flag": "NO",
+      "semantic_equivalence": "YES"
+    },
+    {
+      "response_id": "ESDSA-CSS03-02-E3L3",
+      "group": "GROUP-006",
+      "letter": "A",
+      "competency": "Resolution judgment",
+      "reference": "DO_NOT_ADVANCE",
+      "scoring": "DO_NOT_ADVANCE",
+      "evidence": "DO_NOT_ADVANCE",
+      "scoring_mean": 1.3333333333333333,
+      "scoring_scores": [
+        2,
+        1,
+        1
+      ],
+      "criterion_reference": [
+        "NEGATIVE_EVIDENCE",
+        "NEGATIVE_EVIDENCE",
+        "NEGATIVE_EVIDENCE"
+      ],
+      "criterion_evidence": [
+        "POSITIVE_EVIDENCE",
+        "NEGATIVE_EVIDENCE",
+        "NEGATIVE_EVIDENCE"
+      ],
+      "review_flag": "NO",
+      "semantic_equivalence": "YES"
+    },
+    {
+      "response_id": "ESDSA-CSS03-02-E3L1",
+      "group": "GROUP-006",
+      "letter": "B",
+      "competency": "Resolution judgment",
+      "reference": "DO_NOT_ADVANCE",
+      "scoring": "DO_NOT_ADVANCE",
+      "evidence": "DO_NOT_ADVANCE",
+      "scoring_mean": 1.3333333333333333,
+      "scoring_scores": [
+        2,
+        1,
+        1
+      ],
+      "criterion_reference": [
+        "NEGATIVE_EVIDENCE",
+        "NEGATIVE_EVIDENCE",
+        "NEGATIVE_EVIDENCE"
+      ],
+      "criterion_evidence": [
+        "POSITIVE_EVIDENCE",
+        "NEGATIVE_EVIDENCE",
+        "NEGATIVE_EVIDENCE"
+      ],
+      "review_flag": "NO",
+      "semantic_equivalence": "YES"
+    },
+    {
+      "response_id": "ESDSA-CSS03-02-E3L2",
+      "group": "GROUP-006",
+      "letter": "C",
+      "competency": "Resolution judgment",
+      "reference": "DO_NOT_ADVANCE",
+      "scoring": "DO_NOT_ADVANCE",
+      "evidence": "DO_NOT_ADVANCE",
+      "scoring_mean": 1.3333333333333333,
+      "scoring_scores": [
+        2,
+        1,
+        1
+      ],
+      "criterion_reference": [
+        "NEGATIVE_EVIDENCE",
+        "NEGATIVE_EVIDENCE",
+        "NEGATIVE_EVIDENCE"
+      ],
+      "criterion_evidence": [
+        "POSITIVE_EVIDENCE",
+        "NEGATIVE_EVIDENCE",
+        "NEGATIVE_EVIDENCE"
+      ],
+      "review_flag": "NO",
+      "semantic_equivalence": "YES"
+    },
+    {
+      "response_id": "ESDSA-OPS04-01-E1L1",
+      "group": "GROUP-007",
+      "letter": "A",
+      "competency": "Monitoring and escalation",
+      "reference": "ADVANCE",
+      "scoring": "ADVANCE",
+      "evidence": "ADVANCE",
+      "scoring_mean": 4.0,
+      "scoring_scores": [
+        4,
+        4,
+        4
+      ],
+      "criterion_reference": [
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "criterion_evidence": [
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "review_flag": "NO",
+      "semantic_equivalence": "YES"
+    },
+    {
+      "response_id": "ESDSA-OPS04-01-E1L2",
+      "group": "GROUP-007",
+      "letter": "B",
+      "competency": "Monitoring and escalation",
+      "reference": "ADVANCE",
+      "scoring": "ADVANCE",
+      "evidence": "ADVANCE",
+      "scoring_mean": 4.0,
+      "scoring_scores": [
+        4,
+        4,
+        4
+      ],
+      "criterion_reference": [
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "criterion_evidence": [
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "review_flag": "NO",
+      "semantic_equivalence": "YES"
+    },
+    {
+      "response_id": "ESDSA-OPS04-01-E1L3",
+      "group": "GROUP-007",
+      "letter": "C",
+      "competency": "Monitoring and escalation",
+      "reference": "ADVANCE",
+      "scoring": "ADVANCE",
+      "evidence": "ADVANCE",
+      "scoring_mean": 3.0,
+      "scoring_scores": [
+        3,
+        3,
+        3
+      ],
+      "criterion_reference": [
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "criterion_evidence": [
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "review_flag": "NO",
+      "semantic_equivalence": "YES"
+    },
+    {
+      "response_id": "ESDSA-OPS02-03-E1L2",
+      "group": "GROUP-008",
+      "letter": "A",
+      "competency": "Risk identification",
+      "reference": "ADVANCE",
+      "scoring": "ADVANCE",
+      "evidence": "ADVANCE",
+      "scoring_mean": 4.0,
+      "scoring_scores": [
+        4,
+        4,
+        4
+      ],
+      "criterion_reference": [
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "criterion_evidence": [
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "review_flag": "NO",
+      "semantic_equivalence": "YES"
+    },
+    {
+      "response_id": "ESDSA-OPS02-03-E1L3",
+      "group": "GROUP-008",
+      "letter": "B",
+      "competency": "Risk identification",
+      "reference": "ADVANCE",
+      "scoring": "ADVANCE",
+      "evidence": "ADVANCE",
+      "scoring_mean": 4.0,
+      "scoring_scores": [
+        4,
+        4,
+        4
+      ],
+      "criterion_reference": [
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "criterion_evidence": [
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "review_flag": "NO",
+      "semantic_equivalence": "YES"
+    },
+    {
+      "response_id": "ESDSA-OPS02-03-E1L1",
+      "group": "GROUP-008",
+      "letter": "C",
+      "competency": "Risk identification",
+      "reference": "ADVANCE",
+      "scoring": "ADVANCE",
+      "evidence": "ADVANCE",
+      "scoring_mean": 4.0,
+      "scoring_scores": [
+        4,
+        4,
+        4
+      ],
+      "criterion_reference": [
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "criterion_evidence": [
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "review_flag": "NO",
+      "semantic_equivalence": "YES"
+    },
+    {
+      "response_id": "ESDSA-SWE01-01-E2L3",
+      "group": "GROUP-009",
+      "letter": "A",
+      "competency": "Systematic diagnosis",
+      "reference": "ADVANCE",
+      "scoring": "DEFER",
+      "evidence": "ADVANCE",
+      "scoring_mean": 2.6666666666666665,
+      "scoring_scores": [
+        3,
+        3,
+        2
+      ],
+      "criterion_reference": [
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "criterion_evidence": [
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "review_flag": "YES",
+      "semantic_equivalence": "UNCERTAIN"
+    },
+    {
+      "response_id": "ESDSA-SWE01-01-E2L1",
+      "group": "GROUP-009",
+      "letter": "B",
+      "competency": "Systematic diagnosis",
+      "reference": "ADVANCE",
+      "scoring": "ADVANCE",
+      "evidence": "ADVANCE",
+      "scoring_mean": 3.6666666666666665,
+      "scoring_scores": [
+        4,
+        3,
+        4
+      ],
+      "criterion_reference": [
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "criterion_evidence": [
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "review_flag": "YES",
+      "semantic_equivalence": "UNCERTAIN"
+    },
+    {
+      "response_id": "ESDSA-SWE01-01-E2L2",
+      "group": "GROUP-009",
+      "letter": "C",
+      "competency": "Systematic diagnosis",
+      "reference": "ADVANCE",
+      "scoring": "ADVANCE",
+      "evidence": "ADVANCE",
+      "scoring_mean": 3.0,
+      "scoring_scores": [
+        3,
+        3,
+        3
+      ],
+      "criterion_reference": [
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "criterion_evidence": [
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "review_flag": "YES",
+      "semantic_equivalence": "UNCERTAIN"
+    },
+    {
+      "response_id": "ESDSA-SWE04-01-E1L2",
+      "group": "GROUP-010",
+      "letter": "A",
+      "competency": "Verification and testing",
+      "reference": "ADVANCE",
+      "scoring": "ADVANCE",
+      "evidence": "ADVANCE",
+      "scoring_mean": 4.0,
+      "scoring_scores": [
+        4,
+        4,
+        4
+      ],
+      "criterion_reference": [
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "criterion_evidence": [
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "review_flag": "NO",
+      "semantic_equivalence": "YES"
+    },
+    {
+      "response_id": "ESDSA-SWE04-01-E1L3",
+      "group": "GROUP-010",
+      "letter": "B",
+      "competency": "Verification and testing",
+      "reference": "ADVANCE",
+      "scoring": "ADVANCE",
+      "evidence": "ADVANCE",
+      "scoring_mean": 3.6666666666666665,
+      "scoring_scores": [
+        4,
+        4,
+        3
+      ],
+      "criterion_reference": [
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "criterion_evidence": [
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "review_flag": "NO",
+      "semantic_equivalence": "YES"
+    },
+    {
+      "response_id": "ESDSA-SWE04-01-E1L1",
+      "group": "GROUP-010",
+      "letter": "C",
+      "competency": "Verification and testing",
+      "reference": "ADVANCE",
+      "scoring": "ADVANCE",
+      "evidence": "ADVANCE",
+      "scoring_mean": 4.0,
+      "scoring_scores": [
+        4,
+        4,
+        4
+      ],
+      "criterion_reference": [
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "criterion_evidence": [
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "review_flag": "NO",
+      "semantic_equivalence": "YES"
+    },
+    {
+      "response_id": "ESDSA-CSS02-02-E2L3",
+      "group": "GROUP-011",
+      "letter": "A",
+      "competency": "Information gathering",
+      "reference": "DEFER",
+      "scoring": "ADVANCE",
+      "evidence": "ADVANCE",
+      "scoring_mean": 3.3333333333333335,
+      "scoring_scores": [
+        3,
+        3,
+        4
+      ],
+      "criterion_reference": [
+        "POSITIVE_EVIDENCE",
+        "INSUFFICIENT_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "criterion_evidence": [
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "review_flag": "YES",
+      "semantic_equivalence": "NO"
+    },
+    {
+      "response_id": "ESDSA-CSS02-02-E2L1",
+      "group": "GROUP-011",
+      "letter": "B",
+      "competency": "Information gathering",
+      "reference": "DEFER",
+      "scoring": "ADVANCE",
+      "evidence": "ADVANCE",
+      "scoring_mean": 3.3333333333333335,
+      "scoring_scores": [
+        3,
+        3,
+        4
+      ],
+      "criterion_reference": [
+        "POSITIVE_EVIDENCE",
+        "INSUFFICIENT_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "criterion_evidence": [
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "review_flag": "YES",
+      "semantic_equivalence": "NO"
+    },
+    {
+      "response_id": "ESDSA-CSS02-02-E2L2",
+      "group": "GROUP-011",
+      "letter": "C",
+      "competency": "Information gathering",
+      "reference": "DO_NOT_ADVANCE",
+      "scoring": "ADVANCE",
+      "evidence": "DO_NOT_ADVANCE",
+      "scoring_mean": 3.0,
+      "scoring_scores": [
+        3,
+        2,
+        4
+      ],
+      "criterion_reference": [
+        "POSITIVE_EVIDENCE",
+        "NEGATIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "criterion_evidence": [
+        "POSITIVE_EVIDENCE",
+        "NEGATIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "review_flag": "YES",
+      "semantic_equivalence": "NO"
+    },
+    {
+      "response_id": "ESDSA-SWE04-01-E3L1",
+      "group": "GROUP-012",
+      "letter": "A",
+      "competency": "Verification and testing",
+      "reference": "DO_NOT_ADVANCE",
+      "scoring": "DEFER",
+      "evidence": "DO_NOT_ADVANCE",
+      "scoring_mean": 2.0,
+      "scoring_scores": [
+        3,
+        1,
+        2
+      ],
+      "criterion_reference": [
+        "POSITIVE_EVIDENCE",
+        "NEGATIVE_EVIDENCE",
+        "NEGATIVE_EVIDENCE"
+      ],
+      "criterion_evidence": [
+        "POSITIVE_EVIDENCE",
+        "NEGATIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "review_flag": "NO",
+      "semantic_equivalence": "YES"
+    },
+    {
+      "response_id": "ESDSA-SWE04-01-E3L3",
+      "group": "GROUP-012",
+      "letter": "B",
+      "competency": "Verification and testing",
+      "reference": "DO_NOT_ADVANCE",
+      "scoring": "DEFER",
+      "evidence": "DO_NOT_ADVANCE",
+      "scoring_mean": 2.6666666666666665,
+      "scoring_scores": [
+        4,
+        1,
+        3
+      ],
+      "criterion_reference": [
+        "POSITIVE_EVIDENCE",
+        "NEGATIVE_EVIDENCE",
+        "NEGATIVE_EVIDENCE"
+      ],
+      "criterion_evidence": [
+        "POSITIVE_EVIDENCE",
+        "NEGATIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "review_flag": "NO",
+      "semantic_equivalence": "YES"
+    },
+    {
+      "response_id": "ESDSA-SWE04-01-E3L2",
+      "group": "GROUP-012",
+      "letter": "C",
+      "competency": "Verification and testing",
+      "reference": "DO_NOT_ADVANCE",
+      "scoring": "DEFER",
+      "evidence": "DO_NOT_ADVANCE",
+      "scoring_mean": 2.3333333333333335,
+      "scoring_scores": [
+        4,
+        1,
+        2
+      ],
+      "criterion_reference": [
+        "POSITIVE_EVIDENCE",
+        "NEGATIVE_EVIDENCE",
+        "NEGATIVE_EVIDENCE"
+      ],
+      "criterion_evidence": [
+        "POSITIVE_EVIDENCE",
+        "NEGATIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "review_flag": "NO",
+      "semantic_equivalence": "YES"
+    },
+    {
+      "response_id": "ESDSA-SWE01-01-E3L3",
+      "group": "GROUP-013",
+      "letter": "A",
+      "competency": "Systematic diagnosis",
+      "reference": "DEFER",
+      "scoring": "DO_NOT_ADVANCE",
+      "evidence": "DO_NOT_ADVANCE",
+      "scoring_mean": 1.3333333333333333,
+      "scoring_scores": [
+        1,
+        1,
+        2
+      ],
+      "criterion_reference": [
+        "INSUFFICIENT_EVIDENCE",
+        "INSUFFICIENT_EVIDENCE",
+        "INSUFFICIENT_EVIDENCE"
+      ],
+      "criterion_evidence": [
+        "NEGATIVE_EVIDENCE",
+        "INSUFFICIENT_EVIDENCE",
+        "NEGATIVE_EVIDENCE"
+      ],
+      "review_flag": "YES",
+      "semantic_equivalence": "UNCERTAIN"
+    },
+    {
+      "response_id": "ESDSA-SWE01-01-E3L2",
+      "group": "GROUP-013",
+      "letter": "B",
+      "competency": "Systematic diagnosis",
+      "reference": "DEFER",
+      "scoring": "DEFER",
+      "evidence": "DO_NOT_ADVANCE",
+      "scoring_mean": 1.6666666666666667,
+      "scoring_scores": [
+        2,
+        1,
+        2
+      ],
+      "criterion_reference": [
+        "INSUFFICIENT_EVIDENCE",
+        "INSUFFICIENT_EVIDENCE",
+        "INSUFFICIENT_EVIDENCE"
+      ],
+      "criterion_evidence": [
+        "NEGATIVE_EVIDENCE",
+        "INSUFFICIENT_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "review_flag": "YES",
+      "semantic_equivalence": "UNCERTAIN"
+    },
+    {
+      "response_id": "ESDSA-SWE01-01-E3L1",
+      "group": "GROUP-013",
+      "letter": "C",
+      "competency": "Systematic diagnosis",
+      "reference": "DEFER",
+      "scoring": "DO_NOT_ADVANCE",
+      "evidence": "DO_NOT_ADVANCE",
+      "scoring_mean": 1.3333333333333333,
+      "scoring_scores": [
+        1,
+        1,
+        2
+      ],
+      "criterion_reference": [
+        "INSUFFICIENT_EVIDENCE",
+        "INSUFFICIENT_EVIDENCE",
+        "INSUFFICIENT_EVIDENCE"
+      ],
+      "criterion_evidence": [
+        "NEGATIVE_EVIDENCE",
+        "INSUFFICIENT_EVIDENCE",
+        "NEGATIVE_EVIDENCE"
+      ],
+      "review_flag": "YES",
+      "semantic_equivalence": "UNCERTAIN"
+    },
+    {
+      "response_id": "ESDSA-OPS01-01-E2L1",
+      "group": "GROUP-014",
+      "letter": "A",
+      "competency": "Prioritisation",
+      "reference": "ADVANCE",
+      "scoring": "DEFER",
+      "evidence": "ADVANCE",
+      "scoring_mean": 2.6666666666666665,
+      "scoring_scores": [
+        3,
+        2,
+        3
+      ],
+      "criterion_reference": [
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "criterion_evidence": [
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "review_flag": "YES",
+      "semantic_equivalence": "UNCERTAIN"
+    },
+    {
+      "response_id": "ESDSA-OPS01-01-E2L2",
+      "group": "GROUP-014",
+      "letter": "B",
+      "competency": "Prioritisation",
+      "reference": "ADVANCE",
+      "scoring": "DEFER",
+      "evidence": "ADVANCE",
+      "scoring_mean": 2.6666666666666665,
+      "scoring_scores": [
+        3,
+        2,
+        3
+      ],
+      "criterion_reference": [
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "criterion_evidence": [
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "review_flag": "YES",
+      "semantic_equivalence": "UNCERTAIN"
+    },
+    {
+      "response_id": "ESDSA-OPS01-01-E2L3",
+      "group": "GROUP-014",
+      "letter": "C",
+      "competency": "Prioritisation",
+      "reference": "ADVANCE",
+      "scoring": "DEFER",
+      "evidence": "ADVANCE",
+      "scoring_mean": 2.6666666666666665,
+      "scoring_scores": [
+        3,
+        2,
+        3
+      ],
+      "criterion_reference": [
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "criterion_evidence": [
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "review_flag": "YES",
+      "semantic_equivalence": "UNCERTAIN"
+    },
+    {
+      "response_id": "ESDSA-CSS02-02-E3L2",
+      "group": "GROUP-015",
+      "letter": "A",
+      "competency": "Information gathering",
+      "reference": "DO_NOT_ADVANCE",
+      "scoring": "DEFER",
+      "evidence": "DO_NOT_ADVANCE",
+      "scoring_mean": 2.0,
+      "scoring_scores": [
+        3,
+        2,
+        1
+      ],
+      "criterion_reference": [
+        "INSUFFICIENT_EVIDENCE",
+        "NEGATIVE_EVIDENCE",
+        "NEGATIVE_EVIDENCE"
+      ],
+      "criterion_evidence": [
+        "POSITIVE_EVIDENCE",
+        "NEGATIVE_EVIDENCE",
+        "NEGATIVE_EVIDENCE"
+      ],
+      "review_flag": "YES",
+      "semantic_equivalence": "YES"
+    },
+    {
+      "response_id": "ESDSA-CSS02-02-E3L3",
+      "group": "GROUP-015",
+      "letter": "B",
+      "competency": "Information gathering",
+      "reference": "DO_NOT_ADVANCE",
+      "scoring": "DO_NOT_ADVANCE",
+      "evidence": "DO_NOT_ADVANCE",
+      "scoring_mean": 1.3333333333333333,
+      "scoring_scores": [
+        2,
+        1,
+        1
+      ],
+      "criterion_reference": [
+        "INSUFFICIENT_EVIDENCE",
+        "NEGATIVE_EVIDENCE",
+        "NEGATIVE_EVIDENCE"
+      ],
+      "criterion_evidence": [
+        "NEGATIVE_EVIDENCE",
+        "NEGATIVE_EVIDENCE",
+        "NEGATIVE_EVIDENCE"
+      ],
+      "review_flag": "YES",
+      "semantic_equivalence": "YES"
+    },
+    {
+      "response_id": "ESDSA-CSS02-02-E3L1",
+      "group": "GROUP-015",
+      "letter": "C",
+      "competency": "Information gathering",
+      "reference": "DO_NOT_ADVANCE",
+      "scoring": "DO_NOT_ADVANCE",
+      "evidence": "DO_NOT_ADVANCE",
+      "scoring_mean": 1.3333333333333333,
+      "scoring_scores": [
+        2,
+        1,
+        1
+      ],
+      "criterion_reference": [
+        "INSUFFICIENT_EVIDENCE",
+        "NEGATIVE_EVIDENCE",
+        "NEGATIVE_EVIDENCE"
+      ],
+      "criterion_evidence": [
+        "POSITIVE_EVIDENCE",
+        "NEGATIVE_EVIDENCE",
+        "NEGATIVE_EVIDENCE"
+      ],
+      "review_flag": "YES",
+      "semantic_equivalence": "YES"
+    },
+    {
+      "response_id": "ESDSA-CSS04-02-E3L2",
+      "group": "GROUP-016",
+      "letter": "A",
+      "competency": "Communication and follow-up",
+      "reference": "DO_NOT_ADVANCE",
+      "scoring": "DO_NOT_ADVANCE",
+      "evidence": "DO_NOT_ADVANCE",
+      "scoring_mean": 1.3333333333333333,
+      "scoring_scores": [
+        2,
+        1,
+        1
+      ],
+      "criterion_reference": [
+        "POSITIVE_EVIDENCE",
+        "NEGATIVE_EVIDENCE",
+        "INSUFFICIENT_EVIDENCE"
+      ],
+      "criterion_evidence": [
+        "POSITIVE_EVIDENCE",
+        "NEGATIVE_EVIDENCE",
+        "NEGATIVE_EVIDENCE"
+      ],
+      "review_flag": "YES",
+      "semantic_equivalence": "UNCERTAIN"
+    },
+    {
+      "response_id": "ESDSA-CSS04-02-E3L1",
+      "group": "GROUP-016",
+      "letter": "B",
+      "competency": "Communication and follow-up",
+      "reference": "DO_NOT_ADVANCE",
+      "scoring": "DEFER",
+      "evidence": "DO_NOT_ADVANCE",
+      "scoring_mean": 2.0,
+      "scoring_scores": [
+        3,
+        1,
+        2
+      ],
+      "criterion_reference": [
+        "POSITIVE_EVIDENCE",
+        "NEGATIVE_EVIDENCE",
+        "INSUFFICIENT_EVIDENCE"
+      ],
+      "criterion_evidence": [
+        "POSITIVE_EVIDENCE",
+        "NEGATIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "review_flag": "YES",
+      "semantic_equivalence": "UNCERTAIN"
+    },
+    {
+      "response_id": "ESDSA-CSS04-02-E3L3",
+      "group": "GROUP-016",
+      "letter": "C",
+      "competency": "Communication and follow-up",
+      "reference": "DO_NOT_ADVANCE",
+      "scoring": "DEFER",
+      "evidence": "DO_NOT_ADVANCE",
+      "scoring_mean": 2.0,
+      "scoring_scores": [
+        3,
+        2,
+        1
+      ],
+      "criterion_reference": [
+        "POSITIVE_EVIDENCE",
+        "NEGATIVE_EVIDENCE",
+        "INSUFFICIENT_EVIDENCE"
+      ],
+      "criterion_evidence": [
+        "POSITIVE_EVIDENCE",
+        "NEGATIVE_EVIDENCE",
+        "NEGATIVE_EVIDENCE"
+      ],
+      "review_flag": "YES",
+      "semantic_equivalence": "UNCERTAIN"
+    },
+    {
+      "response_id": "ESDSA-SWE03-01-E3L1",
+      "group": "GROUP-017",
+      "letter": "A",
+      "competency": "Reasoned correction",
+      "reference": "DO_NOT_ADVANCE",
+      "scoring": "DEFER",
+      "evidence": "ADVANCE",
+      "scoring_mean": 2.0,
+      "scoring_scores": [
+        2,
+        2,
+        2
+      ],
+      "criterion_reference": [
+        "NEGATIVE_EVIDENCE",
+        "NEGATIVE_EVIDENCE",
+        "INSUFFICIENT_EVIDENCE"
+      ],
+      "criterion_evidence": [
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "review_flag": "YES",
+      "semantic_equivalence": "YES"
+    },
+    {
+      "response_id": "ESDSA-SWE03-01-E3L2",
+      "group": "GROUP-017",
+      "letter": "B",
+      "competency": "Reasoned correction",
+      "reference": "DO_NOT_ADVANCE",
+      "scoring": "DEFER",
+      "evidence": "DO_NOT_ADVANCE",
+      "scoring_mean": 1.6666666666666667,
+      "scoring_scores": [
+        2,
+        2,
+        1
+      ],
+      "criterion_reference": [
+        "NEGATIVE_EVIDENCE",
+        "NEGATIVE_EVIDENCE",
+        "INSUFFICIENT_EVIDENCE"
+      ],
+      "criterion_evidence": [
+        "NEGATIVE_EVIDENCE",
+        "INSUFFICIENT_EVIDENCE",
+        "INSUFFICIENT_EVIDENCE"
+      ],
+      "review_flag": "YES",
+      "semantic_equivalence": "YES"
+    },
+    {
+      "response_id": "ESDSA-SWE03-01-E3L3",
+      "group": "GROUP-017",
+      "letter": "C",
+      "competency": "Reasoned correction",
+      "reference": "DO_NOT_ADVANCE",
+      "scoring": "DO_NOT_ADVANCE",
+      "evidence": "DO_NOT_ADVANCE",
+      "scoring_mean": 1.0,
+      "scoring_scores": [
+        1,
+        1,
+        1
+      ],
+      "criterion_reference": [
+        "NEGATIVE_EVIDENCE",
+        "NEGATIVE_EVIDENCE",
+        "INSUFFICIENT_EVIDENCE"
+      ],
+      "criterion_evidence": [
+        "NEGATIVE_EVIDENCE",
+        "NEGATIVE_EVIDENCE",
+        "NEGATIVE_EVIDENCE"
+      ],
+      "review_flag": "YES",
+      "semantic_equivalence": "YES"
+    },
+    {
+      "response_id": "ESDSA-OPS02-03-E2L1",
+      "group": "GROUP-018",
+      "letter": "A",
+      "competency": "Risk identification",
+      "reference": "ADVANCE",
+      "scoring": "ADVANCE",
+      "evidence": "ADVANCE",
+      "scoring_mean": 3.6666666666666665,
+      "scoring_scores": [
+        4,
+        4,
+        3
+      ],
+      "criterion_reference": [
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "criterion_evidence": [
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "review_flag": "YES",
+      "semantic_equivalence": "NO"
+    },
+    {
+      "response_id": "ESDSA-OPS02-03-E2L3",
+      "group": "GROUP-018",
+      "letter": "B",
+      "competency": "Risk identification",
+      "reference": "DEFER",
+      "scoring": "DEFER",
+      "evidence": "ADVANCE",
+      "scoring_mean": 2.6666666666666665,
+      "scoring_scores": [
+        3,
+        3,
+        2
+      ],
+      "criterion_reference": [
+        "POSITIVE_EVIDENCE",
+        "INSUFFICIENT_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "criterion_evidence": [
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "review_flag": "YES",
+      "semantic_equivalence": "NO"
+    },
+    {
+      "response_id": "ESDSA-OPS02-03-E2L2",
+      "group": "GROUP-018",
+      "letter": "C",
+      "competency": "Risk identification",
+      "reference": "ADVANCE",
+      "scoring": "DEFER",
+      "evidence": "ADVANCE",
+      "scoring_mean": 2.6666666666666665,
+      "scoring_scores": [
+        3,
+        3,
+        2
+      ],
+      "criterion_reference": [
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "criterion_evidence": [
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "review_flag": "YES",
+      "semantic_equivalence": "NO"
+    },
+    {
+      "response_id": "ESDSA-CSS01-01-E2L3",
+      "group": "GROUP-019",
+      "letter": "A",
+      "competency": "Problem identification",
+      "reference": "ADVANCE",
+      "scoring": "ADVANCE",
+      "evidence": "ADVANCE",
+      "scoring_mean": 3.0,
+      "scoring_scores": [
+        3,
+        3,
+        3
+      ],
+      "criterion_reference": [
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "criterion_evidence": [
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "review_flag": "NO",
+      "semantic_equivalence": "YES"
+    },
+    {
+      "response_id": "ESDSA-CSS01-01-E2L2",
+      "group": "GROUP-019",
+      "letter": "B",
+      "competency": "Problem identification",
+      "reference": "ADVANCE",
+      "scoring": "ADVANCE",
+      "evidence": "ADVANCE",
+      "scoring_mean": 3.0,
+      "scoring_scores": [
+        3,
+        3,
+        3
+      ],
+      "criterion_reference": [
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "criterion_evidence": [
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "review_flag": "NO",
+      "semantic_equivalence": "YES"
+    },
+    {
+      "response_id": "ESDSA-CSS01-01-E2L1",
+      "group": "GROUP-019",
+      "letter": "C",
+      "competency": "Problem identification",
+      "reference": "ADVANCE",
+      "scoring": "ADVANCE",
+      "evidence": "ADVANCE",
+      "scoring_mean": 3.3333333333333335,
+      "scoring_scores": [
+        3,
+        3,
+        4
+      ],
+      "criterion_reference": [
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "criterion_evidence": [
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "review_flag": "NO",
+      "semantic_equivalence": "YES"
+    },
+    {
+      "response_id": "ESDSA-CSS04-02-E2L3",
+      "group": "GROUP-020",
+      "letter": "A",
+      "competency": "Communication and follow-up",
+      "reference": "ADVANCE",
+      "scoring": "ADVANCE",
+      "evidence": "ADVANCE",
+      "scoring_mean": 3.0,
+      "scoring_scores": [
+        3,
+        4,
+        2
+      ],
+      "criterion_reference": [
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "criterion_evidence": [
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "review_flag": "NO",
+      "semantic_equivalence": "YES"
+    },
+    {
+      "response_id": "ESDSA-CSS04-02-E2L1",
+      "group": "GROUP-020",
+      "letter": "B",
+      "competency": "Communication and follow-up",
+      "reference": "ADVANCE",
+      "scoring": "ADVANCE",
+      "evidence": "ADVANCE",
+      "scoring_mean": 3.6666666666666665,
+      "scoring_scores": [
+        4,
+        4,
+        3
+      ],
+      "criterion_reference": [
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "criterion_evidence": [
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "review_flag": "NO",
+      "semantic_equivalence": "YES"
+    },
+    {
+      "response_id": "ESDSA-CSS04-02-E2L2",
+      "group": "GROUP-020",
+      "letter": "C",
+      "competency": "Communication and follow-up",
+      "reference": "ADVANCE",
+      "scoring": "ADVANCE",
+      "evidence": "ADVANCE",
+      "scoring_mean": 3.6666666666666665,
+      "scoring_scores": [
+        4,
+        4,
+        3
+      ],
+      "criterion_reference": [
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "criterion_evidence": [
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "review_flag": "NO",
+      "semantic_equivalence": "YES"
+    },
+    {
+      "response_id": "ESDSA-CSS02-02-E1L3",
+      "group": "GROUP-021",
+      "letter": "A",
+      "competency": "Information gathering",
+      "reference": "ADVANCE",
+      "scoring": "ADVANCE",
+      "evidence": "ADVANCE",
+      "scoring_mean": 3.3333333333333335,
+      "scoring_scores": [
+        3,
+        3,
+        4
+      ],
+      "criterion_reference": [
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "criterion_evidence": [
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "review_flag": "NO",
+      "semantic_equivalence": "YES"
+    },
+    {
+      "response_id": "ESDSA-CSS02-02-E1L1",
+      "group": "GROUP-021",
+      "letter": "B",
+      "competency": "Information gathering",
+      "reference": "ADVANCE",
+      "scoring": "ADVANCE",
+      "evidence": "ADVANCE",
+      "scoring_mean": 4.0,
+      "scoring_scores": [
+        4,
+        4,
+        4
+      ],
+      "criterion_reference": [
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "criterion_evidence": [
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "review_flag": "NO",
+      "semantic_equivalence": "YES"
+    },
+    {
+      "response_id": "ESDSA-CSS02-02-E1L2",
+      "group": "GROUP-021",
+      "letter": "C",
+      "competency": "Information gathering",
+      "reference": "ADVANCE",
+      "scoring": "ADVANCE",
+      "evidence": "ADVANCE",
+      "scoring_mean": 4.0,
+      "scoring_scores": [
+        4,
+        4,
+        4
+      ],
+      "criterion_reference": [
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "criterion_evidence": [
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "review_flag": "NO",
+      "semantic_equivalence": "YES"
+    },
+    {
+      "response_id": "ESDSA-SWE02-01-E1L3",
+      "group": "GROUP-022",
+      "letter": "A",
+      "competency": "Technical investigation",
+      "reference": "ADVANCE",
+      "scoring": "ADVANCE",
+      "evidence": "ADVANCE",
+      "scoring_mean": 3.6666666666666665,
+      "scoring_scores": [
+        4,
+        4,
+        3
+      ],
+      "criterion_reference": [
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "criterion_evidence": [
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "review_flag": "NO",
+      "semantic_equivalence": "YES"
+    },
+    {
+      "response_id": "ESDSA-SWE02-01-E1L1",
+      "group": "GROUP-022",
+      "letter": "B",
+      "competency": "Technical investigation",
+      "reference": "ADVANCE",
+      "scoring": "ADVANCE",
+      "evidence": "ADVANCE",
+      "scoring_mean": 4.0,
+      "scoring_scores": [
+        4,
+        4,
+        4
+      ],
+      "criterion_reference": [
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "criterion_evidence": [
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "review_flag": "NO",
+      "semantic_equivalence": "YES"
+    },
+    {
+      "response_id": "ESDSA-SWE02-01-E1L2",
+      "group": "GROUP-022",
+      "letter": "C",
+      "competency": "Technical investigation",
+      "reference": "ADVANCE",
+      "scoring": "ADVANCE",
+      "evidence": "ADVANCE",
+      "scoring_mean": 4.0,
+      "scoring_scores": [
+        4,
+        4,
+        4
+      ],
+      "criterion_reference": [
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "criterion_evidence": [
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "review_flag": "NO",
+      "semantic_equivalence": "YES"
+    },
+    {
+      "response_id": "ESDSA-OPS04-01-E2L1",
+      "group": "GROUP-023",
+      "letter": "A",
+      "competency": "Monitoring and escalation",
+      "reference": "DEFER",
+      "scoring": "DEFER",
+      "evidence": "ADVANCE",
+      "scoring_mean": 2.3333333333333335,
+      "scoring_scores": [
+        3,
+        2,
+        2
+      ],
+      "criterion_reference": [
+        "POSITIVE_EVIDENCE",
+        "INSUFFICIENT_EVIDENCE",
+        "INSUFFICIENT_EVIDENCE"
+      ],
+      "criterion_evidence": [
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "review_flag": "YES",
+      "semantic_equivalence": "YES"
+    },
+    {
+      "response_id": "ESDSA-OPS04-01-E2L2",
+      "group": "GROUP-023",
+      "letter": "B",
+      "competency": "Monitoring and escalation",
+      "reference": "DEFER",
+      "scoring": "DEFER",
+      "evidence": "DEFER",
+      "scoring_mean": 2.3333333333333335,
+      "scoring_scores": [
+        3,
+        2,
+        2
+      ],
+      "criterion_reference": [
+        "POSITIVE_EVIDENCE",
+        "INSUFFICIENT_EVIDENCE",
+        "INSUFFICIENT_EVIDENCE"
+      ],
+      "criterion_evidence": [
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE",
+        "INSUFFICIENT_EVIDENCE"
+      ],
+      "review_flag": "YES",
+      "semantic_equivalence": "YES"
+    },
+    {
+      "response_id": "ESDSA-OPS04-01-E2L3",
+      "group": "GROUP-023",
+      "letter": "C",
+      "competency": "Monitoring and escalation",
+      "reference": "DEFER",
+      "scoring": "DEFER",
+      "evidence": "DEFER",
+      "scoring_mean": 2.0,
+      "scoring_scores": [
+        2,
+        2,
+        2
+      ],
+      "criterion_reference": [
+        "POSITIVE_EVIDENCE",
+        "INSUFFICIENT_EVIDENCE",
+        "INSUFFICIENT_EVIDENCE"
+      ],
+      "criterion_evidence": [
+        "POSITIVE_EVIDENCE",
+        "INSUFFICIENT_EVIDENCE",
+        "INSUFFICIENT_EVIDENCE"
+      ],
+      "review_flag": "YES",
+      "semantic_equivalence": "YES"
+    },
+    {
+      "response_id": "ESDSA-SWE01-01-E1L3",
+      "group": "GROUP-024",
+      "letter": "A",
+      "competency": "Systematic diagnosis",
+      "reference": "ADVANCE",
+      "scoring": "ADVANCE",
+      "evidence": "ADVANCE",
+      "scoring_mean": 3.0,
+      "scoring_scores": [
+        3,
+        3,
+        3
+      ],
+      "criterion_reference": [
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "criterion_evidence": [
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "review_flag": "NO",
+      "semantic_equivalence": "YES"
+    },
+    {
+      "response_id": "ESDSA-SWE01-01-E1L2",
+      "group": "GROUP-024",
+      "letter": "B",
+      "competency": "Systematic diagnosis",
+      "reference": "ADVANCE",
+      "scoring": "ADVANCE",
+      "evidence": "ADVANCE",
+      "scoring_mean": 4.0,
+      "scoring_scores": [
+        4,
+        4,
+        4
+      ],
+      "criterion_reference": [
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "criterion_evidence": [
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "review_flag": "NO",
+      "semantic_equivalence": "YES"
+    },
+    {
+      "response_id": "ESDSA-SWE01-01-E1L1",
+      "group": "GROUP-024",
+      "letter": "C",
+      "competency": "Systematic diagnosis",
+      "reference": "ADVANCE",
+      "scoring": "ADVANCE",
+      "evidence": "ADVANCE",
+      "scoring_mean": 4.0,
+      "scoring_scores": [
+        4,
+        4,
+        4
+      ],
+      "criterion_reference": [
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "criterion_evidence": [
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "review_flag": "NO",
+      "semantic_equivalence": "YES"
+    },
+    {
+      "response_id": "ESDSA-OPS03-01-E3L3",
+      "group": "GROUP-025",
+      "letter": "A",
+      "competency": "Evidence-based coordination",
+      "reference": "DO_NOT_ADVANCE",
+      "scoring": "DEFER",
+      "evidence": "DO_NOT_ADVANCE",
+      "scoring_mean": 1.6666666666666667,
+      "scoring_scores": [
+        2,
+        1,
+        2
+      ],
+      "criterion_reference": [
+        "POSITIVE_EVIDENCE",
+        "NEGATIVE_EVIDENCE",
+        "INSUFFICIENT_EVIDENCE"
+      ],
+      "criterion_evidence": [
+        "POSITIVE_EVIDENCE",
+        "NEGATIVE_EVIDENCE",
+        "NEGATIVE_EVIDENCE"
+      ],
+      "review_flag": "YES",
+      "semantic_equivalence": "YES"
+    },
+    {
+      "response_id": "ESDSA-OPS03-01-E3L2",
+      "group": "GROUP-025",
+      "letter": "B",
+      "competency": "Evidence-based coordination",
+      "reference": "DO_NOT_ADVANCE",
+      "scoring": "DO_NOT_ADVANCE",
+      "evidence": "DO_NOT_ADVANCE",
+      "scoring_mean": 1.0,
+      "scoring_scores": [
+        1,
+        1,
+        1
+      ],
+      "criterion_reference": [
+        "POSITIVE_EVIDENCE",
+        "NEGATIVE_EVIDENCE",
+        "INSUFFICIENT_EVIDENCE"
+      ],
+      "criterion_evidence": [
+        "NEGATIVE_EVIDENCE",
+        "NEGATIVE_EVIDENCE",
+        "NEGATIVE_EVIDENCE"
+      ],
+      "review_flag": "YES",
+      "semantic_equivalence": "YES"
+    },
+    {
+      "response_id": "ESDSA-OPS03-01-E3L1",
+      "group": "GROUP-025",
+      "letter": "C",
+      "competency": "Evidence-based coordination",
+      "reference": "DO_NOT_ADVANCE",
+      "scoring": "DEFER",
+      "evidence": "DO_NOT_ADVANCE",
+      "scoring_mean": 2.0,
+      "scoring_scores": [
+        2,
+        2,
+        2
+      ],
+      "criterion_reference": [
+        "POSITIVE_EVIDENCE",
+        "NEGATIVE_EVIDENCE",
+        "INSUFFICIENT_EVIDENCE"
+      ],
+      "criterion_evidence": [
+        "POSITIVE_EVIDENCE",
+        "NEGATIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "review_flag": "YES",
+      "semantic_equivalence": "YES"
+    },
+    {
+      "response_id": "ESDSA-CSS03-02-E1L2",
+      "group": "GROUP-026",
+      "letter": "A",
+      "competency": "Resolution judgment",
+      "reference": "ADVANCE",
+      "scoring": "ADVANCE",
+      "evidence": "ADVANCE",
+      "scoring_mean": 3.6666666666666665,
+      "scoring_scores": [
+        3,
+        4,
+        4
+      ],
+      "criterion_reference": [
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "criterion_evidence": [
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "review_flag": "NO",
+      "semantic_equivalence": "YES"
+    },
+    {
+      "response_id": "ESDSA-CSS03-02-E1L1",
+      "group": "GROUP-026",
+      "letter": "B",
+      "competency": "Resolution judgment",
+      "reference": "ADVANCE",
+      "scoring": "ADVANCE",
+      "evidence": "ADVANCE",
+      "scoring_mean": 4.0,
+      "scoring_scores": [
+        4,
+        4,
+        4
+      ],
+      "criterion_reference": [
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "criterion_evidence": [
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "review_flag": "NO",
+      "semantic_equivalence": "YES"
+    },
+    {
+      "response_id": "ESDSA-CSS03-02-E1L3",
+      "group": "GROUP-026",
+      "letter": "C",
+      "competency": "Resolution judgment",
+      "reference": "ADVANCE",
+      "scoring": "ADVANCE",
+      "evidence": "ADVANCE",
+      "scoring_mean": 3.6666666666666665,
+      "scoring_scores": [
+        3,
+        4,
+        4
+      ],
+      "criterion_reference": [
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "criterion_evidence": [
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "review_flag": "NO",
+      "semantic_equivalence": "YES"
+    },
+    {
+      "response_id": "ESDSA-SWE03-01-E1L1",
+      "group": "GROUP-027",
+      "letter": "A",
+      "competency": "Reasoned correction",
+      "reference": "ADVANCE",
+      "scoring": "ADVANCE",
+      "evidence": "ADVANCE",
+      "scoring_mean": 4.0,
+      "scoring_scores": [
+        4,
+        4,
+        4
+      ],
+      "criterion_reference": [
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "criterion_evidence": [
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "review_flag": "NO",
+      "semantic_equivalence": "YES"
+    },
+    {
+      "response_id": "ESDSA-SWE03-01-E1L2",
+      "group": "GROUP-027",
+      "letter": "B",
+      "competency": "Reasoned correction",
+      "reference": "ADVANCE",
+      "scoring": "ADVANCE",
+      "evidence": "ADVANCE",
+      "scoring_mean": 4.0,
+      "scoring_scores": [
+        4,
+        4,
+        4
+      ],
+      "criterion_reference": [
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "criterion_evidence": [
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "review_flag": "NO",
+      "semantic_equivalence": "YES"
+    },
+    {
+      "response_id": "ESDSA-SWE03-01-E1L3",
+      "group": "GROUP-027",
+      "letter": "C",
+      "competency": "Reasoned correction",
+      "reference": "ADVANCE",
+      "scoring": "ADVANCE",
+      "evidence": "ADVANCE",
+      "scoring_mean": 4.0,
+      "scoring_scores": [
+        4,
+        4,
+        4
+      ],
+      "criterion_reference": [
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "criterion_evidence": [
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "review_flag": "NO",
+      "semantic_equivalence": "YES"
+    },
+    {
+      "response_id": "ESDSA-CSS04-02-E1L1",
+      "group": "GROUP-028",
+      "letter": "A",
+      "competency": "Communication and follow-up",
+      "reference": "ADVANCE",
+      "scoring": "ADVANCE",
+      "evidence": "ADVANCE",
+      "scoring_mean": 4.0,
+      "scoring_scores": [
+        4,
+        4,
+        4
+      ],
+      "criterion_reference": [
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "criterion_evidence": [
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "review_flag": "NO",
+      "semantic_equivalence": "YES"
+    },
+    {
+      "response_id": "ESDSA-CSS04-02-E1L2",
+      "group": "GROUP-028",
+      "letter": "B",
+      "competency": "Communication and follow-up",
+      "reference": "ADVANCE",
+      "scoring": "ADVANCE",
+      "evidence": "ADVANCE",
+      "scoring_mean": 4.0,
+      "scoring_scores": [
+        4,
+        4,
+        4
+      ],
+      "criterion_reference": [
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "criterion_evidence": [
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "review_flag": "NO",
+      "semantic_equivalence": "YES"
+    },
+    {
+      "response_id": "ESDSA-CSS04-02-E1L3",
+      "group": "GROUP-028",
+      "letter": "C",
+      "competency": "Communication and follow-up",
+      "reference": "ADVANCE",
+      "scoring": "ADVANCE",
+      "evidence": "ADVANCE",
+      "scoring_mean": 4.0,
+      "scoring_scores": [
+        4,
+        4,
+        4
+      ],
+      "criterion_reference": [
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "criterion_evidence": [
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "review_flag": "NO",
+      "semantic_equivalence": "YES"
+    },
+    {
+      "response_id": "ESDSA-OPS01-01-E1L1",
+      "group": "GROUP-029",
+      "letter": "A",
+      "competency": "Prioritisation",
+      "reference": "ADVANCE",
+      "scoring": "ADVANCE",
+      "evidence": "ADVANCE",
+      "scoring_mean": 4.0,
+      "scoring_scores": [
+        4,
+        4,
+        4
+      ],
+      "criterion_reference": [
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "criterion_evidence": [
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "review_flag": "NO",
+      "semantic_equivalence": "YES"
+    },
+    {
+      "response_id": "ESDSA-OPS01-01-E1L3",
+      "group": "GROUP-029",
+      "letter": "B",
+      "competency": "Prioritisation",
+      "reference": "ADVANCE",
+      "scoring": "ADVANCE",
+      "evidence": "ADVANCE",
+      "scoring_mean": 3.6666666666666665,
+      "scoring_scores": [
+        4,
+        3,
+        4
+      ],
+      "criterion_reference": [
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "criterion_evidence": [
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "review_flag": "NO",
+      "semantic_equivalence": "YES"
+    },
+    {
+      "response_id": "ESDSA-OPS01-01-E1L2",
+      "group": "GROUP-029",
+      "letter": "C",
+      "competency": "Prioritisation",
+      "reference": "ADVANCE",
+      "scoring": "ADVANCE",
+      "evidence": "ADVANCE",
+      "scoring_mean": 3.6666666666666665,
+      "scoring_scores": [
+        4,
+        3,
+        4
+      ],
+      "criterion_reference": [
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "criterion_evidence": [
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "review_flag": "NO",
+      "semantic_equivalence": "YES"
+    },
+    {
+      "response_id": "ESDSA-OPS04-01-E3L1",
+      "group": "GROUP-030",
+      "letter": "A",
+      "competency": "Monitoring and escalation",
+      "reference": "DO_NOT_ADVANCE",
+      "scoring": "DO_NOT_ADVANCE",
+      "evidence": "DO_NOT_ADVANCE",
+      "scoring_mean": 1.3333333333333333,
+      "scoring_scores": [
+        2,
+        1,
+        1
+      ],
+      "criterion_reference": [
+        "INSUFFICIENT_EVIDENCE",
+        "NEGATIVE_EVIDENCE",
+        "NEGATIVE_EVIDENCE"
+      ],
+      "criterion_evidence": [
+        "NEGATIVE_EVIDENCE",
+        "NEGATIVE_EVIDENCE",
+        "NEGATIVE_EVIDENCE"
+      ],
+      "review_flag": "YES",
+      "semantic_equivalence": "YES"
+    },
+    {
+      "response_id": "ESDSA-OPS04-01-E3L3",
+      "group": "GROUP-030",
+      "letter": "B",
+      "competency": "Monitoring and escalation",
+      "reference": "DO_NOT_ADVANCE",
+      "scoring": "DO_NOT_ADVANCE",
+      "evidence": "DO_NOT_ADVANCE",
+      "scoring_mean": 1.3333333333333333,
+      "scoring_scores": [
+        2,
+        1,
+        1
+      ],
+      "criterion_reference": [
+        "INSUFFICIENT_EVIDENCE",
+        "NEGATIVE_EVIDENCE",
+        "NEGATIVE_EVIDENCE"
+      ],
+      "criterion_evidence": [
+        "INSUFFICIENT_EVIDENCE",
+        "NEGATIVE_EVIDENCE",
+        "INSUFFICIENT_EVIDENCE"
+      ],
+      "review_flag": "YES",
+      "semantic_equivalence": "YES"
+    },
+    {
+      "response_id": "ESDSA-OPS04-01-E3L2",
+      "group": "GROUP-030",
+      "letter": "C",
+      "competency": "Monitoring and escalation",
+      "reference": "DO_NOT_ADVANCE",
+      "scoring": "DO_NOT_ADVANCE",
+      "evidence": "DO_NOT_ADVANCE",
+      "scoring_mean": 1.0,
+      "scoring_scores": [
+        1,
+        1,
+        1
+      ],
+      "criterion_reference": [
+        "INSUFFICIENT_EVIDENCE",
+        "NEGATIVE_EVIDENCE",
+        "NEGATIVE_EVIDENCE"
+      ],
+      "criterion_evidence": [
+        "NEGATIVE_EVIDENCE",
+        "NEGATIVE_EVIDENCE",
+        "NEGATIVE_EVIDENCE"
+      ],
+      "review_flag": "YES",
+      "semantic_equivalence": "YES"
+    },
+    {
+      "response_id": "ESDSA-OPS03-01-E2L1",
+      "group": "GROUP-031",
+      "letter": "A",
+      "competency": "Evidence-based coordination",
+      "reference": "DEFER",
+      "scoring": "DEFER",
+      "evidence": "ADVANCE",
+      "scoring_mean": 2.3333333333333335,
+      "scoring_scores": [
+        3,
+        2,
+        2
+      ],
+      "criterion_reference": [
+        "POSITIVE_EVIDENCE",
+        "INSUFFICIENT_EVIDENCE",
+        "INSUFFICIENT_EVIDENCE"
+      ],
+      "criterion_evidence": [
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "review_flag": "YES",
+      "semantic_equivalence": "YES"
+    },
+    {
+      "response_id": "ESDSA-OPS03-01-E2L2",
+      "group": "GROUP-031",
+      "letter": "B",
+      "competency": "Evidence-based coordination",
+      "reference": "DEFER",
+      "scoring": "DEFER",
+      "evidence": "ADVANCE",
+      "scoring_mean": 2.3333333333333335,
+      "scoring_scores": [
+        3,
+        2,
+        2
+      ],
+      "criterion_reference": [
+        "POSITIVE_EVIDENCE",
+        "INSUFFICIENT_EVIDENCE",
+        "INSUFFICIENT_EVIDENCE"
+      ],
+      "criterion_evidence": [
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "review_flag": "YES",
+      "semantic_equivalence": "YES"
+    },
+    {
+      "response_id": "ESDSA-OPS03-01-E2L3",
+      "group": "GROUP-031",
+      "letter": "C",
+      "competency": "Evidence-based coordination",
+      "reference": "DEFER",
+      "scoring": "DEFER",
+      "evidence": "ADVANCE",
+      "scoring_mean": 2.3333333333333335,
+      "scoring_scores": [
+        3,
+        2,
+        2
+      ],
+      "criterion_reference": [
+        "POSITIVE_EVIDENCE",
+        "INSUFFICIENT_EVIDENCE",
+        "INSUFFICIENT_EVIDENCE"
+      ],
+      "criterion_evidence": [
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "review_flag": "YES",
+      "semantic_equivalence": "YES"
+    },
+    {
+      "response_id": "ESDSA-OPS02-03-E3L1",
+      "group": "GROUP-032",
+      "letter": "A",
+      "competency": "Risk identification",
+      "reference": "DO_NOT_ADVANCE",
+      "scoring": "DO_NOT_ADVANCE",
+      "evidence": "DO_NOT_ADVANCE",
+      "scoring_mean": 1.3333333333333333,
+      "scoring_scores": [
+        2,
+        1,
+        1
+      ],
+      "criterion_reference": [
+        "POSITIVE_EVIDENCE",
+        "INSUFFICIENT_EVIDENCE",
+        "NEGATIVE_EVIDENCE"
+      ],
+      "criterion_evidence": [
+        "POSITIVE_EVIDENCE",
+        "NEGATIVE_EVIDENCE",
+        "NEGATIVE_EVIDENCE"
+      ],
+      "review_flag": "YES",
+      "semantic_equivalence": "YES"
+    },
+    {
+      "response_id": "ESDSA-OPS02-03-E3L3",
+      "group": "GROUP-032",
+      "letter": "B",
+      "competency": "Risk identification",
+      "reference": "DO_NOT_ADVANCE",
+      "scoring": "DEFER",
+      "evidence": "DO_NOT_ADVANCE",
+      "scoring_mean": 2.0,
+      "scoring_scores": [
+        3,
+        2,
+        1
+      ],
+      "criterion_reference": [
+        "POSITIVE_EVIDENCE",
+        "INSUFFICIENT_EVIDENCE",
+        "NEGATIVE_EVIDENCE"
+      ],
+      "criterion_evidence": [
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE",
+        "NEGATIVE_EVIDENCE"
+      ],
+      "review_flag": "YES",
+      "semantic_equivalence": "YES"
+    },
+    {
+      "response_id": "ESDSA-OPS02-03-E3L2",
+      "group": "GROUP-032",
+      "letter": "C",
+      "competency": "Risk identification",
+      "reference": "DO_NOT_ADVANCE",
+      "scoring": "DO_NOT_ADVANCE",
+      "evidence": "DO_NOT_ADVANCE",
+      "scoring_mean": 1.3333333333333333,
+      "scoring_scores": [
+        2,
+        1,
+        1
+      ],
+      "criterion_reference": [
+        "POSITIVE_EVIDENCE",
+        "INSUFFICIENT_EVIDENCE",
+        "NEGATIVE_EVIDENCE"
+      ],
+      "criterion_evidence": [
+        "POSITIVE_EVIDENCE",
+        "NEGATIVE_EVIDENCE",
+        "NEGATIVE_EVIDENCE"
+      ],
+      "review_flag": "YES",
+      "semantic_equivalence": "YES"
+    },
+    {
+      "response_id": "ESDSA-CSS01-01-E3L1",
+      "group": "GROUP-033",
+      "letter": "A",
+      "competency": "Problem identification",
+      "reference": "DO_NOT_ADVANCE",
+      "scoring": "DO_NOT_ADVANCE",
+      "evidence": "DO_NOT_ADVANCE",
+      "scoring_mean": 1.3333333333333333,
+      "scoring_scores": [
+        2,
+        1,
+        1
+      ],
+      "criterion_reference": [
+        "NEGATIVE_EVIDENCE",
+        "INSUFFICIENT_EVIDENCE",
+        "NEGATIVE_EVIDENCE"
+      ],
+      "criterion_evidence": [
+        "NEGATIVE_EVIDENCE",
+        "INSUFFICIENT_EVIDENCE",
+        "NEGATIVE_EVIDENCE"
+      ],
+      "review_flag": "NO",
+      "semantic_equivalence": "YES"
+    },
+    {
+      "response_id": "ESDSA-CSS01-01-E3L3",
+      "group": "GROUP-033",
+      "letter": "B",
+      "competency": "Problem identification",
+      "reference": "DO_NOT_ADVANCE",
+      "scoring": "DO_NOT_ADVANCE",
+      "evidence": "DO_NOT_ADVANCE",
+      "scoring_mean": 1.0,
+      "scoring_scores": [
+        1,
+        1,
+        1
+      ],
+      "criterion_reference": [
+        "NEGATIVE_EVIDENCE",
+        "INSUFFICIENT_EVIDENCE",
+        "NEGATIVE_EVIDENCE"
+      ],
+      "criterion_evidence": [
+        "NEGATIVE_EVIDENCE",
+        "INSUFFICIENT_EVIDENCE",
+        "NEGATIVE_EVIDENCE"
+      ],
+      "review_flag": "NO",
+      "semantic_equivalence": "YES"
+    },
+    {
+      "response_id": "ESDSA-CSS01-01-E3L2",
+      "group": "GROUP-033",
+      "letter": "C",
+      "competency": "Problem identification",
+      "reference": "DO_NOT_ADVANCE",
+      "scoring": "DO_NOT_ADVANCE",
+      "evidence": "DO_NOT_ADVANCE",
+      "scoring_mean": 1.0,
+      "scoring_scores": [
+        1,
+        1,
+        1
+      ],
+      "criterion_reference": [
+        "NEGATIVE_EVIDENCE",
+        "INSUFFICIENT_EVIDENCE",
+        "NEGATIVE_EVIDENCE"
+      ],
+      "criterion_evidence": [
+        "NEGATIVE_EVIDENCE",
+        "INSUFFICIENT_EVIDENCE",
+        "NEGATIVE_EVIDENCE"
+      ],
+      "review_flag": "NO",
+      "semantic_equivalence": "YES"
+    },
+    {
+      "response_id": "ESDSA-OPS01-01-E3L2",
+      "group": "GROUP-034",
+      "letter": "A",
+      "competency": "Prioritisation",
+      "reference": "DO_NOT_ADVANCE",
+      "scoring": "DO_NOT_ADVANCE",
+      "evidence": "DO_NOT_ADVANCE",
+      "scoring_mean": 1.0,
+      "scoring_scores": [
+        1,
+        1,
+        1
+      ],
+      "criterion_reference": [
+        "NEGATIVE_EVIDENCE",
+        "NEGATIVE_EVIDENCE",
+        "NEGATIVE_EVIDENCE"
+      ],
+      "criterion_evidence": [
+        "NEGATIVE_EVIDENCE",
+        "NEGATIVE_EVIDENCE",
+        "NEGATIVE_EVIDENCE"
+      ],
+      "review_flag": "NO",
+      "semantic_equivalence": "YES"
+    },
+    {
+      "response_id": "ESDSA-OPS01-01-E3L1",
+      "group": "GROUP-034",
+      "letter": "B",
+      "competency": "Prioritisation",
+      "reference": "DO_NOT_ADVANCE",
+      "scoring": "DO_NOT_ADVANCE",
+      "evidence": "DO_NOT_ADVANCE",
+      "scoring_mean": 1.3333333333333333,
+      "scoring_scores": [
+        1,
+        2,
+        1
+      ],
+      "criterion_reference": [
+        "NEGATIVE_EVIDENCE",
+        "NEGATIVE_EVIDENCE",
+        "NEGATIVE_EVIDENCE"
+      ],
+      "criterion_evidence": [
+        "NEGATIVE_EVIDENCE",
+        "NEGATIVE_EVIDENCE",
+        "NEGATIVE_EVIDENCE"
+      ],
+      "review_flag": "NO",
+      "semantic_equivalence": "YES"
+    },
+    {
+      "response_id": "ESDSA-OPS01-01-E3L3",
+      "group": "GROUP-034",
+      "letter": "C",
+      "competency": "Prioritisation",
+      "reference": "DO_NOT_ADVANCE",
+      "scoring": "DO_NOT_ADVANCE",
+      "evidence": "DO_NOT_ADVANCE",
+      "scoring_mean": 1.0,
+      "scoring_scores": [
+        1,
+        1,
+        1
+      ],
+      "criterion_reference": [
+        "NEGATIVE_EVIDENCE",
+        "NEGATIVE_EVIDENCE",
+        "NEGATIVE_EVIDENCE"
+      ],
+      "criterion_evidence": [
+        "NEGATIVE_EVIDENCE",
+        "NEGATIVE_EVIDENCE",
+        "NEGATIVE_EVIDENCE"
+      ],
+      "review_flag": "NO",
+      "semantic_equivalence": "YES"
+    },
+    {
+      "response_id": "ESDSA-SWE04-01-E2L3",
+      "group": "GROUP-035",
+      "letter": "A",
+      "competency": "Verification and testing",
+      "reference": "ADVANCE",
+      "scoring": "ADVANCE",
+      "evidence": "ADVANCE",
+      "scoring_mean": 3.0,
+      "scoring_scores": [
+        3,
+        3,
+        3
+      ],
+      "criterion_reference": [
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "criterion_evidence": [
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "review_flag": "YES",
+      "semantic_equivalence": "UNCERTAIN"
+    },
+    {
+      "response_id": "ESDSA-SWE04-01-E2L2",
+      "group": "GROUP-035",
+      "letter": "B",
+      "competency": "Verification and testing",
+      "reference": "ADVANCE",
+      "scoring": "ADVANCE",
+      "evidence": "ADVANCE",
+      "scoring_mean": 3.3333333333333335,
+      "scoring_scores": [
+        4,
+        3,
+        3
+      ],
+      "criterion_reference": [
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "criterion_evidence": [
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "review_flag": "YES",
+      "semantic_equivalence": "UNCERTAIN"
+    },
+    {
+      "response_id": "ESDSA-SWE04-01-E2L1",
+      "group": "GROUP-035",
+      "letter": "C",
+      "competency": "Verification and testing",
+      "reference": "ADVANCE",
+      "scoring": "ADVANCE",
+      "evidence": "ADVANCE",
+      "scoring_mean": 3.6666666666666665,
+      "scoring_scores": [
+        4,
+        4,
+        3
+      ],
+      "criterion_reference": [
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "criterion_evidence": [
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "review_flag": "YES",
+      "semantic_equivalence": "UNCERTAIN"
+    },
+    {
+      "response_id": "ESDSA-SWE03-01-E2L1",
+      "group": "GROUP-036",
+      "letter": "A",
+      "competency": "Reasoned correction",
+      "reference": "DEFER",
+      "scoring": "ADVANCE",
+      "evidence": "ADVANCE",
+      "scoring_mean": 3.0,
+      "scoring_scores": [
+        3,
+        3,
+        3
+      ],
+      "criterion_reference": [
+        "POSITIVE_EVIDENCE",
+        "INSUFFICIENT_EVIDENCE",
+        "INSUFFICIENT_EVIDENCE"
+      ],
+      "criterion_evidence": [
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "review_flag": "YES",
+      "semantic_equivalence": "UNCERTAIN"
+    },
+    {
+      "response_id": "ESDSA-SWE03-01-E2L3",
+      "group": "GROUP-036",
+      "letter": "B",
+      "competency": "Reasoned correction",
+      "reference": "DEFER",
+      "scoring": "DEFER",
+      "evidence": "DEFER",
+      "scoring_mean": 2.0,
+      "scoring_scores": [
+        2,
+        2,
+        2
+      ],
+      "criterion_reference": [
+        "POSITIVE_EVIDENCE",
+        "INSUFFICIENT_EVIDENCE",
+        "INSUFFICIENT_EVIDENCE"
+      ],
+      "criterion_evidence": [
+        "INSUFFICIENT_EVIDENCE",
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "review_flag": "YES",
+      "semantic_equivalence": "UNCERTAIN"
+    },
+    {
+      "response_id": "ESDSA-SWE03-01-E2L2",
+      "group": "GROUP-036",
+      "letter": "C",
+      "competency": "Reasoned correction",
+      "reference": "DEFER",
+      "scoring": "DEFER",
+      "evidence": "ADVANCE",
+      "scoring_mean": 2.3333333333333335,
+      "scoring_scores": [
+        3,
+        2,
+        2
+      ],
+      "criterion_reference": [
+        "POSITIVE_EVIDENCE",
+        "INSUFFICIENT_EVIDENCE",
+        "INSUFFICIENT_EVIDENCE"
+      ],
+      "criterion_evidence": [
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE",
+        "POSITIVE_EVIDENCE"
+      ],
+      "review_flag": "YES",
+      "semantic_equivalence": "UNCERTAIN"
+    }
+  ]
+}

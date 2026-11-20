@@ -1,0 +1,35 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_PILOT_V1",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-4B0BFDA5FC814888",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V1",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_06f3fc7db29a7f93016aff9649f4b487d0b71e16b20e5c643a",
+  "annotated_utc": "2026-11-20T00:37:31.917879+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "CSS02-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d first get the story as clearly as I can by asking a few targeted questions, like roughly when they cancelled, how they did it, and whether they saw any confirmation.",
+        "rationale": "This explicitly shows the candidate would ask relevant questions to understand the issue and gather needed information."
+      },
+      {
+        "criterion_id": "CSS02-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "Then I’d check our internal records to verify what’s actually on the account — cancellation status, logs, and any notes — instead of assuming the payment history tells the whole story.",
+        "rationale": "This clearly distinguishes verified account records from assumptions and shows an evidence-based approach to assessing what happened."
+      },
+      {
+        "criterion_id": "CSS02-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d stick to the information I’m allowed to access and wouldn’t ask for extra sensitive details unless there was a clear, approved reason.",
+        "rationale": "This demonstrates collecting only appropriate and authorised information, with restraint around sensitive details."
+      }
+    ],
+    "annotation_notes": "The answer provides direct evidence for all three information-gathering competencies in the scenario."
+  }
+}

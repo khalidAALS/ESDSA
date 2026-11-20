@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-0C9DD7FA436CF854",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_033b57b1ba4dc048016b000cad5db087d0943789062361e7d5",
+  "annotated_utc": "2026-11-20T09:02:39.765274+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "CSS01-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d re-clarify the symptom, ask what happens right before the lockout",
+        "rationale": "The candidate explicitly says they would re-clarify the symptom and ask about the events leading up to the lockout, which directly establishes what problem the customer is experiencing."
+      },
+      {
+        "criterion_id": "CSS01-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "check what it prevents the customer from doing",
+        "rationale": "This directly identifies the affected service/outcome by asking what the issue stops the customer from doing."
+      },
+      {
+        "criterion_id": "CSS01-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "Then I’d restate the issue back to them to confirm I’m focused on the current problem",
+        "rationale": "Restating the issue back to the customer shows the candidate would summarize the problem before moving toward resolution."
+      }
+    ],
+    "annotation_notes": "The answer provides clear, relevant problem-identification steps and supports all three criteria."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

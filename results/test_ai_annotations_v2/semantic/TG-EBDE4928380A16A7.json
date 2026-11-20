@@ -1,0 +1,18 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "SEMANTIC_EQUIVALENCE",
+  "blinded_id": "TG-EBDE4928380A16A7",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_09a0d9a3d87d7392016b002bee443487d0a4cb6b9e8ba32935",
+  "annotated_utc": "2026-11-20T11:15:59.765484+00:00",
+  "annotation": {
+    "semantic_equivalence": "YES",
+    "material_differences": "",
+    "equivalence_rationale": "All three responses preserve the same decision-relevant evidence for clear explanation, expectation management, and follow-up. Each acknowledges the applied fix while avoiding premature closure, asks the customer to retry/confirm what they observe, avoids unsupported promises about timing or resolution, and provides a mechanism for the next update or confirmation. The wording and level of detail differ, but no material change in operational commitment or criterion-level evidence is introduced."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

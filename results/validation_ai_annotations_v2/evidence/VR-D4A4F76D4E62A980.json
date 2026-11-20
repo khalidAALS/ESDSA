@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-D4A4F76D4E62A980",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_045de4e6d174e030016b00105095a087d0a1e84cfe60568adc",
+  "annotated_utc": "2026-11-20T09:18:10.850153+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "SWE03-C1",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "Even if we haven’t fully confirmed that component is the source, it’s the most efficient place to update",
+        "rationale": "The answer explicitly says the component has not been confirmed as the source, while still proposing to change it. This undercuts cause identification supported by investigation."
+      },
+      {
+        "criterion_id": "SWE03-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I would probably make the shared calculation change first",
+        "rationale": "The candidate directly links the proposed correction to the shared calculation component, showing the correction is targeted at that identified area."
+      },
+      {
+        "criterion_id": "SWE03-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "it’s better to standardize the math than to create special handling around one affected area. Even if we haven’t fully confirmed that component is the source, it’s the most efficient place to update, and it should keep the reports aligned with the new logic.",
+        "rationale": "The candidate explains why the change is preferred: it standardizes the math and should align reports with the new logic, which is a justification for how the correction addresses the problem."
+      }
+    ],
+    "annotation_notes": "The response gives a rationale for choosing the shared calculation change, but it does not establish investigation-based identification of the root cause; it even notes the source is unconfirmed."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

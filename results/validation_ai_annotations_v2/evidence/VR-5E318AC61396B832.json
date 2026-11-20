@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-5E318AC61396B832",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0899c885ba32d4da016b000c73cf4487d089019ff75482708b",
+  "annotated_utc": "2026-11-20T09:01:41.947453+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "OPS04-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d track each activity against its milestone, due date, owner, and dependencies.",
+        "rationale": "This explicitly identifies the information the candidate would use to monitor execution, satisfying the criterion."
+      },
+      {
+        "criterion_id": "OPS04-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d watch for missed steps, worsening quality issues, or external information that’s late enough to affect delivery.",
+        "rationale": "This clearly describes recognizing deviations that require attention or action."
+      },
+      {
+        "criterion_id": "OPS04-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "If any of those create real risk, I’d escalate to the right owner with the impact and required action, then follow up to confirm response and resolution.",
+        "rationale": "This explicitly states directing issues to the appropriate owner and verifying response/resolution."
+      }
+    ],
+    "annotation_notes": "The answer provides direct, relevant monitoring and escalation behaviours for all three criteria."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

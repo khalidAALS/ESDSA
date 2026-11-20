@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-416B6D6A5E4107AE",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0b2cecc4c842c917016b0029833cb087d0b61d45fe2351814f",
+  "annotated_utc": "2026-11-20T11:05:41.632733+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "SWE04-C1",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I’d deploy it without rerunning the failed case",
+        "rationale": "This explicitly says the candidate would not rerun the failed case, which contradicts the criterion of testing whether the reported failure is resolved."
+      },
+      {
+        "criterion_id": "SWE04-C2",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "or doing extra checks on refunds and discounts.",
+        "rationale": "The candidate explicitly declines to check refunds and discounts, even though the scenario says the logic also supports those behaviours, which contradicts assessing potential impact on previously working behaviour."
+      },
+      {
+        "criterion_id": "SWE04-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "If the patch looks correct in review, I’d deploy it",
+        "rationale": "This shows the candidate would use their verification judgment to decide the next action, namely deployment."
+      }
+    ],
+    "annotation_notes": "The answer is brief and does not describe a testing process, but it does clearly state what action would follow the candidate's review-based assessment."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

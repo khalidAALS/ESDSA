@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-FB5859F2A952845A",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_074a2f52755199ca016b000cfe265487d0a6d5681feb506475",
+  "annotated_utc": "2026-11-20T09:04:00.832349+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "CSS03-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d ask a few more questions about what happened and what they’ve already tried, then I’d look at the usual resolution options and go with the one that seems most reasonable.",
+        "rationale": "This shows the candidate would assess the available information and choose among resolution options based on what seems most reasonable, which aligns with considering an appropriate resolution in light of the evidence."
+      },
+      {
+        "criterion_id": "CSS03-C2",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "passage": "",
+        "rationale": "The answer does not clearly mention any policy, authorisation, or service constraints, nor does it demonstrate respecting them. It also does not clearly violate them, so there is insufficient evidence for this criterion."
+      },
+      {
+        "criterion_id": "CSS03-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "If I still didn’t have the purchase record, I’d keep trying to get the details so I could move things forward. I’d let the customer know I’m still checking before I commit to anything.",
+        "rationale": "This explicitly shows the candidate recognises that more information is needed and avoids committing before that information is obtained, which is appropriate handling of uncertainty."
+      }
+    ],
+    "annotation_notes": "The response is cautious and information-seeking, but it does not provide enough detail to judge policy/authorisation awareness."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

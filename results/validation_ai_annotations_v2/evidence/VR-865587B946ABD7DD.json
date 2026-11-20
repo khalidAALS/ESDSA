@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-865587B946ABD7DD",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0d020c718e2dd43c016b000baf254487d0af766fe89dd7a3f5",
+  "annotated_utc": "2026-11-20T08:58:25.318740+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "SWE03-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d investigate the issue with logs, sample reports, and a reproducible test to understand where the figures diverge from expected values. If the shared calculation component is involved, I’d be inclined to review it carefully and consider whether it needs a correction.",
+        "rationale": "The answer proposes investigation methods and identifies the shared calculation component as a plausible cause to examine, which is supported by the investigation."
+      },
+      {
+        "criterion_id": "SWE03-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "If the shared calculation component is involved, I’d be inclined to review it carefully and consider whether it needs a correction.",
+        "rationale": "This explicitly links the proposed correction to the identified cause by saying the shared calculation component may need correction if it is involved."
+      },
+      {
+        "criterion_id": "SWE03-C3",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "passage": "",
+        "rationale": "The answer discusses gathering evidence and choosing between correcting the shared component or narrowing access, but it does not clearly explain why either correction would address the underlying problem beyond a general desire to reduce customer impact."
+      }
+    ],
+    "annotation_notes": ""
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

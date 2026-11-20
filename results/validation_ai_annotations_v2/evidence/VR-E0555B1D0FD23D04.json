@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-E0555B1D0FD23D04",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0a846b7395b55f8e016b000bd66dd087d0a11d7bd46dd1100c",
+  "annotated_utc": "2026-11-20T08:59:05.357714+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "SWE02-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d start with the job logs and the run history, then compare slow executions to the ones that finish on time. I’d look for obvious differences like input size or a recent release, and I’d also check whether the external dependency had any known incidents around those times.",
+        "rationale": "This identifies multiple relevant technical evidence sources for the delay: logs, run history, execution comparisons, input characteristics, release history, and external dependency incidents."
+      },
+      {
+        "criterion_id": "SWE02-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d start with the job logs and the run history, then compare slow executions to the ones that finish on time. I’d look for obvious differences like input size or a recent release, and I’d also check whether the external dependency had any known incidents around those times.",
+        "rationale": "The answer proposes comparing slow versus normal runs and checking different potential causes (input size, release changes, dependency incidents), which are checks intended to distinguish among competing explanations."
+      },
+      {
+        "criterion_id": "SWE02-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "If I didn’t see anything clear there, I’d dig more into the processing code and follow the main path through it. That would at least help me narrow down where to spend more time. I’d use whatever pattern shows up most clearly as the next step.",
+        "rationale": "The candidate explicitly interprets observed patterns as a way to narrow where to focus next, linking observations to a diagnostic next step. While not a full root-cause conclusion, it does connect evidence to investigation direction."
+      }
+    ],
+    "annotation_notes": "The answer is strongest on evidence gathering and differential checking; the diagnostic conclusion is tentative rather than definitive, but still sufficient for positive evidence on interpretation because it explicitly uses patterns to narrow the search."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

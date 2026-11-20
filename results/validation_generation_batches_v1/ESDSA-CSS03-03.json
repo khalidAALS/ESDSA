@@ -1,0 +1,75 @@
+{
+  "experiment": "ESDSA_VALIDATION_GENERATION_V1",
+  "partition": "VALIDATION",
+  "family_id": "ESDSA-CSS03-03",
+  "run_sha256": "5d5ba5b5275074764612b35a6e93fd8a0643f08102d981a665802eb51ed4b4e3",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "response_id": "resp_0762344498cd1f34016aff914e9f1087d08ae5b5fa96c5e345",
+  "response_status": "completed",
+  "usage": {
+    "input_tokens": 741,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      }
+    },
+    "output_tokens": 917,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 1658
+  },
+  "raw_output_text": "{\"responses\":[{\"condition\":\"SUFFICIENT\",\"variant\":\"CANONICAL\",\"answer\":\"I’d avoid promising a refund right away and first work out which resolution fits the facts. Since the description is brief and I can’t immediately see the purchase record, I’d confirm the basics: when it was bought, what stopped working, whether there’s troubleshooting already done, and whether the item is still within the return or warranty window. If the product is eligible, I’d follow the normal remedy path, whether that’s a replacement, repair, or refund depending on policy and the customer’s preference. If the case looks like an exception or the record remains unclear, I’d escalate it for approval rather than guessing or bypassing the process. The main thing is to verify eligibility before choosing the remedy and keep the customer informed while I’m checking.\"},{\"condition\":\"SUFFICIENT\",\"variant\":\"CONVERSATIONAL\",\"answer\":\"I wouldn’t jump straight to a refund. I’d first check the key facts—purchase date, warranty or return window, what the problem is, and whether we have any troubleshooting or serial-number details to match the order. Based on that, I’d pick the resolution that fits our policy, like replacement, repair, or refund if it’s actually eligible. If I can’t confirm the record or it looks like an exception, I’d escalate it for approval instead of making a call that shouldn’t be made at my level. So basically, I’d verify eligibility first, then choose the right action.\"},{\"condition\":\"SUFFICIENT\",\"variant\":\"CONCISE\",\"answer\":\"I’d verify the purchase details, warranty/return eligibility, and basic troubleshooting before choosing a remedy. If it’s eligible, I’d apply the appropriate policy-based resolution; if it’s unclear or an exception is needed, I’d escalate for approval rather than deciding blindly.\"},{\"condition\":\"INSUFFICIENT\",\"variant\":\"CANONICAL\",\"answer\":\"I’d start by gathering as much context as I can from the customer, such as what the product is doing, when the issue began, and any troubleshooting they’ve already tried. If the item seems to be within the normal support window, I’d look at the available resolutions and choose the one that seems most practical for the situation. If the purchase record still isn’t available, I’d keep following up until I can get enough information to move forward, since I wouldn’t want to rush the wrong fix. I’d also make sure the customer knows I’m checking the details before anything is finalized.\"},{\"condition\":\"INSUFFICIENT\",\"variant\":\"CONVERSATIONAL\",\"answer\":\"I’d ask a few more questions about what happened and what they’ve already tried, then I’d look at the usual resolution options and go with the one that seems most reasonable. If I still didn’t have the purchase record, I’d keep trying to get the details so I could move things forward. I’d let the customer know I’m still checking before I commit to anything.\"},{\"condition\":\"INSUFFICIENT\",\"variant\":\"CONCISE\",\"answer\":\"I’d collect more details, review the available options, and keep checking until I had enough information to move forward. I wouldn’t want to finalize anything without confirming the facts.\"},{\"condition\":\"NEGATIVE\",\"variant\":\"CANONICAL\",\"answer\":\"I’d likely approve the refund first so the customer doesn’t have to wait, and then sort out the purchase record afterward. If the product is reported as not working, I’d prefer to take the customer’s word for it and move straight to the fastest remedy, since delaying often creates more frustration. If later it turns out the item wasn’t eligible, we can deal with that through the normal follow-up process. I’d only escalate if the customer specifically pushes back on the refund amount or wants something different.\"},{\"condition\":\"NEGATIVE\",\"variant\":\"CONVERSATIONAL\",\"answer\":\"I’d probably just process the refund right away to keep things moving, then look into the order details after. If they say the product stopped working, I’d rather not make them wait while I dig through records. If it turns out there’s a policy issue later, that can be handled afterward. I’d only escalate if the customer is unhappy with the outcome.\"},{\"condition\":\"NEGATIVE\",\"variant\":\"CONCISE\",\"answer\":\"I’d issue the refund first and check the purchase details later so the customer isn’t waiting. If there’s a policy issue, it can be handled afterward.\"}]}",
+  "responses": [
+    {
+      "condition": "SUFFICIENT",
+      "variant": "CANONICAL",
+      "answer": "I’d avoid promising a refund right away and first work out which resolution fits the facts. Since the description is brief and I can’t immediately see the purchase record, I’d confirm the basics: when it was bought, what stopped working, whether there’s troubleshooting already done, and whether the item is still within the return or warranty window. If the product is eligible, I’d follow the normal remedy path, whether that’s a replacement, repair, or refund depending on policy and the customer’s preference. If the case looks like an exception or the record remains unclear, I’d escalate it for approval rather than guessing or bypassing the process. The main thing is to verify eligibility before choosing the remedy and keep the customer informed while I’m checking."
+    },
+    {
+      "condition": "SUFFICIENT",
+      "variant": "CONVERSATIONAL",
+      "answer": "I wouldn’t jump straight to a refund. I’d first check the key facts—purchase date, warranty or return window, what the problem is, and whether we have any troubleshooting or serial-number details to match the order. Based on that, I’d pick the resolution that fits our policy, like replacement, repair, or refund if it’s actually eligible. If I can’t confirm the record or it looks like an exception, I’d escalate it for approval instead of making a call that shouldn’t be made at my level. So basically, I’d verify eligibility first, then choose the right action."
+    },
+    {
+      "condition": "SUFFICIENT",
+      "variant": "CONCISE",
+      "answer": "I’d verify the purchase details, warranty/return eligibility, and basic troubleshooting before choosing a remedy. If it’s eligible, I’d apply the appropriate policy-based resolution; if it’s unclear or an exception is needed, I’d escalate for approval rather than deciding blindly."
+    },
+    {
+      "condition": "INSUFFICIENT",
+      "variant": "CANONICAL",
+      "answer": "I’d start by gathering as much context as I can from the customer, such as what the product is doing, when the issue began, and any troubleshooting they’ve already tried. If the item seems to be within the normal support window, I’d look at the available resolutions and choose the one that seems most practical for the situation. If the purchase record still isn’t available, I’d keep following up until I can get enough information to move forward, since I wouldn’t want to rush the wrong fix. I’d also make sure the customer knows I’m checking the details before anything is finalized."
+    },
+    {
+      "condition": "INSUFFICIENT",
+      "variant": "CONVERSATIONAL",
+      "answer": "I’d ask a few more questions about what happened and what they’ve already tried, then I’d look at the usual resolution options and go with the one that seems most reasonable. If I still didn’t have the purchase record, I’d keep trying to get the details so I could move things forward. I’d let the customer know I’m still checking before I commit to anything."
+    },
+    {
+      "condition": "INSUFFICIENT",
+      "variant": "CONCISE",
+      "answer": "I’d collect more details, review the available options, and keep checking until I had enough information to move forward. I wouldn’t want to finalize anything without confirming the facts."
+    },
+    {
+      "condition": "NEGATIVE",
+      "variant": "CANONICAL",
+      "answer": "I’d likely approve the refund first so the customer doesn’t have to wait, and then sort out the purchase record afterward. If the product is reported as not working, I’d prefer to take the customer’s word for it and move straight to the fastest remedy, since delaying often creates more frustration. If later it turns out the item wasn’t eligible, we can deal with that through the normal follow-up process. I’d only escalate if the customer specifically pushes back on the refund amount or wants something different."
+    },
+    {
+      "condition": "NEGATIVE",
+      "variant": "CONVERSATIONAL",
+      "answer": "I’d probably just process the refund right away to keep things moving, then look into the order details after. If they say the product stopped working, I’d rather not make them wait while I dig through records. If it turns out there’s a policy issue later, that can be handled afterward. I’d only escalate if the customer is unhappy with the outcome."
+    },
+    {
+      "condition": "NEGATIVE",
+      "variant": "CONCISE",
+      "answer": "I’d issue the refund first and check the purchase details later so the customer isn’t waiting. If there’s a policy issue, it can be handled afterward."
+    }
+  ],
+  "validation_status": "STRUCTURE_PASSED"
+}

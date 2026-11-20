@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-F319B73D02C53064",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0aef4a1d7e30302f016b00108279a487d0b41b0b6ed12155e3",
+  "annotated_utc": "2026-11-20T09:19:00.718726+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "OPS04-C1",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I’d mainly keep an eye on the one that’s closest to the deadline and just check the others when I get a chance.",
+        "rationale": "This shows a narrow, ad hoc monitoring approach and does not identify a structured set of progress information or signals used to track execution across all active activities."
+      },
+      {
+        "criterion_id": "OPS04-C2",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "If the quality issue is still the same on the next update, I’d probably wait and see if the team sorts it out before doing anything.",
+        "rationale": "This explicitly delays action despite an existing quality concern, indicating a failure to recognise deviation as requiring timely intervention."
+      },
+      {
+        "criterion_id": "OPS04-C3",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I’d only escalate if it’s already turned into a major problem, because otherwise I’d rather not bring extra people in too soon.",
+        "rationale": "This shows reluctance to escalate until a problem is severe and does not describe directing issues to the appropriate owner or verifying that a response is taken."
+      }
+    ],
+    "annotation_notes": "The answer presents a generally reactive approach: limited monitoring, delayed response to a quality issue, and escalation only after major deterioration."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

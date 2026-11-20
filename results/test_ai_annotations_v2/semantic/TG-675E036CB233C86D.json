@@ -1,0 +1,18 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "SEMANTIC_EQUIVALENCE",
+  "blinded_id": "TG-675E036CB233C86D",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0780cbcd9dd1e0cf016b002a82d5e887d0a7dd8d0719a7e879",
+  "annotated_utc": "2026-11-20T11:09:56.621359+00:00",
+  "annotation": {
+    "semantic_equivalence": "NO",
+    "material_differences": "Response B adds an explicit reliance on broader regression checks to catch issues later, while A and C frame the older-format difference as something not worth blocking release unless there is a clear/user-reported problem. B also says it would ship and circle back if the older format matters, which is a somewhat stronger operational commitment to release despite the unexpected difference. These differences could affect C2/C3 because B more clearly elevates general regression coverage as the basis for proceeding, whereas A and C are more conditional on external reports or later follow-up.",
+    "equivalence_rationale": "All three preserve the core evidence that the original failure is rechecked and that the candidate would generally release rather than stop immediately. However, B materially changes the decision basis by explicitly invoking broader regression checks and by more directly endorsing shipping despite the unexpected older-format discrepancy. Since the task is to judge whether the responses preserve substantially the same criterion-level evidence and operational commitments, this difference could change how the answer is scored on regression consideration and outcome assessment."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

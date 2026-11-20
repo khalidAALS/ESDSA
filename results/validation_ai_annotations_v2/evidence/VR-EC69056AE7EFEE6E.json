@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-EC69056AE7EFEE6E",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_069d31abb794425a016b000bf83ec887d0a26795410ebb14c3",
+  "annotated_utc": "2026-11-20T08:59:38.532842+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "CSS04-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d tell them I’m now looking into the complaint, explain that I’ll review what has happened so far, and let them know I’ll come back to them once I’ve checked the relevant details.",
+        "rationale": "This clearly explains the next steps in plain language: the complaint will be reviewed and the customer will be contacted again after the relevant details are checked."
+      },
+      {
+        "criterion_id": "CSS04-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d tell them I’m now looking into the complaint, explain that I’ll review what has happened so far, and let them know I’ll come back to them once I’ve checked the relevant details.",
+        "rationale": "The answer sets a limited, justified expectation of follow-up after checking the details, without promising a specific outcome or an unsupported resolution timeframe."
+      },
+      {
+        "criterion_id": "CSS04-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d make sure they have my contact information in case they want to add anything before I respond again.",
+        "rationale": "This provides a mechanism for ongoing contact and status/confirmation by giving the customer direct contact information before the next response."
+      }
+    ],
+    "annotation_notes": "The response is concise but sufficient to show clear communication, modest expectation-setting, and an explicit follow-up contact method."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

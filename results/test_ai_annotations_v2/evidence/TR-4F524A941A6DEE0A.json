@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-4F524A941A6DEE0A",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0f2b4bbd989c2f84016b002a69209887d093b004507b812308",
+  "annotated_utc": "2026-11-20T11:09:31.328752+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "CSS04-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d tell them it’s been fixed on our side and that they should be good to go now. I’d ask them to try it again, and if it still doesn’t work, they can open another ticket.",
+        "rationale": "The candidate clearly states what they would tell the customer and the next steps, in plain and understandable language."
+      },
+      {
+        "criterion_id": "CSS04-C2",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "it’s been fixed on our side and that they should be good to go now.",
+        "rationale": "This asserts the customer should be good to go without evidence of customer confirmation or successful use afterward, which is an unsupported promise given the scenario’s conflicting information."
+      },
+      {
+        "criterion_id": "CSS04-C3",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I probably wouldn’t keep following up unless they come back with a new issue, since the note already says the fix was applied.",
+        "rationale": "The candidate declines proactive follow-up or confirmation after the fix, which is not an appropriate mechanism for status or confirmation in this scenario."
+      }
+    ],
+    "annotation_notes": ""
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

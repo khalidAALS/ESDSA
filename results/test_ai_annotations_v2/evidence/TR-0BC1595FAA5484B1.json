@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-0BC1595FAA5484B1",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_06b5c254ea0b498f016b0029e5434087d09c441b12df1d08f2",
+  "annotated_utc": "2026-11-20T11:07:19.130384+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "SWE01-C1",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I wouldn’t spend much time trying to reproduce it without steps.",
+        "rationale": "The candidate explicitly says they would not spend much time trying to reproduce the issue, which materially contradicts establishing how to reproduce or characterise the failure."
+      },
+      {
+        "criterion_id": "SWE01-C2",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "passage": "",
+        "rationale": "The answer mentions checking whether the search service was up and considering the absence of a broader outage, but it does not clearly compare failing conditions with known working behaviour of the search page."
+      },
+      {
+        "criterion_id": "SWE01-C3",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "passage": "",
+        "rationale": "The response gives only a very high-level check and a conclusion to treat it as a one-off; it does not show a systematic process of using observations to narrow plausible causes."
+      }
+    ],
+    "annotation_notes": "The candidate shows some initial triage but does not substantively demonstrate reproduction, comparative diagnosis, or systematic narrowing."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-43A806A98573820A",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0c15d49dc0855ee7016b000c1ab8e087d09ab76b72813c8b9c",
+  "annotated_utc": "2026-11-20T09:00:13.686186+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "OPS03-C1",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I’d lean on the team that says they’re done and use that as the main status, because I’d rather keep momentum than get stuck on conflicting reports.",
+        "rationale": "This explicitly downplays conflicting operational reports rather than integrating them. It shows reliance on one source as the main status despite unresolved discrepancies, which materially contradicts evidence-based use of relevant operational information."
+      },
+      {
+        "criterion_id": "OPS03-C2",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "passage": "",
+        "rationale": "The answer mentions one department having unresolved dependencies, but it does not identify responsible parties or explain how the dependency relationships should be managed. It remains unestablished whether the candidate would coordinate ownership and inter-team dependencies in a responsible way."
+      },
+      {
+        "criterion_id": "OPS03-C3",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I’d send a new schedule based on the best-case version of the update and keep the communication short so we don’t slow everything down with too much back-and-forth.",
+        "rationale": "The proposed action is based on a best-case update rather than relevant operational evidence, and the explanation prioritizes speed over defensible reasoning. This materially contradicts explaining actions using relevant operational evidence."
+      }
+    ],
+    "annotation_notes": "The response shows a preference for momentum over reconciling conflicting evidence, but it does not provide enough detail to infer specific coordination mechanics beyond acknowledging unresolved dependencies."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

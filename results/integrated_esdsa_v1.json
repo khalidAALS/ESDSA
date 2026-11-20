@@ -1,0 +1,3897 @@
+{
+  "experiment": "INTEGRATED_ESDSA_V1_DEVELOPMENT",
+  "timestamp_utc": "2026-11-19T23:00:41.309997+00:00",
+  "policy": {
+    "name": "INTEGRATED_ESDSA_V1",
+    "stage": "DEVELOPMENT_PROTOTYPE",
+    "source": "Previously completed evidence-aware evaluations",
+    "criteria": 3,
+    "evidence_rule": {
+      "negative": "DO_NOT_ADVANCE",
+      "all_positive": "ADVANCE",
+      "otherwise": "DEFER"
+    },
+    "traceability_rule": "POSITIVE and NEGATIVE classifications require a nonempty supporting excerpt found within the candidate answer after limited text normalisation. Any failed required excerpt forces DEFER.",
+    "stability_rule": "The three generated variants must receive the same actionable pre-stability decision; otherwise defer the entire group.",
+    "reference_labels_used_in_policy": false,
+    "important_limitations": [
+      "Groups are assumed to represent alternative linguistic presentations, but semantic equivalence has not been independently established.",
+      "Literal excerpt matching does not establish that the excerpt proves the classification.",
+      "Three variants are not independent repeat evaluations of one unchanged interview answer.",
+      "Policy was specified after inspecting development results and must be tested on held-out cases.",
+      "This is not a deployable automated hiring system."
+    ]
+  },
+  "summary": {
+    "evidence_aware": {
+      "count": 108,
+      "decisions": {
+        "DO_NOT_ADVANCE": 36,
+        "ADVANCE": 69,
+        "DEFER": 3
+      },
+      "actionable": 105,
+      "coverage": 0.9722222222222222,
+      "provisional_reference_agreement": 0.8611111111111112,
+      "actionable_disagreements": 15,
+      "actionable_disagreement_rate": 0.14285714285714285,
+      "advances_without_provisional_support": 12,
+      "deferrals_when_reference_actionable": 0
+    },
+    "traceability_only": {
+      "count": 108,
+      "decisions": {
+        "DEFER": 18,
+        "DO_NOT_ADVANCE": 28,
+        "ADVANCE": 62
+      },
+      "actionable": 90,
+      "coverage": 0.8333333333333334,
+      "provisional_reference_agreement": 0.7314814814814815,
+      "actionable_disagreements": 14,
+      "actionable_disagreement_rate": 0.15555555555555556,
+      "advances_without_provisional_support": 11,
+      "deferrals_when_reference_actionable": 15
+    },
+    "integrated_esdsa": {
+      "count": 108,
+      "decisions": {
+        "DEFER": 36,
+        "ADVANCE": 51,
+        "DO_NOT_ADVANCE": 21
+      },
+      "actionable": 72,
+      "coverage": 0.6666666666666666,
+      "provisional_reference_agreement": 0.6759259259259259,
+      "actionable_disagreements": 8,
+      "actionable_disagreement_rate": 0.1111111111111111,
+      "advances_without_provisional_support": 5,
+      "deferrals_when_reference_actionable": 27
+    }
+  },
+  "diagnostics": {
+    "unverifiable_required_excerpts": 15,
+    "stability_changed_responses": 18,
+    "groups_without_unanimous_actionable_decision": 12,
+    "unflagged_esdsa": {
+      "count": 60,
+      "decisions": {
+        "DEFER": 15,
+        "ADVANCE": 36,
+        "DO_NOT_ADVANCE": 9
+      },
+      "actionable": 45,
+      "coverage": 0.75,
+      "provisional_reference_agreement": 0.75,
+      "actionable_disagreements": 0,
+      "actionable_disagreement_rate": 0.0,
+      "advances_without_provisional_support": 0,
+      "deferrals_when_reference_actionable": 15
+    },
+    "provisionally_equivalent_esdsa": {
+      "count": 81,
+      "decisions": {
+        "DEFER": 27,
+        "ADVANCE": 39,
+        "DO_NOT_ADVANCE": 15
+      },
+      "actionable": 54,
+      "coverage": 0.6666666666666666,
+      "provisional_reference_agreement": 0.6666666666666666,
+      "actionable_disagreements": 3,
+      "actionable_disagreement_rate": 0.05555555555555555,
+      "advances_without_provisional_support": 3,
+      "deferrals_when_reference_actionable": 24
+    }
+  },
+  "records": [
+    {
+      "response_id": "ESDSA-SWE02-01-E3L2",
+      "group": "GROUP-001",
+      "letter": "A",
+      "baseline_evidence_decision": "DO_NOT_ADVANCE",
+      "pre_stability_decision": "DEFER",
+      "pre_stability_reason": "UNVERIFIABLE_REQUIRED_EVIDENCE",
+      "criterion_audit": [
+        {
+          "criterion_id": "SWE02-C1",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "look at the deployment records",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "SWE02-C2",
+          "status": "NEGATIVE_EVIDENCE",
+          "excerpt": "I’d mostly start from the idea that the update is the cause if the timing matches up... I’d focus on the new changes and only glance at the logs or database metrics if I need extra confirmation. I wouldn’t overcomplicate it with a lot of separate hypotheses",
+          "excerpt_verifiable": false
+        },
+        {
+          "criterion_id": "SWE02-C3",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "If the slowdowns are happening after the release, I’d focus on the new changes",
+          "excerpt_verifiable": true
+        }
+      ],
+      "esdsa_decision": "DEFER",
+      "stability_reason": "NO_UNANIMOUS_ACTIONABLE_DECISION",
+      "stability_changed_decision": false,
+      "reference_decision": "DO_NOT_ADVANCE",
+      "reference_flagged": "NO",
+      "semantic_equivalence": "YES",
+      "agrees_with_provisional_reference": false
+    },
+    {
+      "response_id": "ESDSA-SWE02-01-E3L3",
+      "group": "GROUP-001",
+      "letter": "B",
+      "baseline_evidence_decision": "DO_NOT_ADVANCE",
+      "pre_stability_decision": "DO_NOT_ADVANCE",
+      "pre_stability_reason": "VERIFIABLE_NEGATIVE_EVIDENCE",
+      "criterion_audit": [
+        {
+          "criterion_id": "SWE02-C1",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "I’d use the logs and metrics",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "SWE02-C2",
+          "status": "NEGATIVE_EVIDENCE",
+          "excerpt": "I’d use the logs and metrics mainly to confirm that assumption rather than test alternatives.",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "SWE02-C3",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "If the timing lines up with the release, that would be enough to move forward.",
+          "excerpt_verifiable": true
+        }
+      ],
+      "esdsa_decision": "DEFER",
+      "stability_reason": "NO_UNANIMOUS_ACTIONABLE_DECISION",
+      "stability_changed_decision": true,
+      "reference_decision": "DO_NOT_ADVANCE",
+      "reference_flagged": "NO",
+      "semantic_equivalence": "YES",
+      "agrees_with_provisional_reference": false
+    },
+    {
+      "response_id": "ESDSA-SWE02-01-E3L1",
+      "group": "GROUP-001",
+      "letter": "C",
+      "baseline_evidence_decision": "DO_NOT_ADVANCE",
+      "pre_stability_decision": "DEFER",
+      "pre_stability_reason": "UNVERIFIABLE_REQUIRED_EVIDENCE",
+      "criterion_audit": [
+        {
+          "criterion_id": "SWE02-C1",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "look for confirmation in the deployment records... the database metrics... skim the logs... If the request timings are worse after the update",
+          "excerpt_verifiable": false
+        },
+        {
+          "criterion_id": "SWE02-C2",
+          "status": "NEGATIVE_EVIDENCE",
+          "excerpt": "I’d probably start by assuming the update caused it... I’d treat the deploy timing as the main signal... I wouldn’t spend too long there unless something jumps out",
+          "excerpt_verifiable": false
+        },
+        {
+          "criterion_id": "SWE02-C3",
+          "status": "NEGATIVE_EVIDENCE",
+          "excerpt": "that would be enough for me to narrow it to the release itself... move straight into the latest changes as the likely fix area",
+          "excerpt_verifiable": false
+        }
+      ],
+      "esdsa_decision": "DEFER",
+      "stability_reason": "NO_UNANIMOUS_ACTIONABLE_DECISION",
+      "stability_changed_decision": false,
+      "reference_decision": "DO_NOT_ADVANCE",
+      "reference_flagged": "NO",
+      "semantic_equivalence": "YES",
+      "agrees_with_provisional_reference": false
+    },
+    {
+      "response_id": "ESDSA-CSS01-01-E1L3",
+      "group": "GROUP-002",
+      "letter": "A",
+      "baseline_evidence_decision": "ADVANCE",
+      "pre_stability_decision": "ADVANCE",
+      "pre_stability_reason": "ALL_CRITERIA_POSITIVE_AND_TRACEABLE",
+      "criterion_audit": [
+        {
+          "criterion_id": "CSS01-C1",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "ask what they were trying to do, what error or behavior they see",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "CSS01-C2",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "which part of the account is affected. I’d also ask what the impact is for them right now",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "CSS01-C3",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "Then I’d summarize the issue back to confirm we’re aligned before troubleshooting or escalating",
+          "excerpt_verifiable": true
+        }
+      ],
+      "esdsa_decision": "ADVANCE",
+      "stability_reason": "UNANIMOUS_ACTIONABLE",
+      "stability_changed_decision": false,
+      "reference_decision": "ADVANCE",
+      "reference_flagged": "NO",
+      "semantic_equivalence": "YES",
+      "agrees_with_provisional_reference": true
+    },
+    {
+      "response_id": "ESDSA-CSS01-01-E1L2",
+      "group": "GROUP-002",
+      "letter": "B",
+      "baseline_evidence_decision": "ADVANCE",
+      "pre_stability_decision": "ADVANCE",
+      "pre_stability_reason": "ALL_CRITERIA_POSITIVE_AND_TRACEABLE",
+      "criterion_audit": [
+        {
+          "criterion_id": "CSS01-C1",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "I’d ask a few focused questions to pin down what’s actually failing. I’d want to know what they were trying to do, what they expected to happen, and what’s happening instead.",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "CSS01-C2",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "I’d also check what part of the account is affected — like whether they can log in, make a payment, or access a key feature — and what the urgent business impact is for them.",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "CSS01-C3",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "Then I’d quickly restate the problem back to them so we’re both clear before I take the next step.",
+          "excerpt_verifiable": true
+        }
+      ],
+      "esdsa_decision": "ADVANCE",
+      "stability_reason": "UNANIMOUS_ACTIONABLE",
+      "stability_changed_decision": false,
+      "reference_decision": "ADVANCE",
+      "reference_flagged": "NO",
+      "semantic_equivalence": "YES",
+      "agrees_with_provisional_reference": true
+    },
+    {
+      "response_id": "ESDSA-CSS01-01-E1L1",
+      "group": "GROUP-002",
+      "letter": "C",
+      "baseline_evidence_decision": "ADVANCE",
+      "pre_stability_decision": "ADVANCE",
+      "pre_stability_reason": "ALL_CRITERIA_POSITIVE_AND_TRACEABLE",
+      "criterion_audit": [
+        {
+          "criterion_id": "CSS01-C1",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "I’d ask what they were trying to do when the account became \"broken,\" what error or behavior they’re seeing",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "CSS01-C2",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "whether the issue is affecting login, payments, access to key features, or something else. I’d also ask how widespread the impact is",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "CSS01-C3",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "Once I have that detail, I’d repeat back my understanding in a short summary so we’re aligned before I move to troubleshooting or escalation.",
+          "excerpt_verifiable": true
+        }
+      ],
+      "esdsa_decision": "ADVANCE",
+      "stability_reason": "UNANIMOUS_ACTIONABLE",
+      "stability_changed_decision": false,
+      "reference_decision": "ADVANCE",
+      "reference_flagged": "NO",
+      "semantic_equivalence": "YES",
+      "agrees_with_provisional_reference": true
+    },
+    {
+      "response_id": "ESDSA-OPS03-01-E1L2",
+      "group": "GROUP-003",
+      "letter": "A",
+      "baseline_evidence_decision": "ADVANCE",
+      "pre_stability_decision": "ADVANCE",
+      "pre_stability_reason": "ALL_CRITERIA_POSITIVE_AND_TRACEABLE",
+      "criterion_audit": [
+        {
+          "criterion_id": "OPS03-C1",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "compare the warehouse and carrier records first, plus any latest scan or pickup confirmation",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "OPS03-C2",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "I’d get both teams on it right away, confirm who owns the next check, and decide what can move forward and what needs to wait",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "OPS03-C3",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "send out an updated plan with the dependencies and the reason for it noted",
+          "excerpt_verifiable": true
+        }
+      ],
+      "esdsa_decision": "ADVANCE",
+      "stability_reason": "UNANIMOUS_ACTIONABLE",
+      "stability_changed_decision": false,
+      "reference_decision": "ADVANCE",
+      "reference_flagged": "NO",
+      "semantic_equivalence": "YES",
+      "agrees_with_provisional_reference": true
+    },
+    {
+      "response_id": "ESDSA-OPS03-01-E1L3",
+      "group": "GROUP-003",
+      "letter": "B",
+      "baseline_evidence_decision": "ADVANCE",
+      "pre_stability_decision": "ADVANCE",
+      "pre_stability_reason": "ALL_CRITERIA_POSITIVE_AND_TRACEABLE",
+      "criterion_audit": [
+        {
+          "criterion_id": "OPS03-C1",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "verify the latest warehouse and carrier records",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "OPS03-C2",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "confirm the handoff owner, and then send a provisional update to the affected teams. I’d note which activities can continue, which should pause",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "OPS03-C3",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "document the operational evidence behind the schedule change",
+          "excerpt_verifiable": true
+        }
+      ],
+      "esdsa_decision": "ADVANCE",
+      "stability_reason": "UNANIMOUS_ACTIONABLE",
+      "stability_changed_decision": false,
+      "reference_decision": "ADVANCE",
+      "reference_flagged": "NO",
+      "semantic_equivalence": "YES",
+      "agrees_with_provisional_reference": true
+    },
+    {
+      "response_id": "ESDSA-OPS03-01-E1L1",
+      "group": "GROUP-003",
+      "letter": "C",
+      "baseline_evidence_decision": "ADVANCE",
+      "pre_stability_decision": "ADVANCE",
+      "pre_stability_reason": "ALL_CRITERIA_POSITIVE_AND_TRACEABLE",
+      "criterion_audit": [
+        {
+          "criterion_id": "OPS03-C1",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "checked the two source records side by side and confirmed the latest scan, dispatch note, and any driver or dock confirmation",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "OPS03-C2",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "contact both sides to identify where the mismatch is. Then I’d update the relevant teams with a provisional plan: who owns the confirmation, what time we expect the status to be resolved, and what dependent activities can continue versus what should hold",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "OPS03-C3",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "document the basis for the update in the plan so everyone can see which operational records drove the decision and why we adjusted timing",
+          "excerpt_verifiable": true
+        }
+      ],
+      "esdsa_decision": "ADVANCE",
+      "stability_reason": "UNANIMOUS_ACTIONABLE",
+      "stability_changed_decision": false,
+      "reference_decision": "ADVANCE",
+      "reference_flagged": "NO",
+      "semantic_equivalence": "YES",
+      "agrees_with_provisional_reference": true
+    },
+    {
+      "response_id": "ESDSA-CSS03-02-E2L1",
+      "group": "GROUP-004",
+      "letter": "A",
+      "baseline_evidence_decision": "ADVANCE",
+      "pre_stability_decision": "ADVANCE",
+      "pre_stability_reason": "ALL_CRITERIA_POSITIVE_AND_TRACEABLE",
+      "criterion_audit": [
+        {
+          "criterion_id": "CSS03-C1",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "\"review whatever eligibility details are available, and then decide whether this looks like a standard refund or something that needs approval\"",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "CSS03-C2",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "\"something that needs approval\"",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "CSS03-C3",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "\"If I can’t confirm the full criteria from the information in front of me, I’d hold the case and get the missing details or ask the appropriate team to review it before moving ahead.\"",
+          "excerpt_verifiable": true
+        }
+      ],
+      "esdsa_decision": "ADVANCE",
+      "stability_reason": "UNANIMOUS_ACTIONABLE",
+      "stability_changed_decision": false,
+      "reference_decision": "ADVANCE",
+      "reference_flagged": "YES",
+      "semantic_equivalence": "NO",
+      "agrees_with_provisional_reference": true
+    },
+    {
+      "response_id": "ESDSA-CSS03-02-E2L2",
+      "group": "GROUP-004",
+      "letter": "B",
+      "baseline_evidence_decision": "ADVANCE",
+      "pre_stability_decision": "ADVANCE",
+      "pre_stability_reason": "ALL_CRITERIA_POSITIVE_AND_TRACEABLE",
+      "criterion_audit": [
+        {
+          "criterion_id": "CSS03-C1",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "If the rules are clear enough, I’d go with the normal path",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "CSS03-C2",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "if not, I’d pause it and get the missing details or have someone review it before I promise a refund",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "CSS03-C3",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "I’d pause it and get the missing details or have someone review it before I promise a refund",
+          "excerpt_verifiable": true
+        }
+      ],
+      "esdsa_decision": "ADVANCE",
+      "stability_reason": "UNANIMOUS_ACTIONABLE",
+      "stability_changed_decision": false,
+      "reference_decision": "DEFER",
+      "reference_flagged": "YES",
+      "semantic_equivalence": "NO",
+      "agrees_with_provisional_reference": false
+    },
+    {
+      "response_id": "ESDSA-CSS03-02-E2L3",
+      "group": "GROUP-004",
+      "letter": "C",
+      "baseline_evidence_decision": "ADVANCE",
+      "pre_stability_decision": "ADVANCE",
+      "pre_stability_reason": "ALL_CRITERIA_POSITIVE_AND_TRACEABLE",
+      "criterion_audit": [
+        {
+          "criterion_id": "CSS03-C1",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "\"check the outage and the available eligibility details\"",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "CSS03-C2",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "\"pause and get more information or a review if the criteria aren’t clear enough yet\"",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "CSS03-C3",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "\"pause and get more information or a review if the criteria aren’t clear enough yet\"",
+          "excerpt_verifiable": true
+        }
+      ],
+      "esdsa_decision": "ADVANCE",
+      "stability_reason": "UNANIMOUS_ACTIONABLE",
+      "stability_changed_decision": false,
+      "reference_decision": "DEFER",
+      "reference_flagged": "YES",
+      "semantic_equivalence": "NO",
+      "agrees_with_provisional_reference": false
+    },
+    {
+      "response_id": "ESDSA-SWE02-01-E2L3",
+      "group": "GROUP-005",
+      "letter": "A",
+      "baseline_evidence_decision": "ADVANCE",
+      "pre_stability_decision": "ADVANCE",
+      "pre_stability_reason": "ALL_CRITERIA_POSITIVE_AND_TRACEABLE",
+      "criterion_audit": [
+        {
+          "criterion_id": "SWE02-C1",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "review logs and database metrics for errors, timeouts, slow queries, or lock contention",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "SWE02-C2",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "I’d compare slow requests with normal ones to narrow down whether the issue is in the update, a dependency, or the database.",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "SWE02-C3",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "That should point me toward the most likely cause.",
+          "excerpt_verifiable": true
+        }
+      ],
+      "esdsa_decision": "DEFER",
+      "stability_reason": "NO_UNANIMOUS_ACTIONABLE_DECISION",
+      "stability_changed_decision": true,
+      "reference_decision": "ADVANCE",
+      "reference_flagged": "NO",
+      "semantic_equivalence": "YES",
+      "agrees_with_provisional_reference": false
+    },
+    {
+      "response_id": "ESDSA-SWE02-01-E2L2",
+      "group": "GROUP-005",
+      "letter": "B",
+      "baseline_evidence_decision": "ADVANCE",
+      "pre_stability_decision": "DEFER",
+      "pre_stability_reason": "UNVERIFIABLE_REQUIRED_EVIDENCE",
+      "criterion_audit": [
+        {
+          "criterion_id": "SWE02-C1",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "I’d begin by checking the release info and the request timings... Then I’d look through the server logs and database metrics",
+          "excerpt_verifiable": false
+        },
+        {
+          "criterion_id": "SWE02-C2",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "compare the slower requests with the faster ones to see if they have anything in common, which should help narrow it down to the app, a dependency, or the database",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "SWE02-C3",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "If it lines up with the deploy, I’d dig into the changed areas more closely and see which part of the request path is involved.",
+          "excerpt_verifiable": true
+        }
+      ],
+      "esdsa_decision": "DEFER",
+      "stability_reason": "NO_UNANIMOUS_ACTIONABLE_DECISION",
+      "stability_changed_decision": false,
+      "reference_decision": "ADVANCE",
+      "reference_flagged": "NO",
+      "semantic_equivalence": "YES",
+      "agrees_with_provisional_reference": false
+    },
+    {
+      "response_id": "ESDSA-SWE02-01-E2L1",
+      "group": "GROUP-005",
+      "letter": "C",
+      "baseline_evidence_decision": "ADVANCE",
+      "pre_stability_decision": "DEFER",
+      "pre_stability_reason": "UNVERIFIABLE_REQUIRED_EVIDENCE",
+      "criterion_audit": [
+        {
+          "criterion_id": "SWE02-C1",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "checking the deployment records and request timings... review the server logs... look at the database metrics",
+          "excerpt_verifiable": false
+        },
+        {
+          "criterion_id": "SWE02-C2",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "see whether the slowdown began right after the update or only affects certain endpoints... compare the slow requests against the faster ones to see what they have in common",
+          "excerpt_verifiable": false
+        },
+        {
+          "criterion_id": "SWE02-C3",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "If the issue seems to line up with the release, I’d focus on the changed components and see whether the performance regression is tied to a particular code path.",
+          "excerpt_verifiable": true
+        }
+      ],
+      "esdsa_decision": "DEFER",
+      "stability_reason": "NO_UNANIMOUS_ACTIONABLE_DECISION",
+      "stability_changed_decision": false,
+      "reference_decision": "ADVANCE",
+      "reference_flagged": "NO",
+      "semantic_equivalence": "YES",
+      "agrees_with_provisional_reference": false
+    },
+    {
+      "response_id": "ESDSA-CSS03-02-E3L3",
+      "group": "GROUP-006",
+      "letter": "A",
+      "baseline_evidence_decision": "DO_NOT_ADVANCE",
+      "pre_stability_decision": "DO_NOT_ADVANCE",
+      "pre_stability_reason": "VERIFIABLE_NEGATIVE_EVIDENCE",
+      "criterion_audit": [
+        {
+          "criterion_id": "CSS03-C1",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "I’d issue the refund immediately based on the confirmed outage",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "CSS03-C2",
+          "status": "NEGATIVE_EVIDENCE",
+          "excerpt": "and handle any approval questions afterward",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "CSS03-C3",
+          "status": "NEGATIVE_EVIDENCE",
+          "excerpt": "I’d issue the refund immediately",
+          "excerpt_verifiable": true
+        }
+      ],
+      "esdsa_decision": "DO_NOT_ADVANCE",
+      "stability_reason": "UNANIMOUS_ACTIONABLE",
+      "stability_changed_decision": false,
+      "reference_decision": "DO_NOT_ADVANCE",
+      "reference_flagged": "NO",
+      "semantic_equivalence": "YES",
+      "agrees_with_provisional_reference": true
+    },
+    {
+      "response_id": "ESDSA-CSS03-02-E3L1",
+      "group": "GROUP-006",
+      "letter": "B",
+      "baseline_evidence_decision": "DO_NOT_ADVANCE",
+      "pre_stability_decision": "DO_NOT_ADVANCE",
+      "pre_stability_reason": "VERIFIABLE_NEGATIVE_EVIDENCE",
+      "criterion_audit": [
+        {
+          "criterion_id": "CSS03-C1",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "“Since there’s confirmed service interruption, I’d refund the customer right away”",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "CSS03-C2",
+          "status": "NEGATIVE_EVIDENCE",
+          "excerpt": "“I’d refund the customer right away”",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "CSS03-C3",
+          "status": "NEGATIVE_EVIDENCE",
+          "excerpt": "“then sort out the eligibility details afterward”",
+          "excerpt_verifiable": true
+        }
+      ],
+      "esdsa_decision": "DO_NOT_ADVANCE",
+      "stability_reason": "UNANIMOUS_ACTIONABLE",
+      "stability_changed_decision": false,
+      "reference_decision": "DO_NOT_ADVANCE",
+      "reference_flagged": "NO",
+      "semantic_equivalence": "YES",
+      "agrees_with_provisional_reference": true
+    },
+    {
+      "response_id": "ESDSA-CSS03-02-E3L2",
+      "group": "GROUP-006",
+      "letter": "C",
+      "baseline_evidence_decision": "DO_NOT_ADVANCE",
+      "pre_stability_decision": "DO_NOT_ADVANCE",
+      "pre_stability_reason": "VERIFIABLE_NEGATIVE_EVIDENCE",
+      "criterion_audit": [
+        {
+          "criterion_id": "CSS03-C1",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "I’d just issue the refund immediately",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "CSS03-C2",
+          "status": "NEGATIVE_EVIDENCE",
+          "excerpt": "I’d just issue the refund immediately and deal with any policy questions after",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "CSS03-C3",
+          "status": "NEGATIVE_EVIDENCE",
+          "excerpt": "I’d just issue the refund immediately",
+          "excerpt_verifiable": true
+        }
+      ],
+      "esdsa_decision": "DO_NOT_ADVANCE",
+      "stability_reason": "UNANIMOUS_ACTIONABLE",
+      "stability_changed_decision": false,
+      "reference_decision": "DO_NOT_ADVANCE",
+      "reference_flagged": "NO",
+      "semantic_equivalence": "YES",
+      "agrees_with_provisional_reference": true
+    },
+    {
+      "response_id": "ESDSA-OPS04-01-E1L1",
+      "group": "GROUP-007",
+      "letter": "A",
+      "baseline_evidence_decision": "ADVANCE",
+      "pre_stability_decision": "ADVANCE",
+      "pre_stability_reason": "ALL_CRITERIA_POSITIVE_AND_TRACEABLE",
+      "criterion_audit": [
+        {
+          "criterion_id": "OPS04-C1",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "I’d first check the milestone plan and compare the dependent task against the agreed timing, owners, and any buffer we have left. I’d ask the responsible team for the latest status, what is blocking them, and when they realistically expect completion",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "OPS04-C2",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "If it looks like the task will miss the point where it affects the milestone, or if I still can’t get a reliable finish time, I’d escalate",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "OPS04-C3",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "I’d escalate to the project lead and any other owner who can help remove the blocker. I’d also make sure the issue is tracked through to closure, not just raised once",
+          "excerpt_verifiable": true
+        }
+      ],
+      "esdsa_decision": "ADVANCE",
+      "stability_reason": "UNANIMOUS_ACTIONABLE",
+      "stability_changed_decision": false,
+      "reference_decision": "ADVANCE",
+      "reference_flagged": "NO",
+      "semantic_equivalence": "YES",
+      "agrees_with_provisional_reference": true
+    },
+    {
+      "response_id": "ESDSA-OPS04-01-E1L2",
+      "group": "GROUP-007",
+      "letter": "B",
+      "baseline_evidence_decision": "ADVANCE",
+      "pre_stability_decision": "ADVANCE",
+      "pre_stability_reason": "ALL_CRITERIA_POSITIVE_AND_TRACEABLE",
+      "criterion_audit": [
+        {
+          "criterion_id": "OPS04-C1",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "“checking the plan and seeing exactly what that task is holding up, then I’d get the latest from the team on status, blockers, and their best finish estimate. After that, I’d watch for any change in the date or any sign the work is slipping further”",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "OPS04-C2",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "“If the dependency is likely to put the milestone at risk, or I still can’t get a clear commitment, I’d escalate it”",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "OPS04-C3",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "“I’d escalate it to the project lead and whoever can unblock it. And I’d follow up to make sure there’s a response and the issue is actually being worked through.”",
+          "excerpt_verifiable": true
+        }
+      ],
+      "esdsa_decision": "ADVANCE",
+      "stability_reason": "UNANIMOUS_ACTIONABLE",
+      "stability_changed_decision": false,
+      "reference_decision": "ADVANCE",
+      "reference_flagged": "NO",
+      "semantic_equivalence": "YES",
+      "agrees_with_provisional_reference": true
+    },
+    {
+      "response_id": "ESDSA-OPS04-01-E1L3",
+      "group": "GROUP-007",
+      "letter": "C",
+      "baseline_evidence_decision": "ADVANCE",
+      "pre_stability_decision": "ADVANCE",
+      "pre_stability_reason": "ALL_CRITERIA_POSITIVE_AND_TRACEABLE",
+      "criterion_audit": [
+        {
+          "criterion_id": "OPS04-C1",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "“review the milestone plan, get the latest status and blocker details from the team, and watch for any slippage against the date”",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "OPS04-C2",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "“If the dependency looks likely to miss the milestone or there’s no reliable finish time”",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "OPS04-C3",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "“I’d escalate to the project lead and the relevant owner, then follow up until there’s a clear action plan.”",
+          "excerpt_verifiable": true
+        }
+      ],
+      "esdsa_decision": "ADVANCE",
+      "stability_reason": "UNANIMOUS_ACTIONABLE",
+      "stability_changed_decision": false,
+      "reference_decision": "ADVANCE",
+      "reference_flagged": "NO",
+      "semantic_equivalence": "YES",
+      "agrees_with_provisional_reference": true
+    },
+    {
+      "response_id": "ESDSA-OPS02-03-E1L2",
+      "group": "GROUP-008",
+      "letter": "A",
+      "baseline_evidence_decision": "ADVANCE",
+      "pre_stability_decision": "DEFER",
+      "pre_stability_reason": "UNVERIFIABLE_REQUIRED_EVIDENCE",
+      "criterion_audit": [
+        {
+          "criterion_id": "OPS02-C1",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "“I’d see that as a supply risk straight away.”",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "OPS02-C2",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "“I’d check the delay length, what stock we actually have, and how much demand might swing either way... From there I’d work out how likely a disruption is and what the impact would be on service.”",
+          "excerpt_verifiable": false
+        },
+        {
+          "criterion_id": "OPS02-C3",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "“Then I’d put a contingency in place, like prioritising key orders or lining up an alternative supply option, and escalate early if it looks like we could run short.”",
+          "excerpt_verifiable": true
+        }
+      ],
+      "esdsa_decision": "DEFER",
+      "stability_reason": "NO_UNANIMOUS_ACTIONABLE_DECISION",
+      "stability_changed_decision": false,
+      "reference_decision": "ADVANCE",
+      "reference_flagged": "NO",
+      "semantic_equivalence": "YES",
+      "agrees_with_provisional_reference": false
+    },
+    {
+      "response_id": "ESDSA-OPS02-03-E1L3",
+      "group": "GROUP-008",
+      "letter": "B",
+      "baseline_evidence_decision": "ADVANCE",
+      "pre_stability_decision": "ADVANCE",
+      "pre_stability_reason": "ALL_CRITERIA_POSITIVE_AND_TRACEABLE",
+      "criterion_audit": [
+        {
+          "criterion_id": "OPS02-C1",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "I’d treat it as a supply continuity risk",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "OPS02-C2",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "check stock against likely demand, and judge both the chance of a shortfall and the service impact",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "OPS02-C3",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "put a contingency in place, like prioritising critical orders or sourcing an alternative supplier, and escalate early if the delay could affect service",
+          "excerpt_verifiable": true
+        }
+      ],
+      "esdsa_decision": "DEFER",
+      "stability_reason": "NO_UNANIMOUS_ACTIONABLE_DECISION",
+      "stability_changed_decision": true,
+      "reference_decision": "ADVANCE",
+      "reference_flagged": "NO",
+      "semantic_equivalence": "YES",
+      "agrees_with_provisional_reference": false
+    },
+    {
+      "response_id": "ESDSA-OPS02-03-E1L1",
+      "group": "GROUP-008",
+      "letter": "C",
+      "baseline_evidence_decision": "ADVANCE",
+      "pre_stability_decision": "ADVANCE",
+      "pre_stability_reason": "ALL_CRITERIA_POSITIVE_AND_TRACEABLE",
+      "criterion_audit": [
+        {
+          "criterion_id": "OPS02-C1",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "\"I’d treat this as a real supply continuity risk.\"",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "OPS02-C2",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "\"compare that against our normal usage plus the uncertainty in the forecast. That gives me a clearer view of both the likelihood of a stockout and the likely operational impact if demand comes in higher than expected.\"",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "OPS02-C3",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "\"I’d put a short-term contingency in place, such as prioritising the most critical orders or identifying any alternative source, and I’d escalate early if the delay could affect service levels before we can recover.\"",
+          "excerpt_verifiable": true
+        }
+      ],
+      "esdsa_decision": "DEFER",
+      "stability_reason": "NO_UNANIMOUS_ACTIONABLE_DECISION",
+      "stability_changed_decision": true,
+      "reference_decision": "ADVANCE",
+      "reference_flagged": "NO",
+      "semantic_equivalence": "YES",
+      "agrees_with_provisional_reference": false
+    },
+    {
+      "response_id": "ESDSA-SWE01-01-E2L3",
+      "group": "GROUP-009",
+      "letter": "A",
+      "baseline_evidence_decision": "ADVANCE",
+      "pre_stability_decision": "ADVANCE",
+      "pre_stability_reason": "ALL_CRITERIA_POSITIVE_AND_TRACEABLE",
+      "criterion_audit": [
+        {
+          "criterion_id": "SWE01-C1",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "\"I’d reproduce it in test\"",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "SWE01-C2",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "\"compare affected and unaffected cases\"",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "SWE01-C3",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "\"review recent changes to look for a pattern, but I’d want more investigation before narrowing it to one component\"",
+          "excerpt_verifiable": true
+        }
+      ],
+      "esdsa_decision": "ADVANCE",
+      "stability_reason": "UNANIMOUS_ACTIONABLE",
+      "stability_changed_decision": false,
+      "reference_decision": "ADVANCE",
+      "reference_flagged": "YES",
+      "semantic_equivalence": "UNCERTAIN",
+      "agrees_with_provisional_reference": true
+    },
+    {
+      "response_id": "ESDSA-SWE01-01-E2L1",
+      "group": "GROUP-009",
+      "letter": "B",
+      "baseline_evidence_decision": "ADVANCE",
+      "pre_stability_decision": "ADVANCE",
+      "pre_stability_reason": "ALL_CRITERIA_POSITIVE_AND_TRACEABLE",
+      "criterion_audit": [
+        {
+          "criterion_id": "SWE01-C1",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "\"begin by trying to reproduce the mismatch in the test environment using the records and user contexts that were reported\"",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "SWE01-C2",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "\"compare the release notes and the affected accounts to see whether the difference lines up with a specific code path or configuration change\"",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "SWE01-C3",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "\"If the issue appears only for some users, I’d dig into whether there’s a permission or data-shaping difference involved before deciding where to focus.\"",
+          "excerpt_verifiable": true
+        }
+      ],
+      "esdsa_decision": "ADVANCE",
+      "stability_reason": "UNANIMOUS_ACTIONABLE",
+      "stability_changed_decision": false,
+      "reference_decision": "ADVANCE",
+      "reference_flagged": "YES",
+      "semantic_equivalence": "UNCERTAIN",
+      "agrees_with_provisional_reference": true
+    },
+    {
+      "response_id": "ESDSA-SWE01-01-E2L2",
+      "group": "GROUP-009",
+      "letter": "C",
+      "baseline_evidence_decision": "ADVANCE",
+      "pre_stability_decision": "ADVANCE",
+      "pre_stability_reason": "ALL_CRITERIA_POSITIVE_AND_TRACEABLE",
+      "criterion_audit": [
+        {
+          "criterion_id": "SWE01-C1",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "\"I’d start by trying to recreate it in test with the records the users mentioned\"",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "SWE01-C2",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "\"and then compare those cases against the users who aren’t seeing the issue\"",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "SWE01-C3",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "\"If there’s a pattern, I’d follow that, but I’d want to look a bit more before I say exactly where the defect is.\"",
+          "excerpt_verifiable": true
+        }
+      ],
+      "esdsa_decision": "ADVANCE",
+      "stability_reason": "UNANIMOUS_ACTIONABLE",
+      "stability_changed_decision": false,
+      "reference_decision": "ADVANCE",
+      "reference_flagged": "YES",
+      "semantic_equivalence": "UNCERTAIN",
+      "agrees_with_provisional_reference": true
+    },
+    {
+      "response_id": "ESDSA-SWE04-01-E1L2",
+      "group": "GROUP-010",
+      "letter": "A",
+      "baseline_evidence_decision": "ADVANCE",
+      "pre_stability_decision": "ADVANCE",
+      "pre_stability_reason": "ALL_CRITERIA_POSITIVE_AND_TRACEABLE",
+      "criterion_audit": [
+        {
+          "criterion_id": "SWE04-C1",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "“I’d start by rechecking the same invoice case that was broken to make sure the total now comes out right.”",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "SWE04-C2",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "“Then I’d do a small regression pass on the other billing paths that use the same code, just to catch any side effects.”",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "SWE04-C3",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "“If a check still fails, I’d dig into that before treating the fix as ready.”",
+          "excerpt_verifiable": true
+        }
+      ],
+      "esdsa_decision": "ADVANCE",
+      "stability_reason": "UNANIMOUS_ACTIONABLE",
+      "stability_changed_decision": false,
+      "reference_decision": "ADVANCE",
+      "reference_flagged": "NO",
+      "semantic_equivalence": "YES",
+      "agrees_with_provisional_reference": true
+    },
+    {
+      "response_id": "ESDSA-SWE04-01-E1L3",
+      "group": "GROUP-010",
+      "letter": "B",
+      "baseline_evidence_decision": "ADVANCE",
+      "pre_stability_decision": "ADVANCE",
+      "pre_stability_reason": "ALL_CRITERIA_POSITIVE_AND_TRACEABLE",
+      "criterion_audit": [
+        {
+          "criterion_id": "SWE04-C1",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "I’d retest the original invoice failure",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "SWE04-C2",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "then run related billing regressions because the code is shared",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "SWE04-C3",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "If anything fails, I’d investigate before moving it forward",
+          "excerpt_verifiable": true
+        }
+      ],
+      "esdsa_decision": "ADVANCE",
+      "stability_reason": "UNANIMOUS_ACTIONABLE",
+      "stability_changed_decision": false,
+      "reference_decision": "ADVANCE",
+      "reference_flagged": "NO",
+      "semantic_equivalence": "YES",
+      "agrees_with_provisional_reference": true
+    },
+    {
+      "response_id": "ESDSA-SWE04-01-E1L1",
+      "group": "GROUP-010",
+      "letter": "C",
+      "baseline_evidence_decision": "ADVANCE",
+      "pre_stability_decision": "ADVANCE",
+      "pre_stability_reason": "ALL_CRITERIA_POSITIVE_AND_TRACEABLE",
+      "criterion_audit": [
+        {
+          "criterion_id": "SWE04-C1",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "\"I’d first rerun the exact invoice scenario that was failing to confirm the total is now correct.\"",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "SWE04-C2",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "\"I’d also run a focused set of regression checks around those related flows to make sure nothing else changed unexpectedly.\"",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "SWE04-C3",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "\"If anything still looks off, I’d stop there, investigate the failure, and only move forward once the verification is clean.\"",
+          "excerpt_verifiable": true
+        }
+      ],
+      "esdsa_decision": "ADVANCE",
+      "stability_reason": "UNANIMOUS_ACTIONABLE",
+      "stability_changed_decision": false,
+      "reference_decision": "ADVANCE",
+      "reference_flagged": "NO",
+      "semantic_equivalence": "YES",
+      "agrees_with_provisional_reference": true
+    },
+    {
+      "response_id": "ESDSA-CSS02-02-E2L3",
+      "group": "GROUP-011",
+      "letter": "A",
+      "baseline_evidence_decision": "ADVANCE",
+      "pre_stability_decision": "ADVANCE",
+      "pre_stability_reason": "ALL_CRITERIA_POSITIVE_AND_TRACEABLE",
+      "criterion_audit": [
+        {
+          "criterion_id": "CSS02-C1",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "ask for the payment time and any unusual checkout steps",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "CSS02-C2",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "compare the account page with the internal payment records. If there’s no second entry in the records, I’d treat it as likely a display issue",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "CSS02-C3",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "compare the account page with the internal payment records",
+          "excerpt_verifiable": true
+        }
+      ],
+      "esdsa_decision": "DEFER",
+      "stability_reason": "NO_UNANIMOUS_ACTIONABLE_DECISION",
+      "stability_changed_decision": true,
+      "reference_decision": "DEFER",
+      "reference_flagged": "YES",
+      "semantic_equivalence": "NO",
+      "agrees_with_provisional_reference": true
+    },
+    {
+      "response_id": "ESDSA-CSS02-02-E2L1",
+      "group": "GROUP-011",
+      "letter": "B",
+      "baseline_evidence_decision": "ADVANCE",
+      "pre_stability_decision": "ADVANCE",
+      "pre_stability_reason": "ALL_CRITERIA_POSITIVE_AND_TRACEABLE",
+      "criterion_audit": [
+        {
+          "criterion_id": "CSS02-C1",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "I’d ask the customer for the approximate time of the payment and whether they noticed anything unusual during checkout.",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "CSS02-C2",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "I’d review the internal payment records against the account page to see if there’s a second transaction that simply isn’t displayed yet. If the records don’t show anything extra, I’d likely treat it as a display issue",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "CSS02-C3",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "I’d ask the customer for the approximate time of the payment and whether they noticed anything unusual during checkout. Then I’d review the internal payment records",
+          "excerpt_verifiable": true
+        }
+      ],
+      "esdsa_decision": "DEFER",
+      "stability_reason": "NO_UNANIMOUS_ACTIONABLE_DECISION",
+      "stability_changed_decision": true,
+      "reference_decision": "DEFER",
+      "reference_flagged": "YES",
+      "semantic_equivalence": "NO",
+      "agrees_with_provisional_reference": true
+    },
+    {
+      "response_id": "ESDSA-CSS02-02-E2L2",
+      "group": "GROUP-011",
+      "letter": "C",
+      "baseline_evidence_decision": "DO_NOT_ADVANCE",
+      "pre_stability_decision": "DO_NOT_ADVANCE",
+      "pre_stability_reason": "VERIFIABLE_NEGATIVE_EVIDENCE",
+      "criterion_audit": [
+        {
+          "criterion_id": "CSS02-C1",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "I’d start with the rough time of the payment and ask if they did anything different when it went through.",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "CSS02-C2",
+          "status": "NEGATIVE_EVIDENCE",
+          "excerpt": "If I don’t see a second charge in the records, I’d probably assume it’s just the page not updating properly",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "CSS02-C3",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "I’d check the internal payment records and compare them with what’s on the customer page.",
+          "excerpt_verifiable": true
+        }
+      ],
+      "esdsa_decision": "DEFER",
+      "stability_reason": "NO_UNANIMOUS_ACTIONABLE_DECISION",
+      "stability_changed_decision": true,
+      "reference_decision": "DO_NOT_ADVANCE",
+      "reference_flagged": "YES",
+      "semantic_equivalence": "NO",
+      "agrees_with_provisional_reference": false
+    },
+    {
+      "response_id": "ESDSA-SWE04-01-E3L1",
+      "group": "GROUP-012",
+      "letter": "A",
+      "baseline_evidence_decision": "DO_NOT_ADVANCE",
+      "pre_stability_decision": "DO_NOT_ADVANCE",
+      "pre_stability_reason": "VERIFIABLE_NEGATIVE_EVIDENCE",
+      "criterion_audit": [
+        {
+          "criterion_id": "SWE04-C1",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "I’d confirm the invoice total on the specific corrected path",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "SWE04-C2",
+          "status": "NEGATIVE_EVIDENCE",
+          "excerpt": "I wouldn’t spend time on extra regression checks unless a user reported something new.",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "SWE04-C3",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "if that looks right, I’d treat the change as ready",
+          "excerpt_verifiable": true
+        }
+      ],
+      "esdsa_decision": "DO_NOT_ADVANCE",
+      "stability_reason": "UNANIMOUS_ACTIONABLE",
+      "stability_changed_decision": false,
+      "reference_decision": "DO_NOT_ADVANCE",
+      "reference_flagged": "NO",
+      "semantic_equivalence": "YES",
+      "agrees_with_provisional_reference": true
+    },
+    {
+      "response_id": "ESDSA-SWE04-01-E3L3",
+      "group": "GROUP-012",
+      "letter": "B",
+      "baseline_evidence_decision": "DO_NOT_ADVANCE",
+      "pre_stability_decision": "DO_NOT_ADVANCE",
+      "pre_stability_reason": "VERIFIABLE_NEGATIVE_EVIDENCE",
+      "criterion_audit": [
+        {
+          "criterion_id": "SWE04-C1",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "I’d verify the fixed invoice case",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "SWE04-C2",
+          "status": "NEGATIVE_EVIDENCE",
+          "excerpt": "I wouldn’t usually add extra regression testing just because the code is shared.",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "SWE04-C3",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "if it passes I’d move it forward",
+          "excerpt_verifiable": true
+        }
+      ],
+      "esdsa_decision": "DO_NOT_ADVANCE",
+      "stability_reason": "UNANIMOUS_ACTIONABLE",
+      "stability_changed_decision": false,
+      "reference_decision": "DO_NOT_ADVANCE",
+      "reference_flagged": "NO",
+      "semantic_equivalence": "YES",
+      "agrees_with_provisional_reference": true
+    },
+    {
+      "response_id": "ESDSA-SWE04-01-E3L2",
+      "group": "GROUP-012",
+      "letter": "C",
+      "baseline_evidence_decision": "DO_NOT_ADVANCE",
+      "pre_stability_decision": "DO_NOT_ADVANCE",
+      "pre_stability_reason": "VERIFIABLE_NEGATIVE_EVIDENCE",
+      "criterion_audit": [
+        {
+          "criterion_id": "SWE04-C1",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "“I’d check that the invoice scenario now gives the right total”",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "SWE04-C2",
+          "status": "NEGATIVE_EVIDENCE",
+          "excerpt": "“Since it’s shared code, I’d assume any other issues would surface later if there’s a problem, so I wouldn’t usually hold it up for more testing.”",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "SWE04-C3",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "“if it does, I’d move ahead”",
+          "excerpt_verifiable": true
+        }
+      ],
+      "esdsa_decision": "DO_NOT_ADVANCE",
+      "stability_reason": "UNANIMOUS_ACTIONABLE",
+      "stability_changed_decision": false,
+      "reference_decision": "DO_NOT_ADVANCE",
+      "reference_flagged": "NO",
+      "semantic_equivalence": "YES",
+      "agrees_with_provisional_reference": true
+    },
+    {
+      "response_id": "ESDSA-SWE01-01-E3L3",
+      "group": "GROUP-013",
+      "letter": "A",
+      "baseline_evidence_decision": "DO_NOT_ADVANCE",
+      "pre_stability_decision": "DO_NOT_ADVANCE",
+      "pre_stability_reason": "VERIFIABLE_NEGATIVE_EVIDENCE",
+      "criterion_audit": [
+        {
+          "criterion_id": "SWE01-C1",
+          "status": "NEGATIVE_EVIDENCE",
+          "excerpt": "rather than spending much time recreating every user scenario",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "SWE01-C2",
+          "status": "INSUFFICIENT_EVIDENCE",
+          "excerpt": "",
+          "excerpt_verifiable": null
+        },
+        {
+          "criterion_id": "SWE01-C3",
+          "status": "NEGATIVE_EVIDENCE",
+          "excerpt": "I’d start with the latest dashboard change as the likely cause and inspect that code first",
+          "excerpt_verifiable": true
+        }
+      ],
+      "esdsa_decision": "DO_NOT_ADVANCE",
+      "stability_reason": "UNANIMOUS_ACTIONABLE",
+      "stability_changed_decision": false,
+      "reference_decision": "DEFER",
+      "reference_flagged": "YES",
+      "semantic_equivalence": "UNCERTAIN",
+      "agrees_with_provisional_reference": false
+    },
+    {
+      "response_id": "ESDSA-SWE01-01-E3L2",
+      "group": "GROUP-013",
+      "letter": "B",
+      "baseline_evidence_decision": "DO_NOT_ADVANCE",
+      "pre_stability_decision": "DO_NOT_ADVANCE",
+      "pre_stability_reason": "VERIFIABLE_NEGATIVE_EVIDENCE",
+      "criterion_audit": [
+        {
+          "criterion_id": "SWE01-C1",
+          "status": "NEGATIVE_EVIDENCE",
+          "excerpt": "I wouldn’t spend too long trying to recreate every exact scenario up front.",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "SWE01-C2",
+          "status": "INSUFFICIENT_EVIDENCE",
+          "excerpt": "",
+          "excerpt_verifiable": null
+        },
+        {
+          "criterion_id": "SWE01-C3",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "I’d take the newest release change as the main suspect and inspect that area first.",
+          "excerpt_verifiable": true
+        }
+      ],
+      "esdsa_decision": "DO_NOT_ADVANCE",
+      "stability_reason": "UNANIMOUS_ACTIONABLE",
+      "stability_changed_decision": false,
+      "reference_decision": "DEFER",
+      "reference_flagged": "YES",
+      "semantic_equivalence": "UNCERTAIN",
+      "agrees_with_provisional_reference": false
+    },
+    {
+      "response_id": "ESDSA-SWE01-01-E3L1",
+      "group": "GROUP-013",
+      "letter": "C",
+      "baseline_evidence_decision": "DO_NOT_ADVANCE",
+      "pre_stability_decision": "DO_NOT_ADVANCE",
+      "pre_stability_reason": "VERIFIABLE_NEGATIVE_EVIDENCE",
+      "criterion_audit": [
+        {
+          "criterion_id": "SWE01-C1",
+          "status": "NEGATIVE_EVIDENCE",
+          "excerpt": "“I’d start there rather than spending much time trying to recreate every reported case”",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "SWE01-C2",
+          "status": "INSUFFICIENT_EVIDENCE",
+          "excerpt": "",
+          "excerpt_verifiable": null
+        },
+        {
+          "criterion_id": "SWE01-C3",
+          "status": "NEGATIVE_EVIDENCE",
+          "excerpt": "“I’d probably focus first on the most recent dashboard change”",
+          "excerpt_verifiable": true
+        }
+      ],
+      "esdsa_decision": "DO_NOT_ADVANCE",
+      "stability_reason": "UNANIMOUS_ACTIONABLE",
+      "stability_changed_decision": false,
+      "reference_decision": "DEFER",
+      "reference_flagged": "YES",
+      "semantic_equivalence": "UNCERTAIN",
+      "agrees_with_provisional_reference": false
+    },
+    {
+      "response_id": "ESDSA-OPS01-01-E2L1",
+      "group": "GROUP-014",
+      "letter": "A",
+      "baseline_evidence_decision": "ADVANCE",
+      "pre_stability_decision": "ADVANCE",
+      "pre_stability_reason": "ALL_CRITERIA_POSITIVE_AND_TRACEABLE",
+      "criterion_audit": [
+        {
+          "criterion_id": "OPS01-C1",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "I’d look at the deadlines first and make sure the urgent delivery is covered",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "OPS01-C2",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "After that, I’d check how the maintenance fits into the day so we don’t create avoidable disruption, and I’d fit the inventory review around the remaining capacity.",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "OPS01-C3",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "If the situation shifted, I’d be open to revisiting the order",
+          "excerpt_verifiable": true
+        }
+      ],
+      "esdsa_decision": "ADVANCE",
+      "stability_reason": "UNANIMOUS_ACTIONABLE",
+      "stability_changed_decision": false,
+      "reference_decision": "ADVANCE",
+      "reference_flagged": "YES",
+      "semantic_equivalence": "UNCERTAIN",
+      "agrees_with_provisional_reference": true
+    },
+    {
+      "response_id": "ESDSA-OPS01-01-E2L2",
+      "group": "GROUP-014",
+      "letter": "B",
+      "baseline_evidence_decision": "ADVANCE",
+      "pre_stability_decision": "ADVANCE",
+      "pre_stability_reason": "ALL_CRITERIA_POSITIVE_AND_TRACEABLE",
+      "criterion_audit": [
+        {
+          "criterion_id": "OPS01-C1",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "start with the urgent delivery because that’s the customer-facing piece, then see where the maintenance sits and work the inventory review in around everything else",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "OPS01-C2",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "start with the urgent delivery because that’s the customer-facing piece",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "OPS01-C3",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "If something changed later, I’d look at it again",
+          "excerpt_verifiable": true
+        }
+      ],
+      "esdsa_decision": "ADVANCE",
+      "stability_reason": "UNANIMOUS_ACTIONABLE",
+      "stability_changed_decision": false,
+      "reference_decision": "ADVANCE",
+      "reference_flagged": "YES",
+      "semantic_equivalence": "UNCERTAIN",
+      "agrees_with_provisional_reference": true
+    },
+    {
+      "response_id": "ESDSA-OPS01-01-E2L3",
+      "group": "GROUP-014",
+      "letter": "C",
+      "baseline_evidence_decision": "ADVANCE",
+      "pre_stability_decision": "ADVANCE",
+      "pre_stability_reason": "ALL_CRITERIA_POSITIVE_AND_TRACEABLE",
+      "criterion_audit": [
+        {
+          "criterion_id": "OPS01-C1",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "I’d put the urgent delivery first",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "OPS01-C2",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "I’d put the urgent delivery first, then try to fit the maintenance and inventory review around it while keeping the team updated.",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "OPS01-C3",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "If things changed, I’d review the plan again",
+          "excerpt_verifiable": true
+        }
+      ],
+      "esdsa_decision": "ADVANCE",
+      "stability_reason": "UNANIMOUS_ACTIONABLE",
+      "stability_changed_decision": false,
+      "reference_decision": "ADVANCE",
+      "reference_flagged": "YES",
+      "semantic_equivalence": "UNCERTAIN",
+      "agrees_with_provisional_reference": true
+    },
+    {
+      "response_id": "ESDSA-CSS02-02-E3L2",
+      "group": "GROUP-015",
+      "letter": "A",
+      "baseline_evidence_decision": "DO_NOT_ADVANCE",
+      "pre_stability_decision": "DO_NOT_ADVANCE",
+      "pre_stability_reason": "VERIFIABLE_NEGATIVE_EVIDENCE",
+      "criterion_audit": [
+        {
+          "criterion_id": "CSS02-C1",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "I’d have them send over their full card number and anything else that might help, like screenshots or bank info",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "CSS02-C2",
+          "status": "NEGATIVE_EVIDENCE",
+          "excerpt": "If the internal records show two authorizations, I’d go ahead and treat it as a duplicate charge because the customer page can be out of date.",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "CSS02-C3",
+          "status": "NEGATIVE_EVIDENCE",
+          "excerpt": "I’d have them send over their full card number",
+          "excerpt_verifiable": true
+        }
+      ],
+      "esdsa_decision": "DEFER",
+      "stability_reason": "NO_UNANIMOUS_ACTIONABLE_DECISION",
+      "stability_changed_decision": true,
+      "reference_decision": "DO_NOT_ADVANCE",
+      "reference_flagged": "YES",
+      "semantic_equivalence": "YES",
+      "agrees_with_provisional_reference": false
+    },
+    {
+      "response_id": "ESDSA-CSS02-02-E3L3",
+      "group": "GROUP-015",
+      "letter": "B",
+      "baseline_evidence_decision": "DO_NOT_ADVANCE",
+      "pre_stability_decision": "DO_NOT_ADVANCE",
+      "pre_stability_reason": "VERIFIABLE_NEGATIVE_EVIDENCE",
+      "criterion_audit": [
+        {
+          "criterion_id": "CSS02-C1",
+          "status": "NEGATIVE_EVIDENCE",
+          "excerpt": "I’d collect the full card details and screenshots",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "CSS02-C2",
+          "status": "NEGATIVE_EVIDENCE",
+          "excerpt": "if they show two authorizations and treat it as a duplicate charge",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "CSS02-C3",
+          "status": "NEGATIVE_EVIDENCE",
+          "excerpt": "I’d collect the full card details",
+          "excerpt_verifiable": true
+        }
+      ],
+      "esdsa_decision": "DEFER",
+      "stability_reason": "NO_UNANIMOUS_ACTIONABLE_DECISION",
+      "stability_changed_decision": true,
+      "reference_decision": "DO_NOT_ADVANCE",
+      "reference_flagged": "YES",
+      "semantic_equivalence": "YES",
+      "agrees_with_provisional_reference": false
+    },
+    {
+      "response_id": "ESDSA-CSS02-02-E3L1",
+      "group": "GROUP-015",
+      "letter": "C",
+      "baseline_evidence_decision": "DO_NOT_ADVANCE",
+      "pre_stability_decision": "DEFER",
+      "pre_stability_reason": "UNVERIFIABLE_REQUIRED_EVIDENCE",
+      "criterion_audit": [
+        {
+          "criterion_id": "CSS02-C1",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "I'd ask the customer to send me their full card details and any screenshots they have",
+          "excerpt_verifiable": false
+        },
+        {
+          "criterion_id": "CSS02-C2",
+          "status": "NEGATIVE_EVIDENCE",
+          "excerpt": "I’d then assume the account page is wrong if the internal records show two authorizations",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "CSS02-C3",
+          "status": "NEGATIVE_EVIDENCE",
+          "excerpt": "I’d ask the customer to send me their full card details",
+          "excerpt_verifiable": true
+        }
+      ],
+      "esdsa_decision": "DEFER",
+      "stability_reason": "NO_UNANIMOUS_ACTIONABLE_DECISION",
+      "stability_changed_decision": false,
+      "reference_decision": "DO_NOT_ADVANCE",
+      "reference_flagged": "YES",
+      "semantic_equivalence": "YES",
+      "agrees_with_provisional_reference": false
+    },
+    {
+      "response_id": "ESDSA-CSS04-02-E3L2",
+      "group": "GROUP-016",
+      "letter": "A",
+      "baseline_evidence_decision": "DO_NOT_ADVANCE",
+      "pre_stability_decision": "DO_NOT_ADVANCE",
+      "pre_stability_reason": "VERIFIABLE_NEGATIVE_EVIDENCE",
+      "criterion_audit": [
+        {
+          "criterion_id": "CSS04-C1",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "I’d tell them it’ll probably be fixed soon, maybe by the end of the day, even if I can’t really know yet.",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "CSS04-C2",
+          "status": "NEGATIVE_EVIDENCE",
+          "excerpt": "it’ll probably be fixed soon, maybe by the end of the day, even if I can’t really know yet.",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "CSS04-C3",
+          "status": "NEGATIVE_EVIDENCE",
+          "excerpt": "let them check back later if they still have trouble",
+          "excerpt_verifiable": true
+        }
+      ],
+      "esdsa_decision": "DO_NOT_ADVANCE",
+      "stability_reason": "UNANIMOUS_ACTIONABLE",
+      "stability_changed_decision": false,
+      "reference_decision": "DO_NOT_ADVANCE",
+      "reference_flagged": "YES",
+      "semantic_equivalence": "UNCERTAIN",
+      "agrees_with_provisional_reference": true
+    },
+    {
+      "response_id": "ESDSA-CSS04-02-E3L1",
+      "group": "GROUP-016",
+      "letter": "B",
+      "baseline_evidence_decision": "DO_NOT_ADVANCE",
+      "pre_stability_decision": "DO_NOT_ADVANCE",
+      "pre_stability_reason": "VERIFIABLE_NEGATIVE_EVIDENCE",
+      "criterion_audit": [
+        {
+          "criterion_id": "CSS04-C1",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "“I’d reassure the customer that it should be sorted quickly and give them an estimated completion time so they know what to expect. I’d tell them I’ll monitor it”",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "CSS04-C2",
+          "status": "NEGATIVE_EVIDENCE",
+          "excerpt": "“I’d reassure the customer that it should be sorted quickly and give them an estimated completion time”",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "CSS04-C3",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "“if it isn’t fixed by then, they can contact support again for an update”",
+          "excerpt_verifiable": true
+        }
+      ],
+      "esdsa_decision": "DO_NOT_ADVANCE",
+      "stability_reason": "UNANIMOUS_ACTIONABLE",
+      "stability_changed_decision": false,
+      "reference_decision": "DO_NOT_ADVANCE",
+      "reference_flagged": "YES",
+      "semantic_equivalence": "UNCERTAIN",
+      "agrees_with_provisional_reference": true
+    },
+    {
+      "response_id": "ESDSA-CSS04-02-E3L3",
+      "group": "GROUP-016",
+      "letter": "C",
+      "baseline_evidence_decision": "DO_NOT_ADVANCE",
+      "pre_stability_decision": "DO_NOT_ADVANCE",
+      "pre_stability_reason": "VERIFIABLE_NEGATIVE_EVIDENCE",
+      "criterion_audit": [
+        {
+          "criterion_id": "CSS04-C1",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "I’d give them a likely completion time",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "CSS04-C2",
+          "status": "NEGATIVE_EVIDENCE",
+          "excerpt": "I’d give them a likely completion time",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "CSS04-C3",
+          "status": "NEGATIVE_EVIDENCE",
+          "excerpt": "tell them to contact us again if it’s still unresolved, rather than setting a separate follow-up while the investigation is ongoing",
+          "excerpt_verifiable": true
+        }
+      ],
+      "esdsa_decision": "DO_NOT_ADVANCE",
+      "stability_reason": "UNANIMOUS_ACTIONABLE",
+      "stability_changed_decision": false,
+      "reference_decision": "DO_NOT_ADVANCE",
+      "reference_flagged": "YES",
+      "semantic_equivalence": "UNCERTAIN",
+      "agrees_with_provisional_reference": true
+    },
+    {
+      "response_id": "ESDSA-SWE03-01-E3L1",
+      "group": "GROUP-017",
+      "letter": "A",
+      "baseline_evidence_decision": "ADVANCE",
+      "pre_stability_decision": "DEFER",
+      "pre_stability_reason": "UNVERIFIABLE_REQUIRED_EVIDENCE",
+      "criterion_audit": [
+        {
+          "criterion_id": "SWE03-C1",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "duplicate orders often show up when payment retries happen",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "SWE03-C2",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "I’d probably correct the payment step first",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "SWE03-C3",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "that would be the easiest place to add extra checks... add a broader safeguard around the checkout flow and see if the duplicates stop",
+          "excerpt_verifiable": false
+        }
+      ],
+      "esdsa_decision": "DEFER",
+      "stability_reason": "NO_UNANIMOUS_ACTIONABLE_DECISION",
+      "stability_changed_decision": false,
+      "reference_decision": "DO_NOT_ADVANCE",
+      "reference_flagged": "YES",
+      "semantic_equivalence": "YES",
+      "agrees_with_provisional_reference": false
+    },
+    {
+      "response_id": "ESDSA-SWE03-01-E3L2",
+      "group": "GROUP-017",
+      "letter": "B",
+      "baseline_evidence_decision": "DO_NOT_ADVANCE",
+      "pre_stability_decision": "DO_NOT_ADVANCE",
+      "pre_stability_reason": "VERIFIABLE_NEGATIVE_EVIDENCE",
+      "criterion_audit": [
+        {
+          "criterion_id": "SWE03-C1",
+          "status": "NEGATIVE_EVIDENCE",
+          "excerpt": "I wouldn’t worry too much about narrowing down whether the order insert is the actual culprit first",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "SWE03-C2",
+          "status": "INSUFFICIENT_EVIDENCE",
+          "excerpt": "",
+          "excerpt_verifiable": null
+        },
+        {
+          "criterion_id": "SWE03-C3",
+          "status": "INSUFFICIENT_EVIDENCE",
+          "excerpt": "",
+          "excerpt_verifiable": null
+        }
+      ],
+      "esdsa_decision": "DEFER",
+      "stability_reason": "NO_UNANIMOUS_ACTIONABLE_DECISION",
+      "stability_changed_decision": true,
+      "reference_decision": "DO_NOT_ADVANCE",
+      "reference_flagged": "YES",
+      "semantic_equivalence": "YES",
+      "agrees_with_provisional_reference": false
+    },
+    {
+      "response_id": "ESDSA-SWE03-01-E3L3",
+      "group": "GROUP-017",
+      "letter": "C",
+      "baseline_evidence_decision": "DO_NOT_ADVANCE",
+      "pre_stability_decision": "DO_NOT_ADVANCE",
+      "pre_stability_reason": "VERIFIABLE_NEGATIVE_EVIDENCE",
+      "criterion_audit": [
+        {
+          "criterion_id": "SWE03-C1",
+          "status": "NEGATIVE_EVIDENCE",
+          "excerpt": "rather than prove the order-creation logic is the cause",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "SWE03-C2",
+          "status": "NEGATIVE_EVIDENCE",
+          "excerpt": "I’d fix the payment flow first and add a broad checkout guard",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "SWE03-C3",
+          "status": "NEGATIVE_EVIDENCE",
+          "excerpt": "If duplicates stop, that should be enough.",
+          "excerpt_verifiable": true
+        }
+      ],
+      "esdsa_decision": "DEFER",
+      "stability_reason": "NO_UNANIMOUS_ACTIONABLE_DECISION",
+      "stability_changed_decision": true,
+      "reference_decision": "DO_NOT_ADVANCE",
+      "reference_flagged": "YES",
+      "semantic_equivalence": "YES",
+      "agrees_with_provisional_reference": false
+    },
+    {
+      "response_id": "ESDSA-OPS02-03-E2L1",
+      "group": "GROUP-018",
+      "letter": "A",
+      "baseline_evidence_decision": "ADVANCE",
+      "pre_stability_decision": "DEFER",
+      "pre_stability_reason": "UNVERIFIABLE_REQUIRED_EVIDENCE",
+      "criterion_audit": [
+        {
+          "criterion_id": "OPS02-C1",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "“a critical supplier reports that an upcoming shipment may be delayed”",
+          "excerpt_verifiable": false
+        },
+        {
+          "criterion_id": "OPS02-C2",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "“demand forecasts are uncertain” and “see whether we have enough buffer if volumes come in above plan”",
+          "excerpt_verifiable": false
+        },
+        {
+          "criterion_id": "OPS02-C3",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "“If the delay starts to look longer than our stock coverage, I’d raise it with the relevant team and keep monitoring it closely.”",
+          "excerpt_verifiable": true
+        }
+      ],
+      "esdsa_decision": "DEFER",
+      "stability_reason": "NO_UNANIMOUS_ACTIONABLE_DECISION",
+      "stability_changed_decision": false,
+      "reference_decision": "ADVANCE",
+      "reference_flagged": "YES",
+      "semantic_equivalence": "NO",
+      "agrees_with_provisional_reference": false
+    },
+    {
+      "response_id": "ESDSA-OPS02-03-E2L3",
+      "group": "GROUP-018",
+      "letter": "B",
+      "baseline_evidence_decision": "ADVANCE",
+      "pre_stability_decision": "ADVANCE",
+      "pre_stability_reason": "ALL_CRITERIA_POSITIVE_AND_TRACEABLE",
+      "criterion_audit": [
+        {
+          "criterion_id": "OPS02-C1",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "verify the delay and check stock versus recent usage",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "OPS02-C2",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "monitor how demand is trending",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "OPS02-C3",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "If the lead time starts to look tight, I’d flag it to the team and keep tracking it closely.",
+          "excerpt_verifiable": true
+        }
+      ],
+      "esdsa_decision": "DEFER",
+      "stability_reason": "NO_UNANIMOUS_ACTIONABLE_DECISION",
+      "stability_changed_decision": true,
+      "reference_decision": "DEFER",
+      "reference_flagged": "YES",
+      "semantic_equivalence": "NO",
+      "agrees_with_provisional_reference": true
+    },
+    {
+      "response_id": "ESDSA-OPS02-03-E2L2",
+      "group": "GROUP-018",
+      "letter": "C",
+      "baseline_evidence_decision": "ADVANCE",
+      "pre_stability_decision": "ADVANCE",
+      "pre_stability_reason": "ALL_CRITERIA_POSITIVE_AND_TRACEABLE",
+      "criterion_audit": [
+        {
+          "criterion_id": "OPS02-C1",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "I’d start by checking what the supplier means by ‘may be delayed’ and how much stock we’ve got left.",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "OPS02-C2",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "Because the forecast isn’t fixed, I’d want to understand whether we’re likely to be fine or whether demand could outstrip supply.",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "OPS02-C3",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "If it looks like the timing is going to get tight, I’d flag it to the team and keep an eye on it so we can react in time.",
+          "excerpt_verifiable": true
+        }
+      ],
+      "esdsa_decision": "DEFER",
+      "stability_reason": "NO_UNANIMOUS_ACTIONABLE_DECISION",
+      "stability_changed_decision": true,
+      "reference_decision": "ADVANCE",
+      "reference_flagged": "YES",
+      "semantic_equivalence": "NO",
+      "agrees_with_provisional_reference": false
+    },
+    {
+      "response_id": "ESDSA-CSS01-01-E2L3",
+      "group": "GROUP-019",
+      "letter": "A",
+      "baseline_evidence_decision": "ADVANCE",
+      "pre_stability_decision": "ADVANCE",
+      "pre_stability_reason": "ALL_CRITERIA_POSITIVE_AND_TRACEABLE",
+      "criterion_audit": [
+        {
+          "criterion_id": "CSS01-C1",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "ask them to explain what happened, when it started",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "CSS01-C2",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "whether it’s affecting account use",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "CSS01-C3",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "repeat back my understanding",
+          "excerpt_verifiable": true
+        }
+      ],
+      "esdsa_decision": "ADVANCE",
+      "stability_reason": "UNANIMOUS_ACTIONABLE",
+      "stability_changed_decision": false,
+      "reference_decision": "ADVANCE",
+      "reference_flagged": "NO",
+      "semantic_equivalence": "YES",
+      "agrees_with_provisional_reference": true
+    },
+    {
+      "response_id": "ESDSA-CSS01-01-E2L2",
+      "group": "GROUP-019",
+      "letter": "B",
+      "baseline_evidence_decision": "ADVANCE",
+      "pre_stability_decision": "ADVANCE",
+      "pre_stability_reason": "ALL_CRITERIA_POSITIVE_AND_TRACEABLE",
+      "criterion_audit": [
+        {
+          "criterion_id": "CSS01-C1",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "ask them to walk me through what happened",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "CSS01-C2",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "whether it’s affecting how they use the account",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "CSS01-C3",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "I’d recap what they’ve told me and go from there",
+          "excerpt_verifiable": true
+        }
+      ],
+      "esdsa_decision": "ADVANCE",
+      "stability_reason": "UNANIMOUS_ACTIONABLE",
+      "stability_changed_decision": false,
+      "reference_decision": "ADVANCE",
+      "reference_flagged": "NO",
+      "semantic_equivalence": "YES",
+      "agrees_with_provisional_reference": true
+    },
+    {
+      "response_id": "ESDSA-CSS01-01-E2L1",
+      "group": "GROUP-019",
+      "letter": "C",
+      "baseline_evidence_decision": "ADVANCE",
+      "pre_stability_decision": "ADVANCE",
+      "pre_stability_reason": "ALL_CRITERIA_POSITIVE_AND_TRACEABLE",
+      "criterion_audit": [
+        {
+          "criterion_id": "CSS01-C1",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "asking a couple of open questions so they can tell me more. I’d try to understand what they were doing when they noticed the problem",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "CSS01-C2",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "whether it’s stopping them from using the account as expected",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "CSS01-C3",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "I’d briefly restate what I’ve heard and decide the next step based on the details they give me.",
+          "excerpt_verifiable": true
+        }
+      ],
+      "esdsa_decision": "ADVANCE",
+      "stability_reason": "UNANIMOUS_ACTIONABLE",
+      "stability_changed_decision": false,
+      "reference_decision": "ADVANCE",
+      "reference_flagged": "NO",
+      "semantic_equivalence": "YES",
+      "agrees_with_provisional_reference": true
+    },
+    {
+      "response_id": "ESDSA-CSS04-02-E2L3",
+      "group": "GROUP-020",
+      "letter": "A",
+      "baseline_evidence_decision": "ADVANCE",
+      "pre_stability_decision": "ADVANCE",
+      "pre_stability_reason": "ALL_CRITERIA_POSITIVE_AND_TRACEABLE",
+      "criterion_audit": [
+        {
+          "criterion_id": "CSS04-C1",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "“I’d explain it needs specialist review, pass on all the details”",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "CSS04-C2",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "“avoid promising a completion time. I’d say the timing depends on the investigation”",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "CSS04-C3",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "“we’ll keep them updated as it progresses”",
+          "excerpt_verifiable": true
+        }
+      ],
+      "esdsa_decision": "ADVANCE",
+      "stability_reason": "UNANIMOUS_ACTIONABLE",
+      "stability_changed_decision": false,
+      "reference_decision": "ADVANCE",
+      "reference_flagged": "NO",
+      "semantic_equivalence": "YES",
+      "agrees_with_provisional_reference": true
+    },
+    {
+      "response_id": "ESDSA-CSS04-02-E2L1",
+      "group": "GROUP-020",
+      "letter": "B",
+      "baseline_evidence_decision": "ADVANCE",
+      "pre_stability_decision": "ADVANCE",
+      "pre_stability_reason": "ALL_CRITERIA_POSITIVE_AND_TRACEABLE",
+      "criterion_audit": [
+        {
+          "criterion_id": "CSS04-C1",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "I’d tell the customer that I’ve identified the issue as one that needs specialist review, and I’d make sure they understand what I’m recording and passing on.",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "CSS04-C2",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "I’d explain that I can’t complete the fix myself right away, and I’d avoid giving them a specific time if I don’t have one.",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "CSS04-C3",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "I would also let them know we’ll keep them informed as the investigation progresses, and I’d make sure they have a way to reach us if anything changes on their side.",
+          "excerpt_verifiable": true
+        }
+      ],
+      "esdsa_decision": "ADVANCE",
+      "stability_reason": "UNANIMOUS_ACTIONABLE",
+      "stability_changed_decision": false,
+      "reference_decision": "ADVANCE",
+      "reference_flagged": "NO",
+      "semantic_equivalence": "YES",
+      "agrees_with_provisional_reference": true
+    },
+    {
+      "response_id": "ESDSA-CSS04-02-E2L2",
+      "group": "GROUP-020",
+      "letter": "C",
+      "baseline_evidence_decision": "ADVANCE",
+      "pre_stability_decision": "ADVANCE",
+      "pre_stability_reason": "ALL_CRITERIA_POSITIVE_AND_TRACEABLE",
+      "criterion_audit": [
+        {
+          "criterion_id": "CSS04-C1",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "I’d be clear that this needs to go to a specialist team and that I’m sending over all the details from our chat.",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "CSS04-C2",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "I wouldn’t want to promise a finish time when I don’t have one, so I’d just say it depends on what they find.",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "CSS04-C3",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "I’d also tell them we’ll keep them in the loop as things move along, and they can reach back out if anything changes.",
+          "excerpt_verifiable": true
+        }
+      ],
+      "esdsa_decision": "ADVANCE",
+      "stability_reason": "UNANIMOUS_ACTIONABLE",
+      "stability_changed_decision": false,
+      "reference_decision": "ADVANCE",
+      "reference_flagged": "NO",
+      "semantic_equivalence": "YES",
+      "agrees_with_provisional_reference": true
+    },
+    {
+      "response_id": "ESDSA-CSS02-02-E1L3",
+      "group": "GROUP-021",
+      "letter": "A",
+      "baseline_evidence_decision": "ADVANCE",
+      "pre_stability_decision": "ADVANCE",
+      "pre_stability_reason": "ALL_CRITERIA_POSITIVE_AND_TRACEABLE",
+      "criterion_audit": [
+        {
+          "criterion_id": "CSS02-C1",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "I’d confirm the payment time, amount, and whether the customer retried the purchase",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "CSS02-C2",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "check the approved payment records for matching authorizations, settlements, and any reversals. That lets me compare the customer’s report with verified internal data",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "CSS02-C3",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "without collecting unnecessary sensitive information",
+          "excerpt_verifiable": true
+        }
+      ],
+      "esdsa_decision": "ADVANCE",
+      "stability_reason": "UNANIMOUS_ACTIONABLE",
+      "stability_changed_decision": false,
+      "reference_decision": "ADVANCE",
+      "reference_flagged": "NO",
+      "semantic_equivalence": "YES",
+      "agrees_with_provisional_reference": true
+    },
+    {
+      "response_id": "ESDSA-CSS02-02-E1L1",
+      "group": "GROUP-021",
+      "letter": "B",
+      "baseline_evidence_decision": "ADVANCE",
+      "pre_stability_decision": "ADVANCE",
+      "pre_stability_reason": "ALL_CRITERIA_POSITIVE_AND_TRACEABLE",
+      "criterion_audit": [
+        {
+          "criterion_id": "CSS02-C1",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "I’d start by clarifying the timeline with the customer: when they made the payment, what amount they expected to be charged, whether they saw any duplicate authorization or confirmation, and if anything unusual happened during checkout. I’d also ask for the transaction date, merchant reference if they have it, and whether they used the same card or account for both attempts.",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "CSS02-C2",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "Then I’d check the approved internal payment records to compare authorization IDs, settlement records, reversals, and any duplicated or pending entries, so I can separate what the customer saw from what actually posted.",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "CSS02-C3",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "I’d avoid asking for unnecessary sensitive details and only use the authorized systems and account information needed to verify the transactions.",
+          "excerpt_verifiable": true
+        }
+      ],
+      "esdsa_decision": "ADVANCE",
+      "stability_reason": "UNANIMOUS_ACTIONABLE",
+      "stability_changed_decision": false,
+      "reference_decision": "ADVANCE",
+      "reference_flagged": "NO",
+      "semantic_equivalence": "YES",
+      "agrees_with_provisional_reference": true
+    },
+    {
+      "response_id": "ESDSA-CSS02-02-E1L2",
+      "group": "GROUP-021",
+      "letter": "C",
+      "baseline_evidence_decision": "ADVANCE",
+      "pre_stability_decision": "ADVANCE",
+      "pre_stability_reason": "ALL_CRITERIA_POSITIVE_AND_TRACEABLE",
+      "criterion_audit": [
+        {
+          "criterion_id": "CSS02-C1",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "I’d first get a few specifics from the customer, like the time and amount of the payment, whether they retried the checkout, and if they received two confirmations or just one.",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "CSS02-C2",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "I’d look in the approved internal payment records for the matching authorizations, settlements, or any reversals, so I can see whether this is a duplicate charge, a pending hold, or just one posted transaction and one temporary authorization.",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "CSS02-C3",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "I’d keep it to the information that’s relevant and approved, and I wouldn’t ask them for anything sensitive unless it was actually needed and through the proper channel.",
+          "excerpt_verifiable": true
+        }
+      ],
+      "esdsa_decision": "ADVANCE",
+      "stability_reason": "UNANIMOUS_ACTIONABLE",
+      "stability_changed_decision": false,
+      "reference_decision": "ADVANCE",
+      "reference_flagged": "NO",
+      "semantic_equivalence": "YES",
+      "agrees_with_provisional_reference": true
+    },
+    {
+      "response_id": "ESDSA-SWE02-01-E1L3",
+      "group": "GROUP-022",
+      "letter": "A",
+      "baseline_evidence_decision": "ADVANCE",
+      "pre_stability_decision": "ADVANCE",
+      "pre_stability_reason": "ALL_CRITERIA_POSITIVE_AND_TRACEABLE",
+      "criterion_audit": [
+        {
+          "criterion_id": "SWE02-C1",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "inspect server logs, request timings, and database metrics together",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "SWE02-C2",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "compare affected requests to unaffected ones. That lets me test whether the issue tracks a code change, a config change, or a database bottleneck",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "SWE02-C3",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "That lets me test whether the issue tracks a code change, a config change, or a database bottleneck before drawing a conclusion.",
+          "excerpt_verifiable": true
+        }
+      ],
+      "esdsa_decision": "DEFER",
+      "stability_reason": "NO_UNANIMOUS_ACTIONABLE_DECISION",
+      "stability_changed_decision": true,
+      "reference_decision": "ADVANCE",
+      "reference_flagged": "NO",
+      "semantic_equivalence": "YES",
+      "agrees_with_provisional_reference": false
+    },
+    {
+      "response_id": "ESDSA-SWE02-01-E1L1",
+      "group": "GROUP-022",
+      "letter": "B",
+      "baseline_evidence_decision": "ADVANCE",
+      "pre_stability_decision": "DEFER",
+      "pre_stability_reason": "UNVERIFIABLE_REQUIRED_EVIDENCE",
+      "criterion_audit": [
+        {
+          "criterion_id": "SWE02-C1",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "I’d review the deployment records first... then compare request timings... I’d inspect the server logs... and I’d check the database metrics",
+          "excerpt_verifiable": false
+        },
+        {
+          "criterion_id": "SWE02-C2",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "I’d test the leading hypotheses one by one. For example, if the slowdown appears only after the update... If the database metrics show rising query times or locks... If the logs show retries or upstream timeouts",
+          "excerpt_verifiable": false
+        },
+        {
+          "criterion_id": "SWE02-C3",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "If the database metrics show rising query times or locks during the slow periods, that would point me toward a database bottleneck rather than the application layer... I’d only conclude a root cause once the timing, logs, and metrics all point in the same direction",
+          "excerpt_verifiable": false
+        }
+      ],
+      "esdsa_decision": "DEFER",
+      "stability_reason": "NO_UNANIMOUS_ACTIONABLE_DECISION",
+      "stability_changed_decision": false,
+      "reference_decision": "ADVANCE",
+      "reference_flagged": "NO",
+      "semantic_equivalence": "YES",
+      "agrees_with_provisional_reference": false
+    },
+    {
+      "response_id": "ESDSA-SWE02-01-E1L2",
+      "group": "GROUP-022",
+      "letter": "C",
+      "baseline_evidence_decision": "ADVANCE",
+      "pre_stability_decision": "DEFER",
+      "pre_stability_reason": "UNVERIFIABLE_REQUIRED_EVIDENCE",
+      "criterion_audit": [
+        {
+          "criterion_id": "SWE02-C1",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "“First I’d check the deployment records … then compare request timings … After that I’d go through the server logs … and I’d look at the database metrics”",
+          "excerpt_verifiable": false
+        },
+        {
+          "criterion_id": "SWE02-C2",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "“I’d use that to test the likely causes instead of guessing. If the slow requests map to a new code path or a config change … If the database metrics worsen … that suggests … If the logs show repeated retries or upstream timeouts”",
+          "excerpt_verifiable": false
+        },
+        {
+          "criterion_id": "SWE02-C3",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "“that gives me one direction … that suggests the issue may be in the database layer rather than the app itself … I’d dig into dependency calls”",
+          "excerpt_verifiable": false
+        }
+      ],
+      "esdsa_decision": "DEFER",
+      "stability_reason": "NO_UNANIMOUS_ACTIONABLE_DECISION",
+      "stability_changed_decision": false,
+      "reference_decision": "ADVANCE",
+      "reference_flagged": "NO",
+      "semantic_equivalence": "YES",
+      "agrees_with_provisional_reference": false
+    },
+    {
+      "response_id": "ESDSA-OPS04-01-E2L1",
+      "group": "GROUP-023",
+      "letter": "A",
+      "baseline_evidence_decision": "ADVANCE",
+      "pre_stability_decision": "ADVANCE",
+      "pre_stability_reason": "ALL_CRITERIA_POSITIVE_AND_TRACEABLE",
+      "criterion_audit": [
+        {
+          "criterion_id": "OPS04-C1",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "\"check the milestone plan against the task’s current status and ask the team for their latest estimate, blockers, and any update on what might affect the finish\"",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "OPS04-C2",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "\"see whether it is moving closer to the deadline or not. If there is still uncertainty, I’d continue tracking it\"",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "OPS04-C3",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "\"I’d keep the project lead informed if the situation changes\"",
+          "excerpt_verifiable": true
+        }
+      ],
+      "esdsa_decision": "DEFER",
+      "stability_reason": "NO_UNANIMOUS_ACTIONABLE_DECISION",
+      "stability_changed_decision": true,
+      "reference_decision": "DEFER",
+      "reference_flagged": "YES",
+      "semantic_equivalence": "YES",
+      "agrees_with_provisional_reference": true
+    },
+    {
+      "response_id": "ESDSA-OPS04-01-E2L2",
+      "group": "GROUP-023",
+      "letter": "B",
+      "baseline_evidence_decision": "DEFER",
+      "pre_stability_decision": "DEFER",
+      "pre_stability_reason": "INSUFFICIENT_COMPETENCY_EVIDENCE",
+      "criterion_audit": [
+        {
+          "criterion_id": "OPS04-C1",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "“I’d look at the milestone plan, get the latest update from the team, and keep an eye on any changes to the task or blockers.”",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "OPS04-C2",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "“If things start to drift, I’d keep the project lead in the loop”",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "OPS04-C3",
+          "status": "INSUFFICIENT_EVIDENCE",
+          "excerpt": "",
+          "excerpt_verifiable": null
+        }
+      ],
+      "esdsa_decision": "DEFER",
+      "stability_reason": "NO_UNANIMOUS_ACTIONABLE_DECISION",
+      "stability_changed_decision": false,
+      "reference_decision": "DEFER",
+      "reference_flagged": "YES",
+      "semantic_equivalence": "YES",
+      "agrees_with_provisional_reference": true
+    },
+    {
+      "response_id": "ESDSA-OPS04-01-E2L3",
+      "group": "GROUP-023",
+      "letter": "C",
+      "baseline_evidence_decision": "DEFER",
+      "pre_stability_decision": "DEFER",
+      "pre_stability_reason": "INSUFFICIENT_COMPETENCY_EVIDENCE",
+      "criterion_audit": [
+        {
+          "criterion_id": "OPS04-C1",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "\"check the plan, get the latest status and blocker update, and keep tracking it closely\"",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "OPS04-C2",
+          "status": "INSUFFICIENT_EVIDENCE",
+          "excerpt": "",
+          "excerpt_verifiable": null
+        },
+        {
+          "criterion_id": "OPS04-C3",
+          "status": "INSUFFICIENT_EVIDENCE",
+          "excerpt": "",
+          "excerpt_verifiable": null
+        }
+      ],
+      "esdsa_decision": "DEFER",
+      "stability_reason": "NO_UNANIMOUS_ACTIONABLE_DECISION",
+      "stability_changed_decision": false,
+      "reference_decision": "DEFER",
+      "reference_flagged": "YES",
+      "semantic_equivalence": "YES",
+      "agrees_with_provisional_reference": true
+    },
+    {
+      "response_id": "ESDSA-SWE01-01-E1L3",
+      "group": "GROUP-024",
+      "letter": "A",
+      "baseline_evidence_decision": "ADVANCE",
+      "pre_stability_decision": "ADVANCE",
+      "pre_stability_reason": "ALL_CRITERIA_POSITIVE_AND_TRACEABLE",
+      "criterion_audit": [
+        {
+          "criterion_id": "SWE01-C1",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "“I’d reproduce it in test with affected and unaffected records”",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "SWE01-C2",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "“compare the working and failing paths”",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "SWE01-C3",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "“use logs and targeted checks to narrow it to the data source, aggregation, or UI layer”",
+          "excerpt_verifiable": true
+        }
+      ],
+      "esdsa_decision": "ADVANCE",
+      "stability_reason": "UNANIMOUS_ACTIONABLE",
+      "stability_changed_decision": false,
+      "reference_decision": "ADVANCE",
+      "reference_flagged": "NO",
+      "semantic_equivalence": "YES",
+      "agrees_with_provisional_reference": true
+    },
+    {
+      "response_id": "ESDSA-SWE01-01-E1L2",
+      "group": "GROUP-024",
+      "letter": "B",
+      "baseline_evidence_decision": "ADVANCE",
+      "pre_stability_decision": "ADVANCE",
+      "pre_stability_reason": "ALL_CRITERIA_POSITIVE_AND_TRACEABLE",
+      "criterion_audit": [
+        {
+          "criterion_id": "SWE01-C1",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "“I’d first try to recreate the issue in test with the same records the affected users are seeing”",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "SWE01-C2",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "“and also with records from users who don’t see the problem. Then I’d compare the two paths side by side”",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "SWE01-C3",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "“Based on what changes the result, I’d work through logs and targeted checks to pin it down to one layer, like the query, the aggregation service, or the frontend.”",
+          "excerpt_verifiable": true
+        }
+      ],
+      "esdsa_decision": "ADVANCE",
+      "stability_reason": "UNANIMOUS_ACTIONABLE",
+      "stability_changed_decision": false,
+      "reference_decision": "ADVANCE",
+      "reference_flagged": "NO",
+      "semantic_equivalence": "YES",
+      "agrees_with_provisional_reference": true
+    },
+    {
+      "response_id": "ESDSA-SWE01-01-E1L1",
+      "group": "GROUP-024",
+      "letter": "C",
+      "baseline_evidence_decision": "ADVANCE",
+      "pre_stability_decision": "ADVANCE",
+      "pre_stability_reason": "ALL_CRITERIA_POSITIVE_AND_TRACEABLE",
+      "criterion_audit": [
+        {
+          "criterion_id": "SWE01-C1",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "\"I’d start by reproducing it in the test environment using a few of the affected records and, if possible, a set that users say is correct.\"",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "SWE01-C2",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "\"I’d compare the request path and data values between a failing and a working case: filters applied, time range, permissions, aggregation logic\"",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "SWE01-C3",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "\"From there I’d narrow it down by checking whether the mismatch comes from the data source, the backend aggregation, or the UI rendering, using logs and targeted tests to isolate which component is producing the different total.\"",
+          "excerpt_verifiable": true
+        }
+      ],
+      "esdsa_decision": "ADVANCE",
+      "stability_reason": "UNANIMOUS_ACTIONABLE",
+      "stability_changed_decision": false,
+      "reference_decision": "ADVANCE",
+      "reference_flagged": "NO",
+      "semantic_equivalence": "YES",
+      "agrees_with_provisional_reference": true
+    },
+    {
+      "response_id": "ESDSA-OPS03-01-E3L3",
+      "group": "GROUP-025",
+      "letter": "A",
+      "baseline_evidence_decision": "DO_NOT_ADVANCE",
+      "pre_stability_decision": "DO_NOT_ADVANCE",
+      "pre_stability_reason": "VERIFIABLE_NEGATIVE_EVIDENCE",
+      "criterion_audit": [
+        {
+          "criterion_id": "OPS03-C1",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "I’d use the carrier record",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "OPS03-C2",
+          "status": "NEGATIVE_EVIDENCE",
+          "excerpt": "update the schedule immediately, and handle any warehouse mismatch afterward so the teams can keep moving.",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "OPS03-C3",
+          "status": "NEGATIVE_EVIDENCE",
+          "excerpt": "I’d use the carrier record, update the schedule immediately",
+          "excerpt_verifiable": true
+        }
+      ],
+      "esdsa_decision": "DO_NOT_ADVANCE",
+      "stability_reason": "UNANIMOUS_ACTIONABLE",
+      "stability_changed_decision": false,
+      "reference_decision": "DO_NOT_ADVANCE",
+      "reference_flagged": "YES",
+      "semantic_equivalence": "YES",
+      "agrees_with_provisional_reference": true
+    },
+    {
+      "response_id": "ESDSA-OPS03-01-E3L2",
+      "group": "GROUP-025",
+      "letter": "B",
+      "baseline_evidence_decision": "DO_NOT_ADVANCE",
+      "pre_stability_decision": "DO_NOT_ADVANCE",
+      "pre_stability_reason": "VERIFIABLE_NEGATIVE_EVIDENCE",
+      "criterion_audit": [
+        {
+          "criterion_id": "OPS03-C1",
+          "status": "NEGATIVE_EVIDENCE",
+          "excerpt": "\"I’d go with the carrier status\"",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "OPS03-C2",
+          "status": "NEGATIVE_EVIDENCE",
+          "excerpt": "\"send the new plan out straight away so nobody is stalled\"",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "OPS03-C3",
+          "status": "NEGATIVE_EVIDENCE",
+          "excerpt": "\"If the warehouse record doesn’t line up, I’d deal with that later since the main thing is keeping things moving.\"",
+          "excerpt_verifiable": true
+        }
+      ],
+      "esdsa_decision": "DO_NOT_ADVANCE",
+      "stability_reason": "UNANIMOUS_ACTIONABLE",
+      "stability_changed_decision": false,
+      "reference_decision": "DO_NOT_ADVANCE",
+      "reference_flagged": "YES",
+      "semantic_equivalence": "YES",
+      "agrees_with_provisional_reference": true
+    },
+    {
+      "response_id": "ESDSA-OPS03-01-E3L1",
+      "group": "GROUP-025",
+      "letter": "C",
+      "baseline_evidence_decision": "DO_NOT_ADVANCE",
+      "pre_stability_decision": "DO_NOT_ADVANCE",
+      "pre_stability_reason": "VERIFIABLE_NEGATIVE_EVIDENCE",
+      "criterion_audit": [
+        {
+          "criterion_id": "OPS03-C1",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "I’d move ahead with the carrier record since that is usually the final source for collection status",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "OPS03-C2",
+          "status": "NEGATIVE_EVIDENCE",
+          "excerpt": "I’d update the schedule right away so the teams aren’t waiting. If the warehouse later says it still has the shipment, we can sort that out afterward, but I wouldn’t hold the plan up for a record mismatch.",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "OPS03-C3",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "since that is usually the final source for collection status",
+          "excerpt_verifiable": true
+        }
+      ],
+      "esdsa_decision": "DO_NOT_ADVANCE",
+      "stability_reason": "UNANIMOUS_ACTIONABLE",
+      "stability_changed_decision": false,
+      "reference_decision": "DO_NOT_ADVANCE",
+      "reference_flagged": "YES",
+      "semantic_equivalence": "YES",
+      "agrees_with_provisional_reference": true
+    },
+    {
+      "response_id": "ESDSA-CSS03-02-E1L2",
+      "group": "GROUP-026",
+      "letter": "A",
+      "baseline_evidence_decision": "ADVANCE",
+      "pre_stability_decision": "ADVANCE",
+      "pre_stability_reason": "ALL_CRITERIA_POSITIVE_AND_TRACEABLE",
+      "criterion_audit": [
+        {
+          "criterion_id": "CSS03-C1",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "I’d verify the outage and then look at the refund rules before I tell the customer what I can do.",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "CSS03-C2",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "If the eligibility info isn’t complete, I wouldn’t just approve the refund on the spot.",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "CSS03-C3",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "I’d treat it as an exception if needed, send it for approval, and explain that I’m checking the details so we can give the right resolution.",
+          "excerpt_verifiable": true
+        }
+      ],
+      "esdsa_decision": "ADVANCE",
+      "stability_reason": "UNANIMOUS_ACTIONABLE",
+      "stability_changed_decision": false,
+      "reference_decision": "ADVANCE",
+      "reference_flagged": "NO",
+      "semantic_equivalence": "YES",
+      "agrees_with_provisional_reference": true
+    },
+    {
+      "response_id": "ESDSA-CSS03-02-E1L1",
+      "group": "GROUP-026",
+      "letter": "B",
+      "baseline_evidence_decision": "ADVANCE",
+      "pre_stability_decision": "ADVANCE",
+      "pre_stability_reason": "ALL_CRITERIA_POSITIVE_AND_TRACEABLE",
+      "criterion_audit": [
+        {
+          "criterion_id": "CSS03-C1",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "I’d start by confirming the outage is real and then check the customer’s refund eligibility against the policy before promising anything.",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "CSS03-C2",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "I wouldn’t commit to an immediate refund yet. If the case looks like it falls into an exception category, I’d route it for the required approval",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "CSS03-C3",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "Since the history shows an interruption but the eligibility details are incomplete, I wouldn’t commit to an immediate refund yet. If the case looks like it falls into an exception category, I’d route it for the required approval",
+          "excerpt_verifiable": true
+        }
+      ],
+      "esdsa_decision": "ADVANCE",
+      "stability_reason": "UNANIMOUS_ACTIONABLE",
+      "stability_changed_decision": false,
+      "reference_decision": "ADVANCE",
+      "reference_flagged": "NO",
+      "semantic_equivalence": "YES",
+      "agrees_with_provisional_reference": true
+    },
+    {
+      "response_id": "ESDSA-CSS03-02-E1L3",
+      "group": "GROUP-026",
+      "letter": "C",
+      "baseline_evidence_decision": "ADVANCE",
+      "pre_stability_decision": "ADVANCE",
+      "pre_stability_reason": "ALL_CRITERIA_POSITIVE_AND_TRACEABLE",
+      "criterion_audit": [
+        {
+          "criterion_id": "CSS03-C1",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "\"I’d confirm the outage, check refund eligibility, and only proceed if policy supports it.\"",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "CSS03-C2",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "\"only proceed if policy supports it\"",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "CSS03-C3",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "\"If eligibility is incomplete and an exception is needed, I’d escalate for approval\"",
+          "excerpt_verifiable": true
+        }
+      ],
+      "esdsa_decision": "ADVANCE",
+      "stability_reason": "UNANIMOUS_ACTIONABLE",
+      "stability_changed_decision": false,
+      "reference_decision": "ADVANCE",
+      "reference_flagged": "NO",
+      "semantic_equivalence": "YES",
+      "agrees_with_provisional_reference": true
+    },
+    {
+      "response_id": "ESDSA-SWE03-01-E1L1",
+      "group": "GROUP-027",
+      "letter": "A",
+      "baseline_evidence_decision": "ADVANCE",
+      "pre_stability_decision": "ADVANCE",
+      "pre_stability_reason": "ALL_CRITERIA_POSITIVE_AND_TRACEABLE",
+      "criterion_audit": [
+        {
+          "criterion_id": "SWE03-C1",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "tracing a few duplicate cases end to end to confirm whether the retry is causing the same create request to be processed more than once, or whether the persistence layer is creating a second row on its own",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "SWE03-C2",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "If the evidence shows the order-create path is not idempotent, I’d correct that logic by making the operation safe to repeat, for example by using an idempotency key or checking for an existing order before inserting a new one.",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "SWE03-C3",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "That targets the likely cause directly. It should prevent the duplicate because a retried request would resolve to the same order instead of creating another record.",
+          "excerpt_verifiable": true
+        }
+      ],
+      "esdsa_decision": "ADVANCE",
+      "stability_reason": "UNANIMOUS_ACTIONABLE",
+      "stability_changed_decision": false,
+      "reference_decision": "ADVANCE",
+      "reference_flagged": "NO",
+      "semantic_equivalence": "YES",
+      "agrees_with_provisional_reference": true
+    },
+    {
+      "response_id": "ESDSA-SWE03-01-E1L2",
+      "group": "GROUP-027",
+      "letter": "B",
+      "baseline_evidence_decision": "ADVANCE",
+      "pre_stability_decision": "ADVANCE",
+      "pre_stability_reason": "ALL_CRITERIA_POSITIVE_AND_TRACEABLE",
+      "criterion_audit": [
+        {
+          "criterion_id": "SWE03-C1",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "I’d first verify from logs and request traces whether the same order submission is being processed twice when a retry happens, or whether something in the create flow is writing a second record.",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "SWE03-C2",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "If the problem is that order creation isn’t idempotent, I’d fix that path itself, not some unrelated part of the checkout flow. For example, I’d add an idempotency check or reuse the original order reference",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "SWE03-C3",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "That would address the issue because the retry can happen again without producing a second order.",
+          "excerpt_verifiable": true
+        }
+      ],
+      "esdsa_decision": "ADVANCE",
+      "stability_reason": "UNANIMOUS_ACTIONABLE",
+      "stability_changed_decision": false,
+      "reference_decision": "ADVANCE",
+      "reference_flagged": "NO",
+      "semantic_equivalence": "YES",
+      "agrees_with_provisional_reference": true
+    },
+    {
+      "response_id": "ESDSA-SWE03-01-E1L3",
+      "group": "GROUP-027",
+      "letter": "C",
+      "baseline_evidence_decision": "ADVANCE",
+      "pre_stability_decision": "ADVANCE",
+      "pre_stability_reason": "ALL_CRITERIA_POSITIVE_AND_TRACEABLE",
+      "criterion_audit": [
+        {
+          "criterion_id": "SWE03-C1",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "retries are re-running a non-idempotent create path",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "SWE03-C2",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "I’d correct order creation itself by adding an idempotency key or duplicate check before insert",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "SWE03-C3",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "That fixes the cause because repeated requests would resolve to the same order instead of creating a new one.",
+          "excerpt_verifiable": true
+        }
+      ],
+      "esdsa_decision": "ADVANCE",
+      "stability_reason": "UNANIMOUS_ACTIONABLE",
+      "stability_changed_decision": false,
+      "reference_decision": "ADVANCE",
+      "reference_flagged": "NO",
+      "semantic_equivalence": "YES",
+      "agrees_with_provisional_reference": true
+    },
+    {
+      "response_id": "ESDSA-CSS04-02-E1L1",
+      "group": "GROUP-028",
+      "letter": "A",
+      "baseline_evidence_decision": "ADVANCE",
+      "pre_stability_decision": "ADVANCE",
+      "pre_stability_reason": "ALL_CRITERIA_POSITIVE_AND_TRACEABLE",
+      "criterion_audit": [
+        {
+          "criterion_id": "CSS04-C1",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "I’d explain what I’m doing next, such as logging the details, passing the case to the right team, and making sure they have the information they need.",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "CSS04-C2",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "I’d be careful not to promise a specific completion time if we can’t confirm it, but I would tell them what I do know, like the case being actively worked and that timing depends on the investigation.",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "CSS04-C3",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "Before ending the call, I’d agree on the best way to keep them updated, whether that’s email or phone, and I’d set a clear next contact point so they know when to expect an update or confirmation once it’s resolved.",
+          "excerpt_verifiable": true
+        }
+      ],
+      "esdsa_decision": "ADVANCE",
+      "stability_reason": "UNANIMOUS_ACTIONABLE",
+      "stability_changed_decision": false,
+      "reference_decision": "ADVANCE",
+      "reference_flagged": "NO",
+      "semantic_equivalence": "YES",
+      "agrees_with_provisional_reference": true
+    },
+    {
+      "response_id": "ESDSA-CSS04-02-E1L2",
+      "group": "GROUP-028",
+      "letter": "B",
+      "baseline_evidence_decision": "ADVANCE",
+      "pre_stability_decision": "ADVANCE",
+      "pre_stability_reason": "ALL_CRITERIA_POSITIVE_AND_TRACEABLE",
+      "criterion_audit": [
+        {
+          "criterion_id": "CSS04-C1",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "“I’d be upfront and say this needs a specialist to dig into it, so I can’t fix it right this minute. I’d walk them through what happens next — I’ll document everything, send it to the right team, and make sure they’ve got the full details.”",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "CSS04-C2",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "“I wouldn’t guess at a finish time if we don’t know it yet, but I would explain that the timeline depends on what the specialist finds.”",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "CSS04-C3",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "“Then I’d ask how they want updates and set a follow-up point so they’re not left wondering, especially when the issue is fixed or if we need more information from them.”",
+          "excerpt_verifiable": true
+        }
+      ],
+      "esdsa_decision": "ADVANCE",
+      "stability_reason": "UNANIMOUS_ACTIONABLE",
+      "stability_changed_decision": false,
+      "reference_decision": "ADVANCE",
+      "reference_flagged": "NO",
+      "semantic_equivalence": "YES",
+      "agrees_with_provisional_reference": true
+    },
+    {
+      "response_id": "ESDSA-CSS04-02-E1L3",
+      "group": "GROUP-028",
+      "letter": "C",
+      "baseline_evidence_decision": "ADVANCE",
+      "pre_stability_decision": "ADVANCE",
+      "pre_stability_reason": "ALL_CRITERIA_POSITIVE_AND_TRACEABLE",
+      "criterion_audit": [
+        {
+          "criterion_id": "CSS04-C1",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "I’d explain that the issue needs specialist review, outline the next step",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "CSS04-C2",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "avoid promising a completion time I can’t verify. I’d tell them the timing depends on the investigation",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "CSS04-C3",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "agree on a follow-up method and timeframe for updates, including confirmation once it’s resolved",
+          "excerpt_verifiable": true
+        }
+      ],
+      "esdsa_decision": "ADVANCE",
+      "stability_reason": "UNANIMOUS_ACTIONABLE",
+      "stability_changed_decision": false,
+      "reference_decision": "ADVANCE",
+      "reference_flagged": "NO",
+      "semantic_equivalence": "YES",
+      "agrees_with_provisional_reference": true
+    },
+    {
+      "response_id": "ESDSA-OPS01-01-E1L1",
+      "group": "GROUP-029",
+      "letter": "A",
+      "baseline_evidence_decision": "ADVANCE",
+      "pre_stability_decision": "ADVANCE",
+      "pre_stability_reason": "ALL_CRITERIA_POSITIVE_AND_TRACEABLE",
+      "criterion_audit": [
+        {
+          "criterion_id": "OPS01-C1",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "mapping the urgency, impact, and dependencies for each activity",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "OPS01-C2",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "The urgent delivery to a major customer goes first because it has an immediate customer and revenue impact",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "OPS01-C3",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "If anything changes, I’d reassess quickly, update the sequence",
+          "excerpt_verifiable": true
+        }
+      ],
+      "esdsa_decision": "ADVANCE",
+      "stability_reason": "UNANIMOUS_ACTIONABLE",
+      "stability_changed_decision": false,
+      "reference_decision": "ADVANCE",
+      "reference_flagged": "NO",
+      "semantic_equivalence": "YES",
+      "agrees_with_provisional_reference": true
+    },
+    {
+      "response_id": "ESDSA-OPS01-01-E1L3",
+      "group": "GROUP-029",
+      "letter": "B",
+      "baseline_evidence_decision": "ADVANCE",
+      "pre_stability_decision": "ADVANCE",
+      "pre_stability_reason": "ALL_CRITERIA_POSITIVE_AND_TRACEABLE",
+      "criterion_audit": [
+        {
+          "criterion_id": "OPS01-C1",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "I’d prioritise the urgent customer delivery first, because it has the biggest immediate impact and may depend on the maintenance timing.",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "OPS01-C2",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "I’d prioritise the urgent customer delivery first, because it has the biggest immediate impact and may depend on the maintenance timing. I’d move or sequence maintenance so it doesn’t disrupt that flow, and keep the routine inventory review last unless it affects the shipment.",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "OPS01-C3",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "If conditions change, I’d reassess and update the plan.",
+          "excerpt_verifiable": true
+        }
+      ],
+      "esdsa_decision": "ADVANCE",
+      "stability_reason": "UNANIMOUS_ACTIONABLE",
+      "stability_changed_decision": false,
+      "reference_decision": "ADVANCE",
+      "reference_flagged": "NO",
+      "semantic_equivalence": "YES",
+      "agrees_with_provisional_reference": true
+    },
+    {
+      "response_id": "ESDSA-OPS01-01-E1L2",
+      "group": "GROUP-029",
+      "letter": "C",
+      "baseline_evidence_decision": "ADVANCE",
+      "pre_stability_decision": "ADVANCE",
+      "pre_stability_reason": "ALL_CRITERIA_POSITIVE_AND_TRACEABLE",
+      "criterion_audit": [
+        {
+          "criterion_id": "OPS01-C1",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "what’s most urgent and what has the biggest knock-on effect",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "OPS01-C2",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "The customer delivery comes first because it’s time-sensitive and has the highest operational impact. Then I’d check whether the maintenance would interfere with that delivery and, if so, I’d try to shift the maintenance so it doesn’t create a bottleneck. The inventory review is important, but I’d hold it unless it affects the shipment.",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "OPS01-C3",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "If something changes, I’d revisit the plan and reset priorities straight away.",
+          "excerpt_verifiable": true
+        }
+      ],
+      "esdsa_decision": "ADVANCE",
+      "stability_reason": "UNANIMOUS_ACTIONABLE",
+      "stability_changed_decision": false,
+      "reference_decision": "ADVANCE",
+      "reference_flagged": "NO",
+      "semantic_equivalence": "YES",
+      "agrees_with_provisional_reference": true
+    },
+    {
+      "response_id": "ESDSA-OPS04-01-E3L1",
+      "group": "GROUP-030",
+      "letter": "A",
+      "baseline_evidence_decision": "DO_NOT_ADVANCE",
+      "pre_stability_decision": "DO_NOT_ADVANCE",
+      "pre_stability_reason": "VERIFIABLE_NEGATIVE_EVIDENCE",
+      "criterion_audit": [
+        {
+          "criterion_id": "OPS04-C1",
+          "status": "NEGATIVE_EVIDENCE",
+          "excerpt": "I’d keep an eye on the dependency, but I wouldn’t escalate right away if the team hasn’t confirmed a finish date yet.",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "OPS04-C2",
+          "status": "NEGATIVE_EVIDENCE",
+          "excerpt": "I wouldn’t escalate right away if the team hasn’t confirmed a finish date yet. I’d wait until they come back with something more definite",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "OPS04-C3",
+          "status": "NEGATIVE_EVIDENCE",
+          "excerpt": "I wouldn’t escalate right away if the team hasn’t confirmed a finish date yet. I’d wait until they come back with something more definite",
+          "excerpt_verifiable": true
+        }
+      ],
+      "esdsa_decision": "DO_NOT_ADVANCE",
+      "stability_reason": "UNANIMOUS_ACTIONABLE",
+      "stability_changed_decision": false,
+      "reference_decision": "DO_NOT_ADVANCE",
+      "reference_flagged": "YES",
+      "semantic_equivalence": "YES",
+      "agrees_with_provisional_reference": true
+    },
+    {
+      "response_id": "ESDSA-OPS04-01-E3L3",
+      "group": "GROUP-030",
+      "letter": "B",
+      "baseline_evidence_decision": "DO_NOT_ADVANCE",
+      "pre_stability_decision": "DO_NOT_ADVANCE",
+      "pre_stability_reason": "VERIFIABLE_NEGATIVE_EVIDENCE",
+      "criterion_audit": [
+        {
+          "criterion_id": "OPS04-C1",
+          "status": "INSUFFICIENT_EVIDENCE",
+          "excerpt": "",
+          "excerpt_verifiable": null
+        },
+        {
+          "criterion_id": "OPS04-C2",
+          "status": "NEGATIVE_EVIDENCE",
+          "excerpt": "I wouldn’t escalate until the team gives a firmer finish date",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "OPS04-C3",
+          "status": "INSUFFICIENT_EVIDENCE",
+          "excerpt": "",
+          "excerpt_verifiable": null
+        }
+      ],
+      "esdsa_decision": "DO_NOT_ADVANCE",
+      "stability_reason": "UNANIMOUS_ACTIONABLE",
+      "stability_changed_decision": false,
+      "reference_decision": "DO_NOT_ADVANCE",
+      "reference_flagged": "YES",
+      "semantic_equivalence": "YES",
+      "agrees_with_provisional_reference": true
+    },
+    {
+      "response_id": "ESDSA-OPS04-01-E3L2",
+      "group": "GROUP-030",
+      "letter": "C",
+      "baseline_evidence_decision": "DO_NOT_ADVANCE",
+      "pre_stability_decision": "DO_NOT_ADVANCE",
+      "pre_stability_reason": "VERIFIABLE_NEGATIVE_EVIDENCE",
+      "criterion_audit": [
+        {
+          "criterion_id": "OPS04-C1",
+          "status": "NEGATIVE_EVIDENCE",
+          "excerpt": "“I’d monitor it a bit, but I wouldn’t rush to escalate just because the team hasn’t given me a finish time yet. I’d rather wait for a firmer update”",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "OPS04-C2",
+          "status": "NEGATIVE_EVIDENCE",
+          "excerpt": "“I wouldn’t rush to escalate just because the team hasn’t given me a finish time yet. I’d rather wait for a firmer update so I’m not creating noise too early.”",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "OPS04-C3",
+          "status": "NEGATIVE_EVIDENCE",
+          "excerpt": "“I’d rather wait for a firmer update so I’m not creating noise too early. Usually I’d just let them come back when they’ve got a better sense of timing”",
+          "excerpt_verifiable": true
+        }
+      ],
+      "esdsa_decision": "DO_NOT_ADVANCE",
+      "stability_reason": "UNANIMOUS_ACTIONABLE",
+      "stability_changed_decision": false,
+      "reference_decision": "DO_NOT_ADVANCE",
+      "reference_flagged": "YES",
+      "semantic_equivalence": "YES",
+      "agrees_with_provisional_reference": true
+    },
+    {
+      "response_id": "ESDSA-OPS03-01-E2L1",
+      "group": "GROUP-031",
+      "letter": "A",
+      "baseline_evidence_decision": "ADVANCE",
+      "pre_stability_decision": "ADVANCE",
+      "pre_stability_reason": "ALL_CRITERIA_POSITIVE_AND_TRACEABLE",
+      "criterion_audit": [
+        {
+          "criterion_id": "OPS03-C1",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "reviewing the warehouse and carrier records together",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "OPS03-C2",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "ask the relevant contacts to clarify the shipment status. After that, I’d send an update to the teams involved",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "OPS03-C3",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "so they know there’s a discrepancy being worked through. I’d also make sure the timeline reflects whatever we learn",
+          "excerpt_verifiable": true
+        }
+      ],
+      "esdsa_decision": "ADVANCE",
+      "stability_reason": "UNANIMOUS_ACTIONABLE",
+      "stability_changed_decision": false,
+      "reference_decision": "DEFER",
+      "reference_flagged": "YES",
+      "semantic_equivalence": "YES",
+      "agrees_with_provisional_reference": false
+    },
+    {
+      "response_id": "ESDSA-OPS03-01-E2L2",
+      "group": "GROUP-031",
+      "letter": "B",
+      "baseline_evidence_decision": "ADVANCE",
+      "pre_stability_decision": "ADVANCE",
+      "pre_stability_reason": "ALL_CRITERIA_POSITIVE_AND_TRACEABLE",
+      "criterion_audit": [
+        {
+          "criterion_id": "OPS03-C1",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "“check both sets of records”",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "OPS03-C2",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "“reach out to the people who can clarify the shipment status”",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "OPS03-C3",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "“Once I had more information, I’d refresh the plan so everyone has the latest timing.”",
+          "excerpt_verifiable": true
+        }
+      ],
+      "esdsa_decision": "ADVANCE",
+      "stability_reason": "UNANIMOUS_ACTIONABLE",
+      "stability_changed_decision": false,
+      "reference_decision": "DEFER",
+      "reference_flagged": "YES",
+      "semantic_equivalence": "YES",
+      "agrees_with_provisional_reference": false
+    },
+    {
+      "response_id": "ESDSA-OPS03-01-E2L3",
+      "group": "GROUP-031",
+      "letter": "C",
+      "baseline_evidence_decision": "ADVANCE",
+      "pre_stability_decision": "ADVANCE",
+      "pre_stability_reason": "ALL_CRITERIA_POSITIVE_AND_TRACEABLE",
+      "criterion_audit": [
+        {
+          "criterion_id": "OPS03-C1",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "compare the warehouse and carrier records",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "OPS03-C2",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "ask the right contacts to clarify the shipment status, and then update the teams",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "OPS03-C3",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "compare the warehouse and carrier records, ask the right contacts to clarify the shipment status",
+          "excerpt_verifiable": true
+        }
+      ],
+      "esdsa_decision": "ADVANCE",
+      "stability_reason": "UNANIMOUS_ACTIONABLE",
+      "stability_changed_decision": false,
+      "reference_decision": "DEFER",
+      "reference_flagged": "YES",
+      "semantic_equivalence": "YES",
+      "agrees_with_provisional_reference": false
+    },
+    {
+      "response_id": "ESDSA-OPS02-03-E3L1",
+      "group": "GROUP-032",
+      "letter": "A",
+      "baseline_evidence_decision": "DO_NOT_ADVANCE",
+      "pre_stability_decision": "DEFER",
+      "pre_stability_reason": "UNVERIFIABLE_REQUIRED_EVIDENCE",
+      "criterion_audit": [
+        {
+          "criterion_id": "OPS02-C1",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "A critical supplier reports that an upcoming shipment may be delayed.",
+          "excerpt_verifiable": false
+        },
+        {
+          "criterion_id": "OPS02-C2",
+          "status": "NEGATIVE_EVIDENCE",
+          "excerpt": "I’d assume the forecast will average out and wait to see whether the shipment actually slips before changing priorities or arranging backups.",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "OPS02-C3",
+          "status": "NEGATIVE_EVIDENCE",
+          "excerpt": "I wouldn’t want to create extra noise by escalating too early. ... wait to see whether the shipment actually slips before changing priorities or arranging backups. If it does become a problem later, we can deal with it then.",
+          "excerpt_verifiable": false
+        }
+      ],
+      "esdsa_decision": "DEFER",
+      "stability_reason": "NO_UNANIMOUS_ACTIONABLE_DECISION",
+      "stability_changed_decision": false,
+      "reference_decision": "DO_NOT_ADVANCE",
+      "reference_flagged": "YES",
+      "semantic_equivalence": "YES",
+      "agrees_with_provisional_reference": false
+    },
+    {
+      "response_id": "ESDSA-OPS02-03-E3L3",
+      "group": "GROUP-032",
+      "letter": "B",
+      "baseline_evidence_decision": "DO_NOT_ADVANCE",
+      "pre_stability_decision": "DEFER",
+      "pre_stability_reason": "UNVERIFIABLE_REQUIRED_EVIDENCE",
+      "criterion_audit": [
+        {
+          "criterion_id": "OPS02-C1",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "a critical supplier reports that an upcoming shipment may be delayed",
+          "excerpt_verifiable": false
+        },
+        {
+          "criterion_id": "OPS02-C2",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "since we still have some stock and the forecast may balance out",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "OPS02-C3",
+          "status": "NEGATIVE_EVIDENCE",
+          "excerpt": "I’d keep operating as normal and wait for a confirmed delay before escalating or putting backups in place",
+          "excerpt_verifiable": true
+        }
+      ],
+      "esdsa_decision": "DEFER",
+      "stability_reason": "NO_UNANIMOUS_ACTIONABLE_DECISION",
+      "stability_changed_decision": false,
+      "reference_decision": "DO_NOT_ADVANCE",
+      "reference_flagged": "YES",
+      "semantic_equivalence": "YES",
+      "agrees_with_provisional_reference": false
+    },
+    {
+      "response_id": "ESDSA-OPS02-03-E3L2",
+      "group": "GROUP-032",
+      "letter": "C",
+      "baseline_evidence_decision": "DO_NOT_ADVANCE",
+      "pre_stability_decision": "DEFER",
+      "pre_stability_reason": "UNVERIFIABLE_REQUIRED_EVIDENCE",
+      "criterion_audit": [
+        {
+          "criterion_id": "OPS02-C1",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "A critical supplier reports that an upcoming shipment may be delayed.",
+          "excerpt_verifiable": false
+        },
+        {
+          "criterion_id": "OPS02-C2",
+          "status": "NEGATIVE_EVIDENCE",
+          "excerpt": "The forecast is uncertain anyway, so I’d rather not spend time on a risk that may not happen.",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "OPS02-C3",
+          "status": "NEGATIVE_EVIDENCE",
+          "excerpt": "I’d wait until the supplier gives a definite delay before escalating or setting up any backup plan.",
+          "excerpt_verifiable": true
+        }
+      ],
+      "esdsa_decision": "DEFER",
+      "stability_reason": "NO_UNANIMOUS_ACTIONABLE_DECISION",
+      "stability_changed_decision": false,
+      "reference_decision": "DO_NOT_ADVANCE",
+      "reference_flagged": "YES",
+      "semantic_equivalence": "YES",
+      "agrees_with_provisional_reference": false
+    },
+    {
+      "response_id": "ESDSA-CSS01-01-E3L1",
+      "group": "GROUP-033",
+      "letter": "A",
+      "baseline_evidence_decision": "DO_NOT_ADVANCE",
+      "pre_stability_decision": "DO_NOT_ADVANCE",
+      "pre_stability_reason": "VERIFIABLE_NEGATIVE_EVIDENCE",
+      "criterion_audit": [
+        {
+          "criterion_id": "CSS01-C1",
+          "status": "NEGATIVE_EVIDENCE",
+          "excerpt": "I’d move quickly to reset the account and restore access first",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "CSS01-C2",
+          "status": "INSUFFICIENT_EVIDENCE",
+          "excerpt": "",
+          "excerpt_verifiable": null
+        },
+        {
+          "criterion_id": "CSS01-C3",
+          "status": "NEGATIVE_EVIDENCE",
+          "excerpt": "I’d move quickly to reset the account and restore access first",
+          "excerpt_verifiable": true
+        }
+      ],
+      "esdsa_decision": "DO_NOT_ADVANCE",
+      "stability_reason": "UNANIMOUS_ACTIONABLE",
+      "stability_changed_decision": false,
+      "reference_decision": "DO_NOT_ADVANCE",
+      "reference_flagged": "NO",
+      "semantic_equivalence": "YES",
+      "agrees_with_provisional_reference": true
+    },
+    {
+      "response_id": "ESDSA-CSS01-01-E3L3",
+      "group": "GROUP-033",
+      "letter": "B",
+      "baseline_evidence_decision": "DO_NOT_ADVANCE",
+      "pre_stability_decision": "DO_NOT_ADVANCE",
+      "pre_stability_reason": "VERIFIABLE_NEGATIVE_EVIDENCE",
+      "criterion_audit": [
+        {
+          "criterion_id": "CSS01-C1",
+          "status": "NEGATIVE_EVIDENCE",
+          "excerpt": "I’d try to restore the account first and only ask for more details if that doesn’t work.",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "CSS01-C2",
+          "status": "INSUFFICIENT_EVIDENCE",
+          "excerpt": "",
+          "excerpt_verifiable": null
+        },
+        {
+          "criterion_id": "CSS01-C3",
+          "status": "NEGATIVE_EVIDENCE",
+          "excerpt": "The main goal would be to get access back quickly, then gather information afterward if needed.",
+          "excerpt_verifiable": true
+        }
+      ],
+      "esdsa_decision": "DO_NOT_ADVANCE",
+      "stability_reason": "UNANIMOUS_ACTIONABLE",
+      "stability_changed_decision": false,
+      "reference_decision": "DO_NOT_ADVANCE",
+      "reference_flagged": "NO",
+      "semantic_equivalence": "YES",
+      "agrees_with_provisional_reference": true
+    },
+    {
+      "response_id": "ESDSA-CSS01-01-E3L2",
+      "group": "GROUP-033",
+      "letter": "C",
+      "baseline_evidence_decision": "DO_NOT_ADVANCE",
+      "pre_stability_decision": "DO_NOT_ADVANCE",
+      "pre_stability_reason": "VERIFIABLE_NEGATIVE_EVIDENCE",
+      "criterion_audit": [
+        {
+          "criterion_id": "CSS01-C1",
+          "status": "NEGATIVE_EVIDENCE",
+          "excerpt": "I’d probably just get straight into restoring the account",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "CSS01-C2",
+          "status": "INSUFFICIENT_EVIDENCE",
+          "excerpt": "",
+          "excerpt_verifiable": null
+        },
+        {
+          "criterion_id": "CSS01-C3",
+          "status": "NEGATIVE_EVIDENCE",
+          "excerpt": "For something urgent, I’d rather act first and sort out the details later.",
+          "excerpt_verifiable": true
+        }
+      ],
+      "esdsa_decision": "DO_NOT_ADVANCE",
+      "stability_reason": "UNANIMOUS_ACTIONABLE",
+      "stability_changed_decision": false,
+      "reference_decision": "DO_NOT_ADVANCE",
+      "reference_flagged": "NO",
+      "semantic_equivalence": "YES",
+      "agrees_with_provisional_reference": true
+    },
+    {
+      "response_id": "ESDSA-OPS01-01-E3L2",
+      "group": "GROUP-034",
+      "letter": "A",
+      "baseline_evidence_decision": "DO_NOT_ADVANCE",
+      "pre_stability_decision": "DEFER",
+      "pre_stability_reason": "UNVERIFIABLE_REQUIRED_EVIDENCE",
+      "criterion_audit": [
+        {
+          "criterion_id": "OPS01-C1",
+          "status": "NEGATIVE_EVIDENCE",
+          "excerpt": "I'd probably get the inventory review out of the way first since it’s routine and doesn’t take much thinking, then deal with the delivery after that.",
+          "excerpt_verifiable": false
+        },
+        {
+          "criterion_id": "OPS01-C2",
+          "status": "NEGATIVE_EVIDENCE",
+          "excerpt": "I’d probably get the inventory review out of the way first since it’s routine and doesn’t take much thinking, then deal with the delivery after that.",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "OPS01-C3",
+          "status": "NEGATIVE_EVIDENCE",
+          "excerpt": "I don’t like changing plans too often, so I’d rather stay with what was originally booked unless someone makes a strong case to switch it.",
+          "excerpt_verifiable": true
+        }
+      ],
+      "esdsa_decision": "DEFER",
+      "stability_reason": "NO_UNANIMOUS_ACTIONABLE_DECISION",
+      "stability_changed_decision": false,
+      "reference_decision": "DO_NOT_ADVANCE",
+      "reference_flagged": "NO",
+      "semantic_equivalence": "YES",
+      "agrees_with_provisional_reference": false
+    },
+    {
+      "response_id": "ESDSA-OPS01-01-E3L1",
+      "group": "GROUP-034",
+      "letter": "B",
+      "baseline_evidence_decision": "DO_NOT_ADVANCE",
+      "pre_stability_decision": "DEFER",
+      "pre_stability_reason": "UNVERIFIABLE_REQUIRED_EVIDENCE",
+      "criterion_audit": [
+        {
+          "criterion_id": "OPS01-C1",
+          "status": "NEGATIVE_EVIDENCE",
+          "excerpt": "I’d keep the routine inventory review moving first because it’s the easiest task to complete and it clears the list quickly. Then I’d try to fit the delivery in next",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "OPS01-C2",
+          "status": "NEGATIVE_EVIDENCE",
+          "excerpt": "I’d keep the routine inventory review moving first because it’s the easiest task to complete and it clears the list quickly. My view is that if the team is already set up for the scheduled work, it’s better not to disrupt the plan unless there’s a major issue.",
+          "excerpt_verifiable": false
+        },
+        {
+          "criterion_id": "OPS01-C3",
+          "status": "NEGATIVE_EVIDENCE",
+          "excerpt": "I’d only reconsider if someone raised a serious problem, but otherwise I’d stick with the original order to avoid constant changes.",
+          "excerpt_verifiable": true
+        }
+      ],
+      "esdsa_decision": "DEFER",
+      "stability_reason": "NO_UNANIMOUS_ACTIONABLE_DECISION",
+      "stability_changed_decision": false,
+      "reference_decision": "DO_NOT_ADVANCE",
+      "reference_flagged": "NO",
+      "semantic_equivalence": "YES",
+      "agrees_with_provisional_reference": false
+    },
+    {
+      "response_id": "ESDSA-OPS01-01-E3L3",
+      "group": "GROUP-034",
+      "letter": "C",
+      "baseline_evidence_decision": "DO_NOT_ADVANCE",
+      "pre_stability_decision": "DO_NOT_ADVANCE",
+      "pre_stability_reason": "VERIFIABLE_NEGATIVE_EVIDENCE",
+      "criterion_audit": [
+        {
+          "criterion_id": "OPS01-C1",
+          "status": "NEGATIVE_EVIDENCE",
+          "excerpt": "I’d do the inventory review first because it’s straightforward, then the delivery, and leave maintenance as planned unless there’s an obvious issue.",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "OPS01-C2",
+          "status": "NEGATIVE_EVIDENCE",
+          "excerpt": "I’d do the inventory review first because it’s straightforward, then the delivery, and leave maintenance as planned unless there’s an obvious issue.",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "OPS01-C3",
+          "status": "NEGATIVE_EVIDENCE",
+          "excerpt": "I’d avoid changing the schedule unless someone pushes for it.",
+          "excerpt_verifiable": true
+        }
+      ],
+      "esdsa_decision": "DEFER",
+      "stability_reason": "NO_UNANIMOUS_ACTIONABLE_DECISION",
+      "stability_changed_decision": true,
+      "reference_decision": "DO_NOT_ADVANCE",
+      "reference_flagged": "NO",
+      "semantic_equivalence": "YES",
+      "agrees_with_provisional_reference": false
+    },
+    {
+      "response_id": "ESDSA-SWE04-01-E2L3",
+      "group": "GROUP-035",
+      "letter": "A",
+      "baseline_evidence_decision": "ADVANCE",
+      "pre_stability_decision": "ADVANCE",
+      "pre_stability_reason": "ALL_CRITERIA_POSITIVE_AND_TRACEABLE",
+      "criterion_audit": [
+        {
+          "criterion_id": "SWE04-C1",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "I’d retest the bad invoice case",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "SWE04-C2",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "review the shared billing areas for anything that might be affected",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "SWE04-C3",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "If that looked fine, I’d consider it ready for the next step.",
+          "excerpt_verifiable": true
+        }
+      ],
+      "esdsa_decision": "ADVANCE",
+      "stability_reason": "UNANIMOUS_ACTIONABLE",
+      "stability_changed_decision": false,
+      "reference_decision": "ADVANCE",
+      "reference_flagged": "YES",
+      "semantic_equivalence": "UNCERTAIN",
+      "agrees_with_provisional_reference": true
+    },
+    {
+      "response_id": "ESDSA-SWE04-01-E2L2",
+      "group": "GROUP-035",
+      "letter": "B",
+      "baseline_evidence_decision": "ADVANCE",
+      "pre_stability_decision": "ADVANCE",
+      "pre_stability_reason": "ALL_CRITERIA_POSITIVE_AND_TRACEABLE",
+      "criterion_audit": [
+        {
+          "criterion_id": "SWE04-C1",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "“I’d rerun the invoice case that was failing so I can see the total is fixed.”",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "SWE04-C2",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "“Since the code is shared, I’d also look over the related billing areas and think about what else might need checking.”",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "SWE04-C3",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "“If the direct test passes and there’s nothing concerning, I’d be ready to move it along.”",
+          "excerpt_verifiable": true
+        }
+      ],
+      "esdsa_decision": "ADVANCE",
+      "stability_reason": "UNANIMOUS_ACTIONABLE",
+      "stability_changed_decision": false,
+      "reference_decision": "ADVANCE",
+      "reference_flagged": "YES",
+      "semantic_equivalence": "UNCERTAIN",
+      "agrees_with_provisional_reference": true
+    },
+    {
+      "response_id": "ESDSA-SWE04-01-E2L1",
+      "group": "GROUP-035",
+      "letter": "C",
+      "baseline_evidence_decision": "ADVANCE",
+      "pre_stability_decision": "ADVANCE",
+      "pre_stability_reason": "ALL_CRITERIA_POSITIVE_AND_TRACEABLE",
+      "criterion_audit": [
+        {
+          "criterion_id": "SWE04-C1",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "“verify the corrected invoice total in the development environment by rerunning the scenario that originally exposed the defect”",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "SWE04-C2",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "“review the change against the other billing functions that share the code and look at whether any additional checks seem appropriate based on the affected paths”",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "SWE04-C3",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "“If the retest looked good and I didn’t see any obvious knock-on concerns, I’d be comfortable taking the next step.”",
+          "excerpt_verifiable": true
+        }
+      ],
+      "esdsa_decision": "ADVANCE",
+      "stability_reason": "UNANIMOUS_ACTIONABLE",
+      "stability_changed_decision": false,
+      "reference_decision": "ADVANCE",
+      "reference_flagged": "YES",
+      "semantic_equivalence": "UNCERTAIN",
+      "agrees_with_provisional_reference": true
+    },
+    {
+      "response_id": "ESDSA-SWE03-01-E2L1",
+      "group": "GROUP-036",
+      "letter": "A",
+      "baseline_evidence_decision": "ADVANCE",
+      "pre_stability_decision": "ADVANCE",
+      "pre_stability_reason": "ALL_CRITERIA_POSITIVE_AND_TRACEABLE",
+      "criterion_audit": [
+        {
+          "criterion_id": "SWE03-C1",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "I’d investigate the full request path to see whether the duplicates line up with retry behavior, timeouts, or a database constraint issue.",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "SWE03-C2",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "I’d likely adjust the order creation flow so repeated requests are handled more safely, and I’d also review the client retry settings to understand how often the same request is being sent.",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "SWE03-C3",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "That should reduce the duplicate orders, though I’d want to confirm which part of the flow is actually responsible before making the final change.",
+          "excerpt_verifiable": true
+        }
+      ],
+      "esdsa_decision": "DEFER",
+      "stability_reason": "NO_UNANIMOUS_ACTIONABLE_DECISION",
+      "stability_changed_decision": true,
+      "reference_decision": "DEFER",
+      "reference_flagged": "YES",
+      "semantic_equivalence": "UNCERTAIN",
+      "agrees_with_provisional_reference": true
+    },
+    {
+      "response_id": "ESDSA-SWE03-01-E2L3",
+      "group": "GROUP-036",
+      "letter": "B",
+      "baseline_evidence_decision": "DEFER",
+      "pre_stability_decision": "DEFER",
+      "pre_stability_reason": "INSUFFICIENT_COMPETENCY_EVIDENCE",
+      "criterion_audit": [
+        {
+          "criterion_id": "SWE03-C1",
+          "status": "INSUFFICIENT_EVIDENCE",
+          "excerpt": "",
+          "excerpt_verifiable": null
+        },
+        {
+          "criterion_id": "SWE03-C2",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "then adjust the order path and review retry behavior",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "SWE03-C3",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "That should help",
+          "excerpt_verifiable": true
+        }
+      ],
+      "esdsa_decision": "DEFER",
+      "stability_reason": "NO_UNANIMOUS_ACTIONABLE_DECISION",
+      "stability_changed_decision": false,
+      "reference_decision": "DEFER",
+      "reference_flagged": "YES",
+      "semantic_equivalence": "UNCERTAIN",
+      "agrees_with_provisional_reference": true
+    },
+    {
+      "response_id": "ESDSA-SWE03-01-E2L2",
+      "group": "GROUP-036",
+      "letter": "C",
+      "baseline_evidence_decision": "ADVANCE",
+      "pre_stability_decision": "ADVANCE",
+      "pre_stability_reason": "ALL_CRITERIA_POSITIVE_AND_TRACEABLE",
+      "criterion_audit": [
+        {
+          "criterion_id": "SWE03-C1",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "look at the traces and logs to see whether the duplicates happen after retries or whether something else in the system is contributing",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "SWE03-C2",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "I’d probably tighten up the order flow and also check the retry behavior, since both could be involved",
+          "excerpt_verifiable": true
+        },
+        {
+          "criterion_id": "SWE03-C3",
+          "status": "POSITIVE_EVIDENCE",
+          "excerpt": "That would help cut down the duplicates",
+          "excerpt_verifiable": true
+        }
+      ],
+      "esdsa_decision": "DEFER",
+      "stability_reason": "NO_UNANIMOUS_ACTIONABLE_DECISION",
+      "stability_changed_decision": true,
+      "reference_decision": "DEFER",
+      "reference_flagged": "YES",
+      "semantic_equivalence": "UNCERTAIN",
+      "agrees_with_provisional_reference": true
+    }
+  ],
+  "limitations": [
+    "AI-assisted provisional reference.",
+    "The method combines previous model outputs, literal evidence validation and a consensus gate.",
+    "The results are not held-out validation.",
+    "The semantic equivalence of variants is not guaranteed by group membership.",
+    "No independent evidence audit was performed.",
+    "Cross-method matched-coverage analysis remains necessary."
+  ]
+}

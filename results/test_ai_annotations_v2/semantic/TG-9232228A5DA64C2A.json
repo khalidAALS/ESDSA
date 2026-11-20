@@ -1,0 +1,18 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "SEMANTIC_EQUIVALENCE",
+  "blinded_id": "TG-9232228A5DA64C2A",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_08767a4a47b5cdf1016b002b36211087d08ac6341c17c72a0b",
+  "annotated_utc": "2026-11-20T11:12:56.821929+00:00",
+  "annotation": {
+    "semantic_equivalence": "NO",
+    "material_differences": "All three responses share the same general stance, but B and C add a more explicit reluctance to escalate early and frame the parts shortage as something that may resolve itself. Compared with A, B and C therefore shift the operational commitment toward waiting for a definite miss before escalation. Also, none of the responses meaningfully describes active monitoring inputs or directing the issue to an owner, but A is the most minimal and direct; B/C’s extra language reinforces delayed escalation rather than follow-through to appropriate owners.",
+    "equivalence_rationale": "Under the criteria, the key evidence is whether the candidate identifies information to monitor execution, recognizes deviation triggers, and directs issues to owners with verification. The responses are not fully equivalent because A says to follow the site manager and only act if the delay becomes definite, while B and C explicitly reject early escalation and describe the shortage as potentially self-resolving. That difference could change how the escalation criterion is assessed. None of the versions robustly demonstrates owner assignment or verification, but the added “don’t escalate too early” commitment in B/C is a meaningful operational shift relative to A."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

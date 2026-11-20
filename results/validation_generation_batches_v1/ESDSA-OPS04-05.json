@@ -1,0 +1,75 @@
+{
+  "experiment": "ESDSA_VALIDATION_GENERATION_V1",
+  "partition": "VALIDATION",
+  "family_id": "ESDSA-OPS04-05",
+  "run_sha256": "b0a9a638cb5dcbf9ddb5cf511fd8c7177440dd08b9bed9adfd560509d052864a",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "response_id": "resp_0659113bb472b4ed016aff923b2f2087d0a79d6acacda1ab12",
+  "response_status": "completed",
+  "usage": {
+    "input_tokens": 745,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      }
+    },
+    "output_tokens": 1229,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 1974
+  },
+  "raw_output_text": "{\"responses\":[{\"condition\":\"SUFFICIENT\",\"variant\":\"CANONICAL\",\"answer\":\"I’d keep a simple live tracker for all three activities with the current milestone, due date, owner, dependency status, and any quality checks. For the item nearing deadline, I’d compare actual progress to the delivery plan and look for slips in milestones, not just the overall end date. For the quality concern, I’d note the specific defect, how widespread it is, and whether it affects the agreed standard or needs rework. For the external dependency, I’d track when the information was requested, when it’s due, and whether the partner has confirmed timing.\\n\\nIf I see a missed milestone, a quality issue getting worse, or a dependency slipping past the point where the activity can still recover on time, I’d treat that as an escalation trigger. I’d raise it to the right owner immediately, say what has changed, what impact it has on the schedule or quality, and what decision or input I need. Then I’d follow up to make sure the owner has responded and the next action is clear, rather than assuming it has been handled.\"},{\"condition\":\"SUFFICIENT\",\"variant\":\"CONVERSATIONAL\",\"answer\":\"I’d keep all three in one tracker so I can see the milestone, due date, owner, and anything waiting on someone else. For the deadline one, I’d watch whether the key steps are still landing on time. For the quality concern, I’d pin down what changed and whether it’s just a minor fix or something that could affect the whole activity. And for the external partner item, I’d track when we asked, when we expect the reply, and whether that timing is still realistic.\\n\\nIf a milestone is missed, the quality issue is getting bigger, or the partner info is late enough to put the activity at risk, I’d escalate to the relevant person straight away. I’d be clear on what’s happened, why it matters, and what I need from them. Then I’d check back so I know it’s actually being dealt with, not just passed on.\"},{\"condition\":\"SUFFICIENT\",\"variant\":\"CONCISE\",\"answer\":\"I’d track each activity against its milestone, due date, owner, and dependencies. I’d watch for missed steps, worsening quality issues, or external information that’s late enough to affect delivery. If any of those create real risk, I’d escalate to the right owner with the impact and required action, then follow up to confirm response and resolution.\"},{\"condition\":\"INSUFFICIENT\",\"variant\":\"CANONICAL\",\"answer\":\"I’d start by keeping a simple view of each activity’s due date, current status, and who is responsible. For the one nearing deadline, I’d check whether the main steps are still moving forward. For the quality concern, I’d look at what was reported and whether it needs review. For the external dependency, I’d note that we’re waiting on information and keep an eye on the timing.\\n\\nIf something looks off, I’d make sure the relevant person knows about it. I’d usually wait until I have a clearer picture before escalating, so I can be sure it’s necessary and I can explain the situation properly. I’d then let the person handle it and keep an eye on things from there.\"},{\"condition\":\"INSUFFICIENT\",\"variant\":\"CONVERSATIONAL\",\"answer\":\"I’d keep a basic tracker with the due date, status, and owner for each activity. I’d check that the deadline item is still progressing, see what the quality issue is saying, and monitor the one waiting on the external partner.\\n\\nIf I notice something not lining up, I’d pass it to the right person. I’d probably want to understand it a bit more first before escalating, so I can be sure I’m raising the right thing. After that I’d leave it with them and keep monitoring the rest.\"},{\"condition\":\"INSUFFICIENT\",\"variant\":\"CONCISE\",\"answer\":\"I’d track due dates, status, owners, and the external dependency. If something looks off, I’d alert the relevant person, but I’d usually want a bit more detail before escalating. Then I’d keep monitoring and let the owner handle it.\"},{\"condition\":\"NEGATIVE\",\"variant\":\"CANONICAL\",\"answer\":\"I’d focus most of my attention on the activity closest to deadline and use the others as background checks. If the deadline item is still moving, I’d avoid interrupting the team unless the situation becomes clearly severe. For the quality concern, I’d note it down and wait to see whether it settles after the next update, since not every issue needs immediate action. For the external partner dependency, I’d assume the information will come through unless it becomes obviously overdue.\\n\\nI’d only escalate if the problem is already causing a visible failure, because I don’t want to create noise or pull managers in too early. In practice, I’d try to keep things moving myself and leave escalation for when there’s no other option.\"},{\"condition\":\"NEGATIVE\",\"variant\":\"CONVERSATIONAL\",\"answer\":\"I’d mainly keep an eye on the one that’s closest to the deadline and just check the others when I get a chance. If the quality issue is still the same on the next update, I’d probably wait and see if the team sorts it out before doing anything. And for the external partner, I’d assume the information will turn up unless it’s been missing for a while.\\n\\nI’d only escalate if it’s already turned into a major problem, because otherwise I’d rather not bring extra people in too soon. I’d try to manage it myself first and only hand it over if it really can’t be recovered.\"},{\"condition\":\"NEGATIVE\",\"variant\":\"CONCISE\",\"answer\":\"I’d mainly watch the deadline item and leave the others unless they become clearly serious. I’d avoid escalating early and would wait for a more obvious failure before involving the owner.\"}]}",
+  "responses": [
+    {
+      "condition": "SUFFICIENT",
+      "variant": "CANONICAL",
+      "answer": "I’d keep a simple live tracker for all three activities with the current milestone, due date, owner, dependency status, and any quality checks. For the item nearing deadline, I’d compare actual progress to the delivery plan and look for slips in milestones, not just the overall end date. For the quality concern, I’d note the specific defect, how widespread it is, and whether it affects the agreed standard or needs rework. For the external dependency, I’d track when the information was requested, when it’s due, and whether the partner has confirmed timing.\n\nIf I see a missed milestone, a quality issue getting worse, or a dependency slipping past the point where the activity can still recover on time, I’d treat that as an escalation trigger. I’d raise it to the right owner immediately, say what has changed, what impact it has on the schedule or quality, and what decision or input I need. Then I’d follow up to make sure the owner has responded and the next action is clear, rather than assuming it has been handled."
+    },
+    {
+      "condition": "SUFFICIENT",
+      "variant": "CONVERSATIONAL",
+      "answer": "I’d keep all three in one tracker so I can see the milestone, due date, owner, and anything waiting on someone else. For the deadline one, I’d watch whether the key steps are still landing on time. For the quality concern, I’d pin down what changed and whether it’s just a minor fix or something that could affect the whole activity. And for the external partner item, I’d track when we asked, when we expect the reply, and whether that timing is still realistic.\n\nIf a milestone is missed, the quality issue is getting bigger, or the partner info is late enough to put the activity at risk, I’d escalate to the relevant person straight away. I’d be clear on what’s happened, why it matters, and what I need from them. Then I’d check back so I know it’s actually being dealt with, not just passed on."
+    },
+    {
+      "condition": "SUFFICIENT",
+      "variant": "CONCISE",
+      "answer": "I’d track each activity against its milestone, due date, owner, and dependencies. I’d watch for missed steps, worsening quality issues, or external information that’s late enough to affect delivery. If any of those create real risk, I’d escalate to the right owner with the impact and required action, then follow up to confirm response and resolution."
+    },
+    {
+      "condition": "INSUFFICIENT",
+      "variant": "CANONICAL",
+      "answer": "I’d start by keeping a simple view of each activity’s due date, current status, and who is responsible. For the one nearing deadline, I’d check whether the main steps are still moving forward. For the quality concern, I’d look at what was reported and whether it needs review. For the external dependency, I’d note that we’re waiting on information and keep an eye on the timing.\n\nIf something looks off, I’d make sure the relevant person knows about it. I’d usually wait until I have a clearer picture before escalating, so I can be sure it’s necessary and I can explain the situation properly. I’d then let the person handle it and keep an eye on things from there."
+    },
+    {
+      "condition": "INSUFFICIENT",
+      "variant": "CONVERSATIONAL",
+      "answer": "I’d keep a basic tracker with the due date, status, and owner for each activity. I’d check that the deadline item is still progressing, see what the quality issue is saying, and monitor the one waiting on the external partner.\n\nIf I notice something not lining up, I’d pass it to the right person. I’d probably want to understand it a bit more first before escalating, so I can be sure I’m raising the right thing. After that I’d leave it with them and keep monitoring the rest."
+    },
+    {
+      "condition": "INSUFFICIENT",
+      "variant": "CONCISE",
+      "answer": "I’d track due dates, status, owners, and the external dependency. If something looks off, I’d alert the relevant person, but I’d usually want a bit more detail before escalating. Then I’d keep monitoring and let the owner handle it."
+    },
+    {
+      "condition": "NEGATIVE",
+      "variant": "CANONICAL",
+      "answer": "I’d focus most of my attention on the activity closest to deadline and use the others as background checks. If the deadline item is still moving, I’d avoid interrupting the team unless the situation becomes clearly severe. For the quality concern, I’d note it down and wait to see whether it settles after the next update, since not every issue needs immediate action. For the external partner dependency, I’d assume the information will come through unless it becomes obviously overdue.\n\nI’d only escalate if the problem is already causing a visible failure, because I don’t want to create noise or pull managers in too early. In practice, I’d try to keep things moving myself and leave escalation for when there’s no other option."
+    },
+    {
+      "condition": "NEGATIVE",
+      "variant": "CONVERSATIONAL",
+      "answer": "I’d mainly keep an eye on the one that’s closest to the deadline and just check the others when I get a chance. If the quality issue is still the same on the next update, I’d probably wait and see if the team sorts it out before doing anything. And for the external partner, I’d assume the information will turn up unless it’s been missing for a while.\n\nI’d only escalate if it’s already turned into a major problem, because otherwise I’d rather not bring extra people in too soon. I’d try to manage it myself first and only hand it over if it really can’t be recovered."
+    },
+    {
+      "condition": "NEGATIVE",
+      "variant": "CONCISE",
+      "answer": "I’d mainly watch the deadline item and leave the others unless they become clearly serious. I’d avoid escalating early and would wait for a more obvious failure before involving the owner."
+    }
+  ],
+  "validation_status": "STRUCTURE_PASSED"
+}

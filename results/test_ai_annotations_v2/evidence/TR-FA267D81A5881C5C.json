@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-FA267D81A5881C5C",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_048ecaa3d8af5c49016b002b3df4e887d09503c3a858bfe1d0",
+  "annotated_utc": "2026-11-20T11:13:03.165145+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "SWE04-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d check the patched invoice flow quickly",
+        "rationale": "This explicitly states verifying the patched invoice flow to see whether the reported issue is fixed."
+      },
+      {
+        "criterion_id": "SWE04-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d keep an eye on the refund and discount areas after release, since they share some logic",
+        "rationale": "This shows awareness that related refund and discount functionality could be affected by the patch."
+      },
+      {
+        "criterion_id": "SWE04-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "if that looks good, I’d probably move it forward because it’s an urgent fix.",
+        "rationale": "The candidate uses the verification result to decide the next action, namely proceeding with deployment."
+      }
+    ],
+    "annotation_notes": ""
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-D2464421836E9FFB",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0ab31849263c2925016b002ae4a05c87d0a4f0c6cd2c633bae",
+  "annotated_utc": "2026-11-20T11:11:34.727703+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "SWE04-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d start by rerunning the original failed export to confirm the fix addresses the reported issue.",
+        "rationale": "This explicitly states testing the original failure to verify the reported issue is resolved."
+      },
+      {
+        "criterion_id": "SWE04-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "After that, I’d look at the older export format and compare it with previous output to understand the difference.",
+        "rationale": "This directly shows checking a previously working export format for changed behavior, which is regression consideration."
+      },
+      {
+        "criterion_id": "SWE04-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "If the change seems tied to the same code path, I’d bring it to the team’s attention and decide whether it needs follow-up before release.",
+        "rationale": "This demonstrates using the verification results to choose a next step, including possible follow-up before release."
+      }
+    ],
+    "annotation_notes": ""
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

@@ -1,0 +1,63 @@
+{
+  "experiment": "ESDSA_TEST_GENERATION_V1",
+  "partition": "TEST",
+  "family_id": "ESDSA-CSS02-03",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0600c72f344095f7016b0022aa3e5487d0bc1bed40fca62266",
+  "timestamp_utc": "2026-11-20T10:36:32.607077+00:00",
+  "run_sha256": "29cdf7649547706865fe16b667d0cc1fbf67d193af1dd85a1fb146aea33332c2",
+  "scenario_sha256": "9d2280d8014612bdd263f5dd8daf8356efeac3fa7a7e4b0cd3c6f4fef932426a",
+  "rubric_sha256": "727b0e91646f85b41018bf92dd65052a177c27bad9ad46452cc69a550075522d",
+  "responses": [
+    {
+      "condition": "SUFFICIENT",
+      "variant": "CANONICAL",
+      "answer": "I’d start by clarifying the basics of the issue without asking for anything unnecessary. I’d ask when they first noticed the discount was missing, what product or checkout flow they used, and whether they have any order number, account email, or the partial screenshot they mentioned. Then I’d verify the account history on our side to see whether the promotion was actually applied, when it was activated, and whether there were any eligibility or expiration rules tied to it. If the screenshot is relevant, I’d use it as supporting evidence, but I wouldn’t treat it as proof on its own. I’d avoid asking for anything sensitive that isn’t needed, and I’d stick to our approved channels and records to confirm what happened before explaining the next step to the customer."
+    },
+    {
+      "condition": "SUFFICIENT",
+      "variant": "CONVERSATIONAL",
+      "answer": "I’d keep it focused on the details that help me trace the promotion. I’d ask when they noticed the discount disappear, what purchase it was tied to, and if they can share the order number or the partial screenshot. Then I’d check the account and order records on our side to confirm whether the promo was ever applied and whether it expired or was removed for a valid reason. I’d treat the screenshot as context, not as the final word, and I wouldn’t ask for anything sensitive unless it was actually needed and allowed through our normal process."
+    },
+    {
+      "condition": "SUFFICIENT",
+      "variant": "CONCISE",
+      "answer": "I’d ask for the order details, when they noticed the discount missing, and any screenshot they have. Then I’d verify the account and promotion history in our system, and compare that with the screenshot. I’d only request information needed to confirm the issue and use approved channels for anything account-related."
+    },
+    {
+      "condition": "INSUFFICIENT",
+      "variant": "CANONICAL",
+      "answer": "I’d begin by listening to the customer’s explanation and asking a few targeted questions so I can understand the situation better. I’d want to know what they remember about the checkout and what they’ve already seen on their account. From there, I’d review whatever internal records are available and use the screenshot as part of the picture. I’d keep the request limited to what seems relevant, and I’d be careful not to overstep what I should ask for."
+    },
+    {
+      "condition": "INSUFFICIENT",
+      "variant": "CONVERSATIONAL",
+      "answer": "I’d ask a couple of focused questions to understand what they’re seeing and then look at the account side of things. I’d use the screenshot they have as helpful context and compare it with our records. I’d try to keep the questions relevant and not ask for more than I need, while still getting enough information to investigate."
+    },
+    {
+      "condition": "INSUFFICIENT",
+      "variant": "CONCISE",
+      "answer": "I’d ask a few relevant questions, review the account records, and use the screenshot as supporting context. I’d keep the request limited to what’s needed to understand the issue."
+    },
+    {
+      "condition": "NEGATIVE",
+      "variant": "CANONICAL",
+      "answer": "I’d probably ask the customer to send over as much documentation as possible, including screenshots, payment details, and anything else that might help, and then I’d figure out whether the discount should still be there. If the account looks like it should have had the promotion, I’d lean on that and tell them the discount was likely applied incorrectly or removed by the system. I wouldn’t spend too much time verifying every detail unless the customer pushes back, because the goal is to move the case forward quickly."
+    },
+    {
+      "condition": "NEGATIVE",
+      "variant": "CONVERSATIONAL",
+      "answer": "I’d ask them to send in whatever they have, even if it’s a lot, so I can piece it together fast. If our system looks like the promo should have been there, I’d treat that as enough to tell them what happened and move on. I wouldn’t worry too much about checking every record or narrowing the questions down too much at first."
+    },
+    {
+      "condition": "NEGATIVE",
+      "variant": "CONCISE",
+      "answer": "I’d ask for all available documents and use the system view to decide what happened, even if the details aren’t fully verified yet. If it looks likely the promo should have applied, I’d treat that as the explanation."
+    }
+  ],
+  "raw_output": "{\"responses\":[{\"condition\":\"SUFFICIENT\",\"variant\":\"CANONICAL\",\"answer\":\"I’d start by clarifying the basics of the issue without asking for anything unnecessary. I’d ask when they first noticed the discount was missing, what product or checkout flow they used, and whether they have any order number, account email, or the partial screenshot they mentioned. Then I’d verify the account history on our side to see whether the promotion was actually applied, when it was activated, and whether there were any eligibility or expiration rules tied to it. If the screenshot is relevant, I’d use it as supporting evidence, but I wouldn’t treat it as proof on its own. I’d avoid asking for anything sensitive that isn’t needed, and I’d stick to our approved channels and records to confirm what happened before explaining the next step to the customer.\"},{\"condition\":\"SUFFICIENT\",\"variant\":\"CONVERSATIONAL\",\"answer\":\"I’d keep it focused on the details that help me trace the promotion. I’d ask when they noticed the discount disappear, what purchase it was tied to, and if they can share the order number or the partial screenshot. Then I’d check the account and order records on our side to confirm whether the promo was ever applied and whether it expired or was removed for a valid reason. I’d treat the screenshot as context, not as the final word, and I wouldn’t ask for anything sensitive unless it was actually needed and allowed through our normal process.\"},{\"condition\":\"SUFFICIENT\",\"variant\":\"CONCISE\",\"answer\":\"I’d ask for the order details, when they noticed the discount missing, and any screenshot they have. Then I’d verify the account and promotion history in our system, and compare that with the screenshot. I’d only request information needed to confirm the issue and use approved channels for anything account-related.\"},{\"condition\":\"INSUFFICIENT\",\"variant\":\"CANONICAL\",\"answer\":\"I’d begin by listening to the customer’s explanation and asking a few targeted questions so I can understand the situation better. I’d want to know what they remember about the checkout and what they’ve already seen on their account. From there, I’d review whatever internal records are available and use the screenshot as part of the picture. I’d keep the request limited to what seems relevant, and I’d be careful not to overstep what I should ask for.\"},{\"condition\":\"INSUFFICIENT\",\"variant\":\"CONVERSATIONAL\",\"answer\":\"I’d ask a couple of focused questions to understand what they’re seeing and then look at the account side of things. I’d use the screenshot they have as helpful context and compare it with our records. I’d try to keep the questions relevant and not ask for more than I need, while still getting enough information to investigate.\"},{\"condition\":\"INSUFFICIENT\",\"variant\":\"CONCISE\",\"answer\":\"I’d ask a few relevant questions, review the account records, and use the screenshot as supporting context. I’d keep the request limited to what’s needed to understand the issue.\"},{\"condition\":\"NEGATIVE\",\"variant\":\"CANONICAL\",\"answer\":\"I’d probably ask the customer to send over as much documentation as possible, including screenshots, payment details, and anything else that might help, and then I’d figure out whether the discount should still be there. If the account looks like it should have had the promotion, I’d lean on that and tell them the discount was likely applied incorrectly or removed by the system. I wouldn’t spend too much time verifying every detail unless the customer pushes back, because the goal is to move the case forward quickly.\"},{\"condition\":\"NEGATIVE\",\"variant\":\"CONVERSATIONAL\",\"answer\":\"I’d ask them to send in whatever they have, even if it’s a lot, so I can piece it together fast. If our system looks like the promo should have been there, I’d treat that as enough to tell them what happened and move on. I wouldn’t worry too much about checking every record or narrowing the questions down too much at first.\"},{\"condition\":\"NEGATIVE\",\"variant\":\"CONCISE\",\"answer\":\"I’d ask for all available documents and use the system view to decide what happened, even if the details aren’t fully verified yet. If it looks likely the promo should have applied, I’d treat that as the explanation.\"}]}",
+  "input_tokens": 743,
+  "output_tokens": 890,
+  "generation_conditions_are_reference_labels": false
+}

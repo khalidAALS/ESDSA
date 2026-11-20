@@ -1,0 +1,18 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "SEMANTIC_EQUIVALENCE",
+  "blinded_id": "TG-F614EC45F5670081",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0c3a6c25bca2c017016b002c0c41a087d08e7fcba88a1dd595",
+  "annotated_utc": "2026-11-20T11:16:29.790162+00:00",
+  "annotation": {
+    "semantic_equivalence": "YES",
+    "material_differences": "",
+    "equivalence_rationale": "All three responses preserve the same decision-relevant evidence: they identify the messaging broker as the likely cause based on the app log showing a single event, propose the same linked correction of changing broker settings/configuration to prevent duplicate deliveries, and justify it by saying that this should stop the repeated confirmations. The slight wording differences and B’s shorter justification do not materially change the criterion-level evidence."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

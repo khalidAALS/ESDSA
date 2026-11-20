@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-9F944DFF1C81C424",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0705f8b56c70b817016b000bc0b84887d089f21335b0535278",
+  "annotated_utc": "2026-11-20T08:58:42.922921+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "CSS01-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d first pin down what’s actually going on. I’d ask them whether the main issue is that the confirmation email never came through, whether they can see the order in their account, and what they mean by the unfamiliar address—like if it’s the shipping address on the order or something in their profile.",
+        "rationale": "The candidate explicitly identifies the need to clarify what problem the customer is experiencing by asking targeted questions to determine the exact issue."
+      },
+      {
+        "criterion_id": "CSS01-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d treat the address issue as higher priority because that affects delivery and could point to account access problems,",
+        "rationale": "The candidate identifies the affected outcome/service as delivery, and also notes possible account access implications, showing they assess impact."
+      },
+      {
+        "criterion_id": "CSS01-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "At the end I’d repeat back my understanding so we’re both clear on what needs fixing first.",
+        "rationale": "The candidate states they will summarize their understanding before moving to resolution, which demonstrates problem definition."
+      }
+    ],
+    "annotation_notes": "The answer clearly addresses clarification, impact, and summarizing the issue prior to resolution."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

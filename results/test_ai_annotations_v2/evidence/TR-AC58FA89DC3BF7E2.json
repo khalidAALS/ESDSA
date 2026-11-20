@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-AC58FA89DC3BF7E2",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_06dea4992d33c04a016b0029d3bb2887d08455d27d66b4a6f1",
+  "annotated_utc": "2026-11-20T11:07:01.824025+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "SWE04-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "Re-test the reported invoice case",
+        "rationale": "The candidate explicitly says to re-test the reported case, which directly verifies whether the original failure is resolved."
+      },
+      {
+        "criterion_id": "SWE04-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "then run a small regression on refunds and discount adjustments",
+        "rationale": "This shows consideration of potential impact on previously working behaviour by checking related refund and discount adjustment paths."
+      },
+      {
+        "criterion_id": "SWE04-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "If all pass, ship; if anything fails, investigate and hold the release.",
+        "rationale": "The candidate clearly uses the verification results to determine the next action, either shipping or investigating and holding the release."
+      }
+    ],
+    "annotation_notes": "The answer is concise but directly addresses all three criteria."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-A1DD336FA16F236E",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0266c2d57dd4832a016b000cf384b487d0a70ced797f9c2def",
+  "annotated_utc": "2026-11-20T09:03:50.232839+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "OPS01-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d rank them by what’s most urgent and what would cause the biggest knock-on effect. First I’d push the inspection, because if that batch has a quality issue it affects everything downstream. Then I’d keep the customer order moving, since there’s a promised deadline and I wouldn’t want to miss that. Training matters too, but if we’re short on staff I’d see if it can be moved or trimmed without affecting compliance.",
+        "rationale": "The answer explicitly uses urgency, impact/knock-on effect, deadline pressure, downstream dependencies, and compliance considerations to determine priorities."
+      },
+      {
+        "criterion_id": "OPS01-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "First I’d push the inspection, because if that batch has a quality issue it affects everything downstream. Then I’d keep the customer order moving, since there’s a promised deadline and I wouldn’t want to miss that. Training matters too, but if we’re short on staff I’d see if it can be moved or trimmed without affecting compliance.",
+        "rationale": "This passage explains why each task is prioritized over the others, giving concrete trade-off reasoning based on quality risk, customer deadline, and staff availability/compliance."
+      },
+      {
+        "criterion_id": "OPS01-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "If something new comes up, I’d switch the plan quickly. Say the inspection flags a problem — I’d stop using that batch and update production and dispatch immediately. Or if the dispatch deadline suddenly tightens, I’d move people onto that and reschedule the training.",
+        "rationale": "The candidate clearly states they would change the plan when new information arrives and gives examples of how priorities would be adjusted."
+      }
+    ],
+    "annotation_notes": ""
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

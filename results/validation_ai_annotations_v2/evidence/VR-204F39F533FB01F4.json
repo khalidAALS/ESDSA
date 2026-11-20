@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-204F39F533FB01F4",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_03d4e2088b12d3ab016b000cbb18c087d088a0b1031d9f37e6",
+  "annotated_utc": "2026-11-20T09:02:54.116963+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "CSS01-C1",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I’d usually start from that resolution and apply it again so we can get the customer back in quickly.",
+        "rationale": "This explicitly prioritizes reapplying the prior fix rather than establishing what the actual current problem is, which materially contradicts issue clarification."
+      },
+      {
+        "criterion_id": "CSS01-C2",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "passage": "",
+        "rationale": "The answer does not clearly identify the customer's affected service or outcome. It mentions account lockouts and restoring access, but does not explicitly determine or summarize the specific service/outcome impacted in a way that establishes this criterion."
+      },
+      {
+        "criterion_id": "CSS01-C3",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I wouldn’t spend much time re-litigating the symptom unless the fix clearly fails again, because the main goal is restoring access as fast as possible.",
+        "rationale": "This indicates the candidate would not first summarize the issue before choosing a resolution, instead moving quickly to a fix. That materially contradicts problem definition before selecting a resolution."
+      }
+    ],
+    "annotation_notes": "Assessment is based only on the candidate's stated approach. The answer shows a fast-fix orientation and limited diagnosis, which conflicts with explicit problem definition and clarification. It does mention account lockouts and restoring access, but not enough to establish impact identification."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-97D8CD4951F091D0",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_01c4e969a1f794bd016b00296ecf0087d0909f1f63b58ec967",
+  "annotated_utc": "2026-11-20T11:05:21.092201+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "OPS02-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d take the near-miss seriously and assume the first change hasn’t really solved the problem yet. I’d go back to the incident info, check the loading area across a few shifts, and talk to the team to see what’s actually causing the build-up.",
+        "rationale": "This explicitly recognizes the near-miss and ongoing build-up as operational risks and describes reassessing the situation to identify the underlying cause."
+      },
+      {
+        "criterion_id": "OPS02-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "From there I’d judge how likely another delay or incident is, and how much it could affect deliveries and safety if it happens again.",
+        "rationale": "This clearly addresses both likelihood and impact by considering the chance of recurrence and the consequences for deliveries and safety."
+      },
+      {
+        "criterion_id": "OPS02-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "If it still looks high risk, I’d put a short-term fix in place straight away and escalate it so we can agree a better longer-term response.",
+        "rationale": "This proposes proportionate mitigation and escalation in response to residual risk, which satisfies the criterion."
+      }
+    ],
+    "annotation_notes": "The answer provides direct evidence for all three criteria and does not contain material contradictions."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

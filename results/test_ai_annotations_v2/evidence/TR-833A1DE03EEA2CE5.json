@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-833A1DE03EEA2CE5",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_06f4ac97df8fb4c0016b002a94504487d085e3b31ac99776b8",
+  "annotated_utc": "2026-11-20T11:10:14.541191+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "CSS04-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d reassure them it’s probably shipping soon and give a rough delivery estimate",
+        "rationale": "The candidate clearly describes how they would explain the situation to the customer in understandable terms, namely by reassuring them and providing a rough delivery estimate."
+      },
+      {
+        "criterion_id": "CSS04-C2",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "it’s probably shipping soon and give a rough delivery estimate",
+        "rationale": "The candidate proposes an unsupported assurance and an estimated delivery timeframe even though the warehouse has not yet confirmed dispatch or a delivery date, which materially risks setting unjustified expectations."
+      },
+      {
+        "criterion_id": "CSS04-C3",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "then only follow up if there’s a delay.",
+        "rationale": "The candidate limits follow-up to delay situations rather than providing an appropriate mechanism for status or confirmation while the order remains unconfirmed."
+      }
+    ],
+    "annotation_notes": "Assessment is based only on the stated answer. The response shows some explanation of the situation, but it also includes unsupported expectation-setting and a passive follow-up approach."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

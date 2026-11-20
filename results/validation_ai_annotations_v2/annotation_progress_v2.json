@@ -1,0 +1,25 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "status": "COMPLETE",
+  "partition": "VALIDATION",
+  "annotator": "AI_ASSISTED_GPT54_MINI_V2",
+  "evidence_completed": 216,
+  "evidence_total": 216,
+  "indicator_assessments_completed": 648,
+  "indicator_assessments_total": 648,
+  "semantic_completed": 72,
+  "semantic_total": 72,
+  "evidence_status_counts": {
+    "INSUFFICIENT_EVIDENCE": 82,
+    "NEGATIVE_EVIDENCE": 122,
+    "POSITIVE_EVIDENCE": 444
+  },
+  "semantic_status_counts": {
+    "YES": 50,
+    "NO": 21,
+    "UNCERTAIN": 1
+  },
+  "reference_decisions_assigned": 0,
+  "independent_human_review_completed": false,
+  "updated_utc": "2026-11-20T09:22:08.587228+00:00"
+}

@@ -1,0 +1,63 @@
+{
+  "experiment": "ESDSA_TEST_GENERATION_V1",
+  "partition": "TEST",
+  "family_id": "ESDSA-CSS04-04",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_03d96215419cdc2d016b0022c32cdc87d0a8352eb7d790742b",
+  "timestamp_utc": "2026-11-20T10:36:58.203305+00:00",
+  "run_sha256": "82ac0766c18d20ebb89bb4d737f22f0bcb4733433795a87180cdc21e97deb394",
+  "scenario_sha256": "9d2280d8014612bdd263f5dd8daf8356efeac3fa7a7e4b0cd3c6f4fef932426a",
+  "rubric_sha256": "2abf8b73ac743d5fb018e81958a18b140f8da1eb1813a09767a64e1ee7a29809",
+  "responses": [
+    {
+      "condition": "SUFFICIENT",
+      "variant": "CANONICAL",
+      "answer": "I’d tell the customer that I can see the ticket was marked resolved because a fix was applied, but I understand they’re still seeing the issue, so we shouldn’t treat it as fully closed yet. I’d apologize for the inconvenience, ask them to confirm what they’re seeing now and any recent steps they tried, and let them know I’m going to re-open or escalate it for review. I wouldn’t promise an exact fix time, but I would explain that the next update depends on what we find from their latest test and any technical follow-up. Then I’d set a clear check-in point, such as asking them to try the service again after the next update and reply with confirmation, and I’d make sure we follow up with them until we know the service is working for them."
+    },
+    {
+      "condition": "SUFFICIENT",
+      "variant": "CONVERSATIONAL",
+      "answer": "I’d let them know I can see a fix was applied on our side, but since they’re still having the problem, I’m not going to assume it’s actually resolved yet. I’d apologize, ask for a quick update on what they’re seeing now, and probably get a bit more detail so I can pass that along. I’d also set expectations that the timing of the next update depends on what we find from their latest confirmation, so I wouldn’t promise a specific turnaround. Then I’d tell them I’ll come back with the next status update and ask them to confirm once they’ve tried the service again, so we know it’s really working before we close it out."
+    },
+    {
+      "condition": "SUFFICIENT",
+      "variant": "CONCISE",
+      "answer": "I’d acknowledge the fix note, apologize, and say we still need to verify it worked on the customer’s side. I’d ask them to retry the service and send back what they see, and I’d explain the next update depends on that confirmation and any follow-up investigation. I’d keep the ticket open or re-open it and follow up once we have a successful confirmation."
+    },
+    {
+      "condition": "INSUFFICIENT",
+      "variant": "CANONICAL",
+      "answer": "I’d tell the customer that I can see a fix was applied internally, but I’d also explain that we haven’t yet confirmed the service is working for them end to end. I’d apologize for the inconvenience, ask them to share what they’re seeing now, and let them know I’ll review the case again with that information. I’d avoid promising a specific outcome or timeframe, since the next update depends on what we learn from their latest test. I would make sure to keep them informed as we continue looking into it."
+    },
+    {
+      "condition": "INSUFFICIENT",
+      "variant": "CONVERSATIONAL",
+      "answer": "I’d say I can see a fix was applied on our side, but I’d also be clear that we haven’t confirmed it actually solved the issue for them yet. I’d ask them to tell me what they’re seeing now and apologize for the hassle. I wouldn’t promise a particular result or timeline, since that depends on what we find next. I’d keep them in the loop as we review it."
+    },
+    {
+      "condition": "INSUFFICIENT",
+      "variant": "CONCISE",
+      "answer": "I’d tell them a fix was applied, but we still need to confirm it worked for them. I’d ask for what they’re seeing now, avoid promising a specific outcome or timing, and keep them updated as we review it."
+    },
+    {
+      "condition": "NEGATIVE",
+      "variant": "CANONICAL",
+      "answer": "I’d let the customer know the issue should already be fixed and ask them to keep trying it a few more times. Since the internal note says a fix was applied, I’d probably close the ticket again unless they can show a new error. I’d tell them to reach back out only if it still fails after that, because at that point we can assume the original fix didn’t take. I wouldn’t plan a separate follow-up unless they contact us again."
+    },
+    {
+      "condition": "NEGATIVE",
+      "variant": "CONVERSATIONAL",
+      "answer": "I’d tell them it’s been fixed on our side and that they should be good to go now. I’d ask them to try it again, and if it still doesn’t work, they can open another ticket. I probably wouldn’t keep following up unless they come back with a new issue, since the note already says the fix was applied."
+    },
+    {
+      "condition": "NEGATIVE",
+      "variant": "CONCISE",
+      "answer": "I’d tell them it should be fixed already and have them try again. If it still fails, they can submit a new ticket; I wouldn’t set up a separate follow-up unless they report a new problem."
+    }
+  ],
+  "raw_output": "{\"responses\":[{\"condition\":\"SUFFICIENT\",\"variant\":\"CANONICAL\",\"answer\":\"I’d tell the customer that I can see the ticket was marked resolved because a fix was applied, but I understand they’re still seeing the issue, so we shouldn’t treat it as fully closed yet. I’d apologize for the inconvenience, ask them to confirm what they’re seeing now and any recent steps they tried, and let them know I’m going to re-open or escalate it for review. I wouldn’t promise an exact fix time, but I would explain that the next update depends on what we find from their latest test and any technical follow-up. Then I’d set a clear check-in point, such as asking them to try the service again after the next update and reply with confirmation, and I’d make sure we follow up with them until we know the service is working for them.\"},{\"condition\":\"SUFFICIENT\",\"variant\":\"CONVERSATIONAL\",\"answer\":\"I’d let them know I can see a fix was applied on our side, but since they’re still having the problem, I’m not going to assume it’s actually resolved yet. I’d apologize, ask for a quick update on what they’re seeing now, and probably get a bit more detail so I can pass that along. I’d also set expectations that the timing of the next update depends on what we find from their latest confirmation, so I wouldn’t promise a specific turnaround. Then I’d tell them I’ll come back with the next status update and ask them to confirm once they’ve tried the service again, so we know it’s really working before we close it out.\"},{\"condition\":\"SUFFICIENT\",\"variant\":\"CONCISE\",\"answer\":\"I’d acknowledge the fix note, apologize, and say we still need to verify it worked on the customer’s side. I’d ask them to retry the service and send back what they see, and I’d explain the next update depends on that confirmation and any follow-up investigation. I’d keep the ticket open or re-open it and follow up once we have a successful confirmation.\"},{\"condition\":\"INSUFFICIENT\",\"variant\":\"CANONICAL\",\"answer\":\"I’d tell the customer that I can see a fix was applied internally, but I’d also explain that we haven’t yet confirmed the service is working for them end to end. I’d apologize for the inconvenience, ask them to share what they’re seeing now, and let them know I’ll review the case again with that information. I’d avoid promising a specific outcome or timeframe, since the next update depends on what we learn from their latest test. I would make sure to keep them informed as we continue looking into it.\"},{\"condition\":\"INSUFFICIENT\",\"variant\":\"CONVERSATIONAL\",\"answer\":\"I’d say I can see a fix was applied on our side, but I’d also be clear that we haven’t confirmed it actually solved the issue for them yet. I’d ask them to tell me what they’re seeing now and apologize for the hassle. I wouldn’t promise a particular result or timeline, since that depends on what we find next. I’d keep them in the loop as we review it.\"},{\"condition\":\"INSUFFICIENT\",\"variant\":\"CONCISE\",\"answer\":\"I’d tell them a fix was applied, but we still need to confirm it worked for them. I’d ask for what they’re seeing now, avoid promising a specific outcome or timing, and keep them updated as we review it.\"},{\"condition\":\"NEGATIVE\",\"variant\":\"CANONICAL\",\"answer\":\"I’d let the customer know the issue should already be fixed and ask them to keep trying it a few more times. Since the internal note says a fix was applied, I’d probably close the ticket again unless they can show a new error. I’d tell them to reach back out only if it still fails after that, because at that point we can assume the original fix didn’t take. I wouldn’t plan a separate follow-up unless they contact us again.\"},{\"condition\":\"NEGATIVE\",\"variant\":\"CONVERSATIONAL\",\"answer\":\"I’d tell them it’s been fixed on our side and that they should be good to go now. I’d ask them to try it again, and if it still doesn’t work, they can open another ticket. I probably wouldn’t keep following up unless they come back with a new issue, since the note already says the fix was applied.\"},{\"condition\":\"NEGATIVE\",\"variant\":\"CONCISE\",\"answer\":\"I’d tell them it should be fixed already and have them try again. If it still fails, they can submit a new ticket; I wouldn’t set up a separate follow-up unless they report a new problem.\"}]}",
+  "input_tokens": 757,
+  "output_tokens": 969,
+  "generation_conditions_are_reference_labels": false
+}

@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-C409B7BCDE1868CB",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_058e62fd0bfe9875016b002be6196087d0b3ab35a82cb7be99",
+  "annotated_utc": "2026-11-20T11:15:52.409085+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "CSS04-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d let them know I can see a fix was applied on our side, but since they’re still having the problem, I’m not going to assume it’s actually resolved yet. I’d apologize, ask for a quick update on what they’re seeing now, and probably get a bit more detail so I can pass that along.",
+        "rationale": "This clearly explains to the customer what the support agent would communicate and what information would be requested next, in understandable terms."
+      },
+      {
+        "criterion_id": "CSS04-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d also set expectations that the timing of the next update depends on what we find from their latest confirmation, so I wouldn’t promise a specific turnaround.",
+        "rationale": "This explicitly manages expectations by tying timing to new information and avoiding an unsupported promise about turnaround time."
+      },
+      {
+        "criterion_id": "CSS04-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "Then I’d tell them I’ll come back with the next status update and ask them to confirm once they’ve tried the service again, so we know it’s really working before we close it out.",
+        "rationale": "This provides a concrete follow-up mechanism: the customer is asked to confirm after retrying the service, and the agent commits to returning with an update."
+      }
+    ],
+    "annotation_notes": "All three criteria are directly addressed in the answer with explicit follow-up and expectation-setting language."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

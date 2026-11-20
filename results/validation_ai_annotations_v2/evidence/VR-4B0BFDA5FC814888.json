@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-4B0BFDA5FC814888",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_07cde38f83db34d9016b000c08df1487d0b283f59666d4869a",
+  "annotated_utc": "2026-11-20T08:59:54.816788+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "CSS02-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d first get the story as clearly as I can by asking a few targeted questions, like roughly when they cancelled, how they did it, and whether they saw any confirmation.",
+        "rationale": "The candidate explicitly proposes targeted questions that are directly relevant to understanding the cancellation issue."
+      },
+      {
+        "criterion_id": "CSS02-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d check our internal records to verify what’s actually on the account — cancellation status, logs, and any notes — instead of assuming the payment history tells the whole story.",
+        "rationale": "The candidate clearly distinguishes verified internal records from assumptions and notes that payment history alone is insufficient."
+      },
+      {
+        "criterion_id": "CSS02-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d stick to the information I’m allowed to access and wouldn’t ask for extra sensitive details unless there was a clear, approved reason.",
+        "rationale": "This explicitly indicates proportionate and authorised information gathering by limiting access and avoiding unnecessary sensitive requests."
+      }
+    ],
+    "annotation_notes": "The answer provides direct evidence for all three criteria, especially through targeted questioning, verification of records, and stated limits on access and sensitive data collection."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

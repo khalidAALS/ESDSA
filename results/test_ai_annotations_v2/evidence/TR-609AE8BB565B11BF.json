@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-609AE8BB565B11BF",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_01dc01b08687fbbf016b002bbbc3c887d088e0f64b3faf72e5",
+  "annotated_utc": "2026-11-20T11:15:11.229181+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "CSS02-C1",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "passage": "",
+        "rationale": "The answer includes some relevant questions about whether the customer checked with neighbours or others at the address, but it does not establish a sufficiently clear or comprehensive information-gathering approach to understand the issue. It is too limited to support a positive determination, and it does not clearly show irrelevant questioning either."
+      },
+      {
+        "criterion_id": "CSS02-C2",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "if tracking says delivered, it was delivered",
+        "rationale": "This treats the tracking event as definitive proof of delivery and explicitly dismisses the need to distinguish a recorded delivery scan from what is actually confirmed, rather than separating fact from assumption."
+      },
+      {
+        "criterion_id": "CSS02-C3",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I’d avoid asking for the full order information unless the customer insists.",
+        "rationale": "This indicates an avoidant stance toward obtaining necessary order details and is paired with an attitude of not spending much time on the tracking details, suggesting the information gathering would be constrained by convenience rather than proportionate to the problem."
+      }
+    ],
+    "annotation_notes": "The response is partial and somewhat dismissive of investigation. Criterion C1 is not clearly satisfied because only a small subset of potentially relevant questions is mentioned. C2 is materially contradicted by equating a delivery scan with confirmed delivery. C3 is also contradicted by the stated reluctance to gather full order information and to spend time on tracking details, which suggests an under-inclusive approach to information gathering."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

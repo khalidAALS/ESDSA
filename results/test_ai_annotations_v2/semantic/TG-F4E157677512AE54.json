@@ -1,0 +1,18 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "SEMANTIC_EQUIVALENCE",
+  "blinded_id": "TG-F4E157677512AE54",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_085372c6375f29c1016b002c02a9cc87d08568f61be06ba734",
+  "annotated_utc": "2026-11-20T11:16:20.137238+00:00",
+  "annotation": {
+    "semantic_equivalence": "YES",
+    "material_differences": "",
+    "equivalence_rationale": "All three responses preserve the same decision-relevant evidence for prioritisation: they reassess priorities in response to changed conditions, focus on urgent customer orders and the early delivery, consider operational impact at receiving/dock, and deprioritise less urgent work while briefing the team and monitoring progress. B adds slightly more explicit trade-off language about fitting both into the day if capacity allows, but this does not change the underlying prioritisation approach or operational commitments."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

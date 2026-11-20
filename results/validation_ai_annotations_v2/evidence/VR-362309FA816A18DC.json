@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-362309FA816A18DC",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_060a948e5c99f2b4016b000cd94f2c87d0b3516d71c57855d1",
+  "annotated_utc": "2026-11-20T09:03:24.122319+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "OPS03-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "compare the progress updates against source items like handoff logs, dependency trackers, open action lists, and any agreed milestone dates",
+        "rationale": "The candidate explicitly says they would use multiple operational sources to reconcile conflicting reports, which directly demonstrates evidence integration."
+      },
+      {
+        "criterion_id": "OPS03-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "clarify who owns each unresolved dependency, and confirm what is actually complete versus what still needs sign-off or input from the other side",
+        "rationale": "This directly identifies responsible parties and the unresolved dependencies that need coordination."
+      },
+      {
+        "criterion_id": "OPS03-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d document the evidence used, the ownership decisions, and the reason for the final schedule so there is a clear record of how we got there and what still needs follow-up.",
+        "rationale": "The candidate explicitly describes documenting evidence and decisions to justify the final schedule, which establishes decision traceability."
+      }
+    ],
+    "annotation_notes": "The answer provides clear, concrete coordination steps grounded in operational records and a documented rationale for the launch decision."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

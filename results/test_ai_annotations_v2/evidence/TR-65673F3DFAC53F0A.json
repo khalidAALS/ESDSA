@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-65673F3DFAC53F0A",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0655f2e3d6f74893016b0029451dbc87d09558d363dcf99da9",
+  "annotated_utc": "2026-11-20T11:04:39.707295+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "CSS01-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d ask whether the booking is missing completely, whether it shows up under a different time, or whether the confirmation they got doesn’t match what’s in the account.",
+        "rationale": "This explicitly probes the concrete nature of the customer’s issue and distinguishes between possible forms of the booking problem."
+      },
+      {
+        "criterion_id": "CSS01-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "Since there have been recent changes, I’d check what part of the service is actually affected and how that’s impacting the appointment itself.",
+        "rationale": "This shows the candidate would identify what service/outcome is affected and assess the impact on the appointment."
+      },
+      {
+        "criterion_id": "CSS01-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "Then I’d repeat it back to make sure I’ve got it right — something like, ‘It sounds like the confirmed booking isn’t showing as expected, and we need to confirm whether it was changed or replaced before I help further.’",
+        "rationale": "This is a clear summary of the issue before moving to help, demonstrating problem definition."
+      }
+    ],
+    "annotation_notes": "All three criteria are directly evidenced by the candidate’s stated clarification questions and recap."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

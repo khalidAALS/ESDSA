@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-734DF6A97C79A5E1",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0df11fb6f36f3f5d016b00103dc64887d0adb74449b1881f0f",
+  "annotated_utc": "2026-11-20T09:17:51.721951+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "OPS02-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "repeated small differences can sometimes point to a process issue rather than a counting one-off",
+        "rationale": "This explicitly identifies a plausible operational risk: the discrepancies may indicate an underlying process issue."
+      },
+      {
+        "criterion_id": "OPS02-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d also avoid jumping to conclusions until I’d had a bit more information.",
+        "rationale": "The candidate shows uncertainty and indicates they would seek more information before concluding, which demonstrates consideration of ambiguity and incomplete evidence when assessing risk."
+      },
+      {
+        "criterion_id": "OPS02-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "If it stayed small, I’d keep monitoring it and make sure the team is aware. If it started to show a clearer trend, I’d bring it up with the supervisor.",
+        "rationale": "This proposes proportionate monitoring for a minor issue and escalation if the pattern becomes clearer, which is an appropriate risk response."
+      }
+    ],
+    "annotation_notes": "The answer is concise but sufficiently addresses all three criteria with explicit references to process risk, uncertainty, and escalation/monitoring."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

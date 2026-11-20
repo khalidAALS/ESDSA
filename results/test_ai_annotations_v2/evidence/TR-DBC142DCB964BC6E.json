@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-DBC142DCB964BC6E",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_06d06df64a734013016b002a37c5b087d09206bf003e284a2f",
+  "annotated_utc": "2026-11-20T11:08:42.175521+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "CSS02-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d ask when they first noticed the discount was missing, what product or checkout flow they used, and whether they have any order number, account email, or the partial screenshot they mentioned.",
+        "rationale": "The candidate proposes targeted questions that would help understand and investigate the missing discount claim."
+      },
+      {
+        "criterion_id": "CSS02-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "If the screenshot is relevant, I’d use it as supporting evidence, but I wouldn’t treat it as proof on its own. I’d avoid asking for anything sensitive that isn’t needed, and I’d stick to our approved channels and records to confirm what happened before explaining the next step to the customer.",
+        "rationale": "The candidate explicitly distinguishes supporting evidence from proof and says they will confirm what happened using approved channels and records rather than assumptions."
+      },
+      {
+        "criterion_id": "CSS02-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "without asking for anything unnecessary",
+        "rationale": "The candidate explicitly states they would avoid requesting unnecessary information, which supports proportionate and appropriate collection."
+      }
+    ],
+    "annotation_notes": "The answer is concise but directly addresses all three criteria with explicit statements about relevance, verification, and limited collection."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

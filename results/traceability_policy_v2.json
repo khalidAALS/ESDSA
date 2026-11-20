@@ -1,0 +1,3357 @@
+{
+  "summary": {
+    "stages": {
+      "evidence_aware": {
+        "total": 108,
+        "actionable": 105,
+        "coverage": 0.9722222222222222,
+        "disagreements": 15,
+        "disagreement_rate": 0.14285714285714285,
+        "unsupported_advances": 12,
+        "deferrals_against_actionable_reference": 0,
+        "distribution": {
+          "DO_NOT_ADVANCE": 36,
+          "ADVANCE": 69,
+          "DEFER": 3
+        }
+      },
+      "traceability_v1": {
+        "total": 108,
+        "actionable": 90,
+        "coverage": 0.8333333333333334,
+        "disagreements": 14,
+        "disagreement_rate": 0.15555555555555556,
+        "unsupported_advances": 11,
+        "deferrals_against_actionable_reference": 15,
+        "distribution": {
+          "DEFER": 18,
+          "DO_NOT_ADVANCE": 28,
+          "ADVANCE": 62
+        }
+      },
+      "traceability_v2": {
+        "total": 108,
+        "actionable": 104,
+        "coverage": 0.9629629629629629,
+        "disagreements": 15,
+        "disagreement_rate": 0.14423076923076922,
+        "unsupported_advances": 12,
+        "deferrals_against_actionable_reference": 1,
+        "distribution": {
+          "DO_NOT_ADVANCE": 36,
+          "ADVANCE": 68,
+          "DEFER": 4
+        }
+      }
+    },
+    "changed_responses": 14,
+    "restored_correct_recommendations": 13,
+    "restored_disagreements": 1,
+    "newly_deferred_recommendations": 0,
+    "limitations": [
+      "Development data only.",
+      "Provisional reference labels are not ground truth.",
+      "Only citation verification and decision gating are evaluated; substantive evidence classifications remain unchanged.",
+      "The stability gate is not applied in this experiment.",
+      "Verified excerpts may still be irrelevant or insufficient for their associated competencies."
+    ]
+  },
+  "changed_records": [
+    {
+      "response_id": "ESDSA-SWE02-01-E3L2",
+      "group": "GROUP-001",
+      "semantic_equivalence": "YES",
+      "reference_decision": "DO_NOT_ADVANCE",
+      "baseline_evidence_decision": "DO_NOT_ADVANCE",
+      "traceability_v1_decision": "DEFER",
+      "traceability_v2_decision": "DO_NOT_ADVANCE",
+      "traceability_v2_reason": "VERIFIED_NEGATIVE_EVIDENCE",
+      "criteria": [
+        {
+          "criterion_id": "SWE02-C1",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "SWE02-C2",
+          "evidence_status": "NEGATIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "SWE02-C3",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        }
+      ]
+    },
+    {
+      "response_id": "ESDSA-SWE02-01-E3L1",
+      "group": "GROUP-001",
+      "semantic_equivalence": "YES",
+      "reference_decision": "DO_NOT_ADVANCE",
+      "baseline_evidence_decision": "DO_NOT_ADVANCE",
+      "traceability_v1_decision": "DEFER",
+      "traceability_v2_decision": "DO_NOT_ADVANCE",
+      "traceability_v2_reason": "VERIFIED_NEGATIVE_EVIDENCE",
+      "criteria": [
+        {
+          "criterion_id": "SWE02-C1",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "SWE02-C2",
+          "evidence_status": "NEGATIVE_EVIDENCE",
+          "v2_outcome": "UNVERIFIABLE"
+        },
+        {
+          "criterion_id": "SWE02-C3",
+          "evidence_status": "NEGATIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        }
+      ]
+    },
+    {
+      "response_id": "ESDSA-SWE02-01-E2L2",
+      "group": "GROUP-005",
+      "semantic_equivalence": "YES",
+      "reference_decision": "ADVANCE",
+      "baseline_evidence_decision": "ADVANCE",
+      "traceability_v1_decision": "DEFER",
+      "traceability_v2_decision": "ADVANCE",
+      "traceability_v2_reason": "ALL_POSITIVE_VERIFIED",
+      "criteria": [
+        {
+          "criterion_id": "SWE02-C1",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "SWE02-C2",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "SWE02-C3",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        }
+      ]
+    },
+    {
+      "response_id": "ESDSA-SWE02-01-E2L1",
+      "group": "GROUP-005",
+      "semantic_equivalence": "YES",
+      "reference_decision": "ADVANCE",
+      "baseline_evidence_decision": "ADVANCE",
+      "traceability_v1_decision": "DEFER",
+      "traceability_v2_decision": "ADVANCE",
+      "traceability_v2_reason": "ALL_POSITIVE_VERIFIED",
+      "criteria": [
+        {
+          "criterion_id": "SWE02-C1",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "SWE02-C2",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "SWE02-C3",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        }
+      ]
+    },
+    {
+      "response_id": "ESDSA-OPS02-03-E1L2",
+      "group": "GROUP-008",
+      "semantic_equivalence": "YES",
+      "reference_decision": "ADVANCE",
+      "baseline_evidence_decision": "ADVANCE",
+      "traceability_v1_decision": "DEFER",
+      "traceability_v2_decision": "ADVANCE",
+      "traceability_v2_reason": "ALL_POSITIVE_VERIFIED",
+      "criteria": [
+        {
+          "criterion_id": "OPS02-C1",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "OPS02-C2",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "OPS02-C3",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        }
+      ]
+    },
+    {
+      "response_id": "ESDSA-CSS02-02-E3L1",
+      "group": "GROUP-015",
+      "semantic_equivalence": "YES",
+      "reference_decision": "DO_NOT_ADVANCE",
+      "baseline_evidence_decision": "DO_NOT_ADVANCE",
+      "traceability_v1_decision": "DEFER",
+      "traceability_v2_decision": "DO_NOT_ADVANCE",
+      "traceability_v2_reason": "VERIFIED_NEGATIVE_EVIDENCE",
+      "criteria": [
+        {
+          "criterion_id": "CSS02-C1",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "CSS02-C2",
+          "evidence_status": "NEGATIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "CSS02-C3",
+          "evidence_status": "NEGATIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        }
+      ]
+    },
+    {
+      "response_id": "ESDSA-SWE03-01-E3L1",
+      "group": "GROUP-017",
+      "semantic_equivalence": "YES",
+      "reference_decision": "DO_NOT_ADVANCE",
+      "baseline_evidence_decision": "ADVANCE",
+      "traceability_v1_decision": "DEFER",
+      "traceability_v2_decision": "ADVANCE",
+      "traceability_v2_reason": "ALL_POSITIVE_VERIFIED",
+      "criteria": [
+        {
+          "criterion_id": "SWE03-C1",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "SWE03-C2",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "SWE03-C3",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        }
+      ]
+    },
+    {
+      "response_id": "ESDSA-SWE02-01-E1L1",
+      "group": "GROUP-022",
+      "semantic_equivalence": "YES",
+      "reference_decision": "ADVANCE",
+      "baseline_evidence_decision": "ADVANCE",
+      "traceability_v1_decision": "DEFER",
+      "traceability_v2_decision": "ADVANCE",
+      "traceability_v2_reason": "ALL_POSITIVE_VERIFIED",
+      "criteria": [
+        {
+          "criterion_id": "SWE02-C1",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "SWE02-C2",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "SWE02-C3",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        }
+      ]
+    },
+    {
+      "response_id": "ESDSA-SWE02-01-E1L2",
+      "group": "GROUP-022",
+      "semantic_equivalence": "YES",
+      "reference_decision": "ADVANCE",
+      "baseline_evidence_decision": "ADVANCE",
+      "traceability_v1_decision": "DEFER",
+      "traceability_v2_decision": "ADVANCE",
+      "traceability_v2_reason": "ALL_POSITIVE_VERIFIED",
+      "criteria": [
+        {
+          "criterion_id": "SWE02-C1",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "SWE02-C2",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "SWE02-C3",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        }
+      ]
+    },
+    {
+      "response_id": "ESDSA-OPS02-03-E3L1",
+      "group": "GROUP-032",
+      "semantic_equivalence": "YES",
+      "reference_decision": "DO_NOT_ADVANCE",
+      "baseline_evidence_decision": "DO_NOT_ADVANCE",
+      "traceability_v1_decision": "DEFER",
+      "traceability_v2_decision": "DO_NOT_ADVANCE",
+      "traceability_v2_reason": "VERIFIED_NEGATIVE_EVIDENCE",
+      "criteria": [
+        {
+          "criterion_id": "OPS02-C1",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "CONTEXT_ONLY"
+        },
+        {
+          "criterion_id": "OPS02-C2",
+          "evidence_status": "NEGATIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "OPS02-C3",
+          "evidence_status": "NEGATIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        }
+      ]
+    },
+    {
+      "response_id": "ESDSA-OPS02-03-E3L3",
+      "group": "GROUP-032",
+      "semantic_equivalence": "YES",
+      "reference_decision": "DO_NOT_ADVANCE",
+      "baseline_evidence_decision": "DO_NOT_ADVANCE",
+      "traceability_v1_decision": "DEFER",
+      "traceability_v2_decision": "DO_NOT_ADVANCE",
+      "traceability_v2_reason": "VERIFIED_NEGATIVE_EVIDENCE",
+      "criteria": [
+        {
+          "criterion_id": "OPS02-C1",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "CONTEXT_ONLY"
+        },
+        {
+          "criterion_id": "OPS02-C2",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "OPS02-C3",
+          "evidence_status": "NEGATIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        }
+      ]
+    },
+    {
+      "response_id": "ESDSA-OPS02-03-E3L2",
+      "group": "GROUP-032",
+      "semantic_equivalence": "YES",
+      "reference_decision": "DO_NOT_ADVANCE",
+      "baseline_evidence_decision": "DO_NOT_ADVANCE",
+      "traceability_v1_decision": "DEFER",
+      "traceability_v2_decision": "DO_NOT_ADVANCE",
+      "traceability_v2_reason": "VERIFIED_NEGATIVE_EVIDENCE",
+      "criteria": [
+        {
+          "criterion_id": "OPS02-C1",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "CONTEXT_ONLY"
+        },
+        {
+          "criterion_id": "OPS02-C2",
+          "evidence_status": "NEGATIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "OPS02-C3",
+          "evidence_status": "NEGATIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        }
+      ]
+    },
+    {
+      "response_id": "ESDSA-OPS01-01-E3L2",
+      "group": "GROUP-034",
+      "semantic_equivalence": "YES",
+      "reference_decision": "DO_NOT_ADVANCE",
+      "baseline_evidence_decision": "DO_NOT_ADVANCE",
+      "traceability_v1_decision": "DEFER",
+      "traceability_v2_decision": "DO_NOT_ADVANCE",
+      "traceability_v2_reason": "VERIFIED_NEGATIVE_EVIDENCE",
+      "criteria": [
+        {
+          "criterion_id": "OPS01-C1",
+          "evidence_status": "NEGATIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "OPS01-C2",
+          "evidence_status": "NEGATIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "OPS01-C3",
+          "evidence_status": "NEGATIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        }
+      ]
+    },
+    {
+      "response_id": "ESDSA-OPS01-01-E3L1",
+      "group": "GROUP-034",
+      "semantic_equivalence": "YES",
+      "reference_decision": "DO_NOT_ADVANCE",
+      "baseline_evidence_decision": "DO_NOT_ADVANCE",
+      "traceability_v1_decision": "DEFER",
+      "traceability_v2_decision": "DO_NOT_ADVANCE",
+      "traceability_v2_reason": "VERIFIED_NEGATIVE_EVIDENCE",
+      "criteria": [
+        {
+          "criterion_id": "OPS01-C1",
+          "evidence_status": "NEGATIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "OPS01-C2",
+          "evidence_status": "NEGATIVE_EVIDENCE",
+          "v2_outcome": "UNVERIFIABLE"
+        },
+        {
+          "criterion_id": "OPS01-C3",
+          "evidence_status": "NEGATIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        }
+      ]
+    }
+  ],
+  "all_records": [
+    {
+      "response_id": "ESDSA-SWE02-01-E3L2",
+      "group": "GROUP-001",
+      "semantic_equivalence": "YES",
+      "reference_decision": "DO_NOT_ADVANCE",
+      "baseline_evidence_decision": "DO_NOT_ADVANCE",
+      "traceability_v1_decision": "DEFER",
+      "traceability_v2_decision": "DO_NOT_ADVANCE",
+      "traceability_v2_reason": "VERIFIED_NEGATIVE_EVIDENCE",
+      "criteria": [
+        {
+          "criterion_id": "SWE02-C1",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "SWE02-C2",
+          "evidence_status": "NEGATIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "SWE02-C3",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        }
+      ]
+    },
+    {
+      "response_id": "ESDSA-SWE02-01-E3L3",
+      "group": "GROUP-001",
+      "semantic_equivalence": "YES",
+      "reference_decision": "DO_NOT_ADVANCE",
+      "baseline_evidence_decision": "DO_NOT_ADVANCE",
+      "traceability_v1_decision": "DO_NOT_ADVANCE",
+      "traceability_v2_decision": "DO_NOT_ADVANCE",
+      "traceability_v2_reason": "VERIFIED_NEGATIVE_EVIDENCE",
+      "criteria": [
+        {
+          "criterion_id": "SWE02-C1",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "SWE02-C2",
+          "evidence_status": "NEGATIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "SWE02-C3",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        }
+      ]
+    },
+    {
+      "response_id": "ESDSA-SWE02-01-E3L1",
+      "group": "GROUP-001",
+      "semantic_equivalence": "YES",
+      "reference_decision": "DO_NOT_ADVANCE",
+      "baseline_evidence_decision": "DO_NOT_ADVANCE",
+      "traceability_v1_decision": "DEFER",
+      "traceability_v2_decision": "DO_NOT_ADVANCE",
+      "traceability_v2_reason": "VERIFIED_NEGATIVE_EVIDENCE",
+      "criteria": [
+        {
+          "criterion_id": "SWE02-C1",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "SWE02-C2",
+          "evidence_status": "NEGATIVE_EVIDENCE",
+          "v2_outcome": "UNVERIFIABLE"
+        },
+        {
+          "criterion_id": "SWE02-C3",
+          "evidence_status": "NEGATIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        }
+      ]
+    },
+    {
+      "response_id": "ESDSA-CSS01-01-E1L3",
+      "group": "GROUP-002",
+      "semantic_equivalence": "YES",
+      "reference_decision": "ADVANCE",
+      "baseline_evidence_decision": "ADVANCE",
+      "traceability_v1_decision": "ADVANCE",
+      "traceability_v2_decision": "ADVANCE",
+      "traceability_v2_reason": "ALL_POSITIVE_VERIFIED",
+      "criteria": [
+        {
+          "criterion_id": "CSS01-C1",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "CSS01-C2",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "CSS01-C3",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        }
+      ]
+    },
+    {
+      "response_id": "ESDSA-CSS01-01-E1L2",
+      "group": "GROUP-002",
+      "semantic_equivalence": "YES",
+      "reference_decision": "ADVANCE",
+      "baseline_evidence_decision": "ADVANCE",
+      "traceability_v1_decision": "ADVANCE",
+      "traceability_v2_decision": "ADVANCE",
+      "traceability_v2_reason": "ALL_POSITIVE_VERIFIED",
+      "criteria": [
+        {
+          "criterion_id": "CSS01-C1",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "CSS01-C2",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "CSS01-C3",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        }
+      ]
+    },
+    {
+      "response_id": "ESDSA-CSS01-01-E1L1",
+      "group": "GROUP-002",
+      "semantic_equivalence": "YES",
+      "reference_decision": "ADVANCE",
+      "baseline_evidence_decision": "ADVANCE",
+      "traceability_v1_decision": "ADVANCE",
+      "traceability_v2_decision": "ADVANCE",
+      "traceability_v2_reason": "ALL_POSITIVE_VERIFIED",
+      "criteria": [
+        {
+          "criterion_id": "CSS01-C1",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "CSS01-C2",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "CSS01-C3",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        }
+      ]
+    },
+    {
+      "response_id": "ESDSA-OPS03-01-E1L2",
+      "group": "GROUP-003",
+      "semantic_equivalence": "YES",
+      "reference_decision": "ADVANCE",
+      "baseline_evidence_decision": "ADVANCE",
+      "traceability_v1_decision": "ADVANCE",
+      "traceability_v2_decision": "ADVANCE",
+      "traceability_v2_reason": "ALL_POSITIVE_VERIFIED",
+      "criteria": [
+        {
+          "criterion_id": "OPS03-C1",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "OPS03-C2",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "OPS03-C3",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        }
+      ]
+    },
+    {
+      "response_id": "ESDSA-OPS03-01-E1L3",
+      "group": "GROUP-003",
+      "semantic_equivalence": "YES",
+      "reference_decision": "ADVANCE",
+      "baseline_evidence_decision": "ADVANCE",
+      "traceability_v1_decision": "ADVANCE",
+      "traceability_v2_decision": "ADVANCE",
+      "traceability_v2_reason": "ALL_POSITIVE_VERIFIED",
+      "criteria": [
+        {
+          "criterion_id": "OPS03-C1",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "OPS03-C2",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "OPS03-C3",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        }
+      ]
+    },
+    {
+      "response_id": "ESDSA-OPS03-01-E1L1",
+      "group": "GROUP-003",
+      "semantic_equivalence": "YES",
+      "reference_decision": "ADVANCE",
+      "baseline_evidence_decision": "ADVANCE",
+      "traceability_v1_decision": "ADVANCE",
+      "traceability_v2_decision": "ADVANCE",
+      "traceability_v2_reason": "ALL_POSITIVE_VERIFIED",
+      "criteria": [
+        {
+          "criterion_id": "OPS03-C1",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "OPS03-C2",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "OPS03-C3",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        }
+      ]
+    },
+    {
+      "response_id": "ESDSA-CSS03-02-E2L1",
+      "group": "GROUP-004",
+      "semantic_equivalence": "NO",
+      "reference_decision": "ADVANCE",
+      "baseline_evidence_decision": "ADVANCE",
+      "traceability_v1_decision": "ADVANCE",
+      "traceability_v2_decision": "ADVANCE",
+      "traceability_v2_reason": "ALL_POSITIVE_VERIFIED",
+      "criteria": [
+        {
+          "criterion_id": "CSS03-C1",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "CSS03-C2",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "CSS03-C3",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        }
+      ]
+    },
+    {
+      "response_id": "ESDSA-CSS03-02-E2L2",
+      "group": "GROUP-004",
+      "semantic_equivalence": "NO",
+      "reference_decision": "DEFER",
+      "baseline_evidence_decision": "ADVANCE",
+      "traceability_v1_decision": "ADVANCE",
+      "traceability_v2_decision": "ADVANCE",
+      "traceability_v2_reason": "ALL_POSITIVE_VERIFIED",
+      "criteria": [
+        {
+          "criterion_id": "CSS03-C1",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "CSS03-C2",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "CSS03-C3",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        }
+      ]
+    },
+    {
+      "response_id": "ESDSA-CSS03-02-E2L3",
+      "group": "GROUP-004",
+      "semantic_equivalence": "NO",
+      "reference_decision": "DEFER",
+      "baseline_evidence_decision": "ADVANCE",
+      "traceability_v1_decision": "ADVANCE",
+      "traceability_v2_decision": "ADVANCE",
+      "traceability_v2_reason": "ALL_POSITIVE_VERIFIED",
+      "criteria": [
+        {
+          "criterion_id": "CSS03-C1",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "CSS03-C2",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "CSS03-C3",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        }
+      ]
+    },
+    {
+      "response_id": "ESDSA-SWE02-01-E2L3",
+      "group": "GROUP-005",
+      "semantic_equivalence": "YES",
+      "reference_decision": "ADVANCE",
+      "baseline_evidence_decision": "ADVANCE",
+      "traceability_v1_decision": "ADVANCE",
+      "traceability_v2_decision": "ADVANCE",
+      "traceability_v2_reason": "ALL_POSITIVE_VERIFIED",
+      "criteria": [
+        {
+          "criterion_id": "SWE02-C1",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "SWE02-C2",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "SWE02-C3",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        }
+      ]
+    },
+    {
+      "response_id": "ESDSA-SWE02-01-E2L2",
+      "group": "GROUP-005",
+      "semantic_equivalence": "YES",
+      "reference_decision": "ADVANCE",
+      "baseline_evidence_decision": "ADVANCE",
+      "traceability_v1_decision": "DEFER",
+      "traceability_v2_decision": "ADVANCE",
+      "traceability_v2_reason": "ALL_POSITIVE_VERIFIED",
+      "criteria": [
+        {
+          "criterion_id": "SWE02-C1",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "SWE02-C2",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "SWE02-C3",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        }
+      ]
+    },
+    {
+      "response_id": "ESDSA-SWE02-01-E2L1",
+      "group": "GROUP-005",
+      "semantic_equivalence": "YES",
+      "reference_decision": "ADVANCE",
+      "baseline_evidence_decision": "ADVANCE",
+      "traceability_v1_decision": "DEFER",
+      "traceability_v2_decision": "ADVANCE",
+      "traceability_v2_reason": "ALL_POSITIVE_VERIFIED",
+      "criteria": [
+        {
+          "criterion_id": "SWE02-C1",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "SWE02-C2",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "SWE02-C3",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        }
+      ]
+    },
+    {
+      "response_id": "ESDSA-CSS03-02-E3L3",
+      "group": "GROUP-006",
+      "semantic_equivalence": "YES",
+      "reference_decision": "DO_NOT_ADVANCE",
+      "baseline_evidence_decision": "DO_NOT_ADVANCE",
+      "traceability_v1_decision": "DO_NOT_ADVANCE",
+      "traceability_v2_decision": "DO_NOT_ADVANCE",
+      "traceability_v2_reason": "VERIFIED_NEGATIVE_EVIDENCE",
+      "criteria": [
+        {
+          "criterion_id": "CSS03-C1",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "CSS03-C2",
+          "evidence_status": "NEGATIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "CSS03-C3",
+          "evidence_status": "NEGATIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        }
+      ]
+    },
+    {
+      "response_id": "ESDSA-CSS03-02-E3L1",
+      "group": "GROUP-006",
+      "semantic_equivalence": "YES",
+      "reference_decision": "DO_NOT_ADVANCE",
+      "baseline_evidence_decision": "DO_NOT_ADVANCE",
+      "traceability_v1_decision": "DO_NOT_ADVANCE",
+      "traceability_v2_decision": "DO_NOT_ADVANCE",
+      "traceability_v2_reason": "VERIFIED_NEGATIVE_EVIDENCE",
+      "criteria": [
+        {
+          "criterion_id": "CSS03-C1",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "CSS03-C2",
+          "evidence_status": "NEGATIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "CSS03-C3",
+          "evidence_status": "NEGATIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        }
+      ]
+    },
+    {
+      "response_id": "ESDSA-CSS03-02-E3L2",
+      "group": "GROUP-006",
+      "semantic_equivalence": "YES",
+      "reference_decision": "DO_NOT_ADVANCE",
+      "baseline_evidence_decision": "DO_NOT_ADVANCE",
+      "traceability_v1_decision": "DO_NOT_ADVANCE",
+      "traceability_v2_decision": "DO_NOT_ADVANCE",
+      "traceability_v2_reason": "VERIFIED_NEGATIVE_EVIDENCE",
+      "criteria": [
+        {
+          "criterion_id": "CSS03-C1",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "CSS03-C2",
+          "evidence_status": "NEGATIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "CSS03-C3",
+          "evidence_status": "NEGATIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        }
+      ]
+    },
+    {
+      "response_id": "ESDSA-OPS04-01-E1L1",
+      "group": "GROUP-007",
+      "semantic_equivalence": "YES",
+      "reference_decision": "ADVANCE",
+      "baseline_evidence_decision": "ADVANCE",
+      "traceability_v1_decision": "ADVANCE",
+      "traceability_v2_decision": "ADVANCE",
+      "traceability_v2_reason": "ALL_POSITIVE_VERIFIED",
+      "criteria": [
+        {
+          "criterion_id": "OPS04-C1",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "OPS04-C2",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "OPS04-C3",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        }
+      ]
+    },
+    {
+      "response_id": "ESDSA-OPS04-01-E1L2",
+      "group": "GROUP-007",
+      "semantic_equivalence": "YES",
+      "reference_decision": "ADVANCE",
+      "baseline_evidence_decision": "ADVANCE",
+      "traceability_v1_decision": "ADVANCE",
+      "traceability_v2_decision": "ADVANCE",
+      "traceability_v2_reason": "ALL_POSITIVE_VERIFIED",
+      "criteria": [
+        {
+          "criterion_id": "OPS04-C1",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "OPS04-C2",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "OPS04-C3",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        }
+      ]
+    },
+    {
+      "response_id": "ESDSA-OPS04-01-E1L3",
+      "group": "GROUP-007",
+      "semantic_equivalence": "YES",
+      "reference_decision": "ADVANCE",
+      "baseline_evidence_decision": "ADVANCE",
+      "traceability_v1_decision": "ADVANCE",
+      "traceability_v2_decision": "ADVANCE",
+      "traceability_v2_reason": "ALL_POSITIVE_VERIFIED",
+      "criteria": [
+        {
+          "criterion_id": "OPS04-C1",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "OPS04-C2",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "OPS04-C3",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        }
+      ]
+    },
+    {
+      "response_id": "ESDSA-OPS02-03-E1L2",
+      "group": "GROUP-008",
+      "semantic_equivalence": "YES",
+      "reference_decision": "ADVANCE",
+      "baseline_evidence_decision": "ADVANCE",
+      "traceability_v1_decision": "DEFER",
+      "traceability_v2_decision": "ADVANCE",
+      "traceability_v2_reason": "ALL_POSITIVE_VERIFIED",
+      "criteria": [
+        {
+          "criterion_id": "OPS02-C1",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "OPS02-C2",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "OPS02-C3",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        }
+      ]
+    },
+    {
+      "response_id": "ESDSA-OPS02-03-E1L3",
+      "group": "GROUP-008",
+      "semantic_equivalence": "YES",
+      "reference_decision": "ADVANCE",
+      "baseline_evidence_decision": "ADVANCE",
+      "traceability_v1_decision": "ADVANCE",
+      "traceability_v2_decision": "ADVANCE",
+      "traceability_v2_reason": "ALL_POSITIVE_VERIFIED",
+      "criteria": [
+        {
+          "criterion_id": "OPS02-C1",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "OPS02-C2",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "OPS02-C3",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        }
+      ]
+    },
+    {
+      "response_id": "ESDSA-OPS02-03-E1L1",
+      "group": "GROUP-008",
+      "semantic_equivalence": "YES",
+      "reference_decision": "ADVANCE",
+      "baseline_evidence_decision": "ADVANCE",
+      "traceability_v1_decision": "ADVANCE",
+      "traceability_v2_decision": "ADVANCE",
+      "traceability_v2_reason": "ALL_POSITIVE_VERIFIED",
+      "criteria": [
+        {
+          "criterion_id": "OPS02-C1",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "OPS02-C2",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "OPS02-C3",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        }
+      ]
+    },
+    {
+      "response_id": "ESDSA-SWE01-01-E2L3",
+      "group": "GROUP-009",
+      "semantic_equivalence": "UNCERTAIN",
+      "reference_decision": "ADVANCE",
+      "baseline_evidence_decision": "ADVANCE",
+      "traceability_v1_decision": "ADVANCE",
+      "traceability_v2_decision": "ADVANCE",
+      "traceability_v2_reason": "ALL_POSITIVE_VERIFIED",
+      "criteria": [
+        {
+          "criterion_id": "SWE01-C1",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "SWE01-C2",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "SWE01-C3",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        }
+      ]
+    },
+    {
+      "response_id": "ESDSA-SWE01-01-E2L1",
+      "group": "GROUP-009",
+      "semantic_equivalence": "UNCERTAIN",
+      "reference_decision": "ADVANCE",
+      "baseline_evidence_decision": "ADVANCE",
+      "traceability_v1_decision": "ADVANCE",
+      "traceability_v2_decision": "ADVANCE",
+      "traceability_v2_reason": "ALL_POSITIVE_VERIFIED",
+      "criteria": [
+        {
+          "criterion_id": "SWE01-C1",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "SWE01-C2",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "SWE01-C3",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        }
+      ]
+    },
+    {
+      "response_id": "ESDSA-SWE01-01-E2L2",
+      "group": "GROUP-009",
+      "semantic_equivalence": "UNCERTAIN",
+      "reference_decision": "ADVANCE",
+      "baseline_evidence_decision": "ADVANCE",
+      "traceability_v1_decision": "ADVANCE",
+      "traceability_v2_decision": "ADVANCE",
+      "traceability_v2_reason": "ALL_POSITIVE_VERIFIED",
+      "criteria": [
+        {
+          "criterion_id": "SWE01-C1",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "SWE01-C2",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "SWE01-C3",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        }
+      ]
+    },
+    {
+      "response_id": "ESDSA-SWE04-01-E1L2",
+      "group": "GROUP-010",
+      "semantic_equivalence": "YES",
+      "reference_decision": "ADVANCE",
+      "baseline_evidence_decision": "ADVANCE",
+      "traceability_v1_decision": "ADVANCE",
+      "traceability_v2_decision": "ADVANCE",
+      "traceability_v2_reason": "ALL_POSITIVE_VERIFIED",
+      "criteria": [
+        {
+          "criterion_id": "SWE04-C1",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "SWE04-C2",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "SWE04-C3",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        }
+      ]
+    },
+    {
+      "response_id": "ESDSA-SWE04-01-E1L3",
+      "group": "GROUP-010",
+      "semantic_equivalence": "YES",
+      "reference_decision": "ADVANCE",
+      "baseline_evidence_decision": "ADVANCE",
+      "traceability_v1_decision": "ADVANCE",
+      "traceability_v2_decision": "ADVANCE",
+      "traceability_v2_reason": "ALL_POSITIVE_VERIFIED",
+      "criteria": [
+        {
+          "criterion_id": "SWE04-C1",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "SWE04-C2",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "SWE04-C3",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        }
+      ]
+    },
+    {
+      "response_id": "ESDSA-SWE04-01-E1L1",
+      "group": "GROUP-010",
+      "semantic_equivalence": "YES",
+      "reference_decision": "ADVANCE",
+      "baseline_evidence_decision": "ADVANCE",
+      "traceability_v1_decision": "ADVANCE",
+      "traceability_v2_decision": "ADVANCE",
+      "traceability_v2_reason": "ALL_POSITIVE_VERIFIED",
+      "criteria": [
+        {
+          "criterion_id": "SWE04-C1",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "SWE04-C2",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "SWE04-C3",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        }
+      ]
+    },
+    {
+      "response_id": "ESDSA-CSS02-02-E2L3",
+      "group": "GROUP-011",
+      "semantic_equivalence": "NO",
+      "reference_decision": "DEFER",
+      "baseline_evidence_decision": "ADVANCE",
+      "traceability_v1_decision": "ADVANCE",
+      "traceability_v2_decision": "ADVANCE",
+      "traceability_v2_reason": "ALL_POSITIVE_VERIFIED",
+      "criteria": [
+        {
+          "criterion_id": "CSS02-C1",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "CSS02-C2",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "CSS02-C3",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        }
+      ]
+    },
+    {
+      "response_id": "ESDSA-CSS02-02-E2L1",
+      "group": "GROUP-011",
+      "semantic_equivalence": "NO",
+      "reference_decision": "DEFER",
+      "baseline_evidence_decision": "ADVANCE",
+      "traceability_v1_decision": "ADVANCE",
+      "traceability_v2_decision": "ADVANCE",
+      "traceability_v2_reason": "ALL_POSITIVE_VERIFIED",
+      "criteria": [
+        {
+          "criterion_id": "CSS02-C1",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "CSS02-C2",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "CSS02-C3",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        }
+      ]
+    },
+    {
+      "response_id": "ESDSA-CSS02-02-E2L2",
+      "group": "GROUP-011",
+      "semantic_equivalence": "NO",
+      "reference_decision": "DO_NOT_ADVANCE",
+      "baseline_evidence_decision": "DO_NOT_ADVANCE",
+      "traceability_v1_decision": "DO_NOT_ADVANCE",
+      "traceability_v2_decision": "DO_NOT_ADVANCE",
+      "traceability_v2_reason": "VERIFIED_NEGATIVE_EVIDENCE",
+      "criteria": [
+        {
+          "criterion_id": "CSS02-C1",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "CSS02-C2",
+          "evidence_status": "NEGATIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "CSS02-C3",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        }
+      ]
+    },
+    {
+      "response_id": "ESDSA-SWE04-01-E3L1",
+      "group": "GROUP-012",
+      "semantic_equivalence": "YES",
+      "reference_decision": "DO_NOT_ADVANCE",
+      "baseline_evidence_decision": "DO_NOT_ADVANCE",
+      "traceability_v1_decision": "DO_NOT_ADVANCE",
+      "traceability_v2_decision": "DO_NOT_ADVANCE",
+      "traceability_v2_reason": "VERIFIED_NEGATIVE_EVIDENCE",
+      "criteria": [
+        {
+          "criterion_id": "SWE04-C1",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "SWE04-C2",
+          "evidence_status": "NEGATIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "SWE04-C3",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        }
+      ]
+    },
+    {
+      "response_id": "ESDSA-SWE04-01-E3L3",
+      "group": "GROUP-012",
+      "semantic_equivalence": "YES",
+      "reference_decision": "DO_NOT_ADVANCE",
+      "baseline_evidence_decision": "DO_NOT_ADVANCE",
+      "traceability_v1_decision": "DO_NOT_ADVANCE",
+      "traceability_v2_decision": "DO_NOT_ADVANCE",
+      "traceability_v2_reason": "VERIFIED_NEGATIVE_EVIDENCE",
+      "criteria": [
+        {
+          "criterion_id": "SWE04-C1",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "SWE04-C2",
+          "evidence_status": "NEGATIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "SWE04-C3",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        }
+      ]
+    },
+    {
+      "response_id": "ESDSA-SWE04-01-E3L2",
+      "group": "GROUP-012",
+      "semantic_equivalence": "YES",
+      "reference_decision": "DO_NOT_ADVANCE",
+      "baseline_evidence_decision": "DO_NOT_ADVANCE",
+      "traceability_v1_decision": "DO_NOT_ADVANCE",
+      "traceability_v2_decision": "DO_NOT_ADVANCE",
+      "traceability_v2_reason": "VERIFIED_NEGATIVE_EVIDENCE",
+      "criteria": [
+        {
+          "criterion_id": "SWE04-C1",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "SWE04-C2",
+          "evidence_status": "NEGATIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "SWE04-C3",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        }
+      ]
+    },
+    {
+      "response_id": "ESDSA-SWE01-01-E3L3",
+      "group": "GROUP-013",
+      "semantic_equivalence": "UNCERTAIN",
+      "reference_decision": "DEFER",
+      "baseline_evidence_decision": "DO_NOT_ADVANCE",
+      "traceability_v1_decision": "DO_NOT_ADVANCE",
+      "traceability_v2_decision": "DO_NOT_ADVANCE",
+      "traceability_v2_reason": "VERIFIED_NEGATIVE_EVIDENCE",
+      "criteria": [
+        {
+          "criterion_id": "SWE01-C1",
+          "evidence_status": "NEGATIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "SWE01-C2",
+          "evidence_status": "INSUFFICIENT_EVIDENCE",
+          "v2_outcome": "NOT_APPLICABLE"
+        },
+        {
+          "criterion_id": "SWE01-C3",
+          "evidence_status": "NEGATIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        }
+      ]
+    },
+    {
+      "response_id": "ESDSA-SWE01-01-E3L2",
+      "group": "GROUP-013",
+      "semantic_equivalence": "UNCERTAIN",
+      "reference_decision": "DEFER",
+      "baseline_evidence_decision": "DO_NOT_ADVANCE",
+      "traceability_v1_decision": "DO_NOT_ADVANCE",
+      "traceability_v2_decision": "DO_NOT_ADVANCE",
+      "traceability_v2_reason": "VERIFIED_NEGATIVE_EVIDENCE",
+      "criteria": [
+        {
+          "criterion_id": "SWE01-C1",
+          "evidence_status": "NEGATIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "SWE01-C2",
+          "evidence_status": "INSUFFICIENT_EVIDENCE",
+          "v2_outcome": "NOT_APPLICABLE"
+        },
+        {
+          "criterion_id": "SWE01-C3",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        }
+      ]
+    },
+    {
+      "response_id": "ESDSA-SWE01-01-E3L1",
+      "group": "GROUP-013",
+      "semantic_equivalence": "UNCERTAIN",
+      "reference_decision": "DEFER",
+      "baseline_evidence_decision": "DO_NOT_ADVANCE",
+      "traceability_v1_decision": "DO_NOT_ADVANCE",
+      "traceability_v2_decision": "DO_NOT_ADVANCE",
+      "traceability_v2_reason": "VERIFIED_NEGATIVE_EVIDENCE",
+      "criteria": [
+        {
+          "criterion_id": "SWE01-C1",
+          "evidence_status": "NEGATIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "SWE01-C2",
+          "evidence_status": "INSUFFICIENT_EVIDENCE",
+          "v2_outcome": "NOT_APPLICABLE"
+        },
+        {
+          "criterion_id": "SWE01-C3",
+          "evidence_status": "NEGATIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        }
+      ]
+    },
+    {
+      "response_id": "ESDSA-OPS01-01-E2L1",
+      "group": "GROUP-014",
+      "semantic_equivalence": "UNCERTAIN",
+      "reference_decision": "ADVANCE",
+      "baseline_evidence_decision": "ADVANCE",
+      "traceability_v1_decision": "ADVANCE",
+      "traceability_v2_decision": "ADVANCE",
+      "traceability_v2_reason": "ALL_POSITIVE_VERIFIED",
+      "criteria": [
+        {
+          "criterion_id": "OPS01-C1",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "OPS01-C2",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "OPS01-C3",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        }
+      ]
+    },
+    {
+      "response_id": "ESDSA-OPS01-01-E2L2",
+      "group": "GROUP-014",
+      "semantic_equivalence": "UNCERTAIN",
+      "reference_decision": "ADVANCE",
+      "baseline_evidence_decision": "ADVANCE",
+      "traceability_v1_decision": "ADVANCE",
+      "traceability_v2_decision": "ADVANCE",
+      "traceability_v2_reason": "ALL_POSITIVE_VERIFIED",
+      "criteria": [
+        {
+          "criterion_id": "OPS01-C1",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "OPS01-C2",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "OPS01-C3",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        }
+      ]
+    },
+    {
+      "response_id": "ESDSA-OPS01-01-E2L3",
+      "group": "GROUP-014",
+      "semantic_equivalence": "UNCERTAIN",
+      "reference_decision": "ADVANCE",
+      "baseline_evidence_decision": "ADVANCE",
+      "traceability_v1_decision": "ADVANCE",
+      "traceability_v2_decision": "ADVANCE",
+      "traceability_v2_reason": "ALL_POSITIVE_VERIFIED",
+      "criteria": [
+        {
+          "criterion_id": "OPS01-C1",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "OPS01-C2",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "OPS01-C3",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        }
+      ]
+    },
+    {
+      "response_id": "ESDSA-CSS02-02-E3L2",
+      "group": "GROUP-015",
+      "semantic_equivalence": "YES",
+      "reference_decision": "DO_NOT_ADVANCE",
+      "baseline_evidence_decision": "DO_NOT_ADVANCE",
+      "traceability_v1_decision": "DO_NOT_ADVANCE",
+      "traceability_v2_decision": "DO_NOT_ADVANCE",
+      "traceability_v2_reason": "VERIFIED_NEGATIVE_EVIDENCE",
+      "criteria": [
+        {
+          "criterion_id": "CSS02-C1",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "CSS02-C2",
+          "evidence_status": "NEGATIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "CSS02-C3",
+          "evidence_status": "NEGATIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        }
+      ]
+    },
+    {
+      "response_id": "ESDSA-CSS02-02-E3L3",
+      "group": "GROUP-015",
+      "semantic_equivalence": "YES",
+      "reference_decision": "DO_NOT_ADVANCE",
+      "baseline_evidence_decision": "DO_NOT_ADVANCE",
+      "traceability_v1_decision": "DO_NOT_ADVANCE",
+      "traceability_v2_decision": "DO_NOT_ADVANCE",
+      "traceability_v2_reason": "VERIFIED_NEGATIVE_EVIDENCE",
+      "criteria": [
+        {
+          "criterion_id": "CSS02-C1",
+          "evidence_status": "NEGATIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "CSS02-C2",
+          "evidence_status": "NEGATIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "CSS02-C3",
+          "evidence_status": "NEGATIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        }
+      ]
+    },
+    {
+      "response_id": "ESDSA-CSS02-02-E3L1",
+      "group": "GROUP-015",
+      "semantic_equivalence": "YES",
+      "reference_decision": "DO_NOT_ADVANCE",
+      "baseline_evidence_decision": "DO_NOT_ADVANCE",
+      "traceability_v1_decision": "DEFER",
+      "traceability_v2_decision": "DO_NOT_ADVANCE",
+      "traceability_v2_reason": "VERIFIED_NEGATIVE_EVIDENCE",
+      "criteria": [
+        {
+          "criterion_id": "CSS02-C1",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "CSS02-C2",
+          "evidence_status": "NEGATIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "CSS02-C3",
+          "evidence_status": "NEGATIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        }
+      ]
+    },
+    {
+      "response_id": "ESDSA-CSS04-02-E3L2",
+      "group": "GROUP-016",
+      "semantic_equivalence": "UNCERTAIN",
+      "reference_decision": "DO_NOT_ADVANCE",
+      "baseline_evidence_decision": "DO_NOT_ADVANCE",
+      "traceability_v1_decision": "DO_NOT_ADVANCE",
+      "traceability_v2_decision": "DO_NOT_ADVANCE",
+      "traceability_v2_reason": "VERIFIED_NEGATIVE_EVIDENCE",
+      "criteria": [
+        {
+          "criterion_id": "CSS04-C1",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "CSS04-C2",
+          "evidence_status": "NEGATIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "CSS04-C3",
+          "evidence_status": "NEGATIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        }
+      ]
+    },
+    {
+      "response_id": "ESDSA-CSS04-02-E3L1",
+      "group": "GROUP-016",
+      "semantic_equivalence": "UNCERTAIN",
+      "reference_decision": "DO_NOT_ADVANCE",
+      "baseline_evidence_decision": "DO_NOT_ADVANCE",
+      "traceability_v1_decision": "DO_NOT_ADVANCE",
+      "traceability_v2_decision": "DO_NOT_ADVANCE",
+      "traceability_v2_reason": "VERIFIED_NEGATIVE_EVIDENCE",
+      "criteria": [
+        {
+          "criterion_id": "CSS04-C1",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "CSS04-C2",
+          "evidence_status": "NEGATIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "CSS04-C3",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        }
+      ]
+    },
+    {
+      "response_id": "ESDSA-CSS04-02-E3L3",
+      "group": "GROUP-016",
+      "semantic_equivalence": "UNCERTAIN",
+      "reference_decision": "DO_NOT_ADVANCE",
+      "baseline_evidence_decision": "DO_NOT_ADVANCE",
+      "traceability_v1_decision": "DO_NOT_ADVANCE",
+      "traceability_v2_decision": "DO_NOT_ADVANCE",
+      "traceability_v2_reason": "VERIFIED_NEGATIVE_EVIDENCE",
+      "criteria": [
+        {
+          "criterion_id": "CSS04-C1",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "CSS04-C2",
+          "evidence_status": "NEGATIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "CSS04-C3",
+          "evidence_status": "NEGATIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        }
+      ]
+    },
+    {
+      "response_id": "ESDSA-SWE03-01-E3L1",
+      "group": "GROUP-017",
+      "semantic_equivalence": "YES",
+      "reference_decision": "DO_NOT_ADVANCE",
+      "baseline_evidence_decision": "ADVANCE",
+      "traceability_v1_decision": "DEFER",
+      "traceability_v2_decision": "ADVANCE",
+      "traceability_v2_reason": "ALL_POSITIVE_VERIFIED",
+      "criteria": [
+        {
+          "criterion_id": "SWE03-C1",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "SWE03-C2",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "SWE03-C3",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        }
+      ]
+    },
+    {
+      "response_id": "ESDSA-SWE03-01-E3L2",
+      "group": "GROUP-017",
+      "semantic_equivalence": "YES",
+      "reference_decision": "DO_NOT_ADVANCE",
+      "baseline_evidence_decision": "DO_NOT_ADVANCE",
+      "traceability_v1_decision": "DO_NOT_ADVANCE",
+      "traceability_v2_decision": "DO_NOT_ADVANCE",
+      "traceability_v2_reason": "VERIFIED_NEGATIVE_EVIDENCE",
+      "criteria": [
+        {
+          "criterion_id": "SWE03-C1",
+          "evidence_status": "NEGATIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "SWE03-C2",
+          "evidence_status": "INSUFFICIENT_EVIDENCE",
+          "v2_outcome": "NOT_APPLICABLE"
+        },
+        {
+          "criterion_id": "SWE03-C3",
+          "evidence_status": "INSUFFICIENT_EVIDENCE",
+          "v2_outcome": "NOT_APPLICABLE"
+        }
+      ]
+    },
+    {
+      "response_id": "ESDSA-SWE03-01-E3L3",
+      "group": "GROUP-017",
+      "semantic_equivalence": "YES",
+      "reference_decision": "DO_NOT_ADVANCE",
+      "baseline_evidence_decision": "DO_NOT_ADVANCE",
+      "traceability_v1_decision": "DO_NOT_ADVANCE",
+      "traceability_v2_decision": "DO_NOT_ADVANCE",
+      "traceability_v2_reason": "VERIFIED_NEGATIVE_EVIDENCE",
+      "criteria": [
+        {
+          "criterion_id": "SWE03-C1",
+          "evidence_status": "NEGATIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "SWE03-C2",
+          "evidence_status": "NEGATIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "SWE03-C3",
+          "evidence_status": "NEGATIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        }
+      ]
+    },
+    {
+      "response_id": "ESDSA-OPS02-03-E2L1",
+      "group": "GROUP-018",
+      "semantic_equivalence": "NO",
+      "reference_decision": "ADVANCE",
+      "baseline_evidence_decision": "ADVANCE",
+      "traceability_v1_decision": "DEFER",
+      "traceability_v2_decision": "DEFER",
+      "traceability_v2_reason": "INSUFFICIENT_VERIFIED_DECISIVE_EVIDENCE",
+      "criteria": [
+        {
+          "criterion_id": "OPS02-C1",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "CONTEXT_ONLY"
+        },
+        {
+          "criterion_id": "OPS02-C2",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "UNVERIFIABLE"
+        },
+        {
+          "criterion_id": "OPS02-C3",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        }
+      ]
+    },
+    {
+      "response_id": "ESDSA-OPS02-03-E2L3",
+      "group": "GROUP-018",
+      "semantic_equivalence": "NO",
+      "reference_decision": "DEFER",
+      "baseline_evidence_decision": "ADVANCE",
+      "traceability_v1_decision": "ADVANCE",
+      "traceability_v2_decision": "ADVANCE",
+      "traceability_v2_reason": "ALL_POSITIVE_VERIFIED",
+      "criteria": [
+        {
+          "criterion_id": "OPS02-C1",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "OPS02-C2",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "OPS02-C3",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        }
+      ]
+    },
+    {
+      "response_id": "ESDSA-OPS02-03-E2L2",
+      "group": "GROUP-018",
+      "semantic_equivalence": "NO",
+      "reference_decision": "ADVANCE",
+      "baseline_evidence_decision": "ADVANCE",
+      "traceability_v1_decision": "ADVANCE",
+      "traceability_v2_decision": "ADVANCE",
+      "traceability_v2_reason": "ALL_POSITIVE_VERIFIED",
+      "criteria": [
+        {
+          "criterion_id": "OPS02-C1",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "OPS02-C2",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "OPS02-C3",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        }
+      ]
+    },
+    {
+      "response_id": "ESDSA-CSS01-01-E2L3",
+      "group": "GROUP-019",
+      "semantic_equivalence": "YES",
+      "reference_decision": "ADVANCE",
+      "baseline_evidence_decision": "ADVANCE",
+      "traceability_v1_decision": "ADVANCE",
+      "traceability_v2_decision": "ADVANCE",
+      "traceability_v2_reason": "ALL_POSITIVE_VERIFIED",
+      "criteria": [
+        {
+          "criterion_id": "CSS01-C1",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "CSS01-C2",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "CSS01-C3",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        }
+      ]
+    },
+    {
+      "response_id": "ESDSA-CSS01-01-E2L2",
+      "group": "GROUP-019",
+      "semantic_equivalence": "YES",
+      "reference_decision": "ADVANCE",
+      "baseline_evidence_decision": "ADVANCE",
+      "traceability_v1_decision": "ADVANCE",
+      "traceability_v2_decision": "ADVANCE",
+      "traceability_v2_reason": "ALL_POSITIVE_VERIFIED",
+      "criteria": [
+        {
+          "criterion_id": "CSS01-C1",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "CSS01-C2",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "CSS01-C3",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        }
+      ]
+    },
+    {
+      "response_id": "ESDSA-CSS01-01-E2L1",
+      "group": "GROUP-019",
+      "semantic_equivalence": "YES",
+      "reference_decision": "ADVANCE",
+      "baseline_evidence_decision": "ADVANCE",
+      "traceability_v1_decision": "ADVANCE",
+      "traceability_v2_decision": "ADVANCE",
+      "traceability_v2_reason": "ALL_POSITIVE_VERIFIED",
+      "criteria": [
+        {
+          "criterion_id": "CSS01-C1",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "CSS01-C2",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "CSS01-C3",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        }
+      ]
+    },
+    {
+      "response_id": "ESDSA-CSS04-02-E2L3",
+      "group": "GROUP-020",
+      "semantic_equivalence": "YES",
+      "reference_decision": "ADVANCE",
+      "baseline_evidence_decision": "ADVANCE",
+      "traceability_v1_decision": "ADVANCE",
+      "traceability_v2_decision": "ADVANCE",
+      "traceability_v2_reason": "ALL_POSITIVE_VERIFIED",
+      "criteria": [
+        {
+          "criterion_id": "CSS04-C1",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "CSS04-C2",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "CSS04-C3",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        }
+      ]
+    },
+    {
+      "response_id": "ESDSA-CSS04-02-E2L1",
+      "group": "GROUP-020",
+      "semantic_equivalence": "YES",
+      "reference_decision": "ADVANCE",
+      "baseline_evidence_decision": "ADVANCE",
+      "traceability_v1_decision": "ADVANCE",
+      "traceability_v2_decision": "ADVANCE",
+      "traceability_v2_reason": "ALL_POSITIVE_VERIFIED",
+      "criteria": [
+        {
+          "criterion_id": "CSS04-C1",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "CSS04-C2",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "CSS04-C3",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        }
+      ]
+    },
+    {
+      "response_id": "ESDSA-CSS04-02-E2L2",
+      "group": "GROUP-020",
+      "semantic_equivalence": "YES",
+      "reference_decision": "ADVANCE",
+      "baseline_evidence_decision": "ADVANCE",
+      "traceability_v1_decision": "ADVANCE",
+      "traceability_v2_decision": "ADVANCE",
+      "traceability_v2_reason": "ALL_POSITIVE_VERIFIED",
+      "criteria": [
+        {
+          "criterion_id": "CSS04-C1",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "CSS04-C2",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "CSS04-C3",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        }
+      ]
+    },
+    {
+      "response_id": "ESDSA-CSS02-02-E1L3",
+      "group": "GROUP-021",
+      "semantic_equivalence": "YES",
+      "reference_decision": "ADVANCE",
+      "baseline_evidence_decision": "ADVANCE",
+      "traceability_v1_decision": "ADVANCE",
+      "traceability_v2_decision": "ADVANCE",
+      "traceability_v2_reason": "ALL_POSITIVE_VERIFIED",
+      "criteria": [
+        {
+          "criterion_id": "CSS02-C1",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "CSS02-C2",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "CSS02-C3",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        }
+      ]
+    },
+    {
+      "response_id": "ESDSA-CSS02-02-E1L1",
+      "group": "GROUP-021",
+      "semantic_equivalence": "YES",
+      "reference_decision": "ADVANCE",
+      "baseline_evidence_decision": "ADVANCE",
+      "traceability_v1_decision": "ADVANCE",
+      "traceability_v2_decision": "ADVANCE",
+      "traceability_v2_reason": "ALL_POSITIVE_VERIFIED",
+      "criteria": [
+        {
+          "criterion_id": "CSS02-C1",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "CSS02-C2",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "CSS02-C3",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        }
+      ]
+    },
+    {
+      "response_id": "ESDSA-CSS02-02-E1L2",
+      "group": "GROUP-021",
+      "semantic_equivalence": "YES",
+      "reference_decision": "ADVANCE",
+      "baseline_evidence_decision": "ADVANCE",
+      "traceability_v1_decision": "ADVANCE",
+      "traceability_v2_decision": "ADVANCE",
+      "traceability_v2_reason": "ALL_POSITIVE_VERIFIED",
+      "criteria": [
+        {
+          "criterion_id": "CSS02-C1",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "CSS02-C2",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "CSS02-C3",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        }
+      ]
+    },
+    {
+      "response_id": "ESDSA-SWE02-01-E1L3",
+      "group": "GROUP-022",
+      "semantic_equivalence": "YES",
+      "reference_decision": "ADVANCE",
+      "baseline_evidence_decision": "ADVANCE",
+      "traceability_v1_decision": "ADVANCE",
+      "traceability_v2_decision": "ADVANCE",
+      "traceability_v2_reason": "ALL_POSITIVE_VERIFIED",
+      "criteria": [
+        {
+          "criterion_id": "SWE02-C1",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "SWE02-C2",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "SWE02-C3",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        }
+      ]
+    },
+    {
+      "response_id": "ESDSA-SWE02-01-E1L1",
+      "group": "GROUP-022",
+      "semantic_equivalence": "YES",
+      "reference_decision": "ADVANCE",
+      "baseline_evidence_decision": "ADVANCE",
+      "traceability_v1_decision": "DEFER",
+      "traceability_v2_decision": "ADVANCE",
+      "traceability_v2_reason": "ALL_POSITIVE_VERIFIED",
+      "criteria": [
+        {
+          "criterion_id": "SWE02-C1",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "SWE02-C2",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "SWE02-C3",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        }
+      ]
+    },
+    {
+      "response_id": "ESDSA-SWE02-01-E1L2",
+      "group": "GROUP-022",
+      "semantic_equivalence": "YES",
+      "reference_decision": "ADVANCE",
+      "baseline_evidence_decision": "ADVANCE",
+      "traceability_v1_decision": "DEFER",
+      "traceability_v2_decision": "ADVANCE",
+      "traceability_v2_reason": "ALL_POSITIVE_VERIFIED",
+      "criteria": [
+        {
+          "criterion_id": "SWE02-C1",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "SWE02-C2",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "SWE02-C3",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        }
+      ]
+    },
+    {
+      "response_id": "ESDSA-OPS04-01-E2L1",
+      "group": "GROUP-023",
+      "semantic_equivalence": "YES",
+      "reference_decision": "DEFER",
+      "baseline_evidence_decision": "ADVANCE",
+      "traceability_v1_decision": "ADVANCE",
+      "traceability_v2_decision": "ADVANCE",
+      "traceability_v2_reason": "ALL_POSITIVE_VERIFIED",
+      "criteria": [
+        {
+          "criterion_id": "OPS04-C1",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "OPS04-C2",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "OPS04-C3",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        }
+      ]
+    },
+    {
+      "response_id": "ESDSA-OPS04-01-E2L2",
+      "group": "GROUP-023",
+      "semantic_equivalence": "YES",
+      "reference_decision": "DEFER",
+      "baseline_evidence_decision": "DEFER",
+      "traceability_v1_decision": "DEFER",
+      "traceability_v2_decision": "DEFER",
+      "traceability_v2_reason": "INSUFFICIENT_VERIFIED_DECISIVE_EVIDENCE",
+      "criteria": [
+        {
+          "criterion_id": "OPS04-C1",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "OPS04-C2",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "OPS04-C3",
+          "evidence_status": "INSUFFICIENT_EVIDENCE",
+          "v2_outcome": "NOT_APPLICABLE"
+        }
+      ]
+    },
+    {
+      "response_id": "ESDSA-OPS04-01-E2L3",
+      "group": "GROUP-023",
+      "semantic_equivalence": "YES",
+      "reference_decision": "DEFER",
+      "baseline_evidence_decision": "DEFER",
+      "traceability_v1_decision": "DEFER",
+      "traceability_v2_decision": "DEFER",
+      "traceability_v2_reason": "INSUFFICIENT_VERIFIED_DECISIVE_EVIDENCE",
+      "criteria": [
+        {
+          "criterion_id": "OPS04-C1",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "OPS04-C2",
+          "evidence_status": "INSUFFICIENT_EVIDENCE",
+          "v2_outcome": "NOT_APPLICABLE"
+        },
+        {
+          "criterion_id": "OPS04-C3",
+          "evidence_status": "INSUFFICIENT_EVIDENCE",
+          "v2_outcome": "NOT_APPLICABLE"
+        }
+      ]
+    },
+    {
+      "response_id": "ESDSA-SWE01-01-E1L3",
+      "group": "GROUP-024",
+      "semantic_equivalence": "YES",
+      "reference_decision": "ADVANCE",
+      "baseline_evidence_decision": "ADVANCE",
+      "traceability_v1_decision": "ADVANCE",
+      "traceability_v2_decision": "ADVANCE",
+      "traceability_v2_reason": "ALL_POSITIVE_VERIFIED",
+      "criteria": [
+        {
+          "criterion_id": "SWE01-C1",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "SWE01-C2",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "SWE01-C3",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        }
+      ]
+    },
+    {
+      "response_id": "ESDSA-SWE01-01-E1L2",
+      "group": "GROUP-024",
+      "semantic_equivalence": "YES",
+      "reference_decision": "ADVANCE",
+      "baseline_evidence_decision": "ADVANCE",
+      "traceability_v1_decision": "ADVANCE",
+      "traceability_v2_decision": "ADVANCE",
+      "traceability_v2_reason": "ALL_POSITIVE_VERIFIED",
+      "criteria": [
+        {
+          "criterion_id": "SWE01-C1",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "SWE01-C2",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "SWE01-C3",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        }
+      ]
+    },
+    {
+      "response_id": "ESDSA-SWE01-01-E1L1",
+      "group": "GROUP-024",
+      "semantic_equivalence": "YES",
+      "reference_decision": "ADVANCE",
+      "baseline_evidence_decision": "ADVANCE",
+      "traceability_v1_decision": "ADVANCE",
+      "traceability_v2_decision": "ADVANCE",
+      "traceability_v2_reason": "ALL_POSITIVE_VERIFIED",
+      "criteria": [
+        {
+          "criterion_id": "SWE01-C1",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "SWE01-C2",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "SWE01-C3",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        }
+      ]
+    },
+    {
+      "response_id": "ESDSA-OPS03-01-E3L3",
+      "group": "GROUP-025",
+      "semantic_equivalence": "YES",
+      "reference_decision": "DO_NOT_ADVANCE",
+      "baseline_evidence_decision": "DO_NOT_ADVANCE",
+      "traceability_v1_decision": "DO_NOT_ADVANCE",
+      "traceability_v2_decision": "DO_NOT_ADVANCE",
+      "traceability_v2_reason": "VERIFIED_NEGATIVE_EVIDENCE",
+      "criteria": [
+        {
+          "criterion_id": "OPS03-C1",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "OPS03-C2",
+          "evidence_status": "NEGATIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "OPS03-C3",
+          "evidence_status": "NEGATIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        }
+      ]
+    },
+    {
+      "response_id": "ESDSA-OPS03-01-E3L2",
+      "group": "GROUP-025",
+      "semantic_equivalence": "YES",
+      "reference_decision": "DO_NOT_ADVANCE",
+      "baseline_evidence_decision": "DO_NOT_ADVANCE",
+      "traceability_v1_decision": "DO_NOT_ADVANCE",
+      "traceability_v2_decision": "DO_NOT_ADVANCE",
+      "traceability_v2_reason": "VERIFIED_NEGATIVE_EVIDENCE",
+      "criteria": [
+        {
+          "criterion_id": "OPS03-C1",
+          "evidence_status": "NEGATIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "OPS03-C2",
+          "evidence_status": "NEGATIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "OPS03-C3",
+          "evidence_status": "NEGATIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        }
+      ]
+    },
+    {
+      "response_id": "ESDSA-OPS03-01-E3L1",
+      "group": "GROUP-025",
+      "semantic_equivalence": "YES",
+      "reference_decision": "DO_NOT_ADVANCE",
+      "baseline_evidence_decision": "DO_NOT_ADVANCE",
+      "traceability_v1_decision": "DO_NOT_ADVANCE",
+      "traceability_v2_decision": "DO_NOT_ADVANCE",
+      "traceability_v2_reason": "VERIFIED_NEGATIVE_EVIDENCE",
+      "criteria": [
+        {
+          "criterion_id": "OPS03-C1",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "OPS03-C2",
+          "evidence_status": "NEGATIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "OPS03-C3",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        }
+      ]
+    },
+    {
+      "response_id": "ESDSA-CSS03-02-E1L2",
+      "group": "GROUP-026",
+      "semantic_equivalence": "YES",
+      "reference_decision": "ADVANCE",
+      "baseline_evidence_decision": "ADVANCE",
+      "traceability_v1_decision": "ADVANCE",
+      "traceability_v2_decision": "ADVANCE",
+      "traceability_v2_reason": "ALL_POSITIVE_VERIFIED",
+      "criteria": [
+        {
+          "criterion_id": "CSS03-C1",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "CSS03-C2",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "CSS03-C3",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        }
+      ]
+    },
+    {
+      "response_id": "ESDSA-CSS03-02-E1L1",
+      "group": "GROUP-026",
+      "semantic_equivalence": "YES",
+      "reference_decision": "ADVANCE",
+      "baseline_evidence_decision": "ADVANCE",
+      "traceability_v1_decision": "ADVANCE",
+      "traceability_v2_decision": "ADVANCE",
+      "traceability_v2_reason": "ALL_POSITIVE_VERIFIED",
+      "criteria": [
+        {
+          "criterion_id": "CSS03-C1",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "CSS03-C2",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "CSS03-C3",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        }
+      ]
+    },
+    {
+      "response_id": "ESDSA-CSS03-02-E1L3",
+      "group": "GROUP-026",
+      "semantic_equivalence": "YES",
+      "reference_decision": "ADVANCE",
+      "baseline_evidence_decision": "ADVANCE",
+      "traceability_v1_decision": "ADVANCE",
+      "traceability_v2_decision": "ADVANCE",
+      "traceability_v2_reason": "ALL_POSITIVE_VERIFIED",
+      "criteria": [
+        {
+          "criterion_id": "CSS03-C1",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "CSS03-C2",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "CSS03-C3",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        }
+      ]
+    },
+    {
+      "response_id": "ESDSA-SWE03-01-E1L1",
+      "group": "GROUP-027",
+      "semantic_equivalence": "YES",
+      "reference_decision": "ADVANCE",
+      "baseline_evidence_decision": "ADVANCE",
+      "traceability_v1_decision": "ADVANCE",
+      "traceability_v2_decision": "ADVANCE",
+      "traceability_v2_reason": "ALL_POSITIVE_VERIFIED",
+      "criteria": [
+        {
+          "criterion_id": "SWE03-C1",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "SWE03-C2",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "SWE03-C3",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        }
+      ]
+    },
+    {
+      "response_id": "ESDSA-SWE03-01-E1L2",
+      "group": "GROUP-027",
+      "semantic_equivalence": "YES",
+      "reference_decision": "ADVANCE",
+      "baseline_evidence_decision": "ADVANCE",
+      "traceability_v1_decision": "ADVANCE",
+      "traceability_v2_decision": "ADVANCE",
+      "traceability_v2_reason": "ALL_POSITIVE_VERIFIED",
+      "criteria": [
+        {
+          "criterion_id": "SWE03-C1",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "SWE03-C2",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "SWE03-C3",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        }
+      ]
+    },
+    {
+      "response_id": "ESDSA-SWE03-01-E1L3",
+      "group": "GROUP-027",
+      "semantic_equivalence": "YES",
+      "reference_decision": "ADVANCE",
+      "baseline_evidence_decision": "ADVANCE",
+      "traceability_v1_decision": "ADVANCE",
+      "traceability_v2_decision": "ADVANCE",
+      "traceability_v2_reason": "ALL_POSITIVE_VERIFIED",
+      "criteria": [
+        {
+          "criterion_id": "SWE03-C1",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "SWE03-C2",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "SWE03-C3",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        }
+      ]
+    },
+    {
+      "response_id": "ESDSA-CSS04-02-E1L1",
+      "group": "GROUP-028",
+      "semantic_equivalence": "YES",
+      "reference_decision": "ADVANCE",
+      "baseline_evidence_decision": "ADVANCE",
+      "traceability_v1_decision": "ADVANCE",
+      "traceability_v2_decision": "ADVANCE",
+      "traceability_v2_reason": "ALL_POSITIVE_VERIFIED",
+      "criteria": [
+        {
+          "criterion_id": "CSS04-C1",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "CSS04-C2",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "CSS04-C3",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        }
+      ]
+    },
+    {
+      "response_id": "ESDSA-CSS04-02-E1L2",
+      "group": "GROUP-028",
+      "semantic_equivalence": "YES",
+      "reference_decision": "ADVANCE",
+      "baseline_evidence_decision": "ADVANCE",
+      "traceability_v1_decision": "ADVANCE",
+      "traceability_v2_decision": "ADVANCE",
+      "traceability_v2_reason": "ALL_POSITIVE_VERIFIED",
+      "criteria": [
+        {
+          "criterion_id": "CSS04-C1",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "CSS04-C2",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "CSS04-C3",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        }
+      ]
+    },
+    {
+      "response_id": "ESDSA-CSS04-02-E1L3",
+      "group": "GROUP-028",
+      "semantic_equivalence": "YES",
+      "reference_decision": "ADVANCE",
+      "baseline_evidence_decision": "ADVANCE",
+      "traceability_v1_decision": "ADVANCE",
+      "traceability_v2_decision": "ADVANCE",
+      "traceability_v2_reason": "ALL_POSITIVE_VERIFIED",
+      "criteria": [
+        {
+          "criterion_id": "CSS04-C1",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "CSS04-C2",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "CSS04-C3",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        }
+      ]
+    },
+    {
+      "response_id": "ESDSA-OPS01-01-E1L1",
+      "group": "GROUP-029",
+      "semantic_equivalence": "YES",
+      "reference_decision": "ADVANCE",
+      "baseline_evidence_decision": "ADVANCE",
+      "traceability_v1_decision": "ADVANCE",
+      "traceability_v2_decision": "ADVANCE",
+      "traceability_v2_reason": "ALL_POSITIVE_VERIFIED",
+      "criteria": [
+        {
+          "criterion_id": "OPS01-C1",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "OPS01-C2",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "OPS01-C3",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        }
+      ]
+    },
+    {
+      "response_id": "ESDSA-OPS01-01-E1L3",
+      "group": "GROUP-029",
+      "semantic_equivalence": "YES",
+      "reference_decision": "ADVANCE",
+      "baseline_evidence_decision": "ADVANCE",
+      "traceability_v1_decision": "ADVANCE",
+      "traceability_v2_decision": "ADVANCE",
+      "traceability_v2_reason": "ALL_POSITIVE_VERIFIED",
+      "criteria": [
+        {
+          "criterion_id": "OPS01-C1",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "OPS01-C2",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "OPS01-C3",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        }
+      ]
+    },
+    {
+      "response_id": "ESDSA-OPS01-01-E1L2",
+      "group": "GROUP-029",
+      "semantic_equivalence": "YES",
+      "reference_decision": "ADVANCE",
+      "baseline_evidence_decision": "ADVANCE",
+      "traceability_v1_decision": "ADVANCE",
+      "traceability_v2_decision": "ADVANCE",
+      "traceability_v2_reason": "ALL_POSITIVE_VERIFIED",
+      "criteria": [
+        {
+          "criterion_id": "OPS01-C1",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "OPS01-C2",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "OPS01-C3",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        }
+      ]
+    },
+    {
+      "response_id": "ESDSA-OPS04-01-E3L1",
+      "group": "GROUP-030",
+      "semantic_equivalence": "YES",
+      "reference_decision": "DO_NOT_ADVANCE",
+      "baseline_evidence_decision": "DO_NOT_ADVANCE",
+      "traceability_v1_decision": "DO_NOT_ADVANCE",
+      "traceability_v2_decision": "DO_NOT_ADVANCE",
+      "traceability_v2_reason": "VERIFIED_NEGATIVE_EVIDENCE",
+      "criteria": [
+        {
+          "criterion_id": "OPS04-C1",
+          "evidence_status": "NEGATIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "OPS04-C2",
+          "evidence_status": "NEGATIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "OPS04-C3",
+          "evidence_status": "NEGATIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        }
+      ]
+    },
+    {
+      "response_id": "ESDSA-OPS04-01-E3L3",
+      "group": "GROUP-030",
+      "semantic_equivalence": "YES",
+      "reference_decision": "DO_NOT_ADVANCE",
+      "baseline_evidence_decision": "DO_NOT_ADVANCE",
+      "traceability_v1_decision": "DO_NOT_ADVANCE",
+      "traceability_v2_decision": "DO_NOT_ADVANCE",
+      "traceability_v2_reason": "VERIFIED_NEGATIVE_EVIDENCE",
+      "criteria": [
+        {
+          "criterion_id": "OPS04-C1",
+          "evidence_status": "INSUFFICIENT_EVIDENCE",
+          "v2_outcome": "NOT_APPLICABLE"
+        },
+        {
+          "criterion_id": "OPS04-C2",
+          "evidence_status": "NEGATIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "OPS04-C3",
+          "evidence_status": "INSUFFICIENT_EVIDENCE",
+          "v2_outcome": "NOT_APPLICABLE"
+        }
+      ]
+    },
+    {
+      "response_id": "ESDSA-OPS04-01-E3L2",
+      "group": "GROUP-030",
+      "semantic_equivalence": "YES",
+      "reference_decision": "DO_NOT_ADVANCE",
+      "baseline_evidence_decision": "DO_NOT_ADVANCE",
+      "traceability_v1_decision": "DO_NOT_ADVANCE",
+      "traceability_v2_decision": "DO_NOT_ADVANCE",
+      "traceability_v2_reason": "VERIFIED_NEGATIVE_EVIDENCE",
+      "criteria": [
+        {
+          "criterion_id": "OPS04-C1",
+          "evidence_status": "NEGATIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "OPS04-C2",
+          "evidence_status": "NEGATIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "OPS04-C3",
+          "evidence_status": "NEGATIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        }
+      ]
+    },
+    {
+      "response_id": "ESDSA-OPS03-01-E2L1",
+      "group": "GROUP-031",
+      "semantic_equivalence": "YES",
+      "reference_decision": "DEFER",
+      "baseline_evidence_decision": "ADVANCE",
+      "traceability_v1_decision": "ADVANCE",
+      "traceability_v2_decision": "ADVANCE",
+      "traceability_v2_reason": "ALL_POSITIVE_VERIFIED",
+      "criteria": [
+        {
+          "criterion_id": "OPS03-C1",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "OPS03-C2",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "OPS03-C3",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        }
+      ]
+    },
+    {
+      "response_id": "ESDSA-OPS03-01-E2L2",
+      "group": "GROUP-031",
+      "semantic_equivalence": "YES",
+      "reference_decision": "DEFER",
+      "baseline_evidence_decision": "ADVANCE",
+      "traceability_v1_decision": "ADVANCE",
+      "traceability_v2_decision": "ADVANCE",
+      "traceability_v2_reason": "ALL_POSITIVE_VERIFIED",
+      "criteria": [
+        {
+          "criterion_id": "OPS03-C1",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "OPS03-C2",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "OPS03-C3",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        }
+      ]
+    },
+    {
+      "response_id": "ESDSA-OPS03-01-E2L3",
+      "group": "GROUP-031",
+      "semantic_equivalence": "YES",
+      "reference_decision": "DEFER",
+      "baseline_evidence_decision": "ADVANCE",
+      "traceability_v1_decision": "ADVANCE",
+      "traceability_v2_decision": "ADVANCE",
+      "traceability_v2_reason": "ALL_POSITIVE_VERIFIED",
+      "criteria": [
+        {
+          "criterion_id": "OPS03-C1",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "OPS03-C2",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "OPS03-C3",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        }
+      ]
+    },
+    {
+      "response_id": "ESDSA-OPS02-03-E3L1",
+      "group": "GROUP-032",
+      "semantic_equivalence": "YES",
+      "reference_decision": "DO_NOT_ADVANCE",
+      "baseline_evidence_decision": "DO_NOT_ADVANCE",
+      "traceability_v1_decision": "DEFER",
+      "traceability_v2_decision": "DO_NOT_ADVANCE",
+      "traceability_v2_reason": "VERIFIED_NEGATIVE_EVIDENCE",
+      "criteria": [
+        {
+          "criterion_id": "OPS02-C1",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "CONTEXT_ONLY"
+        },
+        {
+          "criterion_id": "OPS02-C2",
+          "evidence_status": "NEGATIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "OPS02-C3",
+          "evidence_status": "NEGATIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        }
+      ]
+    },
+    {
+      "response_id": "ESDSA-OPS02-03-E3L3",
+      "group": "GROUP-032",
+      "semantic_equivalence": "YES",
+      "reference_decision": "DO_NOT_ADVANCE",
+      "baseline_evidence_decision": "DO_NOT_ADVANCE",
+      "traceability_v1_decision": "DEFER",
+      "traceability_v2_decision": "DO_NOT_ADVANCE",
+      "traceability_v2_reason": "VERIFIED_NEGATIVE_EVIDENCE",
+      "criteria": [
+        {
+          "criterion_id": "OPS02-C1",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "CONTEXT_ONLY"
+        },
+        {
+          "criterion_id": "OPS02-C2",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "OPS02-C3",
+          "evidence_status": "NEGATIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        }
+      ]
+    },
+    {
+      "response_id": "ESDSA-OPS02-03-E3L2",
+      "group": "GROUP-032",
+      "semantic_equivalence": "YES",
+      "reference_decision": "DO_NOT_ADVANCE",
+      "baseline_evidence_decision": "DO_NOT_ADVANCE",
+      "traceability_v1_decision": "DEFER",
+      "traceability_v2_decision": "DO_NOT_ADVANCE",
+      "traceability_v2_reason": "VERIFIED_NEGATIVE_EVIDENCE",
+      "criteria": [
+        {
+          "criterion_id": "OPS02-C1",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "CONTEXT_ONLY"
+        },
+        {
+          "criterion_id": "OPS02-C2",
+          "evidence_status": "NEGATIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "OPS02-C3",
+          "evidence_status": "NEGATIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        }
+      ]
+    },
+    {
+      "response_id": "ESDSA-CSS01-01-E3L1",
+      "group": "GROUP-033",
+      "semantic_equivalence": "YES",
+      "reference_decision": "DO_NOT_ADVANCE",
+      "baseline_evidence_decision": "DO_NOT_ADVANCE",
+      "traceability_v1_decision": "DO_NOT_ADVANCE",
+      "traceability_v2_decision": "DO_NOT_ADVANCE",
+      "traceability_v2_reason": "VERIFIED_NEGATIVE_EVIDENCE",
+      "criteria": [
+        {
+          "criterion_id": "CSS01-C1",
+          "evidence_status": "NEGATIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "CSS01-C2",
+          "evidence_status": "INSUFFICIENT_EVIDENCE",
+          "v2_outcome": "NOT_APPLICABLE"
+        },
+        {
+          "criterion_id": "CSS01-C3",
+          "evidence_status": "NEGATIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        }
+      ]
+    },
+    {
+      "response_id": "ESDSA-CSS01-01-E3L3",
+      "group": "GROUP-033",
+      "semantic_equivalence": "YES",
+      "reference_decision": "DO_NOT_ADVANCE",
+      "baseline_evidence_decision": "DO_NOT_ADVANCE",
+      "traceability_v1_decision": "DO_NOT_ADVANCE",
+      "traceability_v2_decision": "DO_NOT_ADVANCE",
+      "traceability_v2_reason": "VERIFIED_NEGATIVE_EVIDENCE",
+      "criteria": [
+        {
+          "criterion_id": "CSS01-C1",
+          "evidence_status": "NEGATIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "CSS01-C2",
+          "evidence_status": "INSUFFICIENT_EVIDENCE",
+          "v2_outcome": "NOT_APPLICABLE"
+        },
+        {
+          "criterion_id": "CSS01-C3",
+          "evidence_status": "NEGATIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        }
+      ]
+    },
+    {
+      "response_id": "ESDSA-CSS01-01-E3L2",
+      "group": "GROUP-033",
+      "semantic_equivalence": "YES",
+      "reference_decision": "DO_NOT_ADVANCE",
+      "baseline_evidence_decision": "DO_NOT_ADVANCE",
+      "traceability_v1_decision": "DO_NOT_ADVANCE",
+      "traceability_v2_decision": "DO_NOT_ADVANCE",
+      "traceability_v2_reason": "VERIFIED_NEGATIVE_EVIDENCE",
+      "criteria": [
+        {
+          "criterion_id": "CSS01-C1",
+          "evidence_status": "NEGATIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "CSS01-C2",
+          "evidence_status": "INSUFFICIENT_EVIDENCE",
+          "v2_outcome": "NOT_APPLICABLE"
+        },
+        {
+          "criterion_id": "CSS01-C3",
+          "evidence_status": "NEGATIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        }
+      ]
+    },
+    {
+      "response_id": "ESDSA-OPS01-01-E3L2",
+      "group": "GROUP-034",
+      "semantic_equivalence": "YES",
+      "reference_decision": "DO_NOT_ADVANCE",
+      "baseline_evidence_decision": "DO_NOT_ADVANCE",
+      "traceability_v1_decision": "DEFER",
+      "traceability_v2_decision": "DO_NOT_ADVANCE",
+      "traceability_v2_reason": "VERIFIED_NEGATIVE_EVIDENCE",
+      "criteria": [
+        {
+          "criterion_id": "OPS01-C1",
+          "evidence_status": "NEGATIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "OPS01-C2",
+          "evidence_status": "NEGATIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "OPS01-C3",
+          "evidence_status": "NEGATIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        }
+      ]
+    },
+    {
+      "response_id": "ESDSA-OPS01-01-E3L1",
+      "group": "GROUP-034",
+      "semantic_equivalence": "YES",
+      "reference_decision": "DO_NOT_ADVANCE",
+      "baseline_evidence_decision": "DO_NOT_ADVANCE",
+      "traceability_v1_decision": "DEFER",
+      "traceability_v2_decision": "DO_NOT_ADVANCE",
+      "traceability_v2_reason": "VERIFIED_NEGATIVE_EVIDENCE",
+      "criteria": [
+        {
+          "criterion_id": "OPS01-C1",
+          "evidence_status": "NEGATIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "OPS01-C2",
+          "evidence_status": "NEGATIVE_EVIDENCE",
+          "v2_outcome": "UNVERIFIABLE"
+        },
+        {
+          "criterion_id": "OPS01-C3",
+          "evidence_status": "NEGATIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        }
+      ]
+    },
+    {
+      "response_id": "ESDSA-OPS01-01-E3L3",
+      "group": "GROUP-034",
+      "semantic_equivalence": "YES",
+      "reference_decision": "DO_NOT_ADVANCE",
+      "baseline_evidence_decision": "DO_NOT_ADVANCE",
+      "traceability_v1_decision": "DO_NOT_ADVANCE",
+      "traceability_v2_decision": "DO_NOT_ADVANCE",
+      "traceability_v2_reason": "VERIFIED_NEGATIVE_EVIDENCE",
+      "criteria": [
+        {
+          "criterion_id": "OPS01-C1",
+          "evidence_status": "NEGATIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "OPS01-C2",
+          "evidence_status": "NEGATIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "OPS01-C3",
+          "evidence_status": "NEGATIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        }
+      ]
+    },
+    {
+      "response_id": "ESDSA-SWE04-01-E2L3",
+      "group": "GROUP-035",
+      "semantic_equivalence": "UNCERTAIN",
+      "reference_decision": "ADVANCE",
+      "baseline_evidence_decision": "ADVANCE",
+      "traceability_v1_decision": "ADVANCE",
+      "traceability_v2_decision": "ADVANCE",
+      "traceability_v2_reason": "ALL_POSITIVE_VERIFIED",
+      "criteria": [
+        {
+          "criterion_id": "SWE04-C1",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "SWE04-C2",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "SWE04-C3",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        }
+      ]
+    },
+    {
+      "response_id": "ESDSA-SWE04-01-E2L2",
+      "group": "GROUP-035",
+      "semantic_equivalence": "UNCERTAIN",
+      "reference_decision": "ADVANCE",
+      "baseline_evidence_decision": "ADVANCE",
+      "traceability_v1_decision": "ADVANCE",
+      "traceability_v2_decision": "ADVANCE",
+      "traceability_v2_reason": "ALL_POSITIVE_VERIFIED",
+      "criteria": [
+        {
+          "criterion_id": "SWE04-C1",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "SWE04-C2",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "SWE04-C3",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        }
+      ]
+    },
+    {
+      "response_id": "ESDSA-SWE04-01-E2L1",
+      "group": "GROUP-035",
+      "semantic_equivalence": "UNCERTAIN",
+      "reference_decision": "ADVANCE",
+      "baseline_evidence_decision": "ADVANCE",
+      "traceability_v1_decision": "ADVANCE",
+      "traceability_v2_decision": "ADVANCE",
+      "traceability_v2_reason": "ALL_POSITIVE_VERIFIED",
+      "criteria": [
+        {
+          "criterion_id": "SWE04-C1",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "SWE04-C2",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "SWE04-C3",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        }
+      ]
+    },
+    {
+      "response_id": "ESDSA-SWE03-01-E2L1",
+      "group": "GROUP-036",
+      "semantic_equivalence": "UNCERTAIN",
+      "reference_decision": "DEFER",
+      "baseline_evidence_decision": "ADVANCE",
+      "traceability_v1_decision": "ADVANCE",
+      "traceability_v2_decision": "ADVANCE",
+      "traceability_v2_reason": "ALL_POSITIVE_VERIFIED",
+      "criteria": [
+        {
+          "criterion_id": "SWE03-C1",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "SWE03-C2",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "SWE03-C3",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        }
+      ]
+    },
+    {
+      "response_id": "ESDSA-SWE03-01-E2L3",
+      "group": "GROUP-036",
+      "semantic_equivalence": "UNCERTAIN",
+      "reference_decision": "DEFER",
+      "baseline_evidence_decision": "DEFER",
+      "traceability_v1_decision": "DEFER",
+      "traceability_v2_decision": "DEFER",
+      "traceability_v2_reason": "INSUFFICIENT_VERIFIED_DECISIVE_EVIDENCE",
+      "criteria": [
+        {
+          "criterion_id": "SWE03-C1",
+          "evidence_status": "INSUFFICIENT_EVIDENCE",
+          "v2_outcome": "NOT_APPLICABLE"
+        },
+        {
+          "criterion_id": "SWE03-C2",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "SWE03-C3",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        }
+      ]
+    },
+    {
+      "response_id": "ESDSA-SWE03-01-E2L2",
+      "group": "GROUP-036",
+      "semantic_equivalence": "UNCERTAIN",
+      "reference_decision": "DEFER",
+      "baseline_evidence_decision": "ADVANCE",
+      "traceability_v1_decision": "ADVANCE",
+      "traceability_v2_decision": "ADVANCE",
+      "traceability_v2_reason": "ALL_POSITIVE_VERIFIED",
+      "criteria": [
+        {
+          "criterion_id": "SWE03-C1",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "SWE03-C2",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        },
+        {
+          "criterion_id": "SWE03-C3",
+          "evidence_status": "POSITIVE_EVIDENCE",
+          "v2_outcome": "VERIFIED"
+        }
+      ]
+    }
+  ]
+}

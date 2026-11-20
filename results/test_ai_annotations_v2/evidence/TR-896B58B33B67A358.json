@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-896B58B33B67A358",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0985e8a996ee5ebb016b0029ca044087d0aef1baf72448c10e",
+  "annotated_utc": "2026-11-20T11:06:52.198873+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "CSS01-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d begin by asking the customer what they expected to see and what they are seeing now, so I can narrow down whether the booking is missing, altered, or duplicated.",
+        "rationale": "This explicitly shows the candidate would clarify the customer's actual problem by comparing expected versus current state and identifying the nature of the booking issue."
+      },
+      {
+        "criterion_id": "CSS01-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d also look at the recent changes on the account to understand whether the online appointment is affected or whether only the confirmation message is out of date.",
+        "rationale": "This directly identifies the affected service/outcome: the online appointment and whether the confirmation message is outdated."
+      },
+      {
+        "criterion_id": "CSS01-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "Once I have that, I’d confirm the general issue with them before moving to a fix, so I’m not making assumptions about what went wrong.",
+        "rationale": "This clearly indicates the candidate would summarise/confirm the problem before choosing a resolution."
+      }
+    ],
+    "annotation_notes": ""
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-A07A8E0CA87170FE",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_03617aff68c816f7016b002a96e99887d0a745319a8b2be941",
+  "annotated_utc": "2026-11-20T11:10:16.793901+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "CSS04-C1",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I’d tell them not to worry because the replacement is basically on its way, even though the warehouse hasn’t confirmed it yet.",
+        "rationale": "This states a communication approach clearly, but the content is misleading because it presents the order as essentially on its way despite no warehouse confirmation. That undermines a clear, accurate explanation of the situation."
+      },
+      {
+        "criterion_id": "CSS04-C2",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I’d probably mention a rough delivery date to keep them reassured, and I’d only get back in touch if something changes.",
+        "rationale": "The candidate proposes an unsupported rough delivery date and relies on updates only if something changes, which shows expectation-setting based on an unconfirmed outcome rather than justified information."
+      },
+      {
+        "criterion_id": "CSS04-C3",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I’d only get back in touch if something changes.",
+        "rationale": "This indicates no proactive mechanism for confirming status or following up until there is a confirmed outcome; it limits communication to exception-only contact rather than providing appropriate ongoing follow-up."
+      }
+    ],
+    "annotation_notes": ""
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

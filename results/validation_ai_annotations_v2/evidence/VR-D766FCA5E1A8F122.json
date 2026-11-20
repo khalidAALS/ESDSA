@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-D766FCA5E1A8F122",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0ac43f18221b9c30016b00107b174887d08dca3eef1ca76ece",
+  "annotated_utc": "2026-11-20T09:18:53.549121+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "OPS01-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "Missing the delivery would be the bigger risk.",
+        "rationale": "The answer explicitly identifies one relevant factor for priority setting: impact/risk of missing the delivery. It does not mention dependencies, but it does establish at least one priority criterion relevant to the decision."
+      },
+      {
+        "criterion_id": "OPS01-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d keep the delivery going and only stop if the safety issue was clearly proven to be severe. If information is incomplete, I’d avoid disrupting the schedule and handle the investigation later.",
+        "rationale": "This gives a direct prioritisation choice and a stated basis for it: the candidate weighs the delivery against the safety concern and incomplete information, explaining why they would continue the delivery rather than stop."
+      },
+      {
+        "criterion_id": "OPS01-C3",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "only stop if the safety issue was clearly proven to be severe. If information is incomplete, I’d avoid disrupting the schedule and handle the investigation later.",
+        "rationale": "The candidate indicates they would not pause or change course while information is incomplete, and would defer investigation rather than reassess priorities as new material safety information emerges. This shows a failure to demonstrate reprioritisation when conditions change, especially for a potential safety concern."
+      }
+    ],
+    "annotation_notes": "The answer emphasizes delivery continuity over safety investigation, with little evidence of broader prioritisation factors beyond delivery risk."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

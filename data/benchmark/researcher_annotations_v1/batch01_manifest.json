@@ -1,0 +1,18 @@
+{
+  "batch": "01",
+  "annotator": "PRIMARY_RESEARCHER",
+  "annotation_standard": "RESEARCHER_ADJUDICATED",
+  "source_sha256": "1feb35d5e1122d0133d30be5d464d338dacf4210f71b409b4205e53ef6908f0a",
+  "groups": [
+    "GROUP-001",
+    "GROUP-002",
+    "GROUP-003",
+    "GROUP-004"
+  ],
+  "response_count": 12,
+  "criterion_judgments": 36,
+  "model_predictions_excluded": true,
+  "independent_external_validation": false,
+  "previous_model_exposure": "Four known decision-disagreement groups excluded; other prior exposure cannot be ruled out.",
+  "status": "PENDING"
+}

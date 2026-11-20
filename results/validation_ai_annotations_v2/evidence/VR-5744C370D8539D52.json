@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-5744C370D8539D52",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0d15468fc1b3cf63016b000c60c6c087d09b704c19241c9008",
+  "annotated_utc": "2026-11-20T09:01:22.880291+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "OPS03-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d review the handover logs, revised schedule, and task records",
+        "rationale": "The candidate explicitly says they would use multiple relevant operational sources to inform coordination."
+      },
+      {
+        "criterion_id": "OPS03-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "then assign each remaining task to one owner based on the evidence and dependencies.",
+        "rationale": "This directly shows identifying responsible parties and considering dependencies when coordinating remaining work."
+      },
+      {
+        "criterion_id": "OPS03-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d document why any schedule change was made so the decision is traceable.",
+        "rationale": "The candidate explicitly states they would explain and document the evidence-based basis for schedule changes, which supports traceability."
+      }
+    ],
+    "annotation_notes": ""
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

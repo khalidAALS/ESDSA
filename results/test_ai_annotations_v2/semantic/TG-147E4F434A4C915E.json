@@ -1,0 +1,18 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "SEMANTIC_EQUIVALENCE",
+  "blinded_id": "TG-147E4F434A4C915E",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_059c810851c7b409016b002966022c87d0822202035f12d12d",
+  "annotated_utc": "2026-11-20T11:05:12.460689+00:00",
+  "annotation": {
+    "semantic_equivalence": "YES",
+    "material_differences": "No material differences. All three responses rely on the same evidence sources (traces/logs plus deployment timing), propose the same basic hypothesis tests across application, database, and external dependency, and use the same interpretation rule of following the strongest/most consistent signal in the data.",
+    "equivalence_rationale": "Each answer preserves the same criterion-level evidence: relevant technical sources are traces/logs and release timing; hypothesis testing distinguishes app, DB, and third-party dependency causes by looking at where time is spent, query/pool behavior, timeout/retry behavior, and release correlation; and evidence interpretation is based on the most consistent or strongest signal. Response C adds explicit mention of changed code/config, but this is consistent with the deployment investigation already implied in A and B and does not change the operational commitment."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-253F5B2C6234129E",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_06b528bfa191baf4016b000bf33fb087d0bdb0ad932287fe61",
+  "annotated_utc": "2026-11-20T08:59:33.514965+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "CSS04-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d start by apologising and telling them I’ve taken over the case. I’d explain that I’m going to review what’s been done so far and speak to the right people",
+        "rationale": "The candidate clearly explains the immediate actions they would take in understandable terms, showing a direct communication plan for the customer."
+      },
+      {
+        "criterion_id": "CSS04-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "then I’d let them know I’ll be back in touch once I’ve got more detail.",
+        "rationale": "This sets a bounded expectation about the next update being after further information is obtained, without promising an unsupported outcome or specific resolution time."
+      },
+      {
+        "criterion_id": "CSS04-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d also give them my contact details so they can reach me if needed.",
+        "rationale": "Providing direct contact details offers a mechanism for the customer to seek status or confirmation and supports follow-up."
+      }
+    ],
+    "annotation_notes": "The answer addresses apology, case ownership, review, and a contact channel. It does not specify an exact timeline, but that is not required for positive evidence on these criteria."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

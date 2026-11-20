@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-4B82EC670A731282",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_07ee3cf5413cffe2016b002bca39c887d0a820b3d030a51c6f",
+  "annotated_utc": "2026-11-20T11:15:24.848749+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "OPS04-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d start by comparing the contractor’s report with the scheduled overnight task and the early inspection notes, so I understand what was supposed to happen and what was actually observed.",
+        "rationale": "The candidate identifies specific information needed to monitor execution: the contractor’s report, the scheduled task, and inspection notes."
+      },
+      {
+        "criterion_id": "OPS04-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "If the concern looks limited and the area appears mostly fine, I’d continue to monitor it closely through the morning and keep an eye on whether any further signs appear before operations begin.",
+        "rationale": "The candidate shows trigger recognition by distinguishing a limited concern from a larger issue and describing continued monitoring versus escalation when the situation changes."
+      },
+      {
+        "criterion_id": "OPS04-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "If more information comes in suggesting the issue is bigger than it first looked, I’d bring it to the attention of the relevant supervisor and ask them to decide the next step.",
+        "rationale": "The candidate directs the issue to the relevant supervisor for next-step decision-making, demonstrating escalation and follow-through."
+      }
+    ],
+    "annotation_notes": ""
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

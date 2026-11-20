@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-2CC14B7468D361CA",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0e3a10551ca96224016b000c985d0887d0815ee45a4a286421",
+  "annotated_utc": "2026-11-20T09:02:18.588343+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "OPS04-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d review the available trend data, check how long the readings have been missing, and look for any related alarms or process changes.",
+        "rationale": "The candidate identifies specific information needed to monitor execution: trend data, duration of missing readings, related alarms, and process changes."
+      },
+      {
+        "criterion_id": "OPS04-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "If the drift looks sustained or the missing data prevents a safe read on the condition, I’d escalate to the local team and the responsible owner",
+        "rationale": "The candidate clearly states that sustained drift or missing data that prevents a safe assessment triggers action/escalation."
+      },
+      {
+        "criterion_id": "OPS04-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d escalate to the local team and the responsible owner, then follow up until they confirm the state and next action.",
+        "rationale": "The candidate directs the issue to appropriate owners and explicitly commits to follow up until confirmation of the state and next action."
+      }
+    ],
+    "annotation_notes": ""
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

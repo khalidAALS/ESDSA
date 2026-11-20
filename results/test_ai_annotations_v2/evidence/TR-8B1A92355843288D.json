@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-8B1A92355843288D",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0bd889f5832a3364016b002a2b2e5c87d0bbfa7556dca1dde2",
+  "annotated_utc": "2026-11-20T11:08:28.862554+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "SWE01-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "First I’d try to reproduce it with an affected user or setup and one that works, so we can see the exact conditions where the dashboard goes stale.",
+        "rationale": "This explicitly states reproducing the issue and characterising the conditions under which it occurs."
+      },
+      {
+        "criterion_id": "SWE01-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "Then I’d compare the two paths: same browser versus different browser, hard refresh versus normal load, and the actual API responses behind the dashboard.",
+        "rationale": "This clearly compares failing and functioning behaviours under different conditions."
+      },
+      {
+        "criterion_id": "SWE01-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d use those observations to narrow things down step by step instead of arguing from assumption.",
+        "rationale": "This directly describes systematic narrowing based on observations."
+      }
+    ],
+    "annotation_notes": "The answer provides clear, concrete diagnostic steps aligned with all three criteria."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

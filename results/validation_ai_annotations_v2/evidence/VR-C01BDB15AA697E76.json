@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-C01BDB15AA697E76",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0892c9738875bbe1016b000e2e786487d0ace4ad796259ef0c",
+  "annotated_utc": "2026-11-20T09:09:04.594648+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "CSS03-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "If it’s still in an editable stage, I’d offer to update the address right away. If it’s already been picked, packed, or handed to the carrier, I’d check whether a reroute or address correction is allowed under policy and whether it needs courier intervention or supervisor approval.",
+        "rationale": "The candidate weighs the resolution against the order’s fulfilment stage and chooses an appropriate option based on that evidence."
+      },
+      {
+        "criterion_id": "CSS03-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d check whether a reroute or address correction is allowed under policy and whether it needs courier intervention or supervisor approval.",
+        "rationale": "This explicitly shows attention to policy limits, authorisation, and service constraints before offering a resolution."
+      },
+      {
+        "criterion_id": "CSS03-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "If the status is unclear or there’s a conflict between systems, I’d pause and verify it rather than guess",
+        "rationale": "The candidate clearly recognises uncertainty and says they would verify rather than proceed without enough information."
+      }
+    ],
+    "annotation_notes": ""
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

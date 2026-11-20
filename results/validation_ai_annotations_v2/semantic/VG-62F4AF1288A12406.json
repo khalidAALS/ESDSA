@@ -1,0 +1,20 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "SEMANTIC_EQUIVALENCE",
+  "blinded_id": "VG-62F4AF1288A12406",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0a0768b6fd9a365b016b000cc141e887d0aa8fba5f92aaa36d",
+  "annotated_utc": "2026-11-20T09:02:59.894990+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "semantic_equivalence": "NO",
+    "material_differences": "Response A says it would rely on the old case, repeat the previous steps/reset, and only dig deeper if that fails; Response B adds essentially the same operational approach, with the same focus on restoring access quickly. Response C is materially narrower: it omits the explicit commitment to ask the customer to try the same steps, and it removes the stated reluctance to re-examine the symptom or re-litigate the issue. More importantly for the criteria, none of the responses actually address identifying the actual problem, clarifying what service/outcome is affected, or summarizing the issue before resolution; they mainly describe repeating the prior fix. Because the responses differ in how much diagnostic effort they commit to and none preserves the requested problem-identification evidence, they are not semantically equivalent in the decision-relevant sense.",
+    "equivalence_rationale": "The question asks how the person would identify the actual problem and determine what information matters, under problem-identification criteria. The responses all emphasize reusing the prior fix and minimizing deeper diagnosis, which is a different operational stance from clarifying the issue and affected outcome. Since this changes the evidence for issue clarification and problem definition, the set does not preserve substantially the same criterion-level evidence."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

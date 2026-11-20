@@ -1,0 +1,63 @@
+{
+  "experiment": "ESDSA_TEST_GENERATION_V1",
+  "partition": "TEST",
+  "family_id": "ESDSA-OPS03-02",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0778d9d48ffbc475016b0022e83ab487d08185c6f4547fd61c",
+  "timestamp_utc": "2026-11-20T10:37:34.766524+00:00",
+  "run_sha256": "b886d31778bb5830ad88f402d52e4d9fc2ebb0535eca32ecdca730a9bab58ed4",
+  "scenario_sha256": "9d2280d8014612bdd263f5dd8daf8356efeac3fa7a7e4b0cd3c6f4fef932426a",
+  "rubric_sha256": "c0841450efe362e6bce6ce4bcf0533342cb844a168e20b3c47bcecac6a01fd4d",
+  "responses": [
+    {
+      "condition": "SUFFICIENT",
+      "variant": "CANONICAL",
+      "answer": "I would first reconcile the three sources of information: the maintenance team’s progress update, the scheduling system’s pending dependency, and the receiving team’s readiness. If those don’t align, I’d treat the handover as not yet confirmed and contact the maintenance lead to clarify exactly what remains, then speak with the receiving team to confirm what they need before they can accept the handover. I’d also check whether the pending dependency in the system is a real outstanding task or just a record that has not been updated. Once I have a clear picture of ownership and completion, I’d either confirm the handover if the evidence supports it or keep it delayed and communicate the reason. I’d document the status, who confirmed what, and why I made that call so the handover decision is traceable."
+    },
+    {
+      "condition": "SUFFICIENT",
+      "variant": "CONVERSATIONAL",
+      "answer": "I’d pull together the maintenance update, the system status, and the receiving team’s confirmation, because I wouldn’t want to rely on just one of those. Then I’d go back to the maintenance owner to pin down whether anything is still open, and I’d check with the receiving team on whether they’re ready to take it over or need anything else. If the system says there’s still a dependency, I’d verify whether that’s a real blocker or just a stale update. Based on that, I’d either let the handover go ahead or hold it and explain why. I’d make sure the decision and the evidence behind it are recorded."
+    },
+    {
+      "condition": "SUFFICIENT",
+      "variant": "CONCISE",
+      "answer": "I’d compare the maintenance update, the system dependency, and the receiving team’s readiness, then confirm ownership with both teams. If the dependency is still real or the receiver isn’t ready, I’d hold the handover; if it’s only a system lag and everyone confirms completion, I’d proceed. Either way, I’d document the checks, who confirmed what, and the reason for the decision."
+    },
+    {
+      "condition": "INSUFFICIENT",
+      "variant": "CANONICAL",
+      "answer": "I would start by reviewing the maintenance team’s progress report and the scheduling system status, then I’d ask the maintenance lead for a quick update on what is still outstanding. I’d also check in with the receiving team to see whether they are likely to be ready for the evening handover. If the maintenance work looks substantially complete, I’d aim to keep the handover on track and inform the relevant parties of the latest status. I’d note the key updates in the handover record so there is a clear trail of what was reported and when."
+    },
+    {
+      "condition": "INSUFFICIENT",
+      "variant": "CONVERSATIONAL",
+      "answer": "I’d look at the maintenance progress, check the schedule system, and ask the maintenance lead what’s left. I’d also touch base with the receiving team to see where they are with readiness. If everything looks close, I’d try to keep the handover moving and update everyone on the status. I’d capture the main updates in the handover notes so there’s a record of the latest information."
+    },
+    {
+      "condition": "INSUFFICIENT",
+      "variant": "CONCISE",
+      "answer": "I’d review the maintenance update and system status, then check in with the maintenance lead and the receiving team for a quick status. If the work looks close to complete, I’d keep the handover moving and update the parties involved. I’d record the latest notes in the handover log."
+    },
+    {
+      "condition": "NEGATIVE",
+      "variant": "CANONICAL",
+      "answer": "I would treat the maintenance team’s progress report as the main source of truth and move the handover forward to avoid delays, even if the scheduling system still shows a dependency. If the receiving team has not confirmed readiness yet, I’d assume they will be able to absorb the handover and ask them to adjust after the fact if needed. I would update the handover record to show that the task was effectively complete and that the schedule was cleared, so the evening shift can proceed without waiting on additional checks."
+    },
+    {
+      "condition": "NEGATIVE",
+      "variant": "CONVERSATIONAL",
+      "answer": "I’d go with the maintenance team’s update and push the handover through so we don’t lose time on the evening shift. If the system still shows a dependency, I’d leave that for someone to clean up later, since the team says progress has been made. And if the receiving team hasn’t confirmed readiness yet, I’d assume they can sort it out once the handover is underway. I’d log it as complete so the next team can move on."
+    },
+    {
+      "condition": "NEGATIVE",
+      "variant": "CONCISE",
+      "answer": "I’d use the maintenance team’s progress update to proceed with the handover and deal with the system dependency later. If the receiving team hasn’t confirmed yet, I’d assume they’ll manage once it’s passed over. I’d record it as complete so we can keep the evening schedule moving."
+    }
+  ],
+  "raw_output": "{\"responses\":[{\"condition\":\"SUFFICIENT\",\"variant\":\"CANONICAL\",\"answer\":\"I would first reconcile the three sources of information: the maintenance team’s progress update, the scheduling system’s pending dependency, and the receiving team’s readiness. If those don’t align, I’d treat the handover as not yet confirmed and contact the maintenance lead to clarify exactly what remains, then speak with the receiving team to confirm what they need before they can accept the handover. I’d also check whether the pending dependency in the system is a real outstanding task or just a record that has not been updated. Once I have a clear picture of ownership and completion, I’d either confirm the handover if the evidence supports it or keep it delayed and communicate the reason. I’d document the status, who confirmed what, and why I made that call so the handover decision is traceable.\"},{\"condition\":\"SUFFICIENT\",\"variant\":\"CONVERSATIONAL\",\"answer\":\"I’d pull together the maintenance update, the system status, and the receiving team’s confirmation, because I wouldn’t want to rely on just one of those. Then I’d go back to the maintenance owner to pin down whether anything is still open, and I’d check with the receiving team on whether they’re ready to take it over or need anything else. If the system says there’s still a dependency, I’d verify whether that’s a real blocker or just a stale update. Based on that, I’d either let the handover go ahead or hold it and explain why. I’d make sure the decision and the evidence behind it are recorded.\"},{\"condition\":\"SUFFICIENT\",\"variant\":\"CONCISE\",\"answer\":\"I’d compare the maintenance update, the system dependency, and the receiving team’s readiness, then confirm ownership with both teams. If the dependency is still real or the receiver isn’t ready, I’d hold the handover; if it’s only a system lag and everyone confirms completion, I’d proceed. Either way, I’d document the checks, who confirmed what, and the reason for the decision.\"},{\"condition\":\"INSUFFICIENT\",\"variant\":\"CANONICAL\",\"answer\":\"I would start by reviewing the maintenance team’s progress report and the scheduling system status, then I’d ask the maintenance lead for a quick update on what is still outstanding. I’d also check in with the receiving team to see whether they are likely to be ready for the evening handover. If the maintenance work looks substantially complete, I’d aim to keep the handover on track and inform the relevant parties of the latest status. I’d note the key updates in the handover record so there is a clear trail of what was reported and when.\"},{\"condition\":\"INSUFFICIENT\",\"variant\":\"CONVERSATIONAL\",\"answer\":\"I’d look at the maintenance progress, check the schedule system, and ask the maintenance lead what’s left. I’d also touch base with the receiving team to see where they are with readiness. If everything looks close, I’d try to keep the handover moving and update everyone on the status. I’d capture the main updates in the handover notes so there’s a record of the latest information.\"},{\"condition\":\"INSUFFICIENT\",\"variant\":\"CONCISE\",\"answer\":\"I’d review the maintenance update and system status, then check in with the maintenance lead and the receiving team for a quick status. If the work looks close to complete, I’d keep the handover moving and update the parties involved. I’d record the latest notes in the handover log.\"},{\"condition\":\"NEGATIVE\",\"variant\":\"CANONICAL\",\"answer\":\"I would treat the maintenance team’s progress report as the main source of truth and move the handover forward to avoid delays, even if the scheduling system still shows a dependency. If the receiving team has not confirmed readiness yet, I’d assume they will be able to absorb the handover and ask them to adjust after the fact if needed. I would update the handover record to show that the task was effectively complete and that the schedule was cleared, so the evening shift can proceed without waiting on additional checks.\"},{\"condition\":\"NEGATIVE\",\"variant\":\"CONVERSATIONAL\",\"answer\":\"I’d go with the maintenance team’s update and push the handover through so we don’t lose time on the evening shift. If the system still shows a dependency, I’d leave that for someone to clean up later, since the team says progress has been made. And if the receiving team hasn’t confirmed readiness yet, I’d assume they can sort it out once the handover is underway. I’d log it as complete so the next team can move on.\"},{\"condition\":\"NEGATIVE\",\"variant\":\"CONCISE\",\"answer\":\"I’d use the maintenance team’s progress update to proceed with the handover and deal with the system dependency later. If the receiving team hasn’t confirmed yet, I’d assume they’ll manage once it’s passed over. I’d record it as complete so we can keep the evening schedule moving.\"}]}",
+  "input_tokens": 742,
+  "output_tokens": 1030,
+  "generation_conditions_are_reference_labels": false
+}

@@ -1,0 +1,20 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "SEMANTIC_EQUIVALENCE",
+  "blinded_id": "VG-446D98C06777133B",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0f6e9ff528198f1d016b000c5b4da887d0927dc3e870aa78f7",
+  "annotated_utc": "2026-11-20T09:01:17.795237+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "semantic_equivalence": "NO",
+    "material_differences": "Response B adds an explicit limitation that more detail is needed before finalizing the schedule, which softens the decision commitment compared with A’s more direct plan to determine next steps and update the plan. Response C omits the explicit step of asking each team to walk through what is complete versus pending and does not explicitly identify owners/responsible parties, weakening coordination and evidence-integration evidence relative to A. These changes could affect OPS03-C2 and OPS03-C3.",
+    "equivalence_rationale": "A and B are broadly similar, but B introduces a caveat about not yet being able to say exactly how the final schedule would be handled, which is a meaningful operational difference in defensibility and commitment. C is more compressed and leaves out some concrete evidence-gathering and ownership steps that A includes, so it does not preserve the same criterion-level evidence across coordination and traceability."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

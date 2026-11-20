@@ -1,0 +1,75 @@
+{
+  "experiment": "ESDSA_VALIDATION_GENERATION_V1",
+  "partition": "VALIDATION",
+  "family_id": "ESDSA-CSS04-10",
+  "run_sha256": "14ed1e4d3d39add00949b0885569377a0d95d89fd7afe61b092b960865cb6240",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "response_id": "resp_0e945fd60a1569b0016aff915eb99887d098f935a114e5b0b3",
+  "response_status": "completed",
+  "usage": {
+    "input_tokens": 738,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      }
+    },
+    "output_tokens": 850,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 1588
+  },
+  "raw_output_text": "{\"responses\":[{\"condition\":\"SUFFICIENT\",\"variant\":\"CANONICAL\",\"answer\":\"I would start by acknowledging the missed callback and apologising for the inconvenience, so the customer knows I understand the situation. Then I’d clearly explain that I’m taking over the case, what I’m checking next, and what information I need from them, if anything. I wouldn’t promise a fix before I’ve reviewed the complaint and spoken to the relevant team; instead, I’d give a realistic timeframe for the next update based on how long the investigation should take. I’d also agree a specific follow-up point, such as a callback or email by a certain time, and make sure the customer knows how to reach me if they need to add anything before then.\"},{\"condition\":\"SUFFICIENT\",\"variant\":\"CONVERSATIONAL\",\"answer\":\"I’d apologise straight away for the missed update and let them know I’m now handling it. I’d tell them what I’m going to do next, like reviewing the complaint and checking with the right team, and I’d explain that I can’t give a final answer until that’s been looked into. I’d set a realistic time for the next contact rather than overpromising. Then I’d book in a clear follow-up, so they know when they’ll hear from me and what to expect next.\"},{\"condition\":\"SUFFICIENT\",\"variant\":\"CONCISE\",\"answer\":\"I’d apologise, explain I’m taking over, and outline the next step of reviewing the complaint and checking with the relevant team. I’d avoid promising a resolution until the investigation is complete, but I would give a realistic timeframe for the next update. I’d also set a specific follow-up time and method, such as a callback or email.\"},{\"condition\":\"INSUFFICIENT\",\"variant\":\"CANONICAL\",\"answer\":\"I would acknowledge that the customer did not receive the promised update and apologise for that. I’d tell them I’m now looking into the complaint, explain that I’ll review what has happened so far, and let them know I’ll come back to them once I’ve checked the relevant details. I’d make sure they have my contact information in case they want to add anything before I respond again.\"},{\"condition\":\"INSUFFICIENT\",\"variant\":\"CONVERSATIONAL\",\"answer\":\"I’d start by apologising and telling them I’ve taken over the case. I’d explain that I’m going to review what’s been done so far and speak to the right people, then I’d let them know I’ll be back in touch once I’ve got more detail. I’d also give them my contact details so they can reach me if needed.\"},{\"condition\":\"INSUFFICIENT\",\"variant\":\"CONCISE\",\"answer\":\"I’d apologise, say I’ve taken over, and explain I’m reviewing the case and checking the next steps with the relevant team. I’d give them my contact details and follow up once I have more information.\"},{\"condition\":\"NEGATIVE\",\"variant\":\"CANONICAL\",\"answer\":\"I would apologise for the missed update and tell the customer I’m taking over the complaint. I’d say I’ll look into it and that I’ll get back to them as soon as possible, but I wouldn’t commit to a specific follow-up time until I know whether there’s anything new to report. If the issue is still unresolved, I’d wait until I have a full answer before contacting them again so I only reach out once I can give a proper conclusion.\"},{\"condition\":\"NEGATIVE\",\"variant\":\"CONVERSATIONAL\",\"answer\":\"I’d apologise and let them know I’m on it now, then I’d check the complaint internally. I’d tell them I’ll come back once I’ve got the full answer, and I wouldn’t set a fixed follow-up because I’d rather not chase them with partial updates. Once I know the outcome, I’d contact them then.\"},{\"condition\":\"NEGATIVE\",\"variant\":\"CONCISE\",\"answer\":\"I’d apologise and say I’ll investigate, then contact them only when I have the full answer. I wouldn’t set a specific follow-up until I know the outcome.\"}]}",
+  "responses": [
+    {
+      "condition": "SUFFICIENT",
+      "variant": "CANONICAL",
+      "answer": "I would start by acknowledging the missed callback and apologising for the inconvenience, so the customer knows I understand the situation. Then I’d clearly explain that I’m taking over the case, what I’m checking next, and what information I need from them, if anything. I wouldn’t promise a fix before I’ve reviewed the complaint and spoken to the relevant team; instead, I’d give a realistic timeframe for the next update based on how long the investigation should take. I’d also agree a specific follow-up point, such as a callback or email by a certain time, and make sure the customer knows how to reach me if they need to add anything before then."
+    },
+    {
+      "condition": "SUFFICIENT",
+      "variant": "CONVERSATIONAL",
+      "answer": "I’d apologise straight away for the missed update and let them know I’m now handling it. I’d tell them what I’m going to do next, like reviewing the complaint and checking with the right team, and I’d explain that I can’t give a final answer until that’s been looked into. I’d set a realistic time for the next contact rather than overpromising. Then I’d book in a clear follow-up, so they know when they’ll hear from me and what to expect next."
+    },
+    {
+      "condition": "SUFFICIENT",
+      "variant": "CONCISE",
+      "answer": "I’d apologise, explain I’m taking over, and outline the next step of reviewing the complaint and checking with the relevant team. I’d avoid promising a resolution until the investigation is complete, but I would give a realistic timeframe for the next update. I’d also set a specific follow-up time and method, such as a callback or email."
+    },
+    {
+      "condition": "INSUFFICIENT",
+      "variant": "CANONICAL",
+      "answer": "I would acknowledge that the customer did not receive the promised update and apologise for that. I’d tell them I’m now looking into the complaint, explain that I’ll review what has happened so far, and let them know I’ll come back to them once I’ve checked the relevant details. I’d make sure they have my contact information in case they want to add anything before I respond again."
+    },
+    {
+      "condition": "INSUFFICIENT",
+      "variant": "CONVERSATIONAL",
+      "answer": "I’d start by apologising and telling them I’ve taken over the case. I’d explain that I’m going to review what’s been done so far and speak to the right people, then I’d let them know I’ll be back in touch once I’ve got more detail. I’d also give them my contact details so they can reach me if needed."
+    },
+    {
+      "condition": "INSUFFICIENT",
+      "variant": "CONCISE",
+      "answer": "I’d apologise, say I’ve taken over, and explain I’m reviewing the case and checking the next steps with the relevant team. I’d give them my contact details and follow up once I have more information."
+    },
+    {
+      "condition": "NEGATIVE",
+      "variant": "CANONICAL",
+      "answer": "I would apologise for the missed update and tell the customer I’m taking over the complaint. I’d say I’ll look into it and that I’ll get back to them as soon as possible, but I wouldn’t commit to a specific follow-up time until I know whether there’s anything new to report. If the issue is still unresolved, I’d wait until I have a full answer before contacting them again so I only reach out once I can give a proper conclusion."
+    },
+    {
+      "condition": "NEGATIVE",
+      "variant": "CONVERSATIONAL",
+      "answer": "I’d apologise and let them know I’m on it now, then I’d check the complaint internally. I’d tell them I’ll come back once I’ve got the full answer, and I wouldn’t set a fixed follow-up because I’d rather not chase them with partial updates. Once I know the outcome, I’d contact them then."
+    },
+    {
+      "condition": "NEGATIVE",
+      "variant": "CONCISE",
+      "answer": "I’d apologise and say I’ll investigate, then contact them only when I have the full answer. I wouldn’t set a specific follow-up until I know the outcome."
+    }
+  ],
+  "validation_status": "STRUCTURE_PASSED"
+}

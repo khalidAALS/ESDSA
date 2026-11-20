@@ -1,0 +1,70 @@
+ESDSA V2 — QUOTATION VERIFICATION DIAGNOSTIC
+{
+  "total_citations_checked": 310,
+  "v1_failed_citations": 24,
+  "v1_failed_responses": 15,
+  "v2_all_citation_outcomes": {
+    "VERIFIED": 303,
+    "UNVERIFIABLE": 3,
+    "CONTEXT_ONLY": 4
+  },
+  "v2_outcomes_among_v1_failures": {
+    "VERIFIED": 17,
+    "UNVERIFIABLE": 3,
+    "CONTEXT_ONLY": 4
+  },
+  "remaining_failed_responses": 6,
+  "warning": "Textual matching only: VERIFIED does not establish relevance or sufficiency. No decision policy is changed."
+}
+
+PREVIOUSLY FAILED CITATIONS
+ESDSA-SWE02-01-E3L2 | SWE02-C2 | NEGATIVE_EVIDENCE | VERIFIED | ordered_answer_match
+  excerpt: I’d mostly start from the idea that the update is the cause if the timing matches up... I’d focus on the new changes and only glance at the logs or database metrics if I need extra confirmation. I wouldn’t overcomplicate it with a lot of separate hypotheses
+ESDSA-SWE02-01-E3L1 | SWE02-C1 | POSITIVE_EVIDENCE | VERIFIED | ordered_answer_match
+  excerpt: look for confirmation in the deployment records... the database metrics... skim the logs... If the request timings are worse after the update
+ESDSA-SWE02-01-E3L1 | SWE02-C2 | NEGATIVE_EVIDENCE | UNVERIFIABLE | no_exact_ordered_match
+  excerpt: I’d probably start by assuming the update caused it... I’d treat the deploy timing as the main signal... I wouldn’t spend too long there unless something jumps out
+ESDSA-SWE02-01-E3L1 | SWE02-C3 | NEGATIVE_EVIDENCE | VERIFIED | ordered_answer_match
+  excerpt: that would be enough for me to narrow it to the release itself... move straight into the latest changes as the likely fix area
+ESDSA-SWE02-01-E2L2 | SWE02-C1 | POSITIVE_EVIDENCE | VERIFIED | ordered_answer_match
+  excerpt: I’d begin by checking the release info and the request timings... Then I’d look through the server logs and database metrics
+ESDSA-SWE02-01-E2L1 | SWE02-C1 | POSITIVE_EVIDENCE | VERIFIED | ordered_answer_match
+  excerpt: checking the deployment records and request timings... review the server logs... look at the database metrics
+ESDSA-SWE02-01-E2L1 | SWE02-C2 | POSITIVE_EVIDENCE | VERIFIED | ordered_answer_match
+  excerpt: see whether the slowdown began right after the update or only affects certain endpoints... compare the slow requests against the faster ones to see what they have in common
+ESDSA-OPS02-03-E1L2 | OPS02-C2 | POSITIVE_EVIDENCE | VERIFIED | ordered_answer_match
+  excerpt: “I’d check the delay length, what stock we actually have, and how much demand might swing either way... From there I’d work out how likely a disruption is and what the impact would be on service.”
+ESDSA-CSS02-02-E3L1 | CSS02-C1 | POSITIVE_EVIDENCE | VERIFIED | answer_match
+  excerpt: I'd ask the customer to send me their full card details and any screenshots they have
+ESDSA-SWE03-01-E3L1 | SWE03-C3 | POSITIVE_EVIDENCE | VERIFIED | ordered_answer_match
+  excerpt: that would be the easiest place to add extra checks... add a broader safeguard around the checkout flow and see if the duplicates stop
+ESDSA-OPS02-03-E2L1 | OPS02-C1 | POSITIVE_EVIDENCE | CONTEXT_ONLY | question_match
+  excerpt: “a critical supplier reports that an upcoming shipment may be delayed”
+ESDSA-OPS02-03-E2L1 | OPS02-C2 | POSITIVE_EVIDENCE | UNVERIFIABLE | no_exact_ordered_match
+  excerpt: “demand forecasts are uncertain” and “see whether we have enough buffer if volumes come in above plan”
+ESDSA-SWE02-01-E1L1 | SWE02-C1 | POSITIVE_EVIDENCE | VERIFIED | ordered_answer_match
+  excerpt: I’d review the deployment records first... then compare request timings... I’d inspect the server logs... and I’d check the database metrics
+ESDSA-SWE02-01-E1L1 | SWE02-C2 | POSITIVE_EVIDENCE | VERIFIED | ordered_answer_match
+  excerpt: I’d test the leading hypotheses one by one. For example, if the slowdown appears only after the update... If the database metrics show rising query times or locks... If the logs show retries or upstream timeouts
+ESDSA-SWE02-01-E1L1 | SWE02-C3 | POSITIVE_EVIDENCE | VERIFIED | ordered_answer_match
+  excerpt: If the database metrics show rising query times or locks during the slow periods, that would point me toward a database bottleneck rather than the application layer... I’d only conclude a root cause once the timing, logs, and metrics all point in the same direction
+ESDSA-SWE02-01-E1L2 | SWE02-C1 | POSITIVE_EVIDENCE | VERIFIED | ordered_answer_match
+  excerpt: “First I’d check the deployment records … then compare request timings … After that I’d go through the server logs … and I’d look at the database metrics”
+ESDSA-SWE02-01-E1L2 | SWE02-C2 | POSITIVE_EVIDENCE | VERIFIED | ordered_answer_match
+  excerpt: “I’d use that to test the likely causes instead of guessing. If the slow requests map to a new code path or a config change … If the database metrics worsen … that suggests … If the logs show repeated retries or upstream timeouts”
+ESDSA-SWE02-01-E1L2 | SWE02-C3 | POSITIVE_EVIDENCE | VERIFIED | ordered_answer_match
+  excerpt: “that gives me one direction … that suggests the issue may be in the database layer rather than the app itself … I’d dig into dependency calls”
+ESDSA-OPS02-03-E3L1 | OPS02-C1 | POSITIVE_EVIDENCE | CONTEXT_ONLY | question_match
+  excerpt: A critical supplier reports that an upcoming shipment may be delayed.
+ESDSA-OPS02-03-E3L1 | OPS02-C3 | NEGATIVE_EVIDENCE | VERIFIED | ordered_answer_match
+  excerpt: I wouldn’t want to create extra noise by escalating too early. ... wait to see whether the shipment actually slips before changing priorities or arranging backups. If it does become a problem later, we can deal with it then.
+ESDSA-OPS02-03-E3L3 | OPS02-C1 | POSITIVE_EVIDENCE | CONTEXT_ONLY | question_match
+  excerpt: a critical supplier reports that an upcoming shipment may be delayed
+ESDSA-OPS02-03-E3L2 | OPS02-C1 | POSITIVE_EVIDENCE | CONTEXT_ONLY | question_match
+  excerpt: A critical supplier reports that an upcoming shipment may be delayed.
+ESDSA-OPS01-01-E3L2 | OPS01-C1 | NEGATIVE_EVIDENCE | VERIFIED | answer_match
+  excerpt: I'd probably get the inventory review out of the way first since it’s routine and doesn’t take much thinking, then deal with the delivery after that.
+ESDSA-OPS01-01-E3L1 | OPS01-C2 | NEGATIVE_EVIDENCE | UNVERIFIABLE | no_exact_ordered_match
+  excerpt: I’d keep the routine inventory review moving first because it’s the easiest task to complete and it clears the list quickly. My view is that if the team is already set up for the scheduled work, it’s better not to disrupt the plan unless there’s a major issue.
+
+IMPORTANT: This script does not alter v1 decisions or reference labels.

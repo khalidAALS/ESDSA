@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-015C6855917F27E9",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0e960bb81ee48bc3016b000bb5daa887d0af1c60480d7bcd9d",
+  "annotated_utc": "2026-11-20T08:58:32.038865+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "OPS02-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d keep the current plan and wait for clearer confirmation before doing anything else.",
+        "rationale": "The candidate recognizes there is a potential operational risk from the uncertain delivery capacity and frames it as something to monitor rather than assuming no issue exists."
+      },
+      {
+        "criterion_id": "OPS02-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "since the capacity impact isn’t known and I’d rather avoid extra cost until the risk is confirmed.",
+        "rationale": "The answer explicitly acknowledges uncertainty about the severity of the capacity impact and weighs a possible consequence (extra cost) in deciding how to respond."
+      },
+      {
+        "criterion_id": "OPS02-C3",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I wouldn’t bring in backup transport or escalate yet",
+        "rationale": "The candidate explicitly declines to take mitigation or escalation steps in response to the operational risk, despite the scenario calling for a response under uncertainty. This materially conflicts with proposing proportionate mitigation or escalation."
+      }
+    ],
+    "annotation_notes": "The answer shows awareness of uncertainty and cost tradeoffs, but the response is mainly to wait rather than actively mitigate or escalate."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-F691588D0CCF146A",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0db1056277ebbbff016b000c20aa3887d0ac8f844ac098e154",
+  "annotated_utc": "2026-11-20T09:00:19.543492+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "OPS03-C1",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I’d probably take the department that says it’s finished at face value and use that as the baseline, since it sounds like they’re closest to being ready.",
+        "rationale": "This explicitly relies on one department’s status at face value while disregarding the reported gaps and conflicting dates. That is materially inconsistent with integrating the available operational sources, which should weigh all relevant reports."
+      },
+      {
+        "criterion_id": "OPS03-C2",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I’d note that for later and keep the launch date unless someone raises a major issue in writing.",
+        "rationale": "This deprioritizes unresolved dependencies and does not identify responsible parties or address the necessary dependency management. It proposes proceeding despite open dependencies rather than coordinating them."
+      },
+      {
+        "criterion_id": "OPS03-C3",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "To keep things moving, I’d send out a revised timeline based on the most optimistic status and ask the unresolved items to be handled after the launch.",
+        "rationale": "This justifies action using the most optimistic status rather than relevant operational evidence, despite conflicting reports and unresolved dependencies. It therefore undermines traceable, evidence-based decision-making."
+      }
+    ],
+    "annotation_notes": "The answer shows a preference for speed over reconciliation and explicitly minimizes conflicting evidence. No positive evidence for the three criteria was established."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

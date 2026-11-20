@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-EE1001CA776448E7",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0c4555c69e9f408c016b002c27743087d08217264e79aff1cc",
+  "annotated_utc": "2026-11-20T11:16:56.821556+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "SWE01-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d begin by gathering a couple of concrete cases and seeing how often the issue shows up.",
+        "rationale": "This explicitly proposes collecting concrete examples and determining frequency, which characterizes the failure and helps establish when it occurs."
+      },
+      {
+        "criterion_id": "SWE01-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "Then I’d compare what affected users are seeing with what other users see,",
+        "rationale": "This directly states a comparison between failing and working behaviour, satisfying the criterion."
+      },
+      {
+        "criterion_id": "SWE01-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d inspect the browser calls and the backend responses. That would give us a better sense of whether the stale data is coming from the client or the service, although I’d want to verify a few more instances before deciding.",
+        "rationale": "This shows the candidate using observations from client and backend to narrow the likely cause between browser caching and service issues."
+      }
+    ],
+    "annotation_notes": "The answer is concise but clearly demonstrates all three diagnostic behaviours."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

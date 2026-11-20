@@ -1,0 +1,53 @@
+{
+  "experiment": "ESDSA combined development prototype",
+  "version": "1.0",
+  "status": "DEVELOPMENT_ONLY",
+  "stability_pairs": 1,
+  "evidence_change_controls": 2,
+  "independent_semantic_validation": false,
+  "cross_model_independence": false,
+  "results": [
+    {
+      "pair_id": "A",
+      "test_role": "SEMANTIC_STABILITY_PILOT",
+      "original_baseline": "ADVANCE",
+      "original_modified": "ADVANCE",
+      "evidence_baseline": "ADVANCE",
+      "evidence_modified": "ADVANCE",
+      "evidence_agreement_baseline": true,
+      "evidence_agreement_modified": true,
+      "stability": "STABLE",
+      "combined_verdict": "RETAIN",
+      "combined_decision": "ADVANCE",
+      "reference_validation": "PENDING"
+    },
+    {
+      "pair_id": "B",
+      "test_role": "COMPETENCE_SENSITIVITY_CONTROL",
+      "original_baseline": "ADVANCE",
+      "original_modified": "DEFER",
+      "evidence_baseline": "ADVANCE",
+      "evidence_modified": "DEFER",
+      "evidence_agreement_baseline": true,
+      "evidence_agreement_modified": true,
+      "stability": "NOT_APPLICABLE",
+      "combined_verdict": "CONTROL_ONLY",
+      "combined_decision": null,
+      "reference_validation": "PENDING"
+    },
+    {
+      "pair_id": "C",
+      "test_role": "COMPETENCE_SENSITIVITY_CONTROL",
+      "original_baseline": "ADVANCE",
+      "original_modified": "DO_NOT_ADVANCE",
+      "evidence_baseline": "ADVANCE",
+      "evidence_modified": "DO_NOT_ADVANCE",
+      "evidence_agreement_baseline": true,
+      "evidence_agreement_modified": true,
+      "stability": "NOT_APPLICABLE",
+      "combined_verdict": "CONTROL_ONLY",
+      "combined_decision": null,
+      "reference_validation": "PENDING"
+    }
+  ]
+}

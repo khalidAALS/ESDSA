@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-0F18D374CA0E89B3",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_06209baad447b710016b000d2423f087d08c0bb4d308627ea5",
+  "annotated_utc": "2026-11-20T09:04:38.840966+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "OPS01-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d keep the customer order as the main focus and leave the inspection until after that unless there was a clear problem.",
+        "rationale": "The answer identifies urgency and impact by prioritising the customer order due to deadline sensitivity, and it also recognizes the inspection as contingent on there being a quality problem, indicating some awareness of issue-driven dependency."
+      },
+      {
+        "criterion_id": "OPS01-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d keep the customer order as the main focus and leave the inspection until after that unless there was a clear problem. Training would only happen if there was time left.",
+        "rationale": "The candidate explains a prioritisation choice by explicitly ranking the customer order ahead of inspection and training, using the implied customer deadline and available time as the basis for that trade-off."
+      },
+      {
+        "criterion_id": "OPS01-C3",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I’d avoid changing the plan unless the disruption was major, so the team can stay on what they started.",
+        "rationale": "This states a reluctance to reassess priorities unless disruption is major, which materially contradicts the criterion requiring reprioritisation when material conditions change."
+      }
+    ],
+    "annotation_notes": "The answer gives a simple prioritisation order, but it does not clearly show a dynamic reassessment process beyond reacting only to major disruption."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

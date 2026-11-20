@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-092B6AF7730C3A41",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0464895daf6b5816016b000c56012487d089c674ca1402c79c",
+  "annotated_utc": "2026-11-20T09:01:12.436183+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "OPS03-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d gather the latest updates from both departments and compare the reports side by side so I can see where the gaps and date conflicts are.",
+        "rationale": "The candidate explicitly uses information from both departments’ reports and compares them to identify gaps and conflicting dates, showing use of relevant operational sources."
+      },
+      {
+        "criterion_id": "OPS03-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d ask each team to walk through their status and identify any items they believe are complete or still pending, then I’d arrange a joint check-in so the owners can talk through the open points directly.",
+        "rationale": "The candidate identifies the responsible teams/owners and coordinates a joint discussion to resolve open dependency points, which demonstrates coordination around parties and dependencies."
+      },
+      {
+        "criterion_id": "OPS03-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "If the unresolved dependency appears to affect the launch, I’d work with the teams to agree on the next steps and update the plan accordingly.\n\nI’d also make sure the outcome is written up in a clear status note so everyone can see what was discussed and what was agreed.",
+        "rationale": "The candidate ties the decision and next steps to the unresolved dependency and records the outcome in a status note, providing an evidence-based, traceable account of the action taken."
+      }
+    ],
+    "annotation_notes": ""
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

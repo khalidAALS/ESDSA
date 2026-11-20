@@ -1,0 +1,65 @@
+INTEGRATED ESDSA V2 — DEVELOPMENT COMPARISON
+
+evidence_aware: coverage=97.2%; actionable=105; disagreements=15; rate=14.3%; unsupported_ADVANCE=12; deferrals_against_actionable_reference=0
+traceability_v2_only: coverage=96.3%; actionable=104; disagreements=15; rate=14.4%; unsupported_ADVANCE=12; deferrals_against_actionable_reference=1
+integrated_v1: coverage=66.7%; actionable=72; disagreements=8; rate=11.1%; unsupported_ADVANCE=5; deferrals_against_actionable_reference=27
+integrated_v2: coverage=92.6%; actionable=100; disagreements=13; rate=13.0%; unsupported_ADVANCE=10; deferrals_against_actionable_reference=4
+
+V2 STABILITY GATE ATTRIBUTION
+{
+  "changed_responses": 4,
+  "prevented_disagreements": 2,
+  "deferred_supported_decisions": 2,
+  "deferred_reference_defer": 1
+}
+
+INTEGRATED V1 TO V2
+{
+  "changed_responses": 28,
+  "v1_defer_to_v2_actionable": 28,
+  "restored_correct_against_reference": 23,
+  "restored_disagreements": 5,
+  "v1_actionable_to_v2_defer": 0
+}
+
+GROUPS WITH V2 STABILITY DEFERRALS
+GROUP-017 | equivalence=YES | pre=['ADVANCE', 'DO_NOT_ADVANCE', 'DO_NOT_ADVANCE'] | post=['DEFER', 'DEFER', 'DEFER'] | new_deferrals=3
+GROUP-023 | equivalence=YES | pre=['ADVANCE', 'DEFER', 'DEFER'] | post=['DEFER', 'DEFER', 'DEFER'] | new_deferrals=1
+
+CHANGED RESPONSES VS V1
+ESDSA-SWE02-01-E3L2 | DEFER -> DO_NOT_ADVANCE | reference=DO_NOT_ADVANCE | equivalence=YES
+ESDSA-SWE02-01-E3L3 | DEFER -> DO_NOT_ADVANCE | reference=DO_NOT_ADVANCE | equivalence=YES
+ESDSA-SWE02-01-E3L1 | DEFER -> DO_NOT_ADVANCE | reference=DO_NOT_ADVANCE | equivalence=YES
+ESDSA-SWE02-01-E2L3 | DEFER -> ADVANCE | reference=ADVANCE | equivalence=YES
+ESDSA-SWE02-01-E2L2 | DEFER -> ADVANCE | reference=ADVANCE | equivalence=YES
+ESDSA-SWE02-01-E2L1 | DEFER -> ADVANCE | reference=ADVANCE | equivalence=YES
+ESDSA-OPS02-03-E1L2 | DEFER -> ADVANCE | reference=ADVANCE | equivalence=YES
+ESDSA-OPS02-03-E1L3 | DEFER -> ADVANCE | reference=ADVANCE | equivalence=YES
+ESDSA-OPS02-03-E1L1 | DEFER -> ADVANCE | reference=ADVANCE | equivalence=YES
+ESDSA-CSS02-02-E2L3 | DEFER -> ADVANCE | reference=DEFER | equivalence=NO
+ESDSA-CSS02-02-E2L1 | DEFER -> ADVANCE | reference=DEFER | equivalence=NO
+ESDSA-CSS02-02-E2L2 | DEFER -> DO_NOT_ADVANCE | reference=DO_NOT_ADVANCE | equivalence=NO
+ESDSA-CSS02-02-E3L2 | DEFER -> DO_NOT_ADVANCE | reference=DO_NOT_ADVANCE | equivalence=YES
+ESDSA-CSS02-02-E3L3 | DEFER -> DO_NOT_ADVANCE | reference=DO_NOT_ADVANCE | equivalence=YES
+ESDSA-CSS02-02-E3L1 | DEFER -> DO_NOT_ADVANCE | reference=DO_NOT_ADVANCE | equivalence=YES
+ESDSA-OPS02-03-E2L3 | DEFER -> ADVANCE | reference=DEFER | equivalence=NO
+ESDSA-OPS02-03-E2L2 | DEFER -> ADVANCE | reference=ADVANCE | equivalence=NO
+ESDSA-SWE02-01-E1L3 | DEFER -> ADVANCE | reference=ADVANCE | equivalence=YES
+ESDSA-SWE02-01-E1L1 | DEFER -> ADVANCE | reference=ADVANCE | equivalence=YES
+ESDSA-SWE02-01-E1L2 | DEFER -> ADVANCE | reference=ADVANCE | equivalence=YES
+ESDSA-OPS02-03-E3L1 | DEFER -> DO_NOT_ADVANCE | reference=DO_NOT_ADVANCE | equivalence=YES
+ESDSA-OPS02-03-E3L3 | DEFER -> DO_NOT_ADVANCE | reference=DO_NOT_ADVANCE | equivalence=YES
+ESDSA-OPS02-03-E3L2 | DEFER -> DO_NOT_ADVANCE | reference=DO_NOT_ADVANCE | equivalence=YES
+ESDSA-OPS01-01-E3L2 | DEFER -> DO_NOT_ADVANCE | reference=DO_NOT_ADVANCE | equivalence=YES
+ESDSA-OPS01-01-E3L1 | DEFER -> DO_NOT_ADVANCE | reference=DO_NOT_ADVANCE | equivalence=YES
+ESDSA-OPS01-01-E3L3 | DEFER -> DO_NOT_ADVANCE | reference=DO_NOT_ADVANCE | equivalence=YES
+ESDSA-SWE03-01-E2L1 | DEFER -> ADVANCE | reference=DEFER | equivalence=UNCERTAIN
+ESDSA-SWE03-01-E2L2 | DEFER -> ADVANCE | reference=DEFER | equivalence=UNCERTAIN
+
+LIMITATIONS
+- Development evaluation only; no held-out data.
+- Reference decisions are provisional.
+- Text verification does not establish substantive evidence sufficiency.
+- NO and UNCERTAIN groups are not certified stable; the gate is simply not applied.
+- The three variants are correlated within scenario families.
+- Changes were specified after examining development diagnostic failures.

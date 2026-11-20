@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-99AA2BFD02768B69",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0274c94827fb2ad6016b0029622d1c87d0849d0724b77c3cfa",
+  "annotated_utc": "2026-11-20T11:05:09.622741+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "SWE02-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d begin with the service’s traces and logs, because they should show whether the time is being spent in the application, the database, or an outbound dependency. I’d also look at the release timing so I can see whether the slowdown appeared after the recent deployment.",
+        "rationale": "This explicitly identifies relevant technical evidence sources for the performance issue: traces, logs, and deployment timing."
+      },
+      {
+        "criterion_id": "SWE02-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "If the traces show the requests are spending more time in one area, I’d dig into that area and compare it with the deployment window. If I saw a big jump in database latency, for example, I’d investigate queries and pool usage; if the external calls looked slow, I’d review those calls and timeouts.",
+        "rationale": "This proposes checks that differentiate among application, database, and third-party dependency causes by comparing observed slowdown patterns and investigating the corresponding area."
+      },
+      {
+        "criterion_id": "SWE02-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d use whatever pattern appears most consistently to decide what to keep following up on, and I’d avoid spreading effort across every possible cause at once.",
+        "rationale": "This connects repeated or consistent patterns in the evidence to deciding which line of investigation to continue, showing how observations inform diagnostic prioritization."
+      }
+    ],
+    "annotation_notes": "The answer is concise but clearly addresses all three criteria: sources, discriminating checks, and using observed patterns to guide further investigation."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

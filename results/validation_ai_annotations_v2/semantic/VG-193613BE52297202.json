@@ -1,0 +1,20 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "SEMANTIC_EQUIVALENCE",
+  "blinded_id": "VG-193613BE52297202",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_02664408101e543d016b000c04e53c87d0bb7cd4951e72477b",
+  "annotated_utc": "2026-11-20T08:59:50.623996+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "semantic_equivalence": "YES",
+    "material_differences": "",
+    "equivalence_rationale": "All three responses preserve the same decision-relevant evidence for prioritisation: they identify deadline/urgency and operational risk as the basis for priority-setting, keep the customer dispatch moving while ensuring the materials inspection happens to avoid production problems, and treat training as the most flexible task when staffing is limited. They also all state that priorities would be reviewed and adjusted if new information emerges, with team communication maintained. The differences are mainly in detail and phrasing, not in materially different priorities, trade-offs, or reprioritisation commitments."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-6D164AF78F26B708",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_06a6e093b1abfa85016b002bfdd73087d0b3eebb20784644c8",
+  "annotated_utc": "2026-11-20T11:16:15.406766+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "OPS01-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d first review the day’s plan against the new timing and see what is now most time-sensitive. The orders close to deadline would need a fresh look, and I’d also check whether the early delivery can be received without disrupting the dock.",
+        "rationale": "This explicitly uses urgency (most time-sensitive, close to deadline) and dependency/impact considerations (whether the early delivery can be received without disrupting the dock) to set priorities."
+      },
+      {
+        "criterion_id": "OPS01-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "If there’s capacity, I’d try to fit both into the day by tightening the schedule and moving some lower-priority tasks later.",
+        "rationale": "This shows trade-off reasoning by balancing competing tasks, using available capacity, and deferring lower-priority work to accommodate higher-priority items."
+      },
+      {
+        "criterion_id": "OPS01-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d first review the day’s plan against the new timing",
+        "rationale": "This clearly states that the candidate reassesses the plan in response to changed timing, which is a direct reprioritisation."
+      }
+    ],
+    "annotation_notes": "The answer is concise but sufficiently demonstrates reassessing priorities, considering urgency/dependencies, and making trade-offs in response to changed conditions."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-FC6F89343BB58CEE",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0e2226add03e07d3016b000c027e2887d0afc7c9e5d7507020",
+  "annotated_utc": "2026-11-20T08:59:48.532515+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "OPS01-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d use deadline and risk to sort them out. The dispatch needs to stay on track, and the materials inspection matters to protect production.",
+        "rationale": "The answer identifies urgency/deadline and risk, and also refers to the inspection protecting production, which indicates an important dependency on production."
+      },
+      {
+        "criterion_id": "OPS01-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d use deadline and risk to sort them out. The dispatch needs to stay on track, and the materials inspection matters to protect production. Training would be the most flexible if staffing is tight.",
+        "rationale": "The candidate explains prioritisation choices by weighing deadline pressure, risk to production, and flexibility of training relative to the other tasks."
+      },
+      {
+        "criterion_id": "OPS01-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "If new information comes in, I’d review the plan and adjust as needed, with the team kept informed.",
+        "rationale": "This directly states that the candidate would reassess the plan and adjust priorities when new information changes the situation."
+      }
+    ],
+    "annotation_notes": ""
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

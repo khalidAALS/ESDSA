@@ -1,0 +1,75 @@
+{
+  "experiment": "ESDSA_VALIDATION_GENERATION_V1",
+  "partition": "VALIDATION",
+  "family_id": "ESDSA-OPS04-03",
+  "run_sha256": "7c25cef5d058ed5a719822ec010d64b25e510ea954a3d3258c5d55b42c8e7978",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "response_id": "resp_074325a6a918879c016aff9232b11887d09bf56dc3684eac08",
+  "response_status": "completed",
+  "usage": {
+    "input_tokens": 737,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      }
+    },
+    "output_tokens": 1116,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 1853
+  },
+  "raw_output_text": "{\"responses\":[{\"condition\":\"SUFFICIENT\",\"variant\":\"CANONICAL\",\"answer\":\"I’d start by treating it as a potential early warning rather than assuming it’s harmless. First I’d look for other signals that help me judge whether the drift is real: trend data, the time the readings went missing, whether the missing sensors are clustered in one area, and whether any related KPIs or alarms are moving in the same direction. I’d compare what is still available against the expected operating range and the normal pattern from the last stable period.\\n\\nIf the available data shows a sustained drift, or the missing readings affect a critical part of the system so I can’t confirm the condition safely, I’d escalate rather than wait for a local report. I’d contact the local team and the responsible technical owner with the facts I have, note what is missing, and ask them to verify the equipment and confirm the operating state. After that I’d keep monitoring for whether the readings recover, the trend stabilizes, or the condition worsens, and I’d follow up until I have a clear response and next step.\"},{\"condition\":\"SUFFICIENT\",\"variant\":\"CONVERSATIONAL\",\"answer\":\"I’d treat that as something to watch closely, not something to ignore just because nobody’s called it in yet. I’d check the trend on the readings we do have, look at how long the sensors have been missing, and see whether other indicators around the same equipment are moving too. That helps me tell whether this is a real drift or just a data gap.\\n\\nIf the pattern is continuing or I can’t get enough data to be confident the operation is still in range, I’d escalate. I’d loop in the local team and the right owner with the evidence I’ve got, ask them to validate the condition on site, and then keep an eye on whether they respond and whether the readings come back to normal.\"},{\"condition\":\"SUFFICIENT\",\"variant\":\"CONCISE\",\"answer\":\"I’d review the available trend data, check how long the readings have been missing, and look for any related alarms or process changes. If the drift looks sustained or the missing data prevents a safe read on the condition, I’d escalate to the local team and the responsible owner, then follow up until they confirm the state and next action.\"},{\"condition\":\"INSUFFICIENT\",\"variant\":\"CANONICAL\",\"answer\":\"I’d first pull the live dashboard and see whether the readings that are still coming in are moving steadily or just fluctuating briefly. I’d also check the recent history to understand whether the missing sensors are a new issue or something that has happened before. If there were another system or log that gave context, I’d use that as well.\\n\\nFrom there I’d probably keep monitoring for a bit while I tried to see whether the values settle back into range. If the local team still hadn’t reported anything, I’d want to have more certainty before making a decision, especially if the system had a lot of normal variation. I’d document what I saw and keep an eye on it until there was a clearer picture.\"},{\"condition\":\"INSUFFICIENT\",\"variant\":\"CONVERSATIONAL\",\"answer\":\"I’d look at the live readings and the recent trend first, and I’d check whether the missing sensors are part of a pattern or just an isolated gap. I’d also compare it with any other logs or dashboards that might give me more context.\\n\\nIf it still looked a bit uncertain, I’d keep watching it for a while and see if the system settles down on its own before jumping in. I’d make a note of what I found, but I’d want to be sure there was a real issue before I pushed it further.\"},{\"condition\":\"INSUFFICIENT\",\"variant\":\"CONCISE\",\"answer\":\"I’d check the trend, the missing-data pattern, and any supporting logs, then keep monitoring until I had a clearer view. If it stayed uncertain, I’d document it and watch for more evidence before deciding on escalation.\"},{\"condition\":\"NEGATIVE\",\"variant\":\"CANONICAL\",\"answer\":\"I’d mainly wait for the local team to raise it, because if they haven’t reported a problem yet, I’d assume the system is probably still within acceptable limits. I might glance at the dashboard from time to time, but I wouldn’t want to escalate on partial data unless the alarms were clearly confirmed.\\n\\nWith missing sensor readings, I’d usually hold off until the instruments recovered or someone on site validated the issue. If the local team continued to say everything was fine, I’d take that as the best indication and avoid involving others unnecessarily, since too many escalations can create noise.\"},{\"condition\":\"NEGATIVE\",\"variant\":\"CONVERSATIONAL\",\"answer\":\"Honestly, I’d let the local team take the lead here. If they haven’t said there’s a problem, I’d probably just keep an eye on the dashboard and not do much else until the missing readings clear up.\\n\\nI wouldn’t escalate off a partial signal unless it became really obvious, because I’d rather avoid creating extra noise when the site hasn’t flagged anything themselves.\"},{\"condition\":\"NEGATIVE\",\"variant\":\"CONCISE\",\"answer\":\"I’d mostly wait for the local team to report it and only act if the alarms became obvious. With missing readings, I’d hold off on escalation until the data came back or the site confirmed a real issue.\"}]}",
+  "responses": [
+    {
+      "condition": "SUFFICIENT",
+      "variant": "CANONICAL",
+      "answer": "I’d start by treating it as a potential early warning rather than assuming it’s harmless. First I’d look for other signals that help me judge whether the drift is real: trend data, the time the readings went missing, whether the missing sensors are clustered in one area, and whether any related KPIs or alarms are moving in the same direction. I’d compare what is still available against the expected operating range and the normal pattern from the last stable period.\n\nIf the available data shows a sustained drift, or the missing readings affect a critical part of the system so I can’t confirm the condition safely, I’d escalate rather than wait for a local report. I’d contact the local team and the responsible technical owner with the facts I have, note what is missing, and ask them to verify the equipment and confirm the operating state. After that I’d keep monitoring for whether the readings recover, the trend stabilizes, or the condition worsens, and I’d follow up until I have a clear response and next step."
+    },
+    {
+      "condition": "SUFFICIENT",
+      "variant": "CONVERSATIONAL",
+      "answer": "I’d treat that as something to watch closely, not something to ignore just because nobody’s called it in yet. I’d check the trend on the readings we do have, look at how long the sensors have been missing, and see whether other indicators around the same equipment are moving too. That helps me tell whether this is a real drift or just a data gap.\n\nIf the pattern is continuing or I can’t get enough data to be confident the operation is still in range, I’d escalate. I’d loop in the local team and the right owner with the evidence I’ve got, ask them to validate the condition on site, and then keep an eye on whether they respond and whether the readings come back to normal."
+    },
+    {
+      "condition": "SUFFICIENT",
+      "variant": "CONCISE",
+      "answer": "I’d review the available trend data, check how long the readings have been missing, and look for any related alarms or process changes. If the drift looks sustained or the missing data prevents a safe read on the condition, I’d escalate to the local team and the responsible owner, then follow up until they confirm the state and next action."
+    },
+    {
+      "condition": "INSUFFICIENT",
+      "variant": "CANONICAL",
+      "answer": "I’d first pull the live dashboard and see whether the readings that are still coming in are moving steadily or just fluctuating briefly. I’d also check the recent history to understand whether the missing sensors are a new issue or something that has happened before. If there were another system or log that gave context, I’d use that as well.\n\nFrom there I’d probably keep monitoring for a bit while I tried to see whether the values settle back into range. If the local team still hadn’t reported anything, I’d want to have more certainty before making a decision, especially if the system had a lot of normal variation. I’d document what I saw and keep an eye on it until there was a clearer picture."
+    },
+    {
+      "condition": "INSUFFICIENT",
+      "variant": "CONVERSATIONAL",
+      "answer": "I’d look at the live readings and the recent trend first, and I’d check whether the missing sensors are part of a pattern or just an isolated gap. I’d also compare it with any other logs or dashboards that might give me more context.\n\nIf it still looked a bit uncertain, I’d keep watching it for a while and see if the system settles down on its own before jumping in. I’d make a note of what I found, but I’d want to be sure there was a real issue before I pushed it further."
+    },
+    {
+      "condition": "INSUFFICIENT",
+      "variant": "CONCISE",
+      "answer": "I’d check the trend, the missing-data pattern, and any supporting logs, then keep monitoring until I had a clearer view. If it stayed uncertain, I’d document it and watch for more evidence before deciding on escalation."
+    },
+    {
+      "condition": "NEGATIVE",
+      "variant": "CANONICAL",
+      "answer": "I’d mainly wait for the local team to raise it, because if they haven’t reported a problem yet, I’d assume the system is probably still within acceptable limits. I might glance at the dashboard from time to time, but I wouldn’t want to escalate on partial data unless the alarms were clearly confirmed.\n\nWith missing sensor readings, I’d usually hold off until the instruments recovered or someone on site validated the issue. If the local team continued to say everything was fine, I’d take that as the best indication and avoid involving others unnecessarily, since too many escalations can create noise."
+    },
+    {
+      "condition": "NEGATIVE",
+      "variant": "CONVERSATIONAL",
+      "answer": "Honestly, I’d let the local team take the lead here. If they haven’t said there’s a problem, I’d probably just keep an eye on the dashboard and not do much else until the missing readings clear up.\n\nI wouldn’t escalate off a partial signal unless it became really obvious, because I’d rather avoid creating extra noise when the site hasn’t flagged anything themselves."
+    },
+    {
+      "condition": "NEGATIVE",
+      "variant": "CONCISE",
+      "answer": "I’d mostly wait for the local team to report it and only act if the alarms became obvious. With missing readings, I’d hold off on escalation until the data came back or the site confirmed a real issue."
+    }
+  ],
+  "validation_status": "STRUCTURE_PASSED"
+}

@@ -1,0 +1,53 @@
+SCORING-ONLY VS ESDSA V2 — DEVELOPMENT COMPARISON
+
+FULL 108 RESPONSES
+scoring_only: actionable=79/108; coverage=73.1%; disagreements=8; rate=10.1%; unsupported_ADVANCE=6; deferrals_against_actionable_reference=19
+evidence_aware: actionable=105/108; coverage=97.2%; disagreements=15; rate=14.3%; unsupported_ADVANCE=12; deferrals_against_actionable_reference=0
+integrated_esdsa_v2: actionable=100/108; coverage=92.6%; disagreements=13; rate=13.0%; unsupported_ADVANCE=10; deferrals_against_actionable_reference=4
+
+EXACT 100 ESDSA-RETAINED CASES
+scoring_only: actionable=77/100; coverage=77.0%; disagreements=8; rate=10.4%; unsupported_ADVANCE=6; deferrals_against_actionable_reference=17
+evidence_aware: actionable=100/100; coverage=100.0%; disagreements=13; rate=13.0%; unsupported_ADVANCE=10; deferrals_against_actionable_reference=0
+integrated_esdsa_v2: actionable=100/100; coverage=100.0%; disagreements=13; rate=13.0%; unsupported_ADVANCE=10; deferrals_against_actionable_reference=0
+
+BOTH POLICIES ACTIONABLE — SAME CASES
+scoring_only: actionable=77/77; coverage=100.0%; disagreements=8; rate=10.4%; unsupported_ADVANCE=6; deferrals_against_actionable_reference=0
+evidence_aware: actionable=77/77; coverage=100.0%; disagreements=7; rate=9.1%; unsupported_ADVANCE=5; deferrals_against_actionable_reference=0
+integrated_esdsa_v2: actionable=77/77; coverage=100.0%; disagreements=7; rate=9.1%; unsupported_ADVANCE=5; deferrals_against_actionable_reference=0
+
+EXACT SCORING-ACTIONABLE CASES
+scoring_only: actionable=79/79; coverage=100.0%; disagreements=8; rate=10.1%; unsupported_ADVANCE=6; deferrals_against_actionable_reference=0
+evidence_aware: actionable=79/79; coverage=100.0%; disagreements=7; rate=8.9%; unsupported_ADVANCE=5; deferrals_against_actionable_reference=0
+integrated_esdsa_v2: actionable=77/79; coverage=97.5%; disagreements=7; rate=9.1%; unsupported_ADVANCE=5; deferrals_against_actionable_reference=2
+
+PAIRED COMPARISON
+{
+  "both_actionable_count": 77,
+  "scoring_wrong_esdsa_correct": 1,
+  "scoring_correct_esdsa_wrong": 0,
+  "both_wrong": 7,
+  "scoring_defers_esdsa_acts": 23,
+  "esdsa_defers_scoring_acts": 2
+}
+
+RANDOM MATCHED-COUNT SENSITIVITY
+{
+  "scoring_actionable_count": 79,
+  "esdsa_actionable_pool": 100,
+  "draws": 10000,
+  "mean_esdsa_disagreements": 10.2411,
+  "percentile_2_5": 7,
+  "percentile_97_5": 13,
+  "fraction_esdsa_fewer_disagreements_than_scoring": 0.0318,
+  "fraction_esdsa_equal_disagreements_to_scoring": 0.0767,
+  "warning": "Matched-count random sampling is descriptive. It does not compare the same retained cases or represent a deployable policy. Its percentiles are not confidence intervals."
+}
+
+LIMITATIONS
+- Reference labels are provisional, not independent ground truth.
+- Only 12 scenario families are represented.
+- The 108 responses and their variants are correlated.
+- ESDSA v2 was refined after development diagnostics.
+- Comparison of actionable error rates involves selective coverage.
+- Random matched-count sampling is not a usable deferral rule.
+- No claim of statistically established superiority is warranted.

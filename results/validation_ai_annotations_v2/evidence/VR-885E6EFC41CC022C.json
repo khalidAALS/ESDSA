@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-885E6EFC41CC022C",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_049b69d1da7922fc016b000e9d456887d0bc25670f5e5acfc5",
+  "annotated_utc": "2026-11-20T09:10:55.400619+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "SWE03-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d first dig in just enough to make sure we know what’s actually causing it — reproduce it, check the logs, and see whether it’s tied to the same code path for those users.",
+        "rationale": "The candidate describes investigation steps and identifies a plausible cause tied to a specific code path for the affected users."
+      },
+      {
+        "criterion_id": "SWE03-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "If the quick patch really addresses that root cause, I’d take it, but only after checking it against the other feature so we don’t solve one problem and create another. If that patch looks risky, I’d go with the narrower fix that directly changes the logic we’ve identified instead of reaching for something broader.",
+        "rationale": "The candidate explicitly links the correction choice to the investigated root cause and the identified logic."
+      },
+      {
+        "criterion_id": "SWE03-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "That way the correction lines up with the actual defect, which is what makes it effective.",
+        "rationale": "This directly explains why the correction is appropriate: it matches the actual defect and therefore should be effective."
+      }
+    ],
+    "annotation_notes": "The answer shows investigation, cause-to-fix alignment, and a brief justification for effectiveness while also weighing release risk."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-3C1EDFB8D2B8AA7A",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0ee75e43de87b1fa016b002a718b2487d09ee4a02df961d25f",
+  "annotated_utc": "2026-11-20T11:09:40.292141+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "OPS03-C1",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I’d lean on the facilities supervisor’s word that the room is ready",
+        "rationale": "This explicitly privileges one source’s word over the conflicting operational information from the technical support team, rather than integrating relevant evidence from both sources to support the readiness update."
+      },
+      {
+        "criterion_id": "OPS03-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "while the tech team continues working on the audiovisual problem.",
+        "rationale": "This identifies the technical support team as the responsible party for the audiovisual issue and indicates an active dependency that must be resolved for full readiness."
+      },
+      {
+        "criterion_id": "OPS03-C3",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "If it turns out to matter more than expected, I can always update them later.",
+        "rationale": "The update is justified by deferring uncertainty rather than by explaining the readiness decision with relevant operational evidence, which weakens traceable, evidence-based reasoning."
+      }
+    ],
+    "annotation_notes": "The answer shows some coordination awareness, but it relies on one party’s assertion and proposes a provisional update instead of clearly basing the readiness status on balanced operational evidence from both teams."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

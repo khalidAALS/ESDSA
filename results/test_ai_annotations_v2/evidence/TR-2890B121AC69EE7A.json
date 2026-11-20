@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-2890B121AC69EE7A",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0375c8d32ae450aa016b002c10622887d0b4c11bf18da1851f",
+  "annotated_utc": "2026-11-20T11:16:34.554499+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "SWE01-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d ask the users to hard refresh or clear their cache and, if that fixes it for some of them",
+        "rationale": "This shows the candidate would test a specific condition and observe whether the dashboard issue reproduces or changes, which is sufficient evidence of reproduction/characterisation."
+      },
+      {
+        "criterion_id": "SWE01-C2",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "but I wouldn’t spend much time comparing working and failing cases up front since that can slow things down when the likely cause is already obvious.",
+        "rationale": "The candidate explicitly deprioritizes comparing working and failing cases, which directly conflicts with the criterion of comparing failure conditions with functioning behaviour."
+      },
+      {
+        "criterion_id": "SWE01-C3",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I’d probably lean toward the browser cache first, because dashboards often hold onto old data.",
+        "rationale": "This indicates the candidate starts from a preferred cause based on general intuition rather than systematically using observations to narrow plausible causes."
+      }
+    ],
+    "annotation_notes": "The answer includes some diagnostic action, but it is biased toward a presumed cause and explicitly avoids upfront comparison of failing versus working cases."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

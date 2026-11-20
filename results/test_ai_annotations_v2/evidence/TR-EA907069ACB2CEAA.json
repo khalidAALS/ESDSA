@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-EA907069ACB2CEAA",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_074a3cd1fec593cf016b002beb638487d0859d77b97aa0c2ed",
+  "annotated_utc": "2026-11-20T11:15:57.921950+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "CSS04-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d tell the customer that I can see the ticket was marked resolved because a fix was applied, but I understand they’re still seeing the issue, so we shouldn’t treat it as fully closed yet. I’d apologize for the inconvenience, ask them to confirm what they’re seeing now and any recent steps they tried, and let them know I’m going to re-open or escalate it for review.",
+        "rationale": "This clearly explains the proposed action in understandable terms: acknowledge the situation, request current details, and state the next internal step."
+      },
+      {
+        "criterion_id": "CSS04-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I wouldn’t promise an exact fix time, but I would explain that the next update depends on what we find from their latest test and any technical follow-up.",
+        "rationale": "This sets a justified expectation by avoiding an exact timeline and tying updates to diagnostic follow-up rather than making unsupported promises."
+      },
+      {
+        "criterion_id": "CSS04-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "Then I’d set a clear check-in point, such as asking them to try the service again after the next update and reply with confirmation, and I’d make sure we follow up with them until we know the service is working for them.",
+        "rationale": "This provides a concrete mechanism for confirmation and ongoing follow-up, satisfying the criterion."
+      }
+    ],
+    "annotation_notes": "The answer is aligned with all three criteria and contains explicit follow-up and expectation-setting language."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

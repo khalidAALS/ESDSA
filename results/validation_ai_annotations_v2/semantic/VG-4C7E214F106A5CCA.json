@@ -1,0 +1,20 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "SEMANTIC_EQUIVALENCE",
+  "blinded_id": "VG-4C7E214F106A5CCA",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_06242a7b30c8878a016b000c716f9887d0ac68bbb2f043e7b7",
+  "annotated_utc": "2026-11-20T09:01:39.472978+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "semantic_equivalence": "YES",
+    "material_differences": "None that appear decision-relevant under the three criteria. All three responses check order status, offer an address change when still editable, avoid promising it when the order is too far along, and mention handling mismatched records with review/flagging.",
+    "equivalence_rationale": "Across A, B, and C the core resolution logic is preserved: assess the order’s fulfilment stage, offer the address change only when feasible, propose alternatives such as cancellation/reorder when it is likely too late, and recognise uncertain or inconsistent records as a case for review/escalation. None adds a materially different commitment, constraint, or omission that would plausibly change the criterion-level evidence assessment."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

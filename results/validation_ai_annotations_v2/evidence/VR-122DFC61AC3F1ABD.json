@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-122DFC61AC3F1ABD",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_004ebfbb6b974820016b000d0edf6c87d0b7eca4156a0e2091",
+  "annotated_utc": "2026-11-20T09:04:17.268762+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "CSS02-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d ask a few targeted questions so I can understand the pattern of the discrepancies.",
+        "rationale": "This explicitly shows the candidate will request information needed to understand the issue, and the questions are targeted to the billing discrepancies."
+      },
+      {
+        "criterion_id": "CSS02-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d review the billing records available in our approved systems to see what I can confirm. I’d note any mismatches between the records and what the customer is reporting",
+        "rationale": "The candidate distinguishes between information confirmed in approved records and the customer’s report, showing source verification and separation of facts from assumptions."
+      },
+      {
+        "criterion_id": "CSS02-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "If I needed more detail from the customer, I’d keep the request focused on the specific charges or dates involved and avoid asking for anything unrelated.",
+        "rationale": "This demonstrates proportionate collection by limiting requests to relevant details and avoiding unrelated information."
+      }
+    ],
+    "annotation_notes": "The answer addresses the urgent account change while still gathering issue-specific information, but the key evidence for the criteria is the targeted, source-aware, and limited questioning approach."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

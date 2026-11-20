@@ -1,0 +1,75 @@
+{
+  "experiment": "ESDSA_VALIDATION_GENERATION_V1",
+  "partition": "VALIDATION",
+  "family_id": "ESDSA-OPS01-05",
+  "run_sha256": "e37e20f9af09bb41b652bd85522db9236c59f55dd896bd6c4b76d419386a6907",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "response_id": "resp_06d809fa101742cf016aff919ec36887d0adc56eea25808b94",
+  "response_status": "completed",
+  "usage": {
+    "input_tokens": 761,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      }
+    },
+    "output_tokens": 1227,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 1988
+  },
+  "raw_output_text": "{\"responses\":[{\"condition\":\"SUFFICIENT\",\"variant\":\"CANONICAL\",\"answer\":\"I’d start by looking at urgency, business impact, and any dependencies between the tasks. In this case, I’d treat the materials inspection as the first decision point because it protects production from a potential quality problem. If there’s a risk the batch is non-conforming, it could stop the line or create rework, so I’d get that checked quickly and involve the right person if needed.\\n\\nAt the same time, I’d assess the customer order against the agreed dispatch deadline. If dispatch is close to the cutoff, I’d keep that moving in parallel as much as possible, because missing an external commitment has immediate customer impact. Training is important, but if staffing is tight, I’d look to reschedule it or split attendance if that is workable, since it is usually the least time-critical of the three.\\n\\nIf new information changes the picture, I’d reprioritise straight away. For example, if the inspection finds a serious issue, I’d pause or adjust production plans and communicate the impact to dispatch and any affected stakeholders. If the order becomes more urgent than expected, I’d shift people to protect the deadline and move the training to another slot. I’d keep the team informed so everyone knows why the plan changed.\"},{\"condition\":\"SUFFICIENT\",\"variant\":\"CONVERSATIONAL\",\"answer\":\"I’d rank them by what’s most urgent and what would cause the biggest knock-on effect. First I’d push the inspection, because if that batch has a quality issue it affects everything downstream. Then I’d keep the customer order moving, since there’s a promised deadline and I wouldn’t want to miss that. Training matters too, but if we’re short on staff I’d see if it can be moved or trimmed without affecting compliance.\\n\\nIf something new comes up, I’d switch the plan quickly. Say the inspection flags a problem — I’d stop using that batch and update production and dispatch immediately. Or if the dispatch deadline suddenly tightens, I’d move people onto that and reschedule the training. The main thing is to base the decision on the risk, the deadline, and what each task depends on.\"},{\"condition\":\"SUFFICIENT\",\"variant\":\"CONCISE\",\"answer\":\"I’d prioritise by urgency and impact: inspect the materials first because it protects production, then protect the customer dispatch because of the deadline, and fit training around those two if staff are limited.\\n\\nIf the situation changes, I’d reassess immediately. For example, if the inspection finds a defect, I’d stop the relevant production flow and update dispatch plans; if the customer deadline tightens, I’d move resources to that and reschedule training.\"},{\"condition\":\"INSUFFICIENT\",\"variant\":\"CANONICAL\",\"answer\":\"I’d first check which task has the nearest hard deadline and which one carries the biggest operational risk. In practice, I’d probably make sure the customer order is still on track for dispatch, while also arranging the inspection so we don’t release bad materials into production. Training is important, but I’d treat it as the most flexible if staff are stretched.\\n\\nIf the inspection raised a concern, I’d want to understand how serious it was before changing the plan. Depending on that, I might bring in another person or adjust the sequence of work so we can keep things moving. I’d also keep the team updated if anything shifted during the day.\"},{\"condition\":\"INSUFFICIENT\",\"variant\":\"CONVERSATIONAL\",\"answer\":\"I’d look at the deadline and the risk involved. The customer order would need to stay moving, but I’d also want the materials checked so we don’t build on a bad batch. Training is the easiest one to move if we’re short on people.\\n\\nIf something new came up, I’d review it and see whether we needed to change the plan or get extra help. I’d update the team and make sure the work stayed aligned with whatever was most pressing at the time.\"},{\"condition\":\"INSUFFICIENT\",\"variant\":\"CONCISE\",\"answer\":\"I’d use deadline and risk to sort them out. The dispatch needs to stay on track, and the materials inspection matters to protect production. Training would be the most flexible if staffing is tight.\\n\\nIf new information comes in, I’d review the plan and adjust as needed, with the team kept informed.\"},{\"condition\":\"NEGATIVE\",\"variant\":\"CANONICAL\",\"answer\":\"I’d try to keep everyone moving on all three, and I’d usually let the team focus on the customer order first because it’s the most visible. If that means the inspection has to wait a bit, I’d accept that unless someone specifically told me there was a serious issue. Training would happen if there was any spare time, but I wouldn’t want it to slow the day down.\\n\\nIf new information came in, I’d probably stick with the original plan unless it was obviously urgent. I find it better not to keep changing priorities too often, because that can create confusion and slow people down.\"},{\"condition\":\"NEGATIVE\",\"variant\":\"CONVERSATIONAL\",\"answer\":\"I’d probably just push the dispatch through first so we don’t upset the customer, and then fit the inspection in afterwards if we can. I’d leave the training alone unless the day got really quiet, because stopping to reshuffle things too much can waste time.\\n\\nIf something changed, I’d only switch things around if it was a major problem. Otherwise I’d rather keep the team on the plan we already started so we don’t lose momentum.\"},{\"condition\":\"NEGATIVE\",\"variant\":\"CONCISE\",\"answer\":\"I’d keep the customer order as the main focus and leave the inspection until after that unless there was a clear problem. Training would only happen if there was time left. I’d avoid changing the plan unless the disruption was major, so the team can stay on what they started.\"}]}",
+  "responses": [
+    {
+      "condition": "SUFFICIENT",
+      "variant": "CANONICAL",
+      "answer": "I’d start by looking at urgency, business impact, and any dependencies between the tasks. In this case, I’d treat the materials inspection as the first decision point because it protects production from a potential quality problem. If there’s a risk the batch is non-conforming, it could stop the line or create rework, so I’d get that checked quickly and involve the right person if needed.\n\nAt the same time, I’d assess the customer order against the agreed dispatch deadline. If dispatch is close to the cutoff, I’d keep that moving in parallel as much as possible, because missing an external commitment has immediate customer impact. Training is important, but if staffing is tight, I’d look to reschedule it or split attendance if that is workable, since it is usually the least time-critical of the three.\n\nIf new information changes the picture, I’d reprioritise straight away. For example, if the inspection finds a serious issue, I’d pause or adjust production plans and communicate the impact to dispatch and any affected stakeholders. If the order becomes more urgent than expected, I’d shift people to protect the deadline and move the training to another slot. I’d keep the team informed so everyone knows why the plan changed."
+    },
+    {
+      "condition": "SUFFICIENT",
+      "variant": "CONVERSATIONAL",
+      "answer": "I’d rank them by what’s most urgent and what would cause the biggest knock-on effect. First I’d push the inspection, because if that batch has a quality issue it affects everything downstream. Then I’d keep the customer order moving, since there’s a promised deadline and I wouldn’t want to miss that. Training matters too, but if we’re short on staff I’d see if it can be moved or trimmed without affecting compliance.\n\nIf something new comes up, I’d switch the plan quickly. Say the inspection flags a problem — I’d stop using that batch and update production and dispatch immediately. Or if the dispatch deadline suddenly tightens, I’d move people onto that and reschedule the training. The main thing is to base the decision on the risk, the deadline, and what each task depends on."
+    },
+    {
+      "condition": "SUFFICIENT",
+      "variant": "CONCISE",
+      "answer": "I’d prioritise by urgency and impact: inspect the materials first because it protects production, then protect the customer dispatch because of the deadline, and fit training around those two if staff are limited.\n\nIf the situation changes, I’d reassess immediately. For example, if the inspection finds a defect, I’d stop the relevant production flow and update dispatch plans; if the customer deadline tightens, I’d move resources to that and reschedule training."
+    },
+    {
+      "condition": "INSUFFICIENT",
+      "variant": "CANONICAL",
+      "answer": "I’d first check which task has the nearest hard deadline and which one carries the biggest operational risk. In practice, I’d probably make sure the customer order is still on track for dispatch, while also arranging the inspection so we don’t release bad materials into production. Training is important, but I’d treat it as the most flexible if staff are stretched.\n\nIf the inspection raised a concern, I’d want to understand how serious it was before changing the plan. Depending on that, I might bring in another person or adjust the sequence of work so we can keep things moving. I’d also keep the team updated if anything shifted during the day."
+    },
+    {
+      "condition": "INSUFFICIENT",
+      "variant": "CONVERSATIONAL",
+      "answer": "I’d look at the deadline and the risk involved. The customer order would need to stay moving, but I’d also want the materials checked so we don’t build on a bad batch. Training is the easiest one to move if we’re short on people.\n\nIf something new came up, I’d review it and see whether we needed to change the plan or get extra help. I’d update the team and make sure the work stayed aligned with whatever was most pressing at the time."
+    },
+    {
+      "condition": "INSUFFICIENT",
+      "variant": "CONCISE",
+      "answer": "I’d use deadline and risk to sort them out. The dispatch needs to stay on track, and the materials inspection matters to protect production. Training would be the most flexible if staffing is tight.\n\nIf new information comes in, I’d review the plan and adjust as needed, with the team kept informed."
+    },
+    {
+      "condition": "NEGATIVE",
+      "variant": "CANONICAL",
+      "answer": "I’d try to keep everyone moving on all three, and I’d usually let the team focus on the customer order first because it’s the most visible. If that means the inspection has to wait a bit, I’d accept that unless someone specifically told me there was a serious issue. Training would happen if there was any spare time, but I wouldn’t want it to slow the day down.\n\nIf new information came in, I’d probably stick with the original plan unless it was obviously urgent. I find it better not to keep changing priorities too often, because that can create confusion and slow people down."
+    },
+    {
+      "condition": "NEGATIVE",
+      "variant": "CONVERSATIONAL",
+      "answer": "I’d probably just push the dispatch through first so we don’t upset the customer, and then fit the inspection in afterwards if we can. I’d leave the training alone unless the day got really quiet, because stopping to reshuffle things too much can waste time.\n\nIf something changed, I’d only switch things around if it was a major problem. Otherwise I’d rather keep the team on the plan we already started so we don’t lose momentum."
+    },
+    {
+      "condition": "NEGATIVE",
+      "variant": "CONCISE",
+      "answer": "I’d keep the customer order as the main focus and leave the inspection until after that unless there was a clear problem. Training would only happen if there was time left. I’d avoid changing the plan unless the disruption was major, so the team can stay on what they started."
+    }
+  ],
+  "validation_status": "STRUCTURE_PASSED"
+}

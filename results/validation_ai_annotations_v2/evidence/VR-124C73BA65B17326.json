@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-124C73BA65B17326",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_02fb3d1edf8937ae016b000d4ad43087d083c2267d47387067",
+  "annotated_utc": "2026-11-20T09:05:16.659034+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "SWE02-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "First I’d look at the job run history, timing metrics, application logs, and any traces or alerts around the slow runs to see where the extra time is being spent.",
+        "rationale": "This explicitly identifies multiple technical evidence sources relevant to diagnosing the delay."
+      },
+      {
+        "criterion_id": "SWE02-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "Then I’d compare slow runs with normal ones to check whether the delay lines up with a particular input pattern, a specific code path, or a dependency call.\n\nFrom there I’d test the leading hypotheses one at a time.",
+        "rationale": "This proposes distinguishing checks across competing causes and testing hypotheses individually."
+      },
+      {
+        "criterion_id": "SWE02-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "Once I see the pattern, I’d use that to narrow the conclusion. If the slow runs consistently coincide with certain input characteristics, that points to data-related work; if they track a code change or one specific processing stage, that suggests the application; and if the job is waiting on an external call or retrying, that would indicate the dependency.",
+        "rationale": "This explicitly maps observed patterns to diagnostic conclusions about likely causes."
+      }
+    ],
+    "annotation_notes": "The answer provides clear, concrete investigative steps and interprets findings into likely root-cause categories."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

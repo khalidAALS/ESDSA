@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-BAFDF661AB1ACE20",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0d125e46a82ea35e016b00299ca8f887d0a7e279e1f2276228",
+  "annotated_utc": "2026-11-20T11:06:07.248270+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "OPS01-C1",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "passage": "",
+        "rationale": "The answer mentions the vehicle issue, earlier delivery, and customer orders, but does not clearly identify urgency, impact, or dependencies as criteria for deciding priorities. It mostly describes keeping the schedule stable rather than analysing those factors."
+      },
+      {
+        "criterion_id": "OPS01-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "changing too much can create more confusion than it solves",
+        "rationale": "The candidate gives a clear trade-off reason for not reshuffling immediately: they weigh the disruption of changing the schedule against the situation at hand."
+      },
+      {
+        "criterion_id": "OPS01-C3",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I’d probably keep the original schedule as much as possible so the team isn’t thrown off.",
+        "rationale": "This explicitly indicates reluctance to reassess and adjust priorities in response to the material changes, instead favouring keeping the original schedule despite the vehicle loss and early delivery."
+      }
+    ],
+    "annotation_notes": "The response provides some prioritisation rationale, but it does not substantively show a reassessment of priorities based on urgency/impact/dependencies."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

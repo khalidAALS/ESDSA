@@ -1,0 +1,18 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "SEMANTIC_EQUIVALENCE",
+  "blinded_id": "TG-224DD79BC6955DCB",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0baa0625b3c49427016b0029aeb2c487d0bd3a2da06906c77e",
+  "annotated_utc": "2026-11-20T11:06:24.448963+00:00",
+  "annotation": {
+    "semantic_equivalence": "NO",
+    "material_differences": "Response A says to ask for all available documents and rely on the system view even if details are unverified, then treat a likely promo match as the explanation. Response B similarly requests whatever the customer has, but explicitly says not to worry too much about checking every record or narrowing questions down, and to use the system look as enough. Response C goes further by asking for extensive documentation including payment details and says not to verify every detail unless the customer pushes back, because speed is the goal. These differences are material because they change the balance between relevant questioning, verification, and proportionate/authorised collection under the criteria.",
+    "equivalence_rationale": "The three responses overlap in a general tendency to gather customer-provided evidence and consult the system, but they do not preserve the same criterion-level evidence. A and B omit or weaken deliberate source verification and proportionate collection, while C adds broader information collection and an explicit speed-over-verification stance. Because the question asks what information is appropriate to request or verify, these shifts could change assessment under all three criteria."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

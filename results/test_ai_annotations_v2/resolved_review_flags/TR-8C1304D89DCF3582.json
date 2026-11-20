@@ -1,0 +1,6 @@
+{
+  "blinded_id": "TR-8C1304D89DCF3582",
+  "kind": "EVIDENCE",
+  "error": "FAIL: Supporting passage is not an exact substring of the candidate answer: CSS02-C2",
+  "status": "MANUAL_REVIEW_REQUIRED"
+}

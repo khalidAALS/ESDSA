@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-B2327F5445C77587",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_06fc4c3c410e9761016b001055088887d0b8ae59e8b5a4727c",
+  "annotated_utc": "2026-11-20T09:18:14.945168+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "OPS04-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d first pull the live dashboard and see whether the readings that are still coming in are moving steadily or just fluctuating briefly. I’d also check the recent history to understand whether the missing sensors are a new issue or something that has happened before. If there were another system or log that gave context, I’d use that as well.",
+        "rationale": "The candidate clearly identifies multiple kinds of information needed to monitor the situation: live readings, recent history, and additional logs/context."
+      },
+      {
+        "criterion_id": "OPS04-C2",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "passage": "",
+        "rationale": "The answer describes continued monitoring and wanting more certainty before deciding, but it does not clearly state a threshold or rule for when deviation requires action or escalation. Missing the trigger is not itself negative evidence."
+      },
+      {
+        "criterion_id": "OPS04-C3",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "passage": "",
+        "rationale": "The candidate mentions documenting and keeping an eye on the situation, but does not direct the issue to an appropriate owner or describe verifying a response from anyone. The answer does not establish escalation and follow-through."
+      }
+    ],
+    "annotation_notes": ""
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-5192E080BE9BBE8C",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0efccde9e21ed862016b002ab6e58087d095e467cbea8625b5",
+  "annotated_utc": "2026-11-20T11:10:49.533681+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "SWE03-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d trace duplicate requests by request ID and timing to see whether the client or server is retrying.",
+        "rationale": "The candidate proposes an investigation aimed at identifying a plausible cause of the duplicates—retrying by client or server—using request IDs and timing."
+      },
+      {
+        "criterion_id": "SWE03-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "Then I’d correct the path that’s reprocessing the upload: make the server write idempotent with a stable upload key or unique constraint, or add client idempotency handling if the client is resending.",
+        "rationale": "The candidate explicitly links the correction to the identified cause by choosing a fix based on whether the client or server is responsible for the retries/reprocessing."
+      },
+      {
+        "criterion_id": "SWE03-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "That’s the right fix because it blocks the second persistence step that creates the duplicate.",
+        "rationale": "The candidate explains why the correction addresses the problem: it prevents the second write that results in duplicate attachments."
+      }
+    ],
+    "annotation_notes": "The answer is concise but sufficiently establishes investigation, cause-based correction, and justification."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

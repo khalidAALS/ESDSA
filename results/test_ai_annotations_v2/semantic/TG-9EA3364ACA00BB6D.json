@@ -1,0 +1,18 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "SEMANTIC_EQUIVALENCE",
+  "blinded_id": "TG-9EA3364ACA00BB6D",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_093c95ff9bb59216016b002b5def9c87d086848b1a156801f6",
+  "annotated_utc": "2026-11-20T11:13:35.895265+00:00",
+  "annotation": {
+    "semantic_equivalence": "YES",
+    "material_differences": "None that are likely to change the criterion-level evidence: all three state that a fix was applied, that confirmation is still needed from the customer’s current experience, that the customer should report what they are seeing, and that no specific outcome or timing should be promised while follow-up updates are provided.",
+    "equivalence_rationale": "Across CSS04-C1, C2, and C3, A, B, and C preserve the same operational commitments: they clearly explain the situation, manage expectations by avoiding unsupported promises, and describe a follow-up mechanism based on the customer’s next report and continued updates. Differences are only in wording, apology phrasing, and level of detail, which do not materially alter the evidence."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

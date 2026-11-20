@@ -1,0 +1,20 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "SEMANTIC_EQUIVALENCE",
+  "blinded_id": "VG-F6E592C3FEFCDAF0",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0011c38651cefb78016b00113716f887d083e5f73264d96903",
+  "annotated_utc": "2026-11-20T09:22:00.739700+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "semantic_equivalence": "YES",
+    "material_differences": "",
+    "equivalence_rationale": "All three responses preserve the same decision-relevant evidence for resolution judgment: they verify key facts before choosing a remedy, tie the action to policy/eligibility rather than promising an immediate refund, and escalate when information is insufficient or an exception/approval is needed. C adds a customer-updating detail, and B lists more specific facts and remedy examples, but these are elaborations rather than materially different commitments. No response changes the core operational stance under the three criteria."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

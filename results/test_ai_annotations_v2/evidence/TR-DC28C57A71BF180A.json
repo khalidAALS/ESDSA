@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-DC28C57A71BF180A",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_056c98324a41f471016b002c259b2887d089f155ea96003407",
+  "annotated_utc": "2026-11-20T11:16:55.110534+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "SWE01-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d collect a few examples",
+        "rationale": "This explicitly indicates gathering concrete instances of the problem to characterize and reproduce it."
+      },
+      {
+        "criterion_id": "SWE01-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "compare affected and unaffected users",
+        "rationale": "This directly states comparing failing cases with working ones, matching the criterion."
+      },
+      {
+        "criterion_id": "SWE01-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "inspect both the browser requests and backend responses. That should help identify whether the stale figures are coming from the client or the service",
+        "rationale": "The answer shows a methodical check of multiple layers and explicitly uses the observations to narrow the cause to client versus service."
+      }
+    ],
+    "annotation_notes": "The answer is concise but clearly describes a structured diagnostic approach and comparison between failing and working cases."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

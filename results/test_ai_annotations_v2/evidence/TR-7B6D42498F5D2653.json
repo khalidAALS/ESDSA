@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-7B6D42498F5D2653",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0e981ae639e38360016b002ac0317c87d0b394c4293aea21d6",
+  "annotated_utc": "2026-11-20T11:10:58.686698+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "CSS01-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d ask the customer to describe exactly what they can’t do now—for example, whether they can’t sign in, can’t access certain content, or can’t use shared features—so I can define the actual failure.",
+        "rationale": "The candidate explicitly describes how they would establish the specific problem the customer is experiencing by asking what they cannot do and identifying the actual failure."
+      },
+      {
+        "criterion_id": "CSS01-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "Then I’d confirm the impact: which users are affected, what access changed, and whether the issue is blocking work or just limiting one function.",
+        "rationale": "The candidate clearly states they would determine which users are affected and whether the issue is blocking work or limiting a function, which identifies the affected service/outcome."
+      },
+      {
+        "criterion_id": "CSS01-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "Once I understand that, I’d restate the problem in neutral terms, such as: shared subscription access is unavailable for one or more authorised users after an access change, and we need to verify whether it was intentional or accidental before deciding next steps.",
+        "rationale": "The candidate explicitly says they would restate the problem in neutral terms before deciding next steps, which demonstrates summarising/defining the issue prior to resolution."
+      }
+    ],
+    "annotation_notes": ""
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

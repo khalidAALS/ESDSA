@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-7BE9D6E7803F64AA",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_064013c777f875b7016b000e5de58087d091cededab85f258c",
+  "annotated_utc": "2026-11-20T09:09:52.219874+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "SWE02-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d start by checking the app logs against the monitoring data and then look at traces and recent deploys to see what changed.",
+        "rationale": "The candidate names multiple relevant technical evidence sources for investigating the failure: application logs, monitoring data, traces, and recent deploys."
+      },
+      {
+        "criterion_id": "SWE02-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "If it’s still fuzzy, I’d break it down by request type or load level to see whether the failures are all the same or if they’re coming from different places.",
+        "rationale": "This proposes checks that distinguish between alternative causes by segmenting failures by request type or load level and comparing whether they share the same pattern or origin."
+      },
+      {
+        "criterion_id": "SWE02-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d work with the team to narrow down which part of the service was involved and use that to decide where to dig next.",
+        "rationale": "The candidate describes using observations to narrow the implicated part of the service and guide the next diagnostic step, which connects evidence to a diagnostic conclusion."
+      }
+    ],
+    "annotation_notes": "The answer is concise but clearly addresses all three criteria at a basic level."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

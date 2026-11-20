@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-BD38B426E6E397E8",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0cb38da9a45cfb50016b002aaedbfc87d09b9331bac2031270",
+  "annotated_utc": "2026-11-20T11:10:41.370201+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "SWE03-C1",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "passage": "",
+        "rationale": "The answer discusses investigating retries, acknowledgements, and deduplication behavior, but it does not identify a specific plausible cause that is supported by investigation."
+      },
+      {
+        "criterion_id": "SWE03-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d make sure we have a correction around the message handling path rather than changing the customer-facing workflow",
+        "rationale": "This explicitly links the proposed correction to the message handling path, which is the area implicated by the duplicate deliveries."
+      },
+      {
+        "criterion_id": "SWE03-C3",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "passage": "",
+        "rationale": "The answer proposes a correction direction, but it does not explain why that correction would address the duplicate-confirmation problem."
+      }
+    ],
+    "annotation_notes": "The response shows cautious investigation and a tentative fix area, but it stops short of naming a concrete cause or justifying why the correction would resolve the issue."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

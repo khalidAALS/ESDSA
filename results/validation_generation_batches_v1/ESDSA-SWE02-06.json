@@ -1,0 +1,75 @@
+{
+  "experiment": "ESDSA_VALIDATION_GENERATION_V1",
+  "partition": "VALIDATION",
+  "family_id": "ESDSA-SWE02-06",
+  "run_sha256": "8ee088714902f05cf680d8902818d5eece0ed073268ca79d05635b96e488ecf2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "response_id": "resp_0a0beab58780549e016aff8c2aa25487d0869057d9cf88cc86",
+  "response_status": "completed",
+  "usage": {
+    "input_tokens": 739,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      }
+    },
+    "output_tokens": 1254,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 1993
+  },
+  "raw_output_text": "{\"responses\":[{\"condition\":\"SUFFICIENT\",\"variant\":\"CANONICAL\",\"answer\":\"I’d start by breaking the problem down into the three likely sources and collecting evidence from each one. First I’d look at the job run history, timing metrics, application logs, and any traces or alerts around the slow runs to see where the extra time is being spent. Then I’d compare slow runs with normal ones to check whether the delay lines up with a particular input pattern, a specific code path, or a dependency call.\\n\\nFrom there I’d test the leading hypotheses one at a time. For example, I’d check whether the same input batch size or record shape shows up in the delayed runs, whether a recent code or configuration change correlates with the slowdown, and whether the external service or database has higher latency or throttling during those runs. If possible, I’d reproduce it with a known input set and controlled dependency behavior so I can isolate the cause.\\n\\nOnce I see the pattern, I’d use that to narrow the conclusion. If the slow runs consistently coincide with certain input characteristics, that points to data-related work; if they track a code change or one specific processing stage, that suggests the application; and if the job is waiting on an external call or retrying, that would indicate the dependency. I’d want the final conclusion to come from repeated evidence, not a one-off observation.\"},{\"condition\":\"SUFFICIENT\",\"variant\":\"CONVERSATIONAL\",\"answer\":\"I’d basically investigate it from all three angles and compare the slow runs against the normal ones. I’d pull the job logs, timing breakdowns, traces if we have them, and any recent config or deployment changes. That helps me see whether the time is going into our own processing or whether we’re waiting on something external.\\n\\nThen I’d test a few specific hypotheses. I’d check if the slow runs always involve a certain kind of input, whether they started after a code or config change, and whether the dependency is slower or retrying when the delay happens. If I can, I’d try to reproduce it with a similar input and controlled external responses so I can isolate the cause.\\n\\nAfter that I’d line up the observations and see which explanation they actually support. If the pattern follows the input, that points to incoming data. If it follows one code path or a recent change, that points to the processing code. If the logs show waiting, retries, or higher latency from the dependency, then that’s probably where the delay is coming from.\"},{\"condition\":\"SUFFICIENT\",\"variant\":\"CONCISE\",\"answer\":\"I’d inspect run logs, traces, timings, and recent config or deployment changes, then compare slow runs with normal ones. I’d test whether the delay follows a specific input pattern, a code path/change, or higher latency from the external dependency. The conclusion would come from which pattern repeats across runs.\"},{\"condition\":\"INSUFFICIENT\",\"variant\":\"CANONICAL\",\"answer\":\"I’d begin by checking the job history and the main logs to see when the delay shows up. Then I’d compare a few slow runs with a few normal runs and look for any obvious differences in input volume or recent deployments. If there’s a clear pattern, that would give me a place to start.\\n\\nI’d also talk to the team that owns the external dependency to see if they’ve seen any issues around the same time. If nothing obvious shows up there, I’d probably focus on the processing code and look at the main execution path for anything unusual. I’d want to narrow it down based on what stands out in the logs and the run history.\"},{\"condition\":\"INSUFFICIENT\",\"variant\":\"CONVERSATIONAL\",\"answer\":\"I’d start with the job logs and the run history, then compare slow executions to the ones that finish on time. I’d look for obvious differences like input size or a recent release, and I’d also check whether the external dependency had any known incidents around those times.\\n\\nIf I didn’t see anything clear there, I’d dig more into the processing code and follow the main path through it. That would at least help me narrow down where to spend more time. I’d use whatever pattern shows up most clearly as the next step.\"},{\"condition\":\"INSUFFICIENT\",\"variant\":\"CONCISE\",\"answer\":\"I’d review the job logs and history, compare slow and normal runs, and look for obvious patterns in input size, releases, or dependency incidents. If nothing clear emerged, I’d dig into the main processing path to narrow down where the delay starts.\"},{\"condition\":\"NEGATIVE\",\"variant\":\"CANONICAL\",\"answer\":\"I’d probably start by assuming it’s the external dependency, since those issues are often intermittent. I’d check whether the dependency was down or slow during the delayed runs, and if there was any incident, I’d treat that as the main cause. If their status page looked fine, I’d maybe glance at the job logs, but I wouldn’t spend too long on the application itself unless the dependency checks came back clean.\\n\\nIf the pattern keeps happening, I’d still focus on the dependency first because inconsistent delays usually point there. Only if we completely rule that out would I move on to the input data or our code.\"},{\"condition\":\"NEGATIVE\",\"variant\":\"CONVERSATIONAL\",\"answer\":\"I’d mostly look at the external service first, because if the job is late sometimes, that usually means the dependency was having a bad day. I’d check the status page and any incident notes, and if there was an outage or slowdown, I’d take that as the explanation.\\n\\nI wouldn’t go deep into the input data or code unless the service looks totally normal. Otherwise it’s usually easier to assume the dependency is the bottleneck and move on.\"},{\"condition\":\"NEGATIVE\",\"variant\":\"CONCISE\",\"answer\":\"I’d check the external dependency first and, if its status looked bad, I’d treat that as the likely cause. I’d only look into the input or code if the dependency seemed completely normal.\"}]}",
+  "responses": [
+    {
+      "condition": "SUFFICIENT",
+      "variant": "CANONICAL",
+      "answer": "I’d start by breaking the problem down into the three likely sources and collecting evidence from each one. First I’d look at the job run history, timing metrics, application logs, and any traces or alerts around the slow runs to see where the extra time is being spent. Then I’d compare slow runs with normal ones to check whether the delay lines up with a particular input pattern, a specific code path, or a dependency call.\n\nFrom there I’d test the leading hypotheses one at a time. For example, I’d check whether the same input batch size or record shape shows up in the delayed runs, whether a recent code or configuration change correlates with the slowdown, and whether the external service or database has higher latency or throttling during those runs. If possible, I’d reproduce it with a known input set and controlled dependency behavior so I can isolate the cause.\n\nOnce I see the pattern, I’d use that to narrow the conclusion. If the slow runs consistently coincide with certain input characteristics, that points to data-related work; if they track a code change or one specific processing stage, that suggests the application; and if the job is waiting on an external call or retrying, that would indicate the dependency. I’d want the final conclusion to come from repeated evidence, not a one-off observation."
+    },
+    {
+      "condition": "SUFFICIENT",
+      "variant": "CONVERSATIONAL",
+      "answer": "I’d basically investigate it from all three angles and compare the slow runs against the normal ones. I’d pull the job logs, timing breakdowns, traces if we have them, and any recent config or deployment changes. That helps me see whether the time is going into our own processing or whether we’re waiting on something external.\n\nThen I’d test a few specific hypotheses. I’d check if the slow runs always involve a certain kind of input, whether they started after a code or config change, and whether the dependency is slower or retrying when the delay happens. If I can, I’d try to reproduce it with a similar input and controlled external responses so I can isolate the cause.\n\nAfter that I’d line up the observations and see which explanation they actually support. If the pattern follows the input, that points to incoming data. If it follows one code path or a recent change, that points to the processing code. If the logs show waiting, retries, or higher latency from the dependency, then that’s probably where the delay is coming from."
+    },
+    {
+      "condition": "SUFFICIENT",
+      "variant": "CONCISE",
+      "answer": "I’d inspect run logs, traces, timings, and recent config or deployment changes, then compare slow runs with normal ones. I’d test whether the delay follows a specific input pattern, a code path/change, or higher latency from the external dependency. The conclusion would come from which pattern repeats across runs."
+    },
+    {
+      "condition": "INSUFFICIENT",
+      "variant": "CANONICAL",
+      "answer": "I’d begin by checking the job history and the main logs to see when the delay shows up. Then I’d compare a few slow runs with a few normal runs and look for any obvious differences in input volume or recent deployments. If there’s a clear pattern, that would give me a place to start.\n\nI’d also talk to the team that owns the external dependency to see if they’ve seen any issues around the same time. If nothing obvious shows up there, I’d probably focus on the processing code and look at the main execution path for anything unusual. I’d want to narrow it down based on what stands out in the logs and the run history."
+    },
+    {
+      "condition": "INSUFFICIENT",
+      "variant": "CONVERSATIONAL",
+      "answer": "I’d start with the job logs and the run history, then compare slow executions to the ones that finish on time. I’d look for obvious differences like input size or a recent release, and I’d also check whether the external dependency had any known incidents around those times.\n\nIf I didn’t see anything clear there, I’d dig more into the processing code and follow the main path through it. That would at least help me narrow down where to spend more time. I’d use whatever pattern shows up most clearly as the next step."
+    },
+    {
+      "condition": "INSUFFICIENT",
+      "variant": "CONCISE",
+      "answer": "I’d review the job logs and history, compare slow and normal runs, and look for obvious patterns in input size, releases, or dependency incidents. If nothing clear emerged, I’d dig into the main processing path to narrow down where the delay starts."
+    },
+    {
+      "condition": "NEGATIVE",
+      "variant": "CANONICAL",
+      "answer": "I’d probably start by assuming it’s the external dependency, since those issues are often intermittent. I’d check whether the dependency was down or slow during the delayed runs, and if there was any incident, I’d treat that as the main cause. If their status page looked fine, I’d maybe glance at the job logs, but I wouldn’t spend too long on the application itself unless the dependency checks came back clean.\n\nIf the pattern keeps happening, I’d still focus on the dependency first because inconsistent delays usually point there. Only if we completely rule that out would I move on to the input data or our code."
+    },
+    {
+      "condition": "NEGATIVE",
+      "variant": "CONVERSATIONAL",
+      "answer": "I’d mostly look at the external service first, because if the job is late sometimes, that usually means the dependency was having a bad day. I’d check the status page and any incident notes, and if there was an outage or slowdown, I’d take that as the explanation.\n\nI wouldn’t go deep into the input data or code unless the service looks totally normal. Otherwise it’s usually easier to assume the dependency is the bottleneck and move on."
+    },
+    {
+      "condition": "NEGATIVE",
+      "variant": "CONCISE",
+      "answer": "I’d check the external dependency first and, if its status looked bad, I’d treat that as the likely cause. I’d only look into the input or code if the dependency seemed completely normal."
+    }
+  ],
+  "validation_status": "STRUCTURE_PASSED"
+}

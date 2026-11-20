@@ -1,0 +1,18 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "SEMANTIC_EQUIVALENCE",
+  "blinded_id": "TG-128C5CC35AABA0D5",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_001124f3823eb900016b00295bb7fc87d08aa5f7395065e3c4",
+  "annotated_utc": "2026-11-20T11:05:01.301781+00:00",
+  "annotation": {
+    "semantic_equivalence": "YES",
+    "material_differences": "",
+    "equivalence_rationale": "All three responses preserve the same decision-relevant evidence for the three criteria: they clearly explain that the replacement is accepted but awaiting warehouse confirmation, they avoid unsupported delivery-date promises while setting the expectation of later update, and they provide a follow-up mechanism via contact details/case reference/case number or recording contact details for proactive update. Differences in tone, phrasing, or minor wording do not change the criterion-level evidence."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

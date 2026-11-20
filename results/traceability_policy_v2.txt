@@ -1,0 +1,33 @@
+ESDSA V2 — TRACEABILITY POLICY COMPONENT TEST
+
+evidence_aware: coverage=97.2%; actionable=105; disagreements=15; disagreement_rate=14.3%; unsupported_ADVANCE=12; deferrals_against_actionable_reference=0
+traceability_v1: coverage=83.3%; actionable=90; disagreements=14; disagreement_rate=15.6%; unsupported_ADVANCE=11; deferrals_against_actionable_reference=15
+traceability_v2: coverage=96.3%; actionable=104; disagreements=15; disagreement_rate=14.4%; unsupported_ADVANCE=12; deferrals_against_actionable_reference=1
+
+CHANGED RESPONSES: 14
+Restored correct: 13
+Restored disagreements: 1
+Newly deferred: 0
+
+CHANGED RESPONSE DETAILS
+ESDSA-SWE02-01-E3L2 | DEFER -> DO_NOT_ADVANCE | reference=DO_NOT_ADVANCE | reason=VERIFIED_NEGATIVE_EVIDENCE
+ESDSA-SWE02-01-E3L1 | DEFER -> DO_NOT_ADVANCE | reference=DO_NOT_ADVANCE | reason=VERIFIED_NEGATIVE_EVIDENCE
+ESDSA-SWE02-01-E2L2 | DEFER -> ADVANCE | reference=ADVANCE | reason=ALL_POSITIVE_VERIFIED
+ESDSA-SWE02-01-E2L1 | DEFER -> ADVANCE | reference=ADVANCE | reason=ALL_POSITIVE_VERIFIED
+ESDSA-OPS02-03-E1L2 | DEFER -> ADVANCE | reference=ADVANCE | reason=ALL_POSITIVE_VERIFIED
+ESDSA-CSS02-02-E3L1 | DEFER -> DO_NOT_ADVANCE | reference=DO_NOT_ADVANCE | reason=VERIFIED_NEGATIVE_EVIDENCE
+ESDSA-SWE03-01-E3L1 | DEFER -> ADVANCE | reference=DO_NOT_ADVANCE | reason=ALL_POSITIVE_VERIFIED
+ESDSA-SWE02-01-E1L1 | DEFER -> ADVANCE | reference=ADVANCE | reason=ALL_POSITIVE_VERIFIED
+ESDSA-SWE02-01-E1L2 | DEFER -> ADVANCE | reference=ADVANCE | reason=ALL_POSITIVE_VERIFIED
+ESDSA-OPS02-03-E3L1 | DEFER -> DO_NOT_ADVANCE | reference=DO_NOT_ADVANCE | reason=VERIFIED_NEGATIVE_EVIDENCE
+ESDSA-OPS02-03-E3L3 | DEFER -> DO_NOT_ADVANCE | reference=DO_NOT_ADVANCE | reason=VERIFIED_NEGATIVE_EVIDENCE
+ESDSA-OPS02-03-E3L2 | DEFER -> DO_NOT_ADVANCE | reference=DO_NOT_ADVANCE | reason=VERIFIED_NEGATIVE_EVIDENCE
+ESDSA-OPS01-01-E3L2 | DEFER -> DO_NOT_ADVANCE | reference=DO_NOT_ADVANCE | reason=VERIFIED_NEGATIVE_EVIDENCE
+ESDSA-OPS01-01-E3L1 | DEFER -> DO_NOT_ADVANCE | reference=DO_NOT_ADVANCE | reason=VERIFIED_NEGATIVE_EVIDENCE
+
+LIMITATIONS
+- Development data only.
+- Provisional reference labels are not ground truth.
+- Only citation verification and decision gating are evaluated; substantive evidence classifications remain unchanged.
+- The stability gate is not applied in this experiment.
+- Verified excerpts may still be irrelevant or insufficient for their associated competencies.

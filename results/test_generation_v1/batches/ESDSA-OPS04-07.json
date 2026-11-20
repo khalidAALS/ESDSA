@@ -1,0 +1,63 @@
+{
+  "experiment": "ESDSA_TEST_GENERATION_V1",
+  "partition": "TEST",
+  "family_id": "ESDSA-OPS04-07",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0fd5a13bb59b6534016b0022fb964087d084d97bf92aacbe65",
+  "timestamp_utc": "2026-11-20T10:37:53.980574+00:00",
+  "run_sha256": "74f255b0512cb60bdf2a7c07b942bc0efde2b9af0233356e13fe5415a8371a74",
+  "scenario_sha256": "9d2280d8014612bdd263f5dd8daf8356efeac3fa7a7e4b0cd3c6f4fef932426a",
+  "rubric_sha256": "d230fd47c6705a86d858cb119f11403af5e40a60f0f4bc8e9c31bc2b61a9acba",
+  "responses": [
+    {
+      "condition": "SUFFICIENT",
+      "variant": "CANONICAL",
+      "answer": "I’d start by comparing the repair plan against the current milestones, so I can see exactly what has been completed, what is still outstanding, and whether the parts shortage affects any critical step. I’d ask for a current status from both the site manager and the contractor, including the latest ETA on parts, any workaround options, and the point at which the delay would actually threaten completion. If the shortage puts a milestone at risk or the expected completion date starts to slip, I’d escalate it to the right operations lead and make sure the next shift is updated with a revised plan rather than the original schedule. I’d then keep a close follow-up on the agreed actions, confirm who owns the next update, and check back until the blocker is resolved or a new timeline is formally accepted."
+    },
+    {
+      "condition": "SUFFICIENT",
+      "variant": "CONVERSATIONAL",
+      "answer": "I’d first line up the repair plan with what’s actually been done so far, because I’d want to know which milestones are complete and whether the parts issue is touching the critical path. Then I’d get a fresh update from the contractor and the site manager on the parts ETA, any temporary workaround, and whether the current date is still realistic. If it looks like we’re going to miss a key step or the schedule is no longer credible, I’d escalate it to the appropriate operations owner and make sure the next shift hears the updated status, not just the original plan. After that, I’d stay on it until there’s a confirmed fix or a revised schedule with clear ownership."
+    },
+    {
+      "condition": "SUFFICIENT",
+      "variant": "CONCISE",
+      "answer": "I’d check the repair milestones against the plan, confirm the parts ETA and any workaround, and see whether the shortage threatens the completion date. If a critical step is slipping or the date is no longer realistic, I’d escalate to the right owner and update the next shift on the revised status. Then I’d follow up until the blocker is cleared or the new timeline is confirmed."
+    },
+    {
+      "condition": "INSUFFICIENT",
+      "variant": "CANONICAL",
+      "answer": "I’d gather updates from both the site manager and the contractor and compare them with the repair plan so I can understand what has been completed and what is still pending. I’d ask for the latest view on the parts shortage, any workaround being considered, and whether either party sees a risk to the completion date. If the delay starts to look more serious, I’d make sure it is brought to the attention of the appropriate lead and that the next shift has the latest information. I’d also keep checking in until I had a clearer picture of whether the repair was still on track."
+    },
+    {
+      "condition": "INSUFFICIENT",
+      "variant": "CONVERSATIONAL",
+      "answer": "I’d start by getting both sides’ updates and lining them up with the repair plan, so I know what’s done and what’s still open. I’d want to hear the contractor’s view on the parts shortage and whether there’s any workaround, and I’d also check whether the site manager has seen any sign that the schedule is slipping. If it seems like the delay is becoming more serious, I’d pass that along to the right lead and make sure the next shift has the latest status. I’d keep monitoring it from there until I had a better sense of where things stood."
+    },
+    {
+      "condition": "INSUFFICIENT",
+      "variant": "CONCISE",
+      "answer": "I’d compare both updates with the repair plan, check the parts shortage impact, and keep an eye on whether the schedule still looks feasible. If the delay starts to look significant, I’d alert the appropriate lead and keep the next shift informed. I’d continue checking in until I had a clearer read on the situation."
+    },
+    {
+      "condition": "NEGATIVE",
+      "variant": "CANONICAL",
+      "answer": "I’d assume the site manager has the most current picture and keep the next shift working to the original schedule unless someone explicitly confirms the repair cannot be finished. I’d note the contractor’s parts concern, but I wouldn’t escalate right away because that can create unnecessary noise if the issue resolves on its own. I’d wait for a firm failure before involving higher management, then sort out the follow-up after the fact. That way the team avoids overreacting to what may just be a temporary delay."
+    },
+    {
+      "condition": "NEGATIVE",
+      "variant": "CONVERSATIONAL",
+      "answer": "I’d mostly go with the site manager’s update and keep the next shift moving on the original plan unless the contractor comes back with something definite. A parts shortage can sort itself out, so I wouldn’t jump into escalation too early or pull in extra people unless the repair actually misses its deadline. If it does become a real miss, I’d deal with the follow-up then. I’d rather not escalate something that might clear up by itself."
+    },
+    {
+      "condition": "NEGATIVE",
+      "variant": "CONCISE",
+      "answer": "I’d follow the site manager’s view and keep the original schedule unless the contractor proves the repair can’t finish. I wouldn’t escalate a parts concern until the delay is definite. If it slips, I’d handle the follow-up then."
+    }
+  ],
+  "raw_output": "{\"responses\":[{\"condition\":\"SUFFICIENT\",\"variant\":\"CANONICAL\",\"answer\":\"I’d start by comparing the repair plan against the current milestones, so I can see exactly what has been completed, what is still outstanding, and whether the parts shortage affects any critical step. I’d ask for a current status from both the site manager and the contractor, including the latest ETA on parts, any workaround options, and the point at which the delay would actually threaten completion. If the shortage puts a milestone at risk or the expected completion date starts to slip, I’d escalate it to the right operations lead and make sure the next shift is updated with a revised plan rather than the original schedule. I’d then keep a close follow-up on the agreed actions, confirm who owns the next update, and check back until the blocker is resolved or a new timeline is formally accepted.\"},{\"condition\":\"SUFFICIENT\",\"variant\":\"CONVERSATIONAL\",\"answer\":\"I’d first line up the repair plan with what’s actually been done so far, because I’d want to know which milestones are complete and whether the parts issue is touching the critical path. Then I’d get a fresh update from the contractor and the site manager on the parts ETA, any temporary workaround, and whether the current date is still realistic. If it looks like we’re going to miss a key step or the schedule is no longer credible, I’d escalate it to the appropriate operations owner and make sure the next shift hears the updated status, not just the original plan. After that, I’d stay on it until there’s a confirmed fix or a revised schedule with clear ownership.\"},{\"condition\":\"SUFFICIENT\",\"variant\":\"CONCISE\",\"answer\":\"I’d check the repair milestones against the plan, confirm the parts ETA and any workaround, and see whether the shortage threatens the completion date. If a critical step is slipping or the date is no longer realistic, I’d escalate to the right owner and update the next shift on the revised status. Then I’d follow up until the blocker is cleared or the new timeline is confirmed.\"},{\"condition\":\"INSUFFICIENT\",\"variant\":\"CANONICAL\",\"answer\":\"I’d gather updates from both the site manager and the contractor and compare them with the repair plan so I can understand what has been completed and what is still pending. I’d ask for the latest view on the parts shortage, any workaround being considered, and whether either party sees a risk to the completion date. If the delay starts to look more serious, I’d make sure it is brought to the attention of the appropriate lead and that the next shift has the latest information. I’d also keep checking in until I had a clearer picture of whether the repair was still on track.\"},{\"condition\":\"INSUFFICIENT\",\"variant\":\"CONVERSATIONAL\",\"answer\":\"I’d start by getting both sides’ updates and lining them up with the repair plan, so I know what’s done and what’s still open. I’d want to hear the contractor’s view on the parts shortage and whether there’s any workaround, and I’d also check whether the site manager has seen any sign that the schedule is slipping. If it seems like the delay is becoming more serious, I’d pass that along to the right lead and make sure the next shift has the latest status. I’d keep monitoring it from there until I had a better sense of where things stood.\"},{\"condition\":\"INSUFFICIENT\",\"variant\":\"CONCISE\",\"answer\":\"I’d compare both updates with the repair plan, check the parts shortage impact, and keep an eye on whether the schedule still looks feasible. If the delay starts to look significant, I’d alert the appropriate lead and keep the next shift informed. I’d continue checking in until I had a clearer read on the situation.\"},{\"condition\":\"NEGATIVE\",\"variant\":\"CANONICAL\",\"answer\":\"I’d assume the site manager has the most current picture and keep the next shift working to the original schedule unless someone explicitly confirms the repair cannot be finished. I’d note the contractor’s parts concern, but I wouldn’t escalate right away because that can create unnecessary noise if the issue resolves on its own. I’d wait for a firm failure before involving higher management, then sort out the follow-up after the fact. That way the team avoids overreacting to what may just be a temporary delay.\"},{\"condition\":\"NEGATIVE\",\"variant\":\"CONVERSATIONAL\",\"answer\":\"I’d mostly go with the site manager’s update and keep the next shift moving on the original plan unless the contractor comes back with something definite. A parts shortage can sort itself out, so I wouldn’t jump into escalation too early or pull in extra people unless the repair actually misses its deadline. If it does become a real miss, I’d deal with the follow-up then. I’d rather not escalate something that might clear up by itself.\"},{\"condition\":\"NEGATIVE\",\"variant\":\"CONCISE\",\"answer\":\"I’d follow the site manager’s view and keep the original schedule unless the contractor proves the repair can’t finish. I wouldn’t escalate a parts concern until the delay is definite. If it slips, I’d handle the follow-up then.\"}]}",
+  "input_tokens": 751,
+  "output_tokens": 1059,
+  "generation_conditions_are_reference_labels": false
+}

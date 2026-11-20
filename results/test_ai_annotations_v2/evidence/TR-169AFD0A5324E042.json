@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-169AFD0A5324E042",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_02539f4ef5c1910f016b002a47418087d08983d67cdd31c438",
+  "annotated_utc": "2026-11-20T11:08:57.433167+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "OPS03-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d compare the maintenance update, the system dependency, and the receiving team’s readiness",
+        "rationale": "The candidate explicitly uses multiple relevant operational sources to inform the decision, which demonstrates evidence integration."
+      },
+      {
+        "criterion_id": "OPS03-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "then confirm ownership with both teams. If the dependency is still real or the receiver isn’t ready, I’d hold the handover; if it’s only a system lag and everyone confirms completion, I’d proceed.",
+        "rationale": "The answer identifies the relevant parties, checks ownership, and addresses the dependency and readiness conditions needed to coordinate the handover."
+      },
+      {
+        "criterion_id": "OPS03-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "Either way, I’d document the checks, who confirmed what, and the reason for the decision.",
+        "rationale": "The candidate explains that the decision would be supported by documented checks and confirmations, providing traceability based on operational evidence."
+      }
+    ],
+    "annotation_notes": "The response directly addresses the scenario with evidence-based coordination across sources, stakeholders, and a documented decision rationale."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

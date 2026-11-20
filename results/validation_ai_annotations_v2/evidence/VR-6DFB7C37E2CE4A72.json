@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-6DFB7C37E2CE4A72",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_095b3f6126d4a672016b000e49d60087d0957816b2b456df8a",
+  "annotated_utc": "2026-11-20T09:09:32.048552+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "CSS04-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d clearly explain that I’m taking over the case, what I’m checking next, and what information I need from them, if anything.",
+        "rationale": "This explicitly describes a clear, understandable explanation of the next steps and what is needed from the customer."
+      },
+      {
+        "criterion_id": "CSS04-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I wouldn’t promise a fix before I’ve reviewed the complaint and spoken to the relevant team; instead, I’d give a realistic timeframe for the next update based on how long the investigation should take.",
+        "rationale": "This directly shows justified expectation management by avoiding unsupported promises and giving a realistic update timeframe."
+      },
+      {
+        "criterion_id": "CSS04-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d also agree a specific follow-up point, such as a callback or email by a certain time, and make sure the customer knows how to reach me if they need to add anything before then.",
+        "rationale": "This provides a concrete follow-up mechanism and status touchpoint, satisfying the criterion."
+      }
+    ],
+    "annotation_notes": "The answer addresses all three criteria with explicit, concrete follow-up communication practices."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

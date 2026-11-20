@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-53011C84E87C96BB",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0b4e6c9f7be7c240016b002bf01ba487d0ab90ca365f514dfd",
+  "annotated_utc": "2026-11-20T11:16:02.634890+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "SWE02-C1",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I’d only dig into logs or traces if the extra scaling still doesn’t help, because those can take a while to sort through.",
+        "rationale": "The answer deprioritizes logs and traces—the kinds of technical evidence that would help explain why work is accumulating—and instead focuses first on adding more capacity. This materially fails to identify relevant evidence for diagnosing the continuing delay."
+      },
+      {
+        "criterion_id": "SWE02-C2",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "passage": "",
+        "rationale": "The candidate proposes one main check, increasing worker count and concurrency, but does not clearly compare multiple plausible causes or describe checks that would distinguish between them. The answer suggests a single favored hypothesis rather than structured hypothesis testing."
+      },
+      {
+        "criterion_id": "SWE02-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "My assumption would be that the system is just under-provisioned for the spike pattern, so I’d adjust the worker count and concurrency first and use that to get the queue under control.",
+        "rationale": "The candidate explicitly interprets the observed delay as evidence of under-provisioning and ties that observation to a diagnostic conclusion about the likely cause."
+      }
+    ],
+    "annotation_notes": ""
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

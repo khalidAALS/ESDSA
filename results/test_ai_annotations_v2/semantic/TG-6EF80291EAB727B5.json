@@ -1,0 +1,18 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "SEMANTIC_EQUIVALENCE",
+  "blinded_id": "TG-6EF80291EAB727B5",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_06d7cf333323ab34016b002a992a0087d09a4d035dfad9f5a5",
+  "annotated_utc": "2026-11-20T11:10:20.482566+00:00",
+  "annotation": {
+    "semantic_equivalence": "NO",
+    "material_differences": "Response B omits the explicit “not to worry” reassurance and the claim that the replacement is basically on its way, but more importantly it does not preserve A/C’s stronger operational commitment to minimal proactive follow-up with updates only if something changes or there is a problem. C also adds an assumption that a likely delivery window can be based on normal turnaround and says the customer is effectively sorted, which is a stronger unsupported promise than B’s simpler “probably shipping soon.” These differences could affect expectation management and the follow-up mechanism criterion.",
+    "equivalence_rationale": "A and C both make stronger reassurance/expectation-setting claims and specify that follow-up will be withheld unless there is a problem or change, while B is shorter and less detailed. The differences are not just brevity: B’s omission of the “effectively sorted”/“basically on its way” framing and of the more explicit no-update-until-change policy means it does not fully preserve the same decision-relevant evidence on expectation management and follow-up."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

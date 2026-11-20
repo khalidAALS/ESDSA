@@ -1,0 +1,18 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "SEMANTIC_EQUIVALENCE",
+  "blinded_id": "TG-3CB6DB374F1D4B57",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0d4ba9f544c0707e016b002a0162b487d090557cfe99be4653",
+  "annotated_utc": "2026-11-20T11:07:48.519471+00:00",
+  "annotation": {
+    "semantic_equivalence": "NO",
+    "material_differences": "Response A is more cautious about uncertainty and suggests deferring confirmation to back office after refunding. Responses B and C more strongly commit to issuing the refund immediately despite unclear outage coverage, and B/C explicitly deprioritize confirming whether the customer’s location is covered. This changes the evidence for uncertainty handling and policy/authorisation constraints, because A at least preserves some check on coverage, while B/C present a firmer immediate-refund stance.",
+    "equivalence_rationale": "The three responses overlap in recommending a refund, but they do not preserve the same decision-relevant evidence. Under Option assessment, all favor refunding, yet A ties the action to later verification, whereas B and C frame the refund as the default even while facts remain unclear. Under Policy awareness, A implies a need to confirm whether the outage was covered before back-office validation, while B and C more explicitly sidestep that check. Under Uncertainty handling, A acknowledges unresolved coverage and routes it for confirmation; B and C reduce the role of additional information by saying not to spend time confirming and to fix issues later. These differences could plausibly change how the response is judged on evidence and constraint awareness, so they are not semantically equivalent."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

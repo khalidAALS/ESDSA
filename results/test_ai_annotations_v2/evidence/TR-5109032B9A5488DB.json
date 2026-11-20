@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-5109032B9A5488DB",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_015b072280ac66eb016b002a49ce5087d0bf3d4b5b853244e1",
+  "annotated_utc": "2026-11-20T11:08:59.864947+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "OPS03-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d pull together the maintenance update, the system status, and the receiving team’s confirmation, because I wouldn’t want to rely on just one of those.",
+        "rationale": "The candidate explicitly uses multiple relevant operational sources and indicates they will combine them to inform the assessment."
+      },
+      {
+        "criterion_id": "OPS03-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "Then I’d go back to the maintenance owner to pin down whether anything is still open, and I’d check with the receiving team on whether they’re ready to take it over or need anything else. If the system says there’s still a dependency, I’d verify whether that’s a real blocker or just a stale update.",
+        "rationale": "The candidate identifies the maintenance owner and receiving team as responsible parties, and directly addresses the dependency status and whether it blocks handover."
+      },
+      {
+        "criterion_id": "OPS03-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "Based on that, I’d either let the handover go ahead or hold it and explain why. I’d make sure the decision and the evidence behind it are recorded.",
+        "rationale": "The candidate says the decision will be based on the gathered evidence and that both the decision and evidence will be recorded, which demonstrates traceable, evidence-based justification."
+      }
+    ],
+    "annotation_notes": ""
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

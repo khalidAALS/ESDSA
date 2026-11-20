@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-04234DA141451BD3",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0b770a9fb452855a016b0029b0d64087d0ab80b832fcd4ea7c",
+  "annotated_utc": "2026-11-20T11:06:27.212115+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "SWE02-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d check the rollout timing",
+        "rationale": "This explicitly identifies a relevant technical source of evidence for the performance issue: deployment timing."
+      },
+      {
+        "criterion_id": "SWE02-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d only look at traces or database details if that didn’t fit at all.",
+        "rationale": "This shows a proposed check against alternative evidence sources, indicating some hypothesis-testing approach by comparing deployment timing with traces or database details."
+      },
+      {
+        "criterion_id": "SWE02-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "if the slowdown started around then, I’d consider that basically the lead.",
+        "rationale": "This connects an observation about timing to a diagnostic conclusion about where to focus further investigation."
+      }
+    ],
+    "annotation_notes": "The answer is narrow and somewhat biased toward deployment timing, but it still provides explicit evidence for the three requested criteria."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

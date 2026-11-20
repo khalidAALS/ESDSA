@@ -1,0 +1,20 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "SEMANTIC_EQUIVALENCE",
+  "blinded_id": "VG-92B4266B721CAB0C",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_04e40a590c809da4016b000d2d8ab087d09c9f022afc965c3d",
+  "annotated_utc": "2026-11-20T09:05:03.737432+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "semantic_equivalence": "NO",
+    "material_differences": "Response A adds a willingness to reprioritise only if there is an 'obviously urgent' change or a 'serious issue,' while B and C explicitly say they would avoid changing the plan unless the disruption/problem is major. More importantly, A frames inspection delay as acceptable unless told of a serious issue, B prioritises dispatch first and inspection after if possible, and C similarly makes dispatch the main focus; none of the responses explicitly weigh the inspection’s potential quality-risk or the dependency that inspection may need to happen before production. The answers therefore differ in how strongly they recognise inspection risk and in their threshold for reprioritisation.",
+    "equivalence_rationale": "All three responses broadly prioritise customer dispatch over inspection and training, and all say training is lowest priority and that priorities should only change for significant new information. However, they do not preserve the same criterion-level evidence: the question asks for urgency, impact, dependencies, and reassessment when conditions change. The responses mostly omit explicit dependency reasoning and quality-impact reasoning. A also introduces a somewhat different reprioritisation threshold ('obviously urgent'/'serious issue') compared with B and C ('major problem'/'major disruption'), but the main decision-relevant pattern remains similar. Because the evidence is close but not identical and some criteria are only weakly addressed, the safest classification is NO rather than YES."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

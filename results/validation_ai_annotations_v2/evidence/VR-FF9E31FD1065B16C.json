@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-FF9E31FD1065B16C",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_09bfd85c8da66c61016b000bcf129887d091e796f456409fa8",
+  "annotated_utc": "2026-11-20T08:58:57.470689+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "SWE04-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "For account permissions, I’d first retest the exact permission scenarios that were changed, including the cases that failed before, to confirm the fix really works.",
+        "rationale": "This explicitly says to retest the changed failing scenarios to confirm the fix, which matches verifying that the reported failure is resolved."
+      },
+      {
+        "criterion_id": "SWE04-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "Then I’d run a small but relevant set of regressions around nearby access flows, like role changes and any screens or APIs that depend on permission checks.\n\nFor search, I’d verify the changed search cases and then do a few regression checks on existing search behaviour, especially filters, ranking, and empty-result handling, because those are easy to disturb.",
+        "rationale": "The candidate clearly includes regression checks on nearby and existing behaviour, showing consideration of potential impact on previously working functionality."
+      },
+      {
+        "criterion_id": "SWE04-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "If I found something unexpected, I wouldn’t treat it as a pass just because the main fix looked good. I’d reproduce it, narrow down whether it’s in the new change or a nearby regression, and decide whether it blocks release or needs a follow-up based on severity and scope.",
+        "rationale": "This shows using verification findings to determine whether to block release or proceed with follow-up, which is direct outcome assessment."
+      }
+    ],
+    "annotation_notes": "The answer provides clear evidence for all three criteria through explicit testing and decision-making steps."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

@@ -1,0 +1,75 @@
+{
+  "experiment": "ESDSA_VALIDATION_GENERATION_V1",
+  "partition": "VALIDATION",
+  "family_id": "ESDSA-OPS01-09",
+  "run_sha256": "1ee14f9c784c4ed7612557c2aae4d488384d766af1b5f81fa650c0ebef6929ee",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "response_id": "resp_0478b2d96dca2293016aff91a8d44c87d082fc0f574b18ca39",
+  "response_status": "completed",
+  "usage": {
+    "input_tokens": 737,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      }
+    },
+    "output_tokens": 1234,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 1971
+  },
+  "raw_output_text": "{\"responses\":[{\"condition\":\"SUFFICIENT\",\"variant\":\"CANONICAL\",\"answer\":\"I’d start by separating the decision into urgency, impact, and dependencies. The delivery is time-sensitive, so I’d first confirm exactly how late it can be before the business impact becomes unacceptable, and whether there are any customer, contractual, or downstream process dependencies tied to it. At the same time, I’d treat the equipment safety concern as potentially higher risk until we know more, because a safety issue can affect people, assets, and the wider operation. I’d gather the minimum facts quickly: what the concern is, whether there’s an immediate hazard, whether the equipment is currently in use, and whether there’s a workaround or temporary containment. If there’s any credible sign of immediate danger, I’d stop or isolate the equipment and escalate straight away, while looking for an alternative way to protect the delivery. If the risk appears low but uncertain, I’d assign someone to investigate immediately while I keep the delivery moving with close monitoring and a defined cut-off point. I’d also keep the relevant stakeholders updated so we can replan as soon as the facts change. The key is to make the decision based on risk, dependency, and consequence, then revisit it as soon as we learn more.\"},{\"condition\":\"SUFFICIENT\",\"variant\":\"CONVERSATIONAL\",\"answer\":\"I’d weigh it by looking at three things: how urgent the delivery is, how serious the safety concern could be, and what depends on each one. First I’d get the basics fast — is there any immediate danger, is the equipment still being used, and how much room do we have before the delivery becomes a real problem? If the concern could put people or equipment at risk, I’d lean toward stopping or isolating that work straight away, because safety has to be protected before we push ahead. But I’d also try to limit the disruption by seeing whether there’s another way to keep the delivery on track, like using a different unit, rerouting work, or moving people onto another task. If the issue turns out not to be immediate but still needs checking, I’d have someone investigate right away while the delivery continues under a clear review point. And I’d keep reassessing as new information comes in, because the priority can change once we know more.\"},{\"condition\":\"SUFFICIENT\",\"variant\":\"CONCISE\",\"answer\":\"I’d judge it by urgency, operational impact, and any dependencies. I’d quickly confirm whether the safety concern could cause immediate harm or equipment failure, how much the delivery would be affected by a delay, and whether there’s a workaround. If the risk looks credible or immediate, I’d stop or isolate the equipment and escalate, then look for the safest way to protect the delivery. If the risk seems lower but unclear, I’d keep the delivery moving and send someone to investigate right away, with a clear point to reassess once we know more.\"},{\"condition\":\"INSUFFICIENT\",\"variant\":\"CANONICAL\",\"answer\":\"I’d first clarify what the delivery deadline is and how much the delay would affect the customer or the rest of the schedule. I’d also ask for the details of the equipment concern so I could understand whether it sounds minor or potentially serious. From there, I’d balance the likely operational impact of stopping against the impact of continuing, and I’d make sure the team knows which task to focus on first. If the situation changed, I’d revisit the plan and adjust it as needed. I’d want enough information before making a final call so we don’t react too quickly.\"},{\"condition\":\"INSUFFICIENT\",\"variant\":\"CONVERSATIONAL\",\"answer\":\"I’d want to get a bit more detail first — how tight the delivery timing is, what the equipment issue actually is, and who or what would be affected if we paused. Then I’d compare the impact of a delay with the impact of stopping work, and decide which one is likely to cause the bigger problem overall. If things shifted, I’d review the plan again and update the team. I’d try not to jump straight to a decision without enough facts.\"},{\"condition\":\"INSUFFICIENT\",\"variant\":\"CONCISE\",\"answer\":\"I’d check the deadline, the likely impact of a delay, and the details of the equipment concern, then compare the two risks. If the situation changed, I’d review the plan again. I’d want more facts before deciding.\"},{\"condition\":\"NEGATIVE\",\"variant\":\"CANONICAL\",\"answer\":\"I’d keep the delivery moving unless the equipment problem was already confirmed as severe. Delays can be very costly, so I’d prefer to stay on schedule and avoid stopping work based on a concern that might turn out to be minor. I’d note the issue and ask someone to look at it later, but I wouldn’t want to pull people off a critical delivery unless there was clear proof that the equipment was unsafe. In my view, it’s usually better to finish the time-sensitive task first and then deal with any investigation once the pressure is off. If the delivery slips, we may lose the bigger business opportunity, so I’d focus on avoiding that.\"},{\"condition\":\"NEGATIVE\",\"variant\":\"CONVERSATIONAL\",\"answer\":\"I’d probably keep the delivery going and deal with the equipment issue after, unless it was absolutely obvious that the equipment was dangerous. With incomplete information, I’d rather not lose the delivery because of a concern that might not amount to much. I’d log it and get someone to review it when we have a chance, but I wouldn’t stop a time-sensitive job unless there was something undeniable in front of us. I’d see the delivery as the main priority because the consequences of missing it are immediate.\"},{\"condition\":\"NEGATIVE\",\"variant\":\"CONCISE\",\"answer\":\"I’d keep the delivery going and only stop if the safety issue was clearly proven to be severe. If information is incomplete, I’d avoid disrupting the schedule and handle the investigation later. Missing the delivery would be the bigger risk.\"}]}",
+  "responses": [
+    {
+      "condition": "SUFFICIENT",
+      "variant": "CANONICAL",
+      "answer": "I’d start by separating the decision into urgency, impact, and dependencies. The delivery is time-sensitive, so I’d first confirm exactly how late it can be before the business impact becomes unacceptable, and whether there are any customer, contractual, or downstream process dependencies tied to it. At the same time, I’d treat the equipment safety concern as potentially higher risk until we know more, because a safety issue can affect people, assets, and the wider operation. I’d gather the minimum facts quickly: what the concern is, whether there’s an immediate hazard, whether the equipment is currently in use, and whether there’s a workaround or temporary containment. If there’s any credible sign of immediate danger, I’d stop or isolate the equipment and escalate straight away, while looking for an alternative way to protect the delivery. If the risk appears low but uncertain, I’d assign someone to investigate immediately while I keep the delivery moving with close monitoring and a defined cut-off point. I’d also keep the relevant stakeholders updated so we can replan as soon as the facts change. The key is to make the decision based on risk, dependency, and consequence, then revisit it as soon as we learn more."
+    },
+    {
+      "condition": "SUFFICIENT",
+      "variant": "CONVERSATIONAL",
+      "answer": "I’d weigh it by looking at three things: how urgent the delivery is, how serious the safety concern could be, and what depends on each one. First I’d get the basics fast — is there any immediate danger, is the equipment still being used, and how much room do we have before the delivery becomes a real problem? If the concern could put people or equipment at risk, I’d lean toward stopping or isolating that work straight away, because safety has to be protected before we push ahead. But I’d also try to limit the disruption by seeing whether there’s another way to keep the delivery on track, like using a different unit, rerouting work, or moving people onto another task. If the issue turns out not to be immediate but still needs checking, I’d have someone investigate right away while the delivery continues under a clear review point. And I’d keep reassessing as new information comes in, because the priority can change once we know more."
+    },
+    {
+      "condition": "SUFFICIENT",
+      "variant": "CONCISE",
+      "answer": "I’d judge it by urgency, operational impact, and any dependencies. I’d quickly confirm whether the safety concern could cause immediate harm or equipment failure, how much the delivery would be affected by a delay, and whether there’s a workaround. If the risk looks credible or immediate, I’d stop or isolate the equipment and escalate, then look for the safest way to protect the delivery. If the risk seems lower but unclear, I’d keep the delivery moving and send someone to investigate right away, with a clear point to reassess once we know more."
+    },
+    {
+      "condition": "INSUFFICIENT",
+      "variant": "CANONICAL",
+      "answer": "I’d first clarify what the delivery deadline is and how much the delay would affect the customer or the rest of the schedule. I’d also ask for the details of the equipment concern so I could understand whether it sounds minor or potentially serious. From there, I’d balance the likely operational impact of stopping against the impact of continuing, and I’d make sure the team knows which task to focus on first. If the situation changed, I’d revisit the plan and adjust it as needed. I’d want enough information before making a final call so we don’t react too quickly."
+    },
+    {
+      "condition": "INSUFFICIENT",
+      "variant": "CONVERSATIONAL",
+      "answer": "I’d want to get a bit more detail first — how tight the delivery timing is, what the equipment issue actually is, and who or what would be affected if we paused. Then I’d compare the impact of a delay with the impact of stopping work, and decide which one is likely to cause the bigger problem overall. If things shifted, I’d review the plan again and update the team. I’d try not to jump straight to a decision without enough facts."
+    },
+    {
+      "condition": "INSUFFICIENT",
+      "variant": "CONCISE",
+      "answer": "I’d check the deadline, the likely impact of a delay, and the details of the equipment concern, then compare the two risks. If the situation changed, I’d review the plan again. I’d want more facts before deciding."
+    },
+    {
+      "condition": "NEGATIVE",
+      "variant": "CANONICAL",
+      "answer": "I’d keep the delivery moving unless the equipment problem was already confirmed as severe. Delays can be very costly, so I’d prefer to stay on schedule and avoid stopping work based on a concern that might turn out to be minor. I’d note the issue and ask someone to look at it later, but I wouldn’t want to pull people off a critical delivery unless there was clear proof that the equipment was unsafe. In my view, it’s usually better to finish the time-sensitive task first and then deal with any investigation once the pressure is off. If the delivery slips, we may lose the bigger business opportunity, so I’d focus on avoiding that."
+    },
+    {
+      "condition": "NEGATIVE",
+      "variant": "CONVERSATIONAL",
+      "answer": "I’d probably keep the delivery going and deal with the equipment issue after, unless it was absolutely obvious that the equipment was dangerous. With incomplete information, I’d rather not lose the delivery because of a concern that might not amount to much. I’d log it and get someone to review it when we have a chance, but I wouldn’t stop a time-sensitive job unless there was something undeniable in front of us. I’d see the delivery as the main priority because the consequences of missing it are immediate."
+    },
+    {
+      "condition": "NEGATIVE",
+      "variant": "CONCISE",
+      "answer": "I’d keep the delivery going and only stop if the safety issue was clearly proven to be severe. If information is incomplete, I’d avoid disrupting the schedule and handle the investigation later. Missing the delivery would be the bigger risk."
+    }
+  ],
+  "validation_status": "STRUCTURE_PASSED"
+}

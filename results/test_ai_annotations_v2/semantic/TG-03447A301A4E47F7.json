@@ -1,0 +1,18 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "SEMANTIC_EQUIVALENCE",
+  "blinded_id": "TG-03447A301A4E47F7",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_048578ed86aed860016b00293bfc3487d0ad5c0b2f1698499c",
+  "annotated_utc": "2026-11-20T11:04:31.192721+00:00",
+  "annotation": {
+    "semantic_equivalence": "NO",
+    "material_differences": "Response A explicitly acknowledges the near-miss but says it would not escalate straight away and would change course if congestion worsens; Response B omits any mention of the near-miss and sets escalation only on repeat incident or actual harm; Response C similarly downplays the near-miss, but also adds a delayed fallback to make another change if waiting times remain high. These differences affect hazard recognition and the proportionality/timing of the risk response, especially given the scenario’s unresolved cause and reported near-miss.",
+    "equivalence_rationale": "Across the three responses, the core tendency is similar, but they do not preserve the same decision-relevant evidence. A includes a near-miss acknowledgement and conditional escalation tied to worsening conditions. B removes the near-miss entirely and raises the threshold for action to repeat incident or actual harm, which weakens evidence of recognizing an operational risk in the current situation. C adds a specific contingency to re-evaluate if delays persist, which is a more concrete response than B and slightly different from A’s 'wait and see' stance. Because these differences could change how the candidate is judged on identifying the hazard, considering consequences, and proposing an appropriate response, they are not semantically equivalent."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

@@ -1,0 +1,21 @@
+{
+  "experiment": "ESDSA_TEST_PREDICTIONS_LOCK_V1",
+  "status": "LOCKED",
+  "locked_utc": "2026-11-20T11:00:55.485712+00:00",
+  "dataset_sha256": "70ffbfaffe9d1e7170004e2668da90ddcfd955a3694d67e4265de3f3ae2a3be9",
+  "prediction_files": {
+    "evidence_aware": {
+      "file": "results/test_evaluator_predictions_v1/evidence_aware_test_v1.jsonl",
+      "records": 216,
+      "sha256": "40f272a94149371053dbe847d2659490778ad90a79f88529f9ef82cd4512a634"
+    },
+    "scoring_only": {
+      "file": "results/test_evaluator_predictions_v1/scoring_only_test_v1.jsonl",
+      "records": 216,
+      "sha256": "b1c2cbc67dd1ec98791cc19bf7a72d0ad92a71df51c1b7f9161436366ac52ccf"
+    }
+  },
+  "reference_labels_loaded": false,
+  "frozen_esdsa_policy_modified": false,
+  "note": "Preserves inference outputs before reference comparison."
+}

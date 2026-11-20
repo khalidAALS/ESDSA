@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-2DAF4F52F99D341E",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0d47e51386339047016b000e50b3a487d0ab635f36485b20df",
+  "annotated_utc": "2026-11-20T09:09:38.400328+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "CSS02-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "First I’d confirm the minimum details I need from the customer: which charges they believe are wrong, the dates or amounts involved, and any recent actions that might explain the discrepancies.",
+        "rationale": "This explicitly says the candidate would request details needed to understand the billing issue, and the examples given are directly relevant to diagnosing the discrepancies."
+      },
+      {
+        "criterion_id": "CSS02-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d also check the approved internal systems for anything I can verify on my side, like account status, recent changes, or posted transactions, and I’d be careful to label those as verified rather than assumed.",
+        "rationale": "The candidate clearly distinguishes information they can verify from assumptions by stating they will label checked items as verified rather than assumed."
+      },
+      {
+        "criterion_id": "CSS02-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "For anything I need from the customer, I’d only ask for information that’s directly relevant and can be shared safely through the approved support channel.",
+        "rationale": "This demonstrates proportionate collection by limiting requests to directly relevant information and indicates use of an approved channel, which supports authorized and appropriate gathering."
+      }
+    ],
+    "annotation_notes": "The answer addresses all three criteria directly and separately, with explicit limits on information collection and clear verification of internal-system facts."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

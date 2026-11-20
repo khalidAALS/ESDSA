@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-645D3E4B44D0154A",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_05831c1e9a68f75d016b0010a42ab087d09a6285450f18e6bc",
+  "annotated_utc": "2026-11-20T09:19:34.309873+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "SWE03-C1",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "even if we haven’t completely nailed down the cause yet",
+        "rationale": "The candidate explicitly says they would proceed without fully identifying the cause, which contradicts the criterion’s requirement to identify a plausible cause supported by investigation."
+      },
+      {
+        "criterion_id": "SWE03-C2",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I’d go with the fastest patch and keep the release moving",
+        "rationale": "The proposed correction is chosen for speed rather than being connected to any identified cause; the answer does not link the correction to a specific cause and explicitly proceeds despite not having nailed it down."
+      },
+      {
+        "criterion_id": "SWE03-C3",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "passage": "",
+        "rationale": "The answer does mention making a small change in the failing area, but it does not clearly explain why that correction would address the defect. It also lacks a substantive justification tying the fix to the problem mechanism."
+      }
+    ],
+    "annotation_notes": "The response emphasizes shipping quickly over investigation and root-cause linkage. It does not establish reasoned correction, and for the justification criterion it is too thin to count as explicit negative evidence."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-8C842C924CD5D808",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_090949a1e9206acf016b002aac1c8487d0879ecc39b4df1bca",
+  "annotated_utc": "2026-11-20T11:10:38.498579+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "SWE03-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d dig into the end-to-end flow and check retries, acknowledgements, and whether messages are being resent or deduplicated somewhere.",
+        "rationale": "This identifies plausible causes for the duplicate confirmations and shows the candidate would investigate them."
+      },
+      {
+        "criterion_id": "SWE03-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "If the duplicates are still happening, I’d lean toward fixing the messaging path instead of the order screen or notification text",
+        "rationale": "This links the proposed correction to the suspected messaging-path cause rather than unrelated parts of the system."
+      },
+      {
+        "criterion_id": "SWE03-C3",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "passage": "",
+        "rationale": "The answer suggests a correction direction, but it does not explain why fixing the messaging path would address the duplicate-message problem."
+      }
+    ],
+    "annotation_notes": ""
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

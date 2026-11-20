@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-1F58CC4A365798B0",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0b3b63fe9e2648e9016b000d7bcd1487d08ef329f3c11e48f1",
+  "annotated_utc": "2026-11-20T09:06:06.836484+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "CSS03-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "If it hasn’t moved too far yet, I’d try to change the address for them. If it’s already been packed or shipped, I’d check what our policy allows—maybe a carrier change or maybe it needs approval.",
+        "rationale": "The candidate evaluates the likely order status and proposes different resolutions based on that evidence, showing they would choose an appropriate option rather than using a one-size-fits-all response."
+      },
+      {
+        "criterion_id": "CSS03-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d check what our policy allows—maybe a carrier change or maybe it needs approval.",
+        "rationale": "This explicitly shows awareness of policy and possible approval constraints before offering a resolution, which reflects respect for authorization and service limits."
+      },
+      {
+        "criterion_id": "CSS03-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "if the order status doesn’t match across systems, I’d hold off and confirm that before I tell the customer what we can do.",
+        "rationale": "The candidate recognizes uncertainty in the order status and says they would pause to confirm before advising the customer, indicating additional information is needed."
+      }
+    ],
+    "annotation_notes": "The answer is concise but gives conditional decision logic tied to order status, policy, and status discrepancies."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

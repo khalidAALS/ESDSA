@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-AB45C0B01449E64C",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_04dac3854bd06cc7016b000bc341dc87d09b1607a05099426d",
+  "annotated_utc": "2026-11-20T08:58:45.577791+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "CSS01-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d start by separating the symptoms from the underlying issue. I’d ask the customer to confirm whether they’re mainly concerned that the order confirmation never arrived, whether they can see any order at all in their account, and whether the unfamiliar delivery address means the order may have been placed with the wrong details or possibly without their authorization.",
+        "rationale": "The answer explicitly identifies and probes the nature of the problem by distinguishing between missing confirmation, absence of an order, incorrect details, and possible unauthorized placement."
+      },
+      {
+        "criterion_id": "CSS01-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "In terms of priority, I’d treat the unexpected address as the most urgent part because it could affect delivery and account security, while I continue to verify whether the order was successfully created.",
+        "rationale": "This shows the candidate determining the affected outcome/service: delivery and account security are identified as the impacted areas, and the order creation status is being checked as the relevant service outcome."
+      },
+      {
+        "criterion_id": "CSS01-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "Then I’d summarize it back to them so we’re aligned on the exact problem before moving to the next step.",
+        "rationale": "The candidate explicitly states they would summarize the issue back to the customer before proceeding, which satisfies problem definition prior to resolution selection."
+      }
+    ],
+    "annotation_notes": ""
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

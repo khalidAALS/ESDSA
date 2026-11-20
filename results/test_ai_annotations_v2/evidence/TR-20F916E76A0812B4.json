@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-20F916E76A0812B4",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_01eae032749431a5016b002b3928d887d08ae60f58f63db7e6",
+  "annotated_utc": "2026-11-20T11:12:59.049951+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "SWE04-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d first make sure we have a build that contains the patch and then do a quick pass on the main invoice path to confirm it looks right.",
+        "rationale": "This explicitly says they would verify the main invoice path to confirm the reported issue is corrected."
+      },
+      {
+        "criterion_id": "SWE04-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "If the result is acceptable, I’d move it toward release and note any follow-up testing we should do after deployment on the related calculation flows.",
+        "rationale": "This shows awareness that other calculation flows may be affected and should be tested, indicating regression consideration."
+      },
+      {
+        "criterion_id": "SWE04-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "If the result is acceptable, I’d move it toward release",
+        "rationale": "This uses the verification result to determine the next action, namely proceeding toward release if acceptable."
+      }
+    ],
+    "annotation_notes": ""
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

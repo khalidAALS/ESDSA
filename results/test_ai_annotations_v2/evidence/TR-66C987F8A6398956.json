@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-66C987F8A6398956",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0f67a0774f7c54c6016b0029e9a54887d095561a53ce600fa8",
+  "annotated_utc": "2026-11-20T11:07:23.431771+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "SWE01-C1",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I wouldn’t put much effort into reproducing it without better repro steps this late in the day.",
+        "rationale": "The candidate explicitly deprioritizes reproduction/characterisation of the failure rather than describing how they would establish it."
+      },
+      {
+        "criterion_id": "SWE01-C2",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "passage": "",
+        "rationale": "The answer mentions checking for an outage and whether everything looks normal, but it does not clearly compare failing conditions against known working behaviour in a substantive way."
+      },
+      {
+        "criterion_id": "SWE01-C3",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "passage": "",
+        "rationale": "The candidate suggests only a high-level check and waiting for more examples; this does not clearly show a systematic process of using observations to narrow plausible causes."
+      }
+    ],
+    "annotation_notes": "The response shows limited investigation intent and explicitly avoids reproduction. It does not provide enough detail to confirm structured comparison or narrowing."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

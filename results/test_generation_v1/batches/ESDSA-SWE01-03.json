@@ -1,0 +1,63 @@
+{
+  "experiment": "ESDSA_TEST_GENERATION_V1",
+  "partition": "TEST",
+  "family_id": "ESDSA-SWE01-03",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_07e49c5d05be5b48016b002259754487d0b964be30652fda0d",
+  "timestamp_utc": "2026-11-20T10:35:13.425730+00:00",
+  "run_sha256": "7905aa88e026e8312e6fd389bfc5470d72afa727afbda21481b0364aefa2485f",
+  "scenario_sha256": "9d2280d8014612bdd263f5dd8daf8356efeac3fa7a7e4b0cd3c6f4fef932426a",
+  "rubric_sha256": "aed4c6ae571a27f490bb01bdfe83625322f0e5b919aa59498dd9160b0419028c",
+  "responses": [
+    {
+      "condition": "SUFFICIENT",
+      "variant": "CANONICAL",
+      "answer": "First I’d try to turn the report into something I can observe directly. I’d use the screenshot and timestamp to find the exact request in logs, then replay the search with similar inputs, user state, and timing to see whether it fails for me or only under certain conditions. After that I’d compare a failing request with a successful one: request parameters, auth/session state, response codes, backend logs, cache behaviour, and any feature flags or recent deploys around that time. That usually lets me narrow it down to whether the problem is in the frontend request, the search service, or the data layer before I decide what needs fixing. If I can’t reproduce it locally, I’d still use the evidence from production to isolate the pattern as much as possible before end of shift and hand over the exact observations I found."
+    },
+    {
+      "condition": "SUFFICIENT",
+      "variant": "CONVERSATIONAL",
+      "answer": "I’d start by trying to make sense of the report itself. With the screenshot and approximate time, I’d look at logs and analytics around that moment and try the same search flow with similar inputs to see if I can trigger it. Then I’d compare a bad case to a good one—same user or similar users if possible, response codes, query text, session details, and whether anything changed in the app around that time. That helps me narrow it down to whether it’s the search request, the backend, or something like caching or a deploy issue. Even if I don’t fully solve it before I leave, I’d want to leave behind a clear set of observations about when it happens and what’s different when it works."
+    },
+    {
+      "condition": "SUFFICIENT",
+      "variant": "CONCISE",
+      "answer": "I’d first try to reproduce it from the report details by checking logs at the reported time and running similar searches. Then I’d compare failing versus successful requests—query, session, response, and recent deploys or feature flags—to narrow where the break is. That would tell me whether it’s the client, search service, or data path before I decide the fix."
+    },
+    {
+      "condition": "INSUFFICIENT",
+      "variant": "CANONICAL",
+      "answer": "I’d begin by pulling up the screenshot, the approximate time, and any logs or monitoring data around that window so I can see what the user was likely doing. I’d check whether there were any deploys, config changes, or spikes in errors at the same time, and I’d look for whether the search page is generally healthy for other traffic. If I can get enough context, I’d hand over the likely area to the next engineer with the evidence I found and the timestamps I used so they can continue from there."
+    },
+    {
+      "condition": "INSUFFICIENT",
+      "variant": "CONVERSATIONAL",
+      "answer": "I’d start with the screenshot and the time, then look at logs and monitoring around that period to see if anything stands out. I’d also check whether there were releases or config changes near then, and whether the search service was otherwise healthy. If I can’t get to a clean reproduction before the end of my shift, I’d at least leave the next person with the timestamps and the areas that look suspicious."
+    },
+    {
+      "condition": "INSUFFICIENT",
+      "variant": "CONCISE",
+      "answer": "I’d review the screenshot, timestamp, logs, and any deploys or config changes around that time, then hand over the most likely area if I can’t finish. I’d leave the timestamps and observations for the next engineer."
+    },
+    {
+      "condition": "NEGATIVE",
+      "variant": "CANONICAL",
+      "answer": "Because it’s only one report and nobody else has seen it, I’d treat it as a low-priority edge case and mostly check whether the search service was up at that time. If the infrastructure looks healthy, I’d probably assume the screenshot reflects a temporary user-side issue or a one-off browser problem and move on unless more reports come in. I wouldn’t spend much time trying to reproduce it without clearer steps, since that can take too long near the end of a shift."
+    },
+    {
+      "condition": "NEGATIVE",
+      "variant": "CONVERSATIONAL",
+      "answer": "Since it’s just a single report and there aren’t any other complaints, I’d probably just confirm the service was running and see if there was any obvious outage around that time. If everything looks normal, I’d lean toward it being a one-off client issue and wait for more examples before digging deeper. I wouldn’t put much effort into reproducing it without better repro steps this late in the day."
+    },
+    {
+      "condition": "NEGATIVE",
+      "variant": "CONCISE",
+      "answer": "I’d mainly check whether the search service was up and, if there’s no broader outage, treat it as a one-off unless more reports appear. I wouldn’t spend much time trying to reproduce it without steps."
+    }
+  ],
+  "raw_output": "{\"responses\":[{\"condition\":\"SUFFICIENT\",\"variant\":\"CANONICAL\",\"answer\":\"First I’d try to turn the report into something I can observe directly. I’d use the screenshot and timestamp to find the exact request in logs, then replay the search with similar inputs, user state, and timing to see whether it fails for me or only under certain conditions. After that I’d compare a failing request with a successful one: request parameters, auth/session state, response codes, backend logs, cache behaviour, and any feature flags or recent deploys around that time. That usually lets me narrow it down to whether the problem is in the frontend request, the search service, or the data layer before I decide what needs fixing. If I can’t reproduce it locally, I’d still use the evidence from production to isolate the pattern as much as possible before end of shift and hand over the exact observations I found.\"},{\"condition\":\"SUFFICIENT\",\"variant\":\"CONVERSATIONAL\",\"answer\":\"I’d start by trying to make sense of the report itself. With the screenshot and approximate time, I’d look at logs and analytics around that moment and try the same search flow with similar inputs to see if I can trigger it. Then I’d compare a bad case to a good one—same user or similar users if possible, response codes, query text, session details, and whether anything changed in the app around that time. That helps me narrow it down to whether it’s the search request, the backend, or something like caching or a deploy issue. Even if I don’t fully solve it before I leave, I’d want to leave behind a clear set of observations about when it happens and what’s different when it works.\"},{\"condition\":\"SUFFICIENT\",\"variant\":\"CONCISE\",\"answer\":\"I’d first try to reproduce it from the report details by checking logs at the reported time and running similar searches. Then I’d compare failing versus successful requests—query, session, response, and recent deploys or feature flags—to narrow where the break is. That would tell me whether it’s the client, search service, or data path before I decide the fix.\"},{\"condition\":\"INSUFFICIENT\",\"variant\":\"CANONICAL\",\"answer\":\"I’d begin by pulling up the screenshot, the approximate time, and any logs or monitoring data around that window so I can see what the user was likely doing. I’d check whether there were any deploys, config changes, or spikes in errors at the same time, and I’d look for whether the search page is generally healthy for other traffic. If I can get enough context, I’d hand over the likely area to the next engineer with the evidence I found and the timestamps I used so they can continue from there.\"},{\"condition\":\"INSUFFICIENT\",\"variant\":\"CONVERSATIONAL\",\"answer\":\"I’d start with the screenshot and the time, then look at logs and monitoring around that period to see if anything stands out. I’d also check whether there were releases or config changes near then, and whether the search service was otherwise healthy. If I can’t get to a clean reproduction before the end of my shift, I’d at least leave the next person with the timestamps and the areas that look suspicious.\"},{\"condition\":\"INSUFFICIENT\",\"variant\":\"CONCISE\",\"answer\":\"I’d review the screenshot, timestamp, logs, and any deploys or config changes around that time, then hand over the most likely area if I can’t finish. I’d leave the timestamps and observations for the next engineer.\"},{\"condition\":\"NEGATIVE\",\"variant\":\"CANONICAL\",\"answer\":\"Because it’s only one report and nobody else has seen it, I’d treat it as a low-priority edge case and mostly check whether the search service was up at that time. If the infrastructure looks healthy, I’d probably assume the screenshot reflects a temporary user-side issue or a one-off browser problem and move on unless more reports come in. I wouldn’t spend much time trying to reproduce it without clearer steps, since that can take too long near the end of a shift.\"},{\"condition\":\"NEGATIVE\",\"variant\":\"CONVERSATIONAL\",\"answer\":\"Since it’s just a single report and there aren’t any other complaints, I’d probably just confirm the service was running and see if there was any obvious outage around that time. If everything looks normal, I’d lean toward it being a one-off client issue and wait for more examples before digging deeper. I wouldn’t put much effort into reproducing it without better repro steps this late in the day.\"},{\"condition\":\"NEGATIVE\",\"variant\":\"CONCISE\",\"answer\":\"I’d mainly check whether the search service was up and, if there’s no broader outage, treat it as a one-off unless more reports appear. I wouldn’t spend much time trying to reproduce it without steps.\"}]}",
+  "input_tokens": 764,
+  "output_tokens": 997,
+  "generation_conditions_are_reference_labels": false
+}

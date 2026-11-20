@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-B9747203C8D2E455",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0b885b40e6567d17016b002a74a70c87d0aeb077cdf513233c",
+  "annotated_utc": "2026-11-20T11:09:42.226247+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "OPS03-C1",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I’d probably go with the facilities supervisor’s confirmation that the room is ready and send that update first, then let technical support keep working on the AV issue in the background.",
+        "rationale": "This explicitly relies on only one operational source and disregards the technical support report rather than integrating relevant information from both sources."
+      },
+      {
+        "criterion_id": "OPS03-C2",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I’d probably go with the facilities supervisor’s confirmation that the room is ready and send that update first, then let technical support keep working on the AV issue in the background.",
+        "rationale": "The answer does not identify the needed dependency between room readiness and unresolved AV status; instead it treats the room as ready while the AV issue continues, which shows weak coordination of responsible parties and dependencies."
+      },
+      {
+        "criterion_id": "OPS03-C3",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I’d probably go with the facilities supervisor’s confirmation that the room is ready and send that update first, then let technical support keep working on the AV issue in the background.",
+        "rationale": "The stated action is justified by one source only and does not explain a readiness decision using relevant operational evidence from both the facilities and technical teams."
+      }
+    ],
+    "annotation_notes": "The answer proposes a simple update based mainly on the facilities supervisor and postpones consideration of the technical issue, so it shows deficient evidence use and traceability rather than balanced coordination."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-44715DEEEB41E535",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_010fda757446a036016b000bb8666c87d09fd35ce84dd91dea",
+  "annotated_utc": "2026-11-20T08:58:34.764521+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "OPS02-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "both the partner capacity and customer demand are still uncertain",
+        "rationale": "The candidate explicitly identifies the operational uncertainty around partner capacity and demand as the relevant risk context, which shows recognition of a plausible operational risk."
+      },
+      {
+        "criterion_id": "OPS02-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "because both the partner capacity and customer demand are still uncertain",
+        "rationale": "The answer directly considers uncertainty in the two key variables and notes that action should depend on whether the capacity reduction becomes serious, showing awareness of uncertain likelihood and possible consequence."
+      },
+      {
+        "criterion_id": "OPS02-C3",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I’d probably hold off making changes for now",
+        "rationale": "The candidate proposes no active mitigation or escalation despite an identified risk, and explicitly says they would keep the current plan in place and not escalate at this stage. This indicates a response that is not proportionate to the stated operational uncertainty."
+      }
+    ],
+    "annotation_notes": "The answer recognizes uncertainty but leans toward inaction. For C3, this is treated as negative evidence because the candidate explicitly rejects escalation and backup preparation rather than proposing a proportionate response."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

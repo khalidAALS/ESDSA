@@ -1,0 +1,18 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "SEMANTIC_EQUIVALENCE",
+  "blinded_id": "TG-CF1FCC21EEF4865E",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_031e954b06f5c6de016b002b9a24f087d0bba27f1fa6eaa2c7",
+  "annotated_utc": "2026-11-20T11:14:35.448904+00:00",
+  "annotation": {
+    "semantic_equivalence": "YES",
+    "material_differences": "None that appear decision-relevant under the three criteria. All three responses prioritize the equipment check as a launch dependency, address staffing around critical launch tasks, defer the routine report unless it supports launch, and cite comparable triggers for reprioritization.",
+    "equivalence_rationale": "Each response preserves the same core evidence for urgency, impact, and dependency reasoning, the same trade-off structure, and the same willingness to reassess when conditions materially change. C adds a little more detail (parallel assessment, safety wording, customer-facing steps), but these are elaborations rather than substantive changes in priority logic or operational commitments."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

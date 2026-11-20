@@ -1,0 +1,39 @@
+ESDSA V2 — VALIDATION RESULTS
+
+MAIN COMPARISON: PRE-STABILITY PROVISIONAL REFERENCE
+
+scoring_only_decision: coverage=66.7%; actionable=144; disagreements=9; disagreement_rate=6.2%; unsupported_ADVANCE=6; deferrals=72
+evidence_aware_decision: coverage=91.7%; actionable=198; disagreements=26; disagreement_rate=13.1%; unsupported_ADVANCE=14; deferrals=18
+traceability_v2_decision: coverage=88.9%; actionable=192; disagreements=26; disagreement_rate=13.5%; unsupported_ADVANCE=14; deferrals=24
+integrated_v2_decision: coverage=76.9%; actionable=166; disagreements=15; disagreement_rate=9.0%; unsupported_ADVANCE=4; deferrals=50
+
+STABILITY ATTRIBUTION
+{
+  "changed_responses": 26,
+  "newly_deferred": 26,
+  "prevented_provisional_disagreements": 11,
+  "deferred_provisionally_supported_decisions": 15
+}
+
+CITATION VERIFICATION OUTCOMES
+{
+  "VERIFIED": 596,
+  "UNVERIFIABLE": 6,
+  "CONTEXT_ONLY": 4
+}
+
+POST-STABILITY REFERENCE SENSITIVITY
+scoring_only_decision: coverage=66.7%; disagreements=13; disagreement_rate=9.0%
+evidence_aware_decision: coverage=91.7%; disagreements=32; disagreement_rate=16.2%
+traceability_v2_decision: coverage=88.9%; disagreements=31; disagreement_rate=16.1%
+integrated_v2_decision: coverage=76.9%; disagreements=15; disagreement_rate=9.0%
+
+LIMITATIONS
+- All references are AI-assisted and provisional.
+- The candidate responses and annotations used the same model family.
+- Reference annotation instructions were revised after inspecting a subset of validation data.
+- Semantic equivalence assessments are shared between the integrated evaluator and reference construction, creating methodological dependence.
+- Verified quotation matching is not proof that an evidence classification is substantively correct.
+- Disagreement rates are not independently validated error rates.
+- The 216 responses are clustered within 24 scenario families and are not independent samples.
+- No TEST records are accessed.

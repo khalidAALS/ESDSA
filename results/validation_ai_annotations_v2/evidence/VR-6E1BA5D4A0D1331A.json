@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-6E1BA5D4A0D1331A",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_07f76f32f29a5f4d016b000c2a996487d0992d73d995bbea3c",
+  "annotated_utc": "2026-11-20T09:00:29.017279+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "CSS04-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d acknowledge the urgency and let the customer know we are actively investigating the recurring interruption. I’d explain that I’m waiting on the technical team for a confirmed cause and an accurate timeline, so I can’t give them a firm commitment right now without risking giving them the wrong information.",
+        "rationale": "This clearly and understandably explains what the candidate would communicate to the customer and why."
+      },
+      {
+        "criterion_id": "CSS04-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d explain that I’m waiting on the technical team for a confirmed cause and an accurate timeline, so I can’t give them a firm commitment right now without risking giving them the wrong information.",
+        "rationale": "The candidate avoids unsupported promises and sets justified expectations by explicitly saying they cannot provide a firm commitment without confirmed information."
+      },
+      {
+        "criterion_id": "CSS04-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I would reassure them that I’ll keep pushing for an update and that I’ll pass along anything new as soon as it’s confirmed. I’d also make sure the ticket remains open and documented so the team can continue working it.",
+        "rationale": "This provides an appropriate follow-up mechanism through ongoing updates and keeping the ticket open and documented."
+      }
+    ],
+    "annotation_notes": ""
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

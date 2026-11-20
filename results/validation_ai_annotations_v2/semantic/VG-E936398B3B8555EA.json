@@ -1,0 +1,20 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "SEMANTIC_EQUIVALENCE",
+  "blinded_id": "VG-E936398B3B8555EA",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_03e83b8b06dd5bcb016b00112a664887d0a0fb25453ed9a114",
+  "annotated_utc": "2026-11-20T09:21:48.758769+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "semantic_equivalence": "YES",
+    "material_differences": "",
+    "equivalence_rationale": "All three responses preserve the same decision-relevant evidence for prioritisation: they identify urgency, impact, and dependencies; weigh delivery delay against a possible safety issue using available evidence; and include reassessment as more information arrives. A and C are more detailed, but B still contains the same core prioritisation logic and operational commitments (investigate safety concern, stop/isolate if credible immediate risk, continue delivery if lower risk with review). No material contradiction or omission appears likely to change the criterion-level assessment."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

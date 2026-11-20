@@ -1,0 +1,302 @@
+{
+  "analysis": "DEVELOPMENT_EXPLORATORY",
+  "semantic_equivalence": "NOT_VALIDATED",
+  "summary": {
+    "total_groups": 36,
+    "INSUFFICIENT_decision_stable": 9,
+    "criterion_stable": 25,
+    "NEGATIVE_decision_stable": 11,
+    "SUFFICIENT_decision_stable": 12,
+    "INSUFFICIENT_decision_unstable": 3,
+    "criterion_unstable": 11,
+    "NEGATIVE_decision_unstable": 1
+  },
+  "disagreements": [
+    {
+      "family": "ESDSA-CSS02-02",
+      "intended_condition": "INSUFFICIENT",
+      "decisions": {
+        "CANONICAL": "ADVANCE",
+        "CONVERSATIONAL": "DO_NOT_ADVANCE",
+        "CONCISE": "ADVANCE"
+      },
+      "criteria": {
+        "CANONICAL": {
+          "CSS02-C1": "POSITIVE_EVIDENCE",
+          "CSS02-C2": "POSITIVE_EVIDENCE",
+          "CSS02-C3": "POSITIVE_EVIDENCE"
+        },
+        "CONVERSATIONAL": {
+          "CSS02-C1": "POSITIVE_EVIDENCE",
+          "CSS02-C2": "NEGATIVE_EVIDENCE",
+          "CSS02-C3": "POSITIVE_EVIDENCE"
+        },
+        "CONCISE": {
+          "CSS02-C1": "POSITIVE_EVIDENCE",
+          "CSS02-C2": "POSITIVE_EVIDENCE",
+          "CSS02-C3": "POSITIVE_EVIDENCE"
+        }
+      }
+    },
+    {
+      "family": "ESDSA-CSS02-02",
+      "intended_condition": "NEGATIVE",
+      "decisions": {
+        "CANONICAL": "DO_NOT_ADVANCE",
+        "CONVERSATIONAL": "DO_NOT_ADVANCE",
+        "CONCISE": "DO_NOT_ADVANCE"
+      },
+      "criteria": {
+        "CANONICAL": {
+          "CSS02-C1": "POSITIVE_EVIDENCE",
+          "CSS02-C2": "NEGATIVE_EVIDENCE",
+          "CSS02-C3": "NEGATIVE_EVIDENCE"
+        },
+        "CONVERSATIONAL": {
+          "CSS02-C1": "POSITIVE_EVIDENCE",
+          "CSS02-C2": "NEGATIVE_EVIDENCE",
+          "CSS02-C3": "NEGATIVE_EVIDENCE"
+        },
+        "CONCISE": {
+          "CSS02-C1": "NEGATIVE_EVIDENCE",
+          "CSS02-C2": "NEGATIVE_EVIDENCE",
+          "CSS02-C3": "NEGATIVE_EVIDENCE"
+        }
+      }
+    },
+    {
+      "family": "ESDSA-CSS04-02",
+      "intended_condition": "NEGATIVE",
+      "decisions": {
+        "CANONICAL": "DO_NOT_ADVANCE",
+        "CONVERSATIONAL": "DO_NOT_ADVANCE",
+        "CONCISE": "DO_NOT_ADVANCE"
+      },
+      "criteria": {
+        "CANONICAL": {
+          "CSS04-C1": "POSITIVE_EVIDENCE",
+          "CSS04-C2": "NEGATIVE_EVIDENCE",
+          "CSS04-C3": "POSITIVE_EVIDENCE"
+        },
+        "CONVERSATIONAL": {
+          "CSS04-C1": "POSITIVE_EVIDENCE",
+          "CSS04-C2": "NEGATIVE_EVIDENCE",
+          "CSS04-C3": "NEGATIVE_EVIDENCE"
+        },
+        "CONCISE": {
+          "CSS04-C1": "POSITIVE_EVIDENCE",
+          "CSS04-C2": "NEGATIVE_EVIDENCE",
+          "CSS04-C3": "NEGATIVE_EVIDENCE"
+        }
+      }
+    },
+    {
+      "family": "ESDSA-OPS02-03",
+      "intended_condition": "NEGATIVE",
+      "decisions": {
+        "CANONICAL": "DO_NOT_ADVANCE",
+        "CONVERSATIONAL": "DO_NOT_ADVANCE",
+        "CONCISE": "DO_NOT_ADVANCE"
+      },
+      "criteria": {
+        "CANONICAL": {
+          "OPS02-C1": "POSITIVE_EVIDENCE",
+          "OPS02-C2": "NEGATIVE_EVIDENCE",
+          "OPS02-C3": "NEGATIVE_EVIDENCE"
+        },
+        "CONVERSATIONAL": {
+          "OPS02-C1": "POSITIVE_EVIDENCE",
+          "OPS02-C2": "NEGATIVE_EVIDENCE",
+          "OPS02-C3": "NEGATIVE_EVIDENCE"
+        },
+        "CONCISE": {
+          "OPS02-C1": "POSITIVE_EVIDENCE",
+          "OPS02-C2": "POSITIVE_EVIDENCE",
+          "OPS02-C3": "NEGATIVE_EVIDENCE"
+        }
+      }
+    },
+    {
+      "family": "ESDSA-OPS03-01",
+      "intended_condition": "NEGATIVE",
+      "decisions": {
+        "CANONICAL": "DO_NOT_ADVANCE",
+        "CONVERSATIONAL": "DO_NOT_ADVANCE",
+        "CONCISE": "DO_NOT_ADVANCE"
+      },
+      "criteria": {
+        "CANONICAL": {
+          "OPS03-C1": "POSITIVE_EVIDENCE",
+          "OPS03-C2": "NEGATIVE_EVIDENCE",
+          "OPS03-C3": "POSITIVE_EVIDENCE"
+        },
+        "CONVERSATIONAL": {
+          "OPS03-C1": "NEGATIVE_EVIDENCE",
+          "OPS03-C2": "NEGATIVE_EVIDENCE",
+          "OPS03-C3": "NEGATIVE_EVIDENCE"
+        },
+        "CONCISE": {
+          "OPS03-C1": "POSITIVE_EVIDENCE",
+          "OPS03-C2": "NEGATIVE_EVIDENCE",
+          "OPS03-C3": "NEGATIVE_EVIDENCE"
+        }
+      }
+    },
+    {
+      "family": "ESDSA-OPS04-01",
+      "intended_condition": "INSUFFICIENT",
+      "decisions": {
+        "CANONICAL": "ADVANCE",
+        "CONVERSATIONAL": "DEFER",
+        "CONCISE": "DEFER"
+      },
+      "criteria": {
+        "CANONICAL": {
+          "OPS04-C1": "POSITIVE_EVIDENCE",
+          "OPS04-C2": "POSITIVE_EVIDENCE",
+          "OPS04-C3": "POSITIVE_EVIDENCE"
+        },
+        "CONVERSATIONAL": {
+          "OPS04-C1": "POSITIVE_EVIDENCE",
+          "OPS04-C2": "POSITIVE_EVIDENCE",
+          "OPS04-C3": "INSUFFICIENT_EVIDENCE"
+        },
+        "CONCISE": {
+          "OPS04-C1": "POSITIVE_EVIDENCE",
+          "OPS04-C2": "INSUFFICIENT_EVIDENCE",
+          "OPS04-C3": "INSUFFICIENT_EVIDENCE"
+        }
+      }
+    },
+    {
+      "family": "ESDSA-OPS04-01",
+      "intended_condition": "NEGATIVE",
+      "decisions": {
+        "CANONICAL": "DO_NOT_ADVANCE",
+        "CONVERSATIONAL": "DO_NOT_ADVANCE",
+        "CONCISE": "DO_NOT_ADVANCE"
+      },
+      "criteria": {
+        "CANONICAL": {
+          "OPS04-C1": "NEGATIVE_EVIDENCE",
+          "OPS04-C2": "NEGATIVE_EVIDENCE",
+          "OPS04-C3": "NEGATIVE_EVIDENCE"
+        },
+        "CONVERSATIONAL": {
+          "OPS04-C1": "NEGATIVE_EVIDENCE",
+          "OPS04-C2": "NEGATIVE_EVIDENCE",
+          "OPS04-C3": "NEGATIVE_EVIDENCE"
+        },
+        "CONCISE": {
+          "OPS04-C1": "INSUFFICIENT_EVIDENCE",
+          "OPS04-C2": "NEGATIVE_EVIDENCE",
+          "OPS04-C3": "INSUFFICIENT_EVIDENCE"
+        }
+      }
+    },
+    {
+      "family": "ESDSA-SWE01-01",
+      "intended_condition": "NEGATIVE",
+      "decisions": {
+        "CANONICAL": "DO_NOT_ADVANCE",
+        "CONVERSATIONAL": "DO_NOT_ADVANCE",
+        "CONCISE": "DO_NOT_ADVANCE"
+      },
+      "criteria": {
+        "CANONICAL": {
+          "SWE01-C1": "NEGATIVE_EVIDENCE",
+          "SWE01-C2": "INSUFFICIENT_EVIDENCE",
+          "SWE01-C3": "NEGATIVE_EVIDENCE"
+        },
+        "CONVERSATIONAL": {
+          "SWE01-C1": "NEGATIVE_EVIDENCE",
+          "SWE01-C2": "INSUFFICIENT_EVIDENCE",
+          "SWE01-C3": "POSITIVE_EVIDENCE"
+        },
+        "CONCISE": {
+          "SWE01-C1": "NEGATIVE_EVIDENCE",
+          "SWE01-C2": "INSUFFICIENT_EVIDENCE",
+          "SWE01-C3": "NEGATIVE_EVIDENCE"
+        }
+      }
+    },
+    {
+      "family": "ESDSA-SWE02-01",
+      "intended_condition": "NEGATIVE",
+      "decisions": {
+        "CANONICAL": "DO_NOT_ADVANCE",
+        "CONVERSATIONAL": "DO_NOT_ADVANCE",
+        "CONCISE": "DO_NOT_ADVANCE"
+      },
+      "criteria": {
+        "CANONICAL": {
+          "SWE02-C1": "POSITIVE_EVIDENCE",
+          "SWE02-C2": "NEGATIVE_EVIDENCE",
+          "SWE02-C3": "NEGATIVE_EVIDENCE"
+        },
+        "CONVERSATIONAL": {
+          "SWE02-C1": "POSITIVE_EVIDENCE",
+          "SWE02-C2": "NEGATIVE_EVIDENCE",
+          "SWE02-C3": "POSITIVE_EVIDENCE"
+        },
+        "CONCISE": {
+          "SWE02-C1": "POSITIVE_EVIDENCE",
+          "SWE02-C2": "NEGATIVE_EVIDENCE",
+          "SWE02-C3": "POSITIVE_EVIDENCE"
+        }
+      }
+    },
+    {
+      "family": "ESDSA-SWE03-01",
+      "intended_condition": "INSUFFICIENT",
+      "decisions": {
+        "CANONICAL": "ADVANCE",
+        "CONVERSATIONAL": "ADVANCE",
+        "CONCISE": "DEFER"
+      },
+      "criteria": {
+        "CANONICAL": {
+          "SWE03-C1": "POSITIVE_EVIDENCE",
+          "SWE03-C2": "POSITIVE_EVIDENCE",
+          "SWE03-C3": "POSITIVE_EVIDENCE"
+        },
+        "CONVERSATIONAL": {
+          "SWE03-C1": "POSITIVE_EVIDENCE",
+          "SWE03-C2": "POSITIVE_EVIDENCE",
+          "SWE03-C3": "POSITIVE_EVIDENCE"
+        },
+        "CONCISE": {
+          "SWE03-C1": "INSUFFICIENT_EVIDENCE",
+          "SWE03-C2": "POSITIVE_EVIDENCE",
+          "SWE03-C3": "POSITIVE_EVIDENCE"
+        }
+      }
+    },
+    {
+      "family": "ESDSA-SWE03-01",
+      "intended_condition": "NEGATIVE",
+      "decisions": {
+        "CANONICAL": "ADVANCE",
+        "CONVERSATIONAL": "DO_NOT_ADVANCE",
+        "CONCISE": "DO_NOT_ADVANCE"
+      },
+      "criteria": {
+        "CANONICAL": {
+          "SWE03-C1": "POSITIVE_EVIDENCE",
+          "SWE03-C2": "POSITIVE_EVIDENCE",
+          "SWE03-C3": "POSITIVE_EVIDENCE"
+        },
+        "CONVERSATIONAL": {
+          "SWE03-C1": "NEGATIVE_EVIDENCE",
+          "SWE03-C2": "INSUFFICIENT_EVIDENCE",
+          "SWE03-C3": "INSUFFICIENT_EVIDENCE"
+        },
+        "CONCISE": {
+          "SWE03-C1": "NEGATIVE_EVIDENCE",
+          "SWE03-C2": "NEGATIVE_EVIDENCE",
+          "SWE03-C3": "NEGATIVE_EVIDENCE"
+        }
+      }
+    }
+  ]
+}

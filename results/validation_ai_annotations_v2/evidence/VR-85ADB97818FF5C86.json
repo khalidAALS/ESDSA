@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-85ADB97818FF5C86",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0dbf964513d0ff95016b000d4ffd4487d085729e18665a8bef",
+  "annotated_utc": "2026-11-20T09:05:22.192372+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "SWE02-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d inspect run logs, traces, timings, and recent config or deployment changes",
+        "rationale": "This explicitly names several technical evidence sources relevant to investigating delayed job runs."
+      },
+      {
+        "criterion_id": "SWE02-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d test whether the delay follows a specific input pattern, a code path/change, or higher latency from the external dependency.",
+        "rationale": "This proposes checks that distinguish among the plausible causes by testing whether the slowdown correlates with input, code changes, or dependency latency."
+      },
+      {
+        "criterion_id": "SWE02-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "The conclusion would come from which pattern repeats across runs.",
+        "rationale": "This connects repeated observations across runs to making the diagnostic conclusion, showing interpretation of evidence into a cause."
+      }
+    ],
+    "annotation_notes": "The answer is concise but clearly covers all three criteria with appropriate investigative sources, discriminating tests, and a rule for drawing conclusions from observed patterns."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

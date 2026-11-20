@@ -1,0 +1,49 @@
+{
+  "rubric_id": "ESDSA-CSS04-R1",
+  "version": "1.0-draft",
+  "role_code": "CSS",
+  "role_name": "Customer Support Specialist",
+  "competency_code": "CSS04",
+  "competency_name": "Communication and follow-up",
+  "criteria": [
+    {
+      "id": "CSS04-C1",
+      "name": "Clear explanation",
+      "definition": "Communicate the proposed action understandably.",
+      "illustrative_positive_evidence": "Explains the next step and expected customer action.",
+      "illustrative_negative_evidence": "Intentionally withholds material next-step information."
+    },
+    {
+      "id": "CSS04-C2",
+      "name": "Expectation management",
+      "definition": "Set justified expectations without unsupported promises.",
+      "illustrative_positive_evidence": "Explains that timing depends on investigation.",
+      "illustrative_negative_evidence": "Guarantees a result known to be uncertain."
+    },
+    {
+      "id": "CSS04-C3",
+      "name": "Follow-up",
+      "definition": "Provide an appropriate mechanism for status or confirmation.",
+      "illustrative_positive_evidence": "Arranges confirmation after the service is restored.",
+      "illustrative_negative_evidence": "Closes a known unresolved issue without follow-up or escalation."
+    }
+  ],
+  "evidence_statuses": {
+    "POSITIVE_EVIDENCE": "The answer explicitly or clearly demonstrates the indicator in context.",
+    "NEGATIVE_EVIDENCE": "The answer explicitly demonstrates a materially deficient approach concerning the indicator.",
+    "INSUFFICIENT_EVIDENCE": "The answer does not establish either positive or negative evidence for the indicator."
+  },
+  "interpretation_rules": [
+    "Assess demonstrated meaning, not exact wording.",
+    "Do not infer deficient practice solely from omission.",
+    "A brief answer can provide sufficient evidence.",
+    "A fluent or lengthy answer is not sufficient by itself.",
+    "Consider scenario context and applicable constraints.",
+    "Record the supporting passage or indicate absence.",
+    "Illustrative examples are not exhaustive.",
+    "Do not infer protected or demographic attributes."
+  ],
+  "decision_policy": "NOT_YET_VALIDATED",
+  "expert_review": "PENDING",
+  "reference_validation": "PENDING"
+}

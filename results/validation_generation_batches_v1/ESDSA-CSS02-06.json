@@ -1,0 +1,75 @@
+{
+  "experiment": "ESDSA_VALIDATION_GENERATION_V1",
+  "partition": "VALIDATION",
+  "family_id": "ESDSA-CSS02-06",
+  "run_sha256": "c81c89d1f9f94b966f8e4b47a91aa67fbdf3d94f8c825fcdc285d4d0fdc4057c",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "response_id": "resp_0bed2f89645c85ee016aff90ae9b2087d09467a01a8ffd4eb5",
+  "response_status": "completed",
+  "usage": {
+    "input_tokens": 737,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      }
+    },
+    "output_tokens": 1013,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 1750
+  },
+  "raw_output_text": "{\"responses\":[{\"condition\":\"SUFFICIENT\",\"variant\":\"CANONICAL\",\"answer\":\"I’d start by narrowing down the timeline and confirming what the customer remembers without overloading them. I’d ask for any details that can help anchor the cancellation, like the approximate month, what prompted the cancellation, whether they received any confirmation email, and whether they used the website, app, or support to cancel. Then I’d verify the account status against our internal records, such as the cancellation log, subscription status, and any support notes or automated confirmations, rather than relying on memory alone. Because the history is incomplete, I’d compare only the information I’m authorised to access, and if needed I’d use approved account identifiers to search for matching records. I’d avoid asking for unnecessary sensitive payment details, and I’d keep the investigation focused on what can actually confirm whether the cancellation was processed, pending, reversed, or missed.\"},{\"condition\":\"SUFFICIENT\",\"variant\":\"CONVERSATIONAL\",\"answer\":\"I’d first get the story as clearly as I can by asking a few targeted questions, like roughly when they cancelled, how they did it, and whether they saw any confirmation. If they’re not sure on the date, I’d use other clues to narrow it down, such as the billing cycle, emails, or any support interaction around that time. Then I’d check our internal records to verify what’s actually on the account — cancellation status, logs, and any notes — instead of assuming the payment history tells the whole story. I’d stick to the information I’m allowed to access and wouldn’t ask for extra sensitive details unless there was a clear, approved reason.\"},{\"condition\":\"SUFFICIENT\",\"variant\":\"CONCISE\",\"answer\":\"I’d ask a few focused questions to narrow the timing and method of cancellation, then verify the account against internal records like cancellation logs, status, and confirmations. I’d treat the customer’s memory and the payment data as clues, not proof, and only use authorised account information. I wouldn’t request unnecessary sensitive details.\"},{\"condition\":\"INSUFFICIENT\",\"variant\":\"CANONICAL\",\"answer\":\"I’d begin by asking the customer when they first noticed the problem and whether they remember using the website, app, or support team to cancel. I’d also check the account status and any notes or automated messages we have on file. If the date is unclear, I’d use the billing history to help build a timeline and look for patterns around when the subscription stopped being used. If the records still don’t line up, I’d escalate it for a deeper review rather than trying to fill in the gaps myself.\"},{\"condition\":\"INSUFFICIENT\",\"variant\":\"CONVERSATIONAL\",\"answer\":\"I’d ask what they do remember — roughly when they tried to cancel, how they submitted it, and whether they got any confirmation — and then I’d look at the account notes and status. I’d also use the billing record to help piece together the timeline if the exact date isn’t available. If it still isn’t clear after that, I’d hand it off for a closer review. That usually gives me enough to see whether something was missed or just not reflected clearly in the records.\"},{\"condition\":\"INSUFFICIENT\",\"variant\":\"CONCISE\",\"answer\":\"I’d gather the customer’s best recollection, check the account status and notes, and use billing history to build a timeline. If it still wasn’t clear, I’d escalate for a deeper review.\"},{\"condition\":\"NEGATIVE\",\"variant\":\"CANONICAL\",\"answer\":\"I’d probably rely on the payment history first, since that usually shows whether the cancellation happened. If the customer isn’t sure about the date, I’d tell them we can’t do much without it and ask them to search their email or bank statements for proof. I’d also avoid spending too much time on internal records if the billing data doesn’t clearly support the cancellation, because at that point it’s likely the customer simply missed the deadline. If needed, I’d ask them to resend any screenshots or payment details they have so I can compare them with the charges.\"},{\"condition\":\"NEGATIVE\",\"variant\":\"CONVERSATIONAL\",\"answer\":\"I’d mostly look at the payment info and use that to figure out whether the cancellation went through. If the customer can’t give me the exact date, I’d ask them to dig through their emails or bank app until they find something that shows it. I probably wouldn’t spend much time checking internal logs if the account history is incomplete, because that can be hard to interpret. If they send over screenshots or statements, I’d use those to decide what happened.\"},{\"condition\":\"NEGATIVE\",\"variant\":\"CONCISE\",\"answer\":\"I’d use the payment history as the main proof and ask the customer to find emails, screenshots, or bank records for the exact date. If the account history is incomplete, I wouldn’t rely much on internal logs.\"}]}",
+  "responses": [
+    {
+      "condition": "SUFFICIENT",
+      "variant": "CANONICAL",
+      "answer": "I’d start by narrowing down the timeline and confirming what the customer remembers without overloading them. I’d ask for any details that can help anchor the cancellation, like the approximate month, what prompted the cancellation, whether they received any confirmation email, and whether they used the website, app, or support to cancel. Then I’d verify the account status against our internal records, such as the cancellation log, subscription status, and any support notes or automated confirmations, rather than relying on memory alone. Because the history is incomplete, I’d compare only the information I’m authorised to access, and if needed I’d use approved account identifiers to search for matching records. I’d avoid asking for unnecessary sensitive payment details, and I’d keep the investigation focused on what can actually confirm whether the cancellation was processed, pending, reversed, or missed."
+    },
+    {
+      "condition": "SUFFICIENT",
+      "variant": "CONVERSATIONAL",
+      "answer": "I’d first get the story as clearly as I can by asking a few targeted questions, like roughly when they cancelled, how they did it, and whether they saw any confirmation. If they’re not sure on the date, I’d use other clues to narrow it down, such as the billing cycle, emails, or any support interaction around that time. Then I’d check our internal records to verify what’s actually on the account — cancellation status, logs, and any notes — instead of assuming the payment history tells the whole story. I’d stick to the information I’m allowed to access and wouldn’t ask for extra sensitive details unless there was a clear, approved reason."
+    },
+    {
+      "condition": "SUFFICIENT",
+      "variant": "CONCISE",
+      "answer": "I’d ask a few focused questions to narrow the timing and method of cancellation, then verify the account against internal records like cancellation logs, status, and confirmations. I’d treat the customer’s memory and the payment data as clues, not proof, and only use authorised account information. I wouldn’t request unnecessary sensitive details."
+    },
+    {
+      "condition": "INSUFFICIENT",
+      "variant": "CANONICAL",
+      "answer": "I’d begin by asking the customer when they first noticed the problem and whether they remember using the website, app, or support team to cancel. I’d also check the account status and any notes or automated messages we have on file. If the date is unclear, I’d use the billing history to help build a timeline and look for patterns around when the subscription stopped being used. If the records still don’t line up, I’d escalate it for a deeper review rather than trying to fill in the gaps myself."
+    },
+    {
+      "condition": "INSUFFICIENT",
+      "variant": "CONVERSATIONAL",
+      "answer": "I’d ask what they do remember — roughly when they tried to cancel, how they submitted it, and whether they got any confirmation — and then I’d look at the account notes and status. I’d also use the billing record to help piece together the timeline if the exact date isn’t available. If it still isn’t clear after that, I’d hand it off for a closer review. That usually gives me enough to see whether something was missed or just not reflected clearly in the records."
+    },
+    {
+      "condition": "INSUFFICIENT",
+      "variant": "CONCISE",
+      "answer": "I’d gather the customer’s best recollection, check the account status and notes, and use billing history to build a timeline. If it still wasn’t clear, I’d escalate for a deeper review."
+    },
+    {
+      "condition": "NEGATIVE",
+      "variant": "CANONICAL",
+      "answer": "I’d probably rely on the payment history first, since that usually shows whether the cancellation happened. If the customer isn’t sure about the date, I’d tell them we can’t do much without it and ask them to search their email or bank statements for proof. I’d also avoid spending too much time on internal records if the billing data doesn’t clearly support the cancellation, because at that point it’s likely the customer simply missed the deadline. If needed, I’d ask them to resend any screenshots or payment details they have so I can compare them with the charges."
+    },
+    {
+      "condition": "NEGATIVE",
+      "variant": "CONVERSATIONAL",
+      "answer": "I’d mostly look at the payment info and use that to figure out whether the cancellation went through. If the customer can’t give me the exact date, I’d ask them to dig through their emails or bank app until they find something that shows it. I probably wouldn’t spend much time checking internal logs if the account history is incomplete, because that can be hard to interpret. If they send over screenshots or statements, I’d use those to decide what happened."
+    },
+    {
+      "condition": "NEGATIVE",
+      "variant": "CONCISE",
+      "answer": "I’d use the payment history as the main proof and ask the customer to find emails, screenshots, or bank records for the exact date. If the account history is incomplete, I wouldn’t rely much on internal logs."
+    }
+  ],
+  "validation_status": "STRUCTURE_PASSED"
+}

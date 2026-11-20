@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-1E530E40395C21A3",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_02432de35f7bb401016b000bfce13887d0a73e74ed41abded3",
+  "annotated_utc": "2026-11-20T08:59:43.472188+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "OPS01-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d look at the deadline and the risk involved. The customer order would need to stay moving, but I’d also want the materials checked so we don’t build on a bad batch.",
+        "rationale": "The answer explicitly considers deadline urgency, risk, and the dependency between inspection and production, which are the relevant priority criteria."
+      },
+      {
+        "criterion_id": "OPS01-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "The customer order would need to stay moving, but I’d also want the materials checked so we don’t build on a bad batch. Training is the easiest one to move if we’re short on people.",
+        "rationale": "The candidate explains trade-offs by choosing to keep dispatch moving, prioritising inspection to avoid downstream quality problems, and deferring training due to limited staff."
+      },
+      {
+        "criterion_id": "OPS01-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "If something new came up, I’d review it and see whether we needed to change the plan or get extra help. I’d update the team and make sure the work stayed aligned with whatever was most pressing at the time.",
+        "rationale": "This directly shows reassessing priorities when new information arrives and adjusting the plan accordingly."
+      }
+    ],
+    "annotation_notes": ""
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

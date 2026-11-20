@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-07593CC05605EDDB",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_022b52b21fed96bc016b002c0e24b087d0a8c1cb1e490f33f4",
+  "annotated_utc": "2026-11-20T11:16:32.028210+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "SWE01-C1",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I’d go after the browser cache first, since that’s the most common reason a dashboard looks stale. I’d have people clear cache or do a hard reload and see if the problem goes away, and if it does I’d assume we found it.",
+        "rationale": "The answer does not describe establishing or characterising the failure in a general way; it jumps directly to one suspected cause and treats a single test outcome as sufficient."
+      },
+      {
+        "criterion_id": "SWE01-C2",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "passage": "",
+        "rationale": "The answer mentions that the issue may affect some users and suggests clearing cache, but it does not clearly compare conditions where the dashboard fails versus works in a way that establishes systematic comparison."
+      },
+      {
+        "criterion_id": "SWE01-C3",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I wouldn’t really dig into the backend unless that didn’t help, because I’d rather fix the most likely cause quickly.",
+        "rationale": "This explicitly prioritizes a likely cause and delays broader investigation rather than using observations to systematically narrow among competing causes."
+      }
+    ],
+    "annotation_notes": ""
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

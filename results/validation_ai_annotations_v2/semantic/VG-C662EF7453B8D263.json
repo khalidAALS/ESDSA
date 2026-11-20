@@ -1,0 +1,20 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "SEMANTIC_EQUIVALENCE",
+  "blinded_id": "VG-C662EF7453B8D263",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_01a2d93150a51027016b000e9fc2b887d099e95313ab8c709c",
+  "annotated_utc": "2026-11-20T09:10:58.269025+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "semantic_equivalence": "NO",
+    "material_differences": "Response C adds an explicit fallback operational decision to potentially ship with the defect documented and fix it immediately after release if the safe fix is not ready, whereas A and B instead emphasize selecting the safest in-release correction or deferring/follow-up without clearly endorsing release with the defect. That difference changes the release-handling commitment. A and B are broadly aligned, but C also adds more specific cause hypotheses (persistence/state-handling) that are not material by themselves.",
+    "equivalence_rationale": "A and B preserve the same core evidence across all three criteria: they identify a plausible cause through investigation, link the chosen correction to that cause, and justify it by saying it directly addresses the failure path and reduces risk. C preserves those criteria as well, but it introduces an additional actionable release strategy that could change how a reviewer evaluates the candidate’s operational judgment under the scenario. Because the prompt asks for preservation of decision-relevant evidence and operational commitments, that added commitment is materially different enough to make the set non-equivalent."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

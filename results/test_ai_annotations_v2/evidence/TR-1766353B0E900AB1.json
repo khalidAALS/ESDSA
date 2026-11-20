@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-1766353B0E900AB1",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0a6c8e596aac4f12016b002b7d531c87d095c94e30809dbf89",
+  "annotated_utc": "2026-11-20T11:14:07.771842+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "SWE01-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d use the screenshot and timestamp to find the exact request in logs, then replay the search with similar inputs, user state, and timing to see whether it fails for me or only under certain conditions.",
+        "rationale": "This explicitly describes how the candidate would characterize and attempt to reproduce the reported failure using the screenshot, timestamp, and replaying the search under similar conditions."
+      },
+      {
+        "criterion_id": "SWE01-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "After that I’d compare a failing request with a successful one: request parameters, auth/session state, response codes, backend logs, cache behaviour, and any feature flags or recent deploys around that time.",
+        "rationale": "This directly states a comparison between failing and successful cases across multiple dimensions."
+      },
+      {
+        "criterion_id": "SWE01-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "That usually lets me narrow it down to whether the problem is in the frontend request, the search service, or the data layer before I decide what needs fixing.",
+        "rationale": "This explicitly shows systematic narrowing of plausible causes based on observations."
+      }
+    ],
+    "annotation_notes": "The answer provides clear investigative steps aligned to all three criteria, with no contradictory evidence."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

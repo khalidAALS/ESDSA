@@ -1,0 +1,75 @@
+{
+  "experiment": "ESDSA_VALIDATION_GENERATION_V1",
+  "partition": "VALIDATION",
+  "family_id": "ESDSA-SWE03-09",
+  "run_sha256": "45607fa3e89401aab23afc1e7b89a8dbc7747469b07fc3057e6da7c68a0afcc5",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "response_id": "resp_0d3030812e3add9c016aff8eb26e9087d0b0f1c4dec6c514b4",
+  "response_status": "completed",
+  "usage": {
+    "input_tokens": 747,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      }
+    },
+    "output_tokens": 985,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 1732
+  },
+  "raw_output_text": "{\"responses\":[{\"condition\":\"SUFFICIENT\",\"variant\":\"CANONICAL\",\"answer\":\"I’d start by treating it as a production-impacting issue and first confirm the failure path with logs, a reproducible case, and comparison against expected calculations. If the investigation shows the shared calculation component is producing the wrong figure, then that gives us the cause. In that case, I’d prefer fixing the shared component, because it addresses the source of the error for every place that uses it. If we can’t fully confirm the root cause quickly, or the blast radius is too large to keep reporting trusted, I’d use the limitation as a temporary safeguard to reduce exposure while we validate the fix. So I’d choose based on evidence of the cause, scope of impact, and risk: correct the shared logic if that is the failing point, and only limit functionality as a short-term containment measure until we’re confident the correction is safe.\"},{\"condition\":\"SUFFICIENT\",\"variant\":\"CONVERSATIONAL\",\"answer\":\"I’d first dig into the reports and tracing to see where the bad numbers are coming from, so I’m not guessing. If it turns out the shared calculation piece is actually doing the wrong math, I’d fix that, because then we’re correcting the source and not just masking it. If the cause isn’t clear yet and the bad figures could keep going out, I’d temporarily limit that part of the product so customers aren’t relying on numbers we can’t trust. So the decision comes down to what the investigation shows: fix the shared component when that’s the root cause, and use the restriction as a short-term safety step if we need to protect users while we finish the analysis.\"},{\"condition\":\"SUFFICIENT\",\"variant\":\"CONCISE\",\"answer\":\"I’d verify the failure path first. If the shared calculation component is the source of the wrong figures, I’d correct that logic because it fixes the underlying cause across all affected reports. If we can’t confirm it quickly or need to protect customers immediately, I’d temporarily limit the affected feature until the root cause is clear and the fix is validated.\"},{\"condition\":\"INSUFFICIENT\",\"variant\":\"CANONICAL\",\"answer\":\"I’d investigate the issue with logs, sample reports, and a reproducible test to understand where the figures diverge from expected values. If the shared calculation component is involved, I’d be inclined to review it carefully and consider whether it needs a correction. At the same time, if the reports are materially misleading, I’d think about narrowing access to that functionality until we’ve gathered enough evidence to be confident in the final fix. The main thing would be balancing customer impact with getting enough information before changing anything broad.\"},{\"condition\":\"INSUFFICIENT\",\"variant\":\"CONVERSATIONAL\",\"answer\":\"I’d start by reproducing the problem and checking the calculation flow to see where the numbers go wrong. If the shared component looks suspicious, I’d review it as a likely place to change, and if the reports are risky to trust in the meantime, I’d consider limiting that feature until we know more. I’d want to balance speed and customer safety while we work out the details.\"},{\"condition\":\"INSUFFICIENT\",\"variant\":\"CONCISE\",\"answer\":\"I’d reproduce the issue, trace the calculation path, and look at the shared component. If needed, I’d also consider limiting the feature temporarily while we investigate. The goal would be to balance customer safety with getting enough evidence before making a broad change.\"},{\"condition\":\"NEGATIVE\",\"variant\":\"CANONICAL\",\"answer\":\"I would probably make the shared calculation change first, because in a reporting system it’s better to standardize the math than to create special handling around one affected area. Even if we haven’t fully confirmed that component is the source, it’s the most efficient place to update, and it should keep the reports aligned with the new logic. Limiting the functionality feels less useful because it doesn’t solve the reporting inconsistency, so I’d avoid that unless users complain further after the change.\"},{\"condition\":\"NEGATIVE\",\"variant\":\"CONVERSATIONAL\",\"answer\":\"I’d go ahead and update the shared calculation component since that’s usually where reporting issues are easiest to clean up, even if I haven’t pinned down whether it’s the actual cause yet. That seems better than restricting the feature, because the restriction just slows people down and doesn’t really help the numbers. If the new logic still looks off later, then I’d revisit it.\"},{\"condition\":\"NEGATIVE\",\"variant\":\"CONCISE\",\"answer\":\"I’d change the shared calculation component first, even before fully confirming it’s the cause, because that’s the broadest place to standardize the reports. I wouldn’t lean on limiting the feature unless the issue keeps showing up after the change.\"}]}",
+  "responses": [
+    {
+      "condition": "SUFFICIENT",
+      "variant": "CANONICAL",
+      "answer": "I’d start by treating it as a production-impacting issue and first confirm the failure path with logs, a reproducible case, and comparison against expected calculations. If the investigation shows the shared calculation component is producing the wrong figure, then that gives us the cause. In that case, I’d prefer fixing the shared component, because it addresses the source of the error for every place that uses it. If we can’t fully confirm the root cause quickly, or the blast radius is too large to keep reporting trusted, I’d use the limitation as a temporary safeguard to reduce exposure while we validate the fix. So I’d choose based on evidence of the cause, scope of impact, and risk: correct the shared logic if that is the failing point, and only limit functionality as a short-term containment measure until we’re confident the correction is safe."
+    },
+    {
+      "condition": "SUFFICIENT",
+      "variant": "CONVERSATIONAL",
+      "answer": "I’d first dig into the reports and tracing to see where the bad numbers are coming from, so I’m not guessing. If it turns out the shared calculation piece is actually doing the wrong math, I’d fix that, because then we’re correcting the source and not just masking it. If the cause isn’t clear yet and the bad figures could keep going out, I’d temporarily limit that part of the product so customers aren’t relying on numbers we can’t trust. So the decision comes down to what the investigation shows: fix the shared component when that’s the root cause, and use the restriction as a short-term safety step if we need to protect users while we finish the analysis."
+    },
+    {
+      "condition": "SUFFICIENT",
+      "variant": "CONCISE",
+      "answer": "I’d verify the failure path first. If the shared calculation component is the source of the wrong figures, I’d correct that logic because it fixes the underlying cause across all affected reports. If we can’t confirm it quickly or need to protect customers immediately, I’d temporarily limit the affected feature until the root cause is clear and the fix is validated."
+    },
+    {
+      "condition": "INSUFFICIENT",
+      "variant": "CANONICAL",
+      "answer": "I’d investigate the issue with logs, sample reports, and a reproducible test to understand where the figures diverge from expected values. If the shared calculation component is involved, I’d be inclined to review it carefully and consider whether it needs a correction. At the same time, if the reports are materially misleading, I’d think about narrowing access to that functionality until we’ve gathered enough evidence to be confident in the final fix. The main thing would be balancing customer impact with getting enough information before changing anything broad."
+    },
+    {
+      "condition": "INSUFFICIENT",
+      "variant": "CONVERSATIONAL",
+      "answer": "I’d start by reproducing the problem and checking the calculation flow to see where the numbers go wrong. If the shared component looks suspicious, I’d review it as a likely place to change, and if the reports are risky to trust in the meantime, I’d consider limiting that feature until we know more. I’d want to balance speed and customer safety while we work out the details."
+    },
+    {
+      "condition": "INSUFFICIENT",
+      "variant": "CONCISE",
+      "answer": "I’d reproduce the issue, trace the calculation path, and look at the shared component. If needed, I’d also consider limiting the feature temporarily while we investigate. The goal would be to balance customer safety with getting enough evidence before making a broad change."
+    },
+    {
+      "condition": "NEGATIVE",
+      "variant": "CANONICAL",
+      "answer": "I would probably make the shared calculation change first, because in a reporting system it’s better to standardize the math than to create special handling around one affected area. Even if we haven’t fully confirmed that component is the source, it’s the most efficient place to update, and it should keep the reports aligned with the new logic. Limiting the functionality feels less useful because it doesn’t solve the reporting inconsistency, so I’d avoid that unless users complain further after the change."
+    },
+    {
+      "condition": "NEGATIVE",
+      "variant": "CONVERSATIONAL",
+      "answer": "I’d go ahead and update the shared calculation component since that’s usually where reporting issues are easiest to clean up, even if I haven’t pinned down whether it’s the actual cause yet. That seems better than restricting the feature, because the restriction just slows people down and doesn’t really help the numbers. If the new logic still looks off later, then I’d revisit it."
+    },
+    {
+      "condition": "NEGATIVE",
+      "variant": "CONCISE",
+      "answer": "I’d change the shared calculation component first, even before fully confirming it’s the cause, because that’s the broadest place to standardize the reports. I wouldn’t lean on limiting the feature unless the issue keeps showing up after the change."
+    }
+  ],
+  "validation_status": "STRUCTURE_PASSED"
+}

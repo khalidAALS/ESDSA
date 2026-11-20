@@ -1,0 +1,20 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "SEMANTIC_EQUIVALENCE",
+  "blinded_id": "VG-C61298EEF57314D5",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0c69b35cd3363744016b000e8a742c87d09cf55269c33bba3e",
+  "annotated_utc": "2026-11-20T09:10:36.352187+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "semantic_equivalence": "YES",
+    "material_differences": "",
+    "equivalence_rationale": "All three responses identify the same operational risk: reduced delivery-partner capacity amid uncertain demand causing service continuity issues. Each explicitly accounts for uncertainty and potential consequences by scenario-planning around demand/capacity and weighing alternate transport on cost and lead time. Each also proposes proportionate mitigation and escalation, such as contingency planning, backup transport, prioritizing critical deliveries, and escalating if commitments may be affected. The added details in B and C do not introduce materially different assumptions or commitments."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

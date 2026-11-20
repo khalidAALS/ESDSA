@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-FB9B5D272EF6F332",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0634323200af93f5016b000c90460087d099879a194986ff26",
+  "annotated_utc": "2026-11-20T09:02:10.496686+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "CSS01-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d ask them to explain the checkout step by step so I can tell whether the confirmation message is the only problem or if the order itself didn’t go through.",
+        "rationale": "The candidate clearly identifies the need to clarify what problem is occurring by probing whether the missing confirmation is the only issue or whether the order failed."
+      },
+      {
+        "criterion_id": "CSS01-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d ask them to explain the checkout step by step so I can tell whether the confirmation message is the only problem or if the order itself didn’t go through.",
+        "rationale": "This shows the candidate is determining the affected outcome/service: whether the order was successfully placed and whether confirmation delivery is the impacted aspect."
+      },
+      {
+        "criterion_id": "CSS01-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d want to verify the order details first and then take it from the top.",
+        "rationale": "The candidate indicates they would verify the order details before proceeding, which reflects defining/summarising the problem first rather than jumping directly to resolution."
+      }
+    ],
+    "annotation_notes": ""
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

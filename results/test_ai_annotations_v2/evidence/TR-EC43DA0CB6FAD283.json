@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-EC43DA0CB6FAD283",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_04c44d303636beeb016b002ba9bfa487d08e0da940a7b60409",
+  "annotated_utc": "2026-11-20T11:14:51.840686+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "SWE02-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d check traces, logs, metrics, and the deploy timeline first.",
+        "rationale": "This explicitly names appropriate technical evidence sources for investigating elevated response times."
+      },
+      {
+        "criterion_id": "SWE02-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "Then I’d test each hypothesis.",
+        "rationale": "The answer directly proposes checking competing explanations by testing each hypothesis and then describes distinct checks for deployment, database, and third-party dependency causes."
+      },
+      {
+        "criterion_id": "SWE02-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d keep investigating findings that repeat across multiple sources and explain a meaningful share of the latency, rather than one-off noise.",
+        "rationale": "This shows how observations would be interpreted to justify further investigation, using consistency across sources and impact on latency as the decision rule."
+      }
+    ],
+    "annotation_notes": "The response addresses all three criteria clearly and concisely."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

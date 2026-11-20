@@ -1,0 +1,18 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "SEMANTIC_EQUIVALENCE",
+  "blinded_id": "TG-8234AD0AA55A92DC",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_014bb86f7949561e016b002b0be9dc87d0aaa7c196d9450649",
+  "annotated_utc": "2026-11-20T11:12:13.462217+00:00",
+  "annotation": {
+    "semantic_equivalence": "YES",
+    "material_differences": "",
+    "equivalence_rationale": "All three responses use relevant operational sources from both facilities and technical support, identify the responsible parties and the unresolved AV dependency, and base the readiness update on evidence such as tests, workaround options, and current status. Response B adds more detail about timing and usability, and C mentions documentation and next confirmation timing, but these do not change the core decision-relevant evidence or coordination approach under the three criteria."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

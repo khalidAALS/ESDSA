@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-24631AA88D298F40",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_02938c2ac6ae7f6e016b002977196887d0896e2c97e36406e8",
+  "annotated_utc": "2026-11-20T11:05:30.382249+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "OPS02-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "If only one device shows a brief excursion and the other is normal, I’d usually take the normal reading as the more reliable one and keep the shipment moving unless something else looked obviously wrong.",
+        "rationale": "This explicitly identifies a plausible operational risk context: a potentially unreliable excursion reading versus a normal reading on a temperature-controlled, time-sensitive shipment."
+      },
+      {
+        "criterion_id": "OPS02-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I wouldn’t want to create a delay based on a short blip that may just be a sensor fluctuation.",
+        "rationale": "The answer weighs uncertainty ('may just be a sensor fluctuation') and considers a possible consequence of action/inaction (creating delay), showing some assessment of likelihood and impact."
+      },
+      {
+        "criterion_id": "OPS02-C3",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I’d note the reading for records and let the shipment depart on schedule, then follow up later if the team wants to review the equipment. In practice, I’d avoid escalating unless there were repeated alarms or a clear operational breakdown.",
+        "rationale": "This proposes minimal response despite a temperature excursion signal, and delays escalation until repeated alarms or a clear breakdown, which is a materially narrow mitigation/escalation approach for a time-sensitive controlled shipment."
+      }
+    ],
+    "annotation_notes": "The answer recognizes uncertainty but prioritizes throughput and deferred review. It does not propose any immediate contingency, verification step, or escalation tied to the excursion itself."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

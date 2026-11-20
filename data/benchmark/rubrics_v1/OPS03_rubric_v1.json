@@ -1,0 +1,49 @@
+{
+  "rubric_id": "ESDSA-OPS03-R1",
+  "version": "1.0-draft",
+  "role_code": "OPS",
+  "role_name": "Operations Coordinator",
+  "competency_code": "OPS03",
+  "competency_name": "Evidence-based coordination",
+  "criteria": [
+    {
+      "id": "OPS03-C1",
+      "name": "Evidence integration",
+      "definition": "Use relevant information from operational sources.",
+      "illustrative_positive_evidence": "Reconciles supplier status with delivery records.",
+      "illustrative_negative_evidence": "Discards verified contradictory records."
+    },
+    {
+      "id": "OPS03-C2",
+      "name": "Coordination",
+      "definition": "Identify responsible parties and necessary dependencies.",
+      "illustrative_positive_evidence": "Confirms handoffs and owners before changing the schedule.",
+      "illustrative_negative_evidence": "Assigns mutually incompatible tasks without resolving ownership."
+    },
+    {
+      "id": "OPS03-C3",
+      "name": "Decision traceability",
+      "definition": "Explain actions using relevant operational evidence.",
+      "illustrative_positive_evidence": "Records why a schedule change was necessary.",
+      "illustrative_negative_evidence": "Knowingly documents an invented justification."
+    }
+  ],
+  "evidence_statuses": {
+    "POSITIVE_EVIDENCE": "The answer explicitly or clearly demonstrates the indicator in context.",
+    "NEGATIVE_EVIDENCE": "The answer explicitly demonstrates a materially deficient approach concerning the indicator.",
+    "INSUFFICIENT_EVIDENCE": "The answer does not establish either positive or negative evidence for the indicator."
+  },
+  "interpretation_rules": [
+    "Assess demonstrated meaning, not exact wording.",
+    "Do not infer deficient practice solely from omission.",
+    "A brief answer can provide sufficient evidence.",
+    "A fluent or lengthy answer is not sufficient by itself.",
+    "Consider scenario context and applicable constraints.",
+    "Record the supporting passage or indicate absence.",
+    "Illustrative examples are not exhaustive.",
+    "Do not infer protected or demographic attributes."
+  ],
+  "decision_policy": "NOT_YET_VALIDATED",
+  "expert_review": "PENDING",
+  "reference_validation": "PENDING"
+}

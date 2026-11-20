@@ -1,0 +1,20 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "SEMANTIC_EQUIVALENCE",
+  "blinded_id": "VG-2D07B91885EEF546",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0ededc984326caee016b000c23e0e887d08d6531caccf6267c",
+  "annotated_utc": "2026-11-20T09:00:21.953206+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "semantic_equivalence": "YES",
+    "material_differences": "",
+    "equivalence_rationale": "All three responses preserve the same decision-relevant evidence: they prioritize the completed team’s report, keep the launch moving on the basis of that status, and defer unresolved dependencies to later. Each gives a similar coordination approach centered on using the available operational status rather than reconciling conflicting reports, and each explains the action in terms of maintaining momentum and issuing an updated/revised schedule. The added phrasing in B and C does not introduce a materially different safeguard, dependency handling, or operational commitment."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

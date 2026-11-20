@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-4260D6FA539FC05B",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0c5e31419fdbebf8016b000c68c63087d0a1788fa79e38e2a8",
+  "annotated_utc": "2026-11-20T09:01:31.172900+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "CSS03-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "If it’s still early in fulfilment, I’d try to update it. If it’s already farther along, I’d explain that the change may not be possible and see whether the customer wants to cancel and reorder instead.",
+        "rationale": "The answer weighs resolution options against the order’s status and proposes different outcomes depending on the evidence available, which shows appropriate option assessment."
+      },
+      {
+        "criterion_id": "CSS03-C2",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "passage": "",
+        "rationale": "The answer mentions that the change may not be possible later in fulfilment, but it does not clearly show awareness of specific authorisation rules, service constraints, or any required approval process. It is not enough to establish respectful handling of policy or constraints."
+      },
+      {
+        "criterion_id": "CSS03-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "If the records don’t line up, I’d make a note to review them, but I’d try to keep the conversation moving while I do that.",
+        "rationale": "This explicitly recognises a mismatch in records and indicates the need to review them, showing awareness of uncertainty and the need for further checking."
+      }
+    ],
+    "annotation_notes": ""
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

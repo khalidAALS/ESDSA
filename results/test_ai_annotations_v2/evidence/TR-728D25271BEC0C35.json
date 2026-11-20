@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-728D25271BEC0C35",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_02209af0f69738c4016b002a6bafe887d089139167bd01086b",
+  "annotated_utc": "2026-11-20T11:09:33.990424+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "CSS04-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d tell them it should be fixed already and have them try again.",
+        "rationale": "This clearly communicates a straightforward proposed action to the customer in understandable terms."
+      },
+      {
+        "criterion_id": "CSS04-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d tell them it should be fixed already and have them try again.",
+        "rationale": "The candidate sets a limited expectation that the issue should now be fixed and asks the customer to test it again, without promising an ungrounded outcome."
+      },
+      {
+        "criterion_id": "CSS04-C3",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "If it still fails, they can submit a new ticket; I wouldn’t set up a separate follow-up unless they report a new problem.",
+        "rationale": "This rejects proactive follow-up or confirmation and instead shifts responsibility to the customer to open a new ticket, which does not provide an appropriate mechanism for status or confirmation."
+      }
+    ],
+    "annotation_notes": "The answer gives a clear immediate instruction and a modest expectation, but it does not arrange a follow-up to confirm resolution and instead defers to a new ticket if issues persist."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

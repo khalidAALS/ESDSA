@@ -1,0 +1,75 @@
+{
+  "experiment": "ESDSA_VALIDATION_GENERATION_V1",
+  "partition": "VALIDATION",
+  "family_id": "ESDSA-OPS03-10",
+  "run_sha256": "10a95b25cbf7f42306cc3f744a6ea7ba1a09562c4b41ad1474f817b6320e1a05",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "response_id": "resp_0d3e3ad90fc5e771016aff922716a887d094ce94d5a0f5746f",
+  "response_status": "completed",
+  "usage": {
+    "input_tokens": 729,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      }
+    },
+    "output_tokens": 863,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 1592
+  },
+  "raw_output_text": "{\"responses\":[{\"condition\":\"SUFFICIENT\",\"variant\":\"CANONICAL\",\"answer\":\"I’d start by pulling together the relevant operational evidence from the last attempt: the missed handover points, the revised schedule, any task logs, and any ownership notes from the teams involved. Then I’d map each remaining task to a single owner and check the dependencies so we can see exactly where the disagreement is coming from. If the records show a task is already covered by one team or depends on another handoff, I’d use that to settle the ownership discussion before we change the plan. I’d also document the reasoning for any schedule adjustment, so it’s clear why the sequence changed and what evidence supported that decision.\"},{\"condition\":\"SUFFICIENT\",\"variant\":\"CONVERSATIONAL\",\"answer\":\"I’d look at the actual handover records, the updated schedule, and whatever task tracker or notes we have from the failed attempt. From there I’d line up each remaining task with one owner and check the dependencies so we’re not leaving two teams thinking the same thing is theirs or, worse, nobody owns it. If there’s disagreement, I’d use the evidence from the logs and handoff history to agree the ownership before we move anything around. I’d also make sure the reason for any change gets written down so it’s easy to follow later.\"},{\"condition\":\"SUFFICIENT\",\"variant\":\"CONCISE\",\"answer\":\"I’d review the handover logs, revised schedule, and task records, then assign each remaining task to one owner based on the evidence and dependencies. If teams disagree, I’d use those records to resolve ownership before changing the plan. I’d document why any schedule change was made so the decision is traceable.\"},{\"condition\":\"INSUFFICIENT\",\"variant\":\"CANONICAL\",\"answer\":\"I’d gather the relevant records from the last attempt, including the handover log and the revised schedule, and compare them against the current task list. Then I’d talk with the teams to understand where the ownership disagreement is coming from and try to align the schedule around the tasks that are clearly defined. I’d make sure the next version of the plan is recorded with the reasons for any changes, so there’s a clear trail of what was decided.\"},{\"condition\":\"INSUFFICIENT\",\"variant\":\"CONVERSATIONAL\",\"answer\":\"I’d pull the handover notes and the new schedule together and check them against the task list from the relocation. Then I’d sit down with the teams to work through the ownership dispute and adjust the timing where the tasks are already clear. I’d also keep a record of the changes and why we made them, so the plan stays easy to follow.\"},{\"condition\":\"INSUFFICIENT\",\"variant\":\"CONCISE\",\"answer\":\"I’d compare the handover records, revised schedule, and task list, then work with the teams to sort out the ownership disagreement. I’d update the plan around the clearly defined tasks and document the reasons for any changes.\"},{\"condition\":\"NEGATIVE\",\"variant\":\"CANONICAL\",\"answer\":\"I’d focus on getting the revised schedule out quickly and assign the remaining tasks to the teams that seem most likely to handle them, even if the ownership is still a bit unclear. Since the relocation already slipped once, I wouldn’t want to slow things down by revisiting every handover detail. I’d note in the plan that the schedule was updated to keep momentum, and then let the teams sort out any overlaps as they come up.\"},{\"condition\":\"NEGATIVE\",\"variant\":\"CONVERSATIONAL\",\"answer\":\"I’d probably push the new schedule through first and give the leftover tasks to whichever teams are closest to the work, even if there’s still some disagreement on ownership. My main goal would be to keep things moving rather than spend too long rechecking every handover. I’d put a simple note in the plan saying we updated it to avoid further delay and deal with any clashes later.\"},{\"condition\":\"NEGATIVE\",\"variant\":\"CONCISE\",\"answer\":\"I’d move ahead with the revised schedule and assign the open tasks to the nearest available teams, then deal with ownership conflicts later. I’d note that the update was made to avoid further delay.\"}]}",
+  "responses": [
+    {
+      "condition": "SUFFICIENT",
+      "variant": "CANONICAL",
+      "answer": "I’d start by pulling together the relevant operational evidence from the last attempt: the missed handover points, the revised schedule, any task logs, and any ownership notes from the teams involved. Then I’d map each remaining task to a single owner and check the dependencies so we can see exactly where the disagreement is coming from. If the records show a task is already covered by one team or depends on another handoff, I’d use that to settle the ownership discussion before we change the plan. I’d also document the reasoning for any schedule adjustment, so it’s clear why the sequence changed and what evidence supported that decision."
+    },
+    {
+      "condition": "SUFFICIENT",
+      "variant": "CONVERSATIONAL",
+      "answer": "I’d look at the actual handover records, the updated schedule, and whatever task tracker or notes we have from the failed attempt. From there I’d line up each remaining task with one owner and check the dependencies so we’re not leaving two teams thinking the same thing is theirs or, worse, nobody owns it. If there’s disagreement, I’d use the evidence from the logs and handoff history to agree the ownership before we move anything around. I’d also make sure the reason for any change gets written down so it’s easy to follow later."
+    },
+    {
+      "condition": "SUFFICIENT",
+      "variant": "CONCISE",
+      "answer": "I’d review the handover logs, revised schedule, and task records, then assign each remaining task to one owner based on the evidence and dependencies. If teams disagree, I’d use those records to resolve ownership before changing the plan. I’d document why any schedule change was made so the decision is traceable."
+    },
+    {
+      "condition": "INSUFFICIENT",
+      "variant": "CANONICAL",
+      "answer": "I’d gather the relevant records from the last attempt, including the handover log and the revised schedule, and compare them against the current task list. Then I’d talk with the teams to understand where the ownership disagreement is coming from and try to align the schedule around the tasks that are clearly defined. I’d make sure the next version of the plan is recorded with the reasons for any changes, so there’s a clear trail of what was decided."
+    },
+    {
+      "condition": "INSUFFICIENT",
+      "variant": "CONVERSATIONAL",
+      "answer": "I’d pull the handover notes and the new schedule together and check them against the task list from the relocation. Then I’d sit down with the teams to work through the ownership dispute and adjust the timing where the tasks are already clear. I’d also keep a record of the changes and why we made them, so the plan stays easy to follow."
+    },
+    {
+      "condition": "INSUFFICIENT",
+      "variant": "CONCISE",
+      "answer": "I’d compare the handover records, revised schedule, and task list, then work with the teams to sort out the ownership disagreement. I’d update the plan around the clearly defined tasks and document the reasons for any changes."
+    },
+    {
+      "condition": "NEGATIVE",
+      "variant": "CANONICAL",
+      "answer": "I’d focus on getting the revised schedule out quickly and assign the remaining tasks to the teams that seem most likely to handle them, even if the ownership is still a bit unclear. Since the relocation already slipped once, I wouldn’t want to slow things down by revisiting every handover detail. I’d note in the plan that the schedule was updated to keep momentum, and then let the teams sort out any overlaps as they come up."
+    },
+    {
+      "condition": "NEGATIVE",
+      "variant": "CONVERSATIONAL",
+      "answer": "I’d probably push the new schedule through first and give the leftover tasks to whichever teams are closest to the work, even if there’s still some disagreement on ownership. My main goal would be to keep things moving rather than spend too long rechecking every handover. I’d put a simple note in the plan saying we updated it to avoid further delay and deal with any clashes later."
+    },
+    {
+      "condition": "NEGATIVE",
+      "variant": "CONCISE",
+      "answer": "I’d move ahead with the revised schedule and assign the open tasks to the nearest available teams, then deal with ownership conflicts later. I’d note that the update was made to avoid further delay."
+    }
+  ],
+  "validation_status": "STRUCTURE_PASSED"
+}

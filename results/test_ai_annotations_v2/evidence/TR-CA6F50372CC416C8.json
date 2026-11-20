@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-CA6F50372CC416C8",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_09754883f197cbdb016b002a76988c87d0bae9ee1bc1960cb3",
+  "annotated_utc": "2026-11-20T11:09:44.966379+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "OPS03-C1",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I’d use the facilities supervisor’s ready status and send the update",
+        "rationale": "The answer relies on only one operational source and ignores the technical support team's reported unresolved audiovisual issue, showing a lack of integrating relevant information from multiple operational sources."
+      },
+      {
+        "criterion_id": "OPS03-C2",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "passage": "",
+        "rationale": "The answer mentions facilities and technical support, but it does not clearly identify responsibilities, dependencies, or how the parties would be coordinated beyond stating that technical support keeps working on the issue."
+      },
+      {
+        "criterion_id": "OPS03-C3",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I’d use the facilities supervisor’s ready status and send the update",
+        "rationale": "The stated decision is based on a single piece of operational evidence and does not explain how the readiness update is justified by the conflicting information available, so it demonstrates weak decision traceability."
+      }
+    ],
+    "annotation_notes": "The answer is concise and shows a preference for one source over another, but it does not substantively address the conflicting evidence or coordination process."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

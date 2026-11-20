@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-0A4BB9487597616F",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_01b743c9a9f91bc0016b000c2f87a087d08a95c75dbfb7e7b6",
+  "annotated_utc": "2026-11-20T09:00:33.831604+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "SWE04-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d want to see that the updated approval rule behaves as expected in the main high-value transaction path, ideally with a test case that mirrors the original problem.",
+        "rationale": "This explicitly describes verifying the fix with a test that mirrors the original problem, which directly tests whether the reported failure is resolved."
+      },
+      {
+        "criterion_id": "SWE04-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d also look at whether the implementation has been reviewed and whether the test coverage around the rule changes seems reasonable.",
+        "rationale": "By checking test coverage around the rule changes, the answer shows consideration of whether the update is sufficiently verified in relation to surrounding behaviour, including possible impact beyond the immediate fix."
+      },
+      {
+        "criterion_id": "SWE04-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "If those look good, I’d be comfortable moving it toward deployment, while keeping an eye out for anything unusual after release.",
+        "rationale": "This states a decision based on verification findings and describes the next action of moving toward deployment if the checks are satisfactory."
+      }
+    ],
+    "annotation_notes": ""
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

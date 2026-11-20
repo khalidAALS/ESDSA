@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-005F2A42010C682F",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0043eda6992d3109016b002a84fc2887d082f6e91a8e1162c0",
+  "annotated_utc": "2026-11-20T11:09:59.283825+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "OPS04-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "If the early inspection only raises a mild concern, I’d let operations proceed and see whether anything else turns up.",
+        "rationale": "The candidate indicates they would continue monitoring by seeing whether additional issues emerge, which shows attention to information needed to track the situation."
+      },
+      {
+        "criterion_id": "OPS04-C2",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "If the early inspection only raises a mild concern, I’d let operations proceed and see whether anything else turns up. I wouldn’t rush to escalate unless the problem becomes really clear",
+        "rationale": "This suggests the candidate would not act on an identified concern and would wait for a clearer problem before taking action, which conflicts with recognizing when deviation requires response."
+      },
+      {
+        "criterion_id": "OPS04-C3",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "if it does, I’d just ask the contractor to deal with it afterward.",
+        "rationale": "The candidate does not describe directing the issue to the appropriate owner for immediate follow-through; instead they would defer handling until afterward and only ask the contractor to deal with it, which weakly but materially conflicts with escalation and verified response."
+      }
+    ],
+    "annotation_notes": "The answer shows a passive monitoring approach and reluctance to escalate. It does not establish robust follow-through or ownership verification."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

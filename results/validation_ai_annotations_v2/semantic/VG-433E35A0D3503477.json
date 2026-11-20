@@ -1,0 +1,20 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "SEMANTIC_EQUIVALENCE",
+  "blinded_id": "VG-433E35A0D3503477",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_08791249e3939142016b000c4f748c87d09ad53f0209b83e0e",
+  "annotated_utc": "2026-11-20T09:01:06.703822+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "semantic_equivalence": "NO",
+    "material_differences": "A and C both explicitly de-emphasize reproducing the failure with affected/sample records and systematic comparison of failing versus working behavior, but B is even more minimal and omits several of A/C’s qualifying commitments (e.g., the assumption of a different set of records, the fallback to the test environment, and the idea of moving on if the environment does not expose the issue). More importantly, all three responses shift the approach toward assuming a new issue and focusing on the latest code change rather than systematically characterizing and narrowing the defect from observed failure conditions; this weakens criterion-level evidence for Reproduction, Comparison, and Systematic narrowing, but the degree and specific commitments differ across A, B, and C.",
+    "equivalence_rationale": "The three answers are not preserving the same decision-relevant evidence. Under the supplied criteria, a strong response should try to reproduce or characterize the failure, compare failing and functioning cases, and use observations to narrow causes. All three instead prioritize the newest code change and minimize reproduction, but B is materially thinner than A/C and lacks their additional assumptions and operational steps. Because these differences could affect how strongly each response demonstrates the targeted diagnostic competencies, the set is not semantically equivalent."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

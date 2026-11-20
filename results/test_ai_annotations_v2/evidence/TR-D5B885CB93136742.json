@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-D5B885CB93136742",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_02424dc9345507fa016b002be8c0bc87d0a0a53f1fe1458bb4",
+  "annotated_utc": "2026-11-20T11:15:55.058188+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "CSS04-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d acknowledge the fix note, apologize, and say we still need to verify it worked on the customer’s side.",
+        "rationale": "This clearly explains the proposed next action in understandable terms, including acknowledging the note and verifying whether the fix worked."
+      },
+      {
+        "criterion_id": "CSS04-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d explain the next update depends on that confirmation and any follow-up investigation.",
+        "rationale": "This sets a justified expectation by tying the next update to customer confirmation and further investigation, without promising an unsupported outcome or timeline."
+      },
+      {
+        "criterion_id": "CSS04-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d ask them to retry the service and send back what they see, and I’d explain the next update depends on that confirmation and any follow-up investigation. I’d keep the ticket open or re-open it and follow up once we have a successful confirmation.",
+        "rationale": "This provides an appropriate follow-up mechanism: requesting the customer to retry and report results, keeping the ticket open or re-opened, and following up after confirmation."
+      }
+    ],
+    "annotation_notes": ""
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

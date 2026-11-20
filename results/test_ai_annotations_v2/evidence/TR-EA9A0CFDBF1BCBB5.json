@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-EA9A0CFDBF1BCBB5",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_05cdf91f6090e241016b00294f732087d0b42308f817518cb3",
+  "annotated_utc": "2026-11-20T11:04:49.903409+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "OPS03-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d ask both teams for a quick update and then pass along the most current status to the event coordinator. I’d want to know whether the room is set up and whether the technical issue is likely to affect the event, and I’d try to get a sense of whether there’s a backup plan if needed.",
+        "rationale": "The candidate explicitly draws on information from both operational sources (facilities and technical support) and specifies relevant status details to inform the update."
+      },
+      {
+        "criterion_id": "OPS03-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d ask both teams for a quick update",
+        "rationale": "This shows coordination by engaging the responsible parties directly to reconcile the discrepancy and obtain status information."
+      },
+      {
+        "criterion_id": "OPS03-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "If the two reports don’t match, I’d go back to them for clarification before sending the update. I’d keep the coordinator informed of what each side says and any next steps",
+        "rationale": "The candidate explains a decision process tied to evidence from the parties’ reports and indicates they would communicate the update based on that operational information."
+      }
+    ],
+    "annotation_notes": ""
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

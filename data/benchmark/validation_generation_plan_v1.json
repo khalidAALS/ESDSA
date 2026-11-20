@@ -1,0 +1,1060 @@
+{
+  "experiment": "ESDSA_VALIDATION_GENERATION_V1",
+  "status": "PREPARED_NOT_EXECUTED",
+  "partition": "VALIDATION",
+  "requested_model": "gpt-5.4-mini",
+  "generation_script_sha256": "9b367486b2324131327a617c86f39e1af46824211fc1d69c53771ed401f8ea15",
+  "instructions_sha256": "0088e252816f04dbcc56e55b35c53b3ad3601c61a5ca4c494b3812ddaafa67aa",
+  "schema_sha256": "dcce512cb76543da65a130d066fbb0e4cafd3d2e640e575a94e622fe3ffbb52a",
+  "scenario_file_sha256": "23bc13887d81d3e2174e095b4ff4ffe1bf9a279991257c32e0c62703b1d0d9e5",
+  "rubric_protocol": "Existing rubrics_v1",
+  "explicit_temperature": null,
+  "explicit_top_p": null,
+  "explicit_seed": null,
+  "expected_families": 24,
+  "expected_responses": 216,
+  "batches": [
+    {
+      "family_id": "ESDSA-SWE01-05",
+      "competency_code": "SWE01",
+      "scenario_profile": "Multiple competing priorities",
+      "payload": {
+        "family_id": "ESDSA-SWE01-05",
+        "role": "Software Developer",
+        "competency": "Systematic diagnosis",
+        "question": "During a working day, your team receives reports of incorrect search results, unusually slow file uploads, and occasional login failures. A recent deployment may be relevant, but the reports are incomplete and several teams are requesting attention. How would you investigate the problems and decide what to examine first?",
+        "rubric": {
+          "criteria": [
+            {
+              "id": "SWE01-C1",
+              "name": "Reproduction",
+              "definition": "Establish how to reproduce or characterise the reported failure.",
+              "illustrative_positive_evidence": "Recreates the failure with affected inputs.",
+              "illustrative_negative_evidence": "Explicitly chooses not to investigate whether the fault can be reproduced."
+            },
+            {
+              "id": "SWE01-C2",
+              "name": "Comparison",
+              "definition": "Compare failure conditions with functioning behaviour.",
+              "illustrative_positive_evidence": "Compares failing and successful execution paths.",
+              "illustrative_negative_evidence": "Dismisses relevant differences without examining them."
+            },
+            {
+              "id": "SWE01-C3",
+              "name": "Systematic narrowing",
+              "definition": "Use observations to narrow plausible causes.",
+              "illustrative_positive_evidence": "Isolates the issue to a specific component through checks.",
+              "illustrative_negative_evidence": "Selects an unrelated cause despite contradictory diagnostic evidence."
+            }
+          ],
+          "evidence_statuses": {
+            "POSITIVE_EVIDENCE": "The answer explicitly or clearly demonstrates the indicator in context.",
+            "NEGATIVE_EVIDENCE": "The answer explicitly demonstrates a materially deficient approach concerning the indicator.",
+            "INSUFFICIENT_EVIDENCE": "The answer does not establish either positive or negative evidence for the indicator."
+          }
+        }
+      },
+      "run_sha256": "46291a8c1e40771ea49e309eabcfa39e0fe1185249bb127dee0fa59b67425672",
+      "expected_responses": 9
+    },
+    {
+      "family_id": "ESDSA-SWE01-10",
+      "competency_code": "SWE01",
+      "scenario_profile": "Recovery after an unsuccessful attempt",
+      "payload": {
+        "family_id": "ESDSA-SWE01-10",
+        "role": "Software Developer",
+        "competency": "Systematic diagnosis",
+        "question": "A previous investigation into missing records in a scheduled data export led to a software change, but the problem has returned for a different set of records. The original reproduction steps no longer expose the failure, and the team is uncertain whether the same defect is responsible. You have access to the earlier findings, export logs, sample records and a test environment. How would you approach diagnosing the problem now?",
+        "rubric": {
+          "criteria": [
+            {
+              "id": "SWE01-C1",
+              "name": "Reproduction",
+              "definition": "Establish how to reproduce or characterise the reported failure.",
+              "illustrative_positive_evidence": "Recreates the failure with affected inputs.",
+              "illustrative_negative_evidence": "Explicitly chooses not to investigate whether the fault can be reproduced."
+            },
+            {
+              "id": "SWE01-C2",
+              "name": "Comparison",
+              "definition": "Compare failure conditions with functioning behaviour.",
+              "illustrative_positive_evidence": "Compares failing and successful execution paths.",
+              "illustrative_negative_evidence": "Dismisses relevant differences without examining them."
+            },
+            {
+              "id": "SWE01-C3",
+              "name": "Systematic narrowing",
+              "definition": "Use observations to narrow plausible causes.",
+              "illustrative_positive_evidence": "Isolates the issue to a specific component through checks.",
+              "illustrative_negative_evidence": "Selects an unrelated cause despite contradictory diagnostic evidence."
+            }
+          ],
+          "evidence_statuses": {
+            "POSITIVE_EVIDENCE": "The answer explicitly or clearly demonstrates the indicator in context.",
+            "NEGATIVE_EVIDENCE": "The answer explicitly demonstrates a materially deficient approach concerning the indicator.",
+            "INSUFFICIENT_EVIDENCE": "The answer does not establish either positive or negative evidence for the indicator."
+          }
+        }
+      },
+      "run_sha256": "4ab4d4d4c66dccc652583e29383cb6b1b0090a581db344fe1e1a14555df84008",
+      "expected_responses": 9
+    },
+    {
+      "family_id": "ESDSA-SWE02-04",
+      "competency_code": "SWE02",
+      "scenario_profile": "Conflicting information",
+      "payload": {
+        "family_id": "ESDSA-SWE02-04",
+        "role": "Software Developer",
+        "competency": "Technical investigation",
+        "question": "A service has begun returning intermittent errors. Application logs suggest a connection problem, but infrastructure monitoring shows no corresponding outage, and user reports describe different failure patterns. How would you investigate these conflicting signals?",
+        "rubric": {
+          "criteria": [
+            {
+              "id": "SWE02-C1",
+              "name": "Relevant sources",
+              "definition": "Identify technical evidence appropriate to the failure.",
+              "illustrative_positive_evidence": "Examines relevant logs, traces or configuration changes.",
+              "illustrative_negative_evidence": "Discards relevant diagnostics without justification."
+            },
+            {
+              "id": "SWE02-C2",
+              "name": "Hypothesis testing",
+              "definition": "Propose checks that distinguish possible causes.",
+              "illustrative_positive_evidence": "Tests whether the issue follows a specific change.",
+              "illustrative_negative_evidence": "Treats an untested assumption as conclusive."
+            },
+            {
+              "id": "SWE02-C3",
+              "name": "Evidence interpretation",
+              "definition": "Connect observations to a diagnostic conclusion.",
+              "illustrative_positive_evidence": "Explains why an observed pattern supports a cause.",
+              "illustrative_negative_evidence": "Ignores observations that directly refute the proposed cause."
+            }
+          ],
+          "evidence_statuses": {
+            "POSITIVE_EVIDENCE": "The answer explicitly or clearly demonstrates the indicator in context.",
+            "NEGATIVE_EVIDENCE": "The answer explicitly demonstrates a materially deficient approach concerning the indicator.",
+            "INSUFFICIENT_EVIDENCE": "The answer does not establish either positive or negative evidence for the indicator."
+          }
+        }
+      },
+      "run_sha256": "8b8ce95972337f65e3abed0d0d8a2438c0fa17b901c8433f7c86d16d969de550",
+      "expected_responses": 9
+    },
+    {
+      "family_id": "ESDSA-SWE02-06",
+      "competency_code": "SWE02",
+      "scenario_profile": "Uncertain cause or outcome",
+      "payload": {
+        "family_id": "ESDSA-SWE02-06",
+        "role": "Software Developer",
+        "competency": "Technical investigation",
+        "question": "A scheduled data-processing job sometimes finishes much later than expected. The delay does not occur consistently, and it is unclear whether the cause lies in incoming data, the processing code or an external dependency. What would your investigation involve?",
+        "rubric": {
+          "criteria": [
+            {
+              "id": "SWE02-C1",
+              "name": "Relevant sources",
+              "definition": "Identify technical evidence appropriate to the failure.",
+              "illustrative_positive_evidence": "Examines relevant logs, traces or configuration changes.",
+              "illustrative_negative_evidence": "Discards relevant diagnostics without justification."
+            },
+            {
+              "id": "SWE02-C2",
+              "name": "Hypothesis testing",
+              "definition": "Propose checks that distinguish possible causes.",
+              "illustrative_positive_evidence": "Tests whether the issue follows a specific change.",
+              "illustrative_negative_evidence": "Treats an untested assumption as conclusive."
+            },
+            {
+              "id": "SWE02-C3",
+              "name": "Evidence interpretation",
+              "definition": "Connect observations to a diagnostic conclusion.",
+              "illustrative_positive_evidence": "Explains why an observed pattern supports a cause.",
+              "illustrative_negative_evidence": "Ignores observations that directly refute the proposed cause."
+            }
+          ],
+          "evidence_statuses": {
+            "POSITIVE_EVIDENCE": "The answer explicitly or clearly demonstrates the indicator in context.",
+            "NEGATIVE_EVIDENCE": "The answer explicitly demonstrates a materially deficient approach concerning the indicator.",
+            "INSUFFICIENT_EVIDENCE": "The answer does not establish either positive or negative evidence for the indicator."
+          }
+        }
+      },
+      "run_sha256": "8ee088714902f05cf680d8902818d5eece0ed073268ca79d05635b96e488ecf2",
+      "expected_responses": 9
+    },
+    {
+      "family_id": "ESDSA-SWE03-05",
+      "competency_code": "SWE03",
+      "scenario_profile": "Multiple competing priorities",
+      "payload": {
+        "family_id": "ESDSA-SWE03-05",
+        "role": "Software Developer",
+        "competency": "Reasoned correction",
+        "question": "Your team identifies a defect that affects a small number of users while also preparing a time-sensitive release. A quick patch is available, but it could interfere with another feature, and a more extensive change would delay the release. How would you decide what correction to make and how to proceed?",
+        "rubric": {
+          "criteria": [
+            {
+              "id": "SWE03-C1",
+              "name": "Cause identification",
+              "definition": "Identify a plausible cause supported by investigation.",
+              "illustrative_positive_evidence": "Traces the failure to faulty persistence logic.",
+              "illustrative_negative_evidence": "Claims a cause despite explicitly contrary evidence."
+            },
+            {
+              "id": "SWE03-C2",
+              "name": "Linked correction",
+              "definition": "Connect the proposed correction to that identified cause.",
+              "illustrative_positive_evidence": "Corrects the logic identified as responsible for the failure.",
+              "illustrative_negative_evidence": "Changes unrelated logic while acknowledging it is not causal."
+            },
+            {
+              "id": "SWE03-C3",
+              "name": "Correction justification",
+              "definition": "Explain why the correction addresses the problem.",
+              "illustrative_positive_evidence": "Explains how the change prevents the observed failure.",
+              "illustrative_negative_evidence": "Adopts a known ineffective fix without justification."
+            }
+          ],
+          "evidence_statuses": {
+            "POSITIVE_EVIDENCE": "The answer explicitly or clearly demonstrates the indicator in context.",
+            "NEGATIVE_EVIDENCE": "The answer explicitly demonstrates a materially deficient approach concerning the indicator.",
+            "INSUFFICIENT_EVIDENCE": "The answer does not establish either positive or negative evidence for the indicator."
+          }
+        }
+      },
+      "run_sha256": "32fef18f22fdea48e6a5cd2168d6a917554cd18d38204477178c5e69fe15aab2",
+      "expected_responses": 9
+    },
+    {
+      "family_id": "ESDSA-SWE03-09",
+      "competency_code": "SWE03",
+      "scenario_profile": "High-consequence decision",
+      "payload": {
+        "family_id": "ESDSA-SWE03-09",
+        "role": "Software Developer",
+        "competency": "Reasoned correction",
+        "question": "An error in a financial reporting application may produce incorrect figures in reports that customers rely on. One proposed fix changes a shared calculation component, while another limits the affected functionality until the problem is better understood. How would you evaluate the options and determine an appropriate correction?",
+        "rubric": {
+          "criteria": [
+            {
+              "id": "SWE03-C1",
+              "name": "Cause identification",
+              "definition": "Identify a plausible cause supported by investigation.",
+              "illustrative_positive_evidence": "Traces the failure to faulty persistence logic.",
+              "illustrative_negative_evidence": "Claims a cause despite explicitly contrary evidence."
+            },
+            {
+              "id": "SWE03-C2",
+              "name": "Linked correction",
+              "definition": "Connect the proposed correction to that identified cause.",
+              "illustrative_positive_evidence": "Corrects the logic identified as responsible for the failure.",
+              "illustrative_negative_evidence": "Changes unrelated logic while acknowledging it is not causal."
+            },
+            {
+              "id": "SWE03-C3",
+              "name": "Correction justification",
+              "definition": "Explain why the correction addresses the problem.",
+              "illustrative_positive_evidence": "Explains how the change prevents the observed failure.",
+              "illustrative_negative_evidence": "Adopts a known ineffective fix without justification."
+            }
+          ],
+          "evidence_statuses": {
+            "POSITIVE_EVIDENCE": "The answer explicitly or clearly demonstrates the indicator in context.",
+            "NEGATIVE_EVIDENCE": "The answer explicitly demonstrates a materially deficient approach concerning the indicator.",
+            "INSUFFICIENT_EVIDENCE": "The answer does not establish either positive or negative evidence for the indicator."
+          }
+        }
+      },
+      "run_sha256": "45607fa3e89401aab23afc1e7b89a8dbc7747469b07fc3057e6da7c68a0afcc5",
+      "expected_responses": 9
+    },
+    {
+      "family_id": "ESDSA-SWE04-05",
+      "competency_code": "SWE04",
+      "scenario_profile": "Multiple competing priorities",
+      "payload": {
+        "family_id": "ESDSA-SWE04-05",
+        "role": "Software Developer",
+        "competency": "Verification and testing",
+        "question": "A release includes changes to account permissions, search functionality and a background export process. Testing time is limited, and the team has identified different risks in each area. How would you organise verification before release and respond to unexpected test findings?",
+        "rubric": {
+          "criteria": [
+            {
+              "id": "SWE04-C1",
+              "name": "Targeted verification",
+              "definition": "Test whether the reported failure is resolved.",
+              "illustrative_positive_evidence": "Repeats the previously failing scenario after correction.",
+              "illustrative_negative_evidence": "Explicitly skips checking whether the fix works."
+            },
+            {
+              "id": "SWE04-C2",
+              "name": "Regression consideration",
+              "definition": "Assess potential impact on previously working behaviour.",
+              "illustrative_positive_evidence": "Runs related regression checks.",
+              "illustrative_negative_evidence": "Deliberately omits necessary regression checks despite known impact."
+            },
+            {
+              "id": "SWE04-C3",
+              "name": "Outcome assessment",
+              "definition": "Use verification findings to decide next action.",
+              "illustrative_positive_evidence": "Investigates a failed retest before releasing.",
+              "illustrative_negative_evidence": "Proceeds despite known failed verification without mitigation."
+            }
+          ],
+          "evidence_statuses": {
+            "POSITIVE_EVIDENCE": "The answer explicitly or clearly demonstrates the indicator in context.",
+            "NEGATIVE_EVIDENCE": "The answer explicitly demonstrates a materially deficient approach concerning the indicator.",
+            "INSUFFICIENT_EVIDENCE": "The answer does not establish either positive or negative evidence for the indicator."
+          }
+        }
+      },
+      "run_sha256": "7ed981ce37d785bc1ed61cca0eef962e416c3977f71d8473d0d34b6bbcc3da7d",
+      "expected_responses": 9
+    },
+    {
+      "family_id": "ESDSA-SWE04-09",
+      "competency_code": "SWE04",
+      "scenario_profile": "High-consequence decision",
+      "payload": {
+        "family_id": "ESDSA-SWE04-09",
+        "role": "Software Developer",
+        "competency": "Verification and testing",
+        "question": "A software update changes the rules used to approve high-value transactions. The implementation passes the developer's initial tests, but an incorrect approval could have serious consequences. How would you assess whether the change is adequately verified before deployment?",
+        "rubric": {
+          "criteria": [
+            {
+              "id": "SWE04-C1",
+              "name": "Targeted verification",
+              "definition": "Test whether the reported failure is resolved.",
+              "illustrative_positive_evidence": "Repeats the previously failing scenario after correction.",
+              "illustrative_negative_evidence": "Explicitly skips checking whether the fix works."
+            },
+            {
+              "id": "SWE04-C2",
+              "name": "Regression consideration",
+              "definition": "Assess potential impact on previously working behaviour.",
+              "illustrative_positive_evidence": "Runs related regression checks.",
+              "illustrative_negative_evidence": "Deliberately omits necessary regression checks despite known impact."
+            },
+            {
+              "id": "SWE04-C3",
+              "name": "Outcome assessment",
+              "definition": "Use verification findings to decide next action.",
+              "illustrative_positive_evidence": "Investigates a failed retest before releasing.",
+              "illustrative_negative_evidence": "Proceeds despite known failed verification without mitigation."
+            }
+          ],
+          "evidence_statuses": {
+            "POSITIVE_EVIDENCE": "The answer explicitly or clearly demonstrates the indicator in context.",
+            "NEGATIVE_EVIDENCE": "The answer explicitly demonstrates a materially deficient approach concerning the indicator.",
+            "INSUFFICIENT_EVIDENCE": "The answer does not establish either positive or negative evidence for the indicator."
+          }
+        }
+      },
+      "run_sha256": "585983bbf26eadd613466ff829f2dd8b70751cd8a33cade5251d5519b2b92a61",
+      "expected_responses": 9
+    },
+    {
+      "family_id": "ESDSA-CSS01-08",
+      "competency_code": "CSS01",
+      "scenario_profile": "Unexpected complication",
+      "payload": {
+        "family_id": "ESDSA-CSS01-08",
+        "role": "Customer Support Specialist",
+        "competency": "Problem identification",
+        "question": "A customer initially contacts support because an order confirmation has not arrived. During the conversation, they mention that their account also shows an unfamiliar delivery address, and they are unsure whether the order was placed successfully. How would you establish the nature and priority of the problem?",
+        "rubric": {
+          "criteria": [
+            {
+              "id": "CSS01-C1",
+              "name": "Issue clarification",
+              "definition": "Establish what problem the customer is experiencing.",
+              "illustrative_positive_evidence": "Asks the customer to describe the failed operation.",
+              "illustrative_negative_evidence": "Refuses to clarify an ambiguous complaint."
+            },
+            {
+              "id": "CSS01-C2",
+              "name": "Impact identification",
+              "definition": "Determine the customer's affected service or outcome.",
+              "illustrative_positive_evidence": "Checks which functions are unavailable and their impact.",
+              "illustrative_negative_evidence": "Ignores an explicitly reported serious impact."
+            },
+            {
+              "id": "CSS01-C3",
+              "name": "Problem definition",
+              "definition": "Summarise the issue before selecting a resolution.",
+              "illustrative_positive_evidence": "Confirms the specific problem with the customer.",
+              "illustrative_negative_evidence": "Pursues a solution known to address a different problem."
+            }
+          ],
+          "evidence_statuses": {
+            "POSITIVE_EVIDENCE": "The answer explicitly or clearly demonstrates the indicator in context.",
+            "NEGATIVE_EVIDENCE": "The answer explicitly demonstrates a materially deficient approach concerning the indicator.",
+            "INSUFFICIENT_EVIDENCE": "The answer does not establish either positive or negative evidence for the indicator."
+          }
+        }
+      },
+      "run_sha256": "d4552a00521be2a42165e85035cb9cb86694add48060ebab38df44e7a3483f07",
+      "expected_responses": 9
+    },
+    {
+      "family_id": "ESDSA-CSS01-10",
+      "competency_code": "CSS01",
+      "scenario_profile": "Recovery after an unsuccessful attempt",
+      "payload": {
+        "family_id": "ESDSA-CSS01-10",
+        "role": "Customer Support Specialist",
+        "competency": "Problem identification",
+        "question": "A customer returns after a previous support interaction failed to resolve repeated account lockouts. The earlier case notes say the issue was fixed, but the customer reports that the same problem happened again. How would you identify the actual problem and determine what information matters?",
+        "rubric": {
+          "criteria": [
+            {
+              "id": "CSS01-C1",
+              "name": "Issue clarification",
+              "definition": "Establish what problem the customer is experiencing.",
+              "illustrative_positive_evidence": "Asks the customer to describe the failed operation.",
+              "illustrative_negative_evidence": "Refuses to clarify an ambiguous complaint."
+            },
+            {
+              "id": "CSS01-C2",
+              "name": "Impact identification",
+              "definition": "Determine the customer's affected service or outcome.",
+              "illustrative_positive_evidence": "Checks which functions are unavailable and their impact.",
+              "illustrative_negative_evidence": "Ignores an explicitly reported serious impact."
+            },
+            {
+              "id": "CSS01-C3",
+              "name": "Problem definition",
+              "definition": "Summarise the issue before selecting a resolution.",
+              "illustrative_positive_evidence": "Confirms the specific problem with the customer.",
+              "illustrative_negative_evidence": "Pursues a solution known to address a different problem."
+            }
+          ],
+          "evidence_statuses": {
+            "POSITIVE_EVIDENCE": "The answer explicitly or clearly demonstrates the indicator in context.",
+            "NEGATIVE_EVIDENCE": "The answer explicitly demonstrates a materially deficient approach concerning the indicator.",
+            "INSUFFICIENT_EVIDENCE": "The answer does not establish either positive or negative evidence for the indicator."
+          }
+        }
+      },
+      "run_sha256": "2516fb15cff81c41eb134e94cce3ca08591ae4fe0f960398c78a3d136d239eef",
+      "expected_responses": 9
+    },
+    {
+      "family_id": "ESDSA-CSS02-05",
+      "competency_code": "CSS02",
+      "scenario_profile": "Multiple competing priorities",
+      "payload": {
+        "family_id": "ESDSA-CSS02-05",
+        "role": "Customer Support Specialist",
+        "competency": "Information gathering",
+        "question": "A customer reports several related billing discrepancies while also requesting an urgent account change. Some records are available through approved internal systems, but other information must come from the customer. How would you organise the information-gathering process while respecting the customer's privacy?",
+        "rubric": {
+          "criteria": [
+            {
+              "id": "CSS02-C1",
+              "name": "Relevant questions",
+              "definition": "Request information needed to understand the issue.",
+              "illustrative_positive_evidence": "Asks for the error message and steps preceding failure.",
+              "illustrative_negative_evidence": "Rejects necessary diagnostic details without reason."
+            },
+            {
+              "id": "CSS02-C2",
+              "name": "Source verification",
+              "definition": "Distinguish confirmed facts from assumptions.",
+              "illustrative_positive_evidence": "Checks account status against an authorised record.",
+              "illustrative_negative_evidence": "Presents unverified speculation as confirmed fact."
+            },
+            {
+              "id": "CSS02-C3",
+              "name": "Proportionate collection",
+              "definition": "Gather only information appropriate and authorised.",
+              "illustrative_positive_evidence": "Uses approved channels for relevant account details.",
+              "illustrative_negative_evidence": "Requests unnecessary sensitive information through an insecure channel."
+            }
+          ],
+          "evidence_statuses": {
+            "POSITIVE_EVIDENCE": "The answer explicitly or clearly demonstrates the indicator in context.",
+            "NEGATIVE_EVIDENCE": "The answer explicitly demonstrates a materially deficient approach concerning the indicator.",
+            "INSUFFICIENT_EVIDENCE": "The answer does not establish either positive or negative evidence for the indicator."
+          }
+        }
+      },
+      "run_sha256": "4a706a89056ebda757ea5b090fb52df76abed38cee014479e68bd0f3115eda96",
+      "expected_responses": 9
+    },
+    {
+      "family_id": "ESDSA-CSS02-06",
+      "competency_code": "CSS02",
+      "scenario_profile": "Uncertain cause or outcome",
+      "payload": {
+        "family_id": "ESDSA-CSS02-06",
+        "role": "Customer Support Specialist",
+        "competency": "Information gathering",
+        "question": "A customer believes a subscription cancellation did not take effect. The customer cannot recall the exact date, the account history is incomplete, and the available payment information does not clearly establish what happened. How would you gather and assess the information needed to investigate?",
+        "rubric": {
+          "criteria": [
+            {
+              "id": "CSS02-C1",
+              "name": "Relevant questions",
+              "definition": "Request information needed to understand the issue.",
+              "illustrative_positive_evidence": "Asks for the error message and steps preceding failure.",
+              "illustrative_negative_evidence": "Rejects necessary diagnostic details without reason."
+            },
+            {
+              "id": "CSS02-C2",
+              "name": "Source verification",
+              "definition": "Distinguish confirmed facts from assumptions.",
+              "illustrative_positive_evidence": "Checks account status against an authorised record.",
+              "illustrative_negative_evidence": "Presents unverified speculation as confirmed fact."
+            },
+            {
+              "id": "CSS02-C3",
+              "name": "Proportionate collection",
+              "definition": "Gather only information appropriate and authorised.",
+              "illustrative_positive_evidence": "Uses approved channels for relevant account details.",
+              "illustrative_negative_evidence": "Requests unnecessary sensitive information through an insecure channel."
+            }
+          ],
+          "evidence_statuses": {
+            "POSITIVE_EVIDENCE": "The answer explicitly or clearly demonstrates the indicator in context.",
+            "NEGATIVE_EVIDENCE": "The answer explicitly demonstrates a materially deficient approach concerning the indicator.",
+            "INSUFFICIENT_EVIDENCE": "The answer does not establish either positive or negative evidence for the indicator."
+          }
+        }
+      },
+      "run_sha256": "c81c89d1f9f94b966f8e4b47a91aa67fbdf3d94f8c825fcdc285d4d0fdc4057c",
+      "expected_responses": 9
+    },
+    {
+      "family_id": "ESDSA-CSS03-01",
+      "competency_code": "CSS03",
+      "scenario_profile": "Routine operational problem",
+      "payload": {
+        "family_id": "ESDSA-CSS03-01",
+        "role": "Customer Support Specialist",
+        "competency": "Resolution judgment",
+        "question": "A customer asks to change the delivery address after placing an order. The order may already be moving through the fulfilment process, and the available options depend on its current status. How would you decide what resolution to offer?",
+        "rubric": {
+          "criteria": [
+            {
+              "id": "CSS03-C1",
+              "name": "Option assessment",
+              "definition": "Consider a resolution appropriate to the evidence.",
+              "illustrative_positive_evidence": "Checks eligibility before proposing a remedy.",
+              "illustrative_negative_evidence": "Selects a known inapplicable remedy."
+            },
+            {
+              "id": "CSS03-C2",
+              "name": "Policy awareness",
+              "definition": "Respect applicable authorisation and service constraints.",
+              "illustrative_positive_evidence": "Escalates an exception requiring supervisor approval.",
+              "illustrative_negative_evidence": "Knowingly bypasses an applicable approval requirement."
+            },
+            {
+              "id": "CSS03-C3",
+              "name": "Uncertainty handling",
+              "definition": "Recognise when additional information or escalation is needed.",
+              "illustrative_positive_evidence": "Pauses resolution until conflicting records are checked.",
+              "illustrative_negative_evidence": "Declares a disputed issue resolved without checking it."
+            }
+          ],
+          "evidence_statuses": {
+            "POSITIVE_EVIDENCE": "The answer explicitly or clearly demonstrates the indicator in context.",
+            "NEGATIVE_EVIDENCE": "The answer explicitly demonstrates a materially deficient approach concerning the indicator.",
+            "INSUFFICIENT_EVIDENCE": "The answer does not establish either positive or negative evidence for the indicator."
+          }
+        }
+      },
+      "run_sha256": "a65daf808dd646c4898e1a63b3c01135e560fb927586b2b1a0e62d657db6f474",
+      "expected_responses": 9
+    },
+    {
+      "family_id": "ESDSA-CSS03-03",
+      "competency_code": "CSS03",
+      "scenario_profile": "Incomplete contextual information",
+      "payload": {
+        "family_id": "ESDSA-CSS03-03",
+        "role": "Customer Support Specialist",
+        "competency": "Resolution judgment",
+        "question": "A customer requests a refund because an electronic product appears to have stopped working. They have provided only a short description, and the purchase record is not immediately available. Several possible resolutions exist, depending on the circumstances. How would you decide what action is appropriate?",
+        "rubric": {
+          "criteria": [
+            {
+              "id": "CSS03-C1",
+              "name": "Option assessment",
+              "definition": "Consider a resolution appropriate to the evidence.",
+              "illustrative_positive_evidence": "Checks eligibility before proposing a remedy.",
+              "illustrative_negative_evidence": "Selects a known inapplicable remedy."
+            },
+            {
+              "id": "CSS03-C2",
+              "name": "Policy awareness",
+              "definition": "Respect applicable authorisation and service constraints.",
+              "illustrative_positive_evidence": "Escalates an exception requiring supervisor approval.",
+              "illustrative_negative_evidence": "Knowingly bypasses an applicable approval requirement."
+            },
+            {
+              "id": "CSS03-C3",
+              "name": "Uncertainty handling",
+              "definition": "Recognise when additional information or escalation is needed.",
+              "illustrative_positive_evidence": "Pauses resolution until conflicting records are checked.",
+              "illustrative_negative_evidence": "Declares a disputed issue resolved without checking it."
+            }
+          ],
+          "evidence_statuses": {
+            "POSITIVE_EVIDENCE": "The answer explicitly or clearly demonstrates the indicator in context.",
+            "NEGATIVE_EVIDENCE": "The answer explicitly demonstrates a materially deficient approach concerning the indicator.",
+            "INSUFFICIENT_EVIDENCE": "The answer does not establish either positive or negative evidence for the indicator."
+          }
+        }
+      },
+      "run_sha256": "5d5ba5b5275074764612b35a6e93fd8a0643f08102d981a665802eb51ed4b4e3",
+      "expected_responses": 9
+    },
+    {
+      "family_id": "ESDSA-CSS04-06",
+      "competency_code": "CSS04",
+      "scenario_profile": "Uncertain cause or outcome",
+      "payload": {
+        "family_id": "ESDSA-CSS04-06",
+        "role": "Customer Support Specialist",
+        "competency": "Communication and follow-up",
+        "question": "A customer is waiting for an investigation into a recurring service interruption. The technical team has not confirmed the cause or supplied a reliable resolution date. The customer wants a firm commitment. How would you communicate the situation and manage the follow-up?",
+        "rubric": {
+          "criteria": [
+            {
+              "id": "CSS04-C1",
+              "name": "Clear explanation",
+              "definition": "Communicate the proposed action understandably.",
+              "illustrative_positive_evidence": "Explains the next step and expected customer action.",
+              "illustrative_negative_evidence": "Intentionally withholds material next-step information."
+            },
+            {
+              "id": "CSS04-C2",
+              "name": "Expectation management",
+              "definition": "Set justified expectations without unsupported promises.",
+              "illustrative_positive_evidence": "Explains that timing depends on investigation.",
+              "illustrative_negative_evidence": "Guarantees a result known to be uncertain."
+            },
+            {
+              "id": "CSS04-C3",
+              "name": "Follow-up",
+              "definition": "Provide an appropriate mechanism for status or confirmation.",
+              "illustrative_positive_evidence": "Arranges confirmation after the service is restored.",
+              "illustrative_negative_evidence": "Closes a known unresolved issue without follow-up or escalation."
+            }
+          ],
+          "evidence_statuses": {
+            "POSITIVE_EVIDENCE": "The answer explicitly or clearly demonstrates the indicator in context.",
+            "NEGATIVE_EVIDENCE": "The answer explicitly demonstrates a materially deficient approach concerning the indicator.",
+            "INSUFFICIENT_EVIDENCE": "The answer does not establish either positive or negative evidence for the indicator."
+          }
+        }
+      },
+      "run_sha256": "022e67640f49ae2bfdbc567aeaef656056555ae17730fc26b5dc77999967bb3d",
+      "expected_responses": 9
+    },
+    {
+      "family_id": "ESDSA-CSS04-10",
+      "competency_code": "CSS04",
+      "scenario_profile": "Recovery after an unsuccessful attempt",
+      "payload": {
+        "family_id": "ESDSA-CSS04-10",
+        "role": "Customer Support Specialist",
+        "competency": "Communication and follow-up",
+        "question": "A customer was promised an update on a complaint, but the promised contact did not happen and the underlying problem remains unresolved. You are now responsible for the case. How would you communicate with the customer and organise the next follow-up?",
+        "rubric": {
+          "criteria": [
+            {
+              "id": "CSS04-C1",
+              "name": "Clear explanation",
+              "definition": "Communicate the proposed action understandably.",
+              "illustrative_positive_evidence": "Explains the next step and expected customer action.",
+              "illustrative_negative_evidence": "Intentionally withholds material next-step information."
+            },
+            {
+              "id": "CSS04-C2",
+              "name": "Expectation management",
+              "definition": "Set justified expectations without unsupported promises.",
+              "illustrative_positive_evidence": "Explains that timing depends on investigation.",
+              "illustrative_negative_evidence": "Guarantees a result known to be uncertain."
+            },
+            {
+              "id": "CSS04-C3",
+              "name": "Follow-up",
+              "definition": "Provide an appropriate mechanism for status or confirmation.",
+              "illustrative_positive_evidence": "Arranges confirmation after the service is restored.",
+              "illustrative_negative_evidence": "Closes a known unresolved issue without follow-up or escalation."
+            }
+          ],
+          "evidence_statuses": {
+            "POSITIVE_EVIDENCE": "The answer explicitly or clearly demonstrates the indicator in context.",
+            "NEGATIVE_EVIDENCE": "The answer explicitly demonstrates a materially deficient approach concerning the indicator.",
+            "INSUFFICIENT_EVIDENCE": "The answer does not establish either positive or negative evidence for the indicator."
+          }
+        }
+      },
+      "run_sha256": "14ed1e4d3d39add00949b0885569377a0d95d89fd7afe61b092b960865cb6240",
+      "expected_responses": 9
+    },
+    {
+      "family_id": "ESDSA-OPS01-05",
+      "competency_code": "OPS01",
+      "scenario_profile": "Multiple competing priorities",
+      "payload": {
+        "family_id": "ESDSA-OPS01-05",
+        "role": "Operations Coordinator",
+        "competency": "Prioritisation",
+        "question": "An operations team has limited staff available for three competing activities: inspecting a recently delivered batch of materials before production, preparing an important customer order for dispatch, and completing scheduled staff training. The inspection may reveal a quality issue, while delaying dispatch could affect an agreed customer deadline. How would you determine priorities and respond if new information changes the situation?",
+        "rubric": {
+          "criteria": [
+            {
+              "id": "OPS01-C1",
+              "name": "Priority criteria",
+              "definition": "Identify relevant urgency, impact and dependencies.",
+              "illustrative_positive_evidence": "Ranks tasks by deadline and operational consequence.",
+              "illustrative_negative_evidence": "Ignores a known critical dependency."
+            },
+            {
+              "id": "OPS01-C2",
+              "name": "Trade-off reasoning",
+              "definition": "Explain prioritisation choices using relevant evidence.",
+              "illustrative_positive_evidence": "Explains why a safety-critical task precedes routine work.",
+              "illustrative_negative_evidence": "Prioritises convenience despite acknowledged serious consequences."
+            },
+            {
+              "id": "OPS01-C3",
+              "name": "Reprioritisation",
+              "definition": "Reassess priorities when material conditions change.",
+              "illustrative_positive_evidence": "Updates the schedule after an urgent incident.",
+              "illustrative_negative_evidence": "Refuses to reconsider priorities after a major disruption."
+            }
+          ],
+          "evidence_statuses": {
+            "POSITIVE_EVIDENCE": "The answer explicitly or clearly demonstrates the indicator in context.",
+            "NEGATIVE_EVIDENCE": "The answer explicitly demonstrates a materially deficient approach concerning the indicator.",
+            "INSUFFICIENT_EVIDENCE": "The answer does not establish either positive or negative evidence for the indicator."
+          }
+        }
+      },
+      "run_sha256": "e37e20f9af09bb41b652bd85522db9236c59f55dd896bd6c4b76d419386a6907",
+      "expected_responses": 9
+    },
+    {
+      "family_id": "ESDSA-OPS01-09",
+      "competency_code": "OPS01",
+      "scenario_profile": "High-consequence decision",
+      "payload": {
+        "family_id": "ESDSA-OPS01-09",
+        "role": "Operations Coordinator",
+        "competency": "Prioritisation",
+        "question": "An operations team must decide between continuing a time-sensitive delivery and stopping work to investigate a potential equipment safety concern. The available information is incomplete, and delaying the delivery would have substantial consequences. How would you determine the priorities?",
+        "rubric": {
+          "criteria": [
+            {
+              "id": "OPS01-C1",
+              "name": "Priority criteria",
+              "definition": "Identify relevant urgency, impact and dependencies.",
+              "illustrative_positive_evidence": "Ranks tasks by deadline and operational consequence.",
+              "illustrative_negative_evidence": "Ignores a known critical dependency."
+            },
+            {
+              "id": "OPS01-C2",
+              "name": "Trade-off reasoning",
+              "definition": "Explain prioritisation choices using relevant evidence.",
+              "illustrative_positive_evidence": "Explains why a safety-critical task precedes routine work.",
+              "illustrative_negative_evidence": "Prioritises convenience despite acknowledged serious consequences."
+            },
+            {
+              "id": "OPS01-C3",
+              "name": "Reprioritisation",
+              "definition": "Reassess priorities when material conditions change.",
+              "illustrative_positive_evidence": "Updates the schedule after an urgent incident.",
+              "illustrative_negative_evidence": "Refuses to reconsider priorities after a major disruption."
+            }
+          ],
+          "evidence_statuses": {
+            "POSITIVE_EVIDENCE": "The answer explicitly or clearly demonstrates the indicator in context.",
+            "NEGATIVE_EVIDENCE": "The answer explicitly demonstrates a materially deficient approach concerning the indicator.",
+            "INSUFFICIENT_EVIDENCE": "The answer does not establish either positive or negative evidence for the indicator."
+          }
+        }
+      },
+      "run_sha256": "1ee14f9c784c4ed7612557c2aae4d488384d766af1b5f81fa650c0ebef6929ee",
+      "expected_responses": 9
+    },
+    {
+      "family_id": "ESDSA-OPS02-01",
+      "competency_code": "OPS02",
+      "scenario_profile": "Routine operational problem",
+      "payload": {
+        "family_id": "ESDSA-OPS02-01",
+        "role": "Operations Coordinator",
+        "competency": "Risk identification",
+        "question": "A distribution centre has experienced several small stock discrepancies during routine daily checks. Operations have continued without interruption, but the discrepancies have appeared on multiple days. How would you assess the operational risks and determine an appropriate response?",
+        "rubric": {
+          "criteria": [
+            {
+              "id": "OPS02-C1",
+              "name": "Hazard recognition",
+              "definition": "Identify a plausible operational risk in context.",
+              "illustrative_positive_evidence": "Recognises a failure that could interrupt essential delivery.",
+              "illustrative_negative_evidence": "Explicitly disregards a known serious operational hazard."
+            },
+            {
+              "id": "OPS02-C2",
+              "name": "Likelihood and impact",
+              "definition": "Consider uncertainty and possible consequences.",
+              "illustrative_positive_evidence": "Assesses both disruption likelihood and service impact.",
+              "illustrative_negative_evidence": "Treats a documented high-impact risk as harmless without basis."
+            },
+            {
+              "id": "OPS02-C3",
+              "name": "Risk response",
+              "definition": "Propose proportionate mitigation or escalation.",
+              "illustrative_positive_evidence": "Adds a contingency and escalates a critical exposure.",
+              "illustrative_negative_evidence": "Continues an unsafe activity despite a known unmitigated risk."
+            }
+          ],
+          "evidence_statuses": {
+            "POSITIVE_EVIDENCE": "The answer explicitly or clearly demonstrates the indicator in context.",
+            "NEGATIVE_EVIDENCE": "The answer explicitly demonstrates a materially deficient approach concerning the indicator.",
+            "INSUFFICIENT_EVIDENCE": "The answer does not establish either positive or negative evidence for the indicator."
+          }
+        }
+      },
+      "run_sha256": "16aa67b03eb4bfc8725be61703db47d3055e9cf9b2651627604095d7515f2730",
+      "expected_responses": 9
+    },
+    {
+      "family_id": "ESDSA-OPS02-06",
+      "competency_code": "OPS02",
+      "scenario_profile": "Uncertain cause or outcome",
+      "payload": {
+        "family_id": "ESDSA-OPS02-06",
+        "role": "Operations Coordinator",
+        "competency": "Risk identification",
+        "question": "A delivery partner reports that its capacity may be reduced next week, but cannot confirm how severely. Customer demand is also uncertain, and alternative transport arrangements have different costs and lead times. How would you assess and respond to the operational risk?",
+        "rubric": {
+          "criteria": [
+            {
+              "id": "OPS02-C1",
+              "name": "Hazard recognition",
+              "definition": "Identify a plausible operational risk in context.",
+              "illustrative_positive_evidence": "Recognises a failure that could interrupt essential delivery.",
+              "illustrative_negative_evidence": "Explicitly disregards a known serious operational hazard."
+            },
+            {
+              "id": "OPS02-C2",
+              "name": "Likelihood and impact",
+              "definition": "Consider uncertainty and possible consequences.",
+              "illustrative_positive_evidence": "Assesses both disruption likelihood and service impact.",
+              "illustrative_negative_evidence": "Treats a documented high-impact risk as harmless without basis."
+            },
+            {
+              "id": "OPS02-C3",
+              "name": "Risk response",
+              "definition": "Propose proportionate mitigation or escalation.",
+              "illustrative_positive_evidence": "Adds a contingency and escalates a critical exposure.",
+              "illustrative_negative_evidence": "Continues an unsafe activity despite a known unmitigated risk."
+            }
+          ],
+          "evidence_statuses": {
+            "POSITIVE_EVIDENCE": "The answer explicitly or clearly demonstrates the indicator in context.",
+            "NEGATIVE_EVIDENCE": "The answer explicitly demonstrates a materially deficient approach concerning the indicator.",
+            "INSUFFICIENT_EVIDENCE": "The answer does not establish either positive or negative evidence for the indicator."
+          }
+        }
+      },
+      "run_sha256": "d4fbdd22d1f39af4eaeec47ea397f4a3edde3b3cda29aa8a3a4927445725de2a",
+      "expected_responses": 9
+    },
+    {
+      "family_id": "ESDSA-OPS03-03",
+      "competency_code": "OPS03",
+      "scenario_profile": "Incomplete contextual information",
+      "payload": {
+        "family_id": "ESDSA-OPS03-03",
+        "role": "Operations Coordinator",
+        "competency": "Evidence-based coordination",
+        "question": "Two departments are preparing for a service launch. One reports that its work is complete, while the other says essential dependencies remain unresolved. Progress reports contain gaps and some dates conflict. How would you coordinate the teams and determine a defensible way forward?",
+        "rubric": {
+          "criteria": [
+            {
+              "id": "OPS03-C1",
+              "name": "Evidence integration",
+              "definition": "Use relevant information from operational sources.",
+              "illustrative_positive_evidence": "Reconciles supplier status with delivery records.",
+              "illustrative_negative_evidence": "Discards verified contradictory records."
+            },
+            {
+              "id": "OPS03-C2",
+              "name": "Coordination",
+              "definition": "Identify responsible parties and necessary dependencies.",
+              "illustrative_positive_evidence": "Confirms handoffs and owners before changing the schedule.",
+              "illustrative_negative_evidence": "Assigns mutually incompatible tasks without resolving ownership."
+            },
+            {
+              "id": "OPS03-C3",
+              "name": "Decision traceability",
+              "definition": "Explain actions using relevant operational evidence.",
+              "illustrative_positive_evidence": "Records why a schedule change was necessary.",
+              "illustrative_negative_evidence": "Knowingly documents an invented justification."
+            }
+          ],
+          "evidence_statuses": {
+            "POSITIVE_EVIDENCE": "The answer explicitly or clearly demonstrates the indicator in context.",
+            "NEGATIVE_EVIDENCE": "The answer explicitly demonstrates a materially deficient approach concerning the indicator.",
+            "INSUFFICIENT_EVIDENCE": "The answer does not establish either positive or negative evidence for the indicator."
+          }
+        }
+      },
+      "run_sha256": "1dc792171a2a622a5f70c4fd47aa3b1e5d729b7f8d1fe21563dd60030c111b2d",
+      "expected_responses": 9
+    },
+    {
+      "family_id": "ESDSA-OPS03-10",
+      "competency_code": "OPS03",
+      "scenario_profile": "Recovery after an unsuccessful attempt",
+      "payload": {
+        "family_id": "ESDSA-OPS03-10",
+        "role": "Operations Coordinator",
+        "competency": "Evidence-based coordination",
+        "question": "A previous attempt to coordinate a site relocation failed because several handovers were missed. A revised schedule has been proposed, but some teams disagree about who owns the remaining tasks. How would you use the available evidence to coordinate the next attempt?",
+        "rubric": {
+          "criteria": [
+            {
+              "id": "OPS03-C1",
+              "name": "Evidence integration",
+              "definition": "Use relevant information from operational sources.",
+              "illustrative_positive_evidence": "Reconciles supplier status with delivery records.",
+              "illustrative_negative_evidence": "Discards verified contradictory records."
+            },
+            {
+              "id": "OPS03-C2",
+              "name": "Coordination",
+              "definition": "Identify responsible parties and necessary dependencies.",
+              "illustrative_positive_evidence": "Confirms handoffs and owners before changing the schedule.",
+              "illustrative_negative_evidence": "Assigns mutually incompatible tasks without resolving ownership."
+            },
+            {
+              "id": "OPS03-C3",
+              "name": "Decision traceability",
+              "definition": "Explain actions using relevant operational evidence.",
+              "illustrative_positive_evidence": "Records why a schedule change was necessary.",
+              "illustrative_negative_evidence": "Knowingly documents an invented justification."
+            }
+          ],
+          "evidence_statuses": {
+            "POSITIVE_EVIDENCE": "The answer explicitly or clearly demonstrates the indicator in context.",
+            "NEGATIVE_EVIDENCE": "The answer explicitly demonstrates a materially deficient approach concerning the indicator.",
+            "INSUFFICIENT_EVIDENCE": "The answer does not establish either positive or negative evidence for the indicator."
+          }
+        }
+      },
+      "run_sha256": "10a95b25cbf7f42306cc3f744a6ea7ba1a09562c4b41ad1474f817b6320e1a05",
+      "expected_responses": 9
+    },
+    {
+      "family_id": "ESDSA-OPS04-03",
+      "competency_code": "OPS04",
+      "scenario_profile": "Incomplete contextual information",
+      "payload": {
+        "family_id": "ESDSA-OPS04-03",
+        "role": "Operations Coordinator",
+        "competency": "Monitoring and escalation",
+        "question": "A facility monitoring system reports that operating conditions may be drifting outside the expected range, but some sensor readings are missing. The local team has not reported a problem. How would you monitor the situation and decide whether escalation is needed?",
+        "rubric": {
+          "criteria": [
+            {
+              "id": "OPS04-C1",
+              "name": "Progress signals",
+              "definition": "Identify information needed to monitor execution.",
+              "illustrative_positive_evidence": "Checks milestone completion against the delivery plan.",
+              "illustrative_negative_evidence": "Refuses to monitor a known high-risk dependency."
+            },
+            {
+              "id": "OPS04-C2",
+              "name": "Trigger recognition",
+              "definition": "Recognise when deviation requires action.",
+              "illustrative_positive_evidence": "Flags a missed critical milestone for review.",
+              "illustrative_negative_evidence": "Ignores an acknowledged escalation threshold."
+            },
+            {
+              "id": "OPS04-C3",
+              "name": "Escalation and follow-through",
+              "definition": "Direct issues to appropriate owners and verify response.",
+              "illustrative_positive_evidence": "Escalates a blocked delivery and checks resolution.",
+              "illustrative_negative_evidence": "Conceals a known critical blockage from responsible staff."
+            }
+          ],
+          "evidence_statuses": {
+            "POSITIVE_EVIDENCE": "The answer explicitly or clearly demonstrates the indicator in context.",
+            "NEGATIVE_EVIDENCE": "The answer explicitly demonstrates a materially deficient approach concerning the indicator.",
+            "INSUFFICIENT_EVIDENCE": "The answer does not establish either positive or negative evidence for the indicator."
+          }
+        }
+      },
+      "run_sha256": "7c25cef5d058ed5a719822ec010d64b25e510ea954a3d3258c5d55b42c8e7978",
+      "expected_responses": 9
+    },
+    {
+      "family_id": "ESDSA-OPS04-05",
+      "competency_code": "OPS04",
+      "scenario_profile": "Multiple competing priorities",
+      "payload": {
+        "family_id": "ESDSA-OPS04-05",
+        "role": "Operations Coordinator",
+        "competency": "Monitoring and escalation",
+        "question": "You are monitoring several active service activities with limited staff. One activity is approaching its deadline, another has recently developed a quality concern, and a third depends on information from an external partner. How would you track progress, identify changes requiring attention and decide when to escalate?",
+        "rubric": {
+          "criteria": [
+            {
+              "id": "OPS04-C1",
+              "name": "Progress signals",
+              "definition": "Identify information needed to monitor execution.",
+              "illustrative_positive_evidence": "Checks milestone completion against the delivery plan.",
+              "illustrative_negative_evidence": "Refuses to monitor a known high-risk dependency."
+            },
+            {
+              "id": "OPS04-C2",
+              "name": "Trigger recognition",
+              "definition": "Recognise when deviation requires action.",
+              "illustrative_positive_evidence": "Flags a missed critical milestone for review.",
+              "illustrative_negative_evidence": "Ignores an acknowledged escalation threshold."
+            },
+            {
+              "id": "OPS04-C3",
+              "name": "Escalation and follow-through",
+              "definition": "Direct issues to appropriate owners and verify response.",
+              "illustrative_positive_evidence": "Escalates a blocked delivery and checks resolution.",
+              "illustrative_negative_evidence": "Conceals a known critical blockage from responsible staff."
+            }
+          ],
+          "evidence_statuses": {
+            "POSITIVE_EVIDENCE": "The answer explicitly or clearly demonstrates the indicator in context.",
+            "NEGATIVE_EVIDENCE": "The answer explicitly demonstrates a materially deficient approach concerning the indicator.",
+            "INSUFFICIENT_EVIDENCE": "The answer does not establish either positive or negative evidence for the indicator."
+          }
+        }
+      },
+      "run_sha256": "b0a9a638cb5dcbf9ddb5cf511fd8c7177440dd08b9bed9adfd560509d052864a",
+      "expected_responses": 9
+    }
+  ],
+  "safeguards": [
+    "Use the original frozen generation instructions.",
+    "Use the original strict JSON output schema.",
+    "Keep validation outputs separate from development.",
+    "Do not use provisional reference decisions in generation payloads.",
+    "Record the actual returned model version.",
+    "Inspect a small initial batch before continuing.",
+    "Do not generate or evaluate TEST families.",
+    "Review semantic equivalence separately."
+  ]
+}

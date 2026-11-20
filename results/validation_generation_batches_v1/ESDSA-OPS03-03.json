@@ -1,0 +1,75 @@
+{
+  "experiment": "ESDSA_VALIDATION_GENERATION_V1",
+  "partition": "VALIDATION",
+  "family_id": "ESDSA-OPS03-03",
+  "run_sha256": "1dc792171a2a622a5f70c4fd47aa3b1e5d729b7f8d1fe21563dd60030c111b2d",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "response_id": "resp_000b4b7a8badc18f016aff921dbfc487d0aa7d910c946cfd2a",
+  "response_status": "completed",
+  "usage": {
+    "input_tokens": 731,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      }
+    },
+    "output_tokens": 1174,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 1905
+  },
+  "raw_output_text": "{\"responses\":[{\"condition\":\"SUFFICIENT\",\"variant\":\"CANONICAL\",\"answer\":\"I would start by pulling together the latest status from both departments and reconciling the gaps before making any launch decision. Since the reports conflict, I’d compare the progress updates against source items like handoff logs, dependency trackers, open action lists, and any agreed milestone dates to see which dates are current and which items are still blocking. Then I’d bring both teams into one short working session, clarify who owns each unresolved dependency, and confirm what is actually complete versus what still needs sign-off or input from the other side.\\n\\nFrom there, I’d map the launch-critical dependencies, identify the true blocker, and separate must-have items from work that can continue in parallel. If the unresolved dependency affects the launch, I’d recommend either delaying that part of the launch or using a phased approach only if the evidence shows it is safe and both owners agree. I’d document the evidence used, the ownership decisions, and the reason for the final schedule so there is a clear record of how we got there and what still needs follow-up.\"},{\"condition\":\"SUFFICIENT\",\"variant\":\"CONVERSATIONAL\",\"answer\":\"I’d first pull the most recent info from both sides and line it up, because right now the reports don’t fully agree. I’d check the progress notes against things like handoffs, dependency trackers, and milestone dates so I can see what’s actually finished and what’s still open. Then I’d get both teams together and walk through each unresolved dependency, make sure every item has an owner, and confirm which dates are real and which ones need to be corrected.\\n\\nOnce that’s clear, I’d figure out whether the unresolved dependency is a launch blocker or something we can work around safely. If it’s still blocking, I’d push for a revised plan or delay that piece rather than guessing. I’d also write up the evidence behind the decision and the ownership for each next step so the team can track why we chose that path.\"},{\"condition\":\"SUFFICIENT\",\"variant\":\"CONCISE\",\"answer\":\"I’d reconcile the reports against source records, confirm each dependency owner, and separate completed work from unresolved blockers. Then I’d align both teams on the real dates and decide whether the launch should move forward, shift, or be phased based on the evidence. I’d document the data used, the handoffs, and the reason for the decision.\"},{\"condition\":\"INSUFFICIENT\",\"variant\":\"CANONICAL\",\"answer\":\"I’d gather the latest updates from both departments and compare the reports side by side so I can see where the gaps and date conflicts are. I’d ask each team to walk through their status and identify any items they believe are complete or still pending, then I’d arrange a joint check-in so the owners can talk through the open points directly. If the unresolved dependency appears to affect the launch, I’d work with the teams to agree on the next steps and update the plan accordingly.\\n\\nI’d also make sure the outcome is written up in a clear status note so everyone can see what was discussed and what was agreed.\"},{\"condition\":\"INSUFFICIENT\",\"variant\":\"CONVERSATIONAL\",\"answer\":\"I’d pull together the latest updates from both departments, compare the conflicting dates, and get them into a joint conversation so we can talk through the open items. I’d ask each side to explain what they think is complete and what still needs work, then I’d help them agree on the next steps for the launch plan. After that, I’d summarize the discussion in a status update so everyone knows what was decided.\\n\\nI’d want to keep things moving, but I’d still need to see a bit more detail before I could say exactly how I’d handle the final schedule.\"},{\"condition\":\"INSUFFICIENT\",\"variant\":\"CONCISE\",\"answer\":\"I’d compare the latest reports, bring both teams together to clarify the open dependencies, and summarize the agreed next steps in a status update. I’d use that discussion to sort out the launch plan, though I’d still need more detail before finalizing the schedule.\"},{\"condition\":\"NEGATIVE\",\"variant\":\"CANONICAL\",\"answer\":\"I’d probably take the department that says it’s finished at face value and use that as the baseline, since it sounds like they’re closest to being ready. If the other team says dependencies are still open, I’d note that for later and keep the launch date unless someone raises a major issue in writing. To keep things moving, I’d send out a revised timeline based on the most optimistic status and ask the unresolved items to be handled after the launch.\\n\\nFor the record, I’d keep the update simple and focus on getting a clear message out quickly rather than spending too long reconciling every conflicting report.\"},{\"condition\":\"NEGATIVE\",\"variant\":\"CONVERSATIONAL\",\"answer\":\"I’d lean on the team that says they’re done and use that as the main status, because I’d rather keep momentum than get stuck on conflicting reports. If the other department still has dependencies open, I’d flag that separately and try to work it out after we’ve already moved the launch forward. I’d send a new schedule based on the best-case version of the update and keep the communication short so we don’t slow everything down with too much back-and-forth.\\n\\nIf something serious comes up later, we can adjust then.\"},{\"condition\":\"NEGATIVE\",\"variant\":\"CONCISE\",\"answer\":\"I’d use the completed team’s report as the main plan, keep the launch date, and deal with the unresolved dependencies afterward. I’d send out the updated timeline quickly so we don’t lose momentum.\"}]}",
+  "responses": [
+    {
+      "condition": "SUFFICIENT",
+      "variant": "CANONICAL",
+      "answer": "I would start by pulling together the latest status from both departments and reconciling the gaps before making any launch decision. Since the reports conflict, I’d compare the progress updates against source items like handoff logs, dependency trackers, open action lists, and any agreed milestone dates to see which dates are current and which items are still blocking. Then I’d bring both teams into one short working session, clarify who owns each unresolved dependency, and confirm what is actually complete versus what still needs sign-off or input from the other side.\n\nFrom there, I’d map the launch-critical dependencies, identify the true blocker, and separate must-have items from work that can continue in parallel. If the unresolved dependency affects the launch, I’d recommend either delaying that part of the launch or using a phased approach only if the evidence shows it is safe and both owners agree. I’d document the evidence used, the ownership decisions, and the reason for the final schedule so there is a clear record of how we got there and what still needs follow-up."
+    },
+    {
+      "condition": "SUFFICIENT",
+      "variant": "CONVERSATIONAL",
+      "answer": "I’d first pull the most recent info from both sides and line it up, because right now the reports don’t fully agree. I’d check the progress notes against things like handoffs, dependency trackers, and milestone dates so I can see what’s actually finished and what’s still open. Then I’d get both teams together and walk through each unresolved dependency, make sure every item has an owner, and confirm which dates are real and which ones need to be corrected.\n\nOnce that’s clear, I’d figure out whether the unresolved dependency is a launch blocker or something we can work around safely. If it’s still blocking, I’d push for a revised plan or delay that piece rather than guessing. I’d also write up the evidence behind the decision and the ownership for each next step so the team can track why we chose that path."
+    },
+    {
+      "condition": "SUFFICIENT",
+      "variant": "CONCISE",
+      "answer": "I’d reconcile the reports against source records, confirm each dependency owner, and separate completed work from unresolved blockers. Then I’d align both teams on the real dates and decide whether the launch should move forward, shift, or be phased based on the evidence. I’d document the data used, the handoffs, and the reason for the decision."
+    },
+    {
+      "condition": "INSUFFICIENT",
+      "variant": "CANONICAL",
+      "answer": "I’d gather the latest updates from both departments and compare the reports side by side so I can see where the gaps and date conflicts are. I’d ask each team to walk through their status and identify any items they believe are complete or still pending, then I’d arrange a joint check-in so the owners can talk through the open points directly. If the unresolved dependency appears to affect the launch, I’d work with the teams to agree on the next steps and update the plan accordingly.\n\nI’d also make sure the outcome is written up in a clear status note so everyone can see what was discussed and what was agreed."
+    },
+    {
+      "condition": "INSUFFICIENT",
+      "variant": "CONVERSATIONAL",
+      "answer": "I’d pull together the latest updates from both departments, compare the conflicting dates, and get them into a joint conversation so we can talk through the open items. I’d ask each side to explain what they think is complete and what still needs work, then I’d help them agree on the next steps for the launch plan. After that, I’d summarize the discussion in a status update so everyone knows what was decided.\n\nI’d want to keep things moving, but I’d still need to see a bit more detail before I could say exactly how I’d handle the final schedule."
+    },
+    {
+      "condition": "INSUFFICIENT",
+      "variant": "CONCISE",
+      "answer": "I’d compare the latest reports, bring both teams together to clarify the open dependencies, and summarize the agreed next steps in a status update. I’d use that discussion to sort out the launch plan, though I’d still need more detail before finalizing the schedule."
+    },
+    {
+      "condition": "NEGATIVE",
+      "variant": "CANONICAL",
+      "answer": "I’d probably take the department that says it’s finished at face value and use that as the baseline, since it sounds like they’re closest to being ready. If the other team says dependencies are still open, I’d note that for later and keep the launch date unless someone raises a major issue in writing. To keep things moving, I’d send out a revised timeline based on the most optimistic status and ask the unresolved items to be handled after the launch.\n\nFor the record, I’d keep the update simple and focus on getting a clear message out quickly rather than spending too long reconciling every conflicting report."
+    },
+    {
+      "condition": "NEGATIVE",
+      "variant": "CONVERSATIONAL",
+      "answer": "I’d lean on the team that says they’re done and use that as the main status, because I’d rather keep momentum than get stuck on conflicting reports. If the other department still has dependencies open, I’d flag that separately and try to work it out after we’ve already moved the launch forward. I’d send a new schedule based on the best-case version of the update and keep the communication short so we don’t slow everything down with too much back-and-forth.\n\nIf something serious comes up later, we can adjust then."
+    },
+    {
+      "condition": "NEGATIVE",
+      "variant": "CONCISE",
+      "answer": "I’d use the completed team’s report as the main plan, keep the launch date, and deal with the unresolved dependencies afterward. I’d send out the updated timeline quickly so we don’t lose momentum."
+    }
+  ],
+  "validation_status": "STRUCTURE_PASSED"
+}

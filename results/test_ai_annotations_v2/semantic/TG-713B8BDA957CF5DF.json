@@ -1,0 +1,18 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "SEMANTIC_EQUIVALENCE",
+  "blinded_id": "TG-713B8BDA957CF5DF",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_02bfd6f67a634a96016b002ab1c1a087d08d8902f44aa11ac8",
+  "annotated_utc": "2026-11-20T11:10:43.825993+00:00",
+  "annotation": {
+    "semantic_equivalence": "YES",
+    "material_differences": "None that appear decision-relevant under the three criteria; all three responses preserve the same broad investigative stance, likely cause area (message handling/delivery path), linked correction, and justification tied to addressing duplicate deliveries rather than the user-facing flow.",
+    "equivalence_rationale": "Each response says the evidence is incomplete/conflicting, recommends investigating the end-to-end delivery/message path, and, if the problem is confirmed there, favors correcting message handling instead of the customer-facing workflow. All three also justify that choice as the part most likely responsible for duplicate confirmations. The wording and level of detail differ, but not in a way that changes criterion-level evidence."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

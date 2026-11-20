@@ -1,0 +1,154 @@
+{
+  "name": "ESDSA evaluation protocol",
+  "version": "v1-pre-validation-freeze",
+  "created_utc": "2026-11-19T23:40:00.670006+00:00",
+  "policy_freeze_sha256": "a0fc03e305eb445b2ae92c46cc5c59e39f486f335e70df9d0f25f5bb001d1ebb",
+  "scope": [
+    "Synthetic response-generation implementation",
+    "Evidence-aware evaluator implementation",
+    "Scoring-only evaluator implementation",
+    "Original model prompt fingerprints",
+    "Explicit Responses API call arguments"
+  ],
+  "model_protocol": {
+    "requested_model": "gpt-5.4-mini",
+    "temperature": "not explicitly supplied",
+    "top_p": "not explicitly supplied",
+    "seed": "not explicitly supplied",
+    "model_output_repeatability": "Not guaranteed by this freeze"
+  },
+  "scripts": {
+    "generate_development_responses_v1.py": {
+      "sha256": "9b367486b2324131327a617c86f39e1af46824211fc1d69c53771ed401f8ea15",
+      "requested_model": "gpt-5.4-mini",
+      "prompt_variable": "INSTRUCTIONS",
+      "prompt_length": 1602,
+      "prompt_sha256": "0088e252816f04dbcc56e55b35c53b3ad3601c61a5ca4c494b3812ddaafa67aa",
+      "expected_output_format": "json_schema",
+      "api_calls": [
+        {
+          "line": 311,
+          "keyword_expressions": {
+            "model": "MODEL",
+            "instructions": "INSTRUCTIONS",
+            "input": "json.dumps(payload, ensure_ascii=False)",
+            "text": "{'format': {'type': 'json_schema', 'name': 'esdsa_development_responses', 'strict': True, 'schema': SCHEMA}}",
+            "store": "False"
+          },
+          "explicit_keywords": [
+            "input",
+            "instructions",
+            "model",
+            "store",
+            "text"
+          ]
+        }
+      ],
+      "explicit_sampling_parameters": {
+        "temperature": false,
+        "top_p": false,
+        "seed": false,
+        "max_output_tokens": false,
+        "reasoning": false
+      },
+      "returned_model_version": "Not established by this source-code audit"
+    },
+    "run_benchmark_evaluator.py": {
+      "sha256": "c624b4efd26d26e6d78ab361c176556e114524b3603ca4e3bdfa46a03dbcde02",
+      "requested_model": "gpt-5.4-mini",
+      "prompt_variable": "INSTRUCTIONS",
+      "prompt_length": 946,
+      "prompt_sha256": "5a9b7d47b3f80906e00ebbab3d2ffc7a386f22ef141fe9d159841087c869ab62",
+      "expected_output_format": "json_schema",
+      "api_calls": [
+        {
+          "line": 341,
+          "keyword_expressions": {
+            "model": "MODEL",
+            "instructions": "INSTRUCTIONS",
+            "input": "json.dumps(payload, ensure_ascii=False)",
+            "text": "{'format': {'type': 'json_schema', 'name': 'esdsa_competency_evidence', 'strict': True, 'schema': SCHEMA}}",
+            "store": "False"
+          },
+          "explicit_keywords": [
+            "input",
+            "instructions",
+            "model",
+            "store",
+            "text"
+          ]
+        }
+      ],
+      "explicit_sampling_parameters": {
+        "temperature": false,
+        "top_p": false,
+        "seed": false,
+        "max_output_tokens": false,
+        "reasoning": false
+      },
+      "returned_model_version": "Not established by this source-code audit"
+    },
+    "run_scoring_baseline_108.py": {
+      "sha256": "b0121cfc7833c4d822f9129018266c4acb7de9a48b5c465f7e1d05e8123e7800",
+      "requested_model": "gpt-5.4-mini",
+      "prompt_variable": "SYSTEM_PROMPT",
+      "prompt_length": 998,
+      "prompt_sha256": "db958078cc42f00d1ca93f2eece062d44dc10ab80d5e7b1878af558e5ecdb256",
+      "expected_output_format": "json_object",
+      "api_calls": [
+        {
+          "line": 310,
+          "keyword_expressions": {
+            "model": "MODEL",
+            "instructions": "SYSTEM_PROMPT",
+            "input": "user_prompt",
+            "text": "{'format': {'type': 'json_object'}}",
+            "max_output_tokens": "1200",
+            "store": "False"
+          },
+          "explicit_keywords": [
+            "input",
+            "instructions",
+            "max_output_tokens",
+            "model",
+            "store",
+            "text"
+          ]
+        }
+      ],
+      "explicit_sampling_parameters": {
+        "temperature": false,
+        "top_p": false,
+        "seed": false,
+        "max_output_tokens": true,
+        "reasoning": false
+      },
+      "returned_model_version": "Not established by this source-code audit"
+    }
+  },
+  "supplementary_file_sha256": {
+    "data/benchmark/scenario_registry_v2.csv": "5fc89db5918d20f18e259582a5c9004613dd2f60a3a1881b745b392fd26d97fb",
+    "data/benchmark/benchmark_specification_v1.json": "5b1d392326f3dbe3e945b23bd001f7959eb1ad2dc8edc53ee5a4c6d15544dc3f",
+    "data/benchmark/rubrics_v1/rubric_manifest.json": "4f25249e07b81466e19cd61287a2d754f32f47b9b142f73273e55eac3e931ba4",
+    "results/scoring_baseline_108_v1.jsonl": "2d1aed0818f764458a0f44a50299c0d877066bd588b0f475326d7a5f2265abc9",
+    "results/integrated_esdsa_v2.json": "55704ad9ac8ab3b7ce8d003bc26713bf40efa0bd1ac1e765d55aa51061880ce7"
+  },
+  "development": {
+    "scenario_families": 12,
+    "responses": 108,
+    "policy_refined_after_development_analysis": true
+  },
+  "held_out": {
+    "planned_validation_families": 24,
+    "planned_test_families": 24,
+    "validation_responses_generated": false,
+    "test_responses_generated": false
+  },
+  "limitations": [
+    "Source-code hashes preserve the inspected implementations but do not prove how the API executed historical requests.",
+    "The precise returned model version should be obtained from original saved API records.",
+    "The complete benchmark-generation payload and annotation protocol still require verification before held-out evaluation.",
+    "The ESDSA v2 policy was refined on development data, not preregistered.",
+    "This protocol freeze does not establish independent human reference validation."
+  ]
+}

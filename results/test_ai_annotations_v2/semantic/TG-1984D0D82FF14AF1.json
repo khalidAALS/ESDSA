@@ -1,0 +1,18 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "SEMANTIC_EQUIVALENCE",
+  "blinded_id": "TG-1984D0D82FF14AF1",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0412d7309a412ce6016b0029719c7c87d09d8c2a70d1eacc7c",
+  "annotated_utc": "2026-11-20T11:05:23.569794+00:00",
+  "annotation": {
+    "semantic_equivalence": "YES",
+    "material_differences": "None that would plausibly change criterion-level evidence across hazard recognition, likelihood/impact assessment, or proportional response.",
+    "equivalence_rationale": "All three responses recognize the near-miss and ongoing congestion as a continuing operational risk, consider the chance of recurrence and its safety/delivery consequences, and recommend proportionate follow-up such as temporary controls plus escalation. C adds more detail about potential root causes and specific controls, but it does not change the underlying evidence or commitments in A or B."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

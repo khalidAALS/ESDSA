@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-49A1BBDE2EA227F4",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_004a5cd89f18a13a016b002b1b16e487d08627e8b440b13160",
+  "annotated_utc": "2026-11-20T11:12:29.037188+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "CSS03-C1",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I’d arrange the fast replacement first and handle the approval or shipment dispute afterward so the customer isn’t delayed.",
+        "rationale": "This proposes a resolution without weighing whether it is the most appropriate option given the limited stock, disputed shipment status, or authorisation requirement. It commits to a single course of action rather than assessing alternatives against the evidence."
+      },
+      {
+        "criterion_id": "CSS03-C2",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I’d arrange the fast replacement first and handle the approval or shipment dispute afterward so the customer isn’t delayed.",
+        "rationale": "The answer explicitly deprioritises the approval requirement by proceeding first and dealing with authorisation later, which conflicts with respecting an expedited replacement that requires authorisation."
+      },
+      {
+        "criterion_id": "CSS03-C3",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I’d arrange the fast replacement first and handle the approval or shipment dispute afterward so the customer isn’t delayed.",
+        "rationale": "The response does not recognise uncertainty or the need for escalation/additional information; instead it proceeds immediately, despite the disputed shipment and limited stock."
+      }
+    ],
+    "annotation_notes": ""
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-0860FC0DDF9C958C",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0d5a67b025a65bc4016b0029215ab087d095096ca508228355",
+  "annotated_utc": "2026-11-20T11:04:06.596094+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "OPS04-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d first line up the repair plan with what’s actually been done so far, because I’d want to know which milestones are complete and whether the parts issue is touching the critical path. Then I’d get a fresh update from the contractor and the site manager on the parts ETA, any temporary workaround, and whether the current date is still realistic.",
+        "rationale": "The candidate identifies concrete information needed to monitor execution: completed milestones, critical path impact, parts ETA, temporary workaround, and whether the date remains realistic."
+      },
+      {
+        "criterion_id": "OPS04-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "If it looks like we’re going to miss a key step or the schedule is no longer credible, I’d escalate it to the appropriate operations owner",
+        "rationale": "This explicitly recognizes a deviation condition that requires action: missing a key step or an uncredible schedule triggers escalation."
+      },
+      {
+        "criterion_id": "OPS04-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d escalate it to the appropriate operations owner and make sure the next shift hears the updated status, not just the original plan. After that, I’d stay on it until there’s a confirmed fix or a revised schedule with clear ownership.",
+        "rationale": "The candidate directs the issue to the appropriate owner, ensures the next shift receives the updated status, and commits to follow-through until a confirmed fix or revised schedule is in place."
+      }
+    ],
+    "annotation_notes": ""
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

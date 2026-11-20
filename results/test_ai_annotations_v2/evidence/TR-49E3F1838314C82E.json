@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-49E3F1838314C82E",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_01c26d3c9648dc27016b0029d1323887d0a416f1e63773d54f",
+  "annotated_utc": "2026-11-20T11:06:59.362199+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "SWE04-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d rerun the exact invoice case that was failing to make sure the patch really fixes that problem",
+        "rationale": "This explicitly says to re-test the reported failing invoice case to confirm the patch resolves it."
+      },
+      {
+        "criterion_id": "SWE04-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "and then I’d hit a few related refund and discount scenarios since they use the same calculation logic.",
+        "rationale": "This shows attention to related refund and discount paths, indicating regression consideration for previously working behaviour that shares the calculation logic."
+      },
+      {
+        "criterion_id": "SWE04-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "So the next step depends on what those checks show: release if they pass, otherwise fix and verify again.",
+        "rationale": "This clearly uses verification results to choose the next action, including either releasing or fixing and rechecking."
+      }
+    ],
+    "annotation_notes": "The answer is concise but directly addresses all three criteria."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

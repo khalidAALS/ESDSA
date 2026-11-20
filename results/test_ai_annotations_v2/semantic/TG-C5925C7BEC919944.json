@@ -1,0 +1,18 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "SEMANTIC_EQUIVALENCE",
+  "blinded_id": "TG-C5925C7BEC919944",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_040052263ee4dd58016b002b864ef487d0a4a0d816f364b1b2",
+  "annotated_utc": "2026-11-20T11:14:15.993417+00:00",
+  "annotation": {
+    "semantic_equivalence": "YES",
+    "material_differences": "",
+    "equivalence_rationale": "All three responses preserve the same decision-relevant evidence for the three criteria: they seek to characterize/reproduce the intermittent failure from the report details, compare failing versus working cases, and use observations (logs, request/session details, deploys/flags, backend behavior) to narrow likely causes. Response C adds more explicit detail and a handover note, but it does not introduce a materially different assumption, safeguard, or operational commitment that would change criterion-level assessment."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

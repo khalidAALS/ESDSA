@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-DED0CBF7E2DC66F2",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_07e32ae311deddba016b002bc30e2887d088617bcb232d5939",
+  "annotated_utc": "2026-11-20T11:15:17.889760+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "CSS02-C1",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "passage": "",
+        "rationale": "The answer mentions asking the customer to check around the property and with neighbours, but it does not clearly show a broader set of relevant questions needed to understand the issue. It is too limited to establish that the candidate would gather sufficient information."
+      },
+      {
+        "criterion_id": "CSS02-C2",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I’d treat that as the main fact",
+        "rationale": "This shows the candidate collapsing an automated delivery scan into the main fact without distinguishing it from the customer's report or recognizing uncertainty in what is actually known."
+      },
+      {
+        "criterion_id": "CSS02-C3",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "passage": "",
+        "rationale": "The answer says they would keep the questions pretty light and not dig too much into the shipment record, but it does not clearly establish that their proposed collection would be inappropriate, unauthorised, or disproportionate. The limited scope alone is not enough to conclude negative evidence."
+      }
+    ],
+    "annotation_notes": "The response is narrow and somewhat dismissive, but only one criterion is clearly contradicted. The others are not established strongly enough to mark as positive or negative."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

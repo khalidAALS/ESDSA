@@ -1,0 +1,75 @@
+{
+  "experiment": "ESDSA_VALIDATION_GENERATION_V1",
+  "partition": "VALIDATION",
+  "family_id": "ESDSA-CSS01-08",
+  "run_sha256": "d4552a00521be2a42165e85035cb9cb86694add48060ebab38df44e7a3483f07",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "response_id": "resp_07ea1bb928b2a667016aff8fd40cc087d09d46ee44adfd51e2",
+  "response_status": "completed",
+  "usage": {
+    "input_tokens": 746,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      }
+    },
+    "output_tokens": 962,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 1708
+  },
+  "raw_output_text": "{\"responses\":[{\"condition\":\"SUFFICIENT\",\"variant\":\"CANONICAL\",\"answer\":\"I’d start by separating the symptoms from the underlying issue. I’d ask the customer to confirm whether they’re mainly concerned that the order confirmation never arrived, whether they can see any order at all in their account, and whether the unfamiliar delivery address means the order may have been placed with the wrong details or possibly without their authorization. I’d also check whether the order appears in the system and whether there are any shipping or address changes attached to it, because that tells me whether this is a failed confirmation, a completed order with incorrect details, or a possible account issue. In terms of priority, I’d treat the unexpected address as the most urgent part because it could affect delivery and account security, while I continue to verify whether the order was successfully created. Then I’d summarize it back to them so we’re aligned on the exact problem before moving to the next step.\"},{\"condition\":\"SUFFICIENT\",\"variant\":\"CONVERSATIONAL\",\"answer\":\"I’d first pin down what’s actually going on. I’d ask them whether the main issue is that the confirmation email never came through, whether they can see the order in their account, and what they mean by the unfamiliar address—like if it’s the shipping address on the order or something in their profile. Then I’d check the order status and any address changes so I can tell whether the order went through, was saved with the wrong address, or if there’s a security concern. I’d treat the address issue as higher priority because that affects delivery and could point to account access problems, but I’d confirm the exact issue with them before recommending anything. At the end I’d repeat back my understanding so we’re both clear on what needs fixing first.\"},{\"condition\":\"SUFFICIENT\",\"variant\":\"CONCISE\",\"answer\":\"I’d confirm whether the issue is missing confirmation, whether the order exists, and what the unfamiliar address is tied to. Then I’d check the order record and any address changes to see if this is a delivery problem, a failed order, or a possible account issue. I’d prioritize the unfamiliar address because it affects delivery and security, then summarize the problem back to the customer before acting.\"},{\"condition\":\"INSUFFICIENT\",\"variant\":\"CANONICAL\",\"answer\":\"I’d first ask the customer to walk me through what happened when they tried to place the order, so I can see whether the confirmation simply failed to arrive or whether the purchase may not have gone through. I’d also note the unfamiliar delivery address and check whether it matches any shipping details on the account. If the order is present, I’d focus on getting the confirmation resent and making sure the address is updated before anything ships. I’d make sure we have the order details in front of us before deciding on the next step.\"},{\"condition\":\"INSUFFICIENT\",\"variant\":\"CONVERSATIONAL\",\"answer\":\"I’d ask them to explain the checkout step by step so I can tell whether the confirmation message is the only problem or if the order itself didn’t go through. I’d also look at the address they mentioned and compare it with the account details. If the order is there, I’d move toward fixing the confirmation and the address from there. I’d want to verify the order details first and then take it from the top.\"},{\"condition\":\"INSUFFICIENT\",\"variant\":\"CONCISE\",\"answer\":\"I’d ask them to describe what happened at checkout and check the address on the account. If the order is there, I’d focus on the confirmation and address details. I’d verify the basics first before moving ahead.\"},{\"condition\":\"NEGATIVE\",\"variant\":\"CANONICAL\",\"answer\":\"I’d assume the issue is just a missing confirmation email and resend it right away, since that’s usually the fastest way to close this out. If the customer later says the address looks wrong, I’d have them update it after the order ships so we don’t delay processing. I wouldn’t spend much time on whether the order actually went through unless they specifically say they were charged twice or something similar.\"},{\"condition\":\"NEGATIVE\",\"variant\":\"CONVERSATIONAL\",\"answer\":\"I’d probably treat it as a simple email-delivery problem and just resend the confirmation. The address can usually be handled later, so I wouldn’t dig too much into that unless the customer pushes on it. If they’re unsure about the order, I’d still start with the email since that’s the most likely missing piece.\"},{\"condition\":\"NEGATIVE\",\"variant\":\"CONCISE\",\"answer\":\"I’d resend the confirmation first and deal with the address later, unless they report an obvious billing problem.\"}]}",
+  "responses": [
+    {
+      "condition": "SUFFICIENT",
+      "variant": "CANONICAL",
+      "answer": "I’d start by separating the symptoms from the underlying issue. I’d ask the customer to confirm whether they’re mainly concerned that the order confirmation never arrived, whether they can see any order at all in their account, and whether the unfamiliar delivery address means the order may have been placed with the wrong details or possibly without their authorization. I’d also check whether the order appears in the system and whether there are any shipping or address changes attached to it, because that tells me whether this is a failed confirmation, a completed order with incorrect details, or a possible account issue. In terms of priority, I’d treat the unexpected address as the most urgent part because it could affect delivery and account security, while I continue to verify whether the order was successfully created. Then I’d summarize it back to them so we’re aligned on the exact problem before moving to the next step."
+    },
+    {
+      "condition": "SUFFICIENT",
+      "variant": "CONVERSATIONAL",
+      "answer": "I’d first pin down what’s actually going on. I’d ask them whether the main issue is that the confirmation email never came through, whether they can see the order in their account, and what they mean by the unfamiliar address—like if it’s the shipping address on the order or something in their profile. Then I’d check the order status and any address changes so I can tell whether the order went through, was saved with the wrong address, or if there’s a security concern. I’d treat the address issue as higher priority because that affects delivery and could point to account access problems, but I’d confirm the exact issue with them before recommending anything. At the end I’d repeat back my understanding so we’re both clear on what needs fixing first."
+    },
+    {
+      "condition": "SUFFICIENT",
+      "variant": "CONCISE",
+      "answer": "I’d confirm whether the issue is missing confirmation, whether the order exists, and what the unfamiliar address is tied to. Then I’d check the order record and any address changes to see if this is a delivery problem, a failed order, or a possible account issue. I’d prioritize the unfamiliar address because it affects delivery and security, then summarize the problem back to the customer before acting."
+    },
+    {
+      "condition": "INSUFFICIENT",
+      "variant": "CANONICAL",
+      "answer": "I’d first ask the customer to walk me through what happened when they tried to place the order, so I can see whether the confirmation simply failed to arrive or whether the purchase may not have gone through. I’d also note the unfamiliar delivery address and check whether it matches any shipping details on the account. If the order is present, I’d focus on getting the confirmation resent and making sure the address is updated before anything ships. I’d make sure we have the order details in front of us before deciding on the next step."
+    },
+    {
+      "condition": "INSUFFICIENT",
+      "variant": "CONVERSATIONAL",
+      "answer": "I’d ask them to explain the checkout step by step so I can tell whether the confirmation message is the only problem or if the order itself didn’t go through. I’d also look at the address they mentioned and compare it with the account details. If the order is there, I’d move toward fixing the confirmation and the address from there. I’d want to verify the order details first and then take it from the top."
+    },
+    {
+      "condition": "INSUFFICIENT",
+      "variant": "CONCISE",
+      "answer": "I’d ask them to describe what happened at checkout and check the address on the account. If the order is there, I’d focus on the confirmation and address details. I’d verify the basics first before moving ahead."
+    },
+    {
+      "condition": "NEGATIVE",
+      "variant": "CANONICAL",
+      "answer": "I’d assume the issue is just a missing confirmation email and resend it right away, since that’s usually the fastest way to close this out. If the customer later says the address looks wrong, I’d have them update it after the order ships so we don’t delay processing. I wouldn’t spend much time on whether the order actually went through unless they specifically say they were charged twice or something similar."
+    },
+    {
+      "condition": "NEGATIVE",
+      "variant": "CONVERSATIONAL",
+      "answer": "I’d probably treat it as a simple email-delivery problem and just resend the confirmation. The address can usually be handled later, so I wouldn’t dig too much into that unless the customer pushes on it. If they’re unsure about the order, I’d still start with the email since that’s the most likely missing piece."
+    },
+    {
+      "condition": "NEGATIVE",
+      "variant": "CONCISE",
+      "answer": "I’d resend the confirmation first and deal with the address later, unless they report an obvious billing problem."
+    }
+  ],
+  "validation_status": "STRUCTURE_PASSED"
+}

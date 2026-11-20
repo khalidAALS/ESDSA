@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-F7E382659C890593",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_04aa83a78d2c9c40016b000ca6cea087d08ecfc078396f3356",
+  "annotated_utc": "2026-11-20T09:02:34.051056+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "SWE02-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d check whether the dependency was down or slow during the delayed runs, and if there was any incident, I’d treat that as the main cause. If their status page looked fine, I’d maybe glance at the job logs",
+        "rationale": "The answer identifies relevant technical sources for investigation: dependency status/incidents and job logs. These are appropriate evidence sources for a delayed processing job."
+      },
+      {
+        "criterion_id": "SWE02-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d check whether the dependency was down or slow during the delayed runs, and if there was any incident",
+        "rationale": "This proposes a check that distinguishes one possible cause (external dependency issues) from other causes by examining whether slow/down events occurred during the delayed runs."
+      },
+      {
+        "criterion_id": "SWE02-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "If their status page looked fine, I’d maybe glance at the job logs, but I wouldn’t spend too long on the application itself unless the dependency checks came back clean.",
+        "rationale": "The answer links observations to a diagnostic conclusion by using dependency checks to decide whether to continue investigating logs and the application, and by stating that only if the dependency is ruled out would they move to input data or code."
+      }
+    ],
+    "annotation_notes": "The response is heavily biased toward the external dependency, but it still provides distinct evidence sources, a differentiating check, and an observation-to-next-step diagnostic inference."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

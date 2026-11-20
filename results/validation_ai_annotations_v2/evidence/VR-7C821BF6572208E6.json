@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-7C821BF6572208E6",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0bf9530f90c587cf016b000c809dd087d08b77c451eff7c07b",
+  "annotated_utc": "2026-11-20T09:01:55.240351+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "SWE01-C1",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I wouldn’t spend much time trying to reproduce each report individually at first",
+        "rationale": "The candidate explicitly de-prioritizes reproducing or characterising the reported failures, which materially conflicts with the criterion’s requirement to establish how to reproduce or characterise the failure."
+      },
+      {
+        "criterion_id": "SWE01-C2",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "passage": "",
+        "rationale": "The answer mentions logs, user reports, and a rollback, but does not clearly compare failing behaviour against known working behaviour in a way that establishes this criterion."
+      },
+      {
+        "criterion_id": "SWE01-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d look at the deploy diff and see which team owns the touched code paths, then ask them to inspect their areas in parallel.",
+        "rationale": "This shows a narrowing approach: using the deployment diff and ownership of touched code paths to focus attention on likely causes and reduce the search space."
+      }
+    ],
+    "annotation_notes": "The response contains a clear preference for rolling back quickly and deferring reproduction, which is negative for reproduction. It does show some narrowing based on the deploy diff, but not explicit comparison of failing versus functioning behaviour."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

@@ -1,0 +1,18 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "SEMANTIC_EQUIVALENCE",
+  "blinded_id": "TG-76D114B487EBBB02",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_029652eaabf6ca35016b002ac9674487d0b70f6db724427ee2",
+  "annotated_utc": "2026-11-20T11:11:06.992124+00:00",
+  "annotation": {
+    "semantic_equivalence": "YES",
+    "material_differences": "",
+    "equivalence_rationale": "All three responses preserve the same decision-relevant evidence for the three criteria: they identify the user-facing access problem, determine which users/outcome are affected, and summarize the issue neutrally before resolution. B includes a slightly narrower framing about the restriction being the effect on certain users, while A and C mention verifying intentionality, but these are not material differences in the problem-identification evidence or operational commitments."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

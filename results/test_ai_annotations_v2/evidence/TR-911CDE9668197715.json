@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-911CDE9668197715",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_014c5eeda668b7b6016b002b02d4b087d09ee270e52555cce6",
+  "annotated_utc": "2026-11-20T11:12:05.167831+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "OPS03-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d confirm both reports with the relevant owners, check the room setup against the AV team’s unresolved issue, and ask for any test results or workaround options.",
+        "rationale": "The answer explicitly draws on operational sources: the facilities supervisor, the AV team, room setup checks, and test results/workaround options."
+      },
+      {
+        "criterion_id": "OPS03-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d include who is responsible, the open dependency, and the evidence behind the update.",
+        "rationale": "This directly identifies responsible parties and the dependency affecting readiness, showing coordination across stakeholders."
+      },
+      {
+        "criterion_id": "OPS03-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "If the AV issue still affects the event, I’d report the room as not fully ready or ready with limitations, depending on the workaround. I’d include who is responsible, the open dependency, and the evidence behind the update.",
+        "rationale": "The candidate explains how the readiness update would be based on operational evidence such as the unresolved issue and workaround status, and ties that evidence to the reporting decision."
+      }
+    ],
+    "annotation_notes": ""
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

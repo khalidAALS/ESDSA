@@ -1,0 +1,63 @@
+{
+  "experiment": "ESDSA_TEST_GENERATION_V1",
+  "partition": "TEST",
+  "family_id": "ESDSA-OPS02-02",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0ec430b9d2e0b2e3016b0022d92a8487d086da80e31da2c308",
+  "timestamp_utc": "2026-11-20T10:37:20.703045+00:00",
+  "run_sha256": "901e8da506db0345c447f5c73b2a9cf56db8ac5060f49d3ab0ebc8a731efe9e8",
+  "scenario_sha256": "9d2280d8014612bdd263f5dd8daf8356efeac3fa7a7e4b0cd3c6f4fef932426a",
+  "rubric_sha256": "b00e0849340fa9a63f1e28135cc37f78b68a7beb29549b3a73b95fcc8924efff",
+  "responses": [
+    {
+      "condition": "SUFFICIENT",
+      "variant": "CANONICAL",
+      "answer": "I’d treat that as a potential cold-chain risk until I could reconcile the readings. A brief excursion on one device could be a probe issue, but it could also mean the product has been outside spec, which matters because the shipment is time-sensitive and any delay or quality problem could affect delivery and product integrity. I’d check the duration and severity of the excursion, compare calibration/status logs on both devices, and confirm whether there were any handling issues. If the excursion is within an acceptable investigated range and the product risk is low, I’d document it and proceed with caution. If there’s any real chance the product quality is compromised, I’d escalate immediately to the appropriate technical or quality contact, hold the shipment if needed, and arrange a contingency so the deadline is protected as much as possible."
+    },
+    {
+      "condition": "SUFFICIENT",
+      "variant": "CONVERSATIONAL",
+      "answer": "I’d flag it as a possible cold-chain issue first, not something to ignore just because the second monitor looks normal. A quick blip could be equipment noise, but it could also mean the shipment was exposed long enough to matter, and since it’s time-sensitive I’d think about both product impact and the risk of delaying dispatch. I’d check how long the excursion lasted, whether the devices were set up and calibrated properly, and whether anything in transit or staging could explain it. If it looks like a real exposure, I’d escalate to the right owner and line up a backup plan; if it’s clearly a minor sensor issue, I’d document it and still move carefully."
+    },
+    {
+      "condition": "SUFFICIENT",
+      "variant": "CONCISE",
+      "answer": "I’d treat it as a possible cold-chain risk and verify it before release. I’d check the excursion details, compare both devices, and confirm whether there’s any real chance the product is outside spec. Because the shipment is time-sensitive, I’d weigh both the quality risk and the impact of delay. If the reading looks meaningful, I’d escalate and put a contingency in place; if it’s a device issue, I’d document it and proceed cautiously."
+    },
+    {
+      "condition": "INSUFFICIENT",
+      "variant": "CANONICAL",
+      "answer": "I’d first look into why the two devices disagree and make sure I have the full picture before doing anything else. A brief excursion could be something minor with the monitoring, but it might also point to a real cold-chain concern, so I’d want to understand the timing and whether the shipment was exposed for long enough to matter. Since the shipment is due out soon, I’d be thinking about both the risk to the product and the effect of any delay on operations. Depending on what I found, I’d decide whether to hold it for a closer check or move forward with a note to keep monitoring it closely."
+    },
+    {
+      "condition": "INSUFFICIENT",
+      "variant": "CONVERSATIONAL",
+      "answer": "I’d dig into the discrepancy first and get more context on the excursion before making a call. It could be a sensor glitch, but it could also mean there was a real temperature issue, so I’d look at how long it lasted and what else was happening at the time. I’d also keep in mind that the shipment needs to leave soon, so there’s a balance between not causing unnecessary delay and not missing a real problem. From there I’d decide whether it needs a hold or whether we can continue with extra monitoring."
+    },
+    {
+      "condition": "INSUFFICIENT",
+      "variant": "CONCISE",
+      "answer": "I’d check the discrepancy first and review the excursion details before deciding. It could be a monitoring issue or a real temperature problem, and I’d want the timing and context before I acted. Because the shipment is time-sensitive, I’d consider both the product risk and the impact of any delay. Then I’d decide whether to hold it or continue with closer monitoring."
+    },
+    {
+      "condition": "NEGATIVE",
+      "variant": "CANONICAL",
+      "answer": "If only one device shows a brief excursion and the other is normal, I’d usually take the normal reading as the more reliable one and keep the shipment moving unless something else looked obviously wrong. With a time-sensitive load, I wouldn’t want to create a delay based on a short blip that may just be a sensor fluctuation. I’d note the reading for records and let the shipment depart on schedule, then follow up later if the team wants to review the equipment. In practice, I’d avoid escalating unless there were repeated alarms or a clear operational breakdown."
+    },
+    {
+      "condition": "NEGATIVE",
+      "variant": "CONVERSATIONAL",
+      "answer": "If it’s just one quick excursion and the second monitor is fine, I’d probably treat it as noise and not slow the shipment down. Since it’s time-sensitive, I’d rather avoid holding everything up for what might just be a bad sensor reading. I’d make a note of it and let the shipment go out, then see if anyone wants to look into the device afterward. I’d only escalate if the readings kept happening or there was some other obvious issue."
+    },
+    {
+      "condition": "NEGATIVE",
+      "variant": "CONCISE",
+      "answer": "I’d assume the normal device is correct and let the shipment leave to avoid delays. A single brief excursion sounds like sensor noise unless it keeps happening. I’d document it and review the monitor later rather than escalating right away."
+    }
+  ],
+  "raw_output": "{\"responses\":[{\"condition\":\"SUFFICIENT\",\"variant\":\"CANONICAL\",\"answer\":\"I’d treat that as a potential cold-chain risk until I could reconcile the readings. A brief excursion on one device could be a probe issue, but it could also mean the product has been outside spec, which matters because the shipment is time-sensitive and any delay or quality problem could affect delivery and product integrity. I’d check the duration and severity of the excursion, compare calibration/status logs on both devices, and confirm whether there were any handling issues. If the excursion is within an acceptable investigated range and the product risk is low, I’d document it and proceed with caution. If there’s any real chance the product quality is compromised, I’d escalate immediately to the appropriate technical or quality contact, hold the shipment if needed, and arrange a contingency so the deadline is protected as much as possible.\"},{\"condition\":\"SUFFICIENT\",\"variant\":\"CONVERSATIONAL\",\"answer\":\"I’d flag it as a possible cold-chain issue first, not something to ignore just because the second monitor looks normal. A quick blip could be equipment noise, but it could also mean the shipment was exposed long enough to matter, and since it’s time-sensitive I’d think about both product impact and the risk of delaying dispatch. I’d check how long the excursion lasted, whether the devices were set up and calibrated properly, and whether anything in transit or staging could explain it. If it looks like a real exposure, I’d escalate to the right owner and line up a backup plan; if it’s clearly a minor sensor issue, I’d document it and still move carefully.\"},{\"condition\":\"SUFFICIENT\",\"variant\":\"CONCISE\",\"answer\":\"I’d treat it as a possible cold-chain risk and verify it before release. I’d check the excursion details, compare both devices, and confirm whether there’s any real chance the product is outside spec. Because the shipment is time-sensitive, I’d weigh both the quality risk and the impact of delay. If the reading looks meaningful, I’d escalate and put a contingency in place; if it’s a device issue, I’d document it and proceed cautiously.\"},{\"condition\":\"INSUFFICIENT\",\"variant\":\"CANONICAL\",\"answer\":\"I’d first look into why the two devices disagree and make sure I have the full picture before doing anything else. A brief excursion could be something minor with the monitoring, but it might also point to a real cold-chain concern, so I’d want to understand the timing and whether the shipment was exposed for long enough to matter. Since the shipment is due out soon, I’d be thinking about both the risk to the product and the effect of any delay on operations. Depending on what I found, I’d decide whether to hold it for a closer check or move forward with a note to keep monitoring it closely.\"},{\"condition\":\"INSUFFICIENT\",\"variant\":\"CONVERSATIONAL\",\"answer\":\"I’d dig into the discrepancy first and get more context on the excursion before making a call. It could be a sensor glitch, but it could also mean there was a real temperature issue, so I’d look at how long it lasted and what else was happening at the time. I’d also keep in mind that the shipment needs to leave soon, so there’s a balance between not causing unnecessary delay and not missing a real problem. From there I’d decide whether it needs a hold or whether we can continue with extra monitoring.\"},{\"condition\":\"INSUFFICIENT\",\"variant\":\"CONCISE\",\"answer\":\"I’d check the discrepancy first and review the excursion details before deciding. It could be a monitoring issue or a real temperature problem, and I’d want the timing and context before I acted. Because the shipment is time-sensitive, I’d consider both the product risk and the impact of any delay. Then I’d decide whether to hold it or continue with closer monitoring.\"},{\"condition\":\"NEGATIVE\",\"variant\":\"CANONICAL\",\"answer\":\"If only one device shows a brief excursion and the other is normal, I’d usually take the normal reading as the more reliable one and keep the shipment moving unless something else looked obviously wrong. With a time-sensitive load, I wouldn’t want to create a delay based on a short blip that may just be a sensor fluctuation. I’d note the reading for records and let the shipment depart on schedule, then follow up later if the team wants to review the equipment. In practice, I’d avoid escalating unless there were repeated alarms or a clear operational breakdown.\"},{\"condition\":\"NEGATIVE\",\"variant\":\"CONVERSATIONAL\",\"answer\":\"If it’s just one quick excursion and the second monitor is fine, I’d probably treat it as noise and not slow the shipment down. Since it’s time-sensitive, I’d rather avoid holding everything up for what might just be a bad sensor reading. I’d make a note of it and let the shipment go out, then see if anyone wants to look into the device afterward. I’d only escalate if the readings kept happening or there was some other obvious issue.\"},{\"condition\":\"NEGATIVE\",\"variant\":\"CONCISE\",\"answer\":\"I’d assume the normal device is correct and let the shipment leave to avoid delays. A single brief excursion sounds like sensor noise unless it keeps happening. I’d document it and review the monitor later rather than escalating right away.\"}]}",
+  "input_tokens": 753,
+  "output_tokens": 1095,
+  "generation_conditions_are_reference_labels": false
+}

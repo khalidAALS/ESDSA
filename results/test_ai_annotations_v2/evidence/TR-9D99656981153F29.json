@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-9D99656981153F29",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_080e82a39d8832e8016b002ae22dec87d0ac0a03d9cd68b20c",
+  "annotated_utc": "2026-11-20T11:11:32.298752+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "SWE04-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d rerun the original failing export",
+        "rationale": "This explicitly states a check to verify whether the reported failure has been resolved."
+      },
+      {
+        "criterion_id": "SWE04-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "then compare the older format output against prior results.",
+        "rationale": "This shows the candidate is assessing whether a previously working export format has been affected, which is regression consideration."
+      },
+      {
+        "criterion_id": "SWE04-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "If the difference looks related, I’d flag it and get the team to review it before making a final call.",
+        "rationale": "The candidate uses the verification findings to determine the next step and indicates deciding whether to proceed after review."
+      }
+    ],
+    "annotation_notes": "The answer addresses both confirming the fix and checking for unexpected impact on older behaviour, then uses those findings to guide next action."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

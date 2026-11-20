@@ -1,0 +1,75 @@
+{
+  "experiment": "ESDSA_VALIDATION_GENERATION_V1",
+  "partition": "VALIDATION",
+  "family_id": "ESDSA-CSS04-06",
+  "run_sha256": "022e67640f49ae2bfdbc567aeaef656056555ae17730fc26b5dc77999967bb3d",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "response_id": "resp_02fe74540070d12b016aff91569dc487d0a091ce7de127be8b",
+  "response_status": "completed",
+  "usage": {
+    "input_tokens": 739,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      }
+    },
+    "output_tokens": 1033,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 1772
+  },
+  "raw_output_text": "{\"responses\":[{\"condition\":\"SUFFICIENT\",\"variant\":\"CANONICAL\",\"answer\":\"I would be direct and transparent with the customer. I’d explain that we’ve confirmed the interruption is being investigated, but at this point the technical team hasn’t identified the root cause or given us a reliable restoration time. I wouldn’t promise a specific resolution date until we have something verified.\\n\\nWhat I would do instead is tell them the next step: we’re continuing to work the case with the technical team, and I’ll keep them updated as soon as we have meaningful progress or a confirmed timeline. I’d also set the expectation that this depends on what the investigation finds, so I can’t honestly give a firm commitment yet.\\n\\nFor follow-up, I’d make sure the case stays open and that there’s a clear check-in point, even if it’s just to confirm whether there’s new information. Once service is restored, I’d follow back up to confirm everything is stable and to make sure they’re not still seeing the issue.\"},{\"condition\":\"SUFFICIENT\",\"variant\":\"CONVERSATIONAL\",\"answer\":\"I’d be upfront with them and say we’re still looking into it, but the technical team hasn’t confirmed the cause or given us a solid fix date yet. I wouldn’t make up a firm commitment just to sound reassuring.\\n\\nInstead, I’d explain what’s happening next, let them know the timeline really depends on the investigation, and that I’ll share updates as soon as I have verified information. I’d also make sure there’s a clear follow-up plan so the customer isn’t left wondering what’s going on.\\n\\nAnd once it’s resolved, I’d check back in to confirm the service is stable and that the interruption isn’t continuing.\"},{\"condition\":\"SUFFICIENT\",\"variant\":\"CONCISE\",\"answer\":\"I’d tell the customer we’re investigating, but we don’t yet have a confirmed cause or reliable fix date, so I can’t give a firm commitment. I’d explain the next step, keep the case open, and promise updates as soon as there’s verified progress. After restoration, I’d follow up to confirm the issue is cleared.\"},{\"condition\":\"INSUFFICIENT\",\"variant\":\"CANONICAL\",\"answer\":\"I’d acknowledge the urgency and let the customer know we are actively investigating the recurring interruption. I’d explain that I’m waiting on the technical team for a confirmed cause and an accurate timeline, so I can’t give them a firm commitment right now without risking giving them the wrong information.\\n\\nI would reassure them that I’ll keep pushing for an update and that I’ll pass along anything new as soon as it’s confirmed. I’d also make sure the ticket remains open and documented so the team can continue working it.\"},{\"condition\":\"INSUFFICIENT\",\"variant\":\"CONVERSATIONAL\",\"answer\":\"I’d tell them I understand why they want a firm date, but we’re still waiting on the technical team to confirm what’s causing it and when it can be fixed. I wouldn’t want to promise something I can’t back up.\\n\\nI’d let them know I’m continuing to track it and will update them when I have confirmed information. I’d keep the case open and make sure it stays with the team until there’s more to share.\"},{\"condition\":\"INSUFFICIENT\",\"variant\":\"CONCISE\",\"answer\":\"I’d explain that we’re still investigating and don’t have a confirmed cause or reliable resolution date yet, so I can’t promise a firm timeline. I’d keep the case open and update the customer as soon as I have confirmed information.\"},{\"condition\":\"NEGATIVE\",\"variant\":\"CANONICAL\",\"answer\":\"I would tell the customer that the issue is being looked at and reassure them that it will be fixed soon, because I wouldn’t want to leave them frustrated with an open-ended answer. Even if the technical team hasn’t confirmed the cause yet, I’d commit to getting it resolved quickly and let them know I expect a fix in the next day or two.\\n\\nI’d probably tell them I’ll check back if anything changes, but I wouldn’t keep sending updates unless there was a final answer, since too many partial messages can be confusing.\"},{\"condition\":\"NEGATIVE\",\"variant\":\"CONVERSATIONAL\",\"answer\":\"I’d probably try to calm them down by saying we’ll have it sorted shortly and that I expect the team will get it closed in a day or so. If we don’t have the cause yet, I’d still give them that estimate so they have something concrete.\\n\\nI’d only reach back out if the final fix is ready, because I don’t want to keep giving them a bunch of half-updates.\"},{\"condition\":\"NEGATIVE\",\"variant\":\"CONCISE\",\"answer\":\"I’d reassure the customer that it should be fixed soon and give a rough one- to two-day timeline, even though the team hasn’t confirmed the cause yet. I’d only follow up once there’s a final resolution.\"}]}",
+  "responses": [
+    {
+      "condition": "SUFFICIENT",
+      "variant": "CANONICAL",
+      "answer": "I would be direct and transparent with the customer. I’d explain that we’ve confirmed the interruption is being investigated, but at this point the technical team hasn’t identified the root cause or given us a reliable restoration time. I wouldn’t promise a specific resolution date until we have something verified.\n\nWhat I would do instead is tell them the next step: we’re continuing to work the case with the technical team, and I’ll keep them updated as soon as we have meaningful progress or a confirmed timeline. I’d also set the expectation that this depends on what the investigation finds, so I can’t honestly give a firm commitment yet.\n\nFor follow-up, I’d make sure the case stays open and that there’s a clear check-in point, even if it’s just to confirm whether there’s new information. Once service is restored, I’d follow back up to confirm everything is stable and to make sure they’re not still seeing the issue."
+    },
+    {
+      "condition": "SUFFICIENT",
+      "variant": "CONVERSATIONAL",
+      "answer": "I’d be upfront with them and say we’re still looking into it, but the technical team hasn’t confirmed the cause or given us a solid fix date yet. I wouldn’t make up a firm commitment just to sound reassuring.\n\nInstead, I’d explain what’s happening next, let them know the timeline really depends on the investigation, and that I’ll share updates as soon as I have verified information. I’d also make sure there’s a clear follow-up plan so the customer isn’t left wondering what’s going on.\n\nAnd once it’s resolved, I’d check back in to confirm the service is stable and that the interruption isn’t continuing."
+    },
+    {
+      "condition": "SUFFICIENT",
+      "variant": "CONCISE",
+      "answer": "I’d tell the customer we’re investigating, but we don’t yet have a confirmed cause or reliable fix date, so I can’t give a firm commitment. I’d explain the next step, keep the case open, and promise updates as soon as there’s verified progress. After restoration, I’d follow up to confirm the issue is cleared."
+    },
+    {
+      "condition": "INSUFFICIENT",
+      "variant": "CANONICAL",
+      "answer": "I’d acknowledge the urgency and let the customer know we are actively investigating the recurring interruption. I’d explain that I’m waiting on the technical team for a confirmed cause and an accurate timeline, so I can’t give them a firm commitment right now without risking giving them the wrong information.\n\nI would reassure them that I’ll keep pushing for an update and that I’ll pass along anything new as soon as it’s confirmed. I’d also make sure the ticket remains open and documented so the team can continue working it."
+    },
+    {
+      "condition": "INSUFFICIENT",
+      "variant": "CONVERSATIONAL",
+      "answer": "I’d tell them I understand why they want a firm date, but we’re still waiting on the technical team to confirm what’s causing it and when it can be fixed. I wouldn’t want to promise something I can’t back up.\n\nI’d let them know I’m continuing to track it and will update them when I have confirmed information. I’d keep the case open and make sure it stays with the team until there’s more to share."
+    },
+    {
+      "condition": "INSUFFICIENT",
+      "variant": "CONCISE",
+      "answer": "I’d explain that we’re still investigating and don’t have a confirmed cause or reliable resolution date yet, so I can’t promise a firm timeline. I’d keep the case open and update the customer as soon as I have confirmed information."
+    },
+    {
+      "condition": "NEGATIVE",
+      "variant": "CANONICAL",
+      "answer": "I would tell the customer that the issue is being looked at and reassure them that it will be fixed soon, because I wouldn’t want to leave them frustrated with an open-ended answer. Even if the technical team hasn’t confirmed the cause yet, I’d commit to getting it resolved quickly and let them know I expect a fix in the next day or two.\n\nI’d probably tell them I’ll check back if anything changes, but I wouldn’t keep sending updates unless there was a final answer, since too many partial messages can be confusing."
+    },
+    {
+      "condition": "NEGATIVE",
+      "variant": "CONVERSATIONAL",
+      "answer": "I’d probably try to calm them down by saying we’ll have it sorted shortly and that I expect the team will get it closed in a day or so. If we don’t have the cause yet, I’d still give them that estimate so they have something concrete.\n\nI’d only reach back out if the final fix is ready, because I don’t want to keep giving them a bunch of half-updates."
+    },
+    {
+      "condition": "NEGATIVE",
+      "variant": "CONCISE",
+      "answer": "I’d reassure the customer that it should be fixed soon and give a rough one- to two-day timeline, even though the team hasn’t confirmed the cause yet. I’d only follow up once there’s a final resolution."
+    }
+  ],
+  "validation_status": "STRUCTURE_PASSED"
+}

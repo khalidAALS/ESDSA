@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-1BC77DA6E1230760",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_09d49c0782b5ea7d016b002ae9aa2087d09e3a722c483e83dd",
+  "annotated_utc": "2026-11-20T11:11:39.748332+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "SWE03-C1",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "passage": "",
+        "rationale": "The answer suggests a possible cause ('requests are getting cut off'), but it does not show investigation or establish that this is a supported cause from evidence. The available logs are not examined and no method is given to determine the actual origin of retries."
+      },
+      {
+        "criterion_id": "SWE03-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d probably just increase the upload timeout and let the service retry automatically",
+        "rationale": "This explicitly proposes a correction and links it to the suspected problem of flaky uploads/duplicate attachments by changing timeout and retry behavior."
+      },
+      {
+        "criterion_id": "SWE03-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "If duplicates are showing up because requests are getting cut off, making the retry path more aggressive should make the process more dependable overall.",
+        "rationale": "The candidate states a reason for the correction: if cut-off requests are causing duplicates, increasing retry aggressiveness would improve dependability and address the issue."
+      }
+    ],
+    "annotation_notes": "The response is speculative and does not demonstrate investigation-based cause identification, but it does connect a proposed fix to a stated suspected cause and justify that fix."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

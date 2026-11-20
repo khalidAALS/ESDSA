@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-08CE446D3F3BBB1C",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0acf768672471a53016b002926f44887d0aa2badf16e73adc4",
+  "annotated_utc": "2026-11-20T11:04:09.828588+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "OPS04-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d start by comparing the repair plan against the current milestones, so I can see exactly what has been completed, what is still outstanding, and whether the parts shortage affects any critical step. I’d ask for a current status from both the site manager and the contractor, including the latest ETA on parts, any workaround options, and the point at which the delay would actually threaten completion.",
+        "rationale": "The candidate explicitly identifies multiple kinds of information needed to monitor execution: completed work, outstanding work, impact on critical steps, status from both parties, ETA on parts, workaround options, and threshold for threatened completion."
+      },
+      {
+        "criterion_id": "OPS04-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "If the shortage puts a milestone at risk or the expected completion date starts to slip, I’d escalate it to the right operations lead",
+        "rationale": "This clearly states a trigger for action: when a milestone is at risk or completion date slips, the candidate would escalate. That demonstrates recognition of deviation requiring action."
+      },
+      {
+        "criterion_id": "OPS04-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d then keep a close follow-up on the agreed actions, confirm who owns the next update, and check back until the blocker is resolved or a new timeline is formally accepted.",
+        "rationale": "The candidate directs the issue to an appropriate owner and describes verifying response through follow-up, ownership of the next update, and continued checking until resolution or acceptance."
+      }
+    ],
+    "annotation_notes": ""
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

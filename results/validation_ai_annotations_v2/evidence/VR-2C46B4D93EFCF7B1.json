@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-2C46B4D93EFCF7B1",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0c18faba1263462a016b000e475ea887d0b548d21edd5469b7",
+  "annotated_utc": "2026-11-20T09:09:29.485634+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "CSS04-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d tell them what I’m going to do next, like reviewing the complaint and checking with the right team, and I’d explain that I can’t give a final answer until that’s been looked into.",
+        "rationale": "This clearly communicates the next actions in an understandable way and explains the current limitation on resolution."
+      },
+      {
+        "criterion_id": "CSS04-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d set a realistic time for the next contact rather than overpromising.",
+        "rationale": "This explicitly shows expectation management by avoiding overpromising and setting a realistic timeframe."
+      },
+      {
+        "criterion_id": "CSS04-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "Then I’d book in a clear follow-up, so they know when they’ll hear from me and what to expect next.",
+        "rationale": "This directly describes arranging a follow-up mechanism and confirming when the customer will hear back."
+      }
+    ],
+    "annotation_notes": "The answer addresses apology, next steps, realistic timing, and a clear follow-up plan."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

@@ -1,0 +1,477 @@
+{
+  "benchmark_responses": 108,
+  "reference_status": "AI-assisted provisional, not independently validated",
+  "files_examined": 21,
+  "inventory": [
+    {
+      "file": "results/audit_repeatability_f02_analysis.json",
+      "records": 1,
+      "unique_ids": 0,
+      "matching_benchmark_ids": 0,
+      "missing_benchmark_ids": 108,
+      "decisions": {},
+      "sample_keys": [
+        "analysis_type",
+        "experiment",
+        "independent_semantic_validation",
+        "limitations",
+        "results",
+        "sample_size_per_response"
+      ],
+      "complete_id_coverage": false
+    },
+    {
+      "file": "results/audit_repeatability_f02_details.csv",
+      "records": 20,
+      "unique_ids": 2,
+      "matching_benchmark_ids": 0,
+      "missing_benchmark_ids": 108,
+      "decisions": {
+        "ADVANCE": 12,
+        "DEFER": 8
+      },
+      "sample_keys": [
+        "c3_status",
+        "empty_excerpts",
+        "exact_excerpts",
+        "outer_quotes_only",
+        "recommendation",
+        "repetition",
+        "response_id",
+        "returned_model",
+        "unverifiable_excerpts"
+      ],
+      "complete_id_coverage": false
+    },
+    {
+      "file": "results/audit_repeatability_f02_v1.jsonl",
+      "records": 20,
+      "unique_ids": 2,
+      "matching_benchmark_ids": 0,
+      "missing_benchmark_ids": 108,
+      "decisions": {},
+      "sample_keys": [
+        "api_response_id",
+        "c3_evidence_status",
+        "candidate_answer_sha256",
+        "evidence_supported_decision",
+        "experiment",
+        "input_tokens",
+        "output_tokens",
+        "parsed_output",
+        "raw_output",
+        "repetition",
+        "requested_model",
+        "response_id",
+        "returned_model",
+        "run_sha256",
+        "timestamp_utc",
+        "validation_warnings"
+      ],
+      "complete_id_coverage": false
+    },
+    {
+      "file": "results/benchmark_evidence_aware_v1.jsonl",
+      "records": 108,
+      "unique_ids": 108,
+      "matching_benchmark_ids": 108,
+      "missing_benchmark_ids": 0,
+      "decisions": {
+        "ADVANCE": 69,
+        "DO_NOT_ADVANCE": 36,
+        "DEFER": 3
+      },
+      "sample_keys": [
+        "answer_sha256",
+        "api_response_id",
+        "decision",
+        "experiment",
+        "input_tokens",
+        "output_tokens",
+        "parsed_output",
+        "raw_output",
+        "requested_model",
+        "response_id",
+        "returned_model",
+        "rubric_id",
+        "run_sha256",
+        "timestamp_utc",
+        "validation_warnings"
+      ],
+      "complete_id_coverage": true
+    },
+    {
+      "file": "results/combined_esdsa_v1.json",
+      "records": 3,
+      "unique_ids": 0,
+      "matching_benchmark_ids": 0,
+      "missing_benchmark_ids": 108,
+      "decisions": {},
+      "sample_keys": [
+        "combined_decision",
+        "combined_verdict",
+        "evidence_agreement_baseline",
+        "evidence_agreement_modified",
+        "evidence_baseline",
+        "evidence_modified",
+        "original_baseline",
+        "original_modified",
+        "pair_id",
+        "reference_validation",
+        "stability",
+        "test_role"
+      ],
+      "complete_id_coverage": false
+    },
+    {
+      "file": "results/controlled_evidence_audit_v1.jsonl",
+      "records": 4,
+      "unique_ids": 0,
+      "matching_benchmark_ids": 0,
+      "missing_benchmark_ids": 108,
+      "decisions": {},
+      "sample_keys": [
+        "answer_sha256",
+        "evidence_supported_decision",
+        "input_tokens",
+        "output_tokens",
+        "parsed_output",
+        "raw_output",
+        "requested_model",
+        "response_ids",
+        "returned_model",
+        "run_sha256",
+        "timestamp_utc",
+        "validation_warnings"
+      ],
+      "complete_id_coverage": false
+    },
+    {
+      "file": "results/controlled_pairs_gpt-5.4-mini.jsonl",
+      "records": 4,
+      "unique_ids": 0,
+      "matching_benchmark_ids": 0,
+      "missing_benchmark_ids": 108,
+      "decisions": {},
+      "sample_keys": [
+        "answer_sha256",
+        "api_response_id",
+        "input_tokens",
+        "output_tokens",
+        "parsed_output",
+        "prompt_sha256",
+        "raw_output",
+        "requested_model",
+        "response_ids",
+        "returned_model",
+        "timestamp_utc",
+        "validation_warnings"
+      ],
+      "complete_id_coverage": false
+    },
+    {
+      "file": "results/decision_stability_v1.csv",
+      "records": 3,
+      "unique_ids": 0,
+      "matching_benchmark_ids": 0,
+      "missing_benchmark_ids": 108,
+      "decisions": {},
+      "sample_keys": [
+        "baseline_decision",
+        "decision_changed",
+        "modified_decision",
+        "outcome",
+        "pair_id",
+        "provisional_reference_match",
+        "semantic_validation",
+        "test_type"
+      ],
+      "complete_id_coverage": false
+    },
+    {
+      "file": "results/development_generation_v1.jsonl",
+      "records": 12,
+      "unique_ids": 0,
+      "matching_benchmark_ids": 0,
+      "missing_benchmark_ids": 108,
+      "decisions": {},
+      "sample_keys": [
+        "api_response_id",
+        "family_id",
+        "input_tokens",
+        "output_tokens",
+        "raw_output",
+        "requested_model",
+        "responses",
+        "returned_model",
+        "rubric_sha256",
+        "run_sha256",
+        "scenario_file_sha256",
+        "timestamp_utc"
+      ],
+      "complete_id_coverage": false
+    },
+    {
+      "file": "results/development_reference_comparison_v1.json",
+      "records": 1,
+      "unique_ids": 0,
+      "matching_benchmark_ids": 0,
+      "missing_benchmark_ids": 108,
+      "decisions": {},
+      "sample_keys": [
+        "criterion_agreement",
+        "criterion_comparisons",
+        "criterion_confusion",
+        "criterion_matches",
+        "decision_agreement",
+        "decision_confusion",
+        "decision_disagreements",
+        "decision_matches",
+        "responses",
+        "status",
+        "unstable_groups",
+        "warning"
+      ],
+      "complete_id_coverage": false
+    },
+    {
+      "file": "results/evidence_audit_v1.jsonl",
+      "records": 12,
+      "unique_ids": 12,
+      "matching_benchmark_ids": 0,
+      "missing_benchmark_ids": 108,
+      "decisions": {},
+      "sample_keys": [
+        "audit_verdict",
+        "audited_recommendation",
+        "evidence_supported_decision",
+        "input_tokens",
+        "original_recommendation",
+        "output_tokens",
+        "parsed_output",
+        "raw_output",
+        "requested_model",
+        "response_id",
+        "returned_model",
+        "run_sha256",
+        "timestamp_utc",
+        "validation_warnings"
+      ],
+      "complete_id_coverage": false
+    },
+    {
+      "file": "results/evidence_audit_v2.jsonl",
+      "records": 8,
+      "unique_ids": 8,
+      "matching_benchmark_ids": 0,
+      "missing_benchmark_ids": 108,
+      "decisions": {},
+      "sample_keys": [
+        "audit_verdict",
+        "audited_recommendation",
+        "evidence_supported_decision",
+        "input_tokens",
+        "original_recommendation",
+        "output_tokens",
+        "parsed_output",
+        "raw_output",
+        "requested_model",
+        "response_id",
+        "returned_model",
+        "run_sha256",
+        "timestamp_utc",
+        "validation_warnings"
+      ],
+      "complete_id_coverage": false
+    },
+    {
+      "file": "results/evidence_excerpt_verification_v1.csv",
+      "records": 48,
+      "unique_ids": 12,
+      "matching_benchmark_ids": 0,
+      "missing_benchmark_ids": 108,
+      "decisions": {},
+      "sample_keys": [
+        "criterion_id",
+        "evidence_status",
+        "original_excerpt",
+        "response_id",
+        "verification_status"
+      ],
+      "complete_id_coverage": false
+    },
+    {
+      "file": "results/linguistic_stability_v1.json",
+      "records": 1,
+      "unique_ids": 0,
+      "matching_benchmark_ids": 0,
+      "missing_benchmark_ids": 108,
+      "decisions": {},
+      "sample_keys": [
+        "analysis",
+        "disagreements",
+        "semantic_equivalence",
+        "summary"
+      ],
+      "complete_id_coverage": false
+    },
+    {
+      "file": "results/pilot_gpt-5.4-mini.jsonl",
+      "records": 12,
+      "unique_ids": 12,
+      "matching_benchmark_ids": 0,
+      "missing_benchmark_ids": 108,
+      "decisions": {},
+      "sample_keys": [
+        "api_response_id",
+        "input_tokens",
+        "output_tokens",
+        "parsed_output",
+        "prompt_sha256",
+        "raw_output",
+        "requested_model",
+        "response_id",
+        "returned_model",
+        "timestamp_utc"
+      ],
+      "complete_id_coverage": false
+    },
+    {
+      "file": "results/scoring_baseline_v1.jsonl",
+      "records": 12,
+      "unique_ids": 12,
+      "matching_benchmark_ids": 0,
+      "missing_benchmark_ids": 108,
+      "decisions": {},
+      "sample_keys": [
+        "input_tokens",
+        "output_tokens",
+        "parsed_output",
+        "raw_output",
+        "requested_model",
+        "response_id",
+        "returned_model",
+        "run_sha256",
+        "timestamp_utc"
+      ],
+      "complete_id_coverage": false
+    },
+    {
+      "file": "results/scoring_baseline_v2.jsonl",
+      "records": 8,
+      "unique_ids": 8,
+      "matching_benchmark_ids": 0,
+      "missing_benchmark_ids": 108,
+      "decisions": {},
+      "sample_keys": [
+        "api_response_id",
+        "input_tokens",
+        "output_tokens",
+        "parsed_output",
+        "raw_output",
+        "requested_model",
+        "response_id",
+        "returned_model",
+        "run_sha256",
+        "timestamp_utc"
+      ],
+      "complete_id_coverage": false
+    },
+    {
+      "file": "results/snapshots/development_pilot_v1_manifest.json",
+      "records": 1,
+      "unique_ids": 0,
+      "matching_benchmark_ids": 0,
+      "missing_benchmark_ids": 108,
+      "decisions": {},
+      "sample_keys": [
+        "created_utc",
+        "evaluation_count",
+        "experiment",
+        "files",
+        "limitations",
+        "models",
+        "reference_status",
+        "reported_reference_agreement",
+        "version"
+      ],
+      "complete_id_coverage": false
+    },
+    {
+      "file": "results/stability_gate_development_v1.json",
+      "records": 8,
+      "unique_ids": 2,
+      "matching_benchmark_ids": 0,
+      "missing_benchmark_ids": 108,
+      "decisions": {
+        "ADVANCE": 3,
+        "DEFER": 5
+      },
+      "sample_keys": [
+        "assessments",
+        "final_decision",
+        "gate_verdict",
+        "observed_decisions",
+        "reference_correctness",
+        "response_id"
+      ],
+      "complete_id_coverage": false
+    },
+    {
+      "file": "results/targeted_insufficiency_evaluations_v1.jsonl",
+      "records": 12,
+      "unique_ids": 12,
+      "matching_benchmark_ids": 0,
+      "missing_benchmark_ids": 108,
+      "decisions": {
+        "DEFER": 10,
+        "ADVANCE": 2
+      },
+      "sample_keys": [
+        "answer_sha256",
+        "api_response_id",
+        "decision",
+        "experiment",
+        "input_tokens",
+        "output_tokens",
+        "parsed_output",
+        "raw_output",
+        "requested_model",
+        "response_id",
+        "returned_model",
+        "rubric_id",
+        "run_sha256",
+        "timestamp_utc",
+        "validation_warnings"
+      ],
+      "complete_id_coverage": false
+    },
+    {
+      "file": "results/v2_disagreement_review.json",
+      "records": 1,
+      "unique_ids": 0,
+      "matching_benchmark_ids": 0,
+      "missing_benchmark_ids": 108,
+      "decisions": {},
+      "sample_keys": [
+        "created_utc",
+        "criterion",
+        "criterion_name",
+        "evidence_audit",
+        "excerpt_warnings",
+        "experiment",
+        "finding_id",
+        "independent_semantic_validation",
+        "observed_issue",
+        "preliminary_interpretation",
+        "reference_status",
+        "requires_follow_up",
+        "response_ids",
+        "scenario_family",
+        "scoring_evaluator"
+      ],
+      "complete_id_coverage": false
+    }
+  ],
+  "note": "Identifier coverage alone does not establish baseline validity or comparability. Prompt, model, decision rules and coverage must be checked separately."
+}

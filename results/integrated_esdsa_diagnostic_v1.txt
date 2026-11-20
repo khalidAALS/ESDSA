@@ -1,0 +1,73 @@
+INTEGRATED ESDSA — DEVELOPMENT DIAGNOSIS
+
+evidence_aware: coverage=97.2%; actionable=105; disagreements=15; rate=14.3%; unsupported ADVANCE=12; unnecessary deferrals=0
+traceability_only: coverage=83.3%; actionable=90; disagreements=14; rate=15.6%; unsupported ADVANCE=11; unnecessary deferrals=15
+integrated_esdsa: coverage=66.7%; actionable=72; disagreements=8; rate=11.1%; unsupported ADVANCE=5; unnecessary deferrals=27
+
+EXACT SAME 72 ESDSA-RETAINED CASES
+evidence_aware: actionable=72; disagreements=8; unsupported ADVANCE=5
+traceability_only: actionable=72; disagreements=8; unsupported ADVANCE=5
+integrated_esdsa: actionable=72; disagreements=8; unsupported ADVANCE=5
+
+COMPONENT ATTRIBUTION
+evidence_to_traceability: changed=15; prevented disagreements=1; deferred supported=14; deferred reference-DEFER=0
+traceability_to_integrated: changed=18; prevented disagreements=6; deferred supported=12; deferred reference-DEFER=6
+
+DEFERRALS
+{
+  "reference_actionable": 27,
+  "reference_defer": 9,
+  "flagged_for_review": 21,
+  "by_equivalence": {
+    "YES": 27,
+    "NO": 6,
+    "UNCERTAIN": 3
+  },
+  "by_reference": {
+    "DO_NOT_ADVANCE": 16,
+    "ADVANCE": 11,
+    "DEFER": 9
+  }
+}
+
+MATCHED-COUNT RANDOM SENSITIVITY
+{
+  "matched_count": 72,
+  "draws": 10000,
+  "mean_disagreements": 10.2894,
+  "percentile_2_5": 7,
+  "percentile_97_5": 13,
+  "fraction_fewer_disagreements_than_esdsa": 0.0504,
+  "warning": "Random retention is descriptive only; percentiles are not confidence intervals."
+}
+
+UNCERTAINTY
+{
+  "quantity": "Integrated minus evidence-aware actionable disagreement rate (different retained populations)",
+  "observed": -0.031746031746031744,
+  "cluster_bootstrap_95_percentile_interval": [
+    -0.1047008547008547,
+    0.030998389694041867
+  ],
+  "bootstrap_resamples": 5000,
+  "warning": "Exploratory development uncertainty with 36 correlated variant groups in 12 scenario families; not held-out inference."
+}
+
+GROUPS WITH UNNECESSARY DEFERRALS
+GROUP-001: unnecessary=3, prevented_disagreements=0, equivalence=['YES'], flagged=False
+GROUP-005: unnecessary=3, prevented_disagreements=0, equivalence=['YES'], flagged=False
+GROUP-008: unnecessary=3, prevented_disagreements=0, equivalence=['YES'], flagged=False
+GROUP-011: unnecessary=1, prevented_disagreements=2, equivalence=['NO'], flagged=True
+GROUP-015: unnecessary=3, prevented_disagreements=0, equivalence=['YES'], flagged=True
+GROUP-017: unnecessary=3, prevented_disagreements=1, equivalence=['YES'], flagged=True
+GROUP-018: unnecessary=2, prevented_disagreements=1, equivalence=['NO'], flagged=True
+GROUP-022: unnecessary=3, prevented_disagreements=0, equivalence=['YES'], flagged=False
+GROUP-032: unnecessary=3, prevented_disagreements=0, equivalence=['YES'], flagged=True
+GROUP-034: unnecessary=3, prevented_disagreements=0, equivalence=['YES'], flagged=False
+
+LIMITATIONS
+- Provisional AI-assisted references are not independent ground truth.
+- Scoring-only per-response outputs were not among the four inputs.
+- The current gate operates on groups including NO/UNCERTAIN equivalence.
+- Literal quotation mismatch is not semantic evidence failure.
+- Do not tune policy on held-out data or claim development results are independent validation.

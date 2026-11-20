@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-133E8D2B21766C65",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_055dfc11f4396b87016b002a66b1ac87d0a6c1304db1542018",
+  "annotated_utc": "2026-11-20T11:09:28.742744+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "CSS04-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d let the customer know the issue should already be fixed and ask them to keep trying it a few more times.",
+        "rationale": "The candidate clearly communicates the proposed next step to the customer in understandable terms."
+      },
+      {
+        "criterion_id": "CSS04-C2",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I’d probably close the ticket again unless they can show a new error.",
+        "rationale": "This sets an unsupported expectation that the issue is resolved and the ticket should be closed despite no confirmation the customer successfully used the service afterward."
+      },
+      {
+        "criterion_id": "CSS04-C3",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I wouldn’t plan a separate follow-up unless they contact us again.",
+        "rationale": "The candidate explicitly հրաժ uses no separate follow-up or confirmation mechanism, which conflicts with appropriate follow-up in this scenario."
+      }
+    ],
+    "annotation_notes": "The answer is understandable, but it relies on unconfirmed assumptions about the fix working and does not establish a proactive confirmation process."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

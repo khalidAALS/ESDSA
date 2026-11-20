@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-B9A25CCEEAD8ACE9",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_01190a94ed54d8d7016b000ea7880887d09e8faa5e1dc2284b",
+  "annotated_utc": "2026-11-20T09:11:05.106513+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "CSS04-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d tell the customer we’re investigating, but we don’t yet have a confirmed cause or reliable fix date, so I can’t give a firm commitment. I’d explain the next step, keep the case open, and promise updates as soon as there’s verified progress.",
+        "rationale": "The response clearly and understandably explains what will be communicated to the customer and what will happen next."
+      },
+      {
+        "criterion_id": "CSS04-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "we don’t yet have a confirmed cause or reliable fix date, so I can’t give a firm commitment",
+        "rationale": "This explicitly avoids unsupported promises and sets expectations based on the current uncertainty."
+      },
+      {
+        "criterion_id": "CSS04-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d explain the next step, keep the case open, and promise updates as soon as there’s verified progress. After restoration, I’d follow up to confirm the issue is cleared.",
+        "rationale": "This provides a status-update mechanism and a post-restoration confirmation follow-up."
+      }
+    ],
+    "annotation_notes": "The answer is concise but directly addresses communication, expectation management, and follow-up."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

@@ -1,0 +1,63 @@
+{
+  "experiment": "ESDSA_TEST_GENERATION_V1",
+  "partition": "TEST",
+  "family_id": "ESDSA-OPS02-10",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_028beaad1b7efd02016b0022e123bc87d0aaf59eca29df9073",
+  "timestamp_utc": "2026-11-20T10:37:27.797113+00:00",
+  "run_sha256": "34f35342ccb118b7eda7ba14cb7557e09f5ca5f9fd9e5def22d6acf4496bbc34",
+  "scenario_sha256": "9d2280d8014612bdd263f5dd8daf8356efeac3fa7a7e4b0cd3c6f4fef932426a",
+  "rubric_sha256": "b00e0849340fa9a63f1e28135cc37f78b68a7beb29549b3a73b95fcc8924efff",
+  "responses": [
+    {
+      "condition": "SUFFICIENT",
+      "variant": "CANONICAL",
+      "answer": "I’d treat the near-miss as a signal that the first control hasn’t addressed the real risk. I’d review the incident details, watch the loading area at different times, and speak with the people on shift to understand where the bottleneck is forming and whether the new staffing pattern has created any new risks. I’d look at both the likelihood of another delay or near-miss and the potential impact on deliveries, safety, and wider operations. If the situation still looks unstable, I’d put in an immediate temporary control, such as adjusting bay use or reallocating people for the busiest periods, and escalate it to the supervisor or operations lead so we can decide whether a fuller fix is needed. I wouldn’t assume the original change failed because of staffing alone until I’d checked the underlying process issues as well."
+    },
+    {
+      "condition": "SUFFICIENT",
+      "variant": "CONVERSATIONAL",
+      "answer": "I’d take the near-miss seriously and assume the first change hasn’t really solved the problem yet. I’d go back to the incident info, check the loading area across a few shifts, and talk to the team to see what’s actually causing the build-up. From there I’d judge how likely another delay or incident is, and how much it could affect deliveries and safety if it happens again. If it still looks high risk, I’d put a short-term fix in place straight away and escalate it so we can agree a better longer-term response. I’d want to be clear on the root cause before making a final call, but I wouldn’t leave the area as it is if the risk is still live."
+    },
+    {
+      "condition": "SUFFICIENT",
+      "variant": "CONCISE",
+      "answer": "I’d review the near-miss, observe the area, and talk to staff to find the real cause of the congestion. Then I’d weigh the chance of repeat delays or another incident against the impact on safety and deliveries. If the risk was still significant, I’d add a temporary control and escalate for a fuller fix."
+    },
+    {
+      "condition": "INSUFFICIENT",
+      "variant": "CANONICAL",
+      "answer": "I’d start by checking the near-miss report and seeing whether the queueing has changed since the staffing adjustment. I’d probably compare busy periods with quieter ones and ask the team what they’re seeing on the ground, so I can get a better picture of where the delay is coming from. If it still looked like a problem, I’d keep monitoring it closely and make sure the issue is flagged to the right person for review. I’d want to avoid jumping to conclusions before we’ve had time to see whether the current setup settles down or not."
+    },
+    {
+      "condition": "INSUFFICIENT",
+      "variant": "CONVERSATIONAL",
+      "answer": "I’d look at the near-miss details, check how the area is operating, and ask the team what they think is causing the backlog. I’d also keep an eye on whether the waiting times are getting better or worse after the change. If it still seemed unresolved, I’d raise it with the supervisor so we could review it properly. I’d be careful not to overreact until we’ve got a clearer picture of what’s driving it."
+    },
+    {
+      "condition": "INSUFFICIENT",
+      "variant": "CONCISE",
+      "answer": "I’d review the near-miss, check the workflow, and get input from the staff to understand the congestion. I’d monitor whether the waiting times improve and raise it if the issue stays open. I’d avoid making a final call until the pattern is clearer."
+    },
+    {
+      "condition": "NEGATIVE",
+      "variant": "CANONICAL",
+      "answer": "I’d probably leave the temporary staffing adjustment in place for a bit longer and see if the congestion eases on its own. Near-misses can happen when people are busy, so I wouldn’t escalate too quickly unless there was an actual injury or repeated incidents. My focus would be on keeping the work moving, because stopping the area again could create even more delay. If the waiting times are still high after a while, then I’d look into whether we need another change, but I’d avoid making additional adjustments unless the situation becomes clearly worse."
+    },
+    {
+      "condition": "NEGATIVE",
+      "variant": "CONVERSATIONAL",
+      "answer": "I’d keep the current setup running and give it more time, because sometimes these things settle once people get used to the new arrangement. I’d note the near-miss, but I wouldn’t want to slow everything down by escalating straight away if there’s no actual harm. My priority would be to keep throughput up, and I’d only change course if the congestion turns into something more serious or starts affecting the shift badly."
+    },
+    {
+      "condition": "NEGATIVE",
+      "variant": "CONCISE",
+      "answer": "I’d keep the current setup going and wait to see if the congestion improves. I’d only escalate if there’s a repeat incident or actual harm, since changing things again could disrupt throughput."
+    }
+  ],
+  "raw_output": "{\"responses\":[{\"condition\":\"SUFFICIENT\",\"variant\":\"CANONICAL\",\"answer\":\"I’d treat the near-miss as a signal that the first control hasn’t addressed the real risk. I’d review the incident details, watch the loading area at different times, and speak with the people on shift to understand where the bottleneck is forming and whether the new staffing pattern has created any new risks. I’d look at both the likelihood of another delay or near-miss and the potential impact on deliveries, safety, and wider operations. If the situation still looks unstable, I’d put in an immediate temporary control, such as adjusting bay use or reallocating people for the busiest periods, and escalate it to the supervisor or operations lead so we can decide whether a fuller fix is needed. I wouldn’t assume the original change failed because of staffing alone until I’d checked the underlying process issues as well.\"},{\"condition\":\"SUFFICIENT\",\"variant\":\"CONVERSATIONAL\",\"answer\":\"I’d take the near-miss seriously and assume the first change hasn’t really solved the problem yet. I’d go back to the incident info, check the loading area across a few shifts, and talk to the team to see what’s actually causing the build-up. From there I’d judge how likely another delay or incident is, and how much it could affect deliveries and safety if it happens again. If it still looks high risk, I’d put a short-term fix in place straight away and escalate it so we can agree a better longer-term response. I’d want to be clear on the root cause before making a final call, but I wouldn’t leave the area as it is if the risk is still live.\"},{\"condition\":\"SUFFICIENT\",\"variant\":\"CONCISE\",\"answer\":\"I’d review the near-miss, observe the area, and talk to staff to find the real cause of the congestion. Then I’d weigh the chance of repeat delays or another incident against the impact on safety and deliveries. If the risk was still significant, I’d add a temporary control and escalate for a fuller fix.\"},{\"condition\":\"INSUFFICIENT\",\"variant\":\"CANONICAL\",\"answer\":\"I’d start by checking the near-miss report and seeing whether the queueing has changed since the staffing adjustment. I’d probably compare busy periods with quieter ones and ask the team what they’re seeing on the ground, so I can get a better picture of where the delay is coming from. If it still looked like a problem, I’d keep monitoring it closely and make sure the issue is flagged to the right person for review. I’d want to avoid jumping to conclusions before we’ve had time to see whether the current setup settles down or not.\"},{\"condition\":\"INSUFFICIENT\",\"variant\":\"CONVERSATIONAL\",\"answer\":\"I’d look at the near-miss details, check how the area is operating, and ask the team what they think is causing the backlog. I’d also keep an eye on whether the waiting times are getting better or worse after the change. If it still seemed unresolved, I’d raise it with the supervisor so we could review it properly. I’d be careful not to overreact until we’ve got a clearer picture of what’s driving it.\"},{\"condition\":\"INSUFFICIENT\",\"variant\":\"CONCISE\",\"answer\":\"I’d review the near-miss, check the workflow, and get input from the staff to understand the congestion. I’d monitor whether the waiting times improve and raise it if the issue stays open. I’d avoid making a final call until the pattern is clearer.\"},{\"condition\":\"NEGATIVE\",\"variant\":\"CANONICAL\",\"answer\":\"I’d probably leave the temporary staffing adjustment in place for a bit longer and see if the congestion eases on its own. Near-misses can happen when people are busy, so I wouldn’t escalate too quickly unless there was an actual injury or repeated incidents. My focus would be on keeping the work moving, because stopping the area again could create even more delay. If the waiting times are still high after a while, then I’d look into whether we need another change, but I’d avoid making additional adjustments unless the situation becomes clearly worse.\"},{\"condition\":\"NEGATIVE\",\"variant\":\"CONVERSATIONAL\",\"answer\":\"I’d keep the current setup running and give it more time, because sometimes these things settle once people get used to the new arrangement. I’d note the near-miss, but I wouldn’t want to slow everything down by escalating straight away if there’s no actual harm. My priority would be to keep throughput up, and I’d only change course if the congestion turns into something more serious or starts affecting the shift badly.\"},{\"condition\":\"NEGATIVE\",\"variant\":\"CONCISE\",\"answer\":\"I’d keep the current setup going and wait to see if the congestion improves. I’d only escalate if there’s a repeat incident or actual harm, since changing things again could disrupt throughput.\"}]}",
+  "input_tokens": 761,
+  "output_tokens": 1012,
+  "generation_conditions_are_reference_labels": false
+}

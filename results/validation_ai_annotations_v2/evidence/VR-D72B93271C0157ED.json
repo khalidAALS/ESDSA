@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-D72B93271C0157ED",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_05f61128b8f66347016b000d45ed6c87d084589468ab7b6b0d",
+  "annotated_utc": "2026-11-20T09:05:12.462240+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "SWE01-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "First I’d try to make it fail again with the new records, instead of relying on the old repro.",
+        "rationale": "The candidate explicitly says they would reproduce the failure using the new records, which directly addresses establishing how to reproduce or characterise the problem."
+      },
+      {
+        "criterion_id": "SWE01-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "Then I’d line those records up against ones that export correctly and look for what’s actually different about them.",
+        "rationale": "This directly describes comparing failing records with working ones to identify differences in conditions or behaviour."
+      },
+      {
+        "criterion_id": "SWE01-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "If needed I’d tweak the sample data in the test environment to isolate the trigger and narrow it to a specific stage, like selection, transformation, or write-out.",
+        "rationale": "The candidate describes using controlled adjustments and stage-based tracing to isolate the trigger and narrow down plausible causes, which matches systematic narrowing."
+      }
+    ],
+    "annotation_notes": "The answer provides clear, concrete diagnostic steps for all three criteria."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-9D862E4B81F34689",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_01d58d800b9b94db016b002c23416887d08c83fa46d3dc4376",
+  "annotated_utc": "2026-11-20T11:16:53.265887+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "SWE01-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d start by collecting a few examples of when people notice the outdated figures and check whether it happens consistently or only under certain conditions.",
+        "rationale": "This explicitly describes gathering examples and characterizing when the problem occurs, which establishes a plan to reproduce or characterize the failure."
+      },
+      {
+        "criterion_id": "SWE01-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d also compare what different users see so we can tell whether it’s universal or isolated.",
+        "rationale": "This directly compares failing cases across users and distinguishes whether the issue affects everyone or only some users, which is comparison against functioning behavior."
+      },
+      {
+        "criterion_id": "SWE01-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "After that I’d look at the browser requests and the service responses to see which side is showing the old data. That should help us narrow it down",
+        "rationale": "This shows using observed evidence from browser and service to determine which component is responsible, explicitly narrowing the plausible causes."
+      }
+    ],
+    "annotation_notes": ""
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

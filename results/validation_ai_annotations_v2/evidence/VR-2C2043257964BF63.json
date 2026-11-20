@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-2C2043257964BF63",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0f52eb47c0a183e6016b000ced937c87d0a887413e40addbdc",
+  "annotated_utc": "2026-11-20T09:03:44.381601+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "OPS01-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d start by looking at urgency, business impact, and any dependencies between the tasks.",
+        "rationale": "The candidate explicitly names the relevant priority criteria of urgency, business impact, and dependencies."
+      },
+      {
+        "criterion_id": "OPS01-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "In this case, I’d treat the materials inspection as the first decision point because it protects production from a potential quality problem. If there’s a risk the batch is non-conforming, it could stop the line or create rework, so I’d get that checked quickly and involve the right person if needed.\n\nAt the same time, I’d assess the customer order against the agreed dispatch deadline. If dispatch is close to the cutoff, I’d keep that moving in parallel as much as possible, because missing an external commitment has immediate customer impact. Training is important, but if staffing is tight, I’d look to reschedule it or split attendance if that is workable, since it is usually the least time-critical of the three.",
+        "rationale": "The answer explains why inspection is prioritised, why dispatch is also protected due to customer deadline impact, and why training is deferred, showing evidence-based trade-off reasoning."
+      },
+      {
+        "criterion_id": "OPS01-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "If new information changes the picture, I’d reprioritise straight away. For example, if the inspection finds a serious issue, I’d pause or adjust production plans and communicate the impact to dispatch and any affected stakeholders. If the order becomes more urgent than expected, I’d shift people to protect the deadline and move the training to another slot.",
+        "rationale": "The candidate explicitly states they would reprioritise when new information changes the situation and gives concrete examples of how priorities would shift."
+      }
+    ],
+    "annotation_notes": "The response provides direct, relevant evidence for all three prioritisation criteria."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

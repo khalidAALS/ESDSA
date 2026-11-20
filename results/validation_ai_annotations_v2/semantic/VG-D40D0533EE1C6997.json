@@ -1,0 +1,20 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "SEMANTIC_EQUIVALENCE",
+  "blinded_id": "VG-D40D0533EE1C6997",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0388fc065d4c6ee5016b00111ebf2487d0badbb98858450503",
+  "annotated_utc": "2026-11-20T09:21:36.370760+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "semantic_equivalence": "YES",
+    "material_differences": "",
+    "equivalence_rationale": "All three responses identify the same plausible operational risk (repeated small stock discrepancies suggesting a possible process/control issue), acknowledge uncertainty about severity and whether there is a pattern, and propose a proportionate response centered on tracking/monitoring and escalating to a supervisor if the issue persists or worsens. B adds a minor detail about informing the team, but this does not materially change the decision-relevant evidence under the stated criteria."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

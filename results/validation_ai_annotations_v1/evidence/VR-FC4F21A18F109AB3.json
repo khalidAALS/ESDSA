@@ -1,0 +1,35 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_TARGETED_PILOT_V1",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-FC4F21A18F109AB3",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V1",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_05336b6ef4fcf1d8016aff9738ca7887d0aeee8a6615ea543a",
+  "annotated_utc": "2026-11-20T00:41:30.756191+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "CSS02-C1",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I’d mostly look at the payment info and use that to figure out whether the cancellation went through.",
+        "rationale": "This shows a narrow approach focused on payment info rather than asking for the broader set of details needed to understand the issue. It suggests the candidate is not actively gathering the relevant information needed for investigation."
+      },
+      {
+        "criterion_id": "CSS02-C2",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I’d mostly look at the payment info and use that to figure out whether the cancellation went through.",
+        "rationale": "The response treats payment information as the main basis for deciding what happened, despite the scenario stating that available payment information does not clearly establish the outcome. This indicates a tendency to rely on an uncertain source without clearly separating confirmed facts from assumptions."
+      },
+      {
+        "criterion_id": "CSS02-C3",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I’d ask them to dig through their emails or bank app until they find something that shows it.",
+        "rationale": "This suggests pushing the customer to search through personal channels broadly, without showing that the collection is limited to necessary, appropriate, or authorized information. It implies an unstructured request for more data rather than proportionate collection."
+      }
+    ],
+    "annotation_notes": ""
+  }
+}

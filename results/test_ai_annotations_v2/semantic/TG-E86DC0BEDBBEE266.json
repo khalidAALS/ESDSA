@@ -1,0 +1,18 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "SEMANTIC_EQUIVALENCE",
+  "blinded_id": "TG-E86DC0BEDBBEE266",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_076b8d1d5636b52e016b002be40fd487d087cfff53e4658e48",
+  "annotated_utc": "2026-11-20T11:15:49.732615+00:00",
+  "annotation": {
+    "semantic_equivalence": "YES",
+    "material_differences": "",
+    "equivalence_rationale": "All three responses preserve the same decision-relevant evidence across the three criteria: they verify the original failure is fixed, check for regression in an older/related export path, and use that verification result to defer release and investigate/revise as needed. The added details in B and C (e.g., tracing code paths, release notes, adjacent formats) do not change the core operational commitment or the release decision logic."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-954EED72F95A7829",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0d9a492d3fa0285f016b000c12062087d0978ed51eb3635b2e",
+  "annotated_utc": "2026-11-20T09:00:04.441297+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "CSS04-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I would tell the customer that the issue is being looked at and reassure them that it will be fixed soon, because I wouldn’t want to leave them frustrated with an open-ended answer.",
+        "rationale": "This clearly states how the candidate would communicate the situation in understandable terms."
+      },
+      {
+        "criterion_id": "CSS04-C2",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "Even if the technical team hasn’t confirmed the cause yet, I’d commit to getting it resolved quickly and let them know I expect a fix in the next day or two.",
+        "rationale": "The candidate makes an unsupported promise and provides a specific resolution timeframe despite explicitly noting the cause is unconfirmed, which materially contradicts justified expectation-setting."
+      },
+      {
+        "criterion_id": "CSS04-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d probably tell them I’ll check back if anything changes",
+        "rationale": "This establishes a follow-up mechanism by indicating the candidate will check back when there is an update."
+      }
+    ],
+    "annotation_notes": "Criterion C1 is satisfied by a plain-language status update. Criterion C2 is negatively evidenced because the candidate commits to a quick fix and a next-day-or-two timeframe without support. Criterion C3 is satisfied by a stated follow-up plan, though it is limited to changes/updates."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

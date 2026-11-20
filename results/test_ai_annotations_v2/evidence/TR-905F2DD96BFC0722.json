@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-905F2DD96BFC0722",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_042037fdf1dec74e016b00296bad4c87d0bc2091433b3fea5d",
+  "annotated_utc": "2026-11-20T11:05:18.445430+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "OPS02-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d review the near-miss, observe the area, and talk to staff to find the real cause of the congestion.",
+        "rationale": "This explicitly identifies the congestion as a continuing operational issue and links it to a near-miss, showing recognition of a plausible hazard in context."
+      },
+      {
+        "criterion_id": "OPS02-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "Then I’d weigh the chance of repeat delays or another incident against the impact on safety and deliveries.",
+        "rationale": "This directly considers the likelihood of repeat delays/another incident and balances that against possible consequences for safety and deliveries, satisfying uncertainty plus impact assessment."
+      },
+      {
+        "criterion_id": "OPS02-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "If the risk was still significant, I’d add a temporary control and escalate for a fuller fix.",
+        "rationale": "This proposes a proportionate immediate mitigation and escalation for a more permanent solution, which is an appropriate risk response."
+      }
+    ],
+    "annotation_notes": "The answer is concise but provides explicit evidence for all three criteria."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

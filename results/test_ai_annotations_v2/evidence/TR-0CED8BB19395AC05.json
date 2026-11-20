@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-0CED8BB19395AC05",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_02b01225aac61e07016b002a0e572887d0a1d9c7b0a0b7c23a",
+  "annotated_utc": "2026-11-20T11:08:00.672511+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "OPS03-C1",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I would treat the maintenance team’s progress report as the main source of truth and move the handover forward to avoid delays, even if the scheduling system still shows a dependency.",
+        "rationale": "This explicitly ignores conflicting operational evidence from the scheduling system rather than integrating multiple relevant sources."
+      },
+      {
+        "criterion_id": "OPS03-C2",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "If the receiving team has not confirmed readiness yet, I’d assume they will be able to absorb the handover and ask them to adjust after the fact if needed.",
+        "rationale": "This bypasses identifying and resolving the receiving team's readiness as a dependency, and moves ahead without coordinating the responsible parties or confirming prerequisites."
+      },
+      {
+        "criterion_id": "OPS03-C3",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I would update the handover record to show that the task was effectively complete and that the schedule was cleared, so the evening shift can proceed without waiting on additional checks.",
+        "rationale": "The action is justified by an inaccurate record update rather than by relevant operational evidence, indicating poor traceability between evidence and decision."
+      }
+    ],
+    "annotation_notes": "The answer proposes proceeding despite unresolved system dependency and unconfirmed receiving-team readiness, which supports negative evidence for all three criteria."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

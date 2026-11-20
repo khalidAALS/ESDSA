@@ -1,0 +1,20 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "SEMANTIC_EQUIVALENCE",
+  "blinded_id": "VG-FB8C6C20F5644567",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0c7c0d0657c86ab1016b00113d295887d0bf04f8a3f8a21af2",
+  "annotated_utc": "2026-11-20T09:22:06.783641+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "semantic_equivalence": "NO",
+    "material_differences": "Response B adds that the speaker is taking over the complaint and explicitly says they will get back to the customer as soon as possible, while also tying any further contact to whether there is anything new to report. Response C similarly says they are on it now and will check internally, but differs in follow-up posture by explicitly preferring not to send partial updates and stating they would contact the customer once the outcome is known. These differences could affect the follow-up mechanism and the expectation-management evidence under C2/C3.",
+    "equivalence_rationale": "All three responses share the basic themes of apology, investigation, and avoiding unsupported promises. However, B and C are not fully equivalent in how they frame follow-up. B includes an interim reassurance ('as soon as possible') and a conditional check on whether there is anything new to report, while C explicitly rejects partial updates and frames the next contact as only after the outcome is known. Those differences may matter for whether the response demonstrates an appropriate follow-up mechanism and expectation management."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

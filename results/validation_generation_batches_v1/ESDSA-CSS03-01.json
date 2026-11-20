@@ -1,0 +1,75 @@
+{
+  "experiment": "ESDSA_VALIDATION_GENERATION_V1",
+  "partition": "VALIDATION",
+  "family_id": "ESDSA-CSS03-01",
+  "run_sha256": "a65daf808dd646c4898e1a63b3c01135e560fb927586b2b1a0e62d657db6f474",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "response_id": "resp_05e118f9a9de733b016aff90b71f5087d0b5189d8b4066e4a8",
+  "response_status": "completed",
+  "usage": {
+    "input_tokens": 734,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0,
+      "cache_write_tokens_details": {
+        "ttl_12h_tokens": 0,
+        "ttl_30m_tokens": 0
+      }
+    },
+    "output_tokens": 814,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 1548
+  },
+  "raw_output_text": "{\"responses\":[{\"condition\":\"SUFFICIENT\",\"variant\":\"CANONICAL\",\"answer\":\"I’d start by checking the order’s current fulfilment status and the system notes before promising anything. If it’s still in an editable stage, I’d offer to update the address right away. If it’s already been picked, packed, or handed to the carrier, I’d check whether a reroute or address correction is allowed under policy and whether it needs courier intervention or supervisor approval. If the status is unclear or there’s a conflict between systems, I’d pause and verify it rather than guess, then explain the options clearly to the customer.\"},{\"condition\":\"SUFFICIENT\",\"variant\":\"CONVERSATIONAL\",\"answer\":\"I’d first look at where the order is in the process. If it hasn’t moved too far yet, I’d try to change the address for them. If it’s already been packed or shipped, I’d check what our policy allows—maybe a carrier change or maybe it needs approval. And if the order status doesn’t match across systems, I’d hold off and confirm that before I tell the customer what we can do.\"},{\"condition\":\"SUFFICIENT\",\"variant\":\"CONCISE\",\"answer\":\"I’d check the order status first. If it’s still editable, I’d change the address; if it’s already packed or shipped, I’d see whether a reroute or approval is allowed. If the status is unclear, I’d verify it before promising anything.\"},{\"condition\":\"INSUFFICIENT\",\"variant\":\"CANONICAL\",\"answer\":\"I’d begin by checking the order status and then look at what options we usually have for address changes. If it’s still early in fulfilment, I’d try to update it. If it’s already farther along, I’d explain that the change may not be possible and see whether the customer wants to cancel and reorder instead. If the records don’t line up, I’d make a note to review them, but I’d try to keep the conversation moving while I do that.\"},{\"condition\":\"INSUFFICIENT\",\"variant\":\"CONVERSATIONAL\",\"answer\":\"I’d check how far along the order is and then go from there. If it’s still at a stage where we can edit it, I’d change the address. If not, I’d let the customer know it might be too late and talk through other options like cancelling and placing a new order. If the status looks a bit mixed, I’d note it and keep working through it.\"},{\"condition\":\"INSUFFICIENT\",\"variant\":\"CONCISE\",\"answer\":\"I’d check the order status and offer the address change if it’s still editable. If it’s too far along, I’d explain that it may not be possible and discuss alternatives. If the records don’t match, I’d flag it and keep going.\"},{\"condition\":\"NEGATIVE\",\"variant\":\"CANONICAL\",\"answer\":\"I’d usually just go ahead and update the delivery address for the customer, because that’s the quickest way to help. If the order is already in fulfilment, I’d still make the change in the system so the customer doesn’t have to worry about it. If there’s any mismatch in the order status, I’d rely on the customer’s request and process the change first, then sort out the paperwork later.\"},{\"condition\":\"NEGATIVE\",\"variant\":\"CONVERSATIONAL\",\"answer\":\"Honestly, I’d just change the address for them right away so we can solve it on the first contact. Even if the order has already started shipping, I’d still update it and assume it’ll catch up. If the system looks inconsistent, I’d rather not slow the customer down by digging into it unless there’s a bigger issue.\"},{\"condition\":\"NEGATIVE\",\"variant\":\"CONCISE\",\"answer\":\"I’d update the address right away to avoid delay, even if the order is already moving through fulfilment, and deal with any system issues afterward.\"}]}",
+  "responses": [
+    {
+      "condition": "SUFFICIENT",
+      "variant": "CANONICAL",
+      "answer": "I’d start by checking the order’s current fulfilment status and the system notes before promising anything. If it’s still in an editable stage, I’d offer to update the address right away. If it’s already been picked, packed, or handed to the carrier, I’d check whether a reroute or address correction is allowed under policy and whether it needs courier intervention or supervisor approval. If the status is unclear or there’s a conflict between systems, I’d pause and verify it rather than guess, then explain the options clearly to the customer."
+    },
+    {
+      "condition": "SUFFICIENT",
+      "variant": "CONVERSATIONAL",
+      "answer": "I’d first look at where the order is in the process. If it hasn’t moved too far yet, I’d try to change the address for them. If it’s already been packed or shipped, I’d check what our policy allows—maybe a carrier change or maybe it needs approval. And if the order status doesn’t match across systems, I’d hold off and confirm that before I tell the customer what we can do."
+    },
+    {
+      "condition": "SUFFICIENT",
+      "variant": "CONCISE",
+      "answer": "I’d check the order status first. If it’s still editable, I’d change the address; if it’s already packed or shipped, I’d see whether a reroute or approval is allowed. If the status is unclear, I’d verify it before promising anything."
+    },
+    {
+      "condition": "INSUFFICIENT",
+      "variant": "CANONICAL",
+      "answer": "I’d begin by checking the order status and then look at what options we usually have for address changes. If it’s still early in fulfilment, I’d try to update it. If it’s already farther along, I’d explain that the change may not be possible and see whether the customer wants to cancel and reorder instead. If the records don’t line up, I’d make a note to review them, but I’d try to keep the conversation moving while I do that."
+    },
+    {
+      "condition": "INSUFFICIENT",
+      "variant": "CONVERSATIONAL",
+      "answer": "I’d check how far along the order is and then go from there. If it’s still at a stage where we can edit it, I’d change the address. If not, I’d let the customer know it might be too late and talk through other options like cancelling and placing a new order. If the status looks a bit mixed, I’d note it and keep working through it."
+    },
+    {
+      "condition": "INSUFFICIENT",
+      "variant": "CONCISE",
+      "answer": "I’d check the order status and offer the address change if it’s still editable. If it’s too far along, I’d explain that it may not be possible and discuss alternatives. If the records don’t match, I’d flag it and keep going."
+    },
+    {
+      "condition": "NEGATIVE",
+      "variant": "CANONICAL",
+      "answer": "I’d usually just go ahead and update the delivery address for the customer, because that’s the quickest way to help. If the order is already in fulfilment, I’d still make the change in the system so the customer doesn’t have to worry about it. If there’s any mismatch in the order status, I’d rely on the customer’s request and process the change first, then sort out the paperwork later."
+    },
+    {
+      "condition": "NEGATIVE",
+      "variant": "CONVERSATIONAL",
+      "answer": "Honestly, I’d just change the address for them right away so we can solve it on the first contact. Even if the order has already started shipping, I’d still update it and assume it’ll catch up. If the system looks inconsistent, I’d rather not slow the customer down by digging into it unless there’s a bigger issue."
+    },
+    {
+      "condition": "NEGATIVE",
+      "variant": "CONCISE",
+      "answer": "I’d update the address right away to avoid delay, even if the order is already moving through fulfilment, and deal with any system issues afterward."
+    }
+  ],
+  "validation_status": "STRUCTURE_PASSED"
+}

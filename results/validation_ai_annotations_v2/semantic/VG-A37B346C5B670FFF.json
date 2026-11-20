@@ -1,0 +1,20 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "SEMANTIC_EQUIVALENCE",
+  "blinded_id": "VG-A37B346C5B670FFF",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0847dc80507d7804016b000d68c85487d0bb08ba742de6c13f",
+  "annotated_utc": "2026-11-20T09:05:46.355352+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "semantic_equivalence": "YES",
+    "material_differences": "",
+    "equivalence_rationale": "All three responses preserve the same core evidence and operational commitment: they prioritize proceeding with the revised schedule, assign remaining tasks in a pragmatic but not fully resolved way, and document the update as a delay-avoidance measure. None adds a materially different safeguard, dependency analysis, or ownership resolution approach that would change criterion-level evidence under evidence integration, coordination, or decision traceability."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

@@ -1,0 +1,18 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "SEMANTIC_EQUIVALENCE",
+  "blinded_id": "TG-27B96C463826340C",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0d18534458f1621d016b0029b8661087d09a2bb045b6c01ebc",
+  "annotated_utc": "2026-11-20T11:06:35.638770+00:00",
+  "annotation": {
+    "semantic_equivalence": "NO",
+    "material_differences": "Response B adds a limited initial check of dashboards to verify the database and third-party dependency are reachable, and it frames the deploy as the main explanation unless the service is clearly down. More importantly, compared with A/C it says the latency being highest right after deploy is enough to move forward without proving other possibilities. This changes the evidentiary threshold and the breadth of investigation. Response C is even more restrictive: it would only look at traces or database details if deployment timing does not fit at all, and would assume the third-party dependency is not the main issue unless there is already an error alert. These omissions/assumptions materially narrow the relevant sources and hypothesis testing relative to a balanced investigation.",
+    "equivalence_rationale": "All three responses use deploy timing as the primary clue, but A/C/B do not preserve the same decision-relevant evidence. A explicitly deprioritizes traces and database checks unless the issue clearly points elsewhere, while B adds a brief check of dashboards for database/dependency reachability and uses deploy timing as sufficient justification to advance that hypothesis. C further limits follow-up to cases where the deploy timing does not fit, and effectively dismisses the third-party dependency absent an existing alert. Because the question asks what investigation to undertake and how to decide which findings justify further investigation, these differences plausibly change the criteria for what evidence is considered and when alternative causes are investigated."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

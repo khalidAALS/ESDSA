@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-DB1B9750AB4FB7FE",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0d7f4ea9ece13e71016b002bcfa19487d083dd7ed6022c5f0f",
+  "annotated_utc": "2026-11-20T11:15:29.918199+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "OPS04-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d look at the overnight schedule and the inspection notes first so I can line up what was meant to happen with what we’re seeing now.",
+        "rationale": "This explicitly identifies the information the candidate would use to monitor execution: the schedule and inspection notes."
+      },
+      {
+        "criterion_id": "OPS04-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "If it seems like a small issue, I’d keep monitoring it as the morning goes on and watch for any extra signs that the area isn’t ready. If the picture changes and it starts looking more serious, I’d raise it with the supervisor",
+        "rationale": "The candidate distinguishes between a minor issue that can be monitored and a worsening situation that requires action, showing recognition of when deviation crosses a threshold."
+      },
+      {
+        "criterion_id": "OPS04-C3",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "passage": "",
+        "rationale": "The answer does identify escalation to a supervisor, but it does not establish follow-through or verification of the response. The candidate says they would 'let them take it from there,' which leaves the monitoring of escalation outcomes unaddressed."
+      }
+    ],
+    "annotation_notes": " "
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

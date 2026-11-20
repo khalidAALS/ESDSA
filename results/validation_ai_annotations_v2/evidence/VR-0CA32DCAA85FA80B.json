@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-0CA32DCAA85FA80B",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0f458109e00cf2b6016b00107ddb2087d09401d6c004239cca",
+  "annotated_utc": "2026-11-20T09:18:56.213635+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "OPS04-C1",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "passage": "",
+        "rationale": "The answer mentions paying attention to deadline status, a quality concern, and an external dependency, but it does not clearly identify specific information needed to monitor execution (for example, metrics, milestones, updates, or owner feedback)."
+      },
+      {
+        "criterion_id": "OPS04-C2",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I’d only escalate if the problem is already causing a visible failure",
+        "rationale": "This explicitly sets an overly late threshold for action, indicating the candidate would wait for obvious failure rather than recognize earlier deviations requiring attention."
+      },
+      {
+        "criterion_id": "OPS04-C3",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I’d try to keep things moving myself and leave escalation for when there’s no other option.",
+        "rationale": "This suggests the candidate would not direct issues to appropriate owners in a timely way and would reserve escalation until all other options are exhausted, which materially conflicts with appropriate escalation and follow-through."
+      }
+    ],
+    "annotation_notes": "The response shows a reactive approach to escalation and limited evidence of structured monitoring. It does not provide enough detail to confirm the specific information used to track progress."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

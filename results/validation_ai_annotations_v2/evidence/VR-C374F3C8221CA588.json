@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-C374F3C8221CA588",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_061daad6d746da40016b000e39020487d08220ba8a33cb8913",
+  "annotated_utc": "2026-11-20T09:09:15.457750+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "SWE01-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "look at logs and metrics for search, uploads, and login. If one service shows a clear error or latency jump",
+        "rationale": "The answer describes examining logs and metrics for the affected services and looking for specific error or latency patterns, which characterises the failure rather than leaving it abstract."
+      },
+      {
+        "criterion_id": "SWE01-C2",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "passage": "",
+        "rationale": "The answer mentions checking logs and metrics for the failing services, but it does not explicitly compare broken behaviour against known functioning behaviour or contrast affected versus unaffected cases in a substantive way."
+      },
+      {
+        "criterion_id": "SWE01-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "If one service shows a clear error or latency jump, I’d focus there first and loop in that team. I’d also check whether the issue is limited to a region or a subset of users so I can prioritize.",
+        "rationale": "This shows narrowing plausible causes by using observed signals such as service-specific errors, latency jumps, and whether the issue is confined to a region or subset of users to decide where to investigate first."
+      }
+    ],
+    "annotation_notes": ""
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

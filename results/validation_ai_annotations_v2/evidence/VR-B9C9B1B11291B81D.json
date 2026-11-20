@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-B9C9B1B11291B81D",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_07afa25613e4fd96016b000be36c3087d0b06b6d474aea1306",
+  "annotated_utc": "2026-11-20T08:59:17.550800+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "CSS02-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d ask for all available documents and personal details upfront",
+        "rationale": "The candidate explicitly says they would ask for documents and personal details needed to understand the billing discrepancies and account change request."
+      },
+      {
+        "criterion_id": "CSS02-C2",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "then use that information to make a quick decision before verifying much in the internal systems.",
+        "rationale": "This indicates they would rely on customer-provided information and make a decision before verifying it in internal systems, rather than clearly distinguishing confirmed facts from assumptions."
+      },
+      {
+        "criterion_id": "CSS02-C3",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I’d ask for all available documents and personal details upfront",
+        "rationale": "Requesting all available documents and personal details upfront suggests broad collection rather than limiting collection to information that is appropriate and authorised."
+      }
+    ],
+    "annotation_notes": "The answer is concise but shows a willingness to gather broad information and to decide before adequate verification. It does not demonstrate privacy-respecting restraint."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

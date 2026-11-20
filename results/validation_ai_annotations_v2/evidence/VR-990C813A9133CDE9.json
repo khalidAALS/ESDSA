@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-990C813A9133CDE9",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0d7c21220ad180f9016b0010638a0087d081bc5cdfebf22638",
+  "annotated_utc": "2026-11-20T09:18:29.506427+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "OPS01-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d start by separating the decision into urgency, impact, and dependencies.",
+        "rationale": "The candidate explicitly names the relevant priority criteria of urgency, impact, and dependencies."
+      },
+      {
+        "criterion_id": "OPS01-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "The delivery is time-sensitive, so I’d first confirm exactly how late it can be before the business impact becomes unacceptable, and whether there are any customer, contractual, or downstream process dependencies tied to it. At the same time, I’d treat the equipment safety concern as potentially higher risk until we know more, because a safety issue can affect people, assets, and the wider operation.",
+        "rationale": "The candidate explains the trade-off using evidence about delivery timing, business impact, dependencies, and the safety risk of the equipment issue."
+      },
+      {
+        "criterion_id": "OPS01-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "The key is to make the decision based on risk, dependency, and consequence, then revisit it as soon as we learn more.",
+        "rationale": "This explicitly states that priorities will be revisited when new information becomes available, demonstrating reprioritisation."
+      }
+    ],
+    "annotation_notes": "The answer clearly addresses all three criteria with direct, relevant reasoning."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

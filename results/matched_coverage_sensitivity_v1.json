@@ -1,0 +1,38 @@
+{
+  "analysis": "EXPLORATORY_MATCHED_COVERAGE_SENSITIVITY",
+  "seed": 20261119,
+  "repetitions": 10000,
+  "total_responses": 108,
+  "matched_actionable_count": 79,
+  "scoring": {
+    "disagreements": 8,
+    "disagreement_rate": 0.10126582278481013,
+    "unsupported_advances": 6
+  },
+  "evidence_random_deferral": {
+    "mean_disagreements": 11.3025,
+    "mean_disagreement_rate": 0.14306962025316455,
+    "disagreements_2_5_percentile": 8,
+    "disagreements_97_5_percentile": 14,
+    "mean_unsupported_advances": 9.0422,
+    "unsupported_advances_2_5_percentile": 6,
+    "unsupported_advances_97_5_percentile": 12,
+    "fraction_samples_better_than_scoring": 0.0093,
+    "fraction_samples_equal_to_scoring": 0.0285
+  },
+  "common_actionable_subset": {
+    "count": 79,
+    "scoring_disagreements": 8,
+    "evidence_disagreements": 7,
+    "scoring_unsupported_advances": 6,
+    "evidence_unsupported_advances": 5
+  },
+  "limitations": [
+    "Reference classifications are AI-assisted and provisional.",
+    "Random deferral is not an operational selective prediction policy.",
+    "Random-sampling percentiles are not independent statistical confidence intervals.",
+    "Experiments use development data, not held-out evaluation.",
+    "Observed reference disagreement is not validated real-world error.",
+    "This analysis does not establish ESDSA superiority."
+  ]
+}

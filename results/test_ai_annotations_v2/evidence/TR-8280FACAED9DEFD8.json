@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-8280FACAED9DEFD8",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_05067374193ac3a3016b0029f0b56087d08df56c00f9d3676d",
+  "annotated_utc": "2026-11-20T11:07:31.212290+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "CSS03-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "If the situation looks like it falls under a service-impact incident, I’d follow the applicable refund or credit policy and explain what can be considered at this stage.",
+        "rationale": "The candidate ties the action to the evidence available and conditions the refund/credit on whether the incident applies, showing they would choose a resolution appropriate to the facts rather than reflexively granting or denying the request."
+      },
+      {
+        "criterion_id": "CSS03-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "If the evidence is still conflicting or the refund would need an exception, I’d escalate it for supervisor review rather than making a decision on my own.",
+        "rationale": "This explicitly respects authorization limits by deferring exception handling and decisions outside the candidate’s authority to a supervisor review."
+      },
+      {
+        "criterion_id": "CSS03-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "If the evidence is still conflicting or the refund would need an exception, I’d escalate it for supervisor review rather than making a decision on my own.",
+        "rationale": "The candidate clearly recognizes that conflicting evidence or an exception requires more information or escalation before proceeding."
+      }
+    ],
+    "annotation_notes": ""
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

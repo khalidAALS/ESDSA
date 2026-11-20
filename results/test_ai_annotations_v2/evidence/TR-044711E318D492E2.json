@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-044711E318D492E2",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_05ef557dfc80597b016b002af4663487d08e08625d66aabc2f",
+  "annotated_utc": "2026-11-20T11:11:51.216920+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "OPS01-C1",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I’d do the report first, then deal with the equipment and staffing issues.",
+        "rationale": "This prioritisation explicitly puts a routine report ahead of the delayed equipment check and thin staff coverage, without identifying urgency, impact, or dependencies as the basis for the order. In the presented scenario, the equipment check and staffing appear more directly tied to the service launch, so the answer materially fails to use the relevant priority criteria."
+      },
+      {
+        "criterion_id": "OPS01-C2",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "passage": "",
+        "rationale": "The answer states an order of work but does not explain the reasoning behind that choice using relevant evidence such as risk, operational impact, or dependencies. It is too brief to establish the required trade-off reasoning, but it also does not explicitly contradict it."
+      },
+      {
+        "criterion_id": "OPS01-C3",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I’d only change that if someone said the equipment check was an absolute stop.",
+        "rationale": "This sets a very narrow trigger for changing priorities and does not show reassessment based on changing material conditions. It suggests the candidate would not reprioritise unless a single absolute stop is declared, which is a materially deficient response to changing operational circumstances."
+      }
+    ],
+    "annotation_notes": ""
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

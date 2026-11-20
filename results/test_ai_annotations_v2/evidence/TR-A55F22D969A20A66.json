@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-A55F22D969A20A66",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_06e19eec6ca2a590016b002ab9f05c87d0a9841e6880288443",
+  "annotated_utc": "2026-11-20T11:10:51.622448+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "SWE03-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "First I’d trace a few duplicate cases end to end: compare request IDs, upload timestamps, and any retry markers in the application, proxy, and client logs to determine whether the same upload is being replayed by the client or retried by the server after a timeout.",
+        "rationale": "The answer identifies plausible causes for the duplicates and says these would be determined by tracing cases through logs, which directly supports cause identification based on investigation."
+      },
+      {
+        "criterion_id": "SWE03-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "Once that’s clear, I’d recommend the correction that matches the failure mode. If the server is reprocessing the same upload more than once, I’d make the persistence path idempotent, for example by deduplicating on a stable upload key or enforcing a unique constraint before writing the attachment record. If the client is resending the same request without a safe idempotency token, I’d add that token and have the server honor it.",
+        "rationale": "The proposed fixes are explicitly conditioned on the identified failure mode, showing a direct link between diagnosis and correction."
+      },
+      {
+        "criterion_id": "SWE03-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d justify that recommendation by showing it removes the specific path that creates a second stored copy, rather than just masking the symptom at a higher level.",
+        "rationale": "This explicitly explains why the correction works: it removes the path that causes duplicate storage, which is a justification tied to the problem."
+      }
+    ],
+    "annotation_notes": "The response is well aligned with the criteria and provides explicit investigation, cause-to-fix mapping, and justification."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

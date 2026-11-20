@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-C0A5444249367B10",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_075828293059f3c4016b000c9aed2487d0ab5f8ae1eea73ead",
+  "annotated_utc": "2026-11-20T09:02:21.276486+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "OPS04-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "First I’d look for other signals that help me judge whether the drift is real: trend data, the time the readings went missing, whether the missing sensors are clustered in one area, and whether any related KPIs or alarms are moving in the same direction.",
+        "rationale": "The candidate identifies specific additional information needed to monitor the situation and assess execution, which directly matches the criterion."
+      },
+      {
+        "criterion_id": "OPS04-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "If the available data shows a sustained drift, or the missing readings affect a critical part of the system so I can’t confirm the condition safely, I’d escalate rather than wait for a local report.",
+        "rationale": "The candidate clearly states conditions under which deviation triggers action and escalation, demonstrating trigger recognition."
+      },
+      {
+        "criterion_id": "OPS04-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d contact the local team and the responsible technical owner with the facts I have, note what is missing, and ask them to verify the equipment and confirm the operating state. After that I’d keep monitoring for whether the readings recover, the trend stabilizes, or the condition worsens, and I’d follow up until I have a clear response and next step.",
+        "rationale": "The candidate directs the issue to appropriate owners and describes follow-through by monitoring for response and next steps."
+      }
+    ],
+    "annotation_notes": ""
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

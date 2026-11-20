@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-0579D026992D270E",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_084cc92493a85167016b000c530f8c87d0a94d99c8c0f37ad7",
+  "annotated_utc": "2026-11-20T09:01:09.664012+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "OPS03-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d pull together the latest updates from both departments, compare the conflicting dates, and get them into a joint conversation so we can talk through the open items.",
+        "rationale": "The candidate explicitly uses updates from both departments and compares conflicting dates, showing they would integrate relevant operational information."
+      },
+      {
+        "criterion_id": "OPS03-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d ask each side to explain what they think is complete and what still needs work, then I’d help them agree on the next steps for the launch plan.",
+        "rationale": "This identifies the two responsible parties, surfaces what each still needs to do, and coordinates next steps around unresolved dependencies."
+      },
+      {
+        "criterion_id": "OPS03-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d pull together the latest updates from both departments, compare the conflicting dates, and get them into a joint conversation so we can talk through the open items.",
+        "rationale": "The proposed actions are explicitly grounded in operational evidence from the departments’ updates and conflicting dates, which supports a traceable basis for coordination decisions."
+      }
+    ],
+    "annotation_notes": "The answer is concise but provides direct evidence of integrating sources, coordinating parties, and basing actions on reported operational information."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

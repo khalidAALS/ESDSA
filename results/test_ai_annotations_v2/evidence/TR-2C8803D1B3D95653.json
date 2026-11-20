@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-2C8803D1B3D95653",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_06e4c3939bc23ebe016b002a9105d087d09bb5a518133eb206",
+  "annotated_utc": "2026-11-20T11:10:11.951725+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "CSS04-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d reassure the customer that the replacement should go out soon and give them a likely delivery window based on the normal turnaround, even if the warehouse hasn’t confirmed yet.",
+        "rationale": "The candidate clearly explains the intended communication approach in understandable terms, describing what they would tell the customer."
+      },
+      {
+        "criterion_id": "CSS04-C2",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I’d reassure the customer that the replacement should go out soon and give them a likely delivery window based on the normal turnaround, even if the warehouse hasn’t confirmed yet. If they seem concerned, I’d tell them it’s effectively sorted and that they’ll probably see movement shortly.",
+        "rationale": "The answer sets expectations using a likely window and reassurance before dispatch is confirmed, and explicitly uses unsupported certainty such as 'it’s effectively sorted' and 'they’ll probably see movement shortly,' which materially overstates the status."
+      },
+      {
+        "criterion_id": "CSS04-C3",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I’d wait to contact them again unless there’s a problem, since too many updates can sometimes create more confusion than help.",
+        "rationale": "This proposes no clear follow-up mechanism for status or confirmation; instead, it says they would wait to contact the customer again unless there is a problem, which does not establish an appropriate proactive follow-up plan."
+      }
+    ],
+    "annotation_notes": "Criterion 1 is satisfied by the clear description of what would be communicated. Criterion 2 is negative because the candidate makes unsupported assurances before confirmation. Criterion 3 is negative because the answer lacks an appropriate status-check or confirmation follow-up mechanism and instead defers contact unless problems arise."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

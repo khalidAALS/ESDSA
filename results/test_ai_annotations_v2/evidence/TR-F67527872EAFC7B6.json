@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-F67527872EAFC7B6",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0c70e386a477c4ae016b002bb627b887d0ae17c26d777d9098",
+  "annotated_utc": "2026-11-20T11:15:05.243631+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "OPS04-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d start by getting both sides’ updates and lining them up with the repair plan, so I know what’s done and what’s still open. I’d want to hear the contractor’s view on the parts shortage and whether there’s any workaround, and I’d also check whether the site manager has seen any sign that the schedule is slipping.",
+        "rationale": "The answer clearly identifies the information the candidate would gather to monitor execution: status from both parties, the repair plan, progress already completed, remaining open items, shortage impact, possible workaround, and signs of schedule slip."
+      },
+      {
+        "criterion_id": "OPS04-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "If it seems like the delay is becoming more serious, I’d pass that along to the right lead and make sure the next shift has the latest status.",
+        "rationale": "The candidate explicitly recognizes a worsening delay as a trigger for action, indicating awareness that deviation from the expected plan requires intervention."
+      },
+      {
+        "criterion_id": "OPS04-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d pass that along to the right lead and make sure the next shift has the latest status. I’d keep monitoring it from there until I had a better sense of where things stood.",
+        "rationale": "This shows escalation to the appropriate owner and follow-through by updating the next shift and continuing to monitor the issue afterward."
+      }
+    ],
+    "annotation_notes": "The response is concise but sufficient for all three criteria. It describes gathering progress information, recognizing when the delay is worsening, escalating to the right lead, informing the next shift, and continuing monitoring."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

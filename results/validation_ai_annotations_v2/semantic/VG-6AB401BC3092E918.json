@@ -1,0 +1,20 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "SEMANTIC_EQUIVALENCE",
+  "blinded_id": "VG-6AB401BC3092E918",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_06b5471ee03afa9e016b000ce1494c87d082707c459d457017",
+  "annotated_utc": "2026-11-20T09:03:31.189716+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "semantic_equivalence": "YES",
+    "material_differences": "None that appear decision-relevant under the three criteria. All three responses use operational evidence to reconcile conflicting reports, identify dependency owners, assess blockers, and document the rationale for a launch decision or adjustment.",
+    "equivalence_rationale": "A, B, and C each preserve the same core evidence-based coordination pattern: gather current operational sources, reconcile conflicting dates/status, clarify ownership of unresolved dependencies, determine whether the blockers affect launch readiness, and record the evidence behind the decision. B and C add detail, but they do not introduce a materially different assumption, safeguard, or operational commitment relative to A."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

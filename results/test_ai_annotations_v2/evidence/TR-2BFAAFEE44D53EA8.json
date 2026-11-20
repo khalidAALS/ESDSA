@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-2BFAAFEE44D53EA8",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0fc518bcdf764beb016b002b23eb1c87d094809550fcfc236f",
+  "annotated_utc": "2026-11-20T11:12:38.410222+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "CSS03-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "If we can’t get the exact item there in time, I’d see whether a substitute or another policy-approved option would still help the customer make their event.",
+        "rationale": "The candidate considers multiple resolution options and selects alternatives based on the constraints and evidence available, showing appropriate option assessment rather than a single fixed solution."
+      },
+      {
+        "criterion_id": "CSS03-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "If expedited replacement needs sign-off, I’d escalate that rather than promise it myself.",
+        "rationale": "This explicitly shows respect for authorisation limits and service constraints by not committing to an expedited replacement without required approval."
+      },
+      {
+        "criterion_id": "CSS03-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d first verify what actually happened with the order, because if the shipment status is disputed I don’t want to assume the wrong thing.",
+        "rationale": "The candidate identifies uncertainty in the situation and says they would verify the facts before proceeding, which demonstrates recognition that additional information is needed."
+      }
+    ],
+    "annotation_notes": ""
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

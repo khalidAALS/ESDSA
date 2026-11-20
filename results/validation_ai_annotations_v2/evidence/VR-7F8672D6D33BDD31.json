@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-7F8672D6D33BDD31",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_029db8b5edd07fdd016b000ccea4ac87d0a828fd09994f940a",
+  "annotated_utc": "2026-11-20T09:03:13.063405+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "SWE04-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d mostly just verify the changed bits in permissions, search and export and make sure the new behaviour looks right.",
+        "rationale": "The candidate explicitly says they would verify the changed parts of the release, which is direct evidence of targeted verification of the areas under test."
+      },
+      {
+        "criterion_id": "SWE04-C2",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I wouldn’t spend much time on broader regression unless there was already a known issue in that area, because otherwise we could end up chasing problems that aren’t really part of this release.",
+        "rationale": "This explicitly deprioritizes broader regression review and frames it as unnecessary unless there is already a known issue, which shows failure to meaningfully assess potential impact on previously working behaviour."
+      },
+      {
+        "criterion_id": "SWE04-C3",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "If a test came back odd, I’d record it and keep going so we can still get the build out. We can always circle back after release if it turns out to matter.",
+        "rationale": "The candidate says they would keep going and defer action until after release, rather than using the verification findings to decide an immediate next step. This indicates they are not using test results to choose the release decision or appropriate pre-release response."
+      }
+    ],
+    "annotation_notes": ""
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

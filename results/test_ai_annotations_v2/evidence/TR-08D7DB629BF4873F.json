@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-08D7DB629BF4873F",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_00f79a0e9205fa34016b002abe6d0c87d0b75097798393db6f",
+  "annotated_utc": "2026-11-20T11:10:55.817391+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "CSS01-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d clarify what’s failing, who’s affected, and what the business impact is.",
+        "rationale": "This explicitly states the candidate would clarify the failing problem, which directly establishes the customer's experience of the issue."
+      },
+      {
+        "criterion_id": "CSS01-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d clarify what’s failing, who’s affected, and what the business impact is.",
+        "rationale": "The candidate explicitly identifies who is affected and refers to business impact, showing determination of the affected service/outcome."
+      },
+      {
+        "criterion_id": "CSS01-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "Then I’d restate the issue neutrally: access on the shared subscription is currently restricted, affecting authorised users, and we need to confirm whether that change was intended before choosing a fix.",
+        "rationale": "This is a neutral summary of the issue before selecting a fix, which directly satisfies the problem definition criterion."
+      }
+    ],
+    "annotation_notes": "The answer is concise but clearly addresses all three criteria."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

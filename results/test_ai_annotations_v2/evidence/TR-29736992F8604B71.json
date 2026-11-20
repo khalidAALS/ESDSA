@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-29736992F8604B71",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0166250c1723dc19016b002b8018a087d08f3295296bc976d6",
+  "annotated_utc": "2026-11-20T11:14:10.852034+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "SWE01-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d first try to reproduce it from the report details by checking logs at the reported time and running similar searches.",
+        "rationale": "The answer explicitly describes reproducing the issue using the report details and characterising it by checking logs and running similar searches."
+      },
+      {
+        "criterion_id": "SWE01-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "Then I’d compare failing versus successful requests—query, session, response, and recent deploys or feature flags—to narrow where the break is.",
+        "rationale": "The answer directly states a comparison between failing and successful requests, including relevant dimensions of comparison."
+      },
+      {
+        "criterion_id": "SWE01-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "Then I’d compare failing versus successful requests—query, session, response, and recent deploys or feature flags—to narrow where the break is. That would tell me whether it’s the client, search service, or data path before I decide the fix.",
+        "rationale": "The answer shows systematic narrowing by using comparisons to identify whether the issue lies in the client, search service, or data path."
+      }
+    ],
+    "annotation_notes": ""
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

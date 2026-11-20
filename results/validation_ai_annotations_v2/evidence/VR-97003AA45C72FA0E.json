@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-97003AA45C72FA0E",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_03971b0bb6c88054016b000bbb20c487d0957dd4a48d30a70c",
+  "annotated_utc": "2026-11-20T08:58:37.207015+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "OPS02-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "Since we don’t know how much capacity the partner is losing",
+        "rationale": "The answer explicitly identifies a plausible operational risk: reduced delivery partner capacity."
+      },
+      {
+        "criterion_id": "OPS02-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "Since we don’t know how much capacity the partner is losing, I wouldn’t want to bring in more expensive transport options early and create extra work.",
+        "rationale": "The candidate shows awareness of uncertainty and its operational implications, weighing unknown severity against cost and operational effort."
+      },
+      {
+        "criterion_id": "OPS02-C3",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I’d leave the plan as it is for the moment.",
+        "rationale": "The candidate proposes no mitigation or escalation despite a stated capacity risk, and further says they would \"avoid escalating it and just wait for a firmer update,\" which is a materially deficient response to the operational risk."
+      }
+    ],
+    "annotation_notes": "The answer recognizes the uncertainty around reduced capacity, but the proposed response is passive and explicitly avoids escalation or mitigation until later."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

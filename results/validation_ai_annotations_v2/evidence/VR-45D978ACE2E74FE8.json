@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-45D978ACE2E74FE8",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_00e0ac36813a89cd016b000d4cffa487d0a7b3c3202ed3a8f5",
+  "annotated_utc": "2026-11-20T09:05:19.628311+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "SWE02-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d pull the job logs, timing breakdowns, traces if we have them, and any recent config or deployment changes.",
+        "rationale": "This explicitly identifies relevant technical evidence sources for investigating the delayed job, including logs, timing data, traces, and change history."
+      },
+      {
+        "criterion_id": "SWE02-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "Then I’d test a few specific hypotheses. I’d check if the slow runs always involve a certain kind of input, whether they started after a code or config change, and whether the dependency is slower or retrying when the delay happens.",
+        "rationale": "This proposes concrete checks that distinguish among input-related, code/config-related, and external-dependency-related causes."
+      },
+      {
+        "criterion_id": "SWE02-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "After that I’d line up the observations and see which explanation they actually support. If the pattern follows the input, that points to incoming data. If it follows one code path or a recent change, that points to the processing code. If the logs show waiting, retries, or higher latency from the dependency, then that’s probably where the delay is coming from.",
+        "rationale": "This explicitly interprets observed patterns and maps them to diagnostic conclusions about likely root cause."
+      }
+    ],
+    "annotation_notes": "The answer provides clear evidence collection, hypothesis testing, and interpretation steps relevant to an intermittent job delay investigation."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

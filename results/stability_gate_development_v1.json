@@ -1,0 +1,109 @@
+{
+  "experiment": "Stability gate development v1",
+  "status": "EXPLORATORY",
+  "policy": "Retain a decision only when all k assessments agree; otherwise DEFER.",
+  "sample_sizes": [
+    1,
+    3,
+    5,
+    10
+  ],
+  "sampling_method": "First k saved repetition indices. Not a prospective independent trial.",
+  "correctness_established": false,
+  "independent_semantic_validation": false,
+  "results": [
+    {
+      "response_id": "ESDSA-V2-0006",
+      "assessments": 1,
+      "observed_decisions": {
+        "ADVANCE": 1
+      },
+      "gate_verdict": "RETAIN",
+      "final_decision": "ADVANCE",
+      "reference_correctness": "NOT_ESTABLISHED"
+    },
+    {
+      "response_id": "ESDSA-V2-0007",
+      "assessments": 1,
+      "observed_decisions": {
+        "DEFER": 1
+      },
+      "gate_verdict": "RETAIN",
+      "final_decision": "DEFER",
+      "reference_correctness": "NOT_ESTABLISHED"
+    },
+    {
+      "response_id": "ESDSA-V2-0006",
+      "assessments": 3,
+      "observed_decisions": {
+        "ADVANCE": 3
+      },
+      "gate_verdict": "RETAIN",
+      "final_decision": "ADVANCE",
+      "reference_correctness": "NOT_ESTABLISHED"
+    },
+    {
+      "response_id": "ESDSA-V2-0007",
+      "assessments": 3,
+      "observed_decisions": {
+        "DEFER": 2,
+        "ADVANCE": 1
+      },
+      "gate_verdict": "STABILITY_FAILURE",
+      "final_decision": "DEFER",
+      "reference_correctness": "NOT_ESTABLISHED"
+    },
+    {
+      "response_id": "ESDSA-V2-0006",
+      "assessments": 5,
+      "observed_decisions": {
+        "ADVANCE": 5
+      },
+      "gate_verdict": "RETAIN",
+      "final_decision": "ADVANCE",
+      "reference_correctness": "NOT_ESTABLISHED"
+    },
+    {
+      "response_id": "ESDSA-V2-0007",
+      "assessments": 5,
+      "observed_decisions": {
+        "DEFER": 2,
+        "ADVANCE": 3
+      },
+      "gate_verdict": "STABILITY_FAILURE",
+      "final_decision": "DEFER",
+      "reference_correctness": "NOT_ESTABLISHED"
+    },
+    {
+      "response_id": "ESDSA-V2-0006",
+      "assessments": 10,
+      "observed_decisions": {
+        "ADVANCE": 8,
+        "DEFER": 2
+      },
+      "gate_verdict": "STABILITY_FAILURE",
+      "final_decision": "DEFER",
+      "reference_correctness": "NOT_ESTABLISHED"
+    },
+    {
+      "response_id": "ESDSA-V2-0007",
+      "assessments": 10,
+      "observed_decisions": {
+        "DEFER": 6,
+        "ADVANCE": 4
+      },
+      "gate_verdict": "STABILITY_FAILURE",
+      "final_decision": "DEFER",
+      "reference_correctness": "NOT_ESTABLISHED"
+    }
+  ],
+  "limitations": [
+    "Two responses from one scenario family",
+    "No independently verified reference judgments",
+    "Repeated calls may be dependent",
+    "Policy evaluated retrospectively",
+    "Additional assessments incur extra cost",
+    "Deferral does not establish improved accuracy",
+    "This is not a matched-coverage comparison"
+  ]
+}

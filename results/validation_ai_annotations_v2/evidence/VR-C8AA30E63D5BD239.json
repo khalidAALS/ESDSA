@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-C8AA30E63D5BD239",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0d6033fedc5cdd03016b000cb2dc3c87d0b05ac93e0a9a65f2",
+  "annotated_utc": "2026-11-20T09:02:45.554326+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "CSS01-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d ask them to tell me exactly what’s happening when the lockout occurs, when it started again, and what they were doing right before it happened.",
+        "rationale": "This directly shows the candidate would clarify the nature of the recurring problem by gathering details about the lockout and its circumstances."
+      },
+      {
+        "criterion_id": "CSS01-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d also compare that with the old notes to see what’s changed and what information actually matters now.",
+        "rationale": "This is supported more clearly by the earlier statement about impact: 'Then I’d check what it’s stopping them from doing, like whether they can’t sign in at all or only from certain devices, because that tells me how serious and how broad the issue is.' The candidate identifies the affected service/outcome as the ability to sign in and access the account, including device-specific impact."
+      },
+      {
+        "criterion_id": "CSS01-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "After that I’d repeat back my understanding of the issue in plain language to make sure I’ve got it right before moving on.",
+        "rationale": "This shows the candidate would summarise their understanding of the problem before proceeding to resolution."
+      }
+    ],
+    "annotation_notes": "The answer is concise but contains clear evidence for all three criteria."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

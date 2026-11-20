@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-B03435592AD11299",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_09ad68e2673fff10016b0029fc83cc87d0bf8b1a5c08e6427d",
+  "annotated_utc": "2026-11-20T11:07:42.491314+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "CSS03-C1",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I’d refund them first to avoid delay",
+        "rationale": "This proposes an immediate refund despite the situation still being uncertain, rather than selecting a resolution based on the available evidence."
+      },
+      {
+        "criterion_id": "CSS03-C2",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "passage": "",
+        "rationale": "The answer does not mention any authorisation, policy limits, or service constraints, so it neither clearly respects nor clearly violates them."
+      },
+      {
+        "criterion_id": "CSS03-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "then let the back office confirm whether the outage was actually covered.",
+        "rationale": "This explicitly indicates further confirmation is needed before the matter is fully settled, showing recognition that additional information is required."
+      }
+    ],
+    "annotation_notes": "The response shows some awareness that more information is needed, but it also recommends acting first with a refund before confirming coverage."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

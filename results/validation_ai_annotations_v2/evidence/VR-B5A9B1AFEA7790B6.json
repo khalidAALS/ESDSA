@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-B5A9B1AFEA7790B6",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0d07a498cb2d0d7e016b000bffd2b887d08b16f067af999819",
+  "annotated_utc": "2026-11-20T08:59:46.131250+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "OPS01-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d first check which task has the nearest hard deadline and which one carries the biggest operational risk.",
+        "rationale": "This explicitly identifies urgency (nearest hard deadline), impact/risk (biggest operational risk), and implies dependency management by balancing dispatch and inspection around production readiness."
+      },
+      {
+        "criterion_id": "OPS01-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "In practice, I’d probably make sure the customer order is still on track for dispatch, while also arranging the inspection so we don’t release bad materials into production. Training is important, but I’d treat it as the most flexible if staff are stretched.",
+        "rationale": "This gives a clear prioritisation choice and explains it using operational evidence: protect the customer deadline, prevent quality issues affecting production, and defer the least time-sensitive activity."
+      },
+      {
+        "criterion_id": "OPS01-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "If the inspection raised a concern, I’d want to understand how serious it was before changing the plan. Depending on that, I might bring in another person or adjust the sequence of work so we can keep things moving.",
+        "rationale": "This shows reassessing priorities when new information changes the situation, and indicates specific reprioritisation actions based on the severity of the inspection finding."
+      }
+    ],
+    "annotation_notes": "The answer is concise but directly addresses urgency, risk, and changing conditions with concrete prioritisation logic."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

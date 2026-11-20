@@ -1,0 +1,26 @@
+{
+  "experiment": "ESDSA development pilot",
+  "version": "1.0",
+  "created_utc": "2026-11-19T16:01:51.015029+00:00",
+  "evaluation_count": 12,
+  "models": [
+    "gpt-5.4-mini-2026-03-17"
+  ],
+  "reference_status": "PROVISIONAL",
+  "reported_reference_agreement": "12/12",
+  "limitations": [
+    "Synthetic development responses",
+    "Reference decisions not independently validated",
+    "Evaluator received explicit deferral rules",
+    "One failed API generation was not preserved",
+    "First six saved records lack excerpt-warning metadata",
+    "No ESDSA audit evaluated"
+  ],
+  "files": {
+    "results/pilot_gpt-5.4-mini.jsonl": "697e4d00e6299437c7256d8ad2ca502ea1a1710f7e742a8332e85d7a8846cb24",
+    "data/model_inputs/evaluation_pilot_v1.csv": "729cc44026978dc905d1c77073de42c00648432d3f242fa7c2618e1bce2fd817",
+    "data/model_inputs/evaluation_prompts_v1.jsonl": "9d5617b522ba7d63ef927ccc0bc69a60f9c24ad9ba7eebc6bb6558203f7afc0b",
+    "data/reference/evaluation_pilot_v1_reference.csv": "a2909a7b81c26cc74295d13feaea3057aa726611d01faf027f35607cdc7c3ca1",
+    "data/rubrics/SW-DEFECT-V1.json": "7baebf99080a226aaf2bb69dfe4b261d108a71ae3cc548745d97be535d3db387"
+  }
+}

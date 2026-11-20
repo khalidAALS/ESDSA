@@ -1,0 +1,35 @@
+{
+  "name": "ESDSA validation scenario preparation",
+  "scenario_count": 24,
+  "competency_counts": {
+    "SWE01": 2,
+    "SWE02": 2,
+    "SWE03": 2,
+    "SWE04": 2,
+    "CSS01": 2,
+    "CSS02": 2,
+    "CSS03": 2,
+    "CSS04": 2,
+    "OPS01": 2,
+    "OPS02": 2,
+    "OPS03": 2,
+    "OPS04": 2
+  },
+  "partition": "VALIDATION",
+  "planned_responses": 216,
+  "source_registry_sha256": "5fc89db5918d20f18e259582a5c9004613dd2f60a3a1881b745b392fd26d97fb",
+  "validation_scenarios_sha256": "45e00308d6d43ed80b107a1a15e3439098bc844cc7b279f4098e09684467b97a",
+  "textual_similarity_warnings": [],
+  "candidate_answers_generated": false,
+  "model_evaluations_performed": false,
+  "reference_annotations_created": false,
+  "test_families_accessed_for_generation": false,
+  "status": "PENDING_RESEARCHER_APPROVAL",
+  "notes": [
+    "These are proposed validation question drafts.",
+    "Existing family IDs, profiles and rubrics were preserved.",
+    "Text similarity is a screening measure, not proof of semantic distinctness.",
+    "No candidate answers or reference decisions were generated.",
+    "No original experimental files were modified."
+  ]
+}

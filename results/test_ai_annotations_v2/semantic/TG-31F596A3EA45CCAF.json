@@ -1,0 +1,18 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "SEMANTIC_EQUIVALENCE",
+  "blinded_id": "TG-31F596A3EA45CCAF",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_025a0374c09c259f016b0029f5a00087d08158cbbe616cc298",
+  "annotated_utc": "2026-11-20T11:07:35.308134+00:00",
+  "annotation": {
+    "semantic_equivalence": "YES",
+    "material_differences": "",
+    "equivalence_rationale": "All three responses preserve the same decision logic: verify whether the incident applies, use policy-based credit/refund rules only if supported by the evidence, and escalate when uncertainty or exceptions remain. B adds a little more framing and customer-timeline detail, but it does not change the operational commitments or criterion-level evidence. C is a concise version of the same approach."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

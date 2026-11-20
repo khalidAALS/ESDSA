@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-DBF82E5A550F651C",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0f536299b30102a6016b000e4c686c87d0a6de5ff430823ebe",
+  "annotated_utc": "2026-11-20T09:09:34.503819+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "CSS04-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d apologise, explain I’m taking over, and outline the next step of reviewing the complaint and checking with the relevant team.",
+        "rationale": "This clearly communicates the proposed action in an understandable way, including apology, ownership, and the immediate next steps."
+      },
+      {
+        "criterion_id": "CSS04-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d avoid promising a resolution until the investigation is complete, but I would give a realistic timeframe for the next update.",
+        "rationale": "The candidate explicitly avoids unsupported promises and instead offers a realistic timeframe, which demonstrates justified expectation management."
+      },
+      {
+        "criterion_id": "CSS04-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d also set a specific follow-up time and method, such as a callback or email.",
+        "rationale": "This directly provides an appropriate mechanism for status follow-up and confirmation through a specified time and channel."
+      }
+    ],
+    "annotation_notes": "All three criteria are explicitly addressed in the candidate answer."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-BCFF425E067DF638",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0700f1417d7abbfd016b0029d6367c87d0b5ad53fa987590ac",
+  "annotated_utc": "2026-11-20T11:07:04.589741+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "SWE04-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "First I’d reproduce the original invoice-calculation failure against the patched build to confirm the reported case is actually fixed.",
+        "rationale": "The candidate explicitly says they would reproduce the original failure against the patched build to confirm the reported case is fixed, which directly satisfies targeted verification."
+      },
+      {
+        "criterion_id": "SWE04-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "Then, because the same logic also affects refunds and discount adjustments, I’d run a short regression set around those nearby paths and a couple of representative boundary cases to make sure the change didn’t shift amounts in related flows.",
+        "rationale": "The answer explicitly considers related behaviours and runs regression tests on nearby paths and boundary cases to check for unintended impact on previously working behaviour."
+      },
+      {
+        "criterion_id": "SWE04-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "If anything in that check fails, I wouldn’t release yet; I’d pause, investigate whether the issue is in the patch or in an uncovered edge case, and either adjust the fix or roll back and rework it. If the original case passes and the related checks stay clean, I’d consider it ready for deployment",
+        "rationale": "The candidate uses verification results to choose next steps, including not releasing, investigating, adjusting, rolling back, or proceeding to deployment based on the findings."
+      }
+    ],
+    "annotation_notes": ""
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

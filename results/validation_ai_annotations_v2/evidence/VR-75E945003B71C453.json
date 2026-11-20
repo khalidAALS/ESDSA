@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-75E945003B71C453",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_04444128498e6d6f016b000ea5196c87d0a013eda8293feebe",
+  "annotated_utc": "2026-11-20T09:11:03.194408+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "CSS04-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I would be direct and transparent with the customer. I’d explain that we’ve confirmed the interruption is being investigated, but at this point the technical team hasn’t identified the root cause or given us a reliable restoration time.",
+        "rationale": "This clearly and understandably explains the situation and the proposed communication approach."
+      },
+      {
+        "criterion_id": "CSS04-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I wouldn’t promise a specific resolution date until we have something verified.",
+        "rationale": "The candidate explicitly avoids unsupported promises and frames expectations around verified information."
+      },
+      {
+        "criterion_id": "CSS04-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d make sure the case stays open and that there’s a clear check-in point, even if it’s just to confirm whether there’s new information.",
+        "rationale": "This establishes an appropriate follow-up mechanism for status updates."
+      }
+    ],
+    "annotation_notes": "The answer aligns well with all three criteria, especially by avoiding a firm commitment without verified information and by specifying ongoing check-ins."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

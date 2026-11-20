@@ -1,0 +1,63 @@
+{
+  "experiment": "ESDSA_TEST_GENERATION_V1",
+  "partition": "TEST",
+  "family_id": "ESDSA-SWE03-04",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0a38469cf8efc2ca016b002283d05487d097c7506b65be5ad6",
+  "timestamp_utc": "2026-11-20T10:35:51.955573+00:00",
+  "run_sha256": "73a1637b4546f19c2e10ba9bbc45b4594ea3156e56f84bd6820efad0d251463e",
+  "scenario_sha256": "9d2280d8014612bdd263f5dd8daf8356efeac3fa7a7e4b0cd3c6f4fef932426a",
+  "rubric_sha256": "6ab9abbf3b64793589baf18fd5f0e9884e09ef7e30f43a058f93d578c8f3db4e",
+  "responses": [
+    {
+      "condition": "SUFFICIENT",
+      "variant": "CANONICAL",
+      "answer": "I’d start by treating the logs and messaging metrics as partial signals, not the full truth. In a case like this, I’d trace the order flow end to end: check where the confirmation event is created, how it’s stored or deduplicated, and how the message is published and retried. If the evidence points to the app emitting only one domain event but the broker or delivery path retrying the same message, I’d focus the correction there rather than in the confirmation logic itself. For example, I’d verify whether we’re using an outbox pattern, idempotency key, or message deduplication at the consumer or producer boundary, and then fix the part that is actually allowing repeated delivery. That choice is justified because it addresses the layer where duplication is occurring, which is what would stop customers from seeing repeated confirmations even if the original event was only emitted once."
+    },
+    {
+      "condition": "SUFFICIENT",
+      "variant": "CONVERSATIONAL",
+      "answer": "I wouldn’t just trust one source over the other right away. I’d compare the full path from event creation through publishing and delivery, because one log saying a single event was emitted doesn’t rule out retries or duplicate sends later on. If the investigation shows the app is only creating one confirmation event but the messaging layer is redelivering it, I’d correct the publishing/delivery path, not the business logic that creates the order. That might mean tightening the outbox or adding deduplication where messages are handled. The reason for that fix is simple: it targets the stage where the duplicate deliveries are actually happening, so it prevents repeated confirmations without changing code that wasn’t causing the issue."
+    },
+    {
+      "condition": "SUFFICIENT",
+      "variant": "CONCISE",
+      "answer": "I’d trace the full pipeline and assume either source may be incomplete. If the app emitted one event but the broker or delivery path is repeating it, I’d fix the publish/delivery layer, not the order-confirmation logic. That’s the correction that matches the likely cause and prevents the duplicate messages at the point they’re being re-sent."
+    },
+    {
+      "condition": "INSUFFICIENT",
+      "variant": "CANONICAL",
+      "answer": "I’d treat the evidence as conflicting and keep the investigation open until I can reconcile them. I’d verify the event flow from the application through the broker, including retries, acknowledgements, and any deduplication behavior, because either source could be missing part of the picture. If the duplicate confirmations persist, I’d make sure we have a correction around the message handling path rather than changing the customer-facing workflow, but I’d want to confirm the exact failure mode before making the final call."
+    },
+    {
+      "condition": "INSUFFICIENT",
+      "variant": "CONVERSATIONAL",
+      "answer": "I wouldn’t jump on the first explanation, since the logs and the messaging metrics may each be missing something. I’d dig into the end-to-end flow and check retries, acknowledgements, and whether messages are being resent or deduplicated somewhere. If the duplicates are still happening, I’d lean toward fixing the messaging path instead of the order screen or notification text, but I’d want a bit more confirmation before deciding on the exact change."
+    },
+    {
+      "condition": "INSUFFICIENT",
+      "variant": "CONCISE",
+      "answer": "I’d investigate the whole delivery path first, because either source could be incomplete. If the issue is in message handling, I’d correct that part rather than the user-facing flow, but I’d want more confirmation before choosing the exact fix."
+    },
+    {
+      "condition": "NEGATIVE",
+      "variant": "CANONICAL",
+      "answer": "Given that the application logs show only one event, I’d assume the messaging system is at fault and immediately patch the broker configuration to suppress duplicates. There’s no need to spend much time reconciling the two sources if the app itself looks clean. Since the deliveries are repeating, changing the broker settings should be enough to stop the extra confirmations, even if we haven’t fully proved where they originate."
+    },
+    {
+      "condition": "NEGATIVE",
+      "variant": "CONVERSATIONAL",
+      "answer": "If the app logs only show one event, I’d just treat the broker as the problem and change its settings to stop the duplicates. I wouldn’t spend too long trying to line up both data sources, because the app side already looks fine. The fastest correction is to adjust the messaging layer and move on."
+    },
+    {
+      "condition": "NEGATIVE",
+      "variant": "CONCISE",
+      "answer": "I’d assume the broker is causing it and change its settings to block duplicates, since the app log shows only one event. I wouldn’t spend much time proving the exact source first."
+    }
+  ],
+  "raw_output": "{\"responses\":[{\"condition\":\"SUFFICIENT\",\"variant\":\"CANONICAL\",\"answer\":\"I’d start by treating the logs and messaging metrics as partial signals, not the full truth. In a case like this, I’d trace the order flow end to end: check where the confirmation event is created, how it’s stored or deduplicated, and how the message is published and retried. If the evidence points to the app emitting only one domain event but the broker or delivery path retrying the same message, I’d focus the correction there rather than in the confirmation logic itself. For example, I’d verify whether we’re using an outbox pattern, idempotency key, or message deduplication at the consumer or producer boundary, and then fix the part that is actually allowing repeated delivery. That choice is justified because it addresses the layer where duplication is occurring, which is what would stop customers from seeing repeated confirmations even if the original event was only emitted once.\"},{\"condition\":\"SUFFICIENT\",\"variant\":\"CONVERSATIONAL\",\"answer\":\"I wouldn’t just trust one source over the other right away. I’d compare the full path from event creation through publishing and delivery, because one log saying a single event was emitted doesn’t rule out retries or duplicate sends later on. If the investigation shows the app is only creating one confirmation event but the messaging layer is redelivering it, I’d correct the publishing/delivery path, not the business logic that creates the order. That might mean tightening the outbox or adding deduplication where messages are handled. The reason for that fix is simple: it targets the stage where the duplicate deliveries are actually happening, so it prevents repeated confirmations without changing code that wasn’t causing the issue.\"},{\"condition\":\"SUFFICIENT\",\"variant\":\"CONCISE\",\"answer\":\"I’d trace the full pipeline and assume either source may be incomplete. If the app emitted one event but the broker or delivery path is repeating it, I’d fix the publish/delivery layer, not the order-confirmation logic. That’s the correction that matches the likely cause and prevents the duplicate messages at the point they’re being re-sent.\"},{\"condition\":\"INSUFFICIENT\",\"variant\":\"CANONICAL\",\"answer\":\"I’d treat the evidence as conflicting and keep the investigation open until I can reconcile them. I’d verify the event flow from the application through the broker, including retries, acknowledgements, and any deduplication behavior, because either source could be missing part of the picture. If the duplicate confirmations persist, I’d make sure we have a correction around the message handling path rather than changing the customer-facing workflow, but I’d want to confirm the exact failure mode before making the final call.\"},{\"condition\":\"INSUFFICIENT\",\"variant\":\"CONVERSATIONAL\",\"answer\":\"I wouldn’t jump on the first explanation, since the logs and the messaging metrics may each be missing something. I’d dig into the end-to-end flow and check retries, acknowledgements, and whether messages are being resent or deduplicated somewhere. If the duplicates are still happening, I’d lean toward fixing the messaging path instead of the order screen or notification text, but I’d want a bit more confirmation before deciding on the exact change.\"},{\"condition\":\"INSUFFICIENT\",\"variant\":\"CONCISE\",\"answer\":\"I’d investigate the whole delivery path first, because either source could be incomplete. If the issue is in message handling, I’d correct that part rather than the user-facing flow, but I’d want more confirmation before choosing the exact fix.\"},{\"condition\":\"NEGATIVE\",\"variant\":\"CANONICAL\",\"answer\":\"Given that the application logs show only one event, I’d assume the messaging system is at fault and immediately patch the broker configuration to suppress duplicates. There’s no need to spend much time reconciling the two sources if the app itself looks clean. Since the deliveries are repeating, changing the broker settings should be enough to stop the extra confirmations, even if we haven’t fully proved where they originate.\"},{\"condition\":\"NEGATIVE\",\"variant\":\"CONVERSATIONAL\",\"answer\":\"If the app logs only show one event, I’d just treat the broker as the problem and change its settings to stop the duplicates. I wouldn’t spend too long trying to line up both data sources, because the app side already looks fine. The fastest correction is to adjust the messaging layer and move on.\"},{\"condition\":\"NEGATIVE\",\"variant\":\"CONCISE\",\"answer\":\"I’d assume the broker is causing it and change its settings to block duplicates, since the app log shows only one event. I wouldn’t spend much time proving the exact source first.\"}]}",
+  "input_tokens": 751,
+  "output_tokens": 954,
+  "generation_conditions_are_reference_labels": false
+}

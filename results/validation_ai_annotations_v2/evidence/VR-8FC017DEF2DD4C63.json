@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-8FC017DEF2DD4C63",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0b522dbceecdc56e016b000d09ee7487d0ba96192603edcaf8",
+  "annotated_utc": "2026-11-20T09:04:12.457649+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "OPS02-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d flag it as a possible operational issue since we could end up short on transport next week.",
+        "rationale": "This explicitly identifies a plausible operational risk in context: potential transport shortfall next week."
+      },
+      {
+        "criterion_id": "OPS02-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "since we could end up short on transport next week.",
+        "rationale": "The answer reflects uncertainty and a possible consequence by noting the transport capacity may be insufficient, which could affect operations."
+      },
+      {
+        "criterion_id": "OPS02-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d get the latest update from the partner, look at our demand forecast, and compare the backup options so we know what’s available if we need to move fast. After that, I’d keep an eye on it and stay ready to change plans once we get clearer numbers.",
+        "rationale": "This proposes a proportionate response: gather current information, assess forecasts, compare alternatives, monitor the situation, and remain ready to adjust plans."
+      }
+    ],
+    "annotation_notes": "The answer is concise but provides clear evidence for all three criteria."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

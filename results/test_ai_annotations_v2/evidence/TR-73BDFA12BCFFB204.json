@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-73BDFA12BCFFB204",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0ee0ae7041b3eec3016b002a81366487d0947fd68839e3b53e",
+  "annotated_utc": "2026-11-20T11:09:54.470524+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "SWE04-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "If the original failure is fixed, I’d probably go ahead and release it.",
+        "rationale": "This directly indicates checking whether the reported failure is resolved before release."
+      },
+      {
+        "criterion_id": "SWE04-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "The older format output change is something I’d keep an eye on",
+        "rationale": "This explicitly acknowledges a change in previously working behaviour and says it should be monitored."
+      },
+      {
+        "criterion_id": "SWE04-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d probably go ahead and release it. The older format output change is something I’d keep an eye on, but I wouldn’t stop the release over it unless we already know it’s a customer-facing problem.",
+        "rationale": "The answer uses the verification result to choose a next step, namely release now and defer further investigation unless the issue is known to affect customers."
+      }
+    ],
+    "annotation_notes": ""
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-58206D33EE959F9B",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_054745368a2d45ca016b000be0dc4c87d0bb3b1e0dbc3bb473",
+  "annotated_utc": "2026-11-20T08:59:15.069106+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "CSS02-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "asking the customer to send over everything they have about the account, including any screenshots, full statements, and whatever personal details they can provide",
+        "rationale": "The candidate clearly proposes gathering customer-provided information needed to understand the billing discrepancies and account context, which addresses requesting relevant information."
+      },
+      {
+        "criterion_id": "CSS02-C2",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I’d just take the most likely explanation and move ahead",
+        "rationale": "This explicitly shows reliance on an assumed explanation rather than distinguishing confirmed facts from assumptions, which contradicts source verification."
+      },
+      {
+        "criterion_id": "CSS02-C3",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "asking the customer to send over everything they have about the account, including any screenshots, full statements, and whatever personal details they can provide",
+        "rationale": "The request for 'everything' and 'whatever personal details' indicates indiscriminate collection beyond what is clearly proportionate or necessary, especially since the answer does not show any limit or tailoring of the request."
+      }
+    ],
+    "annotation_notes": "The answer contains some relevant information gathering, but it also explicitly endorses jumping to the most likely explanation and overly broad collection requests."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

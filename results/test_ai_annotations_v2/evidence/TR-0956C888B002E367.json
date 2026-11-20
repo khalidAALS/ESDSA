@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-0956C888B002E367",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_06726d4eb1ae3f32016b002ab431c887d091f7bf2b690041eb",
+  "annotated_utc": "2026-11-20T11:10:46.530266+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "SWE03-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d first figure out where the retries are coming from by following a few bad uploads through the logs and request IDs. Once I know whether the client is resubmitting or the server is repeating the write after a timeout",
+        "rationale": "The candidate proposes an investigation to determine the retry source and names plausible causes supported by that investigation (client resubmission vs. server repeating the write after a timeout)."
+      },
+      {
+        "criterion_id": "SWE03-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "If it’s the server path, I’d make the save operation idempotent, like checking a stable upload key or putting a unique constraint around the attachment record. If it’s the client, I’d add proper idempotency handling so the same upload doesn’t get stored twice.",
+        "rationale": "The correction is explicitly tied to the identified cause: different fixes are proposed depending on whether the server or client is responsible for the duplicates."
+      },
+      {
+        "criterion_id": "SWE03-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "The reason I’d recommend that is it addresses the exact point where the second copy is being introduced, instead of adding a workaround that leaves the root issue in place.",
+        "rationale": "The candidate directly explains why the correction should work: it targets the point where duplication enters the system and avoids superficial workarounds."
+      }
+    ],
+    "annotation_notes": "The answer is conditional on investigation, but it still clearly demonstrates cause analysis, cause-linked correction, and justification."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-05EC400A105AC1E7",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_01df949788c59598016b0010599d0c87d09198d934f5a0e62e",
+  "annotated_utc": "2026-11-20T09:18:19.551348+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "OPS02-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d treat repeated discrepancies as a possible stock-control risk that could affect picking accuracy and service.",
+        "rationale": "The candidate explicitly identifies a plausible operational risk in context: repeated stock discrepancies as a stock-control risk affecting picking accuracy and service."
+      },
+      {
+        "criterion_id": "OPS02-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d check for patterns by SKU, area, or shift, assess whether the issue is recurring, and judge how likely it is to spread or cause an order problem.",
+        "rationale": "The candidate considers recurrence, likelihood of spread, and possible consequences, showing attention to uncertainty and impact."
+      },
+      {
+        "criterion_id": "OPS02-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "If it looks systemic, I’d escalate it and put in extra cycle counts or tighter verification until the cause is found.",
+        "rationale": "The candidate proposes proportionate mitigation and escalation in response to a potentially systemic issue."
+      }
+    ],
+    "annotation_notes": "The answer is concise but clearly addresses all three criteria."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

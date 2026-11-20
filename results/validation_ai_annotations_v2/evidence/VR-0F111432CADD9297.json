@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-0F111432CADD9297",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_09042797473a6f4c016b000c462ebc87d09c4a85a6bbd545e7",
+  "annotated_utc": "2026-11-20T09:00:55.896696+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "SWE01-C1",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I’d check the logs only to confirm that the job is running, then spend most of my time inspecting the new logic rather than trying to reproduce the failure with the affected records.",
+        "rationale": "The answer explicitly deprioritizes reproducing the failure with the affected records, which materially contradicts the criterion of establishing how to reproduce or characterise the failure."
+      },
+      {
+        "criterion_id": "SWE01-C2",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "If the test environment doesn’t show the issue right away, I’d treat that as a sign the bug is intermittent and move on to the next likely subsystem, even if the sample records suggest the export criteria are different.",
+        "rationale": "The answer does not describe comparing failing conditions to functioning behaviour; instead, it dismisses the differing sample records and pivots away without doing that comparison, which conflicts with the criterion."
+      },
+      {
+        "criterion_id": "SWE01-C3",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I’d assume the current problem is probably unrelated and focus on the most recent code change around the export job.",
+        "rationale": "This shows a premature assumption and a search strategy driven by a preferred suspect rather than using observations to systematically narrow plausible causes."
+      }
+    ],
+    "annotation_notes": "The response is largely anti-systematic: it deprioritizes reproduction, dismisses potentially relevant record differences, and jumps to a likely subsystem without evidence-led narrowing."
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

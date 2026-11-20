@@ -1,0 +1,38 @@
+{
+  "experiment": "ESDSA_VALIDATION_AI_ANNOTATION_V2",
+  "partition": "VALIDATION",
+  "review_type": "EVIDENCE",
+  "blinded_id": "VR-DAE67304C19EAE3B",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0798c125c2e90682016b000cfb183887d088ab7fbd42d1163f",
+  "annotated_utc": "2026-11-20T09:03:57.813309+00:00",
+  "reference_decision": null,
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "CSS03-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "If the item seems to be within the normal support window, I’d look at the available resolutions and choose the one that seems most practical for the situation.",
+        "rationale": "The answer shows the candidate would assess the available resolution options in light of the situation and select what seems most practical based on the evidence gathered."
+      },
+      {
+        "criterion_id": "CSS03-C2",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "passage": "",
+        "rationale": "The answer mentions a normal support window, but it does not clearly show awareness of specific authorisation rules, policy limits, or service constraints beyond that general reference. It neither demonstrates compliant handling nor a clear violation."
+      },
+      {
+        "criterion_id": "CSS03-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "If the purchase record still isn’t available, I’d keep following up until I can get enough information to move forward, since I wouldn’t want to rush the wrong fix.",
+        "rationale": "This explicitly recognizes that more information is needed before proceeding and describes continuing to gather it rather than finalizing a decision prematurely."
+      }
+    ],
+    "annotation_notes": ""
+  },
+  "annotation_protocol": "V2",
+  "provisional_ai_assessment": true,
+  "independent_human_review": false
+}

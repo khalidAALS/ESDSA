@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-205E7845434E4F3A",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0187e17bc35a775b016b002b17bdb887d09805326c6dfd9e36",
+  "annotated_utc": "2026-11-20T11:12:26.264419+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "CSS03-C1",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I’d just push the replacement through as fast as possible since they need it for an event.",
+        "rationale": "This shows the candidate choosing speed over assessing whether the resolution is appropriate to the evidence and constraints. It suggests they would proceed without weighing alternatives or the disputed shipment status."
+      },
+      {
+        "criterion_id": "CSS03-C2",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "If the system says the shipment is disputed or the faster option needs approval, I’d deal with that after I’ve got the new item arranged.",
+        "rationale": "The candidate explicitly proposes acting before dealing with authorization and dispute constraints, which contradicts respecting applicable approval and service limits."
+      },
+      {
+        "criterion_id": "CSS03-C3",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "I’d rather keep things moving than slow the customer down with extra checks.",
+        "rationale": "This indicates they would avoid additional checks rather than recognize the need for more information or escalation when the situation is uncertain or constrained."
+      }
+    ],
+    "annotation_notes": "The answer prioritizes speed over evidence-based resolution and explicitly deprioritizes approval/dispute checks, which creates negative evidence for all three criteria."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-386ABCEBDE74A2D8",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0f0703f092eca93c016b0029a64df887d08c3875bc5fcc8b1c",
+  "annotated_utc": "2026-11-20T11:06:16.461748+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "CSS02-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d ask for all available documents and use the system view to decide what happened",
+        "rationale": "This explicitly shows the candidate would request information and verify system details relevant to understanding the issue."
+      },
+      {
+        "criterion_id": "CSS02-C2",
+        "status": "NEGATIVE_EVIDENCE",
+        "passage": "even if the details aren’t fully verified yet. If it looks likely the promo should have applied, I’d treat that as the explanation.",
+        "rationale": "The candidate says they would proceed despite unverified details and would treat likelihood as the explanation, which directly blurs confirmed facts and assumptions."
+      },
+      {
+        "criterion_id": "CSS02-C3",
+        "status": "INSUFFICIENT_EVIDENCE",
+        "passage": "",
+        "rationale": "The answer does not clearly establish whether the requested documents are only appropriate and authorised information, nor does it clearly propose inappropriate or excessive collection. Asking for all available documents is broad, but the scenario does not specify authorization limits, so this remains unestablished."
+      }
+    ],
+    "annotation_notes": "Evaluated each criterion separately using only the provided answer and scenario."
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}

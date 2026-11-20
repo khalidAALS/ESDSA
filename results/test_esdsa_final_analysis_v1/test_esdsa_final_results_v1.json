@@ -1,0 +1,161 @@
+{
+  "stage": "ESDSA_FINAL_TEST_COMPARISON_V1",
+  "completed_utc": "2026-11-20T11:40:07.385151+00:00",
+  "test_responses": 216,
+  "scenario_families": 24,
+  "semantic_groups": 72,
+  "comparison_reference": "AI-assisted provisional evidence reference; not independent ground truth",
+  "primary_comparison_pre_stability": {
+    "scoring_only": {
+      "total": 216,
+      "decisions": {
+        "DO_NOT_ADVANCE": 46,
+        "ADVANCE": 108,
+        "DEFER": 62
+      },
+      "actionable": 154,
+      "coverage_pct": 71.3,
+      "actionable_disagreements": 3,
+      "disagreement_pct_among_actionable": 1.95,
+      "advance_not_supported_by_reference": 3,
+      "advance_vs_reference_do_not_advance": 0,
+      "deferrals": 62
+    },
+    "evidence_aware": {
+      "total": 216,
+      "decisions": {
+        "DO_NOT_ADVANCE": 69,
+        "ADVANCE": 131,
+        "DEFER": 16
+      },
+      "actionable": 200,
+      "coverage_pct": 92.59,
+      "actionable_disagreements": 9,
+      "disagreement_pct_among_actionable": 4.5,
+      "advance_not_supported_by_reference": 6,
+      "advance_vs_reference_do_not_advance": 0,
+      "deferrals": 16
+    },
+    "traceability_v2": {
+      "total": 216,
+      "decisions": {
+        "DO_NOT_ADVANCE": 69,
+        "ADVANCE": 126,
+        "DEFER": 21
+      },
+      "actionable": 195,
+      "coverage_pct": 90.28,
+      "actionable_disagreements": 8,
+      "disagreement_pct_among_actionable": 4.1,
+      "advance_not_supported_by_reference": 5,
+      "advance_vs_reference_do_not_advance": 0,
+      "deferrals": 21
+    },
+    "integrated_v2": {
+      "total": 216,
+      "decisions": {
+        "DO_NOT_ADVANCE": 69,
+        "DEFER": 32,
+        "ADVANCE": 115
+      },
+      "actionable": 184,
+      "coverage_pct": 85.19,
+      "actionable_disagreements": 7,
+      "disagreement_pct_among_actionable": 3.8,
+      "advance_not_supported_by_reference": 4,
+      "advance_vs_reference_do_not_advance": 0,
+      "deferrals": 32
+    }
+  },
+  "secondary_comparison_post_stability": {
+    "scoring_only": {
+      "total": 216,
+      "decisions": {
+        "DO_NOT_ADVANCE": 46,
+        "ADVANCE": 108,
+        "DEFER": 62
+      },
+      "actionable": 154,
+      "coverage_pct": 71.3,
+      "actionable_disagreements": 4,
+      "disagreement_pct_among_actionable": 2.6,
+      "advance_not_supported_by_reference": 4,
+      "advance_vs_reference_do_not_advance": 0,
+      "deferrals": 62
+    },
+    "evidence_aware": {
+      "total": 216,
+      "decisions": {
+        "DO_NOT_ADVANCE": 69,
+        "ADVANCE": 131,
+        "DEFER": 16
+      },
+      "actionable": 200,
+      "coverage_pct": 92.59,
+      "actionable_disagreements": 15,
+      "disagreement_pct_among_actionable": 7.5,
+      "advance_not_supported_by_reference": 10,
+      "advance_vs_reference_do_not_advance": 0,
+      "deferrals": 16
+    },
+    "traceability_v2": {
+      "total": 216,
+      "decisions": {
+        "DO_NOT_ADVANCE": 69,
+        "ADVANCE": 126,
+        "DEFER": 21
+      },
+      "actionable": 195,
+      "coverage_pct": 90.28,
+      "actionable_disagreements": 14,
+      "disagreement_pct_among_actionable": 7.18,
+      "advance_not_supported_by_reference": 9,
+      "advance_vs_reference_do_not_advance": 0,
+      "deferrals": 21
+    },
+    "integrated_v2": {
+      "total": 216,
+      "decisions": {
+        "DO_NOT_ADVANCE": 69,
+        "DEFER": 32,
+        "ADVANCE": 115
+      },
+      "actionable": 184,
+      "coverage_pct": 85.19,
+      "actionable_disagreements": 13,
+      "disagreement_pct_among_actionable": 7.07,
+      "advance_not_supported_by_reference": 8,
+      "advance_vs_reference_do_not_advance": 0,
+      "deferrals": 32
+    }
+  },
+  "stability_gate": {
+    "new_deferrals": 11,
+    "new_deferrals_that_were_pre_reference_disagreements": 1,
+    "new_deferrals_that_previously_matched_reference": 10
+  },
+  "traceability_outcomes": {
+    "VERIFIED": 608,
+    "NOT_APPLICABLE": 34,
+    "UNVERIFIABLE": 5,
+    "CONTEXT_ONLY": 1
+  },
+  "provisional_reference_manual_adjudications": 2,
+  "input_sha256": {
+    "dataset": "70ffbfaffe9d1e7170004e2668da90ddcfd955a3694d67e4265de3f3ae2a3be9",
+    "prediction_lock": "2ec422a0a7b63465f974c28efa3f4477e039e252178689c84308834daed80e6d",
+    "references": "8bfe6b15ba0715a48d09b1dc073d7cd39ec48da3fd02de85599354f444fe80e2",
+    "blinding_key": "1c51d0ddba817ed8812735facdfb4499acf82f301fbe83f483070d1561457a5d",
+    "frozen_policy": "a0fc03e305eb445b2ae92c46cc5c59e39f486f335e70df9d0f25f5bb001d1ebb",
+    "evidence_template": "561302f829c520079df70874fae0769a2b75f865ea2292fa4d377e421ec06bea"
+  },
+  "limitations": [
+    "The references are AI-assisted rather than independent human ground truth.",
+    "The same model family generated responses and annotated most references.",
+    "Two reference evidence annotations were manually adjudicated with AI assistance.",
+    "TEST scenarios were authored after observing VALIDATION results.",
+    "The 216 responses are clustered within 24 scenario families; not 216 independent cases.",
+    "Reference post-stability decisions reuse the semantic gate and are not an independent comparator.",
+    "Verbatim citation verification is not proof of substantively correct interpretation."
+  ]
+}

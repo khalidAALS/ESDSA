@@ -1,0 +1,43 @@
+{
+  "rubric_id": "SW-DEFECT-V1",
+  "occupation": "Software Development",
+  "competency": "Defect diagnosis and verification",
+  "version": "1.0",
+  "criteria": [
+    {
+      "id": "C1",
+      "name": "Systematic diagnosis",
+      "positive_evidence": "Reproduces the failure and narrows the cause.",
+      "negative_evidence": "Explicitly rejects systematic diagnosis.",
+      "insufficient_evidence": "Mentions investigation without explaining a method."
+    },
+    {
+      "id": "C2",
+      "name": "Diagnostic investigation",
+      "positive_evidence": "Uses relevant logs, comparisons or other diagnostic information.",
+      "negative_evidence": "Explicitly dismisses relevant diagnostic evidence.",
+      "insufficient_evidence": "Does not identify how diagnostic information would be obtained."
+    },
+    {
+      "id": "C3",
+      "name": "Reasoned correction",
+      "positive_evidence": "Connects the proposed correction to an identified cause.",
+      "negative_evidence": "Proposes an unsupported change without diagnosing the problem.",
+      "insufficient_evidence": "Mentions fixing the problem without explaining the reasoning."
+    },
+    {
+      "id": "C4",
+      "name": "Verification",
+      "positive_evidence": "Tests the correction and checks for related regressions.",
+      "negative_evidence": "Explicitly rejects verification or treats absence of complaints as proof.",
+      "insufficient_evidence": "Promises to check the result without describing a verification method."
+    }
+  ],
+  "decision_rules": {
+    "ADVANCE": "All four criteria contain sufficient positive evidence.",
+    "DO_NOT_ADVANCE": "The response contains explicit material evidence of unsafe or deficient practice against one or more critical criteria.",
+    "DEFER": "Neither a positive nor a negative recommendation is sufficiently supported."
+  },
+  "validation_status": "PROVISIONAL",
+  "notes": "Pilot-only rules. Not independently validated for real recruitment."
+}

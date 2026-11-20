@@ -1,0 +1,36 @@
+{
+  "experiment": "ESDSA_TEST_AI_ANNOTATION_V2",
+  "partition": "TEST",
+  "review_type": "EVIDENCE",
+  "blinded_id": "TR-88D333A08015E556",
+  "reviewer_id": "AI_ASSISTED_GPT54_MINI_V2",
+  "requested_model": "gpt-5.4-mini",
+  "returned_model": "gpt-5.4-mini-2026-03-17",
+  "api_response_id": "resp_0bf6269eb0095818016b002b26c1b087d0b8aa6c0bab90bffe",
+  "annotated_utc": "2026-11-20T11:12:41.110368+00:00",
+  "annotation": {
+    "criteria": [
+      {
+        "criterion_id": "CSS03-C1",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "Given the customer’s event, I’d look at the fastest policy-compliant options first: a standard replacement if stock allows, or an alternative item if that’s acceptable and available.",
+        "rationale": "This explicitly weighs the customer’s urgency against feasible options and selects among appropriate resolutions based on the available evidence and constraints."
+      },
+      {
+        "criterion_id": "CSS03-C2",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "Since expedited replacement needs authorisation and stock is limited, I wouldn’t promise that immediately; I’d flag it for supervisor approval",
+        "rationale": "The candidate directly acknowledges authorisation requirements and says they would not promise an expedited replacement without approval, showing respect for service and approval constraints."
+      },
+      {
+        "criterion_id": "CSS03-C3",
+        "status": "POSITIVE_EVIDENCE",
+        "passage": "I’d start by confirming the order details, the item sent, and the delivery timeline, because I want to be sure the issue is a true mis-ship and not a tracking delay or partial fulfillment.",
+        "rationale": "This shows the candidate recognizes that more information is needed before deciding on resolution, and also indicates escalation/verification steps when the shipment status is disputed."
+      }
+    ],
+    "annotation_notes": ""
+  },
+  "reference_decision": null,
+  "independent_human_review": false
+}
