@@ -102,4 +102,14 @@ The repository retains experiment-stage scripts and the recorded artifacts neede
 
 Paper: *When AI Should Not Decide: Evidence Sufficiency and Decision Stability in Automated Job Interviews*. Citation details and an arXiv identifier will be added once publicly available.
 
-**License:** Not selected yet. Public availability does not by itself grant reuse rights; a license will be decided before release.
+## License and Copyright
+
+Copyright © 2026 Ducaltus Ltd.
+
+The software source code in this repository is released under the MIT License. See [LICENSE](LICENSE).
+
+The research benchmark, synthetic interview responses, annotations, and experimental results are published for research transparency and reproducibility. They are not covered by the software MIT License; no separate reuse license is currently granted for these materials.
+
+Research author: Khalid Adnan Alsayed.
+
+The ESDSA framework is an experimental research methodology, not a validated recruitment system. Its findings do not establish real-world hiring accuracy, candidate fairness, or employment suitability.
